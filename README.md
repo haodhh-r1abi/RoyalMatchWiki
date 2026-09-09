@@ -4,7 +4,7 @@ Site tĩnh sinh bởi `GameDesign/tools/gd_site.py`. Mở `index.html` hoặc pu
 
 ```bash
 cd site
-git init && git add -A && git commit -m "Royal Match GDD wiki"
+git init && git add -A && git commit -m "GDD wiki"
 git branch -M gh-pages
 git remote add origin <repo-url>
 git push -u origin gh-pages
