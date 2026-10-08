@@ -54,6 +54,8 @@ details.flow{margin-top:8px}details.flow summary{cursor:pointer;color:var(--mute
 .shot.sq img{aspect-ratio:1/1;object-fit:contain;padding:8px;background:#25365a}
 .shot figcaption{font-size:12.5px;color:#444;margin:6px 2px 2px;line-height:1.4}
 .gallery.assets{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+.gallery.art-references{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.shot.art-ref img{aspect-ratio:auto;object-fit:contain}
 .lbox{position:fixed;inset:0;background:rgba(10,12,30,.9);z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px}
 .lbox[hidden]{display:none}
 .lbox img{max-height:84vh;max-width:94vw;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
