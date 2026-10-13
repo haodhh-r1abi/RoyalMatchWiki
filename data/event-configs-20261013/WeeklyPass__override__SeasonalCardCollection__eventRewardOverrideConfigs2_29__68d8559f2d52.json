@@ -1,0 +1,26 @@
+{
+  "eventStepRewards": [
+    {
+      "step": 2,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP4"
+      }
+    },
+    {
+      "step": 5,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP6"
+      }
+    },
+    {
+      "step": 10,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP6"
+      }
+    }
+  ],
+  "eventType": 41
+}

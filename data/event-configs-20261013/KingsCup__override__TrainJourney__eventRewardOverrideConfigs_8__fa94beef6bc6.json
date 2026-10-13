@@ -1,0 +1,26 @@
+{
+  "eventStepRewards": [
+    {
+      "step": 1,
+      "rewardItem": {
+        "a": 30,
+        "t": "Tk"
+      }
+    },
+    {
+      "step": 2,
+      "rewardItem": {
+        "a": 20,
+        "t": "Tk"
+      }
+    },
+    {
+      "step": 3,
+      "rewardItem": {
+        "a": 10,
+        "t": "Tk"
+      }
+    }
+  ],
+  "eventType": 13
+}

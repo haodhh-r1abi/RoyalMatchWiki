@@ -1,0 +1,47 @@
+{
+  "eventStepRewards": [
+    {
+      "step": 2,
+      "rewardItem": {
+        "a": 10,
+        "t": "Tk"
+      }
+    },
+    {
+      "step": 4,
+      "rewardItem": {
+        "a": 20,
+        "t": "Tk"
+      }
+    },
+    {
+      "step": 102,
+      "rewardItem": {
+        "a": 10,
+        "t": "Tk"
+      }
+    },
+    {
+      "step": 104,
+      "rewardItem": {
+        "a": 20,
+        "t": "Tk"
+      }
+    },
+    {
+      "step": 202,
+      "rewardItem": {
+        "a": 10,
+        "t": "Tk"
+      }
+    },
+    {
+      "step": 204,
+      "rewardItem": {
+        "a": 20,
+        "t": "Tk"
+      }
+    }
+  ],
+  "eventType": 27
+}

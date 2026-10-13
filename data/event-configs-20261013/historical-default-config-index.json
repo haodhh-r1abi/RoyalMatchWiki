@@ -1,0 +1,1051 @@
+[
+  {
+    "feature": "SeasonalCardCollection",
+    "field": "Config",
+    "file": "SeasonalCardCollection__historical_server__Config__356655ed624e.json",
+    "source_kind": "historical_server",
+    "sha256": "356655ed624eab11ae7cacf4bab1f78b0b14cea7356869d951b49a05c90e45de",
+    "json_bytes": 25723,
+    "top_keys": [
+      "magicCauldronLastEndedEventId",
+      "kingsCupLastEndedEventId",
+      "trainJourneyLastEndedEventId",
+      "isInfiniteSeason",
+      "oceanOdysseyLastEndedEventId",
+      "weeklyPassLastEndedEventId",
+      "firstDuplicateCardsChestCost",
+      "dragonNestLastEndedEventId",
+      "duplicateCardsChestRewards",
+      "spaceMissionLastEndedEventId",
+      "starCount2WeightForDynamicBag",
+      "purplePackRuleFactors",
+      "dukesFortuneLastEndedEventId",
+      "teamTournamentLastEndedEventId",
+      "isDynamicProgress",
+      "secondDuplicateCardsChestCost",
+      "skyRaceLastEndedEventId",
+      "puzzleBreakLastEndedEventId",
+      "royalLeagueLastEndedEventId",
+      "eventRewardOverrideConfigs2",
+      "seasonId",
+      "archeryArenaLastEndedEventId",
+      "dailyLightningRushLastEndedEventId",
+      "missionControlLastEndedEventId",
+      "teamTreasureLastEndedEventId",
+      "usableSetCount",
+      "minClientVersion",
+      "thirdDuplicateCardsChestCost",
+      "missionPursuitLastEndedEventId",
+      "grandPrize",
+      "propellerRushLastEndedEventId",
+      "hiddenTempleLastEndedEventId",
+      "currentSeasonInfo",
+      "goldWeightDynamicBag",
+      "goldCardStarBalance",
+      "robotRivalsLastEndedEventId",
+      "eventRewardOverrideConfigs",
+      "v",
+      "madnessLastEndedEventId",
+      "diamondWeightDynamicBag",
+      "ladderOfferLastEndedEventId",
+      "balloonRiseLastEndedEventId",
+      "setRewards",
+      "pinataPartyLastEndedEventId",
+      "weeklyLeaderboardLastEndedEventId",
+      "clashOfChampionsLastEndedEventId",
+      "royalPassLastEndedEventId"
+    ],
+    "sources": [
+      {
+        "path": "decoded_old/004_4_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/006_5_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/009_6_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/013_9_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/018_12_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/020_13_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/021_14_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/022_15_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/028_18_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/029_19_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/030_20_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/033_22_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/038_25_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/044_28_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/045_29_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/046_30_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/051_33_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/052_34_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/058_37_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/059_38_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/060_39_UpdateUserProgressResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/069_2_PingResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_old/070_3_PingResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_new/000_4_GetAllTimePurchaseResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "decoded_new/004_1_PingResponse.json",
+        "metadata": {
+          "EventId": 20,
+          "ConfigVersion": 305
+        }
+      },
+      {
+        "path": "server_configs/Mem_SeasonalCardCollection_season_v305.json",
+        "metadata": {}
+      },
+      {
+        "path": "server_configs/PingResponse_SeasonalCardCollectionInfo_Config_v305.json",
+        "metadata": {}
+      },
+      {
+        "path": "server_configs/UpdateUserProgressResponse_SeasonalCardCollectionInfo_Config_v305.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": [
+      305
+    ]
+  },
+  {
+    "feature": "AncientAdventure",
+    "field": "Config",
+    "file": "AncientAdventure__historical_server__Config__82ce30a150b1.json",
+    "source_kind": "historical_server",
+    "sha256": "82ce30a150b190f80f1fad80def8c95071832e19063fb4adf6ccbe2062415e84",
+    "json_bytes": 405,
+    "top_keys": [
+      "s",
+      "os"
+    ],
+    "sources": [
+      {
+        "path": "decoded_new/004_1_PingResponse.json",
+        "metadata": {
+          "ServerEventId": 288,
+          "ConfigVersion": 292
+        }
+      },
+      {
+        "path": "server_configs/AncientAdventureTableItem_ServerEventConfig.json",
+        "metadata": {}
+      },
+      {
+        "path": "server_configs/PingResponse_AncientAdventureInfo_Config_v292.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": [
+      292
+    ]
+  },
+  {
+    "feature": "RoyalPass",
+    "field": "Config",
+    "file": "RoyalPass__historical_server__Config__976f430f20a1.json",
+    "source_kind": "historical_server",
+    "sha256": "976f430f20a1b61fb39f764a2547bb97c4e1cf5a7ef4adb3471ef4fb3ef4a1c6",
+    "json_bytes": 6468,
+    "top_keys": [
+      "version",
+      "offerPriorityHomescene",
+      "offerPriorityShop",
+      "offerPriorityFavor",
+      "theme",
+      "steps",
+      "butlerMultiplierAbSteps"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/App_RoyalPassConfig.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "PinataParty",
+    "field": "Config",
+    "file": "PinataParty__historical_server__Config__1d9521a51558.json",
+    "source_kind": "historical_server",
+    "sha256": "1d9521a51558728ed087995e1cc5954bb57583c091b8ad59f0afaae8fba1ddba",
+    "json_bytes": 490,
+    "top_keys": [
+      "version",
+      "segments",
+      "butlerMultiplierAbSegment",
+      "steps",
+      "theme"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/App_PinataConfig.json",
+        "metadata": {}
+      },
+      {
+        "path": "server_configs/Mem_Pinata_or_steps.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "BalloonRise",
+    "field": "Config",
+    "file": "BalloonRise__historical_server__Config__dc43d5763dcf.json",
+    "source_kind": "historical_server",
+    "sha256": "dc43d5763dcf6f2f368b96133b25a8521a76b568f7abd9bd89ce990025ca5b17",
+    "json_bytes": 406,
+    "top_keys": [
+      "r",
+      "t",
+      "butlerMultiplierAbTargets"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/BalloonRiseTableItem_ServerEventConfig.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "HiddenTemple",
+    "field": "Config",
+    "file": "HiddenTemple__historical_server__Config__7ce4c817f80c.json",
+    "source_kind": "historical_server",
+    "sha256": "7ce4c817f80cabcdf4d065f4814063e5e7255494899867303e3dc13a4c455fd9",
+    "json_bytes": 723,
+    "top_keys": [
+      "stages"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/HiddenTempleTableItem_ServerEventConfig.json",
+        "metadata": {}
+      },
+      {
+        "path": "server_configs/Mem_HiddenTemple_stages.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "MagicCauldron",
+    "field": "Config",
+    "file": "MagicCauldron__historical_server__Config__a784afc32cb9.json",
+    "source_kind": "historical_server",
+    "sha256": "a784afc32cb9696c0dfaede91977f2cf7d10a8ba095b767ae3359843da2e1fdb",
+    "json_bytes": 514,
+    "top_keys": [
+      "stageRowSizes",
+      "eventCompleteRewards",
+      "stageRewards",
+      "elixirReward",
+      "elixirRewardCount",
+      "sceneIndexesForStage"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/MagicCauldronTableItem_ServerEventConfig.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "EventsFramework",
+    "field": "Config",
+    "file": "EventsFramework__historical_server__Config__866ef1ca9c0b.json",
+    "source_kind": "historical_server",
+    "sha256": "866ef1ca9c0b01fdaf57616de14a48a6ccf43377b3a98e969706708c114e725d",
+    "json_bytes": 357,
+    "top_keys": [
+      "eventGroupList"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/Mem_EventDependencyConfig_v291.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "MissionControl",
+    "field": "Config",
+    "file": "MissionControl__historical_server__Config__d63fc125d622.json",
+    "source_kind": "historical_server",
+    "sha256": "d63fc125d622d7e1d43affdfe295696c7d7ee97b614d4d29a0c2b1026b0b90d2",
+    "json_bytes": 1231,
+    "top_keys": [
+      "fallbackTask",
+      "stages",
+      "grandChestRewards",
+      "chestRewards",
+      "alternativeIds"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/MissionControlTableItem_ServerEventConfig.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "MissionControl",
+    "field": "Config",
+    "file": "MissionControl__historical_server__Config__0408eb0db6e1.json",
+    "source_kind": "historical_server",
+    "sha256": "0408eb0db6e12bde73d1cd820382dc69f7d5a76927c27c487e0fd3125de37f57",
+    "json_bytes": 1343,
+    "top_keys": [
+      "overridenMissions"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/User_MissionOverrideConfig.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "PropellerMadness",
+    "field": "Config",
+    "file": "PropellerMadness__historical_server__Config__ccd1c24b4cb8.json",
+    "source_kind": "historical_server",
+    "sha256": "ccd1c24b4cb834655a287233170ec85c466bc63c50e1bd7201385f7dd77c076a",
+    "json_bytes": 1569,
+    "top_keys": [
+      "version",
+      "steps",
+      "butlerMultiplierAbSteps",
+      "multiplierTokenOverride"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/User_MadnessConfig.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "PropellerMadness",
+    "field": "Config",
+    "file": "PropellerMadness__historical_server__Config__8f918dd00988.json",
+    "source_kind": "historical_server",
+    "sha256": "8f918dd00988763312881dc493869e089db449badf3da37d430d930194e51dfd",
+    "json_bytes": 1569,
+    "top_keys": [
+      "version",
+      "steps",
+      "butlerMultiplierAbSteps",
+      "multiplierTokenOverride"
+    ],
+    "sources": [
+      {
+        "path": "server_configs/User_MadnessConfig2.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "BalloonRise",
+    "field": "DefaultConfig",
+    "file": "BalloonRise__apk_default__DefaultConfig__cfba577a392f.json",
+    "source_kind": "apk_default",
+    "sha256": "cfba577a392f4f76df7ac2f27ff0496bdcd28a99cb2bcd3683bc6e9a290c77c8",
+    "json_bytes": 410,
+    "top_keys": [
+      "t",
+      "r"
+    ],
+    "sources": [
+      {
+        "path": "Resources/balloon_rise_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "BookOfTreasure",
+    "field": "DefaultConfig",
+    "file": "BookOfTreasure__apk_default__DefaultConfig__508b1b4552d4.json",
+    "source_kind": "apk_default",
+    "sha256": "508b1b4552d4264399bea7d0a6dbac7841199d6485166c145c1197b5e6aa3d67",
+    "json_bytes": 1135,
+    "top_keys": [
+      "steps"
+    ],
+    "sources": [
+      {
+        "path": "Resources/book_of_treasure_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "BookOfTreasure",
+    "field": "DefaultConfig",
+    "file": "BookOfTreasure__apk_default__DefaultConfig__2075d1bcfce7.json",
+    "source_kind": "apk_default",
+    "sha256": "2075d1bcfce7c2c7cce5a368a39502d202a7ad2d73c42a08d2e1b0a3e17bb5d0",
+    "json_bytes": 234,
+    "top_keys": [
+      "eventGroupList"
+    ],
+    "sources": [
+      {
+        "path": "Resources/event_dependency_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "DailyLightningRush",
+    "field": "DefaultConfig",
+    "file": "DailyLightningRush__apk_default__DefaultConfig__530992d90526.json",
+    "source_kind": "apk_default",
+    "sha256": "530992d90526833a109f83ae12f69d8f28c9c6d10a6c4a9bb1e4b4040818822e",
+    "json_bytes": 233,
+    "top_keys": [
+      "prize",
+      "stageDurations",
+      "threeStageRewards"
+    ],
+    "sources": [
+      {
+        "path": "Resources/daily_lightning_rush_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "DragonNest",
+    "field": "DefaultConfig",
+    "file": "DragonNest__apk_default__DefaultConfig__4d77e3a0ce22.json",
+    "source_kind": "apk_default",
+    "sha256": "4d77e3a0ce2298d502890bf493c86c8e07445e1e7aa9fbd7e4451df9fe7a4b5f",
+    "json_bytes": 2153,
+    "top_keys": [
+      "grandPrize",
+      "remainingRewardRequiredDragonball",
+      "maxRemainingReward",
+      "mcLastEventId",
+      "stepRewards",
+      "ppLastEventId",
+      "madnessLastEventId",
+      "remainingReward",
+      "eventRewardOverrideConfigs",
+      "htLastEventId",
+      "stepScores",
+      "lrLastEventId",
+      "brLastEventId"
+    ],
+    "sources": [
+      {
+        "path": "Resources/dragon_nest_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "DukesFortune",
+    "field": "DefaultConfig",
+    "file": "DukesFortune__apk_default__DefaultConfig__fea4f35ede72.json",
+    "source_kind": "apk_default",
+    "sha256": "fea4f35ede725aabb109a618a8add96c7394ba91cb377d02f852d7ccb72f3b05",
+    "json_bytes": 1183,
+    "top_keys": [
+      "remainingTokenCountForReward",
+      "coinCap",
+      "startingTokens",
+      "steps"
+    ],
+    "sources": [
+      {
+        "path": "Resources/dukes_fortune_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "EventsFramework",
+    "field": "DefaultConfig",
+    "file": "EventsFramework__apk_default__DefaultConfig__2075d1bcfce7.json",
+    "source_kind": "apk_default",
+    "sha256": "2075d1bcfce7c2c7cce5a368a39502d202a7ad2d73c42a08d2e1b0a3e17bb5d0",
+    "json_bytes": 234,
+    "top_keys": [
+      "eventGroupList"
+    ],
+    "sources": [
+      {
+        "path": "Resources/event_dependency_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "HiddenTemple",
+    "field": "DefaultConfig",
+    "file": "HiddenTemple__apk_default__DefaultConfig__07c3b732cdcb.json",
+    "source_kind": "apk_default",
+    "sha256": "07c3b732cdcb6fed5030fcd3282097c103459411d9735ec576d1788e9f78aee5",
+    "json_bytes": 703,
+    "top_keys": [
+      "stages",
+      "butlerMultiplierAbStages"
+    ],
+    "sources": [
+      {
+        "path": "Resources/hidden_temple_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "LavaQuest",
+    "field": "DefaultConfig",
+    "file": "LavaQuest__apk_default__DefaultConfig__e3b2766b4318.json",
+    "source_kind": "apk_default",
+    "sha256": "e3b2766b431842f93f766c741f4940cace1b96d6b50a0e15659e0380cec82414",
+    "json_bytes": 52,
+    "top_keys": [
+      "v",
+      "d",
+      "c",
+      "r"
+    ],
+    "sources": [
+      {
+        "path": "Resources/lava_quest_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "MagicCauldron",
+    "field": "DefaultConfig",
+    "file": "MagicCauldron__apk_default__DefaultConfig__bf41c331167f.json",
+    "source_kind": "apk_default",
+    "sha256": "bf41c331167f3b29f3dabaaaed4eae5cb799bc9f11d2a94aa77334806c4f10f5",
+    "json_bytes": 427,
+    "top_keys": [
+      "stageRowSizes",
+      "stageRewards",
+      "elixirRewardCount",
+      "elixirReward",
+      "eventCompleteRewards",
+      "sceneIndexesForStage"
+    ],
+    "sources": [
+      {
+        "path": "Resources/magic_cauldron_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "MissionControl",
+    "field": "DefaultConfig",
+    "file": "MissionControl__apk_default__DefaultConfig__c38e940b8ab4.json",
+    "source_kind": "apk_default",
+    "sha256": "c38e940b8ab45db0209fe42b5e30239292f3e89ebc3d716a95830be69b7390d1",
+    "json_bytes": 1168,
+    "top_keys": [
+      "chestRewards",
+      "grandChestRewards",
+      "stages",
+      "alternativeIds"
+    ],
+    "sources": [
+      {
+        "path": "Resources/mission_control_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "MissionPursuit",
+    "field": "DefaultConfig",
+    "file": "MissionPursuit__apk_default__DefaultConfig__c47619c06d3f.json",
+    "source_kind": "apk_default",
+    "sha256": "c47619c06d3ff308a1013449fd721e3b1d0dd8691c17eb579f48476e314db5ac",
+    "json_bytes": 2197,
+    "top_keys": [
+      "chestRewards",
+      "stages",
+      "alternativeIds"
+    ],
+    "sources": [
+      {
+        "path": "Resources/mission_pursuit_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "OceanOdyssey",
+    "field": "DefaultConfig",
+    "file": "OceanOdyssey__apk_default__DefaultConfig__e2f14f65c8a1.json",
+    "source_kind": "apk_default",
+    "sha256": "e2f14f65c8a1d7e1bf321ce4c752cbde7fabe611a6bd94a643d928f7561b05b3",
+    "json_bytes": 2044,
+    "top_keys": [
+      "remainingCannonCountForReward",
+      "ballCountThresholds",
+      "itemsData",
+      "stages",
+      "butlerMultiplierStages"
+    ],
+    "sources": [
+      {
+        "path": "Resources/ocean_odyssey_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "PinataParty",
+    "field": "DefaultConfig",
+    "file": "PinataParty__apk_default__DefaultConfig__e8d9ccf09f01.json",
+    "source_kind": "apk_default",
+    "sha256": "e8d9ccf09f0169552e8a70334439c800f0405db02428085c29616a62370311ff",
+    "json_bytes": 434,
+    "top_keys": [
+      "defaultSegment",
+      "steps",
+      "segments"
+    ],
+    "sources": [
+      {
+        "path": "Resources/pinata_party_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "PropellerMadness",
+    "field": "DefaultConfig",
+    "file": "PropellerMadness__apk_default__DefaultConfig__4bbecb0b63d1.json",
+    "source_kind": "apk_default",
+    "sha256": "4bbecb0b63d18cfb569ba473777d3673ce4c586750152be694cd2ae259041f2f",
+    "json_bytes": 911,
+    "top_keys": [
+      "steps"
+    ],
+    "sources": [
+      {
+        "path": "Resources/propeller_madness_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "PropellerRush",
+    "field": "DefaultConfig",
+    "file": "PropellerRush__apk_default__DefaultConfig__33ac38f327ea.json",
+    "source_kind": "apk_default",
+    "sha256": "33ac38f327ea74f23c5dd8739465f148216f35032e41c36d2460ecf340ec8eb8",
+    "json_bytes": 399,
+    "top_keys": [
+      "s2D20",
+      "s2D30",
+      "s3D20",
+      "s3D30",
+      "s2D20R",
+      "s2D30R",
+      "s3D20R",
+      "s3D30R"
+    ],
+    "sources": [
+      {
+        "path": "Resources/propeller_rush_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "PuzzleBreak",
+    "field": "DefaultConfig",
+    "file": "PuzzleBreak__apk_default__DefaultConfig__1210fd1fb8a8.json",
+    "source_kind": "apk_default",
+    "sha256": "1210fd1fb8a8d7ccff88b609b9e59026a835d5f4a37d0d4cbe1bb0ebb7d62abc",
+    "json_bytes": 775,
+    "top_keys": [
+      "stages",
+      "rcc",
+      "goldCard",
+      "seasonConfigs"
+    ],
+    "sources": [
+      {
+        "path": "Resources/puzzle_break_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "RobotRivals",
+    "field": "DefaultConfig",
+    "file": "RobotRivals__apk_default__DefaultConfig__8958ba8b4ad3.json",
+    "source_kind": "apk_default",
+    "sha256": "8958ba8b4ad32c44b203b22e0465d9caa3110d08d937b9990241f38e0d690cd8",
+    "json_bytes": 169,
+    "top_keys": [
+      "Rs",
+      "lastJMin",
+      "mgScores",
+      "mgAngles",
+      "mgSpeed"
+    ],
+    "sources": [
+      {
+        "path": "Resources/robot_rivals_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "RoyalPass",
+    "field": "DefaultConfig",
+    "file": "RoyalPass__apk_default__DefaultConfig__10241439db40.json",
+    "source_kind": "apk_default",
+    "sha256": "10241439db407bfa817bbad73735f3fc566a56f09dabf9837985e9c7e457f302",
+    "json_bytes": 2776,
+    "top_keys": [
+      "theme",
+      "steps"
+    ],
+    "sources": [
+      {
+        "path": "Resources/royal_pass_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "RoyalWorldCup",
+    "field": "DefaultConfig",
+    "file": "RoyalWorldCup__apk_default__DefaultConfig__42e5865a1e79.json",
+    "source_kind": "apk_default",
+    "sha256": "42e5865a1e79cf6cb772adbc0c9b3606dacc210825f1170a0167c0f653dece9d",
+    "json_bytes": 2105,
+    "top_keys": [
+      "qsr",
+      "qed",
+      "s",
+      "fcr",
+      "qm",
+      "sr",
+      "co"
+    ],
+    "sources": [
+      {
+        "path": "Resources/royal_world_cup_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "SkyRace",
+    "field": "DefaultConfig",
+    "file": "SkyRace__apk_default__DefaultConfig__97796468b175.json",
+    "source_kind": "apk_default",
+    "sha256": "97796468b1757b1308ee60958bf765c2aa3cd6e030edda4ef5845d0d37170470",
+    "json_bytes": 321,
+    "top_keys": [
+      "targetLevel",
+      "rankRewards"
+    ],
+    "sources": [
+      {
+        "path": "Resources/sky_race_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "SpaceMission",
+    "field": "DefaultConfig",
+    "file": "SpaceMission__apk_default__DefaultConfig__0bc52fb67fb6.json",
+    "source_kind": "apk_default",
+    "sha256": "0bc52fb67fb64317f52e8dff8d6af6e2e187e1f21388c713a3de6b058728a1ee",
+    "json_bytes": 351,
+    "top_keys": [
+      "t",
+      "r"
+    ],
+    "sources": [
+      {
+        "path": "Resources/space_mission_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "TeamTreasure",
+    "field": "DefaultConfig",
+    "file": "TeamTreasure__apk_default__DefaultConfig__ad4d300c2325.json",
+    "source_kind": "apk_default",
+    "sha256": "ad4d300c23255d8ece7552050ddbe43c02b36545196c1604c5cb97708ce624f6",
+    "json_bytes": 613,
+    "top_keys": [
+      "segments",
+      "steps"
+    ],
+    "sources": [
+      {
+        "path": "Resources/team_treasure_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "TrainJourney",
+    "field": "DefaultConfig",
+    "file": "TrainJourney__apk_default__DefaultConfig__9c7757a7c355.json",
+    "source_kind": "apk_default",
+    "sha256": "9c7757a7c355d979cae4242a067af2f38ff8ba61a4a0c8f765818f7993eafc16",
+    "json_bytes": 3781,
+    "top_keys": [
+      "grandPrize",
+      "maxRemainingReward",
+      "ttoLastEventId",
+      "mcLastEventId",
+      "srLastEventId",
+      "kcLastEventId",
+      "ppLastEventId",
+      "remainingRewardRequiredTicket",
+      "madnessLastEventId",
+      "mcoLastEventId",
+      "chestRewards",
+      "smLastEventId",
+      "remainingReward",
+      "mpLastEventId",
+      "eventRewardOverrideConfigs",
+      "htLastEventId",
+      "ttLastEventId",
+      "lrLastEventId",
+      "railTargetScores",
+      "ooLastEventId",
+      "aaLastEventId",
+      "brLastEventId",
+      "dfLastEventId"
+    ],
+    "sources": [
+      {
+        "path": "Resources/train_journey_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "WeeklyLeaderboard",
+    "field": "DefaultConfig",
+    "file": "WeeklyLeaderboard__apk_default__DefaultConfig__1595535669c4.json",
+    "source_kind": "apk_default",
+    "sha256": "1595535669c471de779308adf1ea209206220740da6c543764545e604f5b7f23",
+    "json_bytes": 193,
+    "top_keys": [
+      "r"
+    ],
+    "sources": [
+      {
+        "path": "Resources/weekly_leaderboard_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  },
+  {
+    "feature": "WeeklyPass",
+    "field": "DefaultConfig",
+    "file": "WeeklyPass__apk_default__DefaultConfig__cc89e47cd55c.json",
+    "source_kind": "apk_default",
+    "sha256": "cc89e47cd55cc52341452a6d6df2b4b4656437e8126b81d683108558b0d4ac1a",
+    "json_bytes": 680,
+    "top_keys": [
+      "theme",
+      "steps"
+    ],
+    "sources": [
+      {
+        "path": "Resources/weekly_pass_default_config.json",
+        "metadata": {}
+      }
+    ],
+    "observed_versions": []
+  }
+]

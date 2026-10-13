@@ -1,0 +1,96 @@
+{
+  "eventStepRewards": [
+    {
+      "step": 3,
+      "rewardItem": {
+        "a": 1,
+        "t": "CPG"
+      }
+    },
+    {
+      "step": 4,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP4"
+      }
+    },
+    {
+      "step": 5,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP6"
+      }
+    },
+    {
+      "step": 6,
+      "rewardItem": {
+        "a": 1,
+        "t": "CPG"
+      }
+    },
+    {
+      "step": 10,
+      "rewardItem": {
+        "a": 1,
+        "t": "CPG"
+      }
+    },
+    {
+      "step": 11,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP6"
+      }
+    },
+    {
+      "step": 12,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP4"
+      }
+    },
+    {
+      "step": 13,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP3"
+      }
+    },
+    {
+      "step": 204,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP2"
+      }
+    },
+    {
+      "step": 208,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP2"
+      }
+    },
+    {
+      "step": 212,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP3"
+      }
+    },
+    {
+      "step": 216,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP4"
+      }
+    },
+    {
+      "step": 1000,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP4"
+      }
+    }
+  ],
+  "eventType": 42
+}

@@ -1,0 +1,75 @@
+{
+  "eventStepRewards": [
+    {
+      "step": 21,
+      "rewardItem": {
+        "a": 10,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 22,
+      "rewardItem": {
+        "a": 20,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 31,
+      "rewardItem": {
+        "a": 10,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 32,
+      "rewardItem": {
+        "a": 20,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 41,
+      "rewardItem": {
+        "a": 10,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 42,
+      "rewardItem": {
+        "a": 20,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 43,
+      "rewardItem": {
+        "a": 30,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 51,
+      "rewardItem": {
+        "a": 10,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 52,
+      "rewardItem": {
+        "a": 20,
+        "t": "Mb"
+      }
+    },
+    {
+      "step": 53,
+      "rewardItem": {
+        "a": 30,
+        "t": "Mb"
+      }
+    }
+  ],
+  "eventType": 34
+}

@@ -1,0 +1,3827 @@
+{
+  "magicCauldronLastEndedEventId": 160,
+  "kingsCupLastEndedEventId": 716,
+  "trainJourneyLastEndedEventId": 23,
+  "isInfiniteSeason": true,
+  "oceanOdysseyLastEndedEventId": 71,
+  "weeklyPassLastEndedEventId": 10,
+  "firstDuplicateCardsChestCost": 100,
+  "dragonNestLastEndedEventId": 36,
+  "duplicateCardsChestRewards": [
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "R"
+        },
+        {
+          "a": 1,
+          "t": "T"
+        },
+        {
+          "a": 1,
+          "t": "CP3"
+        }
+      ]
+    },
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "R"
+        },
+        {
+          "a": 1,
+          "t": "L"
+        },
+        {
+          "a": 1,
+          "t": "T"
+        },
+        {
+          "a": 1,
+          "t": "H"
+        },
+        {
+          "a": 1,
+          "t": "CP3"
+        },
+        {
+          "a": 1,
+          "t": "CP4"
+        }
+      ]
+    },
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "H"
+        },
+        {
+          "a": 1,
+          "t": "Ca"
+        },
+        {
+          "a": 1,
+          "t": "J"
+        },
+        {
+          "a": 1,
+          "t": "A"
+        },
+        {
+          "a": 1,
+          "t": "CP3"
+        },
+        {
+          "a": 1,
+          "t": "CP4"
+        },
+        {
+          "a": 1,
+          "t": "CPG"
+        }
+      ]
+    }
+  ],
+  "spaceMissionLastEndedEventId": 146,
+  "starCount2WeightForDynamicBag": [
+    {
+      "starCount": 1,
+      "weight": 30
+    },
+    {
+      "starCount": 2,
+      "weight": 27
+    },
+    {
+      "starCount": 3,
+      "weight": 22
+    },
+    {
+      "starCount": 4,
+      "weight": 17
+    },
+    {
+      "starCount": 5,
+      "weight": 12
+    }
+  ],
+  "purplePackRuleFactors": [
+    0,
+    0,
+    33,
+    66,
+    100
+  ],
+  "dukesFortuneLastEndedEventId": 33,
+  "teamTournamentLastEndedEventId": 64,
+  "isDynamicProgress": true,
+  "secondDuplicateCardsChestCost": 250,
+  "skyRaceLastEndedEventId": 180,
+  "puzzleBreakLastEndedEventId": 77,
+  "royalLeagueLastEndedEventId": 155,
+  "eventRewardOverrideConfigs2": [
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 0
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 1005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 1008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 1010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 2002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 4002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 4005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 5008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 5010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 6002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 6008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 6010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 7002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 7005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 7008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 7010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 1
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 2
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 104,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 106,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 108,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 110,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 3
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 4
+    },
+    {
+      "eventStepRewards": [
+        {
+          "chestName": "SeasonalGiftBoxOrange",
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "chestName": "SeasonalGiftBoxBlue",
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 7,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 14,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 16,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 22,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 24,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 5
+    },
+    {
+      "eventStepRewards": [
+        {
+          "chestName": "SeasonalGiftBoxGreen",
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 11,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 18,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 19,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 6
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2011,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2020,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1001,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 7
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "chestName": "SeasonalGiftBoxOrange",
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 20,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 23,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 25,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 30,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 9
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "chestName": "SeasonalGiftBoxBlue",
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 20,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 23,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 25,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 30,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 10
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 11
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 12
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 7,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        }
+      ],
+      "eventType": 13
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 14
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 15
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 102,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 103,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 16
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 101,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 17
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1001,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2006,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2007,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 18
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 19
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 22
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 26
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 101,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 102,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 103,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 104,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 201,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 202,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 203,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 204,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 27
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 28
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 104,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 106,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 108,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 110,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 29
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 21,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 22,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 31,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 32,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 41,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 42,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 43,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 51,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 52,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 53,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 34
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 16,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 35
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 37
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 11,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 12,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 38
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 39
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 40
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 41
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 11,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 12,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 204,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 208,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 212,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 216,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 42
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 43
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1001,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 1003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1004,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 103,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 107,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 44
+    }
+  ],
+  "seasonId": 15,
+  "archeryArenaLastEndedEventId": 405,
+  "dailyLightningRushLastEndedEventId": 488,
+  "missionControlLastEndedEventId": 110,
+  "teamTreasureLastEndedEventId": 255,
+  "usableSetCount": [
+    15,
+    16,
+    16
+  ],
+  "minClientVersion": 35500,
+  "thirdDuplicateCardsChestCost": 500,
+  "missionPursuitLastEndedEventId": 121,
+  "grandPrize": [
+    {
+      "r": [
+        {
+          "a": 4028,
+          "t": "PB"
+        },
+        {
+          "a": 10,
+          "t": "PL"
+        },
+        {
+          "a": 10000,
+          "t": "C"
+        }
+      ]
+    },
+    {
+      "r": [
+        {
+          "a": 4029,
+          "t": "PB"
+        },
+        {
+          "a": 15,
+          "t": "PL"
+        },
+        {
+          "a": 15000,
+          "t": "C"
+        }
+      ]
+    },
+    {
+      "r": [
+        {
+          "a": 15,
+          "t": "PL"
+        },
+        {
+          "a": 15000,
+          "t": "C"
+        }
+      ]
+    }
+  ],
+  "propellerRushLastEndedEventId": 199,
+  "hiddenTempleLastEndedEventId": 172,
+  "currentSeasonInfo": {
+    "chatBundles": [
+      {
+        "androidCrc": 2038165521,
+        "bundleName": "season15chat",
+        "iosCrc": 2271104612
+      }
+    ],
+    "localizationBundles": [
+      {
+        "androidCrc": 3449856147,
+        "bundleName": "season15localization",
+        "iosCrc": 1094855709
+      }
+    ],
+    "setBundles": [
+      {
+        "androidCrc": 3324263452,
+        "bundleName": "season15set1",
+        "iosCrc": 3557453004
+      },
+      {
+        "androidCrc": 3069688667,
+        "bundleName": "season15set2",
+        "iosCrc": 1650914421
+      },
+      {
+        "androidCrc": 1818662167,
+        "bundleName": "season15set3",
+        "iosCrc": 3103251001
+      },
+      {
+        "androidCrc": 3078342021,
+        "bundleName": "season15set4",
+        "iosCrc": 1676315307
+      },
+      {
+        "androidCrc": 2076766853,
+        "bundleName": "season15set5",
+        "iosCrc": 2941894059
+      },
+      {
+        "androidCrc": 1173829498,
+        "bundleName": "season15set6",
+        "iosCrc": 2439411796
+      },
+      {
+        "androidCrc": 1373921133,
+        "bundleName": "season15set7",
+        "iosCrc": 2523296354
+      },
+      {
+        "androidCrc": 3611672164,
+        "bundleName": "season15set8",
+        "iosCrc": 281514859
+      },
+      {
+        "androidCrc": 872763796,
+        "bundleName": "season15set9",
+        "iosCrc": 4085742747
+      },
+      {
+        "androidCrc": 2599226671,
+        "bundleName": "season15set10",
+        "iosCrc": 2462870041
+      },
+      {
+        "androidCrc": 2413025471,
+        "bundleName": "season15set11",
+        "iosCrc": 1883405239
+      },
+      {
+        "androidCrc": 2742175618,
+        "bundleName": "season15set12",
+        "iosCrc": 1558439050
+      },
+      {
+        "androidCrc": 818723896,
+        "bundleName": "season15set13",
+        "iosCrc": 1139240922
+      },
+      {
+        "androidCrc": 104549896,
+        "bundleName": "season15set14",
+        "iosCrc": 1964023274
+      },
+      {
+        "androidCrc": 799278082,
+        "bundleName": "season15set15",
+        "iosCrc": 1552930784
+      },
+      {
+        "androidCrc": 3306629052,
+        "bundleName": "season15set16",
+        "iosCrc": 543486738
+      }
+    ],
+    "setIconBundles": [
+      {
+        "androidCrc": 1944821661,
+        "bundleName": "season15seticon",
+        "iosCrc": 2116693750
+      }
+    ],
+    "dialogBundles": [
+      {
+        "androidCrc": 2917547483,
+        "bundleName": "season15dialogs",
+        "iosCrc": 92884331
+      }
+    ],
+    "sectionBundles": [
+      {
+        "androidCrc": 3295017722,
+        "bundleName": "season15section",
+        "iosCrc": 1263589850
+      }
+    ]
+  },
+  "goldWeightDynamicBag": 8,
+  "goldCardStarBalance": 10,
+  "robotRivalsLastEndedEventId": 44,
+  "eventRewardOverrideConfigs": [
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 0
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 1005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 1008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 1010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 2002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 4002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 4005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 5008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 5010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 6002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 6008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 6010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 7002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 7005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 7008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 7010,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 1
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 2
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 104,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 106,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 108,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 110,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 3
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 4
+    },
+    {
+      "eventStepRewards": [
+        {
+          "chestName": "SeasonalGiftBoxOrange",
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "chestName": "SeasonalGiftBoxBlue",
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 7,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 14,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 16,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 22,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 24,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 5
+    },
+    {
+      "eventStepRewards": [
+        {
+          "chestName": "SeasonalGiftBoxGreen",
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 11,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 18,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 19,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 6
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2008,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2011,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2020,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1001,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 7
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "chestName": "SeasonalGiftBoxOrange",
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 20,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 23,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 25,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 30,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 9
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "chestName": "SeasonalGiftBoxBlue",
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 20,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 23,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 25,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 30,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 10
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 11
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 12
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 7,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 8,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        }
+      ],
+      "eventType": 13
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 14
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 15
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 102,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 103,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 16
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 101,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 17
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1001,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2005,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2006,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2007,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 18
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 19
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 22
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 26
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 101,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 102,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 103,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 104,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 201,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 202,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 203,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 204,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 27
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 28
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 15,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 104,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 106,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 108,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 110,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 29
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 21,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 22,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 31,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 32,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 41,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 42,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 43,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 51,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 52,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 53,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 34
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 16,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 35
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 37
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 9,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 11,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 12,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 38
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 39
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 40
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        }
+      ],
+      "eventType": 41
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 5,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 6,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 10,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 11,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP6"
+          }
+        },
+        {
+          "step": 12,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 13,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 204,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 208,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 212,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 216,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1000,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        }
+      ],
+      "eventType": 42
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 2,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 3,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 4,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        }
+      ],
+      "eventType": 43
+    },
+    {
+      "eventStepRewards": [
+        {
+          "step": 1001,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 1002,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        },
+        {
+          "step": 1003,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP4"
+          }
+        },
+        {
+          "step": 1004,
+          "rewardItem": {
+            "a": 1,
+            "t": "CPG"
+          }
+        },
+        {
+          "step": 103,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP2"
+          }
+        },
+        {
+          "step": 107,
+          "rewardItem": {
+            "a": 1,
+            "t": "CP3"
+          }
+        }
+      ],
+      "eventType": 44
+    }
+  ],
+  "v": 1,
+  "madnessLastEndedEventId": 700,
+  "diamondWeightDynamicBag": 4,
+  "ladderOfferLastEndedEventId": 442,
+  "balloonRiseLastEndedEventId": 320,
+  "setRewards": [
+    {
+      "rewards": [
+        {
+          "a": 500,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "R"
+        },
+        {
+          "a": 1,
+          "t": "T"
+        },
+        {
+          "a": 1,
+          "t": "L"
+        },
+        {
+          "a": 750,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "H"
+        },
+        {
+          "a": 1,
+          "t": "A"
+        },
+        {
+          "a": 1,
+          "t": "Ca"
+        },
+        {
+          "a": 1,
+          "t": "J"
+        },
+        {
+          "a": 1000,
+          "t": "C"
+        },
+        {
+          "a": 2,
+          "t": "H"
+        },
+        {
+          "a": 2,
+          "t": "A"
+        },
+        {
+          "a": 2,
+          "t": "Ca"
+        },
+        {
+          "a": 2,
+          "t": "J"
+        },
+        {
+          "a": 1500,
+          "t": "C"
+        }
+      ]
+    },
+    {
+      "rewards": [
+        {
+          "a": 500,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "R"
+        },
+        {
+          "a": 1,
+          "t": "T"
+        },
+        {
+          "a": 1,
+          "t": "L"
+        },
+        {
+          "a": 750,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "H"
+        },
+        {
+          "a": 1,
+          "t": "A"
+        },
+        {
+          "a": 1,
+          "t": "Ca"
+        },
+        {
+          "a": 1,
+          "t": "J"
+        },
+        {
+          "a": 1000,
+          "t": "C"
+        },
+        {
+          "a": 2,
+          "t": "H"
+        },
+        {
+          "a": 2,
+          "t": "A"
+        },
+        {
+          "a": 2,
+          "t": "Ca"
+        },
+        {
+          "a": 2,
+          "t": "J"
+        },
+        {
+          "a": 1500,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "IG"
+        }
+      ]
+    },
+    {
+      "rewards": [
+        {
+          "a": 500,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "R"
+        },
+        {
+          "a": 1,
+          "t": "T"
+        },
+        {
+          "a": 1,
+          "t": "L"
+        },
+        {
+          "a": 750,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "H"
+        },
+        {
+          "a": 1,
+          "t": "A"
+        },
+        {
+          "a": 1,
+          "t": "Ca"
+        },
+        {
+          "a": 1,
+          "t": "J"
+        },
+        {
+          "a": 1000,
+          "t": "C"
+        },
+        {
+          "a": 2,
+          "t": "H"
+        },
+        {
+          "a": 2,
+          "t": "A"
+        },
+        {
+          "a": 2,
+          "t": "Ca"
+        },
+        {
+          "a": 2,
+          "t": "J"
+        },
+        {
+          "a": 1500,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "IG"
+        }
+      ]
+    }
+  ],
+  "pinataPartyLastEndedEventId": 358,
+  "weeklyLeaderboardLastEndedEventId": 215,
+  "clashOfChampionsLastEndedEventId": 97,
+  "royalPassLastEndedEventId": 212
+}

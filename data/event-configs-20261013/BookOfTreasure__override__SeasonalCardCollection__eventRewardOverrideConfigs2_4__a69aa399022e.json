@@ -1,0 +1,63 @@
+{
+  "eventStepRewards": [
+    {
+      "chestName": "SeasonalGiftBoxOrange",
+      "step": 2,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP2"
+      }
+    },
+    {
+      "chestName": "SeasonalGiftBoxBlue",
+      "step": 5,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP2"
+      }
+    },
+    {
+      "step": 7,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP3"
+      }
+    },
+    {
+      "step": 9,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP2"
+      }
+    },
+    {
+      "step": 14,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP3"
+      }
+    },
+    {
+      "step": 16,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP4"
+      }
+    },
+    {
+      "step": 22,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP6"
+      }
+    },
+    {
+      "step": 24,
+      "rewardItem": {
+        "a": 1,
+        "t": "CP4"
+      }
+    }
+  ],
+  "eventType": 5
+}

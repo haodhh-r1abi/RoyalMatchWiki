@@ -1,0 +1,180 @@
+{
+  "fallbackTask": {
+    "missionId": 26,
+    "targets": [
+      50,
+      200,
+      500,
+      1000
+    ]
+  },
+  "stages": [
+    {
+      "tasks": [
+        {
+          "missionId": 17,
+          "alternativeTarget": 0,
+          "target": 8
+        },
+        {
+          "missionId": 21,
+          "alternativeTarget": 0,
+          "target": 1000
+        },
+        {
+          "missionId": 3,
+          "alternativeTarget": 0,
+          "target": 4
+        },
+        {
+          "missionId": 14,
+          "alternativeTarget": 0,
+          "target": 1
+        }
+      ]
+    },
+    {
+      "tasks": [
+        {
+          "missionId": 17,
+          "alternativeTarget": 0,
+          "target": 12
+        },
+        {
+          "missionId": 21,
+          "alternativeTarget": 0,
+          "target": 2000
+        },
+        {
+          "missionId": 3,
+          "alternativeTarget": 0,
+          "target": 8
+        },
+        {
+          "missionId": 14,
+          "alternativeTarget": 0,
+          "target": 2
+        }
+      ]
+    },
+    {
+      "tasks": [
+        {
+          "missionId": 17,
+          "alternativeTarget": 0,
+          "target": 16
+        },
+        {
+          "missionId": 21,
+          "alternativeTarget": 0,
+          "target": 4000
+        },
+        {
+          "missionId": 3,
+          "alternativeTarget": 0,
+          "target": 12
+        },
+        {
+          "missionId": 14,
+          "alternativeTarget": 0,
+          "target": 5
+        }
+      ]
+    },
+    {
+      "tasks": [
+        {
+          "missionId": 17,
+          "alternativeTarget": 0,
+          "target": 18
+        },
+        {
+          "missionId": 21,
+          "alternativeTarget": 0,
+          "target": 8000
+        },
+        {
+          "missionId": 3,
+          "alternativeTarget": 0,
+          "target": 15
+        },
+        {
+          "missionId": 14,
+          "alternativeTarget": 0,
+          "target": 7
+        }
+      ]
+    }
+  ],
+  "grandChestRewards": {
+    "r": [
+      {
+        "a": 1,
+        "t": "IG"
+      },
+      {
+        "a": 1,
+        "t": "PL"
+      },
+      {
+        "a": 500,
+        "t": "C"
+      }
+    ]
+  },
+  "chestRewards": [
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "H"
+        },
+        {
+          "a": 1,
+          "t": "R"
+        }
+      ]
+    },
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "Ca"
+        },
+        {
+          "a": 1,
+          "t": "T"
+        }
+      ]
+    },
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "A"
+        },
+        {
+          "a": 200,
+          "t": "C"
+        }
+      ]
+    },
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "L"
+        },
+        {
+          "a": 1,
+          "t": "J"
+        },
+        {
+          "a": 300,
+          "t": "C"
+        }
+      ]
+    }
+  ],
+  "alternativeIds": []
+}

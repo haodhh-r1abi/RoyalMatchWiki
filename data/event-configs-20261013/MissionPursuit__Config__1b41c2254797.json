@@ -1,0 +1,243 @@
+{
+  "fallbackTask": {
+    "missionId": 24,
+    "targets": [
+      500,
+      1000,
+      2000,
+      4000,
+      6000
+    ]
+  },
+  "stages": [
+    {
+      "tasks": [
+        {
+          "missionId": 16,
+          "magnifierAmount": 20,
+          "alternativeTarget": 0,
+          "target": 6
+        },
+        {
+          "missionId": 21,
+          "magnifierAmount": 30,
+          "alternativeTarget": 0,
+          "target": 1000
+        },
+        {
+          "missionId": 10,
+          "magnifierAmount": 40,
+          "alternativeTarget": 0,
+          "target": 5
+        },
+        {
+          "missionId": 44,
+          "magnifierAmount": 50,
+          "alternativeTarget": 50,
+          "target": 8
+        },
+        {
+          "missionId": 12,
+          "magnifierAmount": 60,
+          "alternativeTarget": 0,
+          "target": 5
+        }
+      ]
+    },
+    {
+      "tasks": [
+        {
+          "missionId": 16,
+          "magnifierAmount": 40,
+          "alternativeTarget": 0,
+          "target": 8
+        },
+        {
+          "missionId": 21,
+          "magnifierAmount": 60,
+          "alternativeTarget": 0,
+          "target": 2000
+        },
+        {
+          "missionId": 10,
+          "magnifierAmount": 80,
+          "alternativeTarget": 0,
+          "target": 15
+        },
+        {
+          "missionId": 44,
+          "magnifierAmount": 100,
+          "alternativeTarget": 100,
+          "target": 9
+        },
+        {
+          "missionId": 12,
+          "magnifierAmount": 120,
+          "alternativeTarget": 0,
+          "target": 15
+        }
+      ]
+    },
+    {
+      "tasks": [
+        {
+          "missionId": 16,
+          "magnifierAmount": 60,
+          "alternativeTarget": 0,
+          "target": 10
+        },
+        {
+          "missionId": 21,
+          "magnifierAmount": 90,
+          "alternativeTarget": 0,
+          "target": 3000
+        },
+        {
+          "missionId": 10,
+          "magnifierAmount": 120,
+          "alternativeTarget": 0,
+          "target": 30
+        },
+        {
+          "missionId": 44,
+          "magnifierAmount": 150,
+          "alternativeTarget": 200,
+          "target": 10
+        },
+        {
+          "missionId": 12,
+          "magnifierAmount": 180,
+          "alternativeTarget": 0,
+          "target": 30
+        }
+      ]
+    },
+    {
+      "tasks": [
+        {
+          "missionId": 16,
+          "magnifierAmount": 80,
+          "alternativeTarget": 0,
+          "target": 12
+        },
+        {
+          "missionId": 21,
+          "magnifierAmount": 120,
+          "alternativeTarget": 0,
+          "target": 5000
+        },
+        {
+          "missionId": 10,
+          "magnifierAmount": 160,
+          "alternativeTarget": 0,
+          "target": 50
+        },
+        {
+          "missionId": 44,
+          "magnifierAmount": 200,
+          "alternativeTarget": 400,
+          "target": 11
+        },
+        {
+          "missionId": 12,
+          "magnifierAmount": 240,
+          "alternativeTarget": 0,
+          "target": 50
+        }
+      ]
+    },
+    {
+      "tasks": [
+        {
+          "missionId": 16,
+          "magnifierAmount": 100,
+          "alternativeTarget": 0,
+          "target": 15
+        },
+        {
+          "missionId": 21,
+          "magnifierAmount": 150,
+          "alternativeTarget": 0,
+          "target": 8000
+        },
+        {
+          "missionId": 10,
+          "magnifierAmount": 200,
+          "alternativeTarget": 0,
+          "target": 80
+        },
+        {
+          "missionId": 44,
+          "magnifierAmount": 250,
+          "alternativeTarget": 600,
+          "target": 12
+        },
+        {
+          "missionId": 12,
+          "magnifierAmount": 300,
+          "alternativeTarget": 0,
+          "target": 70
+        }
+      ]
+    }
+  ],
+  "chestRewards": [
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "H"
+        },
+        {
+          "a": 1,
+          "t": "R"
+        }
+      ],
+      "target": 500
+    },
+    {
+      "r": [
+        {
+          "a": 1,
+          "t": "A"
+        },
+        {
+          "a": 1,
+          "t": "Ca"
+        },
+        {
+          "a": 1,
+          "t": "T"
+        },
+        {
+          "a": 1,
+          "t": "L"
+        }
+      ],
+      "target": 1500
+    },
+    {
+      "r": [
+        {
+          "a": 1000,
+          "t": "C"
+        },
+        {
+          "a": 1,
+          "t": "PL"
+        },
+        {
+          "a": 1,
+          "t": "IG"
+        }
+      ],
+      "target": 3000
+    }
+  ],
+  "alternativeIds": [
+    {
+      "missionId": 44,
+      "alternativeMissionId": 26
+    }
+  ]
+}

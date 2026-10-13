@@ -1,0 +1,21 @@
+{
+  "app_version": "38174",
+  "request_count": 99,
+  "config_occurrences": 11,
+  "unique_config_files": 10,
+  "live_features": [
+    "AncientAdventure",
+    "BalloonRise",
+    "DragonNest",
+    "HiddenTemple",
+    "MagicCauldron",
+    "MissionControl",
+    "MissionPursuit",
+    "PuzzleBreak",
+    "SeasonalCardCollection",
+    "TrainJourney"
+  ],
+  "no_enter_claim_progress_update": true,
+  "current_account_team_present": false,
+  "scope": "34 GDD event features; Ping0; GetInfo baseline; version-only1–10; known historical versions/IDs; bounded event IDs explicitly returned in SCC config315."
+}
