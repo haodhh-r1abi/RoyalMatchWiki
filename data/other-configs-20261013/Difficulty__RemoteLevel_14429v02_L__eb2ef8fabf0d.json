@@ -1,0 +1,361 @@
+{
+  "Name": "14429v02_L",
+  "Move": 20,
+  "Goals": [
+    {
+      "Goal": 101,
+      "Count": 39
+    },
+    {
+      "Goal": 55,
+      "Count": 2
+    },
+    {
+      "Goal": 49,
+      "Count": 81
+    },
+    {
+      "Goal": 41,
+      "Count": 12,
+      "IsFromSettings": true
+    }
+  ],
+  "Grid": {
+    "Items": [
+      14,
+      14,
+      14,
+      383,
+      383,
+      383,
+      383,
+      383,
+      383,
+      14,
+      14,
+      14,
+      383,
+      383,
+      383,
+      383,
+      383,
+      383,
+      14,
+      14,
+      211,
+      383,
+      383,
+      179,
+      180,
+      179,
+      180,
+      14,
+      211,
+      14,
+      383,
+      383,
+      169,
+      170,
+      169,
+      170,
+      14,
+      14,
+      211,
+      383,
+      383,
+      0,
+      0,
+      0,
+      0,
+      14,
+      14,
+      14,
+      383,
+      383,
+      14,
+      14,
+      14,
+      14,
+      11,
+      11,
+      11,
+      383,
+      383,
+      14,
+      14,
+      14,
+      14,
+      148,
+      148,
+      148,
+      383,
+      383,
+      211,
+      14,
+      14,
+      14,
+      383,
+      383,
+      383,
+      383,
+      383,
+      14,
+      14,
+      14,
+      14,
+      383,
+      383,
+      383,
+      383,
+      383,
+      211,
+      14,
+      14,
+      14,
+      383,
+      383,
+      383,
+      383,
+      383,
+      211,
+      14,
+      14,
+      14
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Jelly": 156
+      },
+      {
+        "Jelly": 156
+      },
+      {
+        "Jelly": 156
+      },
+      {
+        "Jelly": 156
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Jelly": 156
+      },
+      {
+        "Jelly": 156
+      },
+      {
+        "Jelly": 156
+      },
+      {
+        "Jelly": 156
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 35,
+      "Count": 3
+    },
+    {
+      "Type": 109,
+      "Count": 39
+    },
+    {
+      "Type": 51,
+      "Count": 2
+    },
+    {
+      "Type": -3,
+      "Count": 81
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "JellyReceivableCellCount": 89,
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

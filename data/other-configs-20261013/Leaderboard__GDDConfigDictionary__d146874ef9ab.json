@@ -1,0 +1,213 @@
+{
+  "feature": "Leaderboard",
+  "configs": [
+    {
+      "source": "static array",
+      "key": "LeaderboardTabs",
+      "type": "enum",
+      "value": "None=0, Weekly=1, Friends=2, Players=3, Teams=4",
+      "meaning": "4 tab trong section Leaderboard",
+      "where": "Sections.Leaderboard.LeaderboardTabs"
+    },
+    {
+      "source": "static array",
+      "key": "LeaderboardNotificationReason",
+      "type": "enum",
+      "value": "WeeklyClaim=0, WeeklyFinish=1, WeeklyRankUp=2, FacebookReconnect=3, SuggestionMainTutorial=4, FriendRequest=5, InviteFriendsAvatarTooltip=6",
+      "meaning": "7 lý do hiện chấm đỏ trên tab",
+      "where": "Sections.Leaderboard.LeaderboardNotificationReason"
+    },
+    {
+      "source": "static array",
+      "key": "LeaderboardInfoType",
+      "type": "enum",
+      "value": "None=0, ScoresOnly=1, WithBasicUserData=2",
+      "meaning": "Mức chi tiết dữ liệu server trả về",
+      "where": "Protocol.LeaderboardInfoType"
+    },
+    {
+      "source": "static array",
+      "key": "FriendType",
+      "type": "enum",
+      "value": "Requested=0, Friend=1, Pending=2, Removed=3, Blocked=4",
+      "meaning": "Quan hệ bạn bè lưu ngay trong bảng Leader",
+      "where": "Protocol.FriendType"
+    },
+    {
+      "source": "config class",
+      "key": "Leader (21 truong)",
+      "type": "struct",
+      "value": "byte Type, long UserId, string UserName, long TeamId, string TeamName, int TeamLogo, int Level, int LeagueLevel, long LevelUpdateTime, long FacebookId, bool HasSpecialNickname, int WorldCupBadgeType, string WorldCupCountryCode, int AvatarId, int FrameId, int StyledNameId, int ThemeId, int BadgeId, FriendType FriendType, int KnightType, sbyte LeagueTier",
+      "meaning": "Một dòng trong bảng xếp hạng",
+      "where": "Storage.Tables.Leader"
+    },
+    {
+      "source": "config class",
+      "key": "LeaderboardRowData",
+      "type": "class",
+      "value": "int rank, Leader leader, ALeaderboardScrollView scrollView, byte shouldDecreaseNameSize, byte shouldDecreaseTeamSize, bool isMe",
+      "meaning": "Dữ liệu một dòng trên UI",
+      "where": "Sections.Leaderboard.Friends.LeaderboardRowData"
+    },
+    {
+      "source": "static array",
+      "key": "ExtractCountry - bang ma quoc gia",
+      "type": "string[]",
+      "value": "AE, AF, AR, AT, AU, AZ, ... (kèm tên quốc gia nhiều ngôn ngữ: 'Afghanestan', 'Al-Yaman', 'Al-'Urdun', 'Amerruk'...)",
+      "meaning": "Ánh xạ tên quốc gia (nhiều ngôn ngữ) sang mã 2 chữ",
+      "where": "LeaderboardManager.ExtractCountry"
+    },
+    {
+      "source": "static array",
+      "key": "ExtractState - bang ma bang cua My",
+      "type": "string[]",
+      "value": "AK, AL, AR, AZ, CA, CO, ... với tên đầy đủ Alabama, Alaska, Arizona, Arkansas...",
+      "meaning": "Ánh xạ tên bang Mỹ sang mã 2 chữ",
+      "where": "LeaderboardManager.ExtractState"
+    },
+    {
+      "source": "json default",
+      "key": "weekly_leaderboard r[0]",
+      "type": "RewardItemPacket",
+      "value": "2 R + 2 T + 2 L + 2 H + 2 A + 2 Ca + 2 J",
+      "meaning": "Thưởng hạng 1 bảng tuần (2 mỗi loại booster)",
+      "where": "Resources/weekly_leaderboard_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "weekly_leaderboard r[1]",
+      "type": "RewardItemPacket",
+      "value": "1 Ca (Cannon) + 1 A (Arrow)",
+      "meaning": "Thưởng hạng 2 bảng tuần",
+      "where": "Resources/weekly_leaderboard_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "weekly_leaderboard r[2]",
+      "type": "RewardItemPacket",
+      "value": "1 H (Hammer)",
+      "meaning": "Thưởng hạng 3 bảng tuần",
+      "where": "Resources/weekly_leaderboard_default_config.json"
+    },
+    {
+      "source": "code const",
+      "key": "WeeklyLeaderboardManager.UnlockLevel",
+      "type": "int",
+      "value": "47",
+      "meaning": "Level mở khóa bảng tuần",
+      "where": "WeeklyLeaderboardManager"
+    },
+    {
+      "source": "code const",
+      "key": "WeeklyLeaderboardManager.MaxRewardedRank",
+      "type": "int",
+      "value": "3",
+      "meaning": "Chỉ 3 hạng đầu có thưởng",
+      "where": "WeeklyLeaderboardManager"
+    },
+    {
+      "source": "code const",
+      "key": "WeeklyLeaderboardManager.TenSeconds / FiveSeconds / OneDayInMs",
+      "type": "int / long",
+      "value": "10000 / 5000 / 86400000",
+      "meaning": "Các mốc thời gian của bảng tuần",
+      "where": "WeeklyLeaderboardManager"
+    },
+    {
+      "source": "code const",
+      "key": "SQL - ClearLeaderboard",
+      "type": "string",
+      "value": "DELETE FROM Leader WHERE Type = ?",
+      "meaning": "Xóa một bảng theo loại",
+      "where": "UserLeaderboard.ClearLeaderboard / AppLeaderboard.ClearLeaderboard"
+    },
+    {
+      "source": "code const",
+      "key": "SQL - ClearCurrentFriends",
+      "type": "string",
+      "value": "DELETE FROM Leader WHERE Type = 1 and FriendType = 1",
+      "meaning": "Xóa bạn bè hiện tại (Type = 1 là bảng bạn bè)",
+      "where": "UserLeaderboard.ClearCurrentFriends"
+    },
+    {
+      "source": "code const",
+      "key": "SQL - ClearPendingFriends",
+      "type": "string",
+      "value": "DELETE FROM Leader WHERE type = ? and FriendType = 2",
+      "meaning": "Xóa yêu cầu chờ (FriendType = 2 = Pending)",
+      "where": "UserLeaderboard.ClearPendingFriends"
+    },
+    {
+      "source": "code const",
+      "key": "SQL - GetAllFriendsWithFacebookId",
+      "type": "string",
+      "value": "SELECT FacebookId FROM Leader WHERE Type = 1",
+      "meaning": "Lấy facebookId của bạn bè",
+      "where": "UserLeaderboard.GetAllFriendsWithFacebookId"
+    },
+    {
+      "source": "code const",
+      "key": "SQL - GetMyScore / GetTeamLevel",
+      "type": "string",
+      "value": "SELECT Level FROM Leader WHERE UserId = {0} AND Type = {1} / SELECT Level FROM Leader WHERE TeamId = {0} AND Type = {1}",
+      "meaning": "Lấy điểm (level) của mình / của đội",
+      "where": "UserLeaderboard"
+    },
+    {
+      "source": "storage key",
+      "key": "LocalName",
+      "type": "string",
+      "value": "-",
+      "meaning": "Tên khu vực (dùng để suy quốc gia/bang)",
+      "where": "KeyValue (LeaderboardManager.ParseLocalName)"
+    },
+    {
+      "source": "storage key",
+      "key": "Leader (SQLite table)",
+      "type": "table",
+      "value": "-",
+      "meaning": "Bảng chung cho cả UserLeaderboard và AppLeaderboard, phân biệt bằng cột Type",
+      "where": "DatabaseService"
+    },
+    {
+      "source": "server info",
+      "key": "LeaderboardRequest / LeaderboardResponse / LeaderboardUserInfo / LeaderboardTeamInfo",
+      "type": "FlatBuffers Table",
+      "value": "server",
+      "meaning": "Gói tin bảng xếp hạng",
+      "where": "Royal.Infrastructure.Services.Backend.Protocol"
+    },
+    {
+      "source": "config class",
+      "key": "HTTP command Leaderboard",
+      "type": "class",
+      "value": "LeaderboardHttpCommand; WeeklyLeaderboard: EnterWeeklyLeaderboardHttpCommand, GetWeeklyLeaderboardInfoHttpCommand, ClaimWeeklyLeaderboardHttpCommand; RoyalWorldCup: GetRoyalWorldCupLeaderboardHttpCommand",
+      "meaning": "Các lệnh HTTP liên quan bảng xếp hạng",
+      "where": "Royal.Infrastructure.Services.Backend.Http.Command"
+    },
+    {
+      "source": "code const",
+      "key": "WeeklyLeaderboard deeplink",
+      "type": "string",
+      "value": "weeklycontest",
+      "meaning": "Deeplink mở bảng tuần",
+      "where": "WeeklyLeaderboardManager.GetDeeplinkAction"
+    },
+    {
+      "source": "code const",
+      "key": "Nguon thuong bang tuan",
+      "type": "string",
+      "value": "WL-{0}",
+      "meaning": "Nguồn ghi trong log kinh tế khi nhận thưởng tuần",
+      "where": "WeeklyLeaderboardManager.GiveRewards"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.LeaderboardManager",
+    "Royal.Infrastructure.Services.Storage.Tables.UserLeaderboard",
+    "Royal.Infrastructure.Services.Storage.Tables.AppLeaderboard",
+    "Royal.Infrastructure.Services.Storage.Tables.Leader",
+    "Royal.Player.Context.Units.WeeklyLeaderboardManager"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

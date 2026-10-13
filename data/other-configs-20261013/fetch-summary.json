@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-13",
+  "app_version": "38174",
+  "request_count": 9,
+  "config_occurrences": 11,
+  "no_enter_claim_purchase_progress_update": true,
+  "team_present": false,
+  "journey_offer_read_skipped_without_observed_selector": true,
+  "skip_personal_data_only_requests": [
+    "GetFriendsRequest",
+    "GetProfileRequest",
+    "GetStatRequest",
+    "GetAllTimePurchaseRequest",
+    "GetTeamChatDataRequest",
+    "GetOnlineUsersRequest"
+  ],
+  "no_admin_or_payment_creation_requests": true
+}

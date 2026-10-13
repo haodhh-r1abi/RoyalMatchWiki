@@ -1,0 +1,243 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Scenes.Game.Levels.Units.Ego.EgoManager",
+      "field": "PriceChangeAbEgoMoveCount",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 397288
+    },
+    {
+      "manager": "Royal.Scenes.Game.Levels.Units.Ego.EgoManager",
+      "field": "DefaultEgoMoveCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 397289
+    },
+    {
+      "manager": "Royal.Scenes.Game.Levels.Units.Ego.EgoManager",
+      "field": "SecondWarningRemoveLevel",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 397290
+    },
+    {
+      "manager": "Royal.Player.Context.Units.EgoExtraMovesHelper",
+      "field": "MinimumFailCountBeforeMoveBoost",
+      "type": "int",
+      "value_expression": "4",
+      "dump_line": 403419
+    },
+    {
+      "manager": "Royal.Player.Context.Units.EgoExtraMovesHelper",
+      "field": "MoveIncrementCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 403420
+    },
+    {
+      "manager": "Royal.Player.Context.Units.EgoExtraMovesHelper",
+      "field": "FailIncrementLimit",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 403421
+    },
+    {
+      "manager": "Royal.Player.Context.Units.EgoExtraMovesHelper",
+      "field": "FailIncrementLimitForPriceChangeAb",
+      "type": "int",
+      "value_expression": "9",
+      "dump_line": 403422
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "Play",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 281200
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "Exit",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 281201
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "Coin",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 281202
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "RoyalPass",
+      "type": "int",
+      "value_expression": "4",
+      "dump_line": 281203
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "Offer",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 281204
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "EgoOffer",
+      "type": "int",
+      "value_expression": "6",
+      "dump_line": 281205
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "Shop",
+      "type": "int",
+      "value_expression": "7",
+      "dump_line": 281206
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "CoinShopEgoOffer",
+      "type": "int",
+      "value_expression": "8",
+      "dump_line": 281207
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "WeeklyPass",
+      "type": "int",
+      "value_expression": "9",
+      "dump_line": 281208
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "JourneyOffer",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 281209
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "RewardedAdPlay",
+      "type": "int",
+      "value_expression": "11",
+      "dump_line": 281210
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+      "field": "EgoButtonDelay",
+      "type": "float",
+      "value_expression": "0.5",
+      "dump_line": 281233
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoPurchaseStrategy",
+      "field": "OriginEgo",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 281596
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoPurchaseStrategy",
+      "field": "OriginCoinIcon",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 281597
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoPurchaseStrategy",
+      "field": "OriginPass",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 281598
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoPurchaseStrategy",
+      "field": "OriginOffer",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 281599
+    },
+    {
+      "manager": "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoPurchaseStrategy",
+      "field": "OriginJourneyOffer",
+      "type": "int",
+      "value_expression": "4",
+      "dump_line": 281600
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "NoAdsBundleOverrideMaxCoinBoughtThreshold",
+      "type": "int",
+      "value_expression": "5000",
+      "dump_line": 30559
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single2CoinAmount",
+      "type": "int",
+      "value_expression": "1000",
+      "dump_line": 30560
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single8CoinAmount",
+      "type": "int",
+      "value_expression": "5000",
+      "dump_line": 30561
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single15CoinAmount",
+      "type": "int",
+      "value_expression": "10000",
+      "dump_line": 30562
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single30CoinAmount",
+      "type": "int",
+      "value_expression": "25000",
+      "dump_line": 30563
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single55CoinAmount",
+      "type": "int",
+      "value_expression": "50000",
+      "dump_line": 30564
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single100CoinAmount",
+      "type": "int",
+      "value_expression": "100000",
+      "dump_line": 30565
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "RoyalBoostBundleOfferUnlockLevel",
+      "type": "int",
+      "value_expression": "50",
+      "dump_line": 30566
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "ShopBundlePriority",
+      "type": "int",
+      "value_expression": "3000",
+      "dump_line": 30567
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "ShopCoinPackagePriority",
+      "type": "int",
+      "value_expression": "4000",
+      "dump_line": 30568
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

@@ -1,0 +1,1776 @@
+{
+  "feature": "Shop",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "APricingStrategy.Single2CoinAmount",
+      "type": "int",
+      "value": "1000",
+      "meaning": "Số coin của gói single.2 (1.99 USD)",
+      "where": "APricingStrategy (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.Single8CoinAmount",
+      "type": "int",
+      "value": "5000",
+      "meaning": "Số coin của gói single.8 (7.99 USD)",
+      "where": "APricingStrategy (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.Single15CoinAmount",
+      "type": "int",
+      "value": "10000",
+      "meaning": "Số coin của gói single.15 (14.99 USD)",
+      "where": "APricingStrategy (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.Single30CoinAmount",
+      "type": "int",
+      "value": "25000",
+      "meaning": "Số coin của gói single.30 (29.99 USD)",
+      "where": "APricingStrategy (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.Single55CoinAmount",
+      "type": "int",
+      "value": "50000",
+      "meaning": "Số coin của gói single.55 (54.99 USD)",
+      "where": "APricingStrategy (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.Single100CoinAmount",
+      "type": "int",
+      "value": "100000",
+      "meaning": "Số coin của gói single.100 (99.99 USD)",
+      "where": "APricingStrategy (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.ShopBundlePriority",
+      "type": "int",
+      "value": "3000",
+      "meaning": "Ưu tiên sắp xếp bundle trong shop",
+      "where": "APricingStrategy"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.ShopCoinPackagePriority",
+      "type": "int",
+      "value": "4000",
+      "meaning": "Ưu tiên sắp xếp gói coin lẻ trong shop",
+      "where": "APricingStrategy"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.RoyalBoostBundleOfferUnlockLevel",
+      "type": "int",
+      "value": "50",
+      "meaning": "Level mở gói Royal Boost bundle",
+      "where": "APricingStrategy"
+    },
+    {
+      "source": "code const",
+      "key": "APricingStrategy.NoAdsBundleOverrideMaxCoinBoughtThreshold",
+      "type": "int",
+      "value": "5000",
+      "meaning": "Ngưỡng coin đã mua để gói No Ads Bundle ghi đè gói khác",
+      "where": "APricingStrategy"
+    },
+    {
+      "source": "code enum",
+      "key": "PricingStrategies",
+      "type": "enum",
+      "value": "Default = 0, IncreasedPrice = 1, LessContent = 2, LessContentV2 = 3",
+      "meaning": "Bốn chiến lược giá theo segment; build này hiện thực DefaultPricingStrategy và LessContentPricingV2Strategy",
+      "where": "PurchaseHelper.CreatePricingStrategy"
+    },
+    {
+      "source": "code const",
+      "key": "Ten bundle mac dinh",
+      "type": "string",
+      "value": "DukeTreasure, PrinceTreasure, QueenTreasure, KingTreasure, RoyalTreasure, SuperiorTreasure",
+      "meaning": "6 gói bundle coin + booster",
+      "where": "DefaultPricingStrategy.CreateDefaultProducts"
+    },
+    {
+      "source": "code const",
+      "key": "Nhan tren goi",
+      "type": "string",
+      "value": "Popular, BestValue, SpecialOffer",
+      "meaning": "ribbonText hiện trên gói trong shop",
+      "where": "DefaultPricingStrategy.CreateDefaultProducts"
+    },
+    {
+      "source": "code const",
+      "key": "PaymentCoinBonusConfig (bundle)",
+      "type": "int",
+      "value": "(moreCoinBonus, firstPaymentCoinBonus) = (100, 200), (100, 200), (200, 500), (250, 1000), (750, 2000), (1500, 4000), (2000, 5000)",
+      "meaning": "Coin thưởng thêm và coin thưởng lần mua đầu cho 7 gói bundle mặc định",
+      "where": "DefaultPricingStrategy.CreateDefaultProducts (đọc bằng gd_condense)"
+    },
+    {
+      "source": "code const",
+      "key": "PaymentCoinBonusConfig (coin le)",
+      "type": "int",
+      "value": "(moreCoinBonus, firstPaymentCoinBonus) = (100, 100), (200, 500), (250, 1000), (750, 2000), ...",
+      "meaning": "Coin thưởng cho các gói coin lẻ",
+      "where": "DefaultPricingStrategy.CreateDefaultProducts"
+    },
+    {
+      "source": "code field",
+      "key": "ShopPackageConfig",
+      "type": "struct",
+      "value": "purchaseProduct, isBundlePackage, isSpecialOffer, title, dynamicOfferName, coins, hammerAmount/Minutes, cannonAmount/Minutes, arrowAmount/Minutes, jesterHatAmount/Minutes, rocketAmount/Minutes, tntAmount/Minutes, lightballAmount/Minutes, elixirAmount, lifetimeMinutes, frameViewId, styledNameViewId, isSpecialItemAlternative, ribbonText, eventsMultiplierMinutes, energyCrystalAmount, coinBonusConfig, và 18 cờ phân loại gói (isRoyalPassPackage, isTeamOfferPackage, isRoyalFavorPackage, isDynamicOffer, isRoyalBoostPackage, isCoinShopPackage, isWeeklyPassPackage, isMultiplierTokenPackage, isJourneyOfferPackage, isMergeSmithOfferPackage, isExtremelyHardLevelOfferPackage, isNoAdsPackage, isNoAdsBundlePackage, isLadderOfferPackage, isShortExpeditionEventLowDailyOfferPackage, isShortExpeditionEventHighDailyOfferPackage, isShortExpeditionEventLowPassPackage, isShortExpeditionEventHighPassPackage, isShortExpeditionEventEnergyShopPackage, isShortExpeditionEventEndOfferPackage)",
+      "meaning": "Mô tả đầy đủ nội dung một gói bán",
+      "where": "Royal.Scenes.Home.Ui.Sections.Shop.Package.ShopPackageConfig"
+    },
+    {
+      "source": "code const",
+      "key": "PurchaseManager.PurchaseTimeoutFrameCountNative",
+      "type": "int",
+      "value": "4800",
+      "meaning": "Số frame chờ tối đa cho giao dịch qua store hệ điều hành",
+      "where": "PurchaseManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "PurchaseManager.PurchaseTimeoutFrameCountXsolla",
+      "type": "int",
+      "value": "900",
+      "meaning": "Số frame chờ tối đa cho giao dịch Xsolla",
+      "where": "PurchaseManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "PurchaseManager.NativeDefaultPurchaseDelayFrames",
+      "type": "int",
+      "value": "80",
+      "meaning": "Frame trễ trước khi mở cửa sổ mua (native)",
+      "where": "PurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "PurchaseManager.XsollaDefaultPurchaseDelayFrames",
+      "type": "int",
+      "value": "20",
+      "meaning": "Frame trễ trước khi mở trang thanh toán Xsolla",
+      "where": "PurchaseManager"
+    },
+    {
+      "source": "code enum",
+      "key": "PurchaseStatus",
+      "type": "enum",
+      "value": "PurchaseCancelled = 0, PurchaseFailed = 1, VerificationFailed = 2, VerificationSuccess = 3, VerificationNotCompleted = 4, VerificationOnClient = 5, PurchaseDisabled = 6, PurchaseTimeout = 7, PurchaseWasAddedBefore = 8",
+      "meaning": "Kết quả một giao dịch",
+      "where": "Royal.Infrastructure.Services.Native.Purchase.PurchaseStatus"
+    },
+    {
+      "source": "code enum",
+      "key": "PurchaseVerificationStatusCode",
+      "type": "enum",
+      "value": "Verified = 0, UsedBefore = 1, Fail = 2, VerificationNotCompleted = 3",
+      "meaning": "Kết quả xác thực trên server",
+      "where": "Royal.Infrastructure.Services.Backend.Protocol.PurchaseVerificationStatusCode"
+    },
+    {
+      "source": "code enum",
+      "key": "PurchasePlatform",
+      "type": "enum",
+      "value": "IOS = 0, Android = 1, Editor = 2, Huawei = 3, Samsung = 4, Amazon = 5, Xsolla = 6",
+      "meaning": "Nền tảng thanh toán gửi lên server",
+      "where": "Royal.Infrastructure.Services.Backend.Protocol.PurchasePlatform"
+    },
+    {
+      "source": "code enum",
+      "key": "PurchaseResultType",
+      "type": "enum",
+      "value": "Coin = 0, Bundle = 1, RoyalPass = 2",
+      "meaning": "Loại kết quả hiện trong dialog BuyCoins",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.BuyCoins.PurchaseResultType"
+    },
+    {
+      "source": "code const",
+      "key": "XsollaPurchaseManager.ProjectId",
+      "type": "int",
+      "value": "299375",
+      "meaning": "Mã project Xsolla của Royal Match",
+      "where": "XsollaPurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "XsollaPurchaseManager.PaymentDomain",
+      "type": "string",
+      "value": "https://store.royalmatch.com",
+      "meaning": "Cửa hàng web thanh toán ngoài",
+      "where": "XsollaPurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "XsollaPurchaseManager.PaymentDomainSandbox",
+      "type": "string",
+      "value": "https://sandbox-secure.xsolla.com",
+      "meaning": "Môi trường thử nghiệm",
+      "where": "XsollaPurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "XsollaPurchaseManager.RedirectUniversalLink",
+      "type": "string",
+      "value": "https://external.royalmatch.com/paymentSuccess/",
+      "meaning": "Link quay về app sau khi thanh toán",
+      "where": "XsollaPurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "XsollaPurchaseManager.XsollaCustomTheme",
+      "type": "string",
+      "value": "693bd30373e89f6a1fe8c636",
+      "meaning": "Mã theme giao diện trang thanh toán",
+      "where": "XsollaPurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "XsollaPurchaseManager.PurchaseResultSuccess / PurchaseResultFailure",
+      "type": "string",
+      "value": "1 / 0",
+      "meaning": "Mã kết quả trả về từ trang thanh toán",
+      "where": "XsollaPurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "XsollaPurchaseManager.CountriesDelimiter",
+      "type": "char",
+      "value": ", (dấu phẩy)",
+      "meaning": "Ký tự ngăn cách danh sách quốc gia được phép",
+      "where": "XsollaPurchaseManager"
+    },
+    {
+      "source": "code const",
+      "key": "ExternalPaymentFirstPurchaseBonusHelper.NotificationUnlockLevel",
+      "type": "int",
+      "value": "52",
+      "meaning": "Level bắt đầu hiện thông báo thưởng lần đầu thanh toán ngoài",
+      "where": "ExternalPaymentFirstPurchaseBonusHelper (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "CoinShopManager.UnlockLevel",
+      "type": "int",
+      "value": "100",
+      "meaning": "Level mở Coin Shop",
+      "where": "CoinShopManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "CoinShopManager.CoinShopItemCount",
+      "type": "int",
+      "value": "6",
+      "meaning": "Số món trong một đợt Coin Shop",
+      "where": "CoinShopManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "CoinShopManager.NextEventAutoFetchThresholdInMs",
+      "type": "long",
+      "value": "-2000",
+      "meaning": "Tự động xin cấu hình đợt kế tiếp khi còn -2000 ms (tức đã quá hạn 2 giây)",
+      "where": "CoinShopManager"
+    },
+    {
+      "source": "code enum",
+      "key": "CoinShopViewType",
+      "type": "enum",
+      "value": "Items3 = 0, Items6 = 1",
+      "meaning": "Hai kiểu bố cục Coin Shop (prefab ShopMenuCoinShop3Items / ShopMenuCoinShop6Items)",
+      "where": "Royal.Scenes.Home.Ui.Sections.Shop.CoinShop.Scripts.CoinShopViewType"
+    },
+    {
+      "source": "code enum",
+      "key": "CoinShopViewPriorityOption",
+      "type": "enum",
+      "value": "Default = 0, ForceTop = 1, ForceBottom = 2",
+      "meaning": "Ưu tiên vị trí Coin Shop trong danh sách offer",
+      "where": "CoinShopViewPriorityOption"
+    },
+    {
+      "source": "code const",
+      "key": "CoinShopProgress bit layout",
+      "type": "int",
+      "value": "EventIdStart = 0, EventIdEnd = 11, ShopTutorialShownStart = 12, ShopNewEventNotificationShownStart = 13, PackagePurchasedStartIndex = 33, PackagePurchasedEndIndex = 62",
+      "meaning": "Bit-packed tiến độ Coin Shop trong một số long",
+      "where": "Royal.Player.Context.Data.Persistent.CoinShopProgress"
+    },
+    {
+      "source": "code field",
+      "key": "CoinShopConfig",
+      "type": "class",
+      "value": "v (version), offerPriorityFavor, priorityOption, itemPairs (CoinShopPurchasableItemPair[])",
+      "meaning": "Cấu hình một đợt Coin Shop do server gửi",
+      "where": "Royal.Scenes.Home.Ui.Sections.Shop.CoinShop.Scripts.CoinShopConfig"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle Coin Shop",
+      "type": "string",
+      "value": "GroupName 'coin_shop'; bundle con: coin_shop_menu_v2, coin_shop_items, coin_shop_ego, coin_shop_section, coin_shop_anvil_item, coin_shop_energy_crystal_item, coin_shop_puzzle_break_item_v2",
+      "meaning": "Asset của Coin Shop",
+      "where": "CoinShopBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Prefab mon hang Coin Shop",
+      "type": "string",
+      "value": "CoinShopItemHammer, CoinShopItemArrow, CoinShopItemCannon, CoinShopItemJester, CoinShopItemRocket, CoinShopItemTnt, CoinShopItemLightball, CoinShopItemUnlimitedRocket, CoinShopItemUnlimitedTnt, CoinShopItemUnlimitedLightball, CoinShopItemElixir, CoinShopItemMagicBall, CoinShopItemPickaxe, CoinShopItemTicket, CoinShopItemShip, CoinShopItemPuzzlePiece, CoinShopItemAnvil, CoinShopItemEnergyCrystal, CoinShopItemSeasonalCardPack2/3/4/6/Guaranteed",
+      "meaning": "23 loại món có thể bán trong Coin Shop",
+      "where": "CoinShopBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Prefab UI Coin Shop",
+      "type": "string",
+      "value": "ShopMenuCoinShop3Items, ShopMenuCoinShop6Items, ShopSectionCoinShopItem, CoinShopBuyAcceptDialog, CoinShopTutorial, CoinShopEgoOffer",
+      "meaning": "Giao diện Coin Shop",
+      "where": "CoinShopBundleGroupInfo"
+    },
+    {
+      "source": "code const",
+      "key": "Product id dac biet",
+      "type": "string",
+      "value": "pass.5 / pass.10 (Royal Pass), stagedpass1.10 / stagedpass2.10 / stagedpass2.15 (Royal Pass theo giai đoạn), weeklypass.5 / weeklypass.8, egooffer.1 / egooffer.2 (non-payer tier 1/2), egooffer.7 / egooffer.9 (payer tier 1/2), multiplier.8 (Royal Boost), multipliertoken.10, progressoffer.1/5/15/25/50/100 (Journey), anvilpass.5 / anvilpass.8 (Merge Smith), extremelyhardleveloffer.1 (non-payer) / .3 (payer), noads.8, noadsbundle.12, worldcupcosmetic.20 (khung) / worldcupcosmetic2.20 (tên kiểu) / worldcupcosmetic.30 (cả hai), seasonaloffer.1/10/20, energyoffer.1/2/4/6/9 (low daily) và .5/8/10/15 (high daily), energypass.5 / energypass.10, energysingle3.3 và energysingle.6/10/20/25/30/40/50/100, ladder.0 (sản phẩm miễn phí)",
+      "meaning": "Ánh xạ product id sang tính năng cụ thể",
+      "where": "PurchaseHelper (các getter product id)"
+    },
+    {
+      "source": "storage key",
+      "key": "StoredProducts",
+      "type": "string",
+      "value": "client",
+      "meaning": "Bảng giá lấy từ store, dùng khi offline",
+      "where": "PurchaseHelper.StoreProducts / GetStoredProducts"
+    },
+    {
+      "source": "storage key",
+      "key": "PurchaseDisabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Tắt mua hàng hoàn toàn",
+      "where": "PurchaseManager.get_PurchaseDisabled / set_PurchaseDisabled"
+    },
+    {
+      "source": "storage key",
+      "key": "LastPurchaseTime",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Mốc thời gian mua hàng gần nhất (dùng cho segment và offer)",
+      "where": "PurchaseManager.SetLastPurchaseTime"
+    },
+    {
+      "source": "storage key",
+      "key": "XsollaToken / XsollaTokenExpiryTime",
+      "type": "string / long",
+      "value": "client",
+      "meaning": "Token phiên thanh toán ngoài và hạn dùng",
+      "where": "XsollaPurchaseManager.get_AccessToken; PurchaseManager.OnUserChanged"
+    },
+    {
+      "source": "storage key",
+      "key": "ExternalPaymentAvailableCountries / ExternalPaymentCountriesVersion",
+      "type": "string / int",
+      "value": "server override",
+      "meaning": "Danh sách quốc gia được thanh toán ngoài và phiên bản danh sách",
+      "where": "XsollaPurchaseManager.UpdateAvailableCountries"
+    },
+    {
+      "source": "storage key",
+      "key": "VIM",
+      "type": "flag",
+      "value": "client",
+      "meaning": "Verification In Maintenance - đang chờ xác thực trong chế độ bảo trì",
+      "where": "PurchaseManager.OnFocusResume"
+    },
+    {
+      "source": "storage key",
+      "key": "CoinShopConfig / CoinShopConfigVersion",
+      "type": "json / int",
+      "value": "server override",
+      "meaning": "Cấu hình Coin Shop hiện tại",
+      "where": "CoinShopManager.DisableCoinShop"
+    },
+    {
+      "source": "storage key",
+      "key": "ServerEventId / ServerEventEndDate",
+      "type": "int / long",
+      "value": "server override",
+      "meaning": "Id và hạn của đợt Coin Shop hiện tại",
+      "where": "CoinShopData"
+    },
+    {
+      "source": "storage key",
+      "key": "UserOfferSegment / UserSpecialOfferSegment / UserSegmentVersion / UserSpecialOfferSegmentVersion",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Segment quyết định chiến lược giá và nội dung offer",
+      "where": "BasicUserData.UpdateOfferSegment / UpdateSpecialOfferSegment"
+    },
+    {
+      "source": "code const",
+      "key": "BasicUserData bit mua hang",
+      "type": "byte",
+      "value": "PaidUserIndex = 0, MinHighestBoughtBundleIndex = 2, MaxHighestBoughtBundleIndex = 9, MinHighestBoughtSinglePackageIndex = 14, MaxHighestBoughtSinglePackageIndex = 21",
+      "meaning": "Bit ghi nhận đã trả tiền và gói cao nhất đã mua",
+      "where": "Royal.Player.Context.Data.Persistent.BasicUserData"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.conversionoffer.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Conversion offer (chuyển đổi người chơi chưa trả tiền)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.extremelyhardleveloffer.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "Offer cho level cực khó",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.16",
+      "type": "IAP product",
+      "value": "15.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.seasonaloffer.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Seasonal offer theo mùa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.45",
+      "type": "IAP product",
+      "value": "44.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.seasonaloffer.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Seasonal offer theo mùa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.stagedpass1.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Royal Pass theo giai đoạn - stage 1",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.4",
+      "type": "IAP product",
+      "value": "3.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.32",
+      "type": "IAP product",
+      "value": "31.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.25",
+      "type": "IAP product",
+      "value": "24.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.6",
+      "type": "IAP product",
+      "value": "5.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.75",
+      "type": "IAP product",
+      "value": "74.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.40",
+      "type": "IAP product",
+      "value": "39.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.80",
+      "type": "IAP product",
+      "value": "79.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.noadsbundle.12",
+      "type": "IAP product",
+      "value": "11.99 USD",
+      "meaning": "Gói tắt quảng cáo + nội dung",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.6",
+      "type": "IAP product",
+      "value": "5.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.60",
+      "type": "IAP product",
+      "value": "59.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.80",
+      "type": "IAP product",
+      "value": "79.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.60",
+      "type": "IAP product",
+      "value": "59.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.80",
+      "type": "IAP product",
+      "value": "79.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.7",
+      "type": "IAP product",
+      "value": "6.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.egooffer.2",
+      "type": "IAP product",
+      "value": "1.99 USD",
+      "meaning": "Gói bán trong dialog hết nước (Ego)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.extremelyhardleveloffer.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Offer cho level cực khó",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.6",
+      "type": "IAP product",
+      "value": "5.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.weeklypass.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Weekly Pass",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.32",
+      "type": "IAP product",
+      "value": "31.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.16",
+      "type": "IAP product",
+      "value": "15.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.2",
+      "type": "IAP product",
+      "value": "1.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.progressoffer.25",
+      "type": "IAP product",
+      "value": "24.99 USD",
+      "meaning": "Journey Offer (thang tiến độ)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.25",
+      "type": "IAP product",
+      "value": "24.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.30",
+      "type": "IAP product",
+      "value": "29.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.30",
+      "type": "IAP product",
+      "value": "29.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.teamoffer.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "Team gift offer (Gold/Silver/Bronze)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.6",
+      "type": "IAP product",
+      "value": "5.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.worldcupcosmetic.30",
+      "type": "IAP product",
+      "value": "29.99 USD",
+      "meaning": "Royal World Cup - cosmetic (khung)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.teamoffer.40",
+      "type": "IAP product",
+      "value": "39.99 USD",
+      "meaning": "Team gift offer (Gold/Silver/Bronze)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.25",
+      "type": "IAP product",
+      "value": "24.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.teamoffer.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Team gift offer (Gold/Silver/Bronze)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.stagedpass2.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Royal Pass theo giai đoạn - stage 2",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.80",
+      "type": "IAP product",
+      "value": "79.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.15",
+      "type": "IAP product",
+      "value": "14.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.2",
+      "type": "IAP product",
+      "value": "1.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.progressoffer.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "Journey Offer (thang tiến độ)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.worldcupcosmetic2.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Royal World Cup - cosmetic (tên kiểu)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.9",
+      "type": "IAP product",
+      "value": "8.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.55",
+      "type": "IAP product",
+      "value": "54.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.7",
+      "type": "IAP product",
+      "value": "6.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.19",
+      "type": "IAP product",
+      "value": "18.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.teamoffer.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Team gift offer (Gold/Silver/Bronze)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.15",
+      "type": "IAP product",
+      "value": "14.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energypass.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "King's Tales - pass",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.7",
+      "type": "IAP product",
+      "value": "6.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.multiplier.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Royal Boost (gói hệ số sự kiện)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.hiddentempleoffer.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Offer sự kiện Hidden Temple",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.2",
+      "type": "IAP product",
+      "value": "1.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.2",
+      "type": "IAP product",
+      "value": "1.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.progressoffer.15",
+      "type": "IAP product",
+      "value": "14.99 USD",
+      "meaning": "Journey Offer (thang tiến độ)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.40",
+      "type": "IAP product",
+      "value": "39.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energypass.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "King's Tales - pass",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.seasonaloffer.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Seasonal offer theo mùa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.9",
+      "type": "IAP product",
+      "value": "8.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.16",
+      "type": "IAP product",
+      "value": "15.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.15",
+      "type": "IAP product",
+      "value": "14.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.15",
+      "type": "IAP product",
+      "value": "14.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.15",
+      "type": "IAP product",
+      "value": "14.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.25",
+      "type": "IAP product",
+      "value": "24.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.stagedpass2.15",
+      "type": "IAP product",
+      "value": "14.99 USD",
+      "meaning": "Royal Pass theo giai đoạn - stage 2",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.38",
+      "type": "IAP product",
+      "value": "37.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.progressoffer.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Journey Offer (thang tiến độ)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.60",
+      "type": "IAP product",
+      "value": "59.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.90",
+      "type": "IAP product",
+      "value": "89.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.noads.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Mua tắt quảng cáo",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.45",
+      "type": "IAP product",
+      "value": "44.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle.30",
+      "type": "IAP product",
+      "value": "29.99 USD",
+      "meaning": "King's Tales - gói energy lẻ",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.egooffer.7",
+      "type": "IAP product",
+      "value": "6.99 USD",
+      "meaning": "Gói bán trong dialog hết nước (Ego)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.75",
+      "type": "IAP product",
+      "value": "74.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.25",
+      "type": "IAP product",
+      "value": "24.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.worldcupcosmetic.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Royal World Cup - cosmetic (khung)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.anvilpass.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Merge Smith pass (anvil)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.conversionoffer.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Conversion offer (chuyển đổi người chơi chưa trả tiền)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.4",
+      "type": "IAP product",
+      "value": "3.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.30",
+      "type": "IAP product",
+      "value": "29.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.30",
+      "type": "IAP product",
+      "value": "29.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.4",
+      "type": "IAP product",
+      "value": "3.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.teamoffer.25",
+      "type": "IAP product",
+      "value": "24.99 USD",
+      "meaning": "Team gift offer (Gold/Silver/Bronze)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.7",
+      "type": "IAP product",
+      "value": "6.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.egooffer.9",
+      "type": "IAP product",
+      "value": "8.99 USD",
+      "meaning": "Gói bán trong dialog hết nước (Ego)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.egooffer.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Gói bán trong dialog hết nước (Ego)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.2",
+      "type": "IAP product",
+      "value": "1.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.anvilpass.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Merge Smith pass (anvil)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energyoffer.4",
+      "type": "IAP product",
+      "value": "3.99 USD",
+      "meaning": "King's Tales (Short Expedition) - daily offer",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.multipliertoken.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Gói Multiplier Token",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.offer.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "Offer theo segment (OfferManager)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.progressoffer.50",
+      "type": "IAP product",
+      "value": "49.99 USD",
+      "meaning": "Journey Offer (thang tiến độ)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.13",
+      "type": "IAP product",
+      "value": "12.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.75",
+      "type": "IAP product",
+      "value": "74.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.55",
+      "type": "IAP product",
+      "value": "54.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.weeklypass.8",
+      "type": "IAP product",
+      "value": "7.99 USD",
+      "meaning": "Weekly Pass",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.progressoffer.1",
+      "type": "IAP product",
+      "value": "0.99 USD",
+      "meaning": "Journey Offer (thang tiến độ)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.6",
+      "type": "IAP product",
+      "value": "5.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.13",
+      "type": "IAP product",
+      "value": "12.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.40",
+      "type": "IAP product",
+      "value": "39.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.teamoffer.13",
+      "type": "IAP product",
+      "value": "12.99 USD",
+      "meaning": "Team gift offer (Gold/Silver/Bronze)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.laddercoin.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "Ladder Offer bán coin",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.40",
+      "type": "IAP product",
+      "value": "39.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.55",
+      "type": "IAP product",
+      "value": "54.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.pass.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Royal Pass",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.energysingle3.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "King's Tales - gói energy lẻ (biến thể 3)",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.single.10",
+      "type": "IAP product",
+      "value": "9.99 USD",
+      "meaning": "Gói coin lẻ (Single) - coin thuần",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.dynamic.20",
+      "type": "IAP product",
+      "value": "19.99 USD",
+      "meaning": "Dynamic Offer do server định nghĩa",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.bundle.100",
+      "type": "IAP product",
+      "value": "99.99 USD",
+      "meaning": "Gói bundle (Duke/Prince/Queen/King/Royal/Superior Treasure) - coin + booster + unlimited",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.ladder.3",
+      "type": "IAP product",
+      "value": "2.99 USD",
+      "meaning": "Ladder Offer - bậc thang mua liên tiếp",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "code const",
+      "key": "com.dreamgames.royal.pass.5",
+      "type": "IAP product",
+      "value": "4.99 USD",
+      "meaning": "Royal Pass",
+      "where": "PurchaseHelper.get_DefaultProductsDictionary (giá mặc định offline; giá thật lấy từ store lúc chạy)"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "StoredProducts (runtime, so luong)",
+      "type": "int",
+      "value": "157 san pham (currency VND)",
+      "meaning": "Bang gia THUC TE lay tu Google Play cho account VN (Location Hanoi/VN); tat ca currency=VND",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "single.* (coin le - gia VND that)",
+      "type": "object",
+      "value": "single.1=25.000; .2=59.000; .3=79.000; .5=129.000; .7=199.000; .8=249.000; .10=249.000; .15=498.999,97; .16=399.000; .20=498.999,97; .30=999.000; .40=1.029.000; .55=1.799.000; .75=1.899.000; .80=1.999.000; .100=2.999.000",
+      "meaning": "Gia VND that cua 16 goi coin le",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "bundle.* (bundle coin+booster - gia VND that)",
+      "type": "object",
+      "value": "bundle.2=59.000; .3=79.000; .5=129.000; .6=199.000; .7=179.000; .8=199.000; .10=299.000; .13=329.000; .16=399.000; .20=599.000; .25=649.000; .32=829.000; .40=1.199.000; .50=1.298.999,9; .55=1.399.000; .80=2.499.000; .100=2.999.000",
+      "meaning": "Gia VND that cua 17 goi bundle",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "ladder.* / laddercoin.* (gia VND that)",
+      "type": "object",
+      "value": "ladder: .3=99.000; .4=99.000; .5=149.000; .6=149.000; .8=249.000; .10=249.000; .15=498.999,97; .19=458.000; .20=599.000; .25=649.000; .30=999.000; .38=917.000; .50=1.499.000; .60=1.499.000; .100=2.999.000. laddercoin: .3=79.000; .5=129.000; .8=199.000; .15=379.000; .20=498.999,97; .30=779.000; .50=1.298.999,9; .100=2.999.000",
+      "meaning": "Gia VND that goi Ladder Offer",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "pass / weeklypass / stagedpass / anvilpass / energypass (gia VND that)",
+      "type": "object",
+      "value": "pass.5=129.000; pass.10=299.000; weeklypass.5=149.000; weeklypass.8=249.000; stagedpass1.10=299.000; stagedpass2.10=299.000; stagedpass2.15=498.999,97; anvilpass.5=149.000; anvilpass.8=249.000; energypass.5=149.000; energypass.10=299.000",
+      "meaning": "Gia VND that cac loai Pass",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "offer.* / dynamic.* (gia VND that)",
+      "type": "object",
+      "value": "offer.1=29.000 ... offer.100=2.999.000 (offer.9=214.000, .90=2.150.000). dynamic.1=29.000; .2=49.000; ...; dynamic.100=2.999.000 (dynamic co ~24 muc gia)",
+      "meaning": "Gia VND that offer theo segment va dynamic offer",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "egooffer / teamoffer / seasonaloffer / conversionoffer / progressoffer (gia VND that)",
+      "type": "object",
+      "value": "egooffer.1=29.000; .2=49.000; .7=199.000; .9=214.000. teamoffer.10=299.000; .13=329.000; .20=599.000; .25=649.000; .40=1.199.000; .50=1.298.999,9. seasonaloffer.1=25.000; .10=249.000; .20=498.999,97. conversionoffer.1=25.000; .5=129.000. progressoffer.1=29.000; .5=149.000; .15=498.999,97; .25=799.000; .50=1.499.000; .100=2.999.000",
+      "meaning": "Gia VND that cac offer",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "noads / noadsbundle / multiplier / worldcupcosmetic / hiddentempleoffer (gia VND that)",
+      "type": "object",
+      "value": "noads.8=249.000; noadsbundle.12=399.000; multiplier.8=199.000; multipliertoken.10=299.000; extremelyhardleveloffer.1=29.000; .3=99.000; worldcupcosmetic.20=599.000; worldcupcosmetic2.20=599.000; worldcupcosmetic.30=999.000; hiddentempleoffer.10=249.000",
+      "meaning": "Gia VND that goi No-Ads, multiplier, World Cup cosmetic, Hidden Temple offer",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "energyoffer / energysingle (gia VND that)",
+      "type": "object",
+      "value": "energyoffer.1=29.000; .2=59.000; .4=119.000; .5=149.000; .6=199.000; .8=249.000; .9=299.000; .10=299.000; .15=498.999,97. energysingle3.3=99.000; energysingle.6=199.000; .10=299.000; .20=599.000; .25=799.000; .30=999.000; .40=1.199.000; .50=1.499.000; .100=2.999.000",
+      "meaning": "Gia VND that goi Energy (Short Expedition Event)",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "PurchaseDisabled / ExternalPayment (runtime)",
+      "type": "int",
+      "value": "PurchaseDisabled=0 (bat mua hang); ExternalPaymentCountriesInfo.Version=1; XsollaJwtVersion=2; RevenueSegmentVersion=1134",
+      "meaning": "Trang thai mua hang va thanh toan ngoai that cua account (PingResponse/App DB)",
+      "where": "facts/runtime/INDEX.md (PingResponse / App DB)"
+    }
+  ],
+  "managers": [
+    "Royal.Infrastructure.Services.Native.Purchase.PurchaseManager",
+    "Royal.Infrastructure.Services.Native.Purchase.PurchaseHelper",
+    "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+    "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+    "Royal.Scenes.Home.Ui.Sections.Shop.Package.DefaultPricingStrategy",
+    "Royal.Scenes.Home.Ui.Sections.Shop.Package.ShopPackageConfig",
+    "Royal.Player.Context.Units.CoinShopManager",
+    "Royal.Player.Context.Units.ExternalPaymentFirstPurchaseBonusHelper"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

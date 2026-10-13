@@ -1,0 +1,68 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "NightmareEventGameplayTutorialIndex",
+      "type": "short",
+      "value_expression": "20",
+      "dump_line": 406912
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "NightmareEventWaterGameplayTutorialIndex",
+      "type": "short",
+      "value_expression": "44",
+      "dump_line": 406913
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "NightmareWinCoinCollectAmount",
+      "type": "int",
+      "value_expression": "50",
+      "dump_line": 406914
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "IsTutorialSeenKey",
+      "type": "string",
+      "value_expression": "\"IsKnTutorialSeen\"",
+      "dump_line": 406915
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "IsWaterTutorialSeenKey",
+      "type": "string",
+      "value_expression": "\"IsKnWaterTutorialSeen\"",
+      "dump_line": 406916
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "EarlyNightmareFirstLevel",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 406917
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "EarlyNightmareSecondLevel",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 406918
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingNightmareManager",
+      "field": "DefaultFirstStoryLevel",
+      "type": "int",
+      "value_expression": "16",
+      "dump_line": 406919
+    },
+    {
+      "manager": "Royal.Scenes.Game.Levels.Units.WinFail.StoryWinFailManager",
+      "field": "OperationFreeDuration",
+      "type": "float",
+      "value_expression": "0.2",
+      "dump_line": 384651
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

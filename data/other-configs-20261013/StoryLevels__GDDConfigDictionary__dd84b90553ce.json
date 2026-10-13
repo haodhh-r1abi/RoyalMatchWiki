@@ -1,0 +1,1595 @@
+{
+  "feature": "StoryLevels",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.DefaultFirstStoryLevel",
+      "type": "int",
+      "value": "16",
+      "meaning": "Level chính đầu tiên có story level (mặc định)",
+      "where": "KingNightmareManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.EarlyNightmareFirstLevel",
+      "type": "int",
+      "value": "1",
+      "meaning": "Mốc story level đầu tiên khi AB early nightmare bật",
+      "where": "KingNightmareManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.EarlyNightmareSecondLevel",
+      "type": "int",
+      "value": "5",
+      "meaning": "Mốc story level thứ hai khi AB early nightmare bật",
+      "where": "KingNightmareManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.NightmareWinCoinCollectAmount",
+      "type": "int",
+      "value": "50",
+      "meaning": "Số coin nhận khi thắng một story level",
+      "where": "KingNightmareManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.NightmareEventGameplayTutorialIndex",
+      "type": "short",
+      "value": "20",
+      "meaning": "Vị trí bit trong NightmareEvent đánh dấu đã xem tutorial gameplay",
+      "where": "KingNightmareManager"
+    },
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.NightmareEventWaterGameplayTutorialIndex",
+      "type": "short",
+      "value": "44",
+      "meaning": "Vị trí bit đánh dấu đã xem tutorial cho bản Water",
+      "where": "KingNightmareManager"
+    },
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.IsTutorialSeenKey",
+      "type": "string",
+      "value": "IsKnTutorialSeen",
+      "meaning": "Khóa lưu đã xem tutorial story level",
+      "where": "KingNightmareManager"
+    },
+    {
+      "source": "code const",
+      "key": "KingNightmareManager.IsWaterTutorialSeenKey",
+      "type": "string",
+      "value": "IsKnWaterTutorialSeen",
+      "meaning": "Khóa lưu đã xem tutorial bản Water",
+      "where": "KingNightmareManager"
+    },
+    {
+      "source": "code const",
+      "key": "LevelManager.MaxStoryLevelCount",
+      "type": "int",
+      "value": "261",
+      "meaning": "Số story level tối đa (file story-N.bytes)",
+      "where": "LevelManager"
+    },
+    {
+      "source": "code enum",
+      "key": "StoryLevelType",
+      "type": "enum",
+      "value": "None = -1, Kitchen = 0, Dragon = 1, Parachute = 2, Dynamite = 3, WaterTank = 4, Train = 5, Drill = 6, Water = 7",
+      "meaning": "8 kiểu tai nạn của Vua",
+      "where": "Royal.Player.Context.Units.StoryLevelType (dump.cs TypeDefIndex 10364)"
+    },
+    {
+      "source": "code field",
+      "key": "StoryConfigData",
+      "type": "struct",
+      "value": "levelNo (int), storyLevelType (StoryLevelType)",
+      "meaning": "Một mốc trong bảng cấu hình story",
+      "where": "Royal.Player.Context.Units.StoryConfigData"
+    },
+    {
+      "source": "code enum",
+      "key": "NightmareBundleType",
+      "type": "enum",
+      "value": "None = -1, Common = 0, Icon = 1, Drill = 2, Dynamite = 3, Kitchen = 4, Train = 5, WaterTank = 6, Parachute = 7, Dragon = 8, KitchenCloud = 9, DragonCloud = 10, WaterTankCloud = 11, ParachuteCloud = 12, DynamiteCloud = 13, TrainCloud = 14, DrillCloud = 15, CommonExtra = 16, KitchenWater = 17",
+      "meaning": "18 bundle asset của tính năng story",
+      "where": "Royal.Scenes.Start.Context.Units.NightmareBundle.NightmareBundleType"
+    },
+    {
+      "source": "code enum",
+      "key": "NightmareBundleQuality",
+      "type": "enum",
+      "value": "Standard = 0, Low = 1",
+      "meaning": "Hai mức chất lượng asset tùy cấu hình máy",
+      "where": "Royal.Scenes.Start.Context.Units.NightmareBundle.NightmareBundleQuality"
+    },
+    {
+      "source": "code enum",
+      "key": "KingNightmarePlayDialogType",
+      "type": "enum",
+      "value": "Play = 0, Restart = 1",
+      "meaning": "Hai kiểu dialog trước story level",
+      "where": "Royal.Scenes.Game.Story.Common.KingNightmarePlayDialogType"
+    },
+    {
+      "source": "code field",
+      "key": "KingNightmareProgress",
+      "type": "class",
+      "value": "totalLeftBarSize, progressBarMaxThreshold, progressBarMinThreshold, progressBarHolder, leftProgressBar, rightProgressBar, leftProgressBarBg, rightProgressBarBg, stopButtonBg, collector, barText, stopButton, stopBox, stopButtonEasing, goalHitParticles, goalManager, nightmareRoom, progress, maxProgress, partialProgress, progressSpeedDefault, progressSpeed, progressSpeedMultiplier, progressAcceleration, progressSpeedMax, storyGoalDict, winFailManager",
+      "meaning": "Cơ chế thanh tiến độ chạy - thay cho số nước trong story level",
+      "where": "Royal.Scenes.Game.Story.Common.KingNightmareProgress"
+    },
+    {
+      "source": "code field",
+      "key": "KingNightmareClaimReward",
+      "type": "class",
+      "value": "life, unlimitedTnt, dailyReward, dailyRewardSprites, dailyRewardShadowSprites",
+      "meaning": "Cấu trúc dialog nhận thưởng sau story level (mạng, unlimited TNT, thưởng hàng ngày)",
+      "where": "Royal.Scenes.Game.Story.Common.KingNightmareClaimReward"
+    },
+    {
+      "source": "code const",
+      "key": "StoryWinFailManager.OperationFreeDuration",
+      "type": "float",
+      "value": "0.2",
+      "meaning": "Giây bàn cờ phải đứng yên trước khi kết ván story",
+      "where": "StoryWinFailManager (client default)"
+    },
+    {
+      "source": "asset",
+      "key": "Prefab may (cloud) theo loai",
+      "type": "string",
+      "value": "KingDragonCloud, KingDrillCloud, KingDynamiteCloud, KingKitchenCloud, KingParachuteCloud, KingTrainCloud, KingWaterTankCloud (+ hau to '_OwnBundle' cho ban dong goi rieng); KingDrillRoom, KingParachute",
+      "meaning": "Prefab cảnh của từng loại story",
+      "where": "KingNightmareManager.GetCloudPrefabName / GetCloudPrefab / GetKingNightmareRoom"
+    },
+    {
+      "source": "asset",
+      "key": "Nhac story",
+      "type": "string",
+      "value": "BlockbusterSuspense, SuspensefulCinematic, KitchenSomatone, KingDrillMusic, KingWaterTankMusic, KN_Train_Somatone_Edit",
+      "meaning": "6 bản nhạc dùng cho story level",
+      "where": "KingNightmareManager.GetNightmareMusicPath / IsNightmareMusic"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsEarlyKingNightmareAbEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Đưa story level lên level 1 và 5",
+      "where": "KingNightmareManager.TryUpdateConfigForEarlyNightmareAb"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsTableGameAbEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Bật King's Workshop - ảnh hưởng đến việc đổi bảng config story",
+      "where": "KingNightmareManager.TryUpdateConfigForEarlyNightmareAb"
+    },
+    {
+      "source": "storage key",
+      "key": "NightmareEvent",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit-packed tiến độ và cờ tutorial của story level",
+      "where": "KingNightmareManager.UpdateNightmareEvent / FillFromLocal"
+    },
+    {
+      "source": "storage key",
+      "key": "IsKnTutorialSeen",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đã xem tutorial story level thường",
+      "where": "KingNightmareManager.SetTutorialIsSeen"
+    },
+    {
+      "source": "storage key",
+      "key": "IsKnWaterTutorialSeen",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đã xem tutorial story level Water",
+      "where": "KingNightmareManager.SetTutorialIsSeen"
+    },
+    {
+      "source": "storage key",
+      "key": "NightmareSwapTutorialSeen",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đã xem tutorial swap trong story level",
+      "where": "KingNightmareManager.OnNightmareLevelWin / CompleteTutorials"
+    },
+    {
+      "source": "storage key",
+      "key": "SLTC",
+      "type": "int",
+      "value": "client",
+      "meaning": "Story Level Try Count - đếm số lần thử riêng cho story level",
+      "where": "UserActiveLevelData.IncrementStoryLevelTryCount; KingNightmareManager.OnGameContextActivated"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa bit đã xem tutorial gameplay story",
+      "where": "KingNightmareManager.SetGameTutorialAsSeen"
+    },
+    {
+      "source": "asset",
+      "key": "File du lieu story level",
+      "type": "string",
+      "value": "'story' + số (story-N.bytes), N từ 1 đến 261",
+      "meaning": "File FlatBuffers của story level",
+      "where": "LevelManager.LevelLoadNightmare / GetLevelByName"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=133, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 9 thì chơi story level 133 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 16]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=1, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 16 thì chơi story level 1 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 30]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=134, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 30 thì chơi story level 134 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 50]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=17, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 50 thì chơi story level 17 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 71]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=135, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 71 thì chơi story level 135 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 91]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=26, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 91 thì chơi story level 26 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 111]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=136, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 111 thì chơi story level 136 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 131]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=36, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 131 thì chơi story level 36 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=137, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 151 thì chơi story level 137 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 171]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=41, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 171 thì chơi story level 41 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 191]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=138, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 191 thì chơi story level 138 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 216]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=44, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 216 thì chơi story level 44 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 246]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=139, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 246 thì chơi story level 139 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 281]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=48, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 281 thì chơi story level 48 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 326]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=140, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 326 thì chơi story level 140 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 376]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=52, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 376 thì chơi story level 52 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 426]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=141, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 426 thì chơi story level 141 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 476]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=56, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 476 thì chơi story level 56 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 526]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=142, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 526 thì chơi story level 142 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 576]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=61, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 576 thì chơi story level 61 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 626]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=143, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 626 thì chơi story level 143 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 676]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=64, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 676 thì chơi story level 64 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 726]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=144, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 726 thì chơi story level 144 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 776]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=68, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 776 thì chơi story level 68 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 826]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=145, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 826 thì chơi story level 145 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 876]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=72, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 876 thì chơi story level 72 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 926]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=146, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 926 thì chơi story level 146 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 976]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=76, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 976 thì chơi story level 76 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=147, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 1051 thì chơi story level 147 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=80, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 1151 thì chơi story level 80 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=148, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 1251 thì chơi story level 148 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=84, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 1351 thì chơi story level 84 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=149, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 1451 thì chơi story level 149 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=88, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 1551 thì chơi story level 88 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=150, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 1651 thì chơi story level 150 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=92, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 1751 thì chơi story level 92 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=151, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 1851 thì chơi story level 151 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 1951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=96, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 1951 thì chơi story level 96 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=152, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 2051 thì chơi story level 152 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=99, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 2151 thì chơi story level 99 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=153, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 2251 thì chơi story level 153 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=101, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 2351 thì chơi story level 101 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=154, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 2451 thì chơi story level 154 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=103, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 2551 thì chơi story level 103 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=155, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 2651 thì chơi story level 155 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=105, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 2751 thì chơi story level 105 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=156, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 2851 thì chơi story level 156 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 2951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=33, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 2951 thì chơi story level 33 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=157, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 3051 thì chơi story level 157 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=107, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 3151 thì chơi story level 107 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=158, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 3251 thì chơi story level 158 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=109, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 3351 thì chơi story level 109 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=159, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 3451 thì chơi story level 159 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=97, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 3551 thì chơi story level 97 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=160, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 3651 thì chơi story level 160 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=111, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 3751 thì chơi story level 111 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=161, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 3851 thì chơi story level 161 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 3951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=112, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 3951 thì chơi story level 112 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=162, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 4051 thì chơi story level 162 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=115, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 4151 thì chơi story level 115 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=163, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 4251 thì chơi story level 163 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=117, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 4351 thì chơi story level 117 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=164, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 4451 thì chơi story level 164 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=118, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 4551 thì chơi story level 118 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=165, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 4651 thì chơi story level 165 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=121, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 4751 thì chơi story level 121 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=166, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 4851 thì chơi story level 166 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 4951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=123, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 4951 thì chơi story level 123 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=167, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 5051 thì chơi story level 167 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=125, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 5151 thì chơi story level 125 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=168, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 5251 thì chơi story level 168 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=126, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 5351 thì chơi story level 126 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=169, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 5451 thì chơi story level 169 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=129, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 5551 thì chơi story level 129 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=170, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 5651 thì chơi story level 170 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=131, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 5751 thì chơi story level 131 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=171, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 5851 thì chơi story level 171 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 5951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=132, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 5951 thì chơi story level 132 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=173, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 6051 thì chơi story level 173 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=174, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 6151 thì chơi story level 174 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=175, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 6251 thì chơi story level 175 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=176, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 6351 thì chơi story level 176 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=177, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 6451 thì chơi story level 177 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=178, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 6551 thì chơi story level 178 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=179, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 6651 thì chơi story level 179 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=180, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 6751 thì chơi story level 180 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=181, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 6851 thì chơi story level 181 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 6951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=182, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 6951 thì chơi story level 182 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=183, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 7051 thì chơi story level 183 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=184, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 7151 thì chơi story level 184 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=185, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 7251 thì chơi story level 185 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=186, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 7351 thì chơi story level 186 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=187, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 7451 thì chơi story level 187 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=188, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 7551 thì chơi story level 188 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=189, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 7651 thì chơi story level 189 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=190, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 7751 thì chơi story level 190 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=191, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 7851 thì chơi story level 191 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 7951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=192, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 7951 thì chơi story level 192 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=193, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 8051 thì chơi story level 193 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=194, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 8151 thì chơi story level 194 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=195, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 8251 thì chơi story level 195 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=196, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 8351 thì chơi story level 196 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=197, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 8451 thì chơi story level 197 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=198, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 8551 thì chơi story level 198 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=199, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 8651 thì chơi story level 199 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=200, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 8751 thì chơi story level 200 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=201, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 8851 thì chơi story level 201 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 8951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=202, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 8951 thì chơi story level 202 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=203, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 9051 thì chơi story level 203 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=204, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 9151 thì chơi story level 204 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=205, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 9251 thì chơi story level 205 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=206, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 9351 thì chơi story level 206 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=207, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 9451 thì chơi story level 207 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=208, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 9551 thì chơi story level 208 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=209, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 9651 thì chơi story level 209 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=210, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 9751 thì chơi story level 210 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=211, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 9851 thì chơi story level 211 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 9951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=212, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 9951 thì chơi story level 212 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=213, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 10051 thì chơi story level 213 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=214, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 10151 thì chơi story level 214 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=215, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 10251 thì chơi story level 215 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=216, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 10351 thì chơi story level 216 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=217, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 10451 thì chơi story level 217 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=218, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 10551 thì chơi story level 218 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=219, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 10651 thì chơi story level 219 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=220, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 10751 thì chơi story level 220 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=221, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 10851 thì chơi story level 221 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 10951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=222, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 10951 thì chơi story level 222 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=223, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 11051 thì chơi story level 223 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=224, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 11151 thì chơi story level 224 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=225, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 11251 thì chơi story level 225 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=226, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 11351 thì chơi story level 226 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=227, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 11451 thì chơi story level 227 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=228, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 11551 thì chơi story level 228 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=229, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 11651 thì chơi story level 229 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=230, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 11751 thì chơi story level 230 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=231, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 11851 thì chơi story level 231 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 11951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=232, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 11951 thì chơi story level 232 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=233, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 12051 thì chơi story level 233 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=234, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 12151 thì chơi story level 234 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=235, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 12251 thì chơi story level 235 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=236, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 12351 thì chơi story level 236 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=237, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 12451 thì chơi story level 237 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=238, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 12551 thì chơi story level 238 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=239, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 12651 thì chơi story level 239 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=240, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 12751 thì chơi story level 240 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=241, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 12851 thì chơi story level 241 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 12951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=242, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 12951 thì chơi story level 242 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=243, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 13051 thì chơi story level 243 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=244, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 13151 thì chơi story level 244 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=245, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 13251 thì chơi story level 245 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=246, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 13351 thì chơi story level 246 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=247, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 13451 thì chơi story level 247 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=248, storyLevelType=Train (5)",
+      "meaning": "Khi người chơi đến level chính 13551 thì chơi story level 248 loại Train",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13651]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=249, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 13651 thì chơi story level 249 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13751]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=250, storyLevelType=Drill (6)",
+      "meaning": "Khi người chơi đến level chính 13751 thì chơi story level 250 loại Drill",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13851]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=251, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 13851 thì chơi story level 251 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 13951]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=252, storyLevelType=Dragon (1)",
+      "meaning": "Khi người chơi đến level chính 13951 thì chơi story level 252 loại Dragon",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 14051]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=256, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 14051 thì chơi story level 256 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 14151]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=257, storyLevelType=Parachute (2)",
+      "meaning": "Khi người chơi đến level chính 14151 thì chơi story level 257 loại Parachute",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 14251]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=258, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 14251 thì chơi story level 258 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 14351]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=259, storyLevelType=Dynamite (3)",
+      "meaning": "Khi người chơi đến level chính 14351 thì chơi story level 259 loại Dynamite",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 14451]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=260, storyLevelType=Water (7)",
+      "meaning": "Khi người chơi đến level chính 14451 thì chơi story level 260 loại Water",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "code const",
+      "key": "StoryLevelConfig[level 14551]",
+      "type": "StoryConfigData",
+      "value": "storyLevelNo=261, storyLevelType=WaterTank (4)",
+      "meaning": "Khi người chơi đến level chính 14551 thì chơi story level 261 loại WaterTank",
+      "where": "KingNightmareManager.SetupStoryLevelConfig"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "SuperLightBall (SLB) move config — nhóm AB c/d/f/g/h (runtime)",
+      "type": "dict",
+      "value": "5 nhóm AB (c/d/f/g/h) map 'level<version>' → số nước. Số mốc mỗi nhóm: c=46, d=111, f=84, g=53, h=12. Ví dụ nhóm d: 75v02→3, 84v03→5, 88v03→7, 98v03→7, 114v03→8, 132v03→9, 152v03→7, 153v03→6. Nhóm c ngắn hơn, bắt đầu 162v02→2.",
+      "meaning": "Bảng số nước cho màn SuperLightBall (special level) theo nhóm AB — điều khiển bởi AB superlightball_level_change (203/204, v2 226/227). Đây là hệ special level SuperLightBall, LIÊN QUAN nhưng KHÁC King's Nightmare story level",
+      "where": "cdn_configs/superlightball-ab-config.txt / server_configs/App_SLBMoveConfig.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "SLB — các màn khó nhất (runtime, nhóm d)",
+      "type": "int",
+      "value": "88v03=7, 98v03=7, 114v03=8, 129v03=6, 132v03=9, 152v03=7, 153v03=6, 169v03=6, 192v03=6",
+      "meaning": "Các màn SuperLightBall nhiều nước nhất (6-9 nước) trong nhóm d",
+      "where": "cdn_configs/superlightball-ab-config.txt"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "AB superlightball_level_change (runtime)",
+      "type": "int",
+      "value": "id 226 (v2 new_user) nhóm 5",
+      "meaning": "Nhóm AB điều khiển bộ số nước SLB được server gán cho account lvl8",
+      "where": "ab_tests_runtime.json"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "KN win protocol (runtime)",
+      "type": "UpdateUserProgressRequest",
+      "value": "KN win: top-level Level=N KHÔNG đổi; union StoryLevelProgress{KnLevels:[N]} (+ UpdateInventoryData nếu có thưởng). Bắt được thật: SyncId34 Level9 StoryLevelProgress{KnLevels:[9]} Coins2519. Level id file story ÂM (vd -133), file '000NNNvXX_KN'.",
+      "meaning": "Thắng story level báo qua union StoryLevelProgress.KnLevels, KHÔNG tăng Level chính",
+      "where": "facts/runtime/level-protocol.md"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "KN độc lập Level chính (runtime)",
+      "type": "note",
+      "value": "KN dùng StoryLevelProgress.KnLevels / KnLevelsWithMultiplier, level id âm, không chặn và không tăng bộ đếm level thường. Thưởng win KN=50 coin (NightmareWinCoinCollectAmount) phản ánh trong Coins. Analytics EpisodeStoryLevelStart/End. UpdateNightmareEvent (bitfield). Xác nhận qua play-capture: ngay sau KN win (Level9) vẫn là Start L9.",
+      "meaning": "KN tách khỏi tiến trình level chính — xác nhận runtime",
+      "where": "facts/runtime/level-protocol.md"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "AB early_kings_nightmare (runtime)",
+      "type": "note",
+      "value": "AB early_kings_nightmare (user nhóm 3): story level đầu ở main level 1 và 5; mặc định DefaultFirstStoryLevel=16. Mốc đầu quan sát trong bảng: level 9 (Water story #133) và level 16 (Dragon story #1).",
+      "meaning": "Xác nhận runtime nhóm AB đưa story level lên sớm (level 1 và 5)",
+      "where": "facts/runtime/level-protocol.md"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.KingNightmareManager",
+    "Royal.Scenes.Game.Levels.Units.WinFail.StoryWinFailManager",
+    "Royal.Scenes.Start.Context.Units.NightmareBundle.NightmareBundleManager"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

@@ -1,0 +1,302 @@
+{
+  "feature": "Ego",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "EgoManager.DefaultEgoMoveCount",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số nước mỗi gói Ego",
+      "where": "EgoManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "EgoManager.PriceChangeAbEgoMoveCount",
+      "type": "int",
+      "value": "10",
+      "meaning": "Số nước mỗi gói khi AbTestHelper.IsPriceChange10MovesAbEnabled",
+      "where": "EgoManager.GetMoveCount"
+    },
+    {
+      "source": "code const",
+      "key": "EgoManager.SecondWarningRemoveLevel",
+      "type": "int",
+      "value": "100",
+      "meaning": "Từ level này trở đi không hiện cảnh báo lần hai khi bấm Exit",
+      "where": "EgoManager (client default)"
+    },
+    {
+      "source": "static array",
+      "key": "EgoPackages[0]",
+      "type": "EgoPackage",
+      "value": "900 coin, 5 nước, không item",
+      "meaning": "Gói Ego bước 1",
+      "where": "EgoManager..cctor"
+    },
+    {
+      "source": "static array",
+      "key": "EgoPackages[1]",
+      "type": "EgoPackage",
+      "value": "1900 coin, 5 nước, 1 Rocket (ItemType 2)",
+      "meaning": "Gói Ego bước 2",
+      "where": "EgoManager..cctor"
+    },
+    {
+      "source": "static array",
+      "key": "EgoPackages[2]",
+      "type": "EgoPackage",
+      "value": "2900 coin, 5 nước, 1 Rocket + 1 Tnt (ItemType 2, 4)",
+      "meaning": "Gói Ego bước 3",
+      "where": "EgoManager..cctor"
+    },
+    {
+      "source": "static array",
+      "key": "EgoPackages[3]",
+      "type": "EgoPackage",
+      "value": "3900 coin, 5 nước, 1 Tnt + 1 Lightball (ItemType 4, 5)",
+      "meaning": "Gói Ego bước 4",
+      "where": "EgoManager..cctor"
+    },
+    {
+      "source": "static array",
+      "key": "EgoPackages[4]",
+      "type": "EgoPackage",
+      "value": "4900 coin, 5 nước, 2 Lightball (ItemType 5, 5)",
+      "meaning": "Gói Ego bước 5 và mọi bước sau đó",
+      "where": "EgoManager..cctor"
+    },
+    {
+      "source": "static array",
+      "key": "LowEgoPrices[0] (hang x1)",
+      "type": "int[5]",
+      "value": "[900, 1900, 2900, 3900, 4900]",
+      "meaning": "Giá 5 bước Ego cho nhóm AB low ego khi chơi hạng x1",
+      "where": "EgoManager..cctor (blob 14162B15C613)"
+    },
+    {
+      "source": "static array",
+      "key": "LowEgoPrices[1] (hang x2)",
+      "type": "int[5]",
+      "value": "[1500, 2500, 3500, 4500, 5500]",
+      "meaning": "Giá 5 bước Ego cho nhóm low ego khi chơi hạng Gold",
+      "where": "EgoManager..cctor (blob 2E886CA901A2)"
+    },
+    {
+      "source": "static array",
+      "key": "LowEgoPrices[2] (hang x3)",
+      "type": "int[5]",
+      "value": "[1900, 2900, 3900, 4900, 5900]",
+      "meaning": "Giá 5 bước Ego cho nhóm low ego khi chơi hạng Diamond",
+      "where": "EgoManager..cctor (blob DB3C89EC0C0F)"
+    },
+    {
+      "source": "static array",
+      "key": "HighEgoPrices[0] (hang x1)",
+      "type": "int[5]",
+      "value": "[900, 1900, 2900, 3900, 4900]",
+      "meaning": "Giá 5 bước Ego cho nhóm AB high ego khi chơi hạng x1",
+      "where": "EgoManager..cctor (blob 14162B15C613)"
+    },
+    {
+      "source": "static array",
+      "key": "HighEgoPrices[1] (hang x2)",
+      "type": "int[5]",
+      "value": "[1900, 2900, 3900, 4900, 5900]",
+      "meaning": "Giá 5 bước Ego cho nhóm high ego khi chơi hạng Gold",
+      "where": "EgoManager..cctor (blob DB3C89EC0C0F)"
+    },
+    {
+      "source": "static array",
+      "key": "HighEgoPrices[2] (hang x3)",
+      "type": "int[5]",
+      "value": "[2900, 3900, 4900, 5900, 6900]",
+      "meaning": "Giá 5 bước Ego cho nhóm high ego khi chơi hạng Diamond",
+      "where": "EgoManager..cctor (blob D8A30BF7AEC0)"
+    },
+    {
+      "source": "code const",
+      "key": "Cong thuc gia mac dinh",
+      "type": "int",
+      "value": "packageIndex * 1000 + 900",
+      "meaning": "Giá khi không thuộc nhóm low/high ego của Multiplier Selection",
+      "where": "EgoManager.SetMultiplierSelectionAbEgoPriceValues"
+    },
+    {
+      "source": "code const",
+      "key": "EgoExtraMovesHelper.MinimumFailCountBeforeMoveBoost",
+      "type": "int",
+      "value": "4",
+      "meaning": "Phải thấy dialog Ego hơn 4 lần ở cùng level mới bắt đầu được thêm nước",
+      "where": "EgoExtraMovesHelper (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "EgoExtraMovesHelper.MoveIncrementCount",
+      "type": "int",
+      "value": "5",
+      "meaning": "Mỗi bước vượt ngưỡng cộng thêm 5 nước",
+      "where": "EgoExtraMovesHelper (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "EgoExtraMovesHelper.FailIncrementLimit",
+      "type": "int",
+      "value": "10",
+      "meaning": "Trần số lần đếm - tối đa +30 nước miễn phí",
+      "where": "EgoExtraMovesHelper (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "EgoExtraMovesHelper.FailIncrementLimitForPriceChangeAb",
+      "type": "int",
+      "value": "9",
+      "meaning": "Trần khi AB IsPriceChange10MovesAbEnabled bật - tối đa +25 nước",
+      "where": "EgoExtraMovesHelper (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "Cong thuc nuoc thuong",
+      "type": "int",
+      "value": "max(0, min(Ego1SeenCount, limit) - 4) x 5",
+      "meaning": "Số nước miễn phí cộng thêm cho mỗi gói Ego",
+      "where": "EgoExtraMovesHelper.CalculateAdditionalMoves"
+    },
+    {
+      "source": "code const",
+      "key": "EgoDialog button ids",
+      "type": "int",
+      "value": "Play = 1, Exit = 2, Coin = 3, RoyalPass = 4, Offer = 5, EgoOffer = 6, Shop = 7, CoinShopEgoOffer = 8, WeeklyPass = 9, JourneyOffer = 10, RewardedAdPlay = 11",
+      "meaning": "Mã nút trong dialog Ego (đi vào analytics button)",
+      "where": "EgoDialog"
+    },
+    {
+      "source": "code const",
+      "key": "EgoDialog.EgoButtonDelay",
+      "type": "float",
+      "value": "0.5",
+      "meaning": "Giây trễ trước khi bật nút Play (chống bấm nhầm)",
+      "where": "EgoDialog"
+    },
+    {
+      "source": "code const",
+      "key": "EgoPurchaseStrategy origins",
+      "type": "int",
+      "value": "OriginEgo = 0, OriginCoinIcon = 1, OriginPass = 2, OriginOffer = 3, OriginJourneyOffer = 4",
+      "meaning": "Nguồn mở luồng mua từ dialog Ego",
+      "where": "EgoPurchaseStrategy"
+    },
+    {
+      "source": "code const",
+      "key": "Spending name prefix",
+      "type": "string",
+      "value": "Ego- + số lần mua; hậu tố '-AddCoins' / '-Offer' / '-Shop'",
+      "meaning": "spending_type gửi kèm analytics",
+      "where": "EgoManager.PlayOn; EgoPurchaseStrategy.SetTrigger"
+    },
+    {
+      "source": "code field",
+      "key": "EgoPackage",
+      "type": "class",
+      "value": "CoinPrice (int), Moves (byte), DifferentRewardCount (byte), specialItems (byte[]), FirstItemType (ItemType), SecondItemType (ItemType)",
+      "meaning": "Cấu trúc một gói Ego",
+      "where": "Royal.Scenes.Game.Levels.Units.Ego.EgoPackage"
+    },
+    {
+      "source": "code const",
+      "key": "ItemType dung trong goi Ego",
+      "type": "enum",
+      "value": "Rocket = 2, Tnt = 4, Lightball = 5",
+      "meaning": "Loại special item được ném lên bàn",
+      "where": "Royal.Scenes.Game.Mechanics.Items.ItemType (dump.cs TypeDefIndex 9450)"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsPriceChange10MovesAbEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Đổi số nước mỗi gói từ 5 lên 10 và hạ trần nước thưởng từ 10 xuống 9 bước",
+      "where": "EgoManager.GetMoveCount; EgoExtraMovesHelper.CalculateAdditionalMoves"
+    },
+    {
+      "source": "AB test",
+      "key": "ego_price_change_new_user / ego_price_change_old_user",
+      "type": "string",
+      "value": "server override",
+      "meaning": "Tên AB test đổi giá / số nước của Ego cho người chơi mới và cũ",
+      "where": "AbTestHelper (tham chiếu từ GD/02-Core-Gameplay.md)"
+    },
+    {
+      "source": "server info",
+      "key": "GameplayGenericBackendSyncHandler.GetEgo1SeenCount / SetEgo1SeenCount",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Số lần đã thấy dialog Ego ở level hiện tại",
+      "where": "EgoExtraMovesHelper.IncrementEgo1SeenCount / ResetOnLevelWin"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse1",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa bit Ego1SeenCount",
+      "where": "EgoExtraMovesHelper.set_Ego1SeenCount"
+    },
+    {
+      "source": "code field",
+      "key": "APricingStrategy.egoOfferPayer / egoOfferNonPayer",
+      "type": "ShopPackageConfig",
+      "value": "config theo chiến lược giá",
+      "meaning": "Hai gói Ego offer cho người đã trả tiền và chưa trả tiền",
+      "where": "APricingStrategy; DefaultPricingStrategy.get_EgoOfferPayer / get_EgoOfferNonPayer (tên 'EgoOffer')"
+    },
+    {
+      "source": "code const",
+      "key": "Nhom IAP cua Ego offer",
+      "type": "string",
+      "value": "egooffer, egoofferv2",
+      "meaning": "Nhóm product id cho gói bán trong dialog Ego",
+      "where": "ProductPackageNames (xem appendix/iap-products.md)"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle extra moves",
+      "type": "int",
+      "value": "FeatureBundleManager.GetBundle(0x59)",
+      "meaning": "Bundle EgoExtraMovesBundle - tính năng nước thưởng chỉ bật khi bundle này tải xong",
+      "where": "EgoExtraMovesHelper.IsEgoAdditionalMoveAvailable / IsExtraMovesBundleReady"
+    },
+    {
+      "source": "asset",
+      "key": "Tutorial hang trong Ego",
+      "type": "string",
+      "value": "LevelMultiplierEGOTutorial (asset TutorialViewAssets)",
+      "meaning": "Tutorial giải thích giá Ego đổi theo hạng",
+      "where": "EgoDialog.OnShow / CloseMultiplierEgoTutorial"
+    },
+    {
+      "source": "code const",
+      "key": "Text mac dinh",
+      "type": "string",
+      "value": "'Add 5 moves to keep playing!' và 'RoyalPassEGODialogInfo'",
+      "meaning": "Text info trong dialog, được thay số khi có nước thưởng",
+      "where": "EgoDialog.UpdateInfoTextForAdditionalMoves / UpdateEgoMoveCountsOnOtherBannersAndInfoText"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "Giá VND gói 'egooffer' (IAP thật, store VN)",
+      "type": "VND",
+      "value": "egooffer.1 = 29.000₫, egooffer.2 = 49.000₫, egooffer.7 = 199.000₫, egooffer.9 = 214.000₫",
+      "meaning": "Giá thật của gói Ego offer trong bảng giá VND (egoofferv2.* KHÔNG có trong bảng giá VND runtime)",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    }
+  ],
+  "managers": [
+    "Royal.Scenes.Game.Levels.Units.Ego.EgoManager",
+    "Royal.Scenes.Game.Levels.Units.Ego.EgoPackage",
+    "Royal.Player.Context.Units.EgoExtraMovesHelper",
+    "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoDialog",
+    "Royal.Scenes.Game.Ui.Dialogs.LevelFail.EgoPurchaseStrategy",
+    "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

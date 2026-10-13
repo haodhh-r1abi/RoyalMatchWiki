@@ -1,0 +1,617 @@
+{
+  "Name": "09094v04_L",
+  "Move": 21,
+  "Goals": [
+    {
+      "Goal": 51,
+      "Count": 16
+    },
+    {
+      "Goal": 28,
+      "Count": 29
+    },
+    {
+      "Goal": 67,
+      "Count": 4
+    },
+    {
+      "Goal": 79,
+      "Count": 1
+    }
+  ],
+  "Grid": {
+    "Items": [
+      175,
+      176,
+      227,
+      175,
+      176,
+      14,
+      14,
+      14,
+      86,
+      165,
+      166,
+      227,
+      165,
+      166,
+      14,
+      14,
+      14,
+      86,
+      175,
+      176,
+      227,
+      175,
+      176,
+      14,
+      14,
+      14,
+      86,
+      165,
+      166,
+      227,
+      165,
+      166,
+      211,
+      14,
+      14,
+      86,
+      86,
+      86,
+      227,
+      86,
+      86,
+      211,
+      14,
+      14,
+      86,
+      86,
+      229,
+      228,
+      227,
+      86,
+      14,
+      211,
+      14,
+      86,
+      86,
+      229,
+      228,
+      227,
+      86,
+      86,
+      212,
+      86,
+      86,
+      86,
+      229,
+      228,
+      227,
+      86,
+      293,
+      212,
+      293,
+      86,
+      86,
+      229,
+      228,
+      227,
+      86,
+      293,
+      14,
+      293,
+      86,
+      86,
+      229,
+      228,
+      227,
+      86,
+      293,
+      212,
+      293,
+      86,
+      86,
+      304,
+      32757,
+      32757,
+      86,
+      293,
+      14,
+      293,
+      86
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Blinds": 243
+      },
+      {
+        "Blinds": 200
+      },
+      {},
+      {
+        "Blinds": 199
+      },
+      {
+        "Blinds": 243
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Blinds": 243
+      },
+      {
+        "Blinds": 200
+      },
+      {},
+      {
+        "Blinds": 199
+      },
+      {
+        "Blinds": 243
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Blinds": 243
+      },
+      {
+        "Blinds": 200
+      },
+      {},
+      {
+        "Blinds": 199
+      },
+      {
+        "Blinds": 243
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1,
+        "Blinds": 243
+      },
+      {
+        "FillType": 1,
+        "Blinds": 200
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1,
+        "Blinds": 199
+      },
+      {
+        "FillType": 1,
+        "Blinds": 243
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 47,
+      "Count": 4
+    },
+    {
+      "Type": 21,
+      "Count": 29
+    },
+    {
+      "Type": 64,
+      "Count": 20
+    },
+    {
+      "Type": 79,
+      "Count": 1
+    },
+    {
+      "Type": 80,
+      "Count": 8
+    },
+    {
+      "Type": -11,
+      "Count": 16
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [
+    {
+      "Limit": 80,
+      "Count": 8
+    }
+  ],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [
+    {
+      "Cells": [
+        {
+          "X": 1,
+          "Y": 5
+        },
+        {
+          "X": 1,
+          "Y": 6
+        },
+        {
+          "X": 1,
+          "Y": 7
+        },
+        {
+          "X": 1,
+          "Y": 8
+        },
+        {
+          "X": 1,
+          "Y": 9
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "X": 2
+        },
+        {
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "X": 2,
+          "Y": 2
+        },
+        {
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "X": 2,
+          "Y": 4
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "X": 2,
+          "Y": 5
+        },
+        {
+          "X": 2,
+          "Y": 6
+        },
+        {
+          "X": 2,
+          "Y": 7
+        },
+        {
+          "X": 2,
+          "Y": 8
+        },
+        {
+          "X": 2,
+          "Y": 9
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "X": 3,
+          "Y": 5
+        },
+        {
+          "X": 3,
+          "Y": 6
+        },
+        {
+          "X": 3,
+          "Y": 7
+        },
+        {
+          "X": 3,
+          "Y": 8
+        },
+        {
+          "X": 3,
+          "Y": 9
+        }
+      ]
+    }
+  ],
+  "IvyItemGroups": [],
+  "BlindsGroups": [
+    {
+      "Width": 4,
+      "MagnetCells": [
+        {
+          "Cell": {
+            "X": 4,
+            "Y": 7
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 4,
+            "Y": 8
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 4,
+            "Y": 9
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 4,
+            "Y": 10
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 5,
+            "Y": 7
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 5,
+            "Y": 8
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 5,
+            "Y": 9
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 5,
+            "Y": 10
+          },
+          "DirectionTiledId": 200
+        }
+      ]
+    },
+    {
+      "Width": 4,
+      "MagnetCells": [
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 7
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 8
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 9
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 10
+          },
+          "IsHead": true,
+          "DirectionTiledId": 243
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 7
+          },
+          "DirectionTiledId": 199
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 8
+          },
+          "DirectionTiledId": 199
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 9
+          },
+          "DirectionTiledId": 199
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 10
+          },
+          "DirectionTiledId": 199
+        }
+      ]
+    }
+  ],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [
+    {
+      "Id": 1,
+      "ColorId": 32757,
+      "Target": 8,
+      "CellCount": 3,
+      "Width": 3,
+      "Height": 1,
+      "MinX": 1,
+      "MinY": 10
+    }
+  ],
+  "PropellerIgnoresLog": true,
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

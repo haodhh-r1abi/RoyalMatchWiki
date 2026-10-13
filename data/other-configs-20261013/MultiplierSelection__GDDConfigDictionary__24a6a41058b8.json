@@ -1,0 +1,316 @@
+{
+  "feature": "MultiplierSelection",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "MultiplierSelectionManager.UnlockLevel",
+      "type": "int",
+      "value": "41",
+      "meaning": "Level mở x2 (kiểm tra bằng level > 40)",
+      "where": "MultiplierSelectionManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierSelectionManager.X3UnlockLevel",
+      "type": "int",
+      "value": "46",
+      "meaning": "Level mở x3 (kiểm tra bằng level > 45)",
+      "where": "MultiplierSelectionManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierSelectionManager.MinusTutorialMaxShowCount",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số lần tối đa hiện tutorial cảnh báo bị hạ hạng",
+      "where": "MultiplierSelectionManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MaxSelectableMultiplier",
+      "type": "int",
+      "value": "3 khi level > 45 và đã qua level tutorial đầu; 2 khi level > 40; 1 khi thấp hơn",
+      "meaning": "Hạng cao nhất được chọn",
+      "where": "MultiplierSelectionManager.get_MaxSelectableMultiplier"
+    },
+    {
+      "source": "AB test",
+      "key": "sessionAbGroup - nhom khong tham gia",
+      "type": "int",
+      "value": "0, 1, 8",
+      "meaning": "IsNonParticipantGroup; nhóm 1 là control dùng Multiplier Token",
+      "where": "MultiplierSelectionManager.IsNonParticipantGroup / IsControlTokenGroup"
+    },
+    {
+      "source": "AB test",
+      "key": "sessionAbGroup - nhom tham gia",
+      "type": "int",
+      "value": "2, 3, 4, 5, 6, 7",
+      "meaning": "IsSelectionGroup (sessionAbGroup - 2 < 6)",
+      "where": "MultiplierSelectionManager.IsSelectionGroup"
+    },
+    {
+      "source": "AB test",
+      "key": "sessionAbGroup - lock on fail",
+      "type": "int",
+      "value": "4, 5, 6",
+      "meaning": "Thua/thoát sẽ khóa hạng về x1",
+      "where": "MultiplierSelectionManager.IsLockOnFailGroup"
+    },
+    {
+      "source": "AB test",
+      "key": "sessionAbGroup - low ego price",
+      "type": "int",
+      "value": "2, 3, 4",
+      "meaning": "Dùng bảng giá Ego thấp",
+      "where": "MultiplierSelectionManager.IsLowEgoGroup"
+    },
+    {
+      "source": "AB test",
+      "key": "sessionAbGroup - high ego price",
+      "type": "int",
+      "value": "5, 6, 7",
+      "meaning": "Dùng bảng giá Ego cao",
+      "where": "MultiplierSelectionManager.IsHighEgoGroup"
+    },
+    {
+      "source": "AB test",
+      "key": "sessionAbGroup - high refill price",
+      "type": "int",
+      "value": "3, 7",
+      "meaning": "Giá refill booster chuyển sang bảng cao",
+      "where": "MultiplierSelectionManager.IsHighRefillGroup / IsHighRefillPricingActive"
+    },
+    {
+      "source": "AB test",
+      "key": "sessionAbGroup - shorter event",
+      "type": "int",
+      "value": "6",
+      "meaning": "Sự kiện có thời lượng ngắn hơn",
+      "where": "MultiplierSelectionManager.IsShorterEventGroup"
+    },
+    {
+      "source": "code enum",
+      "key": "MultiplierSelectionTutorialType",
+      "type": "enum",
+      "value": "PrelevelX2 = 0, PrelevelX3 = 1, PrelevelMinus = 2",
+      "meaning": "Ba loại tutorial của tính năng",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.MultiplierSelection.Scripts.MultiplierSelectionTutorialType"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierSelectionBundleGroupInfo.GroupName",
+      "type": "string",
+      "value": "multiplier_selection",
+      "meaning": "Nhóm bundle bắt buộc để tính năng active",
+      "where": "MultiplierSelectionBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle con",
+      "type": "string",
+      "value": "multiplier_selection_gameplay, multiplier_selection_prelevel_dialog_v3, multiplier_selection_level_button, multiplier_selection_quit_warning, multiplier_selection_sfx",
+      "meaning": "Các bundle của tính năng",
+      "where": "MultiplierSelectionBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Level assets config (18 ten)",
+      "type": "string[]",
+      "value": "<Default|Hard|SuperHard|ExtremelyHard|League|Portal> x <'' |Gold|Diamond> + MultiplierSelectionLevelAssetsConfig",
+      "meaning": "Bộ asset gameplay theo độ khó x hạng",
+      "where": "MultiplierGameplayAssetsManager.LevelAssetsConfigs"
+    },
+    {
+      "source": "asset",
+      "key": "Landscape assets config (18 ten)",
+      "type": "string[]",
+      "value": "<Default|Hard|SuperHard|ExtremelyHard|League|Portal> x <''|Gold|Diamond> + MultiplierSelectionLandscapeAssetsConfig",
+      "meaning": "Bộ asset chế độ ngang theo độ khó x hạng",
+      "where": "MultiplierGameplayAssetsManager.LandscapeAssetsConfigs"
+    },
+    {
+      "source": "asset",
+      "key": "Prelevel dialog config",
+      "type": "string[]",
+      "value": "<Default|Hard|SuperHard|ExtremelyHard|League> x <''|Gold|Diamond> + MultiplierSelectionPrelevelDialogConfig",
+      "meaning": "Bộ asset dialog Prelevel theo độ khó x hạng",
+      "where": "MultiplierSelectionAssetsHelper.MultiplierSelectionPrelevelDialogConfigs / ...LeagueConfigs"
+    },
+    {
+      "source": "asset",
+      "key": "Level fail dialog config",
+      "type": "string[]",
+      "value": "<Default|Hard|SuperHard|ExtremelyHard|League|Portal> x <''|Gold|Diamond> + MultiplierSelectionLevelFailDialogConfig",
+      "meaning": "Bộ asset dialog thua theo độ khó x hạng",
+      "where": "MultiplierSelectionAssetsHelper.MultiplierSelectionLevelFailDialogConfigs / ...LeagueConfigs / ...PortalConfigs"
+    },
+    {
+      "source": "asset",
+      "key": "Khung mau",
+      "type": "string",
+      "value": "blue_frame, gold_frame, diamond_frame, dark_frame, red_frame, claret_red_frame, brown_frame, purple_frame",
+      "meaning": "Sprite khung theo hạng và độ khó",
+      "where": "MultiplierSelectionBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Tag hang",
+      "type": "string",
+      "value": "Multiplier_selection_x2_tag, Multiplier_selection_x3_tag, MultiplierSelectionLevelButtonTag",
+      "meaning": "Nhãn x2 / x3 trên nút level và dialog",
+      "where": "MultiplierSelectionBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Sfx",
+      "type": "string",
+      "value": "multiplier_change_gold, multiplier_change_diamond, multiplier_crown_disappear, multiplier_locked, collectable_text_diamond",
+      "meaning": "Âm thanh khi đổi hạng / bị khóa",
+      "where": "MultiplierSelectionBundleGroupInfo (bundle multiplier_selection_sfx)"
+    },
+    {
+      "source": "asset",
+      "key": "Canh bao thoat ván",
+      "type": "string",
+      "value": "MultiplierSelectionWarn, ClocheAndMultiplierSelectionWarn, MadnessAndMultiplierSelectionWarn, LavaQuestAndMultiplierSelectionWarn, AncientAdventureAndMultiplierSelectionWarn, ChampionsClashAndMultiplierSelectionWarn",
+      "meaning": "Text cảnh báo tùy tính năng khác đang chạy",
+      "where": "MultiplierSelectionBundleGroupInfo"
+    },
+    {
+      "source": "code const",
+      "key": "PrelevelDialog.MultiplierSelectionTooltipLocalizationKey",
+      "type": "string",
+      "value": "LevelMultiplierBarTooltip",
+      "meaning": "Khóa localization của tooltip",
+      "where": "PrelevelDialog"
+    },
+    {
+      "source": "code const",
+      "key": "PrelevelDialog.MultiplierSelectionTooltipDefaultText",
+      "type": "string",
+      "value": "Play GOLD and DIAMOND levels to get more level rewards for event!",
+      "meaning": "Text mặc định của tooltip - mô tả đúng giá trị của tính năng",
+      "where": "PrelevelDialog"
+    },
+    {
+      "source": "code const",
+      "key": "Tooltip khoa",
+      "type": "string",
+      "value": "LevelMultiplierUnlockTooltipNew, LevelMultiplierUnlockTooltipOld, LevelMultiplierLockTooltip",
+      "meaning": "Text giải thích vì sao chưa mở / bị khóa",
+      "where": "MultiplierSelector.TryShowLockedReasonTooltip / PlayLockedAnimation"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierSelectionView.CrownTravelDistance",
+      "type": "float",
+      "value": "2.5",
+      "meaning": "Khoảng cách bay của vương miện khi đổi hạng",
+      "where": "MultiplierSelectionView"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierSelectionView.CrownFullAnimationDuration",
+      "type": "float",
+      "value": "0.25",
+      "meaning": "Thời lượng animation vương miện",
+      "where": "MultiplierSelectionView"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierSelectionView.FadeDuration",
+      "type": "float",
+      "value": "0.25",
+      "meaning": "Thời lượng fade khi đổi view",
+      "where": "MultiplierSelectionView"
+    },
+    {
+      "source": "code field",
+      "key": "MultiplierSelectionPrelevelDialogConfig",
+      "type": "class",
+      "value": "multiplierSelectionView, boosterButtonBackground, clocheAndSlbProgressBarFrame, generalTextMaterialGuid, boostersSliderTitleMaterialGuid, hardLevelTextPosition, hardLevelTextScale, hardLevelTextPositionWithoutSuperBooster, hardLevelTextScaleWithoutSuperBooster, clocheProgressBarPositionY, clocheProgressBarCenteredPositionX, clocheProgressBarCenteredOffsetY, clocheProgressBarCenteredScale, slbProgressBarPositionY, boostersPositionY, boostersScale, boostersTextPositionY, boostersContainerPositionY, multiplierSelectorPositionY, playButtonPositionY",
+      "meaning": "Toàn bộ thông số bố cục dialog Prelevel cho một tổ hợp độ khó x hạng",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.MultiplierSelection.Scripts.MultiplierSelectionPrelevelDialogConfig"
+    },
+    {
+      "source": "code field",
+      "key": "MultiplierSelectionLevelFailDialogConfig",
+      "type": "class",
+      "value": "multiplierSelectionView, boosterButtonBackground, clocheAndSlbProgressBarFrame, boosterTextMaterialGuid, levelTextMaterialGuid, boostersSliderTitleMaterialGuid, playButtonPositionY, playButtonContainerPositionY, levelFailedGoalsPositionY, clocheProgressBarPositionY, slbProgressBarPositionY, boostersScale, boostersPositionY, boostersContainerPositionY, multiplierSelectorPositionY",
+      "meaning": "Thông số bố cục dialog thua",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.MultiplierSelection.Scripts.MultiplierSelectionLevelFailDialogConfig"
+    },
+    {
+      "source": "code field",
+      "key": "MultiplierSelectionLevelAssetsConfig",
+      "type": "class",
+      "value": "egoBackgroundSprite, prelevelContainerShadowSprite, prelevelPlayButtonShadowSprite, extremeTopBackgroundFrame, goalBannerFrameTop, goalBannerFrameBottom, boosterButtonFrame, egoFramePrefab, outOfMovesFramePrefab",
+      "meaning": "Asset gameplay cho một tổ hợp độ khó x hạng",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.MultiplierSelection.Scripts.MultiplierSelectionLevelAssetsConfig"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2 bit 40-41",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Hạng đã chọn trừ 1 (0 = x1, 1 = x2, 2 = x3)",
+      "where": "MultiplierSelectionManager.SetSelectedMultiplier"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2 bit 42",
+      "type": "bit",
+      "value": "client + server",
+      "meaning": "Đã hiện tooltip khóa / trạng thái khóa lựa chọn",
+      "where": "MultiplierSelectionManager.SetSelectionLock / get_IsSelectionLocked / SetLockTooltipShown"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2 bit 60",
+      "type": "bit",
+      "value": "client + server",
+      "meaning": "Đã thua level khi đang ở hạng cao (minus tutorial level failed)",
+      "where": "MultiplierSelectionManager.OnLevelFailOrQuit"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2 bit 61",
+      "type": "bit",
+      "value": "client + server",
+      "meaning": "Đã thắng lại sau khi thua ở hạng cao (minus tutorial level won after fail)",
+      "where": "MultiplierSelectionManager.OnLevelWin / IncreaseMinusTutorialShownCount"
+    },
+    {
+      "source": "storage key",
+      "key": "IsOldMultiplierExpired",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Hệ số cũ đã hết hạn khi đổi cấu hình",
+      "where": "MultiplierSelectionManager.InitMultiplierSelection"
+    },
+    {
+      "source": "storage key",
+      "key": "MultiplierSelectionPrecompiledOnce",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đã precompile material một lần để tránh giật",
+      "where": "MultiplierSelectionManager.TryPrecompileMultiplierSelectionMaterials"
+    },
+    {
+      "source": "server info",
+      "key": "GameplayGenericBackendSyncHandler.GetSelectedMultiplier / GetMultiplierSelectionLocked / GetMultiplierSelectionFirstTutorialSeen / GetMultiplierSelectionSecondTutorialSeen / GetMultiplierSelectionFirstTutorialLevelPassed / GetMultiplierSelectionMinusTutorialShownCount / GetMultiplierSelectionMinusTutorialLevelFailed / GetMultiplierSelectionMinusTutorialLevelWonAfterFail",
+      "type": "mixed",
+      "value": "client + server",
+      "meaning": "Toàn bộ trạng thái tính năng được đồng bộ qua handler này",
+      "where": "Royal.Player.Context.Units.GameplayGenericBackendSyncHandler"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.MultiplierSelectionManager",
+    "Royal.Scenes.Home.Ui.Dialogs.MultiplierSelection.Scripts.MultiplierGameplayAssetsManager",
+    "Royal.Scenes.Home.Ui.Dialogs.MultiplierSelection.Scripts.MultiplierSelectionAssetsHelper",
+    "Royal.Scenes.Home.Ui.Dialogs.MultiplierSelection.Scripts.MultiplierSelector"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

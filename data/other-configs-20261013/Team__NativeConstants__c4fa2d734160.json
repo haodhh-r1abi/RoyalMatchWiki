@@ -1,0 +1,40 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.SocialManager",
+      "field": "CreateTeamAmount",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 418879
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SocialManager",
+      "field": "MinLevelToJoinTeam",
+      "type": "int",
+      "value_expression": "21",
+      "dump_line": 418880
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Backend.Tcp.BackendTcpManager",
+      "field": "PauseDisconnectTimeout",
+      "type": "float",
+      "value_expression": "20",
+      "dump_line": 459845
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Backend.Tcp.BackendTcpManager",
+      "field": "MaxConnectTryCount",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 459846
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Backend.Tcp.BackendTcpManager",
+      "field": "MaxAuthTryCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 459847
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

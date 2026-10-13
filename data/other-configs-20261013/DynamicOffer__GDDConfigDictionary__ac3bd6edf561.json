@@ -1,0 +1,180 @@
+{
+  "feature": "DynamicOffer",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "DynamicOfferProgress.DefaultSegment",
+      "type": "byte",
+      "value": "1",
+      "meaning": "Segment mặc định khi server chưa gán",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.DynamicOffers.DynamicOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "DynamicOfferProgress.MaxSegment",
+      "type": "byte",
+      "value": "7",
+      "meaning": "Segment cao nhất - có 7 mức giá / nội dung cho mỗi offer",
+      "where": "DynamicOfferProgress"
+    },
+    {
+      "source": "code field",
+      "key": "DynamicOfferProgress",
+      "type": "class",
+      "value": "EventId, Segment (byte), IsBought (bool), ProgressIdx (int)",
+      "meaning": "Tiến độ mua của một offer động",
+      "where": "DynamicOfferProgress"
+    },
+    {
+      "source": "code field",
+      "key": "DynamicOfferConfig",
+      "type": "class",
+      "value": "minLevel, minPlayerDays, metaBundleName, metaAssetName, metaBundleAndroidCrc, metaBundleIosCrc, offerPriorityHomescene, offerPriorityShop, offerPriorityFavor, maxPurchaseCount",
+      "meaning": "Cấu hình điều kiện và ưu tiên của một offer động",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.DynamicOffers.DynamicOfferConfig"
+    },
+    {
+      "source": "code field",
+      "key": "DynamicOfferSegmentConfig",
+      "type": "class",
+      "value": "segment, price, discount, rewards (DynamicOfferReward[])",
+      "meaning": "Giá và thưởng cho một segment",
+      "where": "DynamicOfferSegmentConfig"
+    },
+    {
+      "source": "code field",
+      "key": "DynamicOfferReward",
+      "type": "class",
+      "value": "type (RewardType), amount (int)",
+      "meaning": "Một phần thưởng; dùng trực tiếp enum RewardType thay vì mã chữ",
+      "where": "DynamicOfferReward"
+    },
+    {
+      "source": "code field",
+      "key": "DynamicOfferMeta",
+      "type": "ScriptableObject",
+      "value": "doesContainMissingCharacters, missingCharactersFontAssetName, shouldIgnoreRoyalFavor, hasPopupCardPrefab, iconBundle, dialogBundle, royalFavorBundle, shopBundle, popupCardBundle, segments[], alternativeSegments[], coinSegments[], titleLocalization, localizations[]",
+      "meaning": "Toàn bộ nội dung một offer động, đóng gói trong asset bundle tải từ server",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.DynamicOffers.DynamicOfferMeta"
+    },
+    {
+      "source": "code field",
+      "key": "DynamicOfferTableItem",
+      "type": "struct (SQLite)",
+      "value": "OfferName, EventId, OfferEndDate, IsSeen, Config, ConfigVersion, MatchedEventId, TouchLockedForOnce",
+      "meaning": "Bản ghi một offer động trong CSDL cục bộ",
+      "where": "Royal.Infrastructure.Services.Storage.Tables.DynamicOfferTableItem"
+    },
+    {
+      "source": "code field",
+      "key": "DynamicOfferPrefabInfo",
+      "type": "struct",
+      "value": "segment, prefabName",
+      "meaning": "Prefab riêng cho từng segment",
+      "where": "DynamicOfferPrefabInfo"
+    },
+    {
+      "source": "code enum",
+      "key": "DynamicOfferDiscountTextType",
+      "type": "enum",
+      "value": "ValueSingleLine = 0, ValueMultiLine = 1, PercentageSingleLine = 2, PercentageMultiLine = 3",
+      "meaning": "Bốn cách hiện text giảm giá",
+      "where": "DynamicOfferDiscountTextType"
+    },
+    {
+      "source": "code const",
+      "key": "Product id",
+      "type": "string",
+      "value": "'dynamic.' + mức giá (dynamic.1, .2, .3, .4, .5, .6, .7, .8, .10, .13, .15, .16, .20, .25, .30, .32, .40, .45, .50, .55, .60, .75, .80, .100)",
+      "meaning": "24 mức giá IAP cho offer động; giá USD xem feature Shop",
+      "where": "DynamicOffer.get_ProductId; appendix/iap-products.md"
+    },
+    {
+      "source": "code const",
+      "key": "Fallback product",
+      "type": "string",
+      "value": "dynamic.1 / dynamic.10 / dynamic.20",
+      "meaning": "Gói mặc định khi không tìm thấy cấu hình (log 'There is no available dynamic offer package, return default for: ')",
+      "where": "PurchaseHelper.GetDefaultDynamicOfferConfig"
+    },
+    {
+      "source": "code const",
+      "key": "Deeplink action",
+      "type": "string",
+      "value": "dynamicoffer",
+      "meaning": "Mã deeplink mở một offer động",
+      "where": "DynamicOfferManager.TryConsumeDynamicOfferDeeplink"
+    },
+    {
+      "source": "code const",
+      "key": "Bang SQLite",
+      "type": "string",
+      "value": "DynamicOfferTableItem, ActiveOfferPurchaseTableItem (lệnh 'DELETE FROM ActiveOfferPurchaseTableItem')",
+      "meaning": "Hai bảng lưu offer và giao dịch đang dở",
+      "where": "DynamicOfferManager.ClearActivePurchaseList; DynamicOfferManager.AddOfferToPurchaseList"
+    },
+    {
+      "source": "storage key",
+      "key": "DynamicOfferSegment",
+      "type": "byte",
+      "value": "server override",
+      "meaning": "Segment của người chơi cho offer động (1-7)",
+      "where": "DynamicOfferManager.get_Segment / UpdateSegment"
+    },
+    {
+      "source": "storage key",
+      "key": "DynamicOfferSegmentVersion",
+      "type": "short",
+      "value": "server override",
+      "meaning": "Phiên bản gán segment - dùng để biết có cần cập nhật không",
+      "where": "DynamicOfferManager.get_SegmentVersion"
+    },
+    {
+      "source": "server info",
+      "key": "DynamicOfferAllInfo / DynamicOfferInfo",
+      "type": "protocol",
+      "value": "server",
+      "meaning": "Gói tin mang danh sách offer động và cấu hình từng offer",
+      "where": "Royal.Infrastructure.Services.Backend.Protocol.DynamicOfferAllInfo"
+    },
+    {
+      "source": "server info",
+      "key": "UserDynamicSegmentInfo",
+      "type": "protocol",
+      "value": "server",
+      "meaning": "Gói tin gán segment cho người chơi",
+      "where": "DynamicOfferManager.UpdateSegment"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle meta",
+      "type": "string",
+      "value": "metaBundleName (tải từ CDN, CRC riêng cho Android và iOS), chứa 5 bundle con: icon, dialog, royalFavor, shop, popupCard",
+      "meaning": "Toàn bộ asset của một offer động",
+      "where": "DynamicOfferConfig; DynamicOfferMeta"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "DynamicOfferSegmentVersion (server thật)",
+      "type": "int",
+      "value": "1334",
+      "meaning": "Phiên bản gán segment offer động của user (PingResponse DynamicOfferAllInfo.UserDynamicSegmentInfo + User DB)",
+      "where": "facts/runtime/decoded_new/004_1_PingResponse.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "Giá VND 24 mức product 'dynamic.N' (IAP thật, store VN)",
+      "type": "VND",
+      "value": "dynamic.1=29.000, .2=49.000, .3=79.000, .4=99.000, .5=129.000, .6=149.000, .7=199.000, .8=199.000, .10=299.000, .13=329.000, .15=379.000, .16=399.000, .20=599.000, .25=649.000, .30=779.000, .32=829.000, .40=1.029.000, .45=1.179.000, .50=1.299.000, .55=1.399.000, .60=1.999.000, .75=1.899.000, .80=1.999.000, .100=2.999.000 (₫)",
+      "meaning": "Giá thật của 24 mức product id 'dynamic.N' dùng cho offer động (N = mức giá của segment)",
+      "where": "facts/runtime/server_configs/App_StoredProducts_VND.json"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.DynamicOfferManager",
+    "Royal.Scenes.Home.Ui.Dialogs.Offer.DynamicOffers.DynamicOffer",
+    "Royal.Scenes.Home.Ui.Dialogs.Offer.DynamicOffers.DynamicOfferMeta",
+    "Royal.Scenes.Home.Ui.Dialogs.Offer.DynamicOffers.DynamicOfferConfig"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

@@ -1,0 +1,753 @@
+{
+  "Name": "14394v02_L",
+  "Move": 20,
+  "Goals": [
+    {
+      "Goal": 86,
+      "Count": 4
+    },
+    {
+      "Goal": 82,
+      "Count": 24
+    },
+    {
+      "Goal": 16,
+      "Count": 7
+    },
+    {
+      "Goal": 105,
+      "Count": 20,
+      "IsFromSettings": true
+    }
+  ],
+  "Grid": {
+    "Items": [
+      314,
+      314,
+      395,
+      314,
+      314,
+      14,
+      14,
+      395,
+      14,
+      319,
+      319,
+      395,
+      319,
+      319,
+      212,
+      14,
+      395,
+      14,
+      319,
+      319,
+      395,
+      319,
+      319,
+      14,
+      212,
+      395,
+      14,
+      319,
+      300,
+      300,
+      300,
+      319,
+      212,
+      14,
+      14,
+      14,
+      319,
+      290,
+      290,
+      290,
+      319,
+      14,
+      14,
+      14,
+      14,
+      319,
+      26,
+      26,
+      26,
+      319,
+      14,
+      14,
+      14,
+      14,
+      300,
+      300,
+      300,
+      300,
+      300,
+      14,
+      14,
+      14,
+      14,
+      290,
+      290,
+      290,
+      290,
+      290,
+      211,
+      14,
+      14,
+      14,
+      300,
+      300,
+      396,
+      300,
+      300,
+      14,
+      14,
+      396,
+      14,
+      290,
+      290,
+      396,
+      290,
+      290,
+      211,
+      14,
+      396,
+      14,
+      26,
+      26,
+      396,
+      26,
+      26,
+      211,
+      14,
+      396,
+      14
+    ],
+    "Cells": [
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "ForceField": 287
+      },
+      {
+        "FillType": 1,
+        "ForceField": 287
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1,
+        "ForceField": 287
+      },
+      {
+        "FillType": 1,
+        "ForceField": 287
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 86,
+      "Count": 4
+    },
+    {
+      "Type": 82,
+      "Count": 12
+    },
+    {
+      "Type": 9,
+      "Count": 7
+    },
+    {
+      "Type": 114,
+      "Count": 12
+    },
+    {
+      "Type": -15,
+      "Count": 49
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [
+    {
+      "Cells": [
+        {},
+        {
+          "Y": 1
+        },
+        {
+          "Y": 2
+        },
+        {
+          "Y": 3
+        },
+        {
+          "Y": 4
+        },
+        {
+          "Y": 5
+        },
+        {
+          "Y": 6
+        },
+        {
+          "Y": 7
+        },
+        {
+          "Y": 8
+        },
+        {
+          "Y": 9
+        },
+        {
+          "Y": 10
+        },
+        {
+          "X": 1,
+          "Y": 10
+        },
+        {
+          "X": 1,
+          "Y": 9
+        },
+        {
+          "X": 1,
+          "Y": 8
+        },
+        {
+          "X": 1,
+          "Y": 7
+        },
+        {
+          "X": 2,
+          "Y": 7
+        },
+        {
+          "X": 3,
+          "Y": 7
+        },
+        {
+          "X": 3,
+          "Y": 8
+        },
+        {
+          "X": 3,
+          "Y": 9
+        },
+        {
+          "X": 3,
+          "Y": 10
+        },
+        {
+          "X": 4,
+          "Y": 10
+        },
+        {
+          "X": 4,
+          "Y": 9
+        },
+        {
+          "X": 4,
+          "Y": 8
+        },
+        {
+          "X": 4,
+          "Y": 7
+        },
+        {
+          "X": 4,
+          "Y": 6
+        },
+        {
+          "X": 4,
+          "Y": 5
+        },
+        {
+          "X": 4,
+          "Y": 4
+        },
+        {
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "X": 4
+        },
+        {
+          "X": 3
+        },
+        {
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "X": 3,
+          "Y": 4
+        },
+        {
+          "X": 3,
+          "Y": 5
+        },
+        {
+          "X": 3,
+          "Y": 6
+        },
+        {
+          "X": 2,
+          "Y": 6
+        },
+        {
+          "X": 2,
+          "Y": 5
+        },
+        {
+          "X": 2,
+          "Y": 4
+        },
+        {
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "X": 1,
+          "Y": 4
+        },
+        {
+          "X": 1,
+          "Y": 5
+        },
+        {
+          "X": 1,
+          "Y": 6
+        },
+        {
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "X": 1
+        }
+      ]
+    }
+  ],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [
+    {
+      "Cells": [
+        {
+          "Point": {},
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 3
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 4
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 5
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 1
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 1,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 1,
+            "Y": 2
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 3
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 3,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 3,
+            "Y": 2
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 4
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 3
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 4
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 5
+          },
+          "Direction": 198
+        }
+      ]
+    }
+  ],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

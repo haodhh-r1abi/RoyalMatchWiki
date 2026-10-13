@@ -1,0 +1,82 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.TeamOfferManager",
+      "field": "OfferUnlockLevel",
+      "type": "int",
+      "value_expression": "24",
+      "dump_line": 420823
+    },
+    {
+      "manager": "Royal.Player.Context.Units.TeamOfferManager",
+      "field": "OfferDurationInHours",
+      "type": "int",
+      "value_expression": "24",
+      "dump_line": 420824
+    },
+    {
+      "manager": "Royal.Player.Context.Units.TeamOfferManager",
+      "field": "ReminderDurationInHours",
+      "type": "int",
+      "value_expression": "12",
+      "dump_line": 420825
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "EventIdLimit",
+      "type": "int",
+      "value_expression": "256",
+      "dump_line": 434296
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "EventIdStartIndex",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 434297
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "EventIdEndIndex",
+      "type": "int",
+      "value_expression": "8",
+      "dump_line": 434298
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "AbGroupStartIndex",
+      "type": "int",
+      "value_expression": "9",
+      "dump_line": 434299
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "AbGroupEndIndex",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 434300
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "GoldIndex",
+      "type": "int",
+      "value_expression": "11",
+      "dump_line": 434301
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "SilverIndex",
+      "type": "int",
+      "value_expression": "12",
+      "dump_line": 434302
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+      "field": "BronzeIndex",
+      "type": "int",
+      "value_expression": "13",
+      "dump_line": 434303
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

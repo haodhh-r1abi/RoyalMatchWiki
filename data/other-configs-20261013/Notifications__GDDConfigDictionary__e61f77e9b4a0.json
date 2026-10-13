@@ -1,0 +1,219 @@
+{
+  "feature": "Notifications",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "IdentifierForStart / EndingSoon / Finished / Claim / Invite / Retention / Reminder / Life / StreakLost",
+      "type": "string",
+      "value": "_started, _reminderendingsoon, _reminderfinished, _reminderclaim, _reminderinvite, _retention, _reminder, _life, _reminderstreaklost",
+      "meaning": "Hậu tố identifier thông báo (prefix = tên event, ví dụ dragonnest_reminderendingsoon)",
+      "where": "GameNotificationService"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsNotificationHour / EarlyHour / Minute",
+      "type": "int",
+      "value": "20 / 18 / 30",
+      "meaning": "Giờ nhắc Daily Rewards (20:30, sớm 18:30)",
+      "where": "GameNotificationService"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsMinTimeToClaimResetInMs",
+      "type": "long",
+      "value": "3600000 (1 giờ)",
+      "meaning": "Nếu reset claim còn < 1 h thì dùng giờ sớm",
+      "where": "GameNotificationService.TryGetDailyRewardsNotificationTime"
+    },
+    {
+      "source": "code const",
+      "key": "RoyalWorldCupQualifierStartedTargetHour / EndingSoonTargetHour",
+      "type": "int",
+      "value": "12 / 16",
+      "meaning": "Giờ địa phương bắn thông báo World Cup",
+      "where": "GameNotificationService"
+    },
+    {
+      "source": "code const",
+      "key": "RoyalWorldCupLast3DaysInMinutes / Last1DayInMinutes",
+      "type": "int",
+      "value": "4320 / 1440",
+      "meaning": "Mốc 'sắp hết hạn' World Cup",
+      "where": "GameNotificationService"
+    },
+    {
+      "source": "code literal",
+      "key": "Claim reminder delay",
+      "type": "hours",
+      "value": "5",
+      "meaning": "SpaceMission/Pinata/BalloonRise/WeeklyLeaderboard/HiddenTemple nhắc claim sau 5 h",
+      "where": "SetUp*Notifications (AddHours 5.0)"
+    },
+    {
+      "source": "code literal",
+      "key": "Retention days",
+      "type": "int[]",
+      "value": "1, 2, 3, 7",
+      "meaning": "AfterOneDay/TwoDays/ThreeDays/SevenDaysNotification, identifier notdeeplink_retention1/2/3/7",
+      "where": "SetUpDailyNotifications"
+    },
+    {
+      "source": "code literal",
+      "key": "WelcomeBack days",
+      "type": "int[]",
+      "value": "15, 30, 90",
+      "meaning": "WelcomeBackGift15D/30D/90DNotification, identifier notdeeplink_reminder15/30/90",
+      "where": "SetUpWelcomeBackGiftNotifications"
+    },
+    {
+      "source": "code literal",
+      "key": "TeamTournament reminder offset",
+      "type": "seconds",
+      "value": "75600 (21 h)",
+      "meaning": "Bắn 21 h trước khi kết thúc",
+      "where": "SetUpTeamTournamentReminderNotification"
+    },
+    {
+      "source": "code literal",
+      "key": "TeamTreasure reminder offset",
+      "type": "hours",
+      "value": "24",
+      "meaning": "Bắn 24 h trước khi kết thúc (chỉ khi remaining ≥ 24 h)",
+      "where": "SetUpTeamTreasureNotifications"
+    },
+    {
+      "source": "code literal",
+      "key": "TeamBattle thresholds",
+      "type": "minutes",
+      "value": "1260 (21 h) / 120 (2 h)",
+      "meaning": "≥1260 → 1Day notif tại end−21h; 120..1260 → 1Hour notif; MyScore < 0 bỏ",
+      "where": "SetUpTeamBattleNotifications"
+    },
+    {
+      "source": "code literal",
+      "key": "MissionPursuit / MissionControl offset",
+      "type": "minutes",
+      "value": "1380 (23 h)",
+      "meaning": "Bắn 23 h trước khi kết thúc",
+      "where": "SetUpMissionPursuitNotifications; SetUpMissionControlNotifications"
+    },
+    {
+      "source": "code literal",
+      "key": "Partner notification offsets (TrainJourney/DragonNest)",
+      "type": "seconds",
+      "value": "777600 (9 ngày), 604800 (7 ngày)",
+      "meaning": "Nhắc mời đồng đội khi partner < 3 (Train) / < 4 (Dragon)",
+      "where": "SetUpTrainJourneyPartnerNotification; SetUpDragonNestPartnerNotification"
+    },
+    {
+      "source": "code literal",
+      "key": "Finish notification offset (TrainJourney/DragonNest/Expedition)",
+      "type": "ms",
+      "value": "259200000 (3 ngày)",
+      "meaning": "Nhắc 3 ngày trước khi kết thúc nếu chưa hoàn thành",
+      "where": "SetUpTrainJourneyFinishNotification; SetUpDragonNestFinishNotification; SetUpShortExpeditionEventFinishNotification"
+    },
+    {
+      "source": "code literal",
+      "key": "Expedition start reminder offset",
+      "type": "ms",
+      "value": "604800000 (7 ngày)",
+      "meaning": "kingstales_reminder",
+      "where": "SetUpShortExpeditionEventStartReminderNotification"
+    },
+    {
+      "source": "code literal",
+      "key": "Resource thresholds",
+      "type": "int",
+      "value": "MagicCauldron elixir ≥ 20; DukesFortune token > 200; OceanOdyssey cannon ≥ 20",
+      "meaning": "Điều kiện nhắc 'đủ tài nguyên'",
+      "where": "SetUpMagicCauldronNotifications; SetUpDukesFortuneNotifications; SetUpOceanOdysseyNotifications"
+    },
+    {
+      "source": "code literal",
+      "key": "Fire hour clamp",
+      "type": "hour",
+      "value": "13:00 / 12:00 (invite), 14:00 / 13:00 (finish); postponed → 10:00",
+      "meaning": "Giờ địa phương ép cho thông báo nhiều ngày; giờ cấm dời tới 10:00",
+      "where": "SetUp*PartnerNotification; SetUp*FinishNotification; ScheduleNotification"
+    },
+    {
+      "source": "storage key",
+      "key": "AppKeyValue.Notification",
+      "type": "bool",
+      "value": "true",
+      "meaning": "Bật thông báo trong game",
+      "where": "GameNotificationService.Bind"
+    },
+    {
+      "source": "storage key",
+      "key": "AppKeyValue.RequestNotificationPermission",
+      "type": "bool",
+      "value": "true → false sau khi xin",
+      "meaning": "Đã xin quyền tự động chưa",
+      "where": "RequestPermissionIfRuleSatisfied"
+    },
+    {
+      "source": "storage key",
+      "key": "UserKeyValue.ConsentState",
+      "type": "int",
+      "value": "1 = đã consent",
+      "meaning": "Điều kiện xin quyền sau consent",
+      "where": "RequestPermissionIfRuleSatisfied"
+    },
+    {
+      "source": "storage key",
+      "key": "LocalKeyValue.NotificationEnabledForTag",
+      "type": "int",
+      "value": "-1/1",
+      "meaning": "Trạng thái đã gửi lên server tags",
+      "where": "NotificationTagSender.GetNotificationSettingsState"
+    },
+    {
+      "source": "storage key",
+      "key": "LastInteractedNotificationIdentifier",
+      "type": "string",
+      "value": "-",
+      "meaning": "Identifier thông báo đã tiêu thụ",
+      "where": "GameNotificationService.GetLastInteractedNotificationData"
+    },
+    {
+      "source": "code const",
+      "key": "NotificationTagSender.Cloudflare / CloudflareIndex",
+      "type": "string/int",
+      "value": "cloudflare / 1",
+      "meaning": "Scheme dự phòng khi gửi tag lỗi",
+      "where": "NotificationTagSender"
+    },
+    {
+      "source": "code const",
+      "key": "Tag endpoint",
+      "type": "string",
+      "value": "NotificationTagUrl + '/tags' (URL đặt trong .cctor, không in ra)",
+      "meaning": "HTTP POST JSON tag",
+      "where": "NotificationTagSender..cctor"
+    },
+    {
+      "source": "code literal",
+      "key": "Tag keys",
+      "type": "string",
+      "value": "level, team, appVersion, country, languageCode, deviceModel, pushToken, notificationEnabledInDevice, notificationEnabledInGame, <Event>EventId, <Event>NotEligible, ClashOfChampionsEventId…",
+      "meaning": "Khoá tag gửi server",
+      "where": "NotificationTagSender.GetInitialTags; CopyAndAddCommonTags; GameNotificationService.TryUpdate*Tag"
+    },
+    {
+      "source": "asset",
+      "key": "Localization terms",
+      "type": "string",
+      "value": "OneLifeNotification, AskLifeNotification, AfterOneDayNotification…AfterSevenDaysNotification, WelcomeBackGift15D/30D/90DNotification, SpaceMissionClaimNotificationText/Title, ArcheryArenaEndedNotificationText/Title, TeamTournamentEndedNotificationTitle, TeamTournamentLast1DayNotificationText/Title, TeamTreasureNotification1DayText/Title, TeamBattle1DayText/Title, TeamBattle1HourText/Title, TeamBattleEndText/Title, WeeklyContestFinishedNotificationText/Title, WeeklyPass1DayNotificationText/Title, RoyalPass3DayNotificationText, 3DayNotificationTitle, LightningRushFinishedText/Title, LR3StepsFinishedTitleGold, PropellerRushFinishedTitle/Gold, LavaQuest/MagicCauldron/MergeSmith/MissionControl/MissionPursuit/OceanOdyssey/PuzzleBreak/AncientAdventureReminderNotificationText/Title, TrainJourneyReminderNotificationText2/4 Title2/4, RoyalCupNotificationStage1Started/Last3Days/Last1Days, Stage2Last3Days/Last1Day, Stage3FinalWin, …TitleNew",
+      "meaning": "Nội dung thông báo (11 ngôn ngữ trong appendix/localization.tsv)",
+      "where": "I2Languages"
+    }
+  ],
+  "managers": [
+    "Royal.Infrastructure.Services.Notification.GameNotificationService",
+    "Royal.Infrastructure.Services.Notification.NotificationTagSender",
+    "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsNotificationHelper"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

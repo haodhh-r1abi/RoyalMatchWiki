@@ -1,0 +1,75 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.OfferManager",
+      "field": "OfferUnlockLevel",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 413019
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "EventIdLimit",
+      "type": "int",
+      "value_expression": "512",
+      "dump_line": 432258
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "EventIdStartIndex",
+      "type": "int",
+      "value_expression": "16",
+      "dump_line": 432259
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "EventIdEndIndex",
+      "type": "int",
+      "value_expression": "24",
+      "dump_line": 432260
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "StepStartIndex",
+      "type": "int",
+      "value_expression": "25",
+      "dump_line": 432261
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "StepEndIndex",
+      "type": "int",
+      "value_expression": "29",
+      "dump_line": 432262
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "OptionStartIndex",
+      "type": "int",
+      "value_expression": "30",
+      "dump_line": 432263
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "OptionEndIndex",
+      "type": "int",
+      "value_expression": "31",
+      "dump_line": 432264
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "EndTimeStartIndex",
+      "type": "int",
+      "value_expression": "32",
+      "dump_line": 432265
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.OfferProgress",
+      "field": "EndTimeEndIndex",
+      "type": "int",
+      "value_expression": "62",
+      "dump_line": 432266
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

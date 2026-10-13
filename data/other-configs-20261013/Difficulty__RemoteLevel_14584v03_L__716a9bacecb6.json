@@ -1,0 +1,424 @@
+{
+  "Name": "14584v03_L",
+  "Move": 23,
+  "Goals": [
+    {
+      "Goal": 20,
+      "Count": 4
+    },
+    {
+      "Goal": 28,
+      "Count": 30
+    },
+    {
+      "Goal": 72,
+      "Count": 16
+    },
+    {
+      "Goal": 103,
+      "Count": 1
+    }
+  ],
+  "Grid": {
+    "Items": [
+      57,
+      58,
+      86,
+      86,
+      86,
+      86,
+      86,
+      57,
+      58,
+      47,
+      48,
+      86,
+      86,
+      86,
+      86,
+      86,
+      47,
+      48,
+      86,
+      394,
+      394,
+      14,
+      211,
+      212,
+      393,
+      32736,
+      86,
+      86,
+      394,
+      394,
+      211,
+      212,
+      213,
+      32734,
+      32735,
+      86,
+      86,
+      86,
+      86,
+      211,
+      14,
+      212,
+      86,
+      86,
+      86,
+      86,
+      279,
+      280,
+      14,
+      14,
+      14,
+      279,
+      280,
+      86,
+      86,
+      269,
+      270,
+      14,
+      213,
+      14,
+      269,
+      270,
+      86,
+      86,
+      259,
+      260,
+      213,
+      14,
+      213,
+      259,
+      260,
+      86,
+      86,
+      57,
+      58,
+      14,
+      14,
+      14,
+      57,
+      58,
+      86,
+      86,
+      47,
+      48,
+      14,
+      14,
+      14,
+      47,
+      48,
+      86
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {
+        "Cryptex": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "Cryptex": 2
+      },
+      {
+        "FillType": 1,
+        "Cryptex": 1
+      },
+      {
+        "FillType": 1,
+        "Cryptex": 1
+      },
+      {
+        "FillType": 1,
+        "Cryptex": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1,
+        "Cryptex": 2
+      },
+      {
+        "FillType": 1,
+        "Cryptex": 2
+      },
+      {
+        "FillType": 1,
+        "Cryptex": 2
+      }
+    ],
+    "Width": 9,
+    "Height": 10
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 14,
+      "Count": 4
+    },
+    {
+      "Type": 21,
+      "Count": 30
+    },
+    {
+      "Type": 113,
+      "Count": 4
+    },
+    {
+      "Type": 69,
+      "Count": 2
+    },
+    {
+      "Type": 112,
+      "Count": 1
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [
+    {
+      "Limit": 104,
+      "Count": 4
+    }
+  ],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [
+    {
+      "Id": 1,
+      "ColorId": [
+        2,
+        1
+      ],
+      "Target": [
+        8,
+        4
+      ],
+      "CellCount": 15,
+      "Width": 3,
+      "Height": 5,
+      "MinY": 5
+    },
+    {
+      "Id": 2,
+      "ColorId": [
+        2,
+        4
+      ],
+      "Target": [
+        2,
+        4
+      ],
+      "CellCount": 15,
+      "Width": 3,
+      "Height": 5,
+      "MinX": 6,
+      "MinY": 5
+    }
+  ],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": [
+    {
+      "Id": 1,
+      "Target": 4,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 6,
+      "MinY": 2
+    }
+  ]
+}

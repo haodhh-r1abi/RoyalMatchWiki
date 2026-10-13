@@ -1,0 +1,110 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.AdManager",
+      "field": "ReminderMaxCount",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 22453
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.AdManager",
+      "field": "RewardedAdForCoinMultiplier",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 22454
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.AdManager",
+      "field": "OptimizedAdRenderFrameInterval",
+      "type": "int",
+      "value_expression": "8",
+      "dump_line": 22455
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.AdManager",
+      "field": "ReminderCooldown",
+      "type": "long",
+      "value_expression": "86400000",
+      "dump_line": 22456
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "IsOfferPurchasedIndex",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 23276
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "ReminderShownCountStartIndex",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 23277
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "ReminderShownCountEndIndex",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 23278
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "ShouldShowReminderIndex",
+      "type": "int",
+      "value_expression": "6",
+      "dump_line": 23279
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "ReminderAvailableDateStartIndex",
+      "type": "int",
+      "value_expression": "7",
+      "dump_line": 23280
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "ReminderAvailableDateEndIndex",
+      "type": "int",
+      "value_expression": "38",
+      "dump_line": 23281
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "LastShownAdIdStartIndex",
+      "type": "int",
+      "value_expression": "39",
+      "dump_line": 23282
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "LastShownAdIdEndIndex",
+      "type": "int",
+      "value_expression": "60",
+      "dump_line": 23283
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "LastShownCmpIdStartIndex",
+      "type": "int",
+      "value_expression": "61",
+      "dump_line": 23284
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "LastShownCmpIdEndIndex",
+      "type": "int",
+      "value_expression": "70",
+      "dump_line": 23285
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress",
+      "field": "BitArrayLength",
+      "type": "int",
+      "value_expression": "71",
+      "dump_line": 23286
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

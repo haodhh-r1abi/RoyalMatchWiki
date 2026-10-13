@@ -1,0 +1,488 @@
+{
+  "Name": "14355v02_L",
+  "Move": 20,
+  "Goals": [
+    {
+      "Goal": 28,
+      "Count": 17
+    },
+    {
+      "Goal": 95,
+      "Count": 8
+    },
+    {
+      "Goal": 38,
+      "Count": 2
+    },
+    {
+      "Goal": 13,
+      "Count": 67
+    }
+  ],
+  "Grid": {
+    "Items": [
+      13,
+      13,
+      13,
+      13,
+      0,
+      86,
+      86,
+      86,
+      86,
+      13,
+      13,
+      13,
+      13,
+      0,
+      86,
+      86,
+      86,
+      86,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      141,
+      86,
+      86,
+      86,
+      86,
+      86,
+      86,
+      86,
+      86,
+      86,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      141,
+      373,
+      373,
+      373,
+      373,
+      211,
+      14,
+      14,
+      14,
+      14,
+      363,
+      363,
+      363,
+      363,
+      211,
+      14,
+      14,
+      14,
+      14,
+      373,
+      373,
+      51,
+      52,
+      14,
+      211,
+      14,
+      14,
+      14,
+      363,
+      363,
+      41,
+      42,
+      212,
+      14,
+      14,
+      14,
+      14,
+      373,
+      373,
+      51,
+      52,
+      212,
+      14,
+      14,
+      14,
+      14,
+      363,
+      363,
+      41,
+      42,
+      14,
+      212,
+      14,
+      14,
+      14
+    ],
+    "Cells": [
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [
+    {
+      "X": 4,
+      "Y": 12,
+      "Ids": [
+        212
+      ]
+    }
+  ],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 21,
+      "Count": 17
+    },
+    {
+      "Type": 102,
+      "Count": 8
+    },
+    {
+      "Type": 8,
+      "Count": 2
+    },
+    {
+      "Type": 32,
+      "Count": 2
+    },
+    {
+      "Type": -2,
+      "Count": 67
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

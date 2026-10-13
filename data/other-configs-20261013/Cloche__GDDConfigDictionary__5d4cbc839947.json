@@ -1,0 +1,157 @@
+{
+  "feature": "Cloche",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "ClocheUnlockLevel",
+      "type": "int",
+      "value": "32",
+      "meaning": "Level mở khoá Cloche",
+      "where": "ClocheManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DefaultMaxCloche",
+      "type": "int",
+      "value": "3",
+      "meaning": "Số bước của thanh tiến độ (3 level thắng liên tiếp)",
+      "where": "ClocheManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "ScaleUpRatioForStoryLevel",
+      "type": "float",
+      "value": "1.3779528",
+      "meaning": "Hệ số phóng to thanh Cloche ở story level",
+      "where": "ClocheManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "ClocheProgress.LockViewScale",
+      "type": "float",
+      "value": "0.806",
+      "meaning": "Tỉ lệ hiển thị khi thanh ở trạng thái khoá",
+      "where": "ClocheProgress (const)"
+    },
+    {
+      "source": "code const",
+      "key": "ClocheProgress.RightWidth",
+      "type": "float",
+      "value": "0.2",
+      "meaning": "Độ rộng phần bar bên phải",
+      "where": "ClocheProgress (const)"
+    },
+    {
+      "source": "code field",
+      "key": "AClocheStrategy.maxStepCount",
+      "type": "int",
+      "value": "truyền vào constructor (mặc định = DefaultMaxCloche = 3)",
+      "meaning": "Số bước tối đa của chiến lược hiện tại",
+      "where": "AClocheStrategy; ClocheManager.GetMaxCloche"
+    },
+    {
+      "source": "code const",
+      "key": "StrategyType",
+      "type": "enum",
+      "value": "Default / Multiplier (2 giá trị, chỉ số cụ thể không có trong dossier)",
+      "meaning": "Loại chiến lược Cloche",
+      "where": "Royal.Player.Context.Units.ClocheStrategy.StrategyType"
+    },
+    {
+      "source": "code const",
+      "key": "Sprite tiến độ",
+      "type": "string",
+      "value": "cloche_0, cloche_1, cloche_2, cloche_3",
+      "meaning": "Hình nắp bạc theo bước 0..3",
+      "where": "ClocheManager.GetClocheProgressSprite; AClocheStrategy.GetClocheProgressSprite"
+    },
+    {
+      "source": "code const",
+      "key": "Sprite phản chiếu",
+      "type": "string",
+      "value": "reflection_0, reflection_1, reflection_2, reflection_3",
+      "meaning": "Hình phản chiếu theo bước",
+      "where": "ClocheManager.GetClocheReflectionSprite"
+    },
+    {
+      "source": "code const",
+      "key": "Prefab Cloche",
+      "type": "string",
+      "value": "ClochePrefab1, ClochePrefab2, ClochePrefab3",
+      "meaning": "Prefab theo số Cloche được ném",
+      "where": "ClocheManager.GetClocheViewPrefab; AClocheStrategy.GetClocheViewPrefab"
+    },
+    {
+      "source": "storage key",
+      "key": "ClocheTutorialShowed",
+      "type": "bitmask",
+      "value": "-",
+      "meaning": "Đã xem hướng dẫn Cloche (tách nhánh default và multiplier)",
+      "where": "ClocheManager.SetClocheTutorialIsSeen / ShouldShowDefaultClocheTutorial"
+    },
+    {
+      "source": "storage key",
+      "key": "IsMultiplierClocheActive",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Chiến lược Cloche đang dùng là Multiplier hay không",
+      "where": "ClocheManager.DecideClocheStrategy"
+    },
+    {
+      "source": "code const",
+      "key": "PreLevelInventory bit 48..49",
+      "type": "long",
+      "value": "2 bit (0..3)",
+      "meaning": "Số Cloche trong kho prelevel",
+      "where": "ClocheManager.GetBoosterClocheCount"
+    },
+    {
+      "source": "code field",
+      "key": "UserInventory Cloche",
+      "type": "int",
+      "value": "0..maxStepCount",
+      "meaning": "Tiến độ Cloche lưu trong UserInventory",
+      "where": "ClocheManager.GetCloche / SetCloche; UserInventory.GetCloche"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsButlersGiftMultiplierRewardAbEnabled",
+      "type": "bool",
+      "value": "server",
+      "meaning": "Bật nhánh Cloche có nhân thưởng",
+      "where": "ClocheManager.DecideClocheStrategy"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle",
+      "type": "string",
+      "value": "ClocheGameplayBundle, ClocheCommonBundle, MultiplierClocheCommonBundle",
+      "meaning": "3 bundle tài nguyên Cloche",
+      "where": "AClocheStrategy; ClocheBundleHelper"
+    },
+    {
+      "source": "asset",
+      "key": "ClocheInfoDialogBundledSubPrefab",
+      "type": "prefab",
+      "value": "-",
+      "meaning": "Dialog giải thích Cloche",
+      "where": "ClocheManager.GetClocheInfoBundledView"
+    },
+    {
+      "source": "asset",
+      "key": "Area107BringTheClocheView / Area150BringTheClocheView",
+      "type": "class",
+      "value": "-",
+      "meaning": "Cảnh story dùng Cloche ở khu vực 107 và 150",
+      "where": "Royal.Scenes.Home.Areas"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.ClocheManager",
+    "Royal.Player.Context.Units.ClocheStrategy.AClocheStrategy",
+    "Royal.Player.Context.Units.ClocheStrategy.DefaultClocheStrategy",
+    "Royal.Player.Context.Units.ClocheStrategy.MultiplierClocheStrategy",
+    "Royal.Player.Context.Units.ClocheStrategy.ClocheBundleHelper"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

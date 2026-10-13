@@ -1,0 +1,567 @@
+{
+  "Name": "08714v03_L",
+  "Move": 25,
+  "Goals": [
+    {
+      "Goal": 28,
+      "Count": 21
+    },
+    {
+      "Goal": 47,
+      "Count": 16
+    },
+    {
+      "Goal": 66,
+      "Count": 54
+    },
+    {
+      "Goal": 12,
+      "Count": 14
+    }
+  ],
+  "Grid": {
+    "Items": [
+      86,
+      86,
+      86,
+      223,
+      249,
+      173,
+      174,
+      249,
+      223,
+      86,
+      86,
+      86,
+      223,
+      250,
+      163,
+      164,
+      250,
+      223,
+      14,
+      14,
+      211,
+      223,
+      250,
+      173,
+      174,
+      250,
+      223,
+      14,
+      14,
+      211,
+      223,
+      250,
+      163,
+      164,
+      250,
+      223,
+      14,
+      213,
+      14,
+      223,
+      250,
+      173,
+      174,
+      250,
+      223,
+      14,
+      14,
+      211,
+      223,
+      250,
+      163,
+      164,
+      250,
+      223,
+      14,
+      14,
+      212,
+      223,
+      250,
+      173,
+      174,
+      250,
+      223,
+      14,
+      14,
+      212,
+      223,
+      250,
+      163,
+      164,
+      250,
+      223,
+      14,
+      212,
+      14,
+      86,
+      86,
+      86,
+      86,
+      86,
+      11,
+      14,
+      14,
+      86,
+      86,
+      86,
+      86,
+      86,
+      11,
+      0,
+      14,
+      86,
+      86,
+      86,
+      86,
+      86,
+      11,
+      0,
+      0
+    ],
+    "Cells": [
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "FillType": 1,
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 21,
+      "Count": 21
+    },
+    {
+      "Type": 63,
+      "Count": 16
+    },
+    {
+      "Type": 70,
+      "Count": 2
+    },
+    {
+      "Type": 41,
+      "Count": 4
+    },
+    {
+      "Type": -10,
+      "Count": 54
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 4
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 3
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 4
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 5
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 6
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 7
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 7
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 3
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 4
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 5
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 6
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 7
+          },
+          "Direction": 198
+        }
+      ]
+    }
+  ],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

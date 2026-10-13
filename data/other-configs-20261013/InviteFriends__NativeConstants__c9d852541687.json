@@ -1,0 +1,362 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "EventInitial",
+      "type": "string",
+      "value_expression": "\"IF\"",
+      "dump_line": 406158
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "SourceFriends",
+      "type": "string",
+      "value_expression": "\"friends\"",
+      "dump_line": 406159
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "SourceSettings",
+      "type": "string",
+      "value_expression": "\"settings\"",
+      "dump_line": 406160
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "SourceReward",
+      "type": "string",
+      "value_expression": "\"reward\"",
+      "dump_line": 406161
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "SourceAuto",
+      "type": "string",
+      "value_expression": "\"auto\"",
+      "dump_line": 406162
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "ShareButtonNative",
+      "type": "string",
+      "value_expression": "\"native\"",
+      "dump_line": 406163
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "ShareButtonFacebook",
+      "type": "string",
+      "value_expression": "\"facebook\"",
+      "dump_line": 406164
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "80",
+      "dump_line": 406165
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "DefaultFrameId",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 406166
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "MaxAvatarTooltipShowCount",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 406167
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "AvatarRewardStepIndex",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 406168
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "FirstStepIndex",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 406169
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "AvatarTooltipCooldownInDays",
+      "type": "int",
+      "value_expression": "7",
+      "dump_line": 406170
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "AutoDialogLevelOffset",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 406171
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "RewardOriginInvitee",
+      "type": "string",
+      "value_expression": "\"IF-new\"",
+      "dump_line": 406172
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "RewardOriginInviter",
+      "type": "string",
+      "value_expression": "\"IF-step\"",
+      "dump_line": 406173
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "WelcomeDialogDelayInSeconds",
+      "type": "float",
+      "value_expression": "0.5",
+      "dump_line": 406174
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "FetchInviteesTimeThresholdInMs",
+      "type": "long",
+      "value_expression": "10800000",
+      "dump_line": 406175
+    },
+    {
+      "manager": "Royal.Player.Context.Units.InviteFriendsManager",
+      "field": "FetchInviteesTimeThresholdOnDialogOpenInMs",
+      "type": "long",
+      "value_expression": "10000",
+      "dump_line": 406176
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "ShareMessageKey",
+      "type": "string",
+      "value_expression": "\"InviteFriendsShareMessage\"",
+      "dump_line": 172174
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "ShareMessageDefault",
+      "type": "string",
+      "value_expression": "\"Join me in Royal Match and let\\'s win rewards together!\"",
+      "dump_line": 172175
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "FacebookShareMessageKey",
+      "type": "string",
+      "value_expression": "\"UserProfileUserInviteMessageText\"",
+      "dump_line": 172176
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "FacebookShareMessageDefault",
+      "type": "string",
+      "value_expression": "\"Let\\'s play Royal Match together!\"",
+      "dump_line": 172177
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "PrefsInviterUserIdKey",
+      "type": "string",
+      "value_expression": "\"InviteFriendsCachedInviterUserId\"",
+      "dump_line": 172178
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "InviterProfileRetryIntervalInSeconds",
+      "type": "float",
+      "value_expression": "5",
+      "dump_line": 172179
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "MaxInviterProfileRetryCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 172180
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "InviteLinkFallbackBase",
+      "type": "string",
+      "value_expression": "\"https://playroyalmatch.onelink.me/invite?pid=invite_friends&c=invite_v1&deep_link_value=invite\"",
+      "dump_line": 172181
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "InviteLinkDeepLinkSub1Key",
+      "type": "string",
+      "value_expression": "\"deep_link_sub1\"",
+      "dump_line": 172182
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "InstallSourceAttribution",
+      "type": "string",
+      "value_expression": "\"attribution\"",
+      "dump_line": 172183
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "InstallSourceDeeplink",
+      "type": "string",
+      "value_expression": "\"deeplink\"",
+      "dump_line": 172184
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "InviteeUserIdDelimiter",
+      "type": "string",
+      "value_expression": "\",\"",
+      "dump_line": 172185
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+      "field": "InviteLinkAppScheme",
+      "type": "string",
+      "value_expression": "\"royalmatch://\"",
+      "dump_line": 172186
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsConfigHelper",
+      "field": "DefaultConfig",
+      "type": "string",
+      "value_expression": "\"invite_friends_default_config\"",
+      "dump_line": 171671
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "BitArrayLength",
+      "type": "int",
+      "value_expression": "20",
+      "dump_line": 430315
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsInInviteeEventIndex",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 430316
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsInInviterEventIndex",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 430317
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsInviteeRewardClaimedIndex",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 430318
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "ClaimedUserCountStart",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 430319
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "ClaimedUserCountEnd",
+      "type": "int",
+      "value_expression": "9",
+      "dump_line": 430320
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsInviteeWelcomeShownIndex",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 430321
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsInviterAddedAsFriendIndex",
+      "type": "int",
+      "value_expression": "11",
+      "dump_line": 430322
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsRegisteredAsNewUserIndex",
+      "type": "int",
+      "value_expression": "12",
+      "dump_line": 430323
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "AvatarTooltipShownCountStart",
+      "type": "int",
+      "value_expression": "13",
+      "dump_line": 430324
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "AvatarTooltipShownCountEnd",
+      "type": "int",
+      "value_expression": "14",
+      "dump_line": 430325
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "PopupOpenedByUserIndex",
+      "type": "int",
+      "value_expression": "15",
+      "dump_line": 430326
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsInstallAttributedEvtSentIndex",
+      "type": "int",
+      "value_expression": "16",
+      "dump_line": 430327
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsFirstStepRewardsTooltipShownIndex",
+      "type": "int",
+      "value_expression": "17",
+      "dump_line": 430328
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsLaterStepsRewardsTooltipShownIndex",
+      "type": "int",
+      "value_expression": "18",
+      "dump_line": 430329
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "IsAutoPopupShownIndex",
+      "type": "int",
+      "value_expression": "19",
+      "dump_line": 430330
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "ClaimedUserCountMin",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 430331
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.InviteFriendsProgress",
+      "field": "ClaimedUserCountMax",
+      "type": "int",
+      "value_expression": "127",
+      "dump_line": 430332
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

@@ -1,0 +1,26 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.ClocheManager",
+      "field": "ClocheUnlockLevel",
+      "type": "int",
+      "value_expression": "32",
+      "dump_line": 401535
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ClocheManager",
+      "field": "DefaultMaxCloche",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 401536
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ClocheManager",
+      "field": "ScaleUpRatioForStoryLevel",
+      "type": "float",
+      "value_expression": "1.3779528",
+      "dump_line": 401540
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

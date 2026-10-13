@@ -1,0 +1,347 @@
+{
+  "feature": "LiveOps",
+  "configs": [
+    {
+      "source": "server info",
+      "key": "ClientSettings (30 co)",
+      "type": "FlatBuffers Table",
+      "value": "DeprecatedNetworkMetricsEnabled (bool), HttpClientEnabledCustomDevice (bool), HttpClientEnabledLowEndDevice (bool), CommandsWebclientEnabled (bool), MaintenanceWebclientEnabled (bool), SplashRemoteLevelWebclientEnabled (bool), FileDownloaderSingleThreadEnabled (bool), BestHttpCacheEnabled (bool), DownloadSchedulingDisabled (bool), UnityWebRequestEnabled (bool), LogUploadInThreadEnabled (bool), MuteDetectionEnabled (bool), IosUnityWebRequestEnabled (bool), LevelStartEndImprovementsEnabled (bool), RefreshRateFixEnabled (bool), TermsAndConditionsVersion (int), AppCheckEnabled (bool), SendFullKeyValueVersion (sbyte), AnalyticsBlockDisabled (bool), ConcurrentDlrUpdateScoreLogEnabled (bool), NetworkMetricsEnabledFlag (sbyte), RequestResponseLoggingEnabled (bool), KingRobertAnimationEnabled (bool), SendDataOptimizationEnabled (bool), XsollaPaymentEnabled (bool), CloudflareEnabled (bool), HttpDisabled (bool), TcpPort80TestEnabled (bool), MaxLevelForBundle (int), PurchaseDisabled (bool)",
+      "meaning": "30 cờ live-ops gửi trong mỗi Ping",
+      "where": "Protocol.ClientSettings"
+    },
+    {
+      "source": "AB test",
+      "key": "AB test id (118 hang so)",
+      "type": "int",
+      "value": "EgoPriceChange 51/52, AndroidProgressTransfer 59/60, ArcheryArena 61/62, DmaConsentRequest 67/68, ButlersGiftMultiplierRewardV2 79/80, HomeSectionTouchLock 85/86, OffersHomeSceneIconHide 91/92, CardCollectionRewardsFix 99/100, AgePopup 101/102, NoOffer 105/106, AgeConsentV2 116/117, PrivacySettingsRedesign 126/127, RewardReduction 128/129, RoyalPassNextStage 134/135, PropellerRush3Step 136/137, NewLeague 138/139, NewLeagueV2 140/141, KingsCupMatchmaking 142/143, TeamBattleMatchmaking 144/145, AncientAdventure 146/147, SeasonalCardCollectionImprovement 148/149, MultiplierToken 150/151, AncientAdventureV2 152/153, RobotRivals 158/159, MultiplierTokenV2 160/161, DailySkyRaceSpaceMission 164/165, ShopRedesign 166/167, PrivacySettingsKorea 175/176, NotificationReduction 177/178, ClashOfChampions 179/180, ExternalPayment 181/182, BoosterRewardReduction 183/184, AgeConsentV3 185/186, WeeklyPass 187/188, MergeSmith 189/190, RushEventsReplayable 191/192, SuperchargeOffer 193/194, ExtremelyHardLevelOffer 195/196, AgeConsentV4 197/198, MultiplePurchaseDynamicOffer 199/200, NewUserEventFlowChange 201, SuperLightballLevelChange 203/204, LimitedInGameAds 205/206, LadderOfferShopCard 207/208, AgeConsentV5 209/210, MultiplierLevelType 213/214, EarlyKingsNightmare 215, TeamBattleContributionLimit 216/217, ShortExpeditionEvent 218/219, EgoRewardedFirstStepOnly 220/221, ExternalPaymentV2 222/223, NextEventCollectible 224/225, SuperLightballLevelChangeV2 226/227, DailyRewards 228/229, TableGame 230",
+      "meaning": "Danh sách id AB test (cặp new_user/old_user)",
+      "where": "AbTestHelper (const)"
+    },
+    {
+      "source": "AB test",
+      "key": "Ten chien dich AB (108 ten)",
+      "type": "string",
+      "value": "age_consent_v2/v3/v4/v5_new_user + _old_user, age_popup_new_user/_old_user, ancient_adventure(_v2)_new_user/_old_user, android_progress_transfer_*, archery_arena_*, booster_reduction_*, butlers_multiplier_2_*, card_collection_rewards_fix_*, champions_clash_*, daily_rewards_*, daily_sky_race_space_mission_*, data_consent_*, dma_consent_request_*, early_kings_nightmare, ego_price_change_*, external_payment(_v2)_*, extremely_hard_level_offer_*, kings_cup_matchmaking_*, kings_tales_*, kings_workshop, ladder_offer_shop_card_*, lightning_rush_propeller_rush_retry_*, limited_in_game_ads(_v2)_*, merge_smith_*, multiplier_level_type_*, new_royal_league(_v2)_*, new_user_event_flow_change, next_event_collectible_*, no_offer_*, offers_home_scene_icon_hide_*, privacy_settings_redesign_*, propeller_rush_3_step_*, red_action_notification_*, reward_reduction_*, robot_rivals_*, royal_pass_next_stage_*, scc_improvement_*, shop_redesign_*, supercharge_ab_*, superlightball_level_change(_v2)_*, team_battle_contribution_limit_*, team_battle_matchmaking_*, touch_lock_*, weekday_offer_*, weekly_pass_*, x2_multiplier_token(_v2)_*",
+      "meaning": "Tên chiến dịch AB (dùng trong dashboard và analytics AbTestEnter)",
+      "where": "AbTestHelper.SetAbTestsMap (strings-by-type.tsv)"
+    },
+    {
+      "source": "code const",
+      "key": "RemoteConfigManager.LevelDownloadPath",
+      "type": "string",
+      "value": "https://remote-levels.prod.rylmtch.com/flatbuffer/",
+      "meaning": "CDN tải file level (.bytes)",
+      "where": "RemoteConfigManager"
+    },
+    {
+      "source": "code const",
+      "key": "RemoteConfigManager.ConfigPath",
+      "type": "string",
+      "value": "https://remote-levels.prod.rylmtch.com/versions/",
+      "meaning": "CDN tải file version (.json)",
+      "where": "RemoteConfigManager"
+    },
+    {
+      "source": "code const",
+      "key": "RemoteRoyalBundleManager.ConfigPath",
+      "type": "string",
+      "value": "https://contents.prod.rylmtch.com/dynamic-content-config/dynamic-bundle-config.json",
+      "meaning": "Cấu hình bundle động",
+      "where": "RemoteRoyalBundleManager"
+    },
+    {
+      "source": "code const",
+      "key": "RemoteRoyalBundleManager.MaxDownloadTry / MediumBundleSize",
+      "type": "int / float",
+      "value": "3 / 3 (MB)",
+      "meaning": "Số lần thử tải và ngưỡng 'bundle vua'",
+      "where": "RemoteRoyalBundleManager"
+    },
+    {
+      "source": "code const",
+      "key": "SystemMessageManager.UpdatePopupImageDownloadUrl / UpdateMessageImageName",
+      "type": "string",
+      "value": "https://contents.prod.rylmtch.com/ / UpdateMessage{0}Image",
+      "meaning": "Ảnh popup cập nhật tải từ CDN",
+      "where": "SystemMessageManager"
+    },
+    {
+      "source": "code const",
+      "key": "SystemMessageHelper.MessageIdSpace / StoredMessageIdCount",
+      "type": "int",
+      "value": "8 / 4",
+      "meaning": "Nén 4 id tin nhắn gần nhất, mỗi id 8 bit",
+      "where": "SystemMessageHelper"
+    },
+    {
+      "source": "static array",
+      "key": "SystemMessageType",
+      "type": "enum",
+      "value": "NONE=0, INCONVENIENCE=1, SUCCESS=2, CUSTOM_POPUP=3, WELCOME_BACK_GIFT_TIER_1=4, WELCOME_BACK_GIFT_TIER_2=5, WELCOME_BACK_GIFT_TIER_3=6, SEASONAL_CARD_COLLECTION_GIFT=7",
+      "meaning": "8 loại tin nhắn hệ thống",
+      "where": "Protocol.SystemMessageType"
+    },
+    {
+      "source": "static array",
+      "key": "Deeplink action (45 action)",
+      "type": "string",
+      "value": "propellermadness, bookoftreasure, lightningrush, dailylightningrush, teambattle, teamtreasure, pinataparty, skyrace, spacemission, balloonrise, weeklycontest, royalpass, weeklypass, royalcup, kingscup, lavaquest, hiddentemple, magiccauldron, dragonnest, archeryarena, teamtournament, dukesfortune, missionpursuit, missioncontrol, trainjourney, oceanodyssey, puzzlebreak, propellerrush, ancientadventure, robotrivals, mergesmith, championsclash, kingstales, dailyrewards, ladderoffer, specialoffer, teamgiftoffer, dynamicoffer, addfriend, ageconsent, faq, section, superlightball, remoterewards, invite (+ tablegame_onelink, start, notdeeplink)",
+      "meaning": "45 deeplink action mở thẳng vào từng tính năng",
+      "where": "DeepLinkHelper (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DeepLinkHelper.NotificationTypeSplitter / IgnoreDeeplinkActionKey / Start",
+      "type": "string",
+      "value": "_ / notdeeplink / start",
+      "meaning": "Tách loại notification, bỏ qua, và action mặc định",
+      "where": "DeepLinkHelper"
+    },
+    {
+      "source": "static array",
+      "key": "Notification link type (8 loai)",
+      "type": "string",
+      "value": "reminder, reminder15, reminder30, reminder90, lifeask, lifefull, lifeone, inactiveleader",
+      "meaning": "Phân loại notification trong analytics",
+      "where": "DeepLinkHelper.GetAnalyticsLinkType"
+    },
+    {
+      "source": "code const",
+      "key": "ApplicationPrivacyManager.MaxWaitTimeForFirstPing",
+      "type": "float",
+      "value": "2 (giây)",
+      "meaning": "Thời gian chờ ping đầu trước khi quyết định luồng consent",
+      "where": "ApplicationPrivacyManager"
+    },
+    {
+      "source": "code const",
+      "key": "ApplicationPrivacyManager.LastDateBeforeExplicitConsentRequired",
+      "type": "long",
+      "value": "1735516800000 (2025-01-01 UTC)",
+      "meaning": "Sau mốc này bắt buộc consent tường minh",
+      "where": "ApplicationPrivacyManager"
+    },
+    {
+      "source": "static array",
+      "key": "AutoPrivacyDialogEnabledCountries / RegionsWithSpecificAdsRegulations",
+      "type": "string[]",
+      "value": "-",
+      "meaning": "Danh sách quốc gia tự động hiện dialog quyền riêng tư / vùng có quy định quảng cáo riêng",
+      "where": "ApplicationPrivacyManager (static field)"
+    },
+    {
+      "source": "code const",
+      "key": "ParentalControlManager.ConsecutiveFailedOtpCount",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số lần nhập sai OTP liên tiếp trước khi khóa",
+      "where": "ParentalControlManager"
+    },
+    {
+      "source": "code const",
+      "key": "ParentalControlManager.MessageBlockTimeSpanInMs",
+      "type": "long",
+      "value": "900000 (15 phút)",
+      "meaning": "Thời gian khóa gửi OTP sau khi sai nhiều lần",
+      "where": "ParentalControlManager"
+    },
+    {
+      "source": "code const",
+      "key": "HelpshiftManager.DomainName / AppId / GameObjectName / DeleteAccountSectionId",
+      "type": "string",
+      "value": "dreamgames.helpshift.com / dreamgames_platform_20200701114225882-8b0e714dfa1890f / HelpshiftProxy / 121",
+      "meaning": "Cấu hình Helpshift SDK",
+      "where": "HelpshiftManager"
+    },
+    {
+      "source": "static array",
+      "key": "Helpshift conversation tags",
+      "type": "string[]",
+      "value": "100, 500, 1k, 2k, 5k, 10k, 20k, 50k",
+      "meaning": "Tag mức chi tiêu gắn vào ticket hỗ trợ",
+      "where": "HelpshiftManager.BuildConversationTags"
+    },
+    {
+      "source": "code const",
+      "key": "AppManager.StoreUrl",
+      "type": "string",
+      "value": "market://details?id=com.dreamgames.royalmatch",
+      "meaning": "Link cửa hàng cho force update",
+      "where": "AppManager.get_StoreUrl"
+    },
+    {
+      "source": "storage key",
+      "key": "ForceUpdateVersion",
+      "type": "int",
+      "value": "server",
+      "meaning": "Phiên bản tối thiểu bắt buộc",
+      "where": "AppManager.UpdateForceVersion"
+    },
+    {
+      "source": "code const",
+      "key": "Localization force update",
+      "type": "string",
+      "value": "ForceUpdateTitle, ForceUpdateMessage, ForceUpdateAction",
+      "meaning": "Chuỗi dialog bắt buộc cập nhật",
+      "where": "AppManager.CheckForceUpdate"
+    },
+    {
+      "source": "storage key",
+      "key": "InstallTime / SessionCount / LastAppQuitTime / LastAppPauseTime / LastAppPauseBattery / AppStatus",
+      "type": "long / int",
+      "value": "-",
+      "meaning": "Thống kê vòng đời app",
+      "where": "AppManager"
+    },
+    {
+      "source": "storage key",
+      "key": "RemoteLevelConfigETag / RemoteDownloadedLevelNames",
+      "type": "string",
+      "value": "-",
+      "meaning": "ETag config level từ xa và danh sách level đã tải (ngăn cách §)",
+      "where": "RemoteConfigManager"
+    },
+    {
+      "source": "storage key",
+      "key": "RemoteRoyalBundles",
+      "type": "string",
+      "value": "-",
+      "meaning": "Cache danh sách bundle động",
+      "where": "RemoteRoyalBundleManager.LoadRemoteRoyalBundles"
+    },
+    {
+      "source": "storage key",
+      "key": "SystemMessageLocalData / SystemMessageId",
+      "type": "string / int",
+      "value": "-",
+      "meaning": "Hộp thư hệ thống và id tin nhắn",
+      "where": "SystemMessageManager"
+    },
+    {
+      "source": "storage key",
+      "key": "MonetizationCommonUse1",
+      "type": "bitmask",
+      "value": "-",
+      "meaning": "Bitmask chứa PIN và cờ Parental Control (password set, chat enabled, purchase enabled, email set)",
+      "where": "ParentalControlManager"
+    },
+    {
+      "source": "storage key",
+      "key": "ParentalControlMessageBlockTime",
+      "type": "long",
+      "value": "-",
+      "meaning": "Mốc hết khóa gửi OTP",
+      "where": "ParentalControlManager"
+    },
+    {
+      "source": "storage key",
+      "key": "PrivacySplashDialogCompleted / PrivacySettingsKoreaCompleted / UserTermsAndConditionAcceptedOnce / UserPrivacyAcceptedTermsAndConditionsVersion / ConsentVersion / PingReceivedAtLeastOnce / AnalyticsBlockDisabled",
+      "type": "bool / int",
+      "value": "-",
+      "meaning": "Trạng thái consent và điều khoản",
+      "where": "ApplicationPrivacyManager"
+    },
+    {
+      "source": "code const",
+      "key": "Localization Parental Control",
+      "type": "string",
+      "value": "ParentalControlTooManyAttemptsSlidingText + '\\n' + ParentalControlTooManyAttemptsSlidingText2",
+      "meaning": "Thông báo nhập sai quá nhiều lần",
+      "where": "ParentalControlManager.GetTooManyAttemptsText"
+    },
+    {
+      "source": "code const",
+      "key": "CDN contents.prod.rylmtch.com",
+      "type": "string",
+      "value": "/asset-bundles/feature (feature bundle), /dynamic-content-config/dynamic-content-config.json (cosmetic), /dynamic-content-config/dynamic-bundle-config.json (bundle động), /ocean-odyssey-levels/ (màn OO), / (ảnh popup)",
+      "meaning": "5 đường dẫn nội dung động trên cùng một CDN",
+      "where": "AFeatureBundle / ProfileSkinBundleManager / RemoteRoyalBundleManager / OceanOdysseyLevelDownloadHelper / SystemMessageManager"
+    },
+    {
+      "source": "code const",
+      "key": "Admin URL",
+      "type": "string",
+      "value": "https://admin.prod.royalmatch.drmgms.com/team/{1}",
+      "meaning": "Link trang quản trị đội (gắn vào ticket Helpshift)",
+      "where": "HelpshiftManager.GetUserTeamInfo"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "ClientSettings — giá trị THẬT (runtime)",
+      "type": "flags",
+      "value": "DeprecatedNetworkMetricsEnabled=true, CommandsWebclientEnabled=true, MaintenanceWebclientEnabled=true, SplashRemoteLevelWebclientEnabled=true, UnityWebRequestEnabled=true, LogUploadInThreadEnabled=true, MuteDetectionEnabled=true, IosUnityWebRequestEnabled=true, LevelStartEndImprovementsEnabled=true, RefreshRateFixEnabled=true, AppCheckEnabled=true, SendFullKeyValueVersion=1, NetworkMetricsEnabledFlag=31, RequestResponseLoggingEnabled=true, KingRobertAnimationEnabled=true, SendDataOptimizationEnabled=true, CloudflareEnabled=true, HttpDisabled=true, MaxLevelForBundle=14301",
+      "meaning": "Giá trị THẬT của các cờ ClientSettings server gửi trong Ping (account lvl8)",
+      "where": "PingResponse_ClientSettings.json / decoded_new/004_1_PingResponse.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "Nhóm AB THẬT của account (runtime)",
+      "type": "int",
+      "value": "52 test active. Có tên: privacy_settings_redesign_old_user(127)=g2, reward_reduction_old_user(129)=g4, propeller_rush_3_step_old_user(137)=g3, new_royal_league_v2_old_user(141)=g2, ancient_adventure_old_user(147)=g5, scc_improvement_old_user(149)=g2, ancient_adventure_v2_old_user(153)=g3, robot_rivals_old_user(159)=g4, x2_multiplier_token_v2_old_user(161)=g2, daily_sky_race_space_mission_old_user(165)=g4, data_consent_new_user(175)=g2, red_action_notification_new_user(177)=g2, champions_clash_new_user(179)=g5, merge_smith_new_user(189)=g4, lightning_rush_propeller_rush_retry_old_user(192)=g2, supercharge_ab_old_user(194)=g6, weekday_offer_old_user(200)=g4, ladder_offer_shop_card_old_user(208)=g1, age_consent_v5_new_user(209)=g4, early_kings_nightmare(215)=g3, next_event_collectible_new_user(224)=g1, superlightball_level_change_v2_new_user(226)=g5, daily_rewards_new_user(228)=g3",
+      "meaning": "Nhóm (group) AB test THẬT server gán cho account 2712389101 (lvl8)",
+      "where": "ab_tests_runtime.json / PingResponse_NewAbData.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "NotificationTagRequiredKeys (runtime)",
+      "type": "int[]",
+      "value": "[158,159,179,180,187,188,211,212]",
+      "meaning": "Các AB test cần gửi tag lên hệ push (RobotRivals 158/159, ClashOfChampions 179/180, WeeklyPass 187/188, TeamBattleContributionLimit 211/212)",
+      "where": "PingResponse_NewAbData.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "PingResponse — số liệu live-ops (runtime)",
+      "type": "int",
+      "value": "Flags=16908417, MaxLevel=14500, RequiredLevelForLeague=14501, WeeklyLeaderboardServerEventId=217, RevenueSegmentVersion=1134, EventDependencyInfo.ConfigVersion=291, InviteFriendConfig.ConfigVersion=5, UserSegmentVersion=1134, DynamicOfferSegmentVersion=1334",
+      "meaning": "Các số điều phối live-ops server gửi thật trong Ping",
+      "where": "decoded_new/004_1_PingResponse.json (INDEX.md)"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "Transport backend — endpoint thật (BackendHttpService .cctor)",
+      "type": "string[]",
+      "value": "game-server.prod.royalmatch.drmgms.com/api, stat-server.prod.royalmatch.drmgms.com/api, message-server.prod.royalmatch.drmgms.com/api, purchase-server.prod.royalmatch.drmgms.com/api; fallback *.fallback-prod.rylmtch.com/api (uri scheme 'cloudflare'); social TCP: social-server.prod.royalmatch.drmgms.com; maintenance: https://maintenance.prod.royalmatch.drmgms.com/status + Cloud Function backendMaintenanceMode; log upload GCS bucket royal-match-prod-cce6d_client_logs",
+      "meaning": "4 HTTP endpoint chính + fallback Cloudflare + kênh TCP xã hội + URL bảo trì (RE từ pseudo-C + log runtime)",
+      "where": "facts/runtime/INDEX.md (mục Transport backend) ; BackendHttpService"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "Transport backend — gói tin thật (RequestPackage/ResponsePackage)",
+      "type": "FlatBuffers",
+      "value": "HTTP POST, Content-Type application/octet-stream. Request = RequestPackage{UserId, UserToken(64 hex), DeviceId(32 hex), SyncId, SyncRequired, RequestsType[], Requests[] (union), Version=38174, AbTestData[3], FacebookAccessToken, Platform=Android(2)}. Response = ResponsePackage{UserId, Status, SyncId, ResponsesType[], Responses[], Time, FacebookAppsecretProof, ForceUpdateVersion}. Nhiều lệnh gộp một gói; server dedup theo SyncId (SyncId cũ bị bỏ qua dù HTTP 200).",
+      "meaning": "Khung gói tin backend thật; nhiều request gộp một POST",
+      "where": "facts/runtime/INDEX.md ; facts/runtime/level-protocol.md ; tools/gd_fb_decode.py"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "Tối ưu config version (XConfigVersion)",
+      "type": "mechanism",
+      "value": "Client gửi XConfigVersion trong UpdateUserProgressRequest; server CHỈ trả Config JSON của event khi version lệch (giảm băng thông). Log RawData bật bởi ClientSettings.RequestResponseLoggingEnabled.",
+      "meaning": "Cơ chế chỉ đẩy config khi phiên bản khác (giải thích vì sao config event chỉ về khi active/đổi version)",
+      "where": "facts/runtime/INDEX.md (Transport backend)"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "Remote rewards code — protocol thật (bù quà bằng mã)",
+      "type": "FlatBuffers Table",
+      "value": "GetRemoteRewardsInfoRequest{Code:string} -> GetRemoteRewardsInfoResponse{Status: GetRemoteRewardsInfoFailReason (None=0, Expired=1, AlreadyClaimed=2), RewardConfig: string (JSON thưởng)}. ConsumeRemoteRewardsRequest{Code:string} -> ConsumeRemoteRewardsResponse{Status: ResponseStatusCode (Success=0, Fail=1)}. Code do server cấp; client lấy từ deeplink 'remoterewards=<Code>'.",
+      "meaning": "Cơ chế đền bù/quà bằng mã: tra mã lấy RewardConfig rồi tiêu mã để nhận",
+      "where": "facts/fb_schema.json (GetRemoteRewardsInfoRequest/Response, ConsumeRemoteRewardsRequest/Response) ; DeepLinkHelper.TryExtractRemoteRewardsCode"
+    }
+  ],
+  "managers": [
+    "Royal.Infrastructure.Services.Remote.RemoteConfigManager",
+    "Royal.Player.Context.Data.Persistent.AbTestHelper",
+    "Royal.Infrastructure.Services.Backend.Protocol.ClientSettings",
+    "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+    "Royal.Player.Context.Units.SystemMessageManager",
+    "Royal.Player.Context.Units.ParentalControlManager",
+    "Royal.Infrastructure.Contexts.Units.App.ApplicationPrivacyManager",
+    "Royal.Infrastructure.Services.Helpshift.HelpshiftManager",
+    "Royal.Scenes.Start.Context.Units.RoyalBundle.RoyalBundleManager",
+    "Royal.Scenes.Start.Context.Units.RoyalBundle.RemoteRoyalBundleManager",
+    "Royal.Infrastructure.Contexts.Units.App.AppManager"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

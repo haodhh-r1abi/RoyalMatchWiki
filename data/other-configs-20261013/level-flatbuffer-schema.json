@@ -1,0 +1,1633 @@
+{
+  "enums": {},
+  "tables": {
+    "FBlindsGroupData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Width",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MagnetCells",
+          "type": "Nullable<FMagnetPoint>",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FBoardGoalSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "GoalType",
+          "type": "short",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "LeftCount",
+          "type": "short",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "TargetCount",
+          "type": "short",
+          "vec": true,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FBoardSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "GridData",
+          "type": "Nullable<FCellGridSaveData>",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Goals",
+          "type": "Nullable<FBoardGoalSaveData>",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ItemModelCreatorSaveData",
+          "type": "Nullable<FItemModelCreatorSaveData>",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FCellGridSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Grid",
+          "type": "Nullable<FCellSaveData>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Width",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Height",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ShifterData",
+          "type": "int",
+          "vec": true,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FCellGroupData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Cells",
+          "type": "Nullable<FPoint>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FCellSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "CurrentItem",
+          "type": "Nullable<FItemSaveData>",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "StaticItems",
+          "type": "Nullable<FStaticItemSaveData>",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FCryptexData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ColorId",
+          "type": "int",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Order",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Target",
+          "type": "int",
+          "vec": true,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CellCount",
+          "type": "int",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Width",
+          "type": "int",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Height",
+          "type": "int",
+          "vec": false,
+          "voff": 16,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MinX",
+          "type": "int",
+          "vec": false,
+          "voff": 18,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MinY",
+          "type": "int",
+          "vec": false,
+          "voff": 20,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FCurtainData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ColorId",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Order",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Target",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CellCount",
+          "type": "int",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Width",
+          "type": "int",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Height",
+          "type": "int",
+          "vec": false,
+          "voff": 16,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MinX",
+          "type": "int",
+          "vec": false,
+          "voff": 18,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MinY",
+          "type": "int",
+          "vec": false,
+          "voff": 20,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FDirectedPoint": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Point",
+          "type": "Nullable<FPoint>",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Direction",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FDirectedPointGroupData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Cells",
+          "type": "Nullable<FDirectedPoint>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FDrillData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "ColorId",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MasterTileId",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MasterPoint",
+          "type": "Nullable<FPoint>",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Order",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Target",
+          "type": "int",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FGoalData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Goal",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Count",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "IsFromSettings",
+          "type": "bool",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BoardId",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FIntIntPair": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Key",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Value",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FItemCount": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Type",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Count",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BoardId",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FItemModelCreatorSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "CreatedSetItemCountExceptMatchItem",
+          "type": "Nullable<FIntIntPair>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PredefinedItemsSaveData",
+          "type": "Nullable<FPredefinedItemsSaveData>",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FItemModelQueueSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Items",
+          "type": "Nullable<FItemSaveData>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FItemSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "TiledId",
+          "type": "short",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Data",
+          "type": "short",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FLevelSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "ValidationSaveData",
+          "type": "Nullable<FValidationSaveData>",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BoardSaveData",
+          "type": "Nullable<FBoardSaveData>",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "GameStateSaveData",
+          "type": "long",
+          "vec": true,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BoosterSaveData",
+          "type": "long",
+          "vec": true,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "LevelStatisticsSaveData",
+          "type": "long",
+          "vec": true,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "EventSaveData",
+          "type": "long",
+          "vec": true,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FLimitData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Limit",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Count",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BoardId",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FMagnetGroupData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "MagnetCells",
+          "type": "Nullable<FMagnetPoint>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FMagnetPoint": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Cell",
+          "type": "Nullable<FPoint>",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "IsHead",
+          "type": "bool",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "DirectionTiledId",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FMetalPlateGroupData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Width",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MagnetCells",
+          "type": "Nullable<FMagnetPoint>",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FPairData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Symbol",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ColorId",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "FirstMinX",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "FirstMinY",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "SecondMinX",
+          "type": "int",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "SecondMinY",
+          "type": "int",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FPoint": {
+      "table": true,
+      "fields": [
+        {
+          "name": "X",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Y",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FPotionColor": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Colors",
+          "type": "int",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FPouchConfig": {
+      "table": true,
+      "fields": [
+        {
+          "name": "IsAvailableFalling",
+          "type": "bool",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "LightballRatio",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "TntRatio",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "RocketHorizontalRatio",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "RocketVerticalRatio",
+          "type": "int",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PropellerRatio",
+          "type": "int",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FPredefinedItemsSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Queues",
+          "type": "Nullable<FItemModelQueueSaveData>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FRoyalCapsuleConfig": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Items",
+          "type": "int",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MinX",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MinY",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FShifterData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "ItemCells",
+          "type": "Nullable<FPoint>",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "StartMasterIndex",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "EndMasterIndex",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Start",
+          "type": "Nullable<FDirectedPoint>",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "TurnPoint",
+          "type": "Nullable<FDirectedPoint>",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "End",
+          "type": "Nullable<FDirectedPoint>",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FSlotConfig": {
+      "table": true,
+      "fields": [
+        {
+          "name": "StartIndex",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "HasLightball",
+          "type": "bool",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "HasRocket",
+          "type": "bool",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "HasTnt",
+          "type": "bool",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "HasPropeller",
+          "type": "bool",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FStaticItemSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "TiledId",
+          "type": "short",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Data",
+          "type": "short",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FTiledCell": {
+      "table": true,
+      "fields": [
+        {
+          "name": "FillType",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "IsPredefined",
+          "type": "bool",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Grass",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Honey",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Curtain",
+          "type": "int",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Chain",
+          "type": "int",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Roof",
+          "type": "int",
+          "vec": false,
+          "voff": 16,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Jelly",
+          "type": "int",
+          "vec": false,
+          "voff": 18,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Treasuremap",
+          "type": "int",
+          "vec": false,
+          "voff": 20,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Ceramic",
+          "type": "int",
+          "vec": false,
+          "voff": 22,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MushroomSoil",
+          "type": "int",
+          "vec": false,
+          "voff": 24,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Blinds",
+          "type": "int",
+          "vec": false,
+          "voff": 26,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "WaterSoil",
+          "type": "int",
+          "vec": false,
+          "voff": 28,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ForceField",
+          "type": "int",
+          "vec": false,
+          "voff": 30,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Cryptex",
+          "type": "int",
+          "vec": false,
+          "voff": 32,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "IceBorder",
+          "type": "int",
+          "vec": false,
+          "voff": 34,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MetalPlates",
+          "type": "int",
+          "vec": false,
+          "voff": 36,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FTiledGrid": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Items",
+          "type": "int",
+          "vec": true,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Cells",
+          "type": "Nullable<FTiledCell>",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Width",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Height",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FTiledLevel": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Name",
+          "type": "string",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Move",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Goals",
+          "type": "Nullable<FGoalData>",
+          "vec": true,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Grid",
+          "type": "Nullable<FTiledGrid>",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Predefined",
+          "type": "Nullable<FTiledPredefined>",
+          "vec": true,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Sets",
+          "type": "Nullable<FTiledSet>",
+          "vec": true,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Colors",
+          "type": "int",
+          "vec": true,
+          "voff": 16,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Counts",
+          "type": "Nullable<FItemCount>",
+          "vec": true,
+          "voff": 18,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PotionColors",
+          "type": "Nullable<FPotionColor>",
+          "vec": true,
+          "voff": 20,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "LowMatch",
+          "type": "int",
+          "vec": true,
+          "voff": 22,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Curtains",
+          "type": "Nullable<FCurtainData>",
+          "vec": true,
+          "voff": 24,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CupShelves",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 26,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "SoilGroups",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 28,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Drills",
+          "type": "Nullable<FDrillData>",
+          "vec": true,
+          "voff": 30,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "LightBulbColorOrder",
+          "type": "int",
+          "vec": true,
+          "voff": 32,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ChainCount",
+          "type": "int",
+          "vec": false,
+          "voff": 34,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PropellerIgnoresChain",
+          "type": "bool",
+          "vec": false,
+          "voff": 36,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PouchConfig",
+          "type": "Nullable<FPouchConfig>",
+          "vec": false,
+          "voff": 38,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Limits",
+          "type": "Nullable<FLimitData>",
+          "vec": true,
+          "voff": 40,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PropellerIgnoresDrill",
+          "type": "bool",
+          "vec": false,
+          "voff": 42,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "JellyReceivableCellCount",
+          "type": "int",
+          "vec": false,
+          "voff": 44,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "HasHoleInGrid",
+          "type": "bool",
+          "vec": false,
+          "voff": 46,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Treasuremaps",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 48,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Slots",
+          "type": "Nullable<FSlotConfig>",
+          "vec": true,
+          "voff": 50,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CageCount",
+          "type": "int",
+          "vec": false,
+          "voff": 52,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MagnetGroups",
+          "type": "Nullable<FMagnetGroupData>",
+          "vec": true,
+          "voff": 54,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Scroll",
+          "type": "bool",
+          "vec": false,
+          "voff": 56,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ConveyorBelts",
+          "type": "Nullable<FMagnetGroupData>",
+          "vec": true,
+          "voff": 58,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Coils",
+          "type": "Nullable<FCurtainData>",
+          "vec": true,
+          "voff": 60,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CandyCaneGroups",
+          "type": "Nullable<FMagnetGroupData>",
+          "vec": true,
+          "voff": 62,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "TabletItemGroups",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 64,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "IvyItemGroups",
+          "type": "Nullable<FMagnetGroupData>",
+          "vec": true,
+          "voff": 66,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BlindsGroups",
+          "type": "Nullable<FBlindsGroupData>",
+          "vec": true,
+          "voff": 68,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "WaterData",
+          "type": "Nullable<FWaterData>",
+          "vec": false,
+          "voff": 70,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ShifterGrids",
+          "type": "Nullable<FShifterData>",
+          "vec": true,
+          "voff": 72,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PorcelainGroups",
+          "type": "Nullable<FDirectedPointGroupData>",
+          "vec": true,
+          "voff": 74,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MagicGem",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 76,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MagicGemColorOrder",
+          "type": "int",
+          "vec": true,
+          "voff": 78,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "AncientVaults",
+          "type": "Nullable<FCurtainData>",
+          "vec": true,
+          "voff": 80,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ForceFieldGroups",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 82,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Logs",
+          "type": "Nullable<FCurtainData>",
+          "vec": true,
+          "voff": 84,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PropellerIgnoresLog",
+          "type": "bool",
+          "vec": false,
+          "voff": 86,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PinGroups",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 88,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Cryptexes",
+          "type": "Nullable<FCryptexData>",
+          "vec": true,
+          "voff": 90,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PowerCubeGroups",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 92,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "PotionTubeGroups",
+          "type": "Nullable<FDirectedPointGroupData>",
+          "vec": true,
+          "voff": 94,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CuckooGroups",
+          "type": "Nullable<FCellGroupData>",
+          "vec": true,
+          "voff": 96,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Sapphires",
+          "type": "Nullable<FCurtainData>",
+          "vec": true,
+          "voff": 98,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "RoyalCapsules",
+          "type": "Nullable<FRoyalCapsuleConfig>",
+          "vec": true,
+          "voff": 100,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CapsuleConfig",
+          "type": "Nullable<FPouchConfig>",
+          "vec": false,
+          "voff": 102,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BowlingRacks",
+          "type": "Nullable<FMagnetGroupData>",
+          "vec": true,
+          "voff": 104,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MagicLantern",
+          "type": "Nullable<FPoint>",
+          "vec": true,
+          "voff": 106,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Pairs",
+          "type": "Nullable<FPairData>",
+          "vec": true,
+          "voff": 108,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MetalPlateGroups",
+          "type": "Nullable<FMetalPlateGroupData>",
+          "vec": true,
+          "voff": 110,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ColorMixers",
+          "type": "Nullable<FCurtainData>",
+          "vec": true,
+          "voff": 112,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FTiledPredefined": {
+      "table": true,
+      "fields": [
+        {
+          "name": "X",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Y",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Ids",
+          "type": "int",
+          "vec": true,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FTiledSet": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Name",
+          "type": "string",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Elements",
+          "type": "Nullable<FTiledSetElement>",
+          "vec": true,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CanFall",
+          "type": "bool",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CreateRatio",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "TargetColumns",
+          "type": "int",
+          "vec": true,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BirdMax",
+          "type": "int",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "FrogMax",
+          "type": "int",
+          "vec": false,
+          "voff": 16,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "TargetFills",
+          "type": "int",
+          "vec": true,
+          "voff": 18,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "TargetFillRatios",
+          "type": "int",
+          "vec": true,
+          "voff": 20,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MaxItemCounts",
+          "type": "Nullable<FTiledSetMaxItemCount>",
+          "vec": true,
+          "voff": 22,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FTiledSetElement": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "CreateRatio",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FTiledSetMaxItemCount": {
+      "table": true,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "int",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "MaxCount",
+          "type": "int",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FValidationSaveData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "LevelName",
+          "type": "string",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "Checksum",
+          "type": "long",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "AppVersion",
+          "type": "int",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    },
+    "FWaterData": {
+      "table": true,
+      "fields": [
+        {
+          "name": "EnterPoints",
+          "type": "Nullable<FCellGroupData>",
+          "vec": false,
+          "voff": 4,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "WaterPoints",
+          "type": "Nullable<FCellGroupData>",
+          "vec": false,
+          "voff": 6,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "ExitPoints",
+          "type": "Nullable<FCellGroupData>",
+          "vec": false,
+          "voff": 8,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "WaterReceivableCellCount",
+          "type": "int",
+          "vec": false,
+          "voff": 10,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "BoardCount",
+          "type": "int",
+          "vec": false,
+          "voff": 12,
+          "voff_src": "pseudo_checked"
+        },
+        {
+          "name": "SandCellCount",
+          "type": "int",
+          "vec": false,
+          "voff": 14,
+          "voff_src": "pseudo_checked"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "feature": "SuperBooster",
+    "field": "SuperCharge",
+    "url": "https://contents.prod.rylmtch.com/super-charge/super-charge-config.txt",
+    "requested_at": "2026-10-13T13:36:16.164547+00:00",
+    "http_method": "GET",
+    "http_status": 200,
+    "bytes": 359,
+    "raw_sha256": "f79b28bafc605eb946a0cbdc35ecd4198f90c62561e1333f248fe66360a77a3b",
+    "evidence": "SuperchargeOfferConfigHelper DownloadUrl / AssetName",
+    "error": null,
+    "config_file": "SuperBooster__SuperCharge__2fe846c23f32.json",
+    "cache_metadata": {
+      "Content-Type": "text/plain",
+      "ETag": "\"843ee3deb1f21d3aceb2fe0c421072f4\"",
+      "Last-Modified": "Thu, 12 Mar 2026 17:06:35 GMT"
+    }
+  },
+  {
+    "feature": "Difficulty",
+    "field": "SuperLightballAB",
+    "url": "https://contents.prod.rylmtch.com/superlightball-ab/superlightball-ab-config.txt",
+    "requested_at": "2026-10-13T13:36:17.086116+00:00",
+    "http_method": "GET",
+    "http_status": 200,
+    "bytes": 3988,
+    "raw_sha256": "d45957d4602e2f079dcc062bba097d6a8280da18fecb51eb9b4da952c5a332c0",
+    "evidence": "SlbMoveConfigHelper DownloadUrl / AssetName",
+    "error": null,
+    "config_file": "Difficulty__SuperLightballAB__f1eb4f8b1f97.json",
+    "cache_metadata": {
+      "Content-Type": "application/octet-stream",
+      "ETag": "\"9a94da165042bf9a899d209523f5861b\"",
+      "Last-Modified": "Fri, 28 Aug 2026 12:55:04 GMT"
+    }
+  },
+  {
+    "feature": "Profile",
+    "field": "DynamicContent",
+    "url": "https://contents.prod.rylmtch.com/dynamic-content-config/dynamic-content-config.json",
+    "requested_at": "2026-10-13T13:36:19.295569+00:00",
+    "http_method": "GET",
+    "http_status": 200,
+    "bytes": 8969,
+    "raw_sha256": "2dfa929d5c4823062072fbd134227288f4545f63799f3aa4d57c291b25891775",
+    "evidence": "strings-by-type.tsv:2227 ProfileSkinBundleManager",
+    "error": null,
+    "config_file": "Profile__DynamicContent__1320acd37596.json",
+    "cache_metadata": {
+      "Content-Type": "application/octet-stream",
+      "ETag": "\"974afa69c36edf79d49f4cd490edbb27\"",
+      "Last-Modified": "Wed, 30 Sep 2026 10:25:24 GMT"
+    }
+  },
+  {
+    "feature": "LiveOps",
+    "field": "DynamicBundle",
+    "url": "https://contents.prod.rylmtch.com/dynamic-content-config/dynamic-bundle-config.json",
+    "requested_at": "2026-10-13T13:36:20.192582+00:00",
+    "http_method": "GET",
+    "http_status": 200,
+    "bytes": 17926,
+    "raw_sha256": "221a2e12a56092faddb35457773a11e7fdba89f0abc1980e958b9960165cbdad",
+    "evidence": "strings-by-type.tsv:2286 RemoteRoyalBundleManager",
+    "error": null,
+    "config_file": "LiveOps__DynamicBundle__c109900294b5.json",
+    "cache_metadata": {
+      "Content-Type": "application/octet-stream",
+      "ETag": "\"ef52cd4611bafd558eda633b09d5a5bb\"",
+      "Last-Modified": "Wed, 25 Mar 2026 16:19:05 GMT"
+    }
+  },
+  {
+    "feature": "LiveOps",
+    "field": "RemoteLevelVersionManifest",
+    "url": "https://remote-levels.prod.rylmtch.com/versions/38174.json",
+    "requested_at": "2026-10-13T13:36:21.158229+00:00",
+    "http_method": "GET",
+    "http_status": 200,
+    "bytes": 3079,
+    "raw_sha256": "cd498ba9edd12dd54f8c723fe15940ec895793ebc4969e967c951c17242dca1b",
+    "evidence": "RemoteConfigManager.GetVersionConfig + installed App.Version38174; build-number interpretation checked against returned payload",
+    "error": null,
+    "config_file": "LiveOps__RemoteLevelVersionManifest__cd498ba9edd1.json",
+    "cache_metadata": {
+      "Content-Type": "application/octet-stream",
+      "ETag": "\"1251ebd756a97312a677dcd2fe55927b\"",
+      "Last-Modified": "Wed, 23 Sep 2026 12:53:50 GMT"
+    }
+  }
+]

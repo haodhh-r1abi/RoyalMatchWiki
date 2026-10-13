@@ -1,0 +1,274 @@
+{
+  "tests": [
+    {
+      "id": 4,
+      "name": "",
+      "group": 6
+    },
+    {
+      "id": 9,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 11,
+      "name": "",
+      "group": 4
+    },
+    {
+      "id": 15,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 17,
+      "name": "",
+      "group": 1
+    },
+    {
+      "id": 18,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 20,
+      "name": "",
+      "group": 4
+    },
+    {
+      "id": 22,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 24,
+      "name": "",
+      "group": 4
+    },
+    {
+      "id": 25,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 26,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 28,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 32,
+      "name": "",
+      "group": 4
+    },
+    {
+      "id": 42,
+      "name": "",
+      "group": 6
+    },
+    {
+      "id": 44,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 54,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 56,
+      "name": "",
+      "group": 1
+    },
+    {
+      "id": 94,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 98,
+      "name": "",
+      "group": 4
+    },
+    {
+      "id": 104,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 108,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 125,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 127,
+      "name": "privacy_settings_redesign_old_user",
+      "group": 2
+    },
+    {
+      "id": 129,
+      "name": "reward_reduction_old_user",
+      "group": 4
+    },
+    {
+      "id": 131,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 133,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 137,
+      "name": "propeller_rush_3_step_old_user",
+      "group": 3
+    },
+    {
+      "id": 141,
+      "name": "new_royal_league_v2_old_user",
+      "group": 2
+    },
+    {
+      "id": 147,
+      "name": "ancient_adventure_old_user",
+      "group": 5
+    },
+    {
+      "id": 149,
+      "name": "scc_improvement_old_user",
+      "group": 2
+    },
+    {
+      "id": 153,
+      "name": "ancient_adventure_v2_old_user",
+      "group": 3
+    },
+    {
+      "id": 155,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 156,
+      "name": "",
+      "group": 3
+    },
+    {
+      "id": 159,
+      "name": "robot_rivals_old_user",
+      "group": 4
+    },
+    {
+      "id": 161,
+      "name": "x2_multiplier_token_v2_old_user",
+      "group": 2
+    },
+    {
+      "id": 165,
+      "name": "daily_sky_race_space_mission_old_user",
+      "group": 4
+    },
+    {
+      "id": 171,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 173,
+      "name": "",
+      "group": 2
+    },
+    {
+      "id": 175,
+      "name": "data_consent_new_user",
+      "group": 2
+    },
+    {
+      "id": 177,
+      "name": "red_action_notification_new_user",
+      "group": 2
+    },
+    {
+      "id": 179,
+      "name": "champions_clash_new_user",
+      "group": 5
+    },
+    {
+      "id": 189,
+      "name": "merge_smith_new_user",
+      "group": 4
+    },
+    {
+      "id": 192,
+      "name": "lightning_rush_propeller_rush_retry_old_user",
+      "group": 2
+    },
+    {
+      "id": 194,
+      "name": "supercharge_ab_old_user",
+      "group": 6
+    },
+    {
+      "id": 200,
+      "name": "weekday_offer_old_user",
+      "group": 4
+    },
+    {
+      "id": 208,
+      "name": "ladder_offer_shop_card_old_user",
+      "group": 1
+    },
+    {
+      "id": 209,
+      "name": "age_consent_v5_new_user",
+      "group": 4
+    },
+    {
+      "id": 215,
+      "name": "early_kings_nightmare",
+      "group": 3
+    },
+    {
+      "id": 224,
+      "name": "next_event_collectible_new_user",
+      "group": 1
+    },
+    {
+      "id": 226,
+      "name": "superlightball_level_change_v2_new_user",
+      "group": 5
+    },
+    {
+      "id": 228,
+      "name": "daily_rewards_new_user",
+      "group": 3
+    },
+    {
+      "id": 231,
+      "name": "",
+      "group": 1
+    }
+  ],
+  "notificationTagRequiredKeys": [
+    158,
+    159,
+    179,
+    180,
+    187,
+    188,
+    211,
+    212
+  ]
+}

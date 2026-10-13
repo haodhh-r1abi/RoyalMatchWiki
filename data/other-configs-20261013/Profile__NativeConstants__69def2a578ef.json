@@ -1,0 +1,33 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Home.UserProfile.ProfileSkins.BundleScripts.ProfileSkinBundleManager",
+      "field": "MaxDownloadTry",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 45640
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Home.UserProfile.ProfileSkins.BundleScripts.ProfileSkinBundleManager",
+      "field": "ConfigPath",
+      "type": "string",
+      "value_expression": "\"https://contents.prod.rylmtch.com/dynamic-content-config/dynamic-content-config.json\"",
+      "dump_line": 45641
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Home.UserProfile.ProfileSkins.BundleScripts.ProfileSkinBundleManager",
+      "field": "MaxDownloadRetryCount",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 45657
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserProfileProgress",
+      "field": "MinDynamicAvatarBitLength",
+      "type": "int",
+      "value_expression": "64",
+      "dump_line": 436226
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

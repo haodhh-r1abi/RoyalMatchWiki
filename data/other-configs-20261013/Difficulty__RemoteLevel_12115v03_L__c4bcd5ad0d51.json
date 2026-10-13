@@ -1,0 +1,662 @@
+{
+  "Name": "12115v03_L",
+  "Move": 23,
+  "Goals": [
+    {
+      "Goal": 34,
+      "Count": 27
+    },
+    {
+      "Goal": 13,
+      "Count": 28
+    },
+    {
+      "Goal": 46,
+      "Count": 30
+    },
+    {
+      "Goal": 12,
+      "Count": 22
+    }
+  ],
+  "Grid": {
+    "Items": [
+      249,
+      0,
+      249,
+      98,
+      98,
+      98,
+      249,
+      0,
+      249,
+      250,
+      0,
+      250,
+      98,
+      98,
+      98,
+      250,
+      0,
+      250,
+      250,
+      98,
+      250,
+      98,
+      98,
+      98,
+      250,
+      98,
+      250,
+      250,
+      98,
+      250,
+      98,
+      98,
+      98,
+      250,
+      98,
+      250,
+      250,
+      98,
+      98,
+      98,
+      98,
+      98,
+      98,
+      98,
+      250,
+      250,
+      98,
+      98,
+      14,
+      14,
+      14,
+      98,
+      98,
+      250,
+      249,
+      250,
+      250,
+      250,
+      14,
+      250,
+      250,
+      250,
+      249,
+      0,
+      211,
+      211,
+      14,
+      14,
+      14,
+      212,
+      212,
+      0,
+      0,
+      0,
+      14,
+      211,
+      14,
+      212,
+      14,
+      0,
+      0,
+      0,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      0,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "Cells": [
+      {
+        "Grass": 32
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 70,
+      "Count": 6
+    },
+    {
+      "Type": 27,
+      "Count": 27
+    },
+    {
+      "Type": -2,
+      "Count": 28
+    },
+    {
+      "Type": -7,
+      "Count": 30
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [
+    {
+      "Cells": [
+        {
+          "Point": {},
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 3
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 4
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "Y": 5
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "Y": 6
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 1,
+            "Y": 6
+          },
+          "Direction": 200
+        },
+        {
+          "Point": {
+            "X": 2,
+            "Y": 6
+          },
+          "Direction": 200
+        },
+        {
+          "Point": {
+            "X": 3,
+            "Y": 6
+          },
+          "Direction": 200
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 2
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 2,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 2,
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 2,
+            "Y": 3
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 6
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 6,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 6,
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 6,
+            "Y": 3
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 8
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 8,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 8,
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 8,
+            "Y": 3
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 8,
+            "Y": 4
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 8,
+            "Y": 5
+          },
+          "Direction": 198
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 8,
+            "Y": 6
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 7,
+            "Y": 6
+          },
+          "Direction": 199
+        },
+        {
+          "Point": {
+            "X": 6,
+            "Y": 6
+          },
+          "Direction": 199
+        },
+        {
+          "Point": {
+            "X": 5,
+            "Y": 6
+          },
+          "Direction": 199
+        }
+      ]
+    }
+  ],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

@@ -817,5 +817,12 @@
     "c": "Phân tích",
     "g": "Config đầy đủ, API thật, 34 sự kiện, bảng reward và diff",
     "k": "Event config GetInfo ConfigVersion SeasonalCardCollection TrainJourney reward override AncientAdventure ArcheryArena BalloonRise BookOfTreasure ClashOfChampions DailyLightningRush DragonNest DukesFortune EventsFramework ExpeditionEvent HiddenTemple KingsCup LavaQuest MagicCauldron MergeSmith MissionControl MissionPursuit OceanOdyssey PinataParty PropellerMadness PropellerRush PuzzleBreak RobotRivals RoyalPass RoyalWorldCup SeasonalCardCollection SkyRace SpaceMission TeamBattle TeamTournament TeamTreasure TrainJourney WeeklyLeaderboard WeeklyPass"
+  },
+  {
+    "u": "analysis/liveops-other-config-atlas.html",
+    "t": "Full config: Kinh tế & Shop, Tiến trình, Xã hội và Live-ops",
+    "c": "Phân tích",
+    "g": "Config đầy đủ cho 30 tính năng ngoài sự kiện",
+    "k": "GetInfo Shop Economy Progression Social LiveOps config price reward AreaConfig level Ads Analytics Areas Boosters Cloche CoinsInventory DailyRewards Difficulty DynamicOffer Ego Friends InviteFriends JourneyOffer KingsWorkshop LadderOffer Leaderboard League LiveOps MultiplierSelection MultiplierToken Notifications Offers Profile ReactivationLevels Shop StoryLevels SuperBooster Team TeamOffer WelcomeBackGift"
   }
 ]

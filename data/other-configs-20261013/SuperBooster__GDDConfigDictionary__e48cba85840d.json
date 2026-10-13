@@ -1,0 +1,308 @@
+{
+  "feature": "SuperBooster",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SuperBoosterUnlockLevel",
+      "type": "int",
+      "value": "92",
+      "meaning": "Level mở khóa mặc định khi không có AB",
+      "where": "SuperBoosterManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SuperBoosterCombinedAbUnlockLevel",
+      "type": "int",
+      "value": "292",
+      "meaning": "Level mở khóa cho nhóm không nằm trong AB SLB level change",
+      "where": "SuperBoosterManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SuperBoosterWinThreshold",
+      "type": "int",
+      "value": "10",
+      "meaning": "Số lần thắng cần để nạp đầy Super Lightball",
+      "where": "SuperBoosterManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SlbLockedIconMinLevel",
+      "type": "int",
+      "value": "11",
+      "meaning": "Level bắt đầu hiện icon ở trạng thái khóa",
+      "where": "SuperBoosterManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SlbLevelChangeUnlockGroupB",
+      "type": "int",
+      "value": "301",
+      "meaning": "Level mở khóa cho nhóm AB 2",
+      "where": "SuperBoosterManager"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SlbLevelChangeUnlockGroupC",
+      "type": "int",
+      "value": "201",
+      "meaning": "Level mở khóa cho nhóm AB 3",
+      "where": "SuperBoosterManager"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SlbLevelChangeUnlockGroupD",
+      "type": "int",
+      "value": "101",
+      "meaning": "Level mở khóa cho nhóm AB 4",
+      "where": "SuperBoosterManager"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SlbLevelChangeUnlockGroupF",
+      "type": "int",
+      "value": "101",
+      "meaning": "Level mở khóa cho nhóm AB 6",
+      "where": "SuperBoosterManager"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SlbLevelChangeUnlockGroupG",
+      "type": "int",
+      "value": "101",
+      "meaning": "Level mở khóa cho nhóm AB 7",
+      "where": "SuperBoosterManager"
+    },
+    {
+      "source": "code const",
+      "key": "SuperBoosterManager.SlbLevelChangeUnlockGroupH",
+      "type": "int",
+      "value": "201",
+      "meaning": "Level mở khóa cho nhóm AB 8",
+      "where": "SuperBoosterManager"
+    },
+    {
+      "source": "static array",
+      "key": "GetUnlockLevelForAbGroup table (nhom 2..8)",
+      "type": "int[7]",
+      "value": "[301, 201, 101, 292, 101, 101, 201]",
+      "meaning": "Level mở khóa theo nhóm AB SLB level change",
+      "where": "libil2cpp.so offset 0x461AB44, đọc từ RVA 0x19EBBCC"
+    },
+    {
+      "source": "static array",
+      "key": "GetSuperBoosterUnlockLevel table khi da xem tag tutorial (nhom 1..8)",
+      "type": "int[8]",
+      "value": "[101, 101, 101, 101, 292, 101, 101, 101]",
+      "meaning": "Level mở khóa áp dụng cho người đã từng thấy tag Super Lightball",
+      "where": "libil2cpp.so offset 0x459644C, đọc từ RVA 0x19EBAA4"
+    },
+    {
+      "source": "code const",
+      "key": "IsGroupInSlbAb mask",
+      "type": "int",
+      "value": "0x5C cho group < 7 (nhóm 2, 3, 4, 6) cộng nhóm 7 và 8",
+      "meaning": "Những nhóm AB được áp dụng level mở khóa riêng",
+      "where": "SuperBoosterManager.IsGroupInSlbAb"
+    },
+    {
+      "source": "code const",
+      "key": "Nguong level giu nguyen nhom AB",
+      "type": "int",
+      "value": "230 (0xe6)",
+      "meaning": "Nếu đã xem tag tutorial và level > 230 thì không đổi nhóm AB nữa",
+      "where": "SuperBoosterManager.SetAbValues"
+    },
+    {
+      "source": "code enum",
+      "key": "SuperBoosterStrategyType",
+      "type": "enum",
+      "value": "None = 0, Lightball = 1",
+      "meaning": "Chỉ có biến thể Lightball được triển khai trong bản này",
+      "where": "Royal.Player.Context.Units.SuperBoosterStrategy.SuperBoosterStrategyType"
+    },
+    {
+      "source": "code const",
+      "key": "SuperchargeOfferConfigHelper.ConfigPath",
+      "type": "string",
+      "value": "https://contents.prod.rylmtch.com/super-charge/",
+      "meaning": "URL gốc của config giá Supercharge Offer",
+      "where": "SuperchargeOfferConfigHelper"
+    },
+    {
+      "source": "code field",
+      "key": "SuperchargeOfferConfigHelper.AssetName / FileExtension",
+      "type": "string",
+      "value": "super-charge-config / .txt",
+      "meaning": "Tên file config tải từ CDN",
+      "where": "SuperchargeOfferConfigHelper..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "GetAbCoinPrice fallback",
+      "type": "int",
+      "value": "1900",
+      "meaning": "Giá coin gói Supercharge cho nhóm control token (khi MultiplierSelection không active)",
+      "where": "SuperBoosterManager.GetAbCoinPrice"
+    },
+    {
+      "source": "server info",
+      "key": "SCOConfig",
+      "type": "string/json",
+      "value": "server override",
+      "meaning": "Bảng giá Supercharge Offer theo nhóm AB, tải từ CDN",
+      "where": "SuperchargeOfferConfigHelper.SaveConfig / GetConfigForAb"
+    },
+    {
+      "source": "code const",
+      "key": "SuperchargeOfferDialog.TouchEnableDelay",
+      "type": "float",
+      "value": "0.5",
+      "meaning": "Giây khóa chạm sau khi mở dialog (chống bấm nhầm)",
+      "where": "SuperchargeOfferDialog"
+    },
+    {
+      "source": "code const",
+      "key": "SuperchargeOfferDialog.DelayedPurchaseTargetNormalizedTime",
+      "type": "float",
+      "value": "0.67",
+      "meaning": "Mốc animation để bắt đầu hiệu ứng mua thành công",
+      "where": "SuperchargeOfferDialog"
+    },
+    {
+      "source": "code const",
+      "key": "SuperLightballIcon.BarFullFrames",
+      "type": "float",
+      "value": "30",
+      "meaning": "Số frame animation diễn đầy thanh tiến độ",
+      "where": "SuperLightballIcon"
+    },
+    {
+      "source": "code const",
+      "key": "SuperLightballIcon.ProgressFillStartPos / ProgressFillEndPos",
+      "type": "float",
+      "value": "0.097 / 0.9",
+      "meaning": "Vị trí đầu và cuối của thanh tiến độ",
+      "where": "SuperLightballIcon"
+    },
+    {
+      "source": "code const",
+      "key": "SuperLightballIcon.ProgressTipSize / TotalBarSize",
+      "type": "float",
+      "value": "0.01 / 0.803",
+      "meaning": "Kích thước đầu thanh và tổng chiều dài thanh",
+      "where": "SuperLightballIcon"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse1",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit-packed: CurrentProgress, HasWon, HasShowedTutorial, HasShowedPrelevelTutorial, HasShowedHeaderTutorial, SuperBoosterIsInGame",
+      "where": "SuperLightballStrategy.SetCurrentProgressValue / SetHasWonValue / SetSuperBoosterIsInGameValue"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit 48-51 lưu nhóm AB SLB level change (bit 37-39 bị xóa khi đổi nhóm)",
+      "where": "SuperBoosterManager.SetAbValues"
+    },
+    {
+      "source": "storage key",
+      "key": "LiveOpsCommonUse1",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit HasShowedTagTutorial",
+      "where": "SuperLightballStrategy.SetHasShowedTagTutorialValue"
+    },
+    {
+      "source": "storage key",
+      "key": "ShowSuperchargeOfferDialog",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Cờ báo lần mở game / lần chơi kế tiếp phải hiện dialog Supercharge",
+      "where": "SuperBoosterManager.get_ShowSuperchargeOfferDialog / set_ShowSuperchargeOfferDialog"
+    },
+    {
+      "source": "storage key",
+      "key": "SuperchargeOfferConfigETag",
+      "type": "string",
+      "value": "client",
+      "meaning": "ETag của config Supercharge đã tải",
+      "where": "SuperchargeOfferConfigHelper.SaveConfig"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.GetSlbLevelChangeAbGroup",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Nhóm AB quyết định level mở khóa Super Lightball",
+      "where": "SuperBoosterManager.SetAbValues"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsSuperchargeOfferNoPopupAbEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Bật thì không hiện popup Supercharge, chỉ hiện panel trong Prelevel",
+      "where": "SuperBoosterManager.ShouldShowSuperChargeOfferDialog / IsSuperchargeOfferNoPopupAbEnabled"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.GetSuperchargeOfferAbGroup",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Nhóm AB quyết định giá gói Supercharge",
+      "where": "SuperBoosterManager.GetAbCoinPrice"
+    },
+    {
+      "source": "AB test",
+      "key": "MultiplierSelectionManager.IsControlTokenGroup / IsSelectionFeatureActive",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Quyết định dùng giá 1900 hay bảng config",
+      "where": "SuperBoosterManager.GetAbCoinPrice"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle Supercharge Offer",
+      "type": "string",
+      "value": "supercharge_offer, supercharge_offer_lightning_strike",
+      "meaning": "Bundle và sfx của dialog Supercharge",
+      "where": "SuperBoosterManager.IsOfferBundleInitialized; SuperchargeOfferDialog.PlayLightningStrikeSfx"
+    },
+    {
+      "source": "code const",
+      "key": "Deeplink action",
+      "type": "string",
+      "value": "superlightball",
+      "meaning": "Mã deeplink mở Prelevel để xem Super Lightball",
+      "where": "SuperBoosterManager.TryConsumeSuperBoosterDeeplink"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "super-charge-config (SCOConfig) — giá coin theo nhóm AB (server thật)",
+      "type": "int",
+      "value": "abGroup 2 -> 4900, 3 -> 3900, 4 -> 3900, 5 -> 2900, 6 -> 1900, 7 -> 900",
+      "meaning": "Giá coin gói Supercharge Offer cho từng nhóm AB (nội dung file CDN super-charge-config.txt)",
+      "where": "facts/runtime/cdn_configs/super-charge-config.txt"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "App DB SCOConfig2..7 (xác nhận trùng)",
+      "type": "int",
+      "value": "4900 / 3900 / 3900 / 2900 / 1900 / 900",
+      "meaning": "Giá Supercharge theo AB group 2..7 đọc từ App DB runtime — khớp file CDN",
+      "where": "facts/runtime/INDEX.md (App DB)"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.SuperBoosterManager",
+    "Royal.Player.Context.Units.SuperBoosterStrategy.ASuperBoosterStrategy",
+    "Royal.Player.Context.Units.SuperBoosterStrategy.SuperLightballStrategy",
+    "Royal.Scenes.Home.Ui.Dialogs.SuperchargeOffer.Scripts.SuperchargeOfferConfigHelper"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

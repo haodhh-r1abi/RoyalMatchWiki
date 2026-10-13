@@ -1,0 +1,203 @@
+{
+  "feature": "TeamOffer",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "TeamOfferManager.OfferUnlockLevel",
+      "type": "int",
+      "value": "24",
+      "meaning": "Level mở Team Gift Offer",
+      "where": "TeamOfferManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "TeamOfferManager.OfferDurationInHours",
+      "type": "int",
+      "value": "24",
+      "meaning": "Thời lượng một đợt Team Offer",
+      "where": "TeamOfferManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "TeamOfferManager.ReminderDurationInHours",
+      "type": "int",
+      "value": "12",
+      "meaning": "Sau bao lâu thì nhắc lại dialog",
+      "where": "TeamOfferManager (client default)"
+    },
+    {
+      "source": "code enum",
+      "key": "TeamOfferType",
+      "type": "enum",
+      "value": "None = 0, Gold = 1, Silver = 2, Bronze = 3",
+      "meaning": "Ba gói của Team Offer",
+      "where": "Royal.Player.Context.Units.TeamOfferType"
+    },
+    {
+      "source": "static array",
+      "key": "GetUnlimitedLivesRewardAmountByOfferType",
+      "type": "int[3]",
+      "value": "[60, 30, 15] phút cho Gold / Silver / Bronze",
+      "meaning": "Số phút Unlimited Lives tặng cho cả đội theo gói",
+      "where": "libil2cpp.so offset 0x461AD84 (đọc từ RVA 0x1D6A968)"
+    },
+    {
+      "source": "code const",
+      "key": "TeamOfferProgress.EventIdLimit",
+      "type": "int",
+      "value": "256",
+      "meaning": "eventId quay vòng trong 8 bit",
+      "where": "Royal.Player.Context.Data.Persistent.TeamOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "TeamOfferProgress.EventIdStartIndex / EventIdEndIndex",
+      "type": "int",
+      "value": "1 / 8",
+      "meaning": "8 bit lưu eventId",
+      "where": "TeamOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "TeamOfferProgress.AbGroupStartIndex / AbGroupEndIndex",
+      "type": "int",
+      "value": "9 / 10",
+      "meaning": "2 bit lưu nhóm AB của đợt offer",
+      "where": "TeamOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "TeamOfferProgress.GoldIndex / SilverIndex / BronzeIndex",
+      "type": "int",
+      "value": "11 / 12 / 13",
+      "meaning": "Ba bit đánh dấu đã mua gói nào",
+      "where": "TeamOfferProgress"
+    },
+    {
+      "source": "code field",
+      "key": "TeamOfferProgress",
+      "type": "struct",
+      "value": "eventId, abGroupId (byte), hasGold, hasSilver, hasBronze, ProgressValue (long)",
+      "meaning": "Tiến độ mua của đợt offer hiện tại",
+      "where": "TeamOfferProgress"
+    },
+    {
+      "source": "code field",
+      "key": "TeamOfferConfig",
+      "type": "class",
+      "value": "version, offerPriorityHomescene, offerPriorityFavor, offerPriorityShop",
+      "meaning": "Cấu hình ưu tiên hiển thị của đợt offer",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.TeamOffer.TeamOfferConfig"
+    },
+    {
+      "source": "code field",
+      "key": "TeamOfferTcpRequest",
+      "type": "class",
+      "value": "buyerUserId (long), step (int)",
+      "meaning": "Gói tin TCP báo cho server phát quà cho cả đội",
+      "where": "Royal.Infrastructure.Services.Backend.Tcp.Request.TeamOfferTcpRequest"
+    },
+    {
+      "source": "code const",
+      "key": "Deeplink action",
+      "type": "string",
+      "value": "teamgiftoffer",
+      "meaning": "Mã deeplink mở dialog Team Offer",
+      "where": "TeamOfferManager.GetDeeplinkAction"
+    },
+    {
+      "source": "code const",
+      "key": "Nhom product IAP",
+      "type": "string",
+      "value": "teamoffer (teamoffer.10 = 9.99, .13 = 12.99, .20 = 19.99, .25 = 24.99, .40 = 39.99, .50 = 49.99 USD)",
+      "meaning": "6 mức giá; ba gói Gold / Silver / Bronze được PricingStrategy ánh xạ sang ba trong số đó",
+      "where": "PurchaseHelper; appendix/iap-products.md"
+    },
+    {
+      "source": "code field",
+      "key": "APricingStrategy.teamOfferConfigGold / teamOfferConfigSilver / teamOfferConfigBronze",
+      "type": "ShopPackageConfig",
+      "value": "config theo chiến lược giá (title localization 'TeamOffer')",
+      "meaning": "Nội dung ba gói",
+      "where": "APricingStrategy; DefaultPricingStrategy.get_TeamOfferConfigGold/Silver/Bronze"
+    },
+    {
+      "source": "code enum",
+      "key": "OfferType.TeamOffer",
+      "type": "int",
+      "value": "4",
+      "meaning": "Mã loại offer dùng trong analytics",
+      "where": "TeamOfferManager.get_OfferType; Royal.Scenes.Home.Ui.Dialogs.Offer.OfferType"
+    },
+    {
+      "source": "storage key",
+      "key": "TeamOffer",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "TeamOfferProgress nén trong UserInventory (chuỗi thông tin đợt offer ngăn bằng '§')",
+      "where": "TeamOfferManager.UpdateInfo / FillFromLocal; UserInventory.UpdateTeamOfferProgress"
+    },
+    {
+      "source": "storage key",
+      "key": "TeamOfferConfig",
+      "type": "json",
+      "value": "server override",
+      "meaning": "Cấu hình ưu tiên hiển thị",
+      "where": "TeamOfferManager.UpdateConfig"
+    },
+    {
+      "source": "storage key",
+      "key": "TeamOfferAutoDialogState",
+      "type": "int",
+      "value": "client",
+      "meaning": "Trạng thái tự động mở dialog",
+      "where": "TeamOfferManager.TryAddStartDialog / ResetAutoDialogState"
+    },
+    {
+      "source": "storage key",
+      "key": "TeamOfferAutoDialogLastSeenTime",
+      "type": "long",
+      "value": "client",
+      "meaning": "Lần cuối tự động mở dialog (để nhắc lại sau 12 giờ)",
+      "where": "TeamOfferManager.TryAddStartDialog"
+    },
+    {
+      "source": "storage key",
+      "key": "TeamLogo",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Chỉ số huy hiệu đội để vẽ trên dialog",
+      "where": "TeamOfferManager.Bind / get_TeamLogo"
+    },
+    {
+      "source": "storage key",
+      "key": "LiveOpsCommonUse1",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa bit tutorial của Team Offer",
+      "where": "TeamOfferManager.MigrateTutorial"
+    },
+    {
+      "source": "code const",
+      "key": "BasicUserData.UserHasTeamIndex",
+      "type": "byte",
+      "value": "12",
+      "meaning": "Bit cho biết người chơi đang ở trong một đội",
+      "where": "BasicUserData"
+    },
+    {
+      "source": "server info",
+      "key": "TeamGiftOfferInfo",
+      "type": "protocol",
+      "value": "server",
+      "meaning": "Gói tin mang cấu hình đợt Team Offer",
+      "where": "TeamOfferManager.UpdateInfo"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.TeamOfferManager",
+    "Royal.Player.Context.Data.Persistent.TeamOfferProgress",
+    "Royal.Scenes.Home.Ui.Dialogs.TeamOffer.TeamOfferConfig"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

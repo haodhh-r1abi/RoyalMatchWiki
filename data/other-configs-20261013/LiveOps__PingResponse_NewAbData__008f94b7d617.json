@@ -1,0 +1,223 @@
+{
+  "AllTests": [
+    {
+      "Key": 224,
+      "Value": 1
+    },
+    {
+      "Key": 177,
+      "Value": 2
+    },
+    {
+      "Key": 209,
+      "Value": 4
+    },
+    {
+      "Key": 226,
+      "Value": 5
+    },
+    {
+      "Key": 179,
+      "Value": 5
+    },
+    {
+      "Key": 228,
+      "Value": 3
+    },
+    {
+      "Key": 215,
+      "Value": 3
+    },
+    {
+      "Key": 231,
+      "Value": 1
+    },
+    {
+      "Key": 156,
+      "Value": 3
+    },
+    {
+      "Key": 173,
+      "Value": 2
+    },
+    {
+      "Key": 189,
+      "Value": 4
+    },
+    {
+      "Key": 175,
+      "Value": 2
+    },
+    {
+      "Key": 192,
+      "Value": 2
+    },
+    {
+      "Key": 129,
+      "Value": 4
+    },
+    {
+      "Key": 194,
+      "Value": 6
+    },
+    {
+      "Key": 131,
+      "Value": 2
+    },
+    {
+      "Key": 4,
+      "Value": 6
+    },
+    {
+      "Key": 133,
+      "Value": 3
+    },
+    {
+      "Key": 200,
+      "Value": 4
+    },
+    {
+      "Key": 9,
+      "Value": 2
+    },
+    {
+      "Key": 137,
+      "Value": 3
+    },
+    {
+      "Key": 11,
+      "Value": 4
+    },
+    {
+      "Key": 141,
+      "Value": 2
+    },
+    {
+      "Key": 15,
+      "Value": 3
+    },
+    {
+      "Key": 208,
+      "Value": 1
+    },
+    {
+      "Key": 17,
+      "Value": 1
+    },
+    {
+      "Key": 18,
+      "Value": 3
+    },
+    {
+      "Key": 147,
+      "Value": 5
+    },
+    {
+      "Key": 20,
+      "Value": 4
+    },
+    {
+      "Key": 149,
+      "Value": 2
+    },
+    {
+      "Key": 22,
+      "Value": 3
+    },
+    {
+      "Key": 24,
+      "Value": 4
+    },
+    {
+      "Key": 25,
+      "Value": 2
+    },
+    {
+      "Key": 153,
+      "Value": 3
+    },
+    {
+      "Key": 26,
+      "Value": 3
+    },
+    {
+      "Key": 155,
+      "Value": 2
+    },
+    {
+      "Key": 28,
+      "Value": 3
+    },
+    {
+      "Key": 94,
+      "Value": 3
+    },
+    {
+      "Key": 159,
+      "Value": 4
+    },
+    {
+      "Key": 32,
+      "Value": 4
+    },
+    {
+      "Key": 161,
+      "Value": 2
+    },
+    {
+      "Key": 98,
+      "Value": 4
+    },
+    {
+      "Key": 165,
+      "Value": 4
+    },
+    {
+      "Key": 104,
+      "Value": 3
+    },
+    {
+      "Key": 42,
+      "Value": 6
+    },
+    {
+      "Key": 171,
+      "Value": 2
+    },
+    {
+      "Key": 44,
+      "Value": 2
+    },
+    {
+      "Key": 108,
+      "Value": 2
+    },
+    {
+      "Key": 54,
+      "Value": 2
+    },
+    {
+      "Key": 56,
+      "Value": 1
+    },
+    {
+      "Key": 125,
+      "Value": 2
+    },
+    {
+      "Key": 127,
+      "Value": 2
+    }
+  ],
+  "UpdatedAbTestKeys": [],
+  "NotificationTagRequiredKeys": [
+    158,
+    159,
+    179,
+    180,
+    187,
+    188,
+    211,
+    212
+  ]
+}

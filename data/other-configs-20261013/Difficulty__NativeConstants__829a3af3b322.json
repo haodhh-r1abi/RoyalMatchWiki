@@ -1,0 +1,89 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.ExtremeLevelsManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "110",
+      "dump_line": 404749
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SemiDynamicDifficulty",
+      "field": "MaxLevelForUpdateSkill",
+      "type": "short",
+      "value_expression": "100",
+      "dump_line": 417697
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "ConfigPath",
+      "type": "string",
+      "value_expression": "\"https://contents.prod.rylmtch.com/superlightball-ab/\"",
+      "dump_line": 418775
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "GroupCStartLevel",
+      "type": "int",
+      "value_expression": "160",
+      "dump_line": 418776
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "GroupDStartLevel",
+      "type": "int",
+      "value_expression": "75",
+      "dump_line": 418777
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "GroupFStartLevel",
+      "type": "int",
+      "value_expression": "111",
+      "dump_line": 418778
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "GroupGStartLevel",
+      "type": "int",
+      "value_expression": "111",
+      "dump_line": 418779
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "GroupHStartLevel",
+      "type": "int",
+      "value_expression": "211",
+      "dump_line": 418780
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "MoveUpdateFinishLevel",
+      "type": "int",
+      "value_expression": "230",
+      "dump_line": 418781
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SlbMoveConfigHelper",
+      "field": "DefaultInRangeVersion",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 418782
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.FeatureBundle.HardLevelBundle",
+      "field": "FirstHardLevel",
+      "type": "int",
+      "value_expression": "39",
+      "dump_line": 14065
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.ExtremelyHardLevelOffer.Scripts.ExtremelyHardLevelOfferHelper",
+      "field": "ExtremelyHardLevelOfferUnlockLevel",
+      "type": "int",
+      "value_expression": "149",
+      "dump_line": 178502
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

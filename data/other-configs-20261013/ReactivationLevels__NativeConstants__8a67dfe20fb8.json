@@ -1,0 +1,33 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.ReactivationLevelsManager",
+      "field": "LevelPrefix",
+      "type": "string",
+      "value_expression": "\"reactivation\"",
+      "dump_line": 414887
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ReactivationLevelsManager",
+      "field": "MinReactivationLevel",
+      "type": "int",
+      "value_expression": "231",
+      "dump_line": 414888
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ReactivationLevelsManager",
+      "field": "ItemTutorialLevelCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 414889
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ReactivationLevelsUserData",
+      "field": "SyncedDataCount",
+      "type": "int",
+      "value_expression": "9",
+      "dump_line": 414957
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

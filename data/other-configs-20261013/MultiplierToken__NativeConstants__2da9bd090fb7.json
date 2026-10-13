@@ -1,0 +1,54 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierTokenManager",
+      "field": "DefaultTokenPurchaseAmount",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 412338
+    },
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierTokenManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "33",
+      "dump_line": 412339
+    },
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierTokenManager",
+      "field": "TokenPriceInCoins",
+      "type": "int",
+      "value_expression": "9900",
+      "dump_line": 412340
+    },
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierTokenManager",
+      "field": "InitialFreeTokenAmount",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 412341
+    },
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierTokenManager",
+      "field": "ReducedTokenPurchaseAmount",
+      "type": "int",
+      "value_expression": "50",
+      "dump_line": 412342
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.MultiplierToken.MultiplierTokenPurchaseFlowHelper",
+      "field": "ReminderDialogLevelThreshold",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 136834
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.MultiplierToken.MultiplierTokenPurchaseFlowHelper",
+      "field": "TimeoutDurationMs",
+      "type": "long",
+      "value_expression": "604800000",
+      "dump_line": 136835
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

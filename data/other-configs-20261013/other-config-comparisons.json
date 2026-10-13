@@ -1,0 +1,2406 @@
+[
+  {
+    "feature": "Difficulty",
+    "before_file": "Difficulty__App_SLBMoveConfig__f1eb4f8b1f97.json",
+    "before_source": "local_cache",
+    "after_file": "Difficulty__SuperLightballAB__f1eb4f8b1f97.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 0,
+    "identical": true,
+    "changes": []
+  },
+  {
+    "feature": "Difficulty",
+    "before_file": "Difficulty__App_SLBMoveConfig__f1eb4f8b1f97.json",
+    "before_source": "historical_server",
+    "after_file": "Difficulty__SuperLightballAB__f1eb4f8b1f97.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 0,
+    "identical": true,
+    "changes": []
+  },
+  {
+    "feature": "Difficulty",
+    "before_file": "Difficulty__Historical_superlightball-ab-config__f1eb4f8b1f97.json",
+    "before_source": "historical_cdn",
+    "after_file": "Difficulty__SuperLightballAB__f1eb4f8b1f97.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 0,
+    "identical": true,
+    "changes": []
+  },
+  {
+    "feature": "SuperBooster",
+    "before_file": "SuperBooster__Historical_super-charge-config__2fe846c23f32.json",
+    "before_source": "historical_cdn",
+    "after_file": "SuperBooster__SuperCharge__2fe846c23f32.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 0,
+    "identical": true,
+    "changes": []
+  },
+  {
+    "feature": "Profile",
+    "before_file": "Profile__App_DynamicFrameBundle__1320acd37596.json",
+    "before_source": "local_cache",
+    "after_file": "Profile__DynamicContent__1320acd37596.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 0,
+    "identical": true,
+    "changes": []
+  },
+  {
+    "feature": "Profile",
+    "before_file": "Profile__App_DynamicFrameBundle__24507206efa2.json",
+    "before_source": "historical_server",
+    "after_file": "Profile__DynamicContent__1320acd37596.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 12,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.frameBundles[34].androidCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 2600618518,
+        "after": 3594956409
+      },
+      {
+        "path": "$.frameBundles[34].iosCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 4122543560,
+        "after": 440613403
+      },
+      {
+        "path": "$.frameBundles[36].androidCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 104344864
+      },
+      {
+        "path": "$.frameBundles[36].frameType",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 2
+      },
+      {
+        "path": "$.frameBundles[36].id",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 4036
+      },
+      {
+        "path": "$.frameBundles[36].iosCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 4137855249
+      },
+      {
+        "path": "$.styledNameBundles[20].androidCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 1465438625,
+        "after": 3137676019
+      },
+      {
+        "path": "$.styledNameBundles[20].iosCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 2057940121,
+        "after": 3524642536
+      },
+      {
+        "path": "$.styledNameBundles[21].androidCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 1241604183
+      },
+      {
+        "path": "$.styledNameBundles[21].id",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 4021
+      },
+      {
+        "path": "$.styledNameBundles[21].iosCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 771637858
+      },
+      {
+        "path": "$.styledNameBundles[21].styledNameType",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 2
+      }
+    ]
+  },
+  {
+    "feature": "Profile",
+    "before_file": "Profile__Historical_dynamic-content-config__24507206efa2.json",
+    "before_source": "historical_cdn",
+    "after_file": "Profile__DynamicContent__1320acd37596.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 12,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.frameBundles[34].androidCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 2600618518,
+        "after": 3594956409
+      },
+      {
+        "path": "$.frameBundles[34].iosCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 4122543560,
+        "after": 440613403
+      },
+      {
+        "path": "$.frameBundles[36].androidCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 104344864
+      },
+      {
+        "path": "$.frameBundles[36].frameType",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 2
+      },
+      {
+        "path": "$.frameBundles[36].id",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 4036
+      },
+      {
+        "path": "$.frameBundles[36].iosCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 4137855249
+      },
+      {
+        "path": "$.styledNameBundles[20].androidCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 1465438625,
+        "after": 3137676019
+      },
+      {
+        "path": "$.styledNameBundles[20].iosCrc",
+        "before_present": true,
+        "after_present": true,
+        "before": 2057940121,
+        "after": 3524642536
+      },
+      {
+        "path": "$.styledNameBundles[21].androidCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 1241604183
+      },
+      {
+        "path": "$.styledNameBundles[21].id",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 4021
+      },
+      {
+        "path": "$.styledNameBundles[21].iosCrc",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 771637858
+      },
+      {
+        "path": "$.styledNameBundles[21].styledNameType",
+        "before_present": false,
+        "after_present": true,
+        "before": null,
+        "after": 2
+      }
+    ]
+  },
+  {
+    "feature": "LiveOps",
+    "before_file": "LiveOps__App_RemoteRoyalBundles__c109900294b5.json",
+    "before_source": "local_cache",
+    "after_file": "LiveOps__DynamicBundle__c109900294b5.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 0,
+    "identical": true,
+    "changes": []
+  },
+  {
+    "feature": "LiveOps",
+    "before_file": "LiveOps__Historical_dynamic-bundle-config__c109900294b5.json",
+    "before_source": "historical_cdn",
+    "after_file": "LiveOps__DynamicBundle__c109900294b5.json",
+    "after_source": "live_cdn",
+    "reason": "Same named config component; leaf comparison preserves key absence and array positions.",
+    "changed_leaf_count": 0,
+    "identical": true,
+    "changes": []
+  },
+  {
+    "feature": "LiveOps",
+    "before_file": "LiveOps__PingResponse_ClientSettings__e5c87aab1426.json",
+    "before_source": "historical_server",
+    "after_file": "LiveOps__ClientSettings__55241e6d2be4.json",
+    "after_source": "live_api",
+    "reason": "Same typed ClientSettings table in historical/current Ping.",
+    "changed_leaf_count": 1,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.MaxLevelForBundle",
+        "before_present": true,
+        "after_present": true,
+        "before": 14301,
+        "after": 14701
+      }
+    ]
+  },
+  {
+    "feature": "DailyRewards",
+    "before_file": "DailyRewards__DailyRewardsConfig_v1__2de211f1889e.json",
+    "before_source": "prior_api",
+    "after_file": "DailyRewards__DailyRewardsConfig_v2__183d1ac100bd.json",
+    "after_source": "prior_api",
+    "reason": "Different explicitly requested DailyRewards versions; not assigned versions.",
+    "changed_leaf_count": 66,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.wrs[0].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[0].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[0].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[0].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[0].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "J"
+      },
+      {
+        "path": "$.wrs[0].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[0].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[0].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[0].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[0].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[0].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[0].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "J",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[1].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[1].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[1].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[1].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "H"
+      },
+      {
+        "path": "$.wrs[1].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[1].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[1].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[1].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[1].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "Ca",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[2].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[2].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[2].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[2].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "A"
+      },
+      {
+        "path": "$.wrs[2].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[2].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[2].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[2].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[2].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "H",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[3].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[3].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[3].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[3].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "Ca"
+      },
+      {
+        "path": "$.wrs[3].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[3].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[3].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[3].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[3].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[3].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[3].sr[4].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 30
+      },
+      {
+        "path": "$.wrs[3].sr[4].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[3].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "A",
+        "after": "ULB"
+      }
+    ]
+  },
+  {
+    "feature": "DailyRewards",
+    "before_file": "DailyRewards__DailyRewardsConfig_v1__2de211f1889e.json",
+    "before_source": "prior_api",
+    "after_file": "DailyRewards__DailyRewardsConfig_v3__fd890e4a1537.json",
+    "after_source": "prior_api",
+    "reason": "Different explicitly requested DailyRewards versions; not assigned versions.",
+    "changed_leaf_count": 19,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.mr[0].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 200,
+        "after": 100
+      },
+      {
+        "path": "$.mr[1].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 200
+      },
+      {
+        "path": "$.mr[2].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 400,
+        "after": 250
+      },
+      {
+        "path": "$.mr[3].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 500,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[1].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[1].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[1].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "T"
+      },
+      {
+        "path": "$.wrs[1].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[1].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "L"
+      },
+      {
+        "path": "$.wrs[2].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[2].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[2].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[2].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[2].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "L"
+      },
+      {
+        "path": "$.wrs[3].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[3].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[3].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[3].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "T"
+      }
+    ]
+  },
+  {
+    "feature": "DailyRewards",
+    "before_file": "DailyRewards__DailyRewardsConfig_v1__2de211f1889e.json",
+    "before_source": "prior_api",
+    "after_file": "DailyRewards__DailyRewardsConfig_v4__8038e3f59f93.json",
+    "after_source": "prior_api",
+    "reason": "Different explicitly requested DailyRewards versions; not assigned versions.",
+    "changed_leaf_count": 58,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.mr[0].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 200,
+        "after": 100
+      },
+      {
+        "path": "$.mr[1].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 200
+      },
+      {
+        "path": "$.mr[2].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 400,
+        "after": 250
+      },
+      {
+        "path": "$.mr[3].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 500,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[0].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[0].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "J"
+      },
+      {
+        "path": "$.wrs[0].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[0].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[0].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[0].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[0].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[0].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[0].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "J",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[1].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "H"
+      },
+      {
+        "path": "$.wrs[1].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[1].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[1].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[1].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[1].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "Ca",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[2].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "A"
+      },
+      {
+        "path": "$.wrs[2].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[2].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[2].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[2].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[2].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "H",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[3].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[3].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "Ca"
+      },
+      {
+        "path": "$.wrs[3].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[3].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[3].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[3].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[3].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[3].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[3].sr[4].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 30
+      },
+      {
+        "path": "$.wrs[3].sr[4].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[3].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "A",
+        "after": "ULB"
+      }
+    ]
+  },
+  {
+    "feature": "DailyRewards",
+    "before_file": "DailyRewards__DailyRewardsConfig_v2__183d1ac100bd.json",
+    "before_source": "prior_api",
+    "after_file": "DailyRewards__DailyRewardsConfig_v3__fd890e4a1537.json",
+    "after_source": "prior_api",
+    "reason": "Different explicitly requested DailyRewards versions; not assigned versions.",
+    "changed_leaf_count": 61,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.mr[0].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 200,
+        "after": 100
+      },
+      {
+        "path": "$.mr[1].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 200
+      },
+      {
+        "path": "$.mr[2].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 400,
+        "after": 250
+      },
+      {
+        "path": "$.mr[3].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 500,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[0].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[0].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[0].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[0].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "T"
+      },
+      {
+        "path": "$.wrs[0].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[0].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "J",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[0].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[0].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "L"
+      },
+      {
+        "path": "$.wrs[0].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[0].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[0].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[0].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULB",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[0].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 100
+      },
+      {
+        "path": "$.wrs[0].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[0].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[0].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "J"
+      },
+      {
+        "path": "$.wrs[1].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[1].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULB",
+        "after": "T"
+      },
+      {
+        "path": "$.wrs[1].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "H",
+        "after": "L"
+      },
+      {
+        "path": "$.wrs[1].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[1].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[1].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[1].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[1].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[1].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULB",
+        "after": "T"
+      },
+      {
+        "path": "$.wrs[1].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 100
+      },
+      {
+        "path": "$.wrs[1].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[1].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[1].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "Ca"
+      },
+      {
+        "path": "$.wrs[2].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[2].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[2].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "A",
+        "after": "L"
+      },
+      {
+        "path": "$.wrs[2].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[2].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "T"
+      },
+      {
+        "path": "$.wrs[2].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[2].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[2].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[2].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[2].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 100
+      },
+      {
+        "path": "$.wrs[2].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[2].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[2].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULB",
+        "after": "H"
+      },
+      {
+        "path": "$.wrs[3].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[3].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "Ca",
+        "after": "T"
+      },
+      {
+        "path": "$.wrs[3].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "R"
+      },
+      {
+        "path": "$.wrs[3].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[3].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[3].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "T"
+      },
+      {
+        "path": "$.wrs[3].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "L"
+      },
+      {
+        "path": "$.wrs[3].sr[4].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 30,
+        "after": 100
+      },
+      {
+        "path": "$.wrs[3].sr[4].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[3].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULB",
+        "after": "A"
+      }
+    ]
+  },
+  {
+    "feature": "DailyRewards",
+    "before_file": "DailyRewards__DailyRewardsConfig_v2__183d1ac100bd.json",
+    "before_source": "prior_api",
+    "after_file": "DailyRewards__DailyRewardsConfig_v4__8038e3f59f93.json",
+    "after_source": "prior_api",
+    "reason": "Different explicitly requested DailyRewards versions; not assigned versions.",
+    "changed_leaf_count": 28,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.mr[0].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 200,
+        "after": 100
+      },
+      {
+        "path": "$.mr[1].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 200
+      },
+      {
+        "path": "$.mr[2].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 400,
+        "after": 250
+      },
+      {
+        "path": "$.mr[3].r[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 500,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[0].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[0].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[0].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "J"
+      },
+      {
+        "path": "$.wrs[0].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[0].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "J",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[1].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[1].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[1].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULB",
+        "after": "H"
+      },
+      {
+        "path": "$.wrs[1].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[1].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "H",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[2].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[2].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[2].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UT",
+        "after": "A"
+      },
+      {
+        "path": "$.wrs[2].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[2].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "A",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[3].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[3].lr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 10,
+        "after": 1
+      },
+      {
+        "path": "$.wrs[3].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "UR",
+        "after": "Ca"
+      },
+      {
+        "path": "$.wrs[3].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[3].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "Ca",
+        "after": "C"
+      }
+    ]
+  },
+  {
+    "feature": "DailyRewards",
+    "before_file": "DailyRewards__DailyRewardsConfig_v3__fd890e4a1537.json",
+    "before_source": "prior_api",
+    "after_file": "DailyRewards__DailyRewardsConfig_v4__8038e3f59f93.json",
+    "after_source": "prior_api",
+    "reason": "Different explicitly requested DailyRewards versions; not assigned versions.",
+    "changed_leaf_count": 60,
+    "identical": false,
+    "changes": [
+      {
+        "path": "$.wrs[0].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[0].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "J"
+      },
+      {
+        "path": "$.wrs[0].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[0].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[0].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[0].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[0].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[0].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[0].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[0].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "J",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[1].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "H"
+      },
+      {
+        "path": "$.wrs[1].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[1].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[1].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[1].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[1].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[1].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[1].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[1].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[1].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "Ca",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[2].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "A"
+      },
+      {
+        "path": "$.wrs[2].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[2].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[2].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[2].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[2].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[2].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[2].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[2].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[2].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "H",
+        "after": "ULB"
+      },
+      {
+        "path": "$.wrs[3].lr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 300,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].lr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[3].lr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "Ca"
+      },
+      {
+        "path": "$.wrs[3].lr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 300
+      },
+      {
+        "path": "$.wrs[3].lr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "C"
+      },
+      {
+        "path": "$.wrs[3].sr[0].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[3].sr[0].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "R",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[3].sr[1].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 15,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[1].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "ULV",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[3].sr[2].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[2].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "T",
+        "after": "UR"
+      },
+      {
+        "path": "$.wrs[3].sr[3].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 15
+      },
+      {
+        "path": "$.wrs[3].sr[3].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "L",
+        "after": "UT"
+      },
+      {
+        "path": "$.wrs[3].sr[4].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 100,
+        "after": 30
+      },
+      {
+        "path": "$.wrs[3].sr[4].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "C",
+        "after": "ULV"
+      },
+      {
+        "path": "$.wrs[3].sr[5].a",
+        "before_present": true,
+        "after_present": true,
+        "before": 1,
+        "after": 10
+      },
+      {
+        "path": "$.wrs[3].sr[5].t",
+        "before_present": true,
+        "after_present": true,
+        "before": "A",
+        "after": "ULB"
+      }
+    ]
+  }
+]

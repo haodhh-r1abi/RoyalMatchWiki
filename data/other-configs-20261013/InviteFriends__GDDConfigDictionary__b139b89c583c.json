@@ -1,0 +1,501 @@
+{
+  "feature": "InviteFriends",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "UnlockLevel",
+      "type": "int",
+      "value": "80",
+      "meaning": "Level mở khóa phía inviter",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "EventInitial",
+      "type": "string",
+      "value": "IF",
+      "meaning": "Ký hiệu trong log EventDependency",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "SourceFriends / SourceSettings / SourceReward / SourceAuto",
+      "type": "string",
+      "value": "friends / settings / reward / auto",
+      "meaning": "4 nguồn mở dialog (tham số 'source' trong analytics)",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "ShareButtonNative / ShareButtonFacebook",
+      "type": "string",
+      "value": "native / facebook",
+      "meaning": "2 kiểu nút chia sẻ (tham số 'button')",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "DefaultFrameId",
+      "type": "int",
+      "value": "1",
+      "meaning": "Khung mặc định đi kèm avatar thưởng",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "MaxAvatarTooltipShowCount / AvatarTooltipCooldownInDays",
+      "type": "int",
+      "value": "2 / 7",
+      "meaning": "Tối đa 2 lần hiện tooltip avatar, cách nhau 7 ngày",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "AvatarRewardStepIndex / FirstStepIndex",
+      "type": "int",
+      "value": "0 / 0",
+      "meaning": "Mốc đầu tiên là mốc tặng avatar",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "AutoDialogLevelOffset",
+      "type": "int",
+      "value": "5",
+      "meaning": "Auto dialog bật sau UnlockLevel + 5 (suy luận)",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "RewardOriginInvitee / RewardOriginInviter",
+      "type": "string",
+      "value": "IF-new / IF-step",
+      "meaning": "Nguồn thưởng ghi trong log kinh tế",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeDialogDelayInSeconds",
+      "type": "float",
+      "value": "0.5",
+      "meaning": "Độ trễ trước khi hiện dialog chào mừng",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "FetchInviteesTimeThresholdInMs",
+      "type": "long",
+      "value": "10800000 (3 giờ)",
+      "meaning": "Chu kỳ làm mới danh sách bạn được mời",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "FetchInviteesTimeThresholdOnDialogOpenInMs",
+      "type": "long",
+      "value": "10000 (10 giây)",
+      "meaning": "Chu kỳ làm mới khi mở dialog",
+      "where": "InviteFriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsHelper.ShareMessageKey / Default",
+      "type": "string",
+      "value": "InviteFriendsShareMessage / \"Join me in Royal Match and let's win rewards together!\"",
+      "meaning": "Nội dung chia sẻ mặc định",
+      "where": "InviteFriendsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsHelper.FacebookShareMessageKey / Default",
+      "type": "string",
+      "value": "UserProfileUserInviteMessageText / \"Let's play Royal Match together!\"",
+      "meaning": "Nội dung chia sẻ qua Facebook",
+      "where": "InviteFriendsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsHelper.InviteLinkFallbackBase",
+      "type": "string",
+      "value": "https://playroyalmatch.onelink.me/invite?pid=invite_friends&c=invite_v1&deep_link_value=invite",
+      "meaning": "Link dự phòng khi config không có",
+      "where": "InviteFriendsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsHelper.InviteLinkDeepLinkSub1Key / InviteLinkAppScheme / InviteeUserIdDelimiter",
+      "type": "string",
+      "value": "deep_link_sub1 / royalmatch:// / ,",
+      "meaning": "Tham số userId trong link, scheme app, dấu ngăn cách id",
+      "where": "InviteFriendsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsHelper.InstallSourceAttribution / InstallSourceDeeplink",
+      "type": "string",
+      "value": "attribution / deeplink",
+      "meaning": "2 nguồn cài đặt (install_source trong analytics)",
+      "where": "InviteFriendsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsHelper.InviterProfileRetryIntervalInSeconds / MaxInviterProfileRetryCount",
+      "type": "float / int",
+      "value": "5 / 5",
+      "meaning": "Thử lại lấy hồ sơ người mời",
+      "where": "InviteFriendsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsHelper.PrefsInviterUserIdKey",
+      "type": "string",
+      "value": "InviteFriendsCachedInviterUserId",
+      "meaning": "Cache id người mời trong PlayerPrefs (sống sót qua cài đặt)",
+      "where": "InviteFriendsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsConfigHelper.DefaultConfig",
+      "type": "string",
+      "value": "invite_friends_default_config",
+      "meaning": "TextAsset config mặc định",
+      "where": "InviteFriendsConfigHelper"
+    },
+    {
+      "source": "json default",
+      "key": "l",
+      "type": "string",
+      "value": "https://play.royalmatch.com/uGwf?pid=invite_friends&c=invite_v1&deep_link_value=invite",
+      "meaning": "Link mời bạn (OneLink)",
+      "where": "Resources/invite_friends_default_config.json (client default, server ghi đè)"
+    },
+    {
+      "source": "json default",
+      "key": "tl",
+      "type": "int",
+      "value": "20",
+      "meaning": "Level đích người mới phải đạt để tính là hoàn thành (target level)",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "ir",
+      "type": "RewardItem[]",
+      "value": "1 PL + 1 IG",
+      "meaning": "Thưởng cho người được mời (invitee reward)",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[0]",
+      "type": "Step",
+      "value": "t=1, rs=[4000 SAS, 2000 C]",
+      "meaning": "Mốc 1 bạn: avatar đặc biệt (SAS) + 2000 Coins",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[1]",
+      "type": "Step",
+      "value": "t=2, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 2 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[2]",
+      "type": "Step",
+      "value": "t=3, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 3 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[3]",
+      "type": "Step",
+      "value": "t=5, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 5 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[4]",
+      "type": "Step",
+      "value": "t=7, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 7 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[5]",
+      "type": "Step",
+      "value": "t=10, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 10 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[6]",
+      "type": "Step",
+      "value": "t=15, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 15 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[7]",
+      "type": "Step",
+      "value": "t=20, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 20 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[8]",
+      "type": "Step",
+      "value": "t=30, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 30 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[9]",
+      "type": "Step",
+      "value": "t=40, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 40 bạn",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "json default",
+      "key": "s[10]",
+      "type": "Step",
+      "value": "t=50, rs=[2000 C, 1 PL, 1 IG]",
+      "meaning": "Mốc 50 bạn (mốc cuối)",
+      "where": "Resources/invite_friends_default_config.json"
+    },
+    {
+      "source": "config class",
+      "key": "InviteFriendsConfig",
+      "type": "class",
+      "value": "string l (link), int tl (target level), RewardItem[] ir (invitee reward), Step[] s (mốc), int version",
+      "meaning": "Cấu hình tính năng",
+      "where": "Dialogs.InviteFriends.Scripts.InviteFriendsConfig"
+    },
+    {
+      "source": "config class",
+      "key": "InviteFriendsProgressBarData",
+      "type": "struct",
+      "value": "int claimedCount, completedCount, firstStepTarget, nextStepIndex, nextStepTarget, lastStepTarget",
+      "meaning": "Dữ liệu thanh tiến độ mốc",
+      "where": "Dialogs.InviteFriends.Scripts"
+    },
+    {
+      "source": "config class",
+      "key": "InviteFriendsInviteeItemData",
+      "type": "class",
+      "value": "InviteFriendsInviteeProfile profile, bool showAsCompleted",
+      "meaning": "Một dòng trong danh sách bạn đã mời",
+      "where": "Dialogs.InviteFriends.Scripts"
+    },
+    {
+      "source": "code const",
+      "key": "InviteFriendsProgress.BitArrayLength",
+      "type": "int",
+      "value": "20",
+      "meaning": "Tổng bit tiến độ (rất nhỏ)",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "IsInInviteeEventIndex / IsInInviterEventIndex",
+      "type": "int",
+      "value": "0 / 1",
+      "meaning": "Đang ở vai trò người được mời / người mời",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "IsInviteeRewardClaimedIndex",
+      "type": "int",
+      "value": "2",
+      "meaning": "Đã nhận thưởng invitee",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "ClaimedUserCountStart / End / Min / Max",
+      "type": "int",
+      "value": "3 / 9 / 0 / 127",
+      "meaning": "7 bit số bạn đã tính thưởng (tối đa 127)",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "IsInviteeWelcomeShownIndex / IsInviterAddedAsFriendIndex / IsRegisteredAsNewUserIndex",
+      "type": "int",
+      "value": "10 / 11 / 12",
+      "meaning": "Cờ trạng thái invitee",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "AvatarTooltipShownCountStart / End",
+      "type": "int",
+      "value": "13 / 14",
+      "meaning": "2 bit đếm số lần hiện tooltip avatar",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "PopupOpenedByUserIndex / IsAutoPopupShownIndex",
+      "type": "int",
+      "value": "15 / 19",
+      "meaning": "Người chơi tự mở dialog / đã hiện auto popup",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "IsInstallAttributedEvtSentIndex",
+      "type": "int",
+      "value": "16",
+      "meaning": "Đã gửi analytics IFInstallAttributed",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "code const",
+      "key": "IsFirstStepRewardsTooltipShownIndex / IsLaterStepsRewardsTooltipShownIndex",
+      "type": "int",
+      "value": "17 / 18",
+      "meaning": "Đã hiện tooltip thưởng mốc đầu / các mốc sau",
+      "where": "InviteFriendsProgress"
+    },
+    {
+      "source": "storage key",
+      "key": "UsersObject",
+      "type": "string",
+      "value": "-",
+      "meaning": "Danh sách bạn được mời (InviteFriendsUsersObject)",
+      "where": "InviteFriendsLocalData"
+    },
+    {
+      "source": "storage key",
+      "key": "Config / ConfigVersion",
+      "type": "string / int",
+      "value": "server",
+      "meaning": "JSON config + version",
+      "where": "InviteFriendsLocalData"
+    },
+    {
+      "source": "storage key",
+      "key": "LastInviteesFetchTime",
+      "type": "long",
+      "value": "-",
+      "meaning": "Lần lấy danh sách gần nhất",
+      "where": "InviteFriendsLocalData"
+    },
+    {
+      "source": "storage key",
+      "key": "InviterUserId / InviterProfile / InviterEligibleLevel",
+      "type": "long / string / int",
+      "value": "-",
+      "meaning": "Người mời mình: id, hồ sơ, level đủ điều kiện",
+      "where": "InviteFriendsLocalData"
+    },
+    {
+      "source": "storage key",
+      "key": "AvatarTooltipLastShownDay",
+      "type": "int",
+      "value": "-",
+      "meaning": "Ngày hiện tooltip avatar gần nhất (theo giờ server)",
+      "where": "InviteFriendsLocalData"
+    },
+    {
+      "source": "storage key",
+      "key": "InviteFriendsCachedInviterUserId",
+      "type": "long (PlayerPrefs)",
+      "value": "-",
+      "meaning": "Cache id người mời ngoài database (sống sót khi chưa đăng ký)",
+      "where": "PlayerPrefs (InviteFriendsHelper)"
+    },
+    {
+      "source": "server info",
+      "key": "InviteFriendConfig / InviteFriendRefreshInfo / GetInviteFriendInviteesInfoResponse",
+      "type": "FlatBuffers Table / response",
+      "value": "server",
+      "meaning": "Config, làm mới, danh sách bạn được mời",
+      "where": "Royal.Infrastructure.Services.Backend.Protocol"
+    },
+    {
+      "source": "asset",
+      "key": "InviteFriendsBundleGroupInfo.GroupName",
+      "type": "string",
+      "value": "invite_friends",
+      "meaning": "Nhóm bundle",
+      "where": "InviteFriendsBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle / Prefab",
+      "type": "string",
+      "value": "invite_friends_dialog, invite_friends_icon, invite_friends_welcome; InviteFriendsDialog, InviteFriendsIconBundledPrefab, InviteFriendsGiftBoxBundledPrefab, InviteFriendsGiftClaimAnimation, InviteeRewardClaimAnimation, InviteFriendsInfoTooltipDialog",
+      "meaning": "Bundle và prefab của tính năng",
+      "where": "InviteFriendsBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "SFX",
+      "type": "string",
+      "value": "invite_friends_gift_stinger",
+      "meaning": "Âm thanh mở quà",
+      "where": "InviteFriendsBundleGroupInfo"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "InviteFriendConfig ConfigVersion",
+      "type": "int",
+      "value": "5",
+      "meaning": "Version config server thuc te (khop PingResponse InviteFriendConfig.ConfigVersion=5)",
+      "where": "PingResponse: InviteFriendConfig.ConfigVersion=5; InviteFriendsTableItem_Config.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "l (link moi - runtime)",
+      "type": "string",
+      "value": "https://play.royalmatch.com/uGwf?pid=invite_friends&c=invite_v1&deep_link_value=invite",
+      "meaning": "Link OneLink server gui (khop default)",
+      "where": "InviteFriendsTableItem_Config.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "tl (target level - runtime)",
+      "type": "int",
+      "value": "20",
+      "meaning": "Level dich invitee phai dat de tinh hoan thanh",
+      "where": "InviteFriendsTableItem_Config.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "ir (invitee reward - runtime)",
+      "type": "RewardItem[]",
+      "value": "1 PL + 1 IG",
+      "meaning": "Thuong nguoi duoc moi",
+      "where": "InviteFriendsTableItem_Config.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "s (11 moc - runtime, flatten)",
+      "type": "Step[]",
+      "value": "t=[1,2,3,5,7,10,15,20,30,40,50]; s[0].rs=[4000 SAS, 2000 C]; s[1..10].rs=[1 PL, 2000 C, 1 IG]",
+      "meaning": "Bang moc inviter thuc te khop client default (moc 1 = avatar SAS + 2000 coin; cac moc sau 1 PL + 2000 C + 1 IG)",
+      "where": "InviteFriendsTableItem_Config.json"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.InviteFriendsManager",
+    "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsHelper",
+    "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsConfigHelper",
+    "Royal.Scenes.Home.Ui.Dialogs.InviteFriends.Scripts.InviteFriendsEvtHelper",
+    "Royal.Player.Context.Data.Persistent.InviteFriendsProgress"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

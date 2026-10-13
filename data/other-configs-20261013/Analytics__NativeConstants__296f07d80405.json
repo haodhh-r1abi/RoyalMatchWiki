@@ -1,0 +1,222 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.AnalyticsManager",
+      "field": "AnalyticsFacebookId",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 504413
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.AnalyticsManager",
+      "field": "AnalyticsInstagramId",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 504414
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.AnalyticsManager",
+      "field": "AnalyticsTriggerHomeScene",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 504415
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.AnalyticsManager",
+      "field": "AnalyticsTriggerSettings",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 504416
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.AnalyticsManager",
+      "field": "AnalyticsStart",
+      "type": "string",
+      "value_expression": "\"start\"",
+      "dump_line": 504417
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.AnalyticsManager",
+      "field": "AnalyticsEnd",
+      "type": "string",
+      "value_expression": "\"end\"",
+      "dump_line": 504418
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.Event.EventParameter",
+      "field": "StringType",
+      "type": "byte",
+      "value_expression": "0",
+      "dump_line": 505898
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.Event.EventParameter",
+      "field": "LongType",
+      "type": "byte",
+      "value_expression": "1",
+      "dump_line": 505899
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.Event.EventParameter",
+      "field": "DoubleType",
+      "type": "byte",
+      "value_expression": "2",
+      "dump_line": 505900
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.Event.EventParameter",
+      "field": "JsonType",
+      "type": "byte",
+      "value_expression": "3",
+      "dump_line": 505901
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.Event.EventParameter",
+      "field": "JsonStringType",
+      "type": "byte",
+      "value_expression": "4",
+      "dump_line": 505902
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.Event.EventParameter",
+      "field": "JsonArrayType",
+      "type": "byte",
+      "value_expression": "5",
+      "dump_line": 505903
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.BatteryUsageAnalyticsHelper",
+      "field": "RequiredMinutesToSendBatteryEvt",
+      "type": "int",
+      "value_expression": "30",
+      "dump_line": 505198
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.BatteryUsageAnalyticsHelper",
+      "field": "RequiredMinutesToCheckBattery",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 505199
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.DeviceSoundInfoAnalyticsHelper",
+      "field": "MuteCheckSceneChangeLimit",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 505243
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventRewardedAdOpportunity",
+      "type": "string",
+      "value_expression": "\"rewarded_ad_opportunity\"",
+      "dump_line": 505575
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventAdView",
+      "type": "string",
+      "value_expression": "\"ad_view\"",
+      "dump_line": 505576
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventAdClicked",
+      "type": "string",
+      "value_expression": "\"ad_clicked\"",
+      "dump_line": 505577
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventLevelStart",
+      "type": "string",
+      "value_expression": "\"level_start\"",
+      "dump_line": 505578
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventLevelComplete",
+      "type": "string",
+      "value_expression": "\"level_complete\"",
+      "dump_line": 505579
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventLevelFail",
+      "type": "string",
+      "value_expression": "\"level_fail\"",
+      "dump_line": 505580
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventEnergyDepleted",
+      "type": "string",
+      "value_expression": "\"energy_depleted\"",
+      "dump_line": 505581
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventVirtualResourceTransaction",
+      "type": "string",
+      "value_expression": "\"virtual_resource_transaction\"",
+      "dump_line": 505582
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventAccountLinked",
+      "type": "string",
+      "value_expression": "\"account_linked\"",
+      "dump_line": 505583
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventGiftTransaction",
+      "type": "string",
+      "value_expression": "\"gift_transaction\"",
+      "dump_line": 505584
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "EventAppOpen",
+      "type": "string",
+      "value_expression": "\"app_open\"",
+      "dump_line": 505585
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "ParamValue",
+      "type": "string",
+      "value_expression": "\"value\"",
+      "dump_line": 505586
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "ParamResourceType",
+      "type": "string",
+      "value_expression": "\"resource_type\"",
+      "dump_line": 505587
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "ResourceTypeCoins",
+      "type": "string",
+      "value_expression": "\"COINS\"",
+      "dump_line": 505588
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+      "field": "ResourceTypeLife",
+      "type": "string",
+      "value_expression": "\"HEARTS\"",
+      "dump_line": 505589
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Analytics.Marketing.MarketingHelper",
+      "field": "OneDayInMs",
+      "type": "int",
+      "value_expression": "86400000",
+      "dump_line": 505802
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

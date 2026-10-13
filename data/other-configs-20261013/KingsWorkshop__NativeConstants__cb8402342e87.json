@@ -1,0 +1,54 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.KingWorkshopManager",
+      "field": "TableGameLevelCount",
+      "type": "int",
+      "value_expression": "11",
+      "dump_line": 407445
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingWorkshopManager",
+      "field": "DefaultLevelId",
+      "type": "string",
+      "value_expression": "\"kw_level_1\"",
+      "dump_line": 407446
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingWorkshopManager",
+      "field": "TutorialLevelId",
+      "type": "string",
+      "value_expression": "\"kw_level_tutorial\"",
+      "dump_line": 407447
+    },
+    {
+      "manager": "Royal.Player.Context.Units.KingWorkshopManager",
+      "field": "MaxCampaignAbTryCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 407448
+    },
+    {
+      "manager": "Royal.Scenes.TableGame.Systems.TableGameLauncher",
+      "field": "GhostScaleInDuration",
+      "type": "float",
+      "value_expression": "0.2",
+      "dump_line": 2219
+    },
+    {
+      "manager": "Royal.Scenes.TableGame.Systems.TableGameLauncher",
+      "field": "GhostSnapThreshold",
+      "type": "float",
+      "value_expression": "0.0005",
+      "dump_line": 2220
+    },
+    {
+      "manager": "Royal.Scenes.TableGame.Config.TableGameLevelPrefs",
+      "field": "TutorialEnteredKey",
+      "type": "string",
+      "value_expression": "\"TableGame.TutorialEntered\"",
+      "dump_line": 3401
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

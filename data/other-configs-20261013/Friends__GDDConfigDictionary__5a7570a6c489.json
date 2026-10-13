@@ -1,0 +1,187 @@
+{
+  "feature": "Friends",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "SuggestionTutorialLevel",
+      "type": "int",
+      "value": "44",
+      "meaning": "Level hiện tutorial gợi ý bạn bè",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "SuggestedFriendViewLimit",
+      "type": "int",
+      "value": "10",
+      "meaning": "Số gợi ý hiện tối đa",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "FetchFriendTimeThresholdInMs",
+      "type": "int",
+      "value": "300000 (5 phút)",
+      "meaning": "Chu kỳ làm mới danh sách bạn bè",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "FetchPendingRequestsTimeThresholdInMs",
+      "type": "int",
+      "value": "180000 (3 phút)",
+      "meaning": "Chu kỳ làm mới yêu cầu kết bạn chờ",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "FetchFriendSuggestionTimeThresholdInMs",
+      "type": "int",
+      "value": "86400000 (24 giờ)",
+      "meaning": "Chu kỳ làm mới danh sách gợi ý",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "MaxFriendsLimit",
+      "type": "int",
+      "value": "300",
+      "meaning": "Số bạn bè tối đa",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "code const",
+      "key": "ServerDiffTimeOffsetMs",
+      "type": "long",
+      "value": "60000 (1 phút)",
+      "meaning": "Bù chênh lệch giờ client-server khi so ngưỡng",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "static array",
+      "key": "FriendRequestSource",
+      "type": "enum",
+      "value": "CodeInvite=1, DeepLink=2, AcceptRequest=3, RejectRequest=4, RemoveFriend=5, UserProfile=6, Suggested=7, SuggestedDismiss=8",
+      "meaning": "8 nguồn thao tác bạn bè (dùng làm event_type trong analytics)",
+      "where": "Http.Command.Friends.FriendRequestSource"
+    },
+    {
+      "source": "static array",
+      "key": "AskFriendshipResult",
+      "type": "enum",
+      "value": "Success=0, AlreadyRequested=1, FriendOrRequestLimitExceeded=2",
+      "meaning": "Kết quả gửi yêu cầu kết bạn",
+      "where": "Protocol.AskFriendshipResult"
+    },
+    {
+      "source": "static array",
+      "key": "FriendsListActionType",
+      "type": "enum",
+      "value": "Default=0, Remove=1, AcceptRequest=2, RejectRequest=3",
+      "meaning": "Thao tác trên thẻ bạn bè",
+      "where": "Sections.Leaderboard.Friends.FriendsListActionType"
+    },
+    {
+      "source": "static array",
+      "key": "FriendsRowType",
+      "type": "enum",
+      "value": "FriendRequest=0, SuggestedFriend=1, Friend=2, Separator=3, TextLine=4, FindFriendsButton=5",
+      "meaning": "6 kiểu dòng trong danh sách",
+      "where": "Sections.Leaderboard.Friends.FriendsRowType"
+    },
+    {
+      "source": "static array",
+      "key": "SocialLikeType",
+      "type": "enum",
+      "value": "Facebook=1, Instagram=2",
+      "meaning": "2 nền tảng like nhận thưởng",
+      "where": "Login.SocialLikeType"
+    },
+    {
+      "source": "static array",
+      "key": "SocialConnectStatus",
+      "type": "enum",
+      "value": "GuestLinkedToFacebook=0, ConnectedToExistentAccount=1, HaveAlreadyBeenConnected=2, NewUserWithFacebook=3, GuestLinkedToApple=4, NewUserWithApple=5, GuestLinkedToGoogle=6, NewUserWithGoogle=7, GuestLinkedToPGS=8, AuthenticationFailed=9",
+      "meaning": "10 trạng thái liên kết tài khoản",
+      "where": "Protocol.SocialConnectStatus"
+    },
+    {
+      "source": "config class",
+      "key": "SuggestedFriendTableItem",
+      "type": "class",
+      "value": "long UserId, string UserName, bool HasSpecialNickname, long FacebookId, int FrameId, int StyledNameId, int AvatarId, int BadgeId, int MutualFriendCount, int SuggestionScore, int ThemeId",
+      "meaning": "Một gợi ý bạn bè (lưu trong SQLite)",
+      "where": "Storage.Tables.SuggestedFriendTableItem"
+    },
+    {
+      "source": "config class",
+      "key": "FriendsListRowData",
+      "type": "class",
+      "value": "Leader leader, int rank, FriendsRowType rowType, bool isMultipleRequest, bool isMe",
+      "meaning": "Một dòng trong danh sách bạn bè",
+      "where": "Sections.Leaderboard.Friends"
+    },
+    {
+      "source": "code const",
+      "key": "Localization keys",
+      "type": "string",
+      "value": "UserProfileAddFriendsListFull, UserProfileRequestedWarning, SocialTabFriendRequestLimitReachedText, Connection Problem, MaintenanceText",
+      "meaning": "Các thông báo lỗi/giới hạn",
+      "where": "FriendsManager"
+    },
+    {
+      "source": "storage key",
+      "key": "FriendRequests",
+      "type": "string / list",
+      "value": "-",
+      "meaning": "Danh sách yêu cầu kết bạn chờ (lưu cục bộ)",
+      "where": "FriendsManager.LoadFriendRequests / SaveFriendRequests"
+    },
+    {
+      "source": "storage key",
+      "key": "LastSuggestedFriendsFetchTime",
+      "type": "long",
+      "value": "-",
+      "meaning": "Mốc lấy gợi ý bạn bè gần nhất",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "SuggestedFriendTableItem",
+      "type": "SQLite table",
+      "value": "-",
+      "meaning": "Bảng gợi ý bạn bè (ClearSuggestedFriends chạy 'DELETE FROM SuggestedFriendTableItem')",
+      "where": "DatabaseService"
+    },
+    {
+      "source": "server info",
+      "key": "GetFriendsResponse / GetPendingFriendsResponse",
+      "type": "FlatBuffers Table",
+      "value": "server",
+      "meaning": "Danh sách bạn (FriendProfile) và gợi ý (SuggestionProfile) / yêu cầu chờ",
+      "where": "Protocol"
+    },
+    {
+      "source": "server info",
+      "key": "UserProfileInfo",
+      "type": "FlatBuffers Table",
+      "value": "server",
+      "meaning": "Hồ sơ người chơi trả về khi tìm kiếm",
+      "where": "SearchFriendHttpCommand"
+    },
+    {
+      "source": "config class",
+      "key": "HTTP command Friends",
+      "type": "class",
+      "value": "GetFriendsHttpCommand, GetPendingFriendRequestsHttpCommand, AskFriendshipRequestHttpCommand, AnswerFriendshipHttpCommand, RemoveFriendHttpCommand, SearchFriendHttpCommand, DismissFriendSuggestionHttpCommand (namespace Social)",
+      "meaning": "7 lệnh HTTP của hệ thống bạn bè",
+      "where": "Royal.Infrastructure.Services.Backend.Http.Command.Friends"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.FriendsManager",
+    "Royal.Infrastructure.Services.Backend.Http.Command.Friends",
+    "Royal.Infrastructure.Services.Storage.Tables.SuggestedFriendTableItem"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

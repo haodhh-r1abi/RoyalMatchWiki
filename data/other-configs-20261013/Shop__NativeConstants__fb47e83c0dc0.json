@@ -1,0 +1,187 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.PurchaseManager",
+      "field": "PurchaseTimeoutFrameCountNative",
+      "type": "int",
+      "value_expression": "4800",
+      "dump_line": 456246
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.PurchaseManager",
+      "field": "PurchaseTimeoutFrameCountXsolla",
+      "type": "int",
+      "value_expression": "900",
+      "dump_line": 456247
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.PurchaseManager",
+      "field": "NativeDefaultPurchaseDelayFrames",
+      "type": "int",
+      "value_expression": "80",
+      "dump_line": 456256
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.PurchaseManager",
+      "field": "XsollaDefaultPurchaseDelayFrames",
+      "type": "int",
+      "value_expression": "20",
+      "dump_line": 456257
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "ProjectId",
+      "type": "int",
+      "value_expression": "299375",
+      "dump_line": 456713
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "PaymentDomain",
+      "type": "string",
+      "value_expression": "\"https://store.royalmatch.com\"",
+      "dump_line": 456714
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "PaymentDomainSandbox",
+      "type": "string",
+      "value_expression": "\"https://sandbox-secure.xsolla.com\"",
+      "dump_line": 456715
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "XsollaCustomTheme",
+      "type": "string",
+      "value_expression": "\"693bd30373e89f6a1fe8c636\"",
+      "dump_line": 456716
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "PurchaseResultSuccess",
+      "type": "string",
+      "value_expression": "\"1\"",
+      "dump_line": 456718
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "PurchaseResultFailure",
+      "type": "string",
+      "value_expression": "\"0\"",
+      "dump_line": 456719
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "RedirectUniversalLink",
+      "type": "string",
+      "value_expression": "\"https://external.royalmatch.com/paymentSuccess/\"",
+      "dump_line": 456739
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager",
+      "field": "CountriesDelimiter",
+      "type": "char",
+      "value_expression": "'\\x2c'",
+      "dump_line": 456740
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "NoAdsBundleOverrideMaxCoinBoughtThreshold",
+      "type": "int",
+      "value_expression": "5000",
+      "dump_line": 30559
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single2CoinAmount",
+      "type": "int",
+      "value_expression": "1000",
+      "dump_line": 30560
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single8CoinAmount",
+      "type": "int",
+      "value_expression": "5000",
+      "dump_line": 30561
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single15CoinAmount",
+      "type": "int",
+      "value_expression": "10000",
+      "dump_line": 30562
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single30CoinAmount",
+      "type": "int",
+      "value_expression": "25000",
+      "dump_line": 30563
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single55CoinAmount",
+      "type": "int",
+      "value_expression": "50000",
+      "dump_line": 30564
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "Single100CoinAmount",
+      "type": "int",
+      "value_expression": "100000",
+      "dump_line": 30565
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "RoyalBoostBundleOfferUnlockLevel",
+      "type": "int",
+      "value_expression": "50",
+      "dump_line": 30566
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "ShopBundlePriority",
+      "type": "int",
+      "value_expression": "3000",
+      "dump_line": 30567
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy",
+      "field": "ShopCoinPackagePriority",
+      "type": "int",
+      "value_expression": "4000",
+      "dump_line": 30568
+    },
+    {
+      "manager": "Royal.Player.Context.Units.CoinShopManager",
+      "field": "CoinShopItemCount",
+      "type": "int",
+      "value_expression": "6",
+      "dump_line": 401742
+    },
+    {
+      "manager": "Royal.Player.Context.Units.CoinShopManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 401743
+    },
+    {
+      "manager": "Royal.Player.Context.Units.CoinShopManager",
+      "field": "NextEventAutoFetchThresholdInMs",
+      "type": "long",
+      "value_expression": "-2000",
+      "dump_line": 401744
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ExternalPaymentFirstPurchaseBonusHelper",
+      "field": "NotificationUnlockLevel",
+      "type": "int",
+      "value_expression": "52",
+      "dump_line": 404690
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

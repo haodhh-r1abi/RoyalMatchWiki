@@ -1,0 +1,268 @@
+{
+  "feature": "Offers",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "OfferManager.OfferUnlockLevel",
+      "type": "int",
+      "value": "100",
+      "meaning": "Level mở offer theo segment",
+      "where": "OfferManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "OfferManager.GetBundleAvailableLevel",
+      "type": "int",
+      "value": "95",
+      "meaning": "Level bắt đầu tải bundle offer",
+      "where": "OfferManager.GetBundleAvailableLevel"
+    },
+    {
+      "source": "code const",
+      "key": "OfferManager.OfferDurationInHours",
+      "type": "int",
+      "value": "48",
+      "meaning": "Thời lượng một đợt offer",
+      "where": "OfferManager.get_OfferDurationInHours"
+    },
+    {
+      "source": "code const",
+      "key": "OfferManager.ReminderDurationInHours",
+      "type": "int",
+      "value": "24",
+      "meaning": "Sau bao lâu thì nhắc lại dialog offer",
+      "where": "OfferManager.get_ReminderDurationInHours"
+    },
+    {
+      "source": "code const",
+      "key": "OfferManager.InstallTimeDurationInMs",
+      "type": "long",
+      "value": "604800000 (7 ngày)",
+      "meaning": "Phải cài game trên 7 ngày mới thấy Royal Favor Ego Offer",
+      "where": "OfferManager.get_InstallTimeDurationInMs"
+    },
+    {
+      "source": "code const",
+      "key": "Xac suat hien Royal Favor Ego Offer",
+      "type": "float",
+      "value": "50% (Random.Range(0, 2) == 0)",
+      "meaning": "Tung đồng xu mỗi lần hết nước",
+      "where": "OfferManager.get_ShouldShowRoyalFavorEgoOffer"
+    },
+    {
+      "source": "code const",
+      "key": "Gioi han lien tiep Royal Favor",
+      "type": "int",
+      "value": "không hiện khi RoyalFavorRetryCountFromLastShown > 2",
+      "meaning": "Không bán quá 2 lần liên tiếp sau khi người chơi từ chối",
+      "where": "OfferManager.get_ShouldShowRoyalFavorEgoOffer"
+    },
+    {
+      "source": "code const",
+      "key": "Bundle Royal Favor",
+      "type": "int",
+      "value": "FeatureBundleManager.IsDownloaded(0x3a)",
+      "meaning": "Mã bundle của Royal Favor offer",
+      "where": "OfferManager.get_ShouldShowRoyalFavorEgoOffer"
+    },
+    {
+      "source": "code enum",
+      "key": "OfferType",
+      "type": "enum",
+      "value": "LadderOffer = 1, SpecialOffer = 2, SegmentOffer = 3, TeamOffer = 4, RoyalFavorOfferEgo = 5, RoyalFavorOfferLifeRefill = 6, SeasonalOffer = 7, DynamicOffer = 9, HiddenTempleOffer = 10, MagicCauldronOffer = 11, ShopSingleItem = 12, ShopBundleItem = 13, RoyalPass = 14, Multiplier = 15, StagedPass1 = 16, StagedPass2 = 17, JourneyOffer = 18, WeeklyPass = 19, AnvilPass = 20, ExtremelyHardLevelOffer = 21, NoAds = 22, NoAdsBundle = 23, WorldCupCosmetic = 24, ShortExpeditionEventDailyOffer = 25, ShortExpeditionEventPass = 26, ShortExpeditionEventEnergyShop = 27, ShortExpeditionEventEndOffer = 28",
+      "meaning": "28 loại offer trong game (giá trị 8 bỏ trống)",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferType"
+    },
+    {
+      "source": "code enum",
+      "key": "OfferOpenTrigger",
+      "type": "enum",
+      "value": "Auto = 0, Click = 1, Reminder = 2, Reopened = 3, DeepLink = 4, Shop = 5",
+      "meaning": "Nguồn mở dialog offer (gửi kèm analytics)",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferOpenTrigger"
+    },
+    {
+      "source": "code enum",
+      "key": "OfferTheme",
+      "type": "enum",
+      "value": "None = 0, Paris = 1, Rome = 2, London = 3, Newyork = 4",
+      "meaning": "Chủ đề du lịch của offer (quyết định bộ asset)",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferTheme"
+    },
+    {
+      "source": "code field",
+      "key": "OfferConfig",
+      "type": "class",
+      "value": "version, offerPriorityHomescene, offerPriorityShop, offerPriorityFavor, steps (OfferStep[]), theme",
+      "meaning": "Cấu hình một đợt offer do server gửi",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferConfig"
+    },
+    {
+      "source": "code field",
+      "key": "OfferStep",
+      "type": "class",
+      "value": "s (số bước), o (tùy chọn), p (mã giá / price id), d (thời lượng), n (tên bước), r (OfferReward[] thưởng chính), c (OfferReward[] thưởng kèm)",
+      "meaning": "Một bước trong thang offer",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferStep"
+    },
+    {
+      "source": "code field",
+      "key": "OfferReward",
+      "type": "class",
+      "value": "t (mã phần thưởng, ví dụ 'C', 'H', 'ULV'), a (số lượng hoặc số phút)",
+      "meaning": "Một phần thưởng trong bước offer - dùng chung bảng 42 mã reward",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferReward"
+    },
+    {
+      "source": "code const",
+      "key": "OfferProgress.EventIdLimit",
+      "type": "int",
+      "value": "512",
+      "meaning": "eventId quay vòng trong 9 bit",
+      "where": "Royal.Player.Context.Data.Persistent.OfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "OfferProgress.EventIdStartIndex / EventIdEndIndex",
+      "type": "int",
+      "value": "16 / 24",
+      "meaning": "9 bit lưu eventId trong Feature1",
+      "where": "OfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "OfferProgress.StepStartIndex / StepEndIndex",
+      "type": "int",
+      "value": "25 / 29",
+      "meaning": "5 bit lưu bước hiện tại (tối đa 32 bước)",
+      "where": "OfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "OfferProgress.OptionStartIndex / OptionEndIndex",
+      "type": "int",
+      "value": "30 / 31",
+      "meaning": "2 bit lưu tùy chọn (4 giá trị)",
+      "where": "OfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "OfferProgress.EndTimeStartIndex / EndTimeEndIndex",
+      "type": "int",
+      "value": "32 / 62",
+      "meaning": "31 bit lưu mốc hết hạn",
+      "where": "OfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "Deeplink action",
+      "type": "string",
+      "value": "specialoffer",
+      "meaning": "Mã deeplink mở dialog offer",
+      "where": "OfferManager.GetDeeplinkAction"
+    },
+    {
+      "source": "code const",
+      "key": "Nhom product IAP",
+      "type": "string",
+      "value": "offer (offer.1 .. offer.100), conversionoffer (.1, .5), seasonaloffer (.1, .10, .20)",
+      "meaning": "Nhóm product id của offer theo segment; giá USD xem feature Shop",
+      "where": "OfferManager.get_ProductIdPackageName; PurchaseHelper"
+    },
+    {
+      "source": "storage key",
+      "key": "OfferConfig",
+      "type": "json",
+      "value": "server override",
+      "meaning": "Cấu hình đợt offer hiện tại (AppKeyValue)",
+      "where": "OfferManager.UpdateConfig / get_ConfigKey"
+    },
+    {
+      "source": "storage key",
+      "key": "Offer",
+      "type": "string",
+      "value": "server override",
+      "meaning": "Thông tin đợt offer, các trường ngăn bằng '§'",
+      "where": "OfferManager.SetLocalOfferData / get_OfferKey"
+    },
+    {
+      "source": "storage key",
+      "key": "OfferAutoDialogState",
+      "type": "int",
+      "value": "client",
+      "meaning": "Trạng thái đã tự động mở dialog",
+      "where": "OfferManager.get_AutoDialogStateKey / ResetAutoDialogState"
+    },
+    {
+      "source": "storage key",
+      "key": "OfferAutoDialogLastSeenTime",
+      "type": "long",
+      "value": "client",
+      "meaning": "Lần cuối tự động mở dialog (để nhắc lại sau 24 giờ)",
+      "where": "OfferManager.get_AutoDialogLastSeenTimeKey"
+    },
+    {
+      "source": "storage key",
+      "key": "RoyalFavorRetryCountFromLastShown",
+      "type": "int",
+      "value": "client",
+      "meaning": "Số lần đã hiện Royal Favor mà người chơi không mua",
+      "where": "OfferManager.get_ShouldShowRoyalFavorEgoOffer / FinishPurchaseForEgoOffer"
+    },
+    {
+      "source": "storage key",
+      "key": "TravelSeasonalOffer",
+      "type": "flag",
+      "value": "client + server",
+      "meaning": "Đánh dấu biến thể offer theo mùa du lịch",
+      "where": "OfferManager.get_ShouldShowIcon / UpdateConfig / TryAddStartDialog"
+    },
+    {
+      "source": "storage key",
+      "key": "InstallTime",
+      "type": "long",
+      "value": "client",
+      "meaning": "Mốc cài đặt game, dùng để tính 7 ngày cho Royal Favor",
+      "where": "OfferManager.get_ShouldShowRoyalFavorEgoOffer (AppKeyValue)"
+    },
+    {
+      "source": "storage key",
+      "key": "Feature1",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa OfferProgress (bit 16-62)",
+      "where": "UserInventory.UpdateFeature1"
+    },
+    {
+      "source": "storage key",
+      "key": "LiveOpsCommonUse1",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa bit migrate tutorial của offer",
+      "where": "OfferManager.MigrateTutorial"
+    },
+    {
+      "source": "storage key",
+      "key": "UserSpecialOfferSegment",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Segment quyết định nội dung offer",
+      "where": "OfferManager.UpdateInfo; BasicUserData.UpdateSpecialOfferSegment"
+    },
+    {
+      "source": "server info",
+      "key": "SpecialOfferEventInfo / GetSpecialOfferInfoResponse",
+      "type": "protocol",
+      "value": "server",
+      "meaning": "Gói tin mang cấu hình đợt offer",
+      "where": "OfferManager.UpdateInfo / UpdateSpecialOfferInfo"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.OfferManager",
+    "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferConfig",
+    "Royal.Scenes.Home.Ui.Dialogs.Offer.OfferStep",
+    "Royal.Player.Context.Data.Persistent.OfferProgress"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

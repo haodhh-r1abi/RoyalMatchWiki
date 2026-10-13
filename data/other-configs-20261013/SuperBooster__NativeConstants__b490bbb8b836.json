@@ -1,0 +1,82 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SuperBoosterUnlockLevel",
+      "type": "int",
+      "value_expression": "92",
+      "dump_line": 419773
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SuperBoosterCombinedAbUnlockLevel",
+      "type": "int",
+      "value_expression": "292",
+      "dump_line": 419774
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SuperBoosterWinThreshold",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 419775
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SlbLockedIconMinLevel",
+      "type": "int",
+      "value_expression": "11",
+      "dump_line": 419776
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SlbLevelChangeUnlockGroupB",
+      "type": "int",
+      "value_expression": "301",
+      "dump_line": 419777
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SlbLevelChangeUnlockGroupC",
+      "type": "int",
+      "value_expression": "201",
+      "dump_line": 419778
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SlbLevelChangeUnlockGroupD",
+      "type": "int",
+      "value_expression": "101",
+      "dump_line": 419779
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SlbLevelChangeUnlockGroupF",
+      "type": "int",
+      "value_expression": "101",
+      "dump_line": 419780
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SlbLevelChangeUnlockGroupG",
+      "type": "int",
+      "value_expression": "101",
+      "dump_line": 419781
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SuperBoosterManager",
+      "field": "SlbLevelChangeUnlockGroupH",
+      "type": "int",
+      "value_expression": "201",
+      "dump_line": 419782
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.SuperchargeOffer.Scripts.SuperchargeOfferConfigHelper",
+      "field": "ConfigPath",
+      "type": "string",
+      "value_expression": "\"https://contents.prod.rylmtch.com/super-charge/\"",
+      "dump_line": 80013
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

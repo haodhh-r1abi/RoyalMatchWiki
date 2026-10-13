@@ -1,0 +1,1934 @@
+{
+  "features": [
+    {
+      "id": "Ads",
+      "name": "Quảng cáo (Ads)",
+      "category": "Economy"
+    },
+    {
+      "id": "Analytics",
+      "name": "Analytics - đo lường sự kiện",
+      "category": "LiveOps"
+    },
+    {
+      "id": "Areas",
+      "name": "Khu trang trí (Areas)",
+      "category": "Progression"
+    },
+    {
+      "id": "Boosters",
+      "name": "Booster",
+      "category": "Economy"
+    },
+    {
+      "id": "Cloche",
+      "name": "Cloche (Butler's Gift)",
+      "category": "Economy"
+    },
+    {
+      "id": "CoinsInventory",
+      "name": "Coin và kho đồ (Inventory)",
+      "category": "Economy"
+    },
+    {
+      "id": "DailyRewards",
+      "name": "Daily Rewards",
+      "category": "Progression"
+    },
+    {
+      "id": "Difficulty",
+      "name": "Độ khó level (Difficulty)",
+      "category": "Progression"
+    },
+    {
+      "id": "DynamicOffer",
+      "name": "Dynamic Offer (offer động)",
+      "category": "Economy"
+    },
+    {
+      "id": "Ego",
+      "name": "Mua thêm nước (Ego)",
+      "category": "Economy"
+    },
+    {
+      "id": "Friends",
+      "name": "Bạn bè (Friends)",
+      "category": "Social"
+    },
+    {
+      "id": "InviteFriends",
+      "name": "Mời bạn (Invite Friends)",
+      "category": "Social"
+    },
+    {
+      "id": "JourneyOffer",
+      "name": "Journey Offer (thang tiến độ)",
+      "category": "Economy"
+    },
+    {
+      "id": "KingsWorkshop",
+      "name": "King's Workshop (Table Game)",
+      "category": "Progression"
+    },
+    {
+      "id": "LadderOffer",
+      "name": "Ladder Offer (thang mua)",
+      "category": "Economy"
+    },
+    {
+      "id": "Leaderboard",
+      "name": "Bảng xếp hạng (Leaderboard)",
+      "category": "Social"
+    },
+    {
+      "id": "League",
+      "name": "Royal League",
+      "category": "Progression"
+    },
+    {
+      "id": "LiveOps",
+      "name": "Live-ops & cấu hình từ xa",
+      "category": "LiveOps"
+    },
+    {
+      "id": "MultiplierSelection",
+      "name": "Chọn hệ số level (Multiplier)",
+      "category": "Progression"
+    },
+    {
+      "id": "MultiplierToken",
+      "name": "Multiplier Token (Royal Boost)",
+      "category": "Economy"
+    },
+    {
+      "id": "Notifications",
+      "name": "Thông báo (Notifications)",
+      "category": "LiveOps"
+    },
+    {
+      "id": "Offers",
+      "name": "Offer theo segment",
+      "category": "Economy"
+    },
+    {
+      "id": "Profile",
+      "name": "Hồ sơ (Profile)",
+      "category": "Social"
+    },
+    {
+      "id": "ReactivationLevels",
+      "name": "Level tái kích hoạt",
+      "category": "Progression"
+    },
+    {
+      "id": "Shop",
+      "name": "Cửa hàng và mua hàng (Shop)",
+      "category": "Economy"
+    },
+    {
+      "id": "StoryLevels",
+      "name": "Story level của Vua (Nightmare)",
+      "category": "Progression"
+    },
+    {
+      "id": "SuperBooster",
+      "name": "Super Booster (Super Lightball)",
+      "category": "Economy"
+    },
+    {
+      "id": "Team",
+      "name": "Đội (Team)",
+      "category": "Social"
+    },
+    {
+      "id": "TeamOffer",
+      "name": "Team Gift Offer (quà cho đội)",
+      "category": "Economy"
+    },
+    {
+      "id": "WelcomeBackGift",
+      "name": "Quà quay lại (Welcome Back)",
+      "category": "Economy"
+    }
+  ],
+  "get_requests": {
+    "GetEventInfoRequest": {
+      "request": {
+        "table": true,
+        "fields": [
+          {
+            "name": "Country",
+            "type": "string",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "Level",
+            "type": "int",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ConfigVersions",
+            "type": "Nullable<ConfigVersions>",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "seq"
+          }
+        ]
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "Status",
+            "type": "ResponseStatusCode",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "WorldCupServerEventInfo",
+            "type": "Nullable<WorldCupInfo>",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DynamicOfferEventInfo",
+            "type": "Nullable<DynamicOfferInfoOld>",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "seq"
+          },
+          {
+            "name": "LavaQuestInfo",
+            "type": "Nullable<LavaQuestInfo>",
+            "vec": false,
+            "voff": 10,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DynamicOfferEventInfoList",
+            "type": "Nullable<DynamicOfferInfo>",
+            "vec": true,
+            "voff": 12,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DynamicOfferDisableFlags",
+            "type": "string",
+            "vec": true,
+            "voff": 14,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "UserDynamicSegmentInfo",
+            "type": "Nullable<UserDynamicSegmentInfo>",
+            "vec": false,
+            "voff": 16,
+            "voff_src": "seq"
+          }
+        ]
+      }
+    },
+    "GetGoldenOffersInfoRequest": {
+      "request": {
+        "table": true,
+        "fields": []
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "GoldenOffersInfo",
+            "type": "Nullable<GoldenOffersInfo>",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "seq"
+          }
+        ]
+      }
+    },
+    "GetInviteFriendInviteesInfoRequest": {
+      "request": {
+        "table": true,
+        "fields": [
+          {
+            "name": "UsersHash",
+            "type": "string",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          }
+        ]
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "Invitees",
+            "type": "Nullable<UserProfile>",
+            "vec": true,
+            "voff": 4,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ProfilesIncluded",
+            "type": "bool",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "UsersHash",
+            "type": "string",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "Config",
+            "type": "Nullable<InviteFriendConfig>",
+            "vec": false,
+            "voff": 10,
+            "voff_src": "seq"
+          }
+        ]
+      }
+    },
+    "GetJourneyOfferInfoRequest": {
+      "request": {
+        "table": true,
+        "fields": [
+          {
+            "name": "EventId",
+            "type": "int",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "Segment",
+            "type": "int",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "AbGroup",
+            "type": "int",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "pseudo"
+          }
+        ]
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "EventInfo",
+            "type": "Nullable<JourneyOfferInfo>",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "seq"
+          }
+        ]
+      }
+    },
+    "GetLeagueInfoRequest": {
+      "request": {
+        "table": true,
+        "fields": [
+          {
+            "name": "GroupId",
+            "type": "long",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          }
+        ]
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "Status",
+            "type": "ResponseStatusCode",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "Members",
+            "type": "Nullable<LeagueMember>",
+            "vec": true,
+            "voff": 6,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DepreciatedLeagueConfig",
+            "type": "Nullable<LeagueConfig>",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "seq"
+          },
+          {
+            "name": "Config",
+            "type": "Nullable<LeagueConfig>",
+            "vec": false,
+            "voff": 10,
+            "voff_src": "seq"
+          },
+          {
+            "name": "RemainingTime",
+            "type": "long",
+            "vec": false,
+            "voff": 12,
+            "voff_src": "pseudo"
+          }
+        ]
+      }
+    },
+    "GetSpecialOfferInfoRequest": {
+      "request": {
+        "table": true,
+        "fields": [
+          {
+            "name": "EventId",
+            "type": "int",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          }
+        ]
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "SpecialOfferEventInfo",
+            "type": "Nullable<SpecialOfferEventInfo>",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "seq"
+          }
+        ]
+      }
+    },
+    "GetSystemMessagesRequest": {
+      "request": {
+        "table": true,
+        "fields": [
+          {
+            "name": "Language",
+            "type": "string",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LastSeenMessageId",
+            "type": "int",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          }
+        ]
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "Messages",
+            "type": "Nullable<SystemMessage>",
+            "vec": true,
+            "voff": 4,
+            "voff_src": "seq"
+          },
+          {
+            "name": "CustomPopups",
+            "type": "Nullable<CustomPopup>",
+            "vec": true,
+            "voff": 6,
+            "voff_src": "seq"
+          },
+          {
+            "name": "SocialPopup",
+            "type": "Nullable<SocialPopup>",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "seq"
+          }
+        ]
+      }
+    },
+    "GetUpcomingEventInfoRequest": {
+      "request": {
+        "table": true,
+        "fields": []
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "UpcomingTeamTournamentStartDate",
+            "type": "long",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          }
+        ]
+      }
+    },
+    "PingRequest": {
+      "request": {
+        "table": true,
+        "fields": [
+          {
+            "name": "BadWordsVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LeagueGroupId",
+            "type": "long",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LeagueConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "KingsCupGroupId",
+            "type": "long",
+            "vec": false,
+            "voff": 10,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamBattleGroupId",
+            "type": "long",
+            "vec": false,
+            "voff": 12,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamId",
+            "type": "long",
+            "vec": false,
+            "voff": 14,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "MadnessEventVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 16,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LadderOfferVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 18,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "RoyalPassVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 20,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SkyRaceGroupId",
+            "type": "long",
+            "vec": false,
+            "voff": 22,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SpecialOfferVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 24,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "PinataPartyVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 26,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamTreasureEventId",
+            "type": "int",
+            "vec": false,
+            "voff": 28,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamTreasureConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 30,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "DeprecatedSegmentOfferConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 32,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LightningRushGroupId",
+            "type": "long",
+            "vec": false,
+            "voff": 34,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "IsSentAfterSocialLogout",
+            "type": "bool",
+            "vec": false,
+            "voff": 36,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SpaceMissionGroupId",
+            "type": "long",
+            "vec": false,
+            "voff": 38,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SpaceMissionConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 40,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "BalloonRiseVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 42,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "HiddenTempleConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 44,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "RevenueSegmentVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 46,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamGiftOfferConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 48,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "BalloonRiseProgress",
+            "type": "long",
+            "vec": false,
+            "voff": 50,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "MagicCauldronConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 52,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "DragonNestConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 54,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ArcheryArenaConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 56,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "DukesFortuneConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 58,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "EventDependencyConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 60,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LavaQuestConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 62,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "DynamicOfferConfigVersions",
+            "type": "Nullable<DynamicOfferConfigVersions>",
+            "vec": false,
+            "voff": 64,
+            "voff_src": "seq"
+          },
+          {
+            "name": "UserTeamTreasureState",
+            "type": "Nullable<UserTeamTreasureState>",
+            "vec": false,
+            "voff": 66,
+            "voff_src": "seq"
+          },
+          {
+            "name": "SeasonalCardCollectionConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 68,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamTournamentConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 70,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "MissionPursuitConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 72,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SeasonalCardPackOfferConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 74,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "MissionControlConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 76,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TermsAndConditionsVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 78,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "Language",
+            "type": "string",
+            "vec": false,
+            "voff": 80,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TrainJourneyConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 82,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "OceanOdysseyConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 84,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SkyRaceConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 86,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "GoldenOffersConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 88,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "DailyLightningRushConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 90,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "PuzzleBreakConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 92,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "WeeklyPassVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 94,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "PropellerRushConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 96,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "AncientAdventureConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 98,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "JourneyOfferConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 100,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "RobotRivalsConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 102,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "MergeSmithConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 104,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SpecialOfferSegmentVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 106,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "MissionEventsOverrideConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 108,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ClashOfChampionsConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 110,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "RoyalWorldCupConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 112,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ExpeditionEventConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 114,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ExpeditionEventOfferConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 116,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ExpeditionEventOfferSegmentVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 118,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamBattleConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 120,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "DailyRewardsConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 122,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "InviteFriendConfigVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 124,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ExternalPaymentCountriesVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 126,
+            "voff_src": "pseudo"
+          }
+        ]
+      },
+      "response": {
+        "table": true,
+        "fields": [
+          {
+            "name": "Status",
+            "type": "ResponseStatusCode",
+            "vec": false,
+            "voff": 4,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "Flags",
+            "type": "long",
+            "vec": false,
+            "voff": 6,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "UserProgress",
+            "type": "Nullable<UserProgress>",
+            "vec": false,
+            "voff": 8,
+            "voff_src": "seq"
+          },
+          {
+            "name": "MaxLevel",
+            "type": "int",
+            "vec": false,
+            "voff": 10,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "RequestedOperation",
+            "type": "RequestedOperationType",
+            "vec": false,
+            "voff": 12,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "RequestReason",
+            "type": "string",
+            "vec": false,
+            "voff": 14,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ForceUpdateVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 16,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamExist",
+            "type": "bool",
+            "vec": false,
+            "voff": 18,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "BadWordsFilter",
+            "type": "Nullable<BadWordsData>",
+            "vec": false,
+            "voff": 20,
+            "voff_src": "seq"
+          },
+          {
+            "name": "AbTestContent",
+            "type": "Nullable<ABTestContent>",
+            "vec": false,
+            "voff": 22,
+            "voff_src": "seq"
+          },
+          {
+            "name": "LeagueRank",
+            "type": "int",
+            "vec": false,
+            "voff": 24,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LeagueRemainingTime",
+            "type": "long",
+            "vec": false,
+            "voff": 26,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "DepreciatedLeagueConfig",
+            "type": "Nullable<LeagueConfig>",
+            "vec": false,
+            "voff": 28,
+            "voff_src": "seq"
+          },
+          {
+            "name": "RequiredLevelForLeague",
+            "type": "int",
+            "vec": false,
+            "voff": 30,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "LeagueConfig",
+            "type": "Nullable<LeagueConfig>",
+            "vec": false,
+            "voff": 32,
+            "voff_src": "seq"
+          },
+          {
+            "name": "AbTestData",
+            "type": "long",
+            "vec": false,
+            "voff": 34,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "AbTestUpdateData",
+            "type": "long",
+            "vec": false,
+            "voff": 36,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "KingsCupInfo",
+            "type": "Nullable<KingsCupInfo>",
+            "vec": false,
+            "voff": 38,
+            "voff_src": "seq"
+          },
+          {
+            "name": "TeamBattleInfo",
+            "type": "Nullable<TeamBattleInfo>",
+            "vec": false,
+            "voff": 40,
+            "voff_src": "seq"
+          },
+          {
+            "name": "MadnessEventInfo",
+            "type": "Nullable<MadnessEventInfo>",
+            "vec": false,
+            "voff": 42,
+            "voff_src": "seq"
+          },
+          {
+            "name": "LadderOfferInfo",
+            "type": "Nullable<LadderOfferInfo>",
+            "vec": false,
+            "voff": 44,
+            "voff_src": "seq"
+          },
+          {
+            "name": "RoyalPassInfo",
+            "type": "Nullable<RoyalPassInfo>",
+            "vec": false,
+            "voff": 46,
+            "voff_src": "seq"
+          },
+          {
+            "name": "SkyRaceInfo",
+            "type": "Nullable<SkyRaceInfo>",
+            "vec": false,
+            "voff": 48,
+            "voff_src": "seq"
+          },
+          {
+            "name": "SpecialOfferEventInfo",
+            "type": "Nullable<SpecialOfferEventInfo>",
+            "vec": false,
+            "voff": 50,
+            "voff_src": "seq"
+          },
+          {
+            "name": "PinataPartyInfo",
+            "type": "Nullable<PinataPartyInfo>",
+            "vec": false,
+            "voff": 52,
+            "voff_src": "seq"
+          },
+          {
+            "name": "AbTestData2",
+            "type": "long",
+            "vec": false,
+            "voff": 54,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "AbTestUpdateData2",
+            "type": "long",
+            "vec": false,
+            "voff": 56,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "TeamTreasureInfo",
+            "type": "Nullable<TeamTreasureInfo>",
+            "vec": false,
+            "voff": 58,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DeprecatedSegmentOfferInfo",
+            "type": "Nullable<SegmentOfferInfo>",
+            "vec": false,
+            "voff": 60,
+            "voff_src": "seq"
+          },
+          {
+            "name": "TeamGiftOfferInfo",
+            "type": "Nullable<TeamGiftOfferInfo>",
+            "vec": false,
+            "voff": 62,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DeprecatedLightningRushInfo",
+            "type": "Nullable<DeprecatedLightningRushInfo>",
+            "vec": false,
+            "voff": 64,
+            "voff_src": "seq"
+          },
+          {
+            "name": "AbTestData3",
+            "type": "long",
+            "vec": false,
+            "voff": 66,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "AbTestUpdateData3",
+            "type": "long",
+            "vec": false,
+            "voff": 68,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "SpaceMissionInfo",
+            "type": "Nullable<SpaceMissionInfo>",
+            "vec": false,
+            "voff": 70,
+            "voff_src": "seq"
+          },
+          {
+            "name": "RevenueSegment",
+            "type": "int",
+            "vec": false,
+            "voff": 72,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "NewAbData",
+            "type": "Nullable<NewABData>",
+            "vec": false,
+            "voff": 74,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ClientPlatformForLevelUpdate",
+            "type": "int",
+            "vec": false,
+            "voff": 76,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "BalloonRiseInfo",
+            "type": "Nullable<BalloonRiseInfo>",
+            "vec": false,
+            "voff": 78,
+            "voff_src": "seq"
+          },
+          {
+            "name": "WeeklyLeaderboardServerEventId",
+            "type": "int",
+            "vec": false,
+            "voff": 80,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "Theme",
+            "type": "Theme",
+            "vec": false,
+            "voff": 82,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "HiddenTempleInfo",
+            "type": "Nullable<HiddenTempleInfo>",
+            "vec": false,
+            "voff": 84,
+            "voff_src": "seq"
+          },
+          {
+            "name": "RevenueSegmentVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 86,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "ClientSettings",
+            "type": "Nullable<ClientSettings>",
+            "vec": false,
+            "voff": 88,
+            "voff_src": "seq"
+          },
+          {
+            "name": "MagicCauldronInfo",
+            "type": "Nullable<MagicCauldronInfo>",
+            "vec": false,
+            "voff": 90,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DragonNestInfo",
+            "type": "Nullable<DragonNestInfo>",
+            "vec": false,
+            "voff": 92,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ArcheryArenaInfo",
+            "type": "Nullable<ArcheryArenaInfo>",
+            "vec": false,
+            "voff": 94,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DukesFortuneInfo",
+            "type": "Nullable<DukesFortuneInfo>",
+            "vec": false,
+            "voff": 96,
+            "voff_src": "seq"
+          },
+          {
+            "name": "EventDependencyInfo",
+            "type": "Nullable<EventDependencyInfo>",
+            "vec": false,
+            "voff": 98,
+            "voff_src": "seq"
+          },
+          {
+            "name": "LavaQuestInfo",
+            "type": "Nullable<LavaQuestInfo>",
+            "vec": false,
+            "voff": 100,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DynamicOfferAllInfo",
+            "type": "Nullable<DynamicOfferAllInfo>",
+            "vec": false,
+            "voff": 102,
+            "voff_src": "seq"
+          },
+          {
+            "name": "SeasonalCardCollectionInfo",
+            "type": "Nullable<SeasonalCardCollectionInfo>",
+            "vec": false,
+            "voff": 104,
+            "voff_src": "seq"
+          },
+          {
+            "name": "TeamTournamentInfo",
+            "type": "Nullable<TeamTournamentInfo>",
+            "vec": false,
+            "voff": 106,
+            "voff_src": "seq"
+          },
+          {
+            "name": "MissionPursuitInfo",
+            "type": "Nullable<MissionPursuitInfo>",
+            "vec": false,
+            "voff": 108,
+            "voff_src": "seq"
+          },
+          {
+            "name": "SeasonalCardPackOfferEventInfo",
+            "type": "Nullable<SeasonalCardPackOfferEventInfo>",
+            "vec": false,
+            "voff": 110,
+            "voff_src": "seq"
+          },
+          {
+            "name": "MissionControlInfo",
+            "type": "Nullable<MissionControlInfo>",
+            "vec": false,
+            "voff": 112,
+            "voff_src": "seq"
+          },
+          {
+            "name": "TermsAndConditions",
+            "type": "Nullable<TermsAndConditions>",
+            "vec": false,
+            "voff": 114,
+            "voff_src": "seq"
+          },
+          {
+            "name": "TrainJourneyInfo",
+            "type": "Nullable<TrainJourneyInfo>",
+            "vec": false,
+            "voff": 116,
+            "voff_src": "seq"
+          },
+          {
+            "name": "OceanOdysseyInfo",
+            "type": "Nullable<OceanOdysseyInfo>",
+            "vec": false,
+            "voff": 118,
+            "voff_src": "seq"
+          },
+          {
+            "name": "GoldenOffersInfo",
+            "type": "Nullable<GoldenOffersInfo>",
+            "vec": false,
+            "voff": 120,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ServerDailyLightningRushInfo",
+            "type": "Nullable<DailyLightningRushInfo>",
+            "vec": false,
+            "voff": 122,
+            "voff_src": "seq"
+          },
+          {
+            "name": "PuzzleBreakInfo",
+            "type": "Nullable<PuzzleBreakInfo>",
+            "vec": false,
+            "voff": 124,
+            "voff_src": "seq"
+          },
+          {
+            "name": "WeeklyPassInfo",
+            "type": "Nullable<WeeklyPassInfo>",
+            "vec": false,
+            "voff": 126,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ServerPropellerRushInfo",
+            "type": "Nullable<PropellerRushInfo>",
+            "vec": false,
+            "voff": 128,
+            "voff_src": "seq"
+          },
+          {
+            "name": "AncientAdventureInfo",
+            "type": "Nullable<AncientAdventureInfo>",
+            "vec": false,
+            "voff": 130,
+            "voff_src": "seq"
+          },
+          {
+            "name": "JourneyOfferInfo",
+            "type": "Nullable<JourneyOfferInfo>",
+            "vec": false,
+            "voff": 132,
+            "voff_src": "seq"
+          },
+          {
+            "name": "RobotRivalsServerInfo",
+            "type": "Nullable<RobotRivalsInfo>",
+            "vec": false,
+            "voff": 134,
+            "voff_src": "seq"
+          },
+          {
+            "name": "MergeSmithInfo",
+            "type": "Nullable<MergeSmithInfo>",
+            "vec": false,
+            "voff": 136,
+            "voff_src": "seq"
+          },
+          {
+            "name": "MissionEventsOverrideConfig",
+            "type": "Nullable<MissionEventsOverrideConfig>",
+            "vec": false,
+            "voff": 138,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ClashOfChampionsServerInfo",
+            "type": "Nullable<ClashOfChampionsInfo>",
+            "vec": false,
+            "voff": 140,
+            "voff_src": "seq"
+          },
+          {
+            "name": "XsollaJwtVersion",
+            "type": "int",
+            "vec": false,
+            "voff": 142,
+            "voff_src": "pseudo"
+          },
+          {
+            "name": "RoyalWorldCupServerInfo",
+            "type": "Nullable<RoyalWorldCupEventInfo>",
+            "vec": false,
+            "voff": 144,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ExpeditionEventInfo",
+            "type": "Nullable<ExpeditionEventInfo>",
+            "vec": false,
+            "voff": 146,
+            "voff_src": "seq"
+          },
+          {
+            "name": "DailyRewardsInfo",
+            "type": "Nullable<DailyRewardsInfo>",
+            "vec": false,
+            "voff": 148,
+            "voff_src": "seq"
+          },
+          {
+            "name": "InviteFriendConfig",
+            "type": "Nullable<InviteFriendConfig>",
+            "vec": false,
+            "voff": 150,
+            "voff_src": "seq"
+          },
+          {
+            "name": "ExternalPaymentCountriesInfo",
+            "type": "Nullable<ExternalPaymentCountriesInfo>",
+            "vec": false,
+            "voff": 152,
+            "voff_src": "seq"
+          }
+        ]
+      }
+    }
+  },
+  "ping_fields": [
+    {
+      "name": "BadWordsVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 4,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "LeagueGroupId",
+      "type": "long",
+      "vec": false,
+      "voff": 6,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "LeagueConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 8,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "KingsCupGroupId",
+      "type": "long",
+      "vec": false,
+      "voff": 10,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TeamBattleGroupId",
+      "type": "long",
+      "vec": false,
+      "voff": 12,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TeamId",
+      "type": "long",
+      "vec": false,
+      "voff": 14,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "MadnessEventVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 16,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "LadderOfferVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 18,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "RoyalPassVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 20,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "SkyRaceGroupId",
+      "type": "long",
+      "vec": false,
+      "voff": 22,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "SpecialOfferVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 24,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "PinataPartyVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 26,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TeamTreasureEventId",
+      "type": "int",
+      "vec": false,
+      "voff": 28,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TeamTreasureConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 30,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "DeprecatedSegmentOfferConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 32,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "LightningRushGroupId",
+      "type": "long",
+      "vec": false,
+      "voff": 34,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "IsSentAfterSocialLogout",
+      "type": "bool",
+      "vec": false,
+      "voff": 36,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "SpaceMissionGroupId",
+      "type": "long",
+      "vec": false,
+      "voff": 38,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "SpaceMissionConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 40,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "BalloonRiseVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 42,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "HiddenTempleConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 44,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "RevenueSegmentVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 46,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TeamGiftOfferConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 48,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "BalloonRiseProgress",
+      "type": "long",
+      "vec": false,
+      "voff": 50,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "MagicCauldronConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 52,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "DragonNestConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 54,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "ArcheryArenaConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 56,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "DukesFortuneConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 58,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "EventDependencyConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 60,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "LavaQuestConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 62,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "DynamicOfferConfigVersions",
+      "type": "Nullable<DynamicOfferConfigVersions>",
+      "vec": false,
+      "voff": 64,
+      "voff_src": "seq"
+    },
+    {
+      "name": "UserTeamTreasureState",
+      "type": "Nullable<UserTeamTreasureState>",
+      "vec": false,
+      "voff": 66,
+      "voff_src": "seq"
+    },
+    {
+      "name": "SeasonalCardCollectionConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 68,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TeamTournamentConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 70,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "MissionPursuitConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 72,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "SeasonalCardPackOfferConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 74,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "MissionControlConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 76,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TermsAndConditionsVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 78,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "Language",
+      "type": "string",
+      "vec": false,
+      "voff": 80,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TrainJourneyConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 82,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "OceanOdysseyConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 84,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "SkyRaceConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 86,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "GoldenOffersConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 88,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "DailyLightningRushConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 90,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "PuzzleBreakConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 92,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "WeeklyPassVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 94,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "PropellerRushConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 96,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "AncientAdventureConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 98,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "JourneyOfferConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 100,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "RobotRivalsConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 102,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "MergeSmithConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 104,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "SpecialOfferSegmentVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 106,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "MissionEventsOverrideConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 108,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "ClashOfChampionsConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 110,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "RoyalWorldCupConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 112,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "ExpeditionEventConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 114,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "ExpeditionEventOfferConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 116,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "ExpeditionEventOfferSegmentVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 118,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "TeamBattleConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 120,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "DailyRewardsConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 122,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "InviteFriendConfigVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 124,
+      "voff_src": "pseudo"
+    },
+    {
+      "name": "ExternalPaymentCountriesVersion",
+      "type": "int",
+      "vec": false,
+      "voff": 126,
+      "voff_src": "pseudo"
+    }
+  ],
+  "skipped_requests": {
+    "date": "2026-10-13",
+    "app_version": "38174",
+    "request_count": 9,
+    "config_occurrences": 11,
+    "no_enter_claim_purchase_progress_update": true,
+    "team_present": false,
+    "journey_offer_read_skipped_without_observed_selector": true,
+    "skip_personal_data_only_requests": [
+      "GetFriendsRequest",
+      "GetProfileRequest",
+      "GetStatRequest",
+      "GetAllTimePurchaseRequest",
+      "GetTeamChatDataRequest",
+      "GetOnlineUsersRequest"
+    ],
+    "no_admin_or_payment_creation_requests": true
+  },
+  "coverage_limits": [
+    "Not every feature has a dedicated remote configuration endpoint.",
+    "Store prices are cached region/currency snapshots; do not claim current global pricing.",
+    "Area assets include complete serialized fields, not all remote graphics.",
+    "171 manifest entries are updates for build38174, not all levels on the server.",
+    "Schema dictionaries and native constants are not API payloads."
+  ]
+}

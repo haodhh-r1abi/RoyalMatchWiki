@@ -1,0 +1,385 @@
+{
+  "Name": "14582v02_L",
+  "Move": 24,
+  "Goals": [
+    {
+      "Goal": 38,
+      "Count": 4
+    },
+    {
+      "Goal": 17,
+      "Count": 22
+    },
+    {
+      "Goal": 14,
+      "Count": 24
+    },
+    {
+      "Goal": 89,
+      "Count": 12,
+      "IsFromSettings": true
+    }
+  ],
+  "Grid": {
+    "Items": [
+      0,
+      0,
+      141,
+      142,
+      142,
+      142,
+      142,
+      142,
+      142,
+      0,
+      0,
+      141,
+      142,
+      142,
+      142,
+      142,
+      142,
+      142,
+      141,
+      141,
+      328,
+      328,
+      29,
+      14,
+      29,
+      14,
+      14,
+      144,
+      144,
+      328,
+      29,
+      14,
+      29,
+      29,
+      29,
+      29,
+      144,
+      144,
+      29,
+      14,
+      29,
+      29,
+      29,
+      14,
+      14,
+      144,
+      144,
+      14,
+      29,
+      29,
+      29,
+      14,
+      14,
+      14,
+      144,
+      144,
+      29,
+      29,
+      29,
+      14,
+      14,
+      14,
+      211,
+      144,
+      144,
+      29,
+      29,
+      14,
+      14,
+      14,
+      211,
+      14,
+      144,
+      144,
+      29,
+      14,
+      14,
+      14,
+      212,
+      14,
+      211,
+      144,
+      144,
+      29,
+      14,
+      14,
+      212,
+      213,
+      14,
+      14,
+      144,
+      144,
+      29,
+      14,
+      213,
+      213,
+      212,
+      14,
+      14
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 32,
+      "Count": 4
+    },
+    {
+      "Type": 93,
+      "Count": 3
+    },
+    {
+      "Type": 10,
+      "Count": 22
+    },
+    {
+      "Type": -4,
+      "Count": 24
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

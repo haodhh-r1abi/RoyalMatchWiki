@@ -1,0 +1,61 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Scenes.Home.Context.Units.Area.AreaManager",
+      "field": "NewAreaDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"newarea\"",
+      "dump_line": 239038
+    },
+    {
+      "manager": "Royal.Scenes.Home.Context.Units.Area.AreaManager",
+      "field": "FrameLimitToStartSmoothly",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 239050
+    },
+    {
+      "manager": "Royal.Scenes.Home.Context.Units.Area.Config.AreaConfigContainer",
+      "field": "SupportedAreaCount",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 239365
+    },
+    {
+      "manager": "Royal.Scenes.Home.Context.Units.Area.Config.AreaConfigContainer",
+      "field": "VersionDefaultAreaCount",
+      "type": "int",
+      "value_expression": "162",
+      "dump_line": 239366
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.AssetDownload.AreaDownloadManager",
+      "field": "StartDownloadMinLevel",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 503777
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.AssetDownload.AreaDownloadManager",
+      "field": "AreaDownloadUpperThreshold",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 503783
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.AssetDownload.AreaDownloadManager",
+      "field": "AreaDeleteLowerThreshold",
+      "type": "int",
+      "value_expression": "2",
+      "dump_line": 503784
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.AssetDownload.AreaDownloadManager",
+      "field": "FirstDownloadableAreaId",
+      "type": "int",
+      "value_expression": "4",
+      "dump_line": 503785
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

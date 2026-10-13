@@ -1,0 +1,212 @@
+{
+  "feature": "Team",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "SocialManager.CreateTeamAmount",
+      "type": "int",
+      "value": "100",
+      "meaning": "Số Coins để tạo đội",
+      "where": "SocialManager"
+    },
+    {
+      "source": "code const",
+      "key": "SocialManager.MinLevelToJoinTeam",
+      "type": "int",
+      "value": "21",
+      "meaning": "Level tối thiểu để vào/tạo đội",
+      "where": "SocialManager"
+    },
+    {
+      "source": "code const",
+      "key": "SocialManager.EmptyUserName",
+      "type": "string",
+      "value": "Player",
+      "meaning": "Tên mặc định khi người chơi chưa đặt tên",
+      "where": "SocialManager.get_EmptyUserName"
+    },
+    {
+      "source": "code const",
+      "key": "SocialManager.TeamType",
+      "type": "string",
+      "value": "Open / Closed",
+      "meaning": "Kiểu đội (mở cho ai cũng vào / phải duyệt)",
+      "where": "SocialManager.TeamType"
+    },
+    {
+      "source": "code const",
+      "key": "BackendTcpManager.PauseDisconnectTimeout",
+      "type": "float",
+      "value": "20 (giây)",
+      "meaning": "Thời gian app ở nền trước khi ngắt TCP",
+      "where": "BackendTcpManager"
+    },
+    {
+      "source": "code const",
+      "key": "BackendTcpManager.MaxConnectTryCount",
+      "type": "int",
+      "value": "10",
+      "meaning": "Số lần thử kết nối TCP",
+      "where": "BackendTcpManager"
+    },
+    {
+      "source": "code const",
+      "key": "BackendTcpManager.MaxAuthTryCount",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số lần thử xác thực TCP",
+      "where": "BackendTcpManager"
+    },
+    {
+      "source": "static array",
+      "key": "TcpRequestType",
+      "type": "enum",
+      "value": "NONE=0, DeprecatedAuthenticateRequest=1, AskLifeRequest=2, ConsumeLifeRequest=3, HelpLifeRequest=4, SendChatMessageRequest=5, EchoRequest=6, RoyalPassClaimRequest=7, TeamGiftOfferClaimRequest=8, AuthenticateRequest=9, GetTeamChatDataRequest=10, ServerStatusRequest=11, PremiumPassClaimRequest=12, ReportUserRequest=13, UpdateClashOfChampionsScoreRequest=14, GetOnlineUsersRequest=15, EnteredClashOfChampionsRequest=16, WeeklyPassClaimRequest=17",
+      "meaning": "18 loại request TCP",
+      "where": "Protocol.TcpRequestType"
+    },
+    {
+      "source": "static array",
+      "key": "TcpResponseType",
+      "type": "enum",
+      "value": "NONE=0, DeprecatedAuthenticateResponse=1, AskLifeResponse=2, ConsumeLifeResponse=3, HelpLifeResponse=4, SendChatMessageResponse=5, LifeChangeResponse=6, PendingJoinTeamResponse=7, UserConnectedFromOtherDeviceResponse=8, EchoResponse=9, RoyalPassClaimResponse=10, RoyalPassDataResponse=11, TeamGiftOfferDataResponse=12, TeamGiftOfferClaimResponse=13, AuthenticateResponse=14, GetTeamChatDataResponse=15, DragonNestLiveUpdateResponse=16, DragonNestTeamInviteResponse=17, DragonNestReachedFullSlotResponse=18, SeasonalCardCollectionAskCardResponse=19, SeasonalCardCollectionCardDonatedResponse=20, ServerStatusResponse=21, TrainJourneyLiveScoreUpdateResponse=22, TrainJourneyLiveInvitationUpdateResponse=23, TrainJourneyLiveTeamInviteReceivedResponse=24, TrainJourneyLiveFullSlotReachedResponse=25, PremiumPassDataResponse=26, PremiumPassClaimResponse=27, RobotRivalsGroupUpdatedResponse=28, UserReportedLiveResponse=29, ClashOfChampionsOpponentScoreUpdateResponse=30, GetOnlineUsersResponse=31, EnteredClashOfChampionsResponse=32, WeeklyPassDataResponse=33, WeeklyPassClaimResponse=34",
+      "meaning": "35 loại response TCP",
+      "where": "Protocol.TcpResponseType"
+    },
+    {
+      "source": "static array",
+      "key": "TeamMemberOperationType",
+      "type": "enum",
+      "value": "Accept=0, Reject=1, KickUser=2, MakeLeader=3, MakeColeader=4, RemoveColeader=5",
+      "meaning": "6 thao tác quản lý thành viên",
+      "where": "Protocol.TeamMemberOperationType"
+    },
+    {
+      "source": "static array",
+      "key": "ChatMessageType",
+      "type": "enum",
+      "value": "TextMessage=0, JoinedTeam=1, LeftTeam=2, JoinRequest=3, LeaderChange=4, ColeaderMake=5, ColeaderRemove=6, JoinRequestRejected=7, UpdateProfile=8, ProfanityWarn=9, ProfanityBan=10, ReportedUsers=11",
+      "meaning": "12 loại tin nhắn hệ thống trong chat",
+      "where": "Protocol.ChatMessageType"
+    },
+    {
+      "source": "static array",
+      "key": "ChatMessagePoolId",
+      "type": "enum",
+      "value": "Info=0, Join=1, Text=2, Life=3, RoyalPass=4, TeamOffer=5, HauntedPass=6, WinterPass=7, SweetPass=8, EasterPass=9, SummerPass=10, DragonNestInvitation=11, Warning=12, SeasonalCardCollectionAskCard=13, TrainJourneyInvitation=14, WeeklyPass=15, HolidayPass=16, RoyalWorldCupPass=17",
+      "meaning": "18 loại thẻ chat (pool prefab)",
+      "where": "Sections.Social.Chat.ChatMessagePoolId"
+    },
+    {
+      "source": "static array",
+      "key": "TeamActivityLevel",
+      "type": "enum",
+      "value": "High=0, Medium=1, Low=2",
+      "meaning": "Mức độ hoạt động của đội (hiện trong tìm đội và analytics)",
+      "where": "Protocol.TeamActivityLevel"
+    },
+    {
+      "source": "static array",
+      "key": "SocialConnectStatus",
+      "type": "enum",
+      "value": "GuestLinkedToFacebook=0, ConnectedToExistentAccount=1, HaveAlreadyBeenConnected=2, NewUserWithFacebook=3, GuestLinkedToApple=4, NewUserWithApple=5, GuestLinkedToGoogle=6, NewUserWithGoogle=7, GuestLinkedToPGS=8, AuthenticationFailed=9",
+      "meaning": "10 trạng thái liên kết tài khoản xã hội",
+      "where": "Protocol.SocialConnectStatus"
+    },
+    {
+      "source": "static array",
+      "key": "SocialLikeType",
+      "type": "enum",
+      "value": "Facebook=1, Instagram=2",
+      "meaning": "2 nền tảng có thể like để nhận thưởng",
+      "where": "Login.SocialLikeType"
+    },
+    {
+      "source": "config class",
+      "key": "CreateTeamHttpCommand tham so",
+      "type": "class",
+      "value": "long teamId, string teamName, string userName, int logo, string description, int minLevel, int minCrown, bool isOpen",
+      "meaning": "8 trường khi tạo/sửa đội",
+      "where": "Http.Command.Social.CreateTeamHttpCommand"
+    },
+    {
+      "source": "config class",
+      "key": "SocialSettings",
+      "type": "class",
+      "value": "SettingsContent settingsContent, UiSelectButton changeNameButton",
+      "meaning": "Màn cài đặt xã hội (đổi tên)",
+      "where": "Sections.Home.Settings.SocialSettings"
+    },
+    {
+      "source": "server info",
+      "key": "SocialManager.NextAskLifeTimeMs / HelpBanEndTimeMs",
+      "type": "long",
+      "value": "server",
+      "meaning": "Thời điểm được xin mạng lại / hết cấm tặng mạng",
+      "where": "SocialManager"
+    },
+    {
+      "source": "server info",
+      "key": "TeamChatData",
+      "type": "FlatBuffers Table",
+      "value": "server",
+      "meaning": "Tên đội, logo, số thành viên, mức hoạt động, leaders, danh sách chặn",
+      "where": "Protocol.TeamChatData"
+    },
+    {
+      "source": "server info",
+      "key": "SocialConnectRequest / SocialConnectResponse",
+      "type": "FlatBuffers Table",
+      "value": "server",
+      "meaning": "Liên kết tài khoản Facebook/Google/Apple/PGS",
+      "where": "Protocol"
+    },
+    {
+      "source": "storage key",
+      "key": "TeamName / TeamLogo",
+      "type": "string / int",
+      "value": "-",
+      "meaning": "Tên và huy hiệu đội (cache cục bộ)",
+      "where": "KeyValue (UpdateTeamInfo)"
+    },
+    {
+      "source": "storage key",
+      "key": "TeammateList",
+      "type": "SQLite table",
+      "value": "-",
+      "meaning": "Danh sách đồng đội (xóa khi bị kick / rời đội)",
+      "where": "UserKeyValue.DatabaseService"
+    },
+    {
+      "source": "storage key",
+      "key": "ChatOn",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Cài đặt bật/tắt chat",
+      "where": "Settings (SocialManager.get_ChatEnabled)"
+    },
+    {
+      "source": "code const",
+      "key": "Chat prefab",
+      "type": "string",
+      "value": "ChatInfoMessageView, ChatJoinRequestView, ChatLifeRequestView, ChatRoyalPassClaimView, ChatDragonNestInvitationView, ChatSeasonalCardCollectionAskCardView, ChatEasterPassClaimView, ChatHauntedPassClaimView, ChatHolidayPassClaimView, ChatRoyalWorldCupPassClaimView",
+      "meaning": "10 prefab thẻ chat được tạo pool",
+      "where": "SocialManager.CreateChatPools"
+    },
+    {
+      "source": "config class",
+      "key": "HTTP command Social",
+      "type": "class",
+      "value": "CreateTeamHttpCommand, JoinTeamHttpCommand, LeaveTeamHttpCommand, GetTeamHttpCommand, SearchTeamHttpCommand, UpdateTeamMemberCommand, ChangeUserNameHttpCommand, DismissFriendSuggestionHttpCommand",
+      "meaning": "8 lệnh HTTP quản lý đội/hồ sơ",
+      "where": "Royal.Infrastructure.Services.Backend.Http.Command.Social"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.SocialManager",
+    "Royal.Infrastructure.Services.Backend.Tcp.BackendTcpManager",
+    "Royal.Infrastructure.Services.Backend.Tcp.BackendTcpMessenger",
+    "Royal.Infrastructure.Services.Backend.Http.Command.Social"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

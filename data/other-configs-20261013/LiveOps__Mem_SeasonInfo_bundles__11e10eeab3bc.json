@@ -1,0 +1,119 @@
+{
+  "chatBundles": [
+    {
+      "androidCrc": 2038165521,
+      "bundleName": "season15chat",
+      "iosCrc": 2271104612
+    }
+  ],
+  "localizationBundles": [
+    {
+      "androidCrc": 3449856147,
+      "bundleName": "season15localization",
+      "iosCrc": 1094855709
+    }
+  ],
+  "setBundles": [
+    {
+      "androidCrc": 3324263452,
+      "bundleName": "season15set1",
+      "iosCrc": 3557453004
+    },
+    {
+      "androidCrc": 3069688667,
+      "bundleName": "season15set2",
+      "iosCrc": 1650914421
+    },
+    {
+      "androidCrc": 1818662167,
+      "bundleName": "season15set3",
+      "iosCrc": 3103251001
+    },
+    {
+      "androidCrc": 3078342021,
+      "bundleName": "season15set4",
+      "iosCrc": 1676315307
+    },
+    {
+      "androidCrc": 2076766853,
+      "bundleName": "season15set5",
+      "iosCrc": 2941894059
+    },
+    {
+      "androidCrc": 1173829498,
+      "bundleName": "season15set6",
+      "iosCrc": 2439411796
+    },
+    {
+      "androidCrc": 1373921133,
+      "bundleName": "season15set7",
+      "iosCrc": 2523296354
+    },
+    {
+      "androidCrc": 3611672164,
+      "bundleName": "season15set8",
+      "iosCrc": 281514859
+    },
+    {
+      "androidCrc": 872763796,
+      "bundleName": "season15set9",
+      "iosCrc": 4085742747
+    },
+    {
+      "androidCrc": 2599226671,
+      "bundleName": "season15set10",
+      "iosCrc": 2462870041
+    },
+    {
+      "androidCrc": 2413025471,
+      "bundleName": "season15set11",
+      "iosCrc": 1883405239
+    },
+    {
+      "androidCrc": 2742175618,
+      "bundleName": "season15set12",
+      "iosCrc": 1558439050
+    },
+    {
+      "androidCrc": 818723896,
+      "bundleName": "season15set13",
+      "iosCrc": 1139240922
+    },
+    {
+      "androidCrc": 104549896,
+      "bundleName": "season15set14",
+      "iosCrc": 1964023274
+    },
+    {
+      "androidCrc": 799278082,
+      "bundleName": "season15set15",
+      "iosCrc": 1552930784
+    },
+    {
+      "androidCrc": 3306629052,
+      "bundleName": "season15set16",
+      "iosCrc": 543486738
+    }
+  ],
+  "setIconBundles": [
+    {
+      "androidCrc": 1944821661,
+      "bundleName": "season15seticon",
+      "iosCrc": 2116693750
+    }
+  ],
+  "dialogBundles": [
+    {
+      "androidCrc": 2917547483,
+      "bundleName": "season15dialogs",
+      "iosCrc": 92884331
+    }
+  ],
+  "sectionBundles": [
+    {
+      "androidCrc": 3295017722,
+      "bundleName": "season15section",
+      "iosCrc": 1263589850
+    }
+  ]
+}

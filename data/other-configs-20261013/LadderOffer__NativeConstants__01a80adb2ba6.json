@@ -1,0 +1,26 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.LadderOfferManager",
+      "field": "LadderOfferUnlockLevel",
+      "type": "int",
+      "value_expression": "35",
+      "dump_line": 407625
+    },
+    {
+      "manager": "Royal.Player.Context.Units.LadderOfferManager",
+      "field": "OfferCountToShowInShop",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 407638
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.LadderOfferProgress",
+      "field": "EventIdLimit",
+      "type": "int",
+      "value_expression": "512",
+      "dump_line": 430637
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

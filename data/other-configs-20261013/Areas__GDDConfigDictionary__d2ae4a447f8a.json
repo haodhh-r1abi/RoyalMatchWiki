@@ -1,0 +1,1534 @@
+{
+  "feature": "Areas",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "AreaConfigContainer.SupportedAreaCount",
+      "type": "int",
+      "value": "2",
+      "meaning": "Số area được đóng gói sẵn trong client / giữ cùng lúc",
+      "where": "AreaConfigContainer (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "AreaConfigContainer.VersionDefaultAreaCount",
+      "type": "int",
+      "value": "162",
+      "meaning": "Số area mặc định của bản build này khi chưa có dữ liệu server",
+      "where": "AreaConfigContainer (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "AreaManager.NewAreaDeeplinkAction",
+      "type": "string",
+      "value": "newarea",
+      "meaning": "Mã deeplink mở khu mới",
+      "where": "AreaManager"
+    },
+    {
+      "source": "code const",
+      "key": "AreaManager.FrameLimitToStartSmoothly",
+      "type": "int",
+      "value": "10",
+      "meaning": "Số frame chờ trước khi bắt đầu animation area để tránh giật",
+      "where": "AreaManager"
+    },
+    {
+      "source": "code const",
+      "key": "AreaDownloadManager.StartDownloadMinLevel",
+      "type": "int",
+      "value": "10",
+      "meaning": "Level bắt đầu tải trước bundle area",
+      "where": "AreaDownloadManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "AreaDownloadManager.AreaDownloadUpperThreshold",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số area phía trước được tải sẵn",
+      "where": "AreaDownloadManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "AreaDownloadManager.AreaDeleteLowerThreshold",
+      "type": "int",
+      "value": "2",
+      "meaning": "Area cách hơn 2 bước phía sau bị xóa khỏi máy",
+      "where": "AreaDownloadManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "AreaDownloadManager.FirstDownloadableAreaId",
+      "type": "int",
+      "value": "4",
+      "meaning": "Area đầu tiên phải tải (0-3 đóng gói sẵn / streaming assets)",
+      "where": "AreaDownloadManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "Ten bundle area",
+      "type": "string",
+      "value": "area<NN>_v<version>.ab và extra<NN>.ab (số area format 'D2' / 'D3')",
+      "meaning": "Quy tắc đặt tên bundle trên CDN",
+      "where": "AreaDownloadManager.GetAreaBundleName / GetExtraBundleName; AreaManager.GetAreaNumberString"
+    },
+    {
+      "source": "code field",
+      "key": "AreaConfig",
+      "type": "ScriptableObject",
+      "value": "areaId, areaName, tasks[], tallDeviceReplayDelay, positionOffset, useGameBackground, useGameBackgroundAlways, mainTexture, shadowTexture, distortTexture, crcNumbers",
+      "meaning": "Cấu hình một khu trang trí",
+      "where": "Royal.Scenes.Home.Context.Units.Area.Config.AreaConfig"
+    },
+    {
+      "source": "code field",
+      "key": "AreaTaskConfig",
+      "type": "class",
+      "value": "id, price (sao), dependency, dependencies[], replayConfig (AreaReplayConfig {order, ...}), positionOffset",
+      "meaning": "Cấu hình một task trang trí",
+      "where": "Royal.Scenes.Home.Context.Units.Area.Config.AreaTaskConfig"
+    },
+    {
+      "source": "code field",
+      "key": "AreaTaskData",
+      "type": "struct",
+      "value": "taskId, isCompleted",
+      "meaning": "Trạng thái một task của người chơi",
+      "where": "Royal.Scenes.Home.Context.Units.Area.Data.AreaTaskData"
+    },
+    {
+      "source": "code const",
+      "key": "Khoa localization task",
+      "type": "string",
+      "value": "'Area <areaId> - Task <taskId>'",
+      "meaning": "Khóa dịch tên task",
+      "where": "AreaTaskConfig.LocalizedStringKey"
+    },
+    {
+      "source": "code const",
+      "key": "Thuong rương area (co ban)",
+      "type": "reward",
+      "value": "250 Coins (RewardType 1), 1 Hammer (6), 1 Rocket (13), 1 Tnt (11), 1 Lightball (12)",
+      "meaning": "Bộ thưởng khi hoàn thành một area",
+      "where": "AreaManager.GetAreaChestRewards"
+    },
+    {
+      "source": "code const",
+      "key": "Thuong rương area (them tu area 2)",
+      "type": "reward",
+      "value": "1 Cannon (8) / 1 Arrow (7) / 1 Jester (9) tùy nhánh; nhóm AB 3 và 6 đổi thành 5 phút UnlimitedArrow (46) + 5 phút UnlimitedCannon (47)",
+      "meaning": "Phần thưởng bổ sung, có thể bị AB giảm",
+      "where": "AreaManager.GetAreaChestRewards; AbTestHelper.GetBoosterRewardReductionAb"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsBoosterRewardReductionEnabled / GetBoosterRewardReductionAb",
+      "type": "bool/int",
+      "value": "server override",
+      "meaning": "Giảm hoặc đổi loại booster trong rương area",
+      "where": "AreaManager.GetAreaChestRewards"
+    },
+    {
+      "source": "code const",
+      "key": "EventRewardOverrider tu area 3",
+      "type": "reward",
+      "value": "Đổi Lightball thành collectable của SeasonalCardCollection / DragonNest / TrainJourney / ShortExpeditionEvent đang chạy",
+      "meaning": "Rương area trở thành nguồn collectable cho sự kiện",
+      "where": "AreaManager.GetAreaChestRewards (EventRewardOverrider.GetOverrideConfigFor*)"
+    },
+    {
+      "source": "storage key",
+      "key": "LastCompletedTaskId",
+      "type": "int",
+      "value": "client",
+      "meaning": "Task vừa xây xong (dùng cho animation và chấm đỏ)",
+      "where": "AreaManager.GetLastCompletedTaskId / SetLastCompletedTaskId"
+    },
+    {
+      "source": "storage key",
+      "key": "AreaDialogLastSeenTaskCount",
+      "type": "int",
+      "value": "client",
+      "meaning": "Số task đã xem lần cuối mở dialog",
+      "where": "AreaManager.OnDialogOpened / OnTaskUpdated"
+    },
+    {
+      "source": "storage key",
+      "key": "IsAreaDialogOpenedSinceLastTaskCountUpdate",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đã mở dialog kể từ lần cập nhật task cuối",
+      "where": "AreaManager.OnDialogOpened"
+    },
+    {
+      "source": "storage key",
+      "key": "MaxPublishedLevel",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Dùng để suy số area được phép chơi",
+      "where": "AreaConfigContainer.GetMaxAreaFromMaxPublishedLevel"
+    },
+    {
+      "source": "storage key",
+      "key": "Stars",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Số sao dùng để xây task",
+      "where": "UserInventory.AddStars / SpendStars"
+    },
+    {
+      "source": "asset",
+      "key": "Ten asset AreaConfig",
+      "type": "string",
+      "value": "'Area' + số 2 chữ số + 'AreaConfig' (ví dụ Area01AreaConfig.asset), tiền tố '00' cho area một chữ số",
+      "meaning": "Quy tắc đặt tên ScriptableObject trong Resources",
+      "where": "AreaConfigContainer.CreateAreaConfig"
+    },
+    {
+      "source": "asset",
+      "key": "Prefab area",
+      "type": "string",
+      "value": "'area_' + số area (D2 / D3)",
+      "meaning": "Tên prefab AreaView trong bundle",
+      "where": "AreaManager.CreateAreaView / InstantiateAreaView"
+    },
+    {
+      "source": "code const",
+      "key": "Tong so lieu Areas",
+      "type": "int",
+      "value": "165 area (0-164), 1.634 task, 14.600 sao",
+      "meaning": "Quy mô toàn bộ meta-progression",
+      "where": "GameDesign/appendix/areas.md (đọc từ 165 AreaConfig.asset)"
+    },
+    {
+      "source": "asset",
+      "key": "Area 0 - Royal League",
+      "type": "AreaConfig",
+      "value": "tasks=0, tổng sao=0, giá từng task (sao)=[]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area00AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 1 - Castle",
+      "type": "AreaConfig",
+      "value": "tasks=6, tổng sao=10, giá từng task (sao)=[1 1 2 2 2 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area01AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 2 - ThroneRoom",
+      "type": "AreaConfig",
+      "value": "tasks=7, tổng sao=10, giá từng task (sao)=[1 2 1 2 1 1 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area02AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 3 - DiningRoom",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=20, giá từng task (sao)=[1 2 2 2 2 2 3 3 3]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area03AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 4 - Garden",
+      "type": "AreaConfig",
+      "value": "tasks=8, tổng sao=20, giá từng task (sao)=[1 2 2 2 3 3 3 4]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area04AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 5 - Library",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=20, giá từng task (sao)=[1 1 2 2 2 3 3 3 3]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area05AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 6 - Pool",
+      "type": "AreaConfig",
+      "value": "tasks=8, tổng sao=20, giá từng task (sao)=[1 4 2 2 2 4 3 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area06AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 7 - Bedroom",
+      "type": "AreaConfig",
+      "value": "tasks=8, tổng sao=20, giá từng task (sao)=[1 2 3 3 4 2 3 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area07AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 8 - MusicRoom",
+      "type": "AreaConfig",
+      "value": "tasks=8, tổng sao=20, giá từng task (sao)=[1 2 3 2 4 3 3 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area08AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 9 - Dock",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=20, giá từng task (sao)=[1 1 2 1 2 4 4 3 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area09AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 10 - Kitchen",
+      "type": "AreaConfig",
+      "value": "tasks=8, tổng sao=20, giá từng task (sao)=[1 3 3 3 4 2 2 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area10AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 11 - Bathroom",
+      "type": "AreaConfig",
+      "value": "tasks=8, tổng sao=20, giá từng task (sao)=[1 2 3 3 3 2 4 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area11AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 12 - Living Room",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=30, giá từng task (sao)=[2 3 4 5 4 3 3 3 3]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area12AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 13 - Japanese Garden",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=30, giá từng task (sao)=[2 3 6 2 1 4 2 5 3 2]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area13AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 14 - Clock Tower",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=40, giá từng task (sao)=[2 4 3 6 2 3 4 4 5 7]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area14AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 15 - Museum",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=50, giá từng task (sao)=[4 6 7 4 7 6 8 4 4]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area15AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 16 - Observatory",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=50, giá từng task (sao)=[4 6 5 3 4 4 6 4 6 8]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area16AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 17 - Garage",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=50, giá từng task (sao)=[4 3 6 8 6 6 8 5 4]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area17AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 18 - Chess Garden",
+      "type": "AreaConfig",
+      "value": "tasks=8, tổng sao=50, giá từng task (sao)=[4 6 6 5 5 6 9 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area18AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 19 - Tea Room",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=50, giá từng task (sao)=[4 3 5 8 8 7 6 5 4]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area19AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 20 - AquaRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=50, giá từng task (sao)=[3 4 4 6 6 5 6 4 8 4]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area20AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 21 - TailorRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=50, giá từng task (sao)=[6 5 4 6 4 3 8 3 6 5]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area21AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 22 - MonumentGarden",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=50, giá từng task (sao)=[5 4 3 4 5 5 5 7 6 6]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area22AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 23 - BarberShop",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=50, giá từng task (sao)=[4 4 5 3 5 4 8 3 4 7 3]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area23AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 24 - Spa",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=50, giá từng task (sao)=[5 3 8 6 4 6 5 8 5]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area24AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 25 - Gym",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=50, giá từng task (sao)=[3 5 6 5 3 6 5 6 3 8]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area25AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 26 - SkatingPark",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=50, giá từng task (sao)=[4 4 5 4 4 6 4 8 6 5]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area26AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 27 - Cafe",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=50, giá từng task (sao)=[6 4 8 4 4 6 5 8 5]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area27AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 28 - Beach",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=50, giá từng task (sao)=[3 5 4 4 6 5 5 7 5 6]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area28AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 29 - TrainStation",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 7 10 8 12 9 12 10 11 15]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area29AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 30 - DogPark",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 6 7 12 9 15 12 12 11 8]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area30AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 31 - Amphitheatre",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 8 7 10 9 10 14 12 9 15]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area31AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 32 - Sunroom",
+      "type": "AreaConfig",
+      "value": "tasks=12, tổng sao=100, giá từng task (sao)=[5 9 5 8 7 12 9 15 6 4 12 8]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area32AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 33 - BowlingAlley",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[8 6 6 5 8 10 12 9 12 15 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area33AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 34 - Camping",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=100, giá từng task (sao)=[12 9 9 15 12 10 8 10 15]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area34AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 35 - StudyRoom",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=100, giá từng task (sao)=[5 9 15 9 15 15 10 12 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area35AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 36 - Cellar",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[5 7 8 6 8 7 8 11 14 14 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area36AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 37 - MovieSet",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[5 8 8 7 11 10 12 8 12 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area37AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 38 - Terrace",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[3 6 9 11 7 6 11 12 10 10 15]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area38AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 39 - ArtStudio",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 10 15 12 4 8 14 4 12 15]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area39AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 40 - CandyShop",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 9 15 10 7 13 11 6 13 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area40AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 41 - MagicRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 12 10 14 10 8 14 8 10 6]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area41AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 42 - Funfair",
+      "type": "AreaConfig",
+      "value": "tasks=9, tổng sao=100, giá từng task (sao)=[10 9 9 10 12 14 10 15 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area42AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 43 - ExcavationSite",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 10 10 8 9 15 6 11 14 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area43AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 44 - MiniGolf",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[6 10 6 12 7 8 10 15 11 7 8]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area44AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 45 - ServiceRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[10 10 10 10 10 10 10 10 10 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area45AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 46 - SkiResort",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[5 9 10 14 12 10 8 12 9 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area46AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 47 - Workshop",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 8 12 15 9 6 15 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area47AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 48 - OutdoorCinema",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 14 10 10 12 8 9 10 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area48AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 49 - AirMuseum",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 12 10 9 11 9 13 8 11 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area49AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 50 - GameRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[11 10 12 7 9 11 9 9 12 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area50AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 51 - TreeHouse",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 13 12 9 11 12 10 9 8]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area51AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 52 - Pizzeria",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[10 6 8 7 8 12 10 8 14 7 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area52AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 53 - Yacht",
+      "type": "AreaConfig",
+      "value": "tasks=12, tổng sao=100, giá từng task (sao)=[6 5 6 8 7 12 5 9 8 12 8 14]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area53AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 54 - AntiqueRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[10 9 10 14 6 9 14 12 9 7]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area54AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 55 - Safari",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[10 12 8 10 8 10 12 8 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area55AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 56 - FootballField",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[10 9 11 10 8 9 13 10 11 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area56AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 57 - GemMine",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[5 12 10 8 11 13 11 12 8 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area57AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 58 - Butler'sRoom",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[6 8 11 9 8 12 10 10 11 9 6]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area58AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 59 - FireStation",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[5 11 12 10 8 10 8 7 7 12 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area59AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 60 - Laboratory",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[5 10 12 8 12 8 11 9 12 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area60AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 61 - LittleVenice",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[7 10 8 6 4 9 13 10 9 10 14]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area61AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 62 - HauntedHouse",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[7 10 8 11 5 8 10 12 6 11 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area62AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 63 - Lighthouse",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[5 7 11 7 9 11 8 16 15 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area63AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 64 - ClockRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 10 13 10 8 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area64AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 65 - RaceTrack",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[4 7 8 7 11 11 12 12 9 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area65AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 66 - Circus",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 11 8 11 9 11 9 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area66AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 67 - WinterCamp",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[12 11 7 10 9 12 8 9 12 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area67AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 68 - TrainWagon",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 13 9 10 11 13 10 7 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area68AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 69 - MountainCabin",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[8 10 7 9 9 10 9 9 10 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area69AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 70 - Factory",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[7 10 12 9 8 11 7 6 8 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area70AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 71 - OrientalCourtyard",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[11 10 9 10 10 11 11 9 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area71AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 72 - ArcadeRoom",
+      "type": "AreaConfig",
+      "value": "tasks=12, tổng sao=100, giá từng task (sao)=[7 8 7 7 6 9 8 10 5 10 11 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area72AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 73 - Waterfall",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[12 10 8 12 8 9 10 9 12 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area73AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 74 - TreasureRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 12 11 8 9 11 8 11 12 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area74AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 75 - Classroom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[10 9 11 8 11 9 9 12 10 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area75AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 76 - FossilMuseum",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 10 11 9 11 7 8 13 15 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area76AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 77 - Lodge",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[10 9 6 8 9 12 10 8 7 9 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area77AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 78 - Atlantis",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 6 15 12 9 9 8 12 11 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area78AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 79 - Dojo",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 8 12 6 10 9 13 14 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area79AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 80 - TennisCourt",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 13 8 12 11 9 10 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area80AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 81 - BeachHouse",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 8 13 12 11 9 10 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area81AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 82 - Backstage",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 6 6 12 8 10 13 15 12 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area82AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 83 - Blacksmith",
+      "type": "AreaConfig",
+      "value": "tasks=13, tổng sao=100, giá từng task (sao)=[6 6 10 9 6 6 8 9 7 9 8 6 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area83AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 84 - TrainingGround",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 12 12 8 8 12 9 12 10 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area84AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 85 - RoyalMountain",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[5 4 9 9 14 13 10 9 15 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area85AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 86 - Shipyard",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[5 11 7 7 10 9 11 10 6 15 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area86AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 87 - GrandLibrary",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 7 10 10 12 8 9 9 13 14]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area87AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 88 - ThemePark",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[12 10 11 12 10 8 7 8 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area88AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 89 - Apothecary",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 9 8 7 11 13 12 15 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area89AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 90 - RemembranceFestival",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 10 8 14 10 9 9 11 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area90AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 91 - Hangar",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 11 9 8 10 9 15 10 7 14]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area91AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 92 - Studio",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[7 9 9 9 8 9 7 10 14 7 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area92AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 93 - SeaMuseum",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 9 10 12 7 10 13 9 11 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area93AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 94 - LaunchSite",
+      "type": "AreaConfig",
+      "value": "tasks=11, tổng sao=100, giá từng task (sao)=[8 9 10 11 7 8 10 5 9 9 14]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area94AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 95 - SpaceColony",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 12 9 9 12 10 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area95AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 96 - BaseballField",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 9 9 12 11 9 11 11 8 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area96AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 97 - Theater",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 12 10 9 11 9 10 11 8 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area97AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 98 - Airport",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 10 12 9 13 10 8 13 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area98AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 99 - Picnic",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 13 8 9 10 13 8 11 12 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area99AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 100 - Courtyard",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 7 11 12 10 8 10 13 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area100AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 101 - Stable",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 11 9 9 12 9 9 13 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area101AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 102 - Temple",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 9 10 8 10 13 9 10 11 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area102AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 103 - Ruins",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 11 10 11 8 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area103AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 104 - Lightroom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 12 9 10 11 8 9 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area104AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 105 - WaterPark",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 9 8 12 11 10 11 9 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area105AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 106 - AirFestival",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 9 11 8 11 12 9 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area106AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 107 - HiddenGrotto",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 8 10 8 12 10 13 9 11 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area107AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 108 - AquaResearch",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[10 8 9 12 9 13 10 8 11 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area108AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 109 - WizardTower",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 11 8 10 13 12 9 11 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area109AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 110 - SkatePark",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 12 8 11 10 9 10 13 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area110AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 111 - JoustingArena",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 11 8 10 12 9 11 13 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area111AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 112 - FloatingMarket",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 11 12 10 8 9 11 10 9 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area112AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 113 - GrapeFestival",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[5 9 11 6 11 9 14 13 12 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area113AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 114 - HalloweenFair",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[9 12 10 10 8 11 10 11 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area114AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 115 - ChocolateFactory",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 8 10 11 8 12 13 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area115AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 116 - Streetball",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[9 10 10 11 9 10 11 12 9 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area116AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 117 - RoyalMint",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[9 10 10 11 9 10 11 12 9 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area117AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 118 - DesertNight",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 12 8 9 11 13 8 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area118AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 119 - Santa'sHouse",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 9 10 13 11 9 9 8 12 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area119AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 120 - ToyStore",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 11 8 10 11 12 8 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area120AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 121 - ArcticResearch",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 9 11 10 9 12 11 10 8 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area121AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 122 - MusicFestival",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 11 8 10 11 13 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area122AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 123 - ZeppelinPort",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 11 8 10 11 13 8 12 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area123AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 124 - Bakery",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 11 8 10 11 13 8 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area124AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 125 - AstronomyMuseum",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 11 8 10 11 13 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area125AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 126 - RoboticsWorkshop",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 10 8 11 10 8 13 13 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area126AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 127 - Submarine",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 11 12 8 9 13 9 11 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area127AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 128 - VolcanicResearch",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 12 8 10 14 12 10 6 9 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area128AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 129 - GolfClub",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 13 10 9 11 8 9 10 12 11]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area129AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 130 - Shipboard",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 10 8 11 10 13 8 11 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area130AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 131 - FoodAlley",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 9 10 9 10 11 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area131AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 132 - JewelryWorkshop",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 10 8 11 10 13 8 11 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area132AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 133 - ScienceFair",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 8 9 13 9 12 8 11 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area133AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 134 - ArchiveRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 11 9 8 10 13 8 11 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area134AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 135 - OasisCamp",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 13 10 9 8 13 12 9 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area135AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 136 - Perfumery",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 8 9 9 10 11 13 9 11 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area136AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 137 - RoyalDairy",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 12 8 9 10 13 8 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area137AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 138 - WeatherStation",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 11 8 9 11 13 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area138AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 139 - PotteryHouse",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 11 8 9 11 12 9 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area139AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 140 - RoyalApiary",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 10 11 8 9 11 12 9 10 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area140AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 141 - HalloweenShop",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area141AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 142 - PuzzleRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area142AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 143 - TapestryAtelier",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area143AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 144 - RoyalWardrobe",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 12 8 11 10 8 10 9 12 13]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area144AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 145 - WinterMarket",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area145AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 146 - FirePit",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 9 11 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area146AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 147 - IceCourtyard",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area147AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 148 - ClockmakerRoom",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area148AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 149 - SecretPassage",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area149AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 150 - RoyalPlane",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area150AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 151 - BalloonSight",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area151AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 152 - ForestPath",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 9 10 9 10 11 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area152AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 153 - SwanPavilion",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 12 10 13 8 10 11 9 8 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area153AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 154 - OliveGarden",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 10 9 9 10 12 9 12 11 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area154AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 155 - ParadeAtelier",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area155AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 156 - LumberYard",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 9 11 12 11 8 9 12 9 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area156AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 157 - CandleStudio",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area157AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 158 - Windmill",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 11 14 12 8 7 9 10 11 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area158AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 159 - TeaHouse",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[7 11 12 8 11 12 9 10 11 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area159AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 160 - RowingClub",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[6 10 9 12 7 10 11 10 13 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area160AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 161 - NightBalcony",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 11 9 10 9 10 12 9 10 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area161AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 162 - Canyon",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[8 9 12 9 9 11 9 10 11 12]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area162AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 163 - MotocrossTrack",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[11 9 10 9 8 13 14 10 7 9]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area163AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    },
+    {
+      "source": "asset",
+      "key": "Area 164 - RailStop",
+      "type": "AreaConfig",
+      "value": "tasks=10, tổng sao=100, giá từng task (sao)=[9 9 10 8 10 11 10 12 11 10]",
+      "meaning": "Cấu hình khu trang trí (Resources/Area164AreaConfig.asset)",
+      "where": "GameDesign/appendix/areas.md"
+    }
+  ],
+  "managers": [
+    "Royal.Scenes.Home.Context.Units.Area.AreaManager",
+    "Royal.Scenes.Home.Context.Units.Area.Config.AreaConfigContainer",
+    "Royal.Scenes.Home.Context.Units.Area.Config.AreaConfig",
+    "Royal.Scenes.Home.Context.Units.Area.Config.AreaTaskConfig",
+    "Royal.Infrastructure.Services.AssetDownload.AreaDownloadManager",
+    "Royal.Scenes.Start.Context.Units.WrappedAreaBundle.WrappedAreaBundleManager"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

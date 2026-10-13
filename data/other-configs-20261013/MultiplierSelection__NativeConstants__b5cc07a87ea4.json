@@ -1,0 +1,26 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierSelectionManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "41",
+      "dump_line": 412117
+    },
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierSelectionManager",
+      "field": "X3UnlockLevel",
+      "type": "int",
+      "value_expression": "46",
+      "dump_line": 412118
+    },
+    {
+      "manager": "Royal.Player.Context.Units.MultiplierSelectionManager",
+      "field": "MinusTutorialMaxShowCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 412119
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

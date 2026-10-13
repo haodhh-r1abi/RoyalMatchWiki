@@ -1,0 +1,110 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.WelcomeBackGiftManager",
+      "field": "ExtraMovesLevelCount",
+      "type": "int",
+      "value_expression": "25",
+      "dump_line": 424149
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WelcomeBackGiftManager",
+      "field": "ExtraMovesForExtremelyHardLevels",
+      "type": "int",
+      "value_expression": "20",
+      "dump_line": 424150
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WelcomeBackGiftManager",
+      "field": "ExtraMovesForSuperHardLevels",
+      "type": "int",
+      "value_expression": "15",
+      "dump_line": 424151
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WelcomeBackGiftManager",
+      "field": "ExtraMovesForHardLevels",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 424152
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WelcomeBackGiftManager",
+      "field": "MinimumDayDifference",
+      "type": "int",
+      "value_expression": "15",
+      "dump_line": 424153
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WelcomeBackGiftManager",
+      "field": "MinimumLevel",
+      "type": "int",
+      "value_expression": "20",
+      "dump_line": 424154
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "LastActiveDateStart",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 436781
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "LastActiveDateEnd",
+      "type": "int",
+      "value_expression": "15",
+      "dump_line": 436782
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "OfflineGiftDeservedDateStart",
+      "type": "int",
+      "value_expression": "16",
+      "dump_line": 436783
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "OfflineGiftDeservedDateEnd",
+      "type": "int",
+      "value_expression": "31",
+      "dump_line": 436784
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "TierStart",
+      "type": "int",
+      "value_expression": "32",
+      "dump_line": 436785
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "TierEnd",
+      "type": "int",
+      "value_expression": "34",
+      "dump_line": 436786
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "LevelStart",
+      "type": "int",
+      "value_expression": "35",
+      "dump_line": 436787
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "LevelEnd",
+      "type": "int",
+      "value_expression": "50",
+      "dump_line": 436788
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress",
+      "field": "ShouldGiveRewardIndex",
+      "type": "int",
+      "value_expression": "51",
+      "dump_line": 436789
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

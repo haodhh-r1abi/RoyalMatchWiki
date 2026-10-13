@@ -1,0 +1,152 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForStart",
+      "type": "string",
+      "value_expression": "\"_started\"",
+      "dump_line": 454309
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForEndingSoon",
+      "type": "string",
+      "value_expression": "\"_reminderendingsoon\"",
+      "dump_line": 454310
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForFinished",
+      "type": "string",
+      "value_expression": "\"_reminderfinished\"",
+      "dump_line": 454311
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForClaim",
+      "type": "string",
+      "value_expression": "\"_reminderclaim\"",
+      "dump_line": 454312
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForInvite",
+      "type": "string",
+      "value_expression": "\"_reminderinvite\"",
+      "dump_line": 454313
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForRetention",
+      "type": "string",
+      "value_expression": "\"_retention\"",
+      "dump_line": 454314
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForReminder",
+      "type": "string",
+      "value_expression": "\"_reminder\"",
+      "dump_line": 454315
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForLife",
+      "type": "string",
+      "value_expression": "\"_life\"",
+      "dump_line": 454316
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "IdentifierForStreakLost",
+      "type": "string",
+      "value_expression": "\"_reminderstreaklost\"",
+      "dump_line": 454317
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "DailyRewardsNotificationHour",
+      "type": "int",
+      "value_expression": "20",
+      "dump_line": 454318
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "DailyRewardsEarlyNotificationHour",
+      "type": "int",
+      "value_expression": "18",
+      "dump_line": 454319
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "DailyRewardsNotificationMinute",
+      "type": "int",
+      "value_expression": "30",
+      "dump_line": 454320
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "DailyRewardsMinTimeToClaimResetInMs",
+      "type": "long",
+      "value_expression": "3600000",
+      "dump_line": 454321
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "RoyalWorldCupQualifierStartedTargetHour",
+      "type": "int",
+      "value_expression": "12",
+      "dump_line": 454322
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "RoyalWorldCupEndingSoonTargetHour",
+      "type": "int",
+      "value_expression": "16",
+      "dump_line": 454323
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "RoyalWorldCupLast3DaysInMinutes",
+      "type": "int",
+      "value_expression": "4320",
+      "dump_line": 454324
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.GameNotificationService",
+      "field": "RoyalWorldCupLast1DayInMinutes",
+      "type": "int",
+      "value_expression": "1440",
+      "dump_line": 454325
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.NotificationTagSender",
+      "field": "Cloudflare",
+      "type": "string",
+      "value_expression": "\"cloudflare\"",
+      "dump_line": 454860
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Notification.NotificationTagSender",
+      "field": "CloudflareIndex",
+      "type": "int",
+      "value_expression": "1",
+      "dump_line": 454863
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsNotificationHelper",
+      "field": "StreakReminderMinWeeklyStreak",
+      "type": "int",
+      "value_expression": "4",
+      "dump_line": 206933
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsNotificationHelper",
+      "field": "WeeklyReminderCooldownInMs",
+      "type": "long",
+      "value_expression": "604800000",
+      "dump_line": 206934
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

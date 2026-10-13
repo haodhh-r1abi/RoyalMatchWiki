@@ -1,0 +1,487 @@
+{
+  "Name": "07052v04_L",
+  "Move": 21,
+  "Goals": [
+    {
+      "Goal": 53,
+      "Count": 2
+    },
+    {
+      "Goal": 20,
+      "Count": 5
+    },
+    {
+      "Goal": 16,
+      "Count": 22
+    },
+    {
+      "Goal": 64,
+      "Count": 1
+    }
+  ],
+  "Grid": {
+    "Items": [
+      57,
+      58,
+      26,
+      57,
+      58,
+      159,
+      57,
+      58,
+      159,
+      47,
+      48,
+      26,
+      47,
+      48,
+      159,
+      47,
+      48,
+      159,
+      26,
+      26,
+      26,
+      26,
+      26,
+      159,
+      226,
+      226,
+      159,
+      57,
+      58,
+      26,
+      234,
+      235,
+      159,
+      226,
+      226,
+      159,
+      47,
+      48,
+      26,
+      224,
+      225,
+      159,
+      226,
+      226,
+      159,
+      57,
+      58,
+      11,
+      214,
+      215,
+      159,
+      159,
+      159,
+      159,
+      47,
+      48,
+      0,
+      26,
+      159,
+      159,
+      159,
+      159,
+      159,
+      26,
+      26,
+      0,
+      26,
+      226,
+      212,
+      211,
+      14,
+      211,
+      26,
+      26,
+      0,
+      26,
+      159,
+      212,
+      14,
+      211,
+      14,
+      26,
+      26,
+      0,
+      26,
+      226,
+      14,
+      14,
+      14,
+      14,
+      26,
+      26,
+      0,
+      26,
+      159,
+      212,
+      14,
+      14,
+      14
+    ],
+    "Cells": [
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {},
+      {
+        "Treasuremap": 1
+      },
+      {
+        "Treasuremap": 1
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 1
+      },
+      {
+        "Treasuremap": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 1
+      },
+      {
+        "Treasuremap": 1
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 14,
+      "Count": 5
+    },
+    {
+      "Type": 9,
+      "Count": 22
+    },
+    {
+      "Type": 61,
+      "Count": 1
+    },
+    {
+      "Type": 48,
+      "Count": 21
+    },
+    {
+      "Type": 62,
+      "Count": 8
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [
+    {
+      "Limit": 52,
+      "Count": 21
+    },
+    {
+      "Limit": 65,
+      "Count": 8
+    }
+  ],
+  "Treasuremaps": [
+    {
+      "Cells": [
+        {
+          "X": 6,
+          "Y": 3
+        },
+        {
+          "X": 7,
+          "Y": 3
+        },
+        {
+          "X": 6,
+          "Y": 2
+        },
+        {
+          "X": 7,
+          "Y": 2
+        },
+        {
+          "X": 6,
+          "Y": 4
+        },
+        {
+          "X": 7,
+          "Y": 4
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {},
+        {
+          "Y": 1
+        },
+        {
+          "Y": 2
+        },
+        {
+          "X": 2,
+          "Y": 2
+        },
+        {
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "X": 1
+        },
+        {
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "X": 2
+        },
+        {
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "X": 3
+        },
+        {
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "X": 4
+        }
+      ]
+    }
+  ],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [
+    {
+      "Id": 1,
+      "Order": 1,
+      "Target": 8,
+      "CellCount": 6,
+      "Width": 2,
+      "Height": 3,
+      "MinX": 3,
+      "MinY": 3
+    }
+  ],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

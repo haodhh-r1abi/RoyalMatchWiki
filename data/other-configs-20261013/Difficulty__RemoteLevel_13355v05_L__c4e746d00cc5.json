@@ -1,0 +1,471 @@
+{
+  "Name": "13355v05_L",
+  "Move": 22,
+  "Goals": [
+    {
+      "Goal": 58,
+      "Count": 1
+    },
+    {
+      "Goal": 96,
+      "Count": 3
+    },
+    {
+      "Goal": 25,
+      "Count": 25
+    },
+    {
+      "Goal": 89,
+      "Count": 15,
+      "IsFromSettings": true
+    }
+  ],
+  "Grid": {
+    "Items": [
+      201,
+      202,
+      203,
+      367,
+      368,
+      102,
+      102,
+      102,
+      102,
+      191,
+      192,
+      193,
+      357,
+      358,
+      102,
+      102,
+      102,
+      102,
+      181,
+      182,
+      183,
+      11,
+      82,
+      367,
+      368,
+      102,
+      102,
+      328,
+      328,
+      328,
+      0,
+      82,
+      357,
+      358,
+      102,
+      102,
+      328,
+      328,
+      328,
+      0,
+      82,
+      82,
+      82,
+      367,
+      368,
+      328,
+      328,
+      328,
+      0,
+      82,
+      82,
+      82,
+      357,
+      358,
+      328,
+      328,
+      328,
+      0,
+      82,
+      82,
+      82,
+      82,
+      82,
+      328,
+      328,
+      328,
+      0,
+      2,
+      14,
+      14,
+      2,
+      2,
+      328,
+      328,
+      328,
+      0,
+      2,
+      14,
+      2,
+      14,
+      14,
+      328,
+      328,
+      328,
+      0,
+      14,
+      14,
+      14,
+      14,
+      14,
+      328,
+      328,
+      328,
+      0,
+      2,
+      14,
+      14,
+      14,
+      14
+    ],
+    "Cells": [
+      {
+        "Curtain": 5
+      },
+      {
+        "Curtain": 5
+      },
+      {
+        "Curtain": 5
+      },
+      {
+        "Curtain": 4
+      },
+      {
+        "Curtain": 4
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 5
+      },
+      {
+        "Curtain": 5
+      },
+      {
+        "Curtain": 5
+      },
+      {
+        "FillType": 1,
+        "Curtain": 4
+      },
+      {
+        "Curtain": 4
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 5
+      },
+      {
+        "Curtain": 5
+      },
+      {
+        "Curtain": 5
+      },
+      {},
+      {},
+      {
+        "Curtain": 3
+      },
+      {
+        "Curtain": 3
+      },
+      {},
+      {},
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {
+        "Curtain": 3
+      },
+      {
+        "Curtain": 3
+      },
+      {},
+      {},
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 1
+      },
+      {
+        "Curtain": 1
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 1
+      },
+      {
+        "Curtain": 1
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "Curtain": 2
+      },
+      {
+        "FillType": 1,
+        "Curtain": 2
+      },
+      {
+        "FillType": 1,
+        "Curtain": 2
+      },
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 53,
+      "Count": 1
+    },
+    {
+      "Type": 93,
+      "Count": 24
+    },
+    {
+      "Type": 103,
+      "Count": 3
+    },
+    {
+      "Type": 18,
+      "Count": 25
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [
+    {
+      "Id": 1,
+      "ColorId": 112,
+      "Target": 10,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 7,
+      "MinY": 4
+    },
+    {
+      "Id": 2,
+      "ColorId": 112,
+      "Target": 15,
+      "CellCount": 24,
+      "Width": 3,
+      "Height": 8,
+      "MinY": 3
+    },
+    {
+      "Id": 3,
+      "ColorId": 112,
+      "Target": 15,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 5,
+      "MinY": 2
+    },
+    {
+      "Id": 4,
+      "ColorId": 112,
+      "Target": 15,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 3
+    },
+    {
+      "Id": 5,
+      "ColorId": 112,
+      "Target": 15,
+      "CellCount": 9,
+      "Width": 3,
+      "Height": 3
+    }
+  ],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

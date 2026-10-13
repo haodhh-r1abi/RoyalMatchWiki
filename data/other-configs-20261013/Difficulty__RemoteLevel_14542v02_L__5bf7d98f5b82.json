@@ -1,0 +1,602 @@
+{
+  "Name": "14542v02_L",
+  "Move": 23,
+  "Goals": [
+    {
+      "Goal": 77,
+      "Count": 2
+    },
+    {
+      "Goal": 75,
+      "Count": 12
+    },
+    {
+      "Goal": 103,
+      "Count": 1
+    },
+    {
+      "Goal": 30,
+      "Count": 44
+    }
+  ],
+  "Grid": {
+    "Items": [
+      0,
+      0,
+      14,
+      14,
+      14,
+      14,
+      0,
+      271,
+      272,
+      281,
+      32761,
+      14,
+      14,
+      14,
+      14,
+      394,
+      271,
+      272,
+      32759,
+      32760,
+      14,
+      14,
+      14,
+      213,
+      394,
+      271,
+      272,
+      281,
+      32761,
+      14,
+      14,
+      213,
+      14,
+      394,
+      271,
+      272,
+      32759,
+      32760,
+      14,
+      14,
+      282,
+      213,
+      394,
+      271,
+      272,
+      271,
+      272,
+      394,
+      14,
+      282,
+      14,
+      394,
+      271,
+      272,
+      271,
+      272,
+      394,
+      211,
+      282,
+      14,
+      14,
+      393,
+      32736,
+      271,
+      272,
+      394,
+      211,
+      14,
+      14,
+      14,
+      32734,
+      32735,
+      271,
+      272,
+      394,
+      14,
+      211,
+      14,
+      14,
+      387,
+      387,
+      271,
+      272,
+      394,
+      14,
+      14,
+      14,
+      14,
+      387,
+      387,
+      271,
+      272,
+      11,
+      14,
+      14,
+      14,
+      14,
+      11,
+      11
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 384
+      },
+      {
+        "MetalPlates": 386
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 384
+      },
+      {
+        "MetalPlates": 386
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MetalPlates": 198
+      },
+      {
+        "MetalPlates": 198
+      },
+      {
+        "FillType": 1
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1,
+        "MetalPlates": 198
+      },
+      {
+        "FillType": 1,
+        "MetalPlates": 198
+      },
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {},
+      {}
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 75,
+      "Count": 2
+    },
+    {
+      "Type": 74,
+      "Count": 12
+    },
+    {
+      "Type": 113,
+      "Count": 10
+    },
+    {
+      "Type": 76,
+      "Count": 3
+    },
+    {
+      "Type": 112,
+      "Count": 1
+    },
+    {
+      "Type": 110,
+      "Count": 4
+    },
+    {
+      "Type": -18,
+      "Count": 2
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [
+    {
+      "Limit": 104,
+      "Count": 10
+    }
+  ],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [
+    {
+      "Id": 1,
+      "Target": 16,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinY": 3
+    },
+    {
+      "Id": 2,
+      "Target": 16,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinY": 1
+    }
+  ],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [
+    {
+      "Width": 2,
+      "MagnetCells": [
+        {
+          "Cell": {
+            "Y": 5
+          },
+          "IsHead": true,
+          "DirectionTiledId": 386
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 5
+          },
+          "IsHead": true,
+          "DirectionTiledId": 386
+        },
+        {
+          "Cell": {
+            "Y": 6
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 6
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "Y": 7
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 7
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "Y": 8
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 8
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "Y": 9
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 9
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "Y": 10
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 10
+          },
+          "DirectionTiledId": 198
+        }
+      ]
+    },
+    {
+      "Width": 2,
+      "MagnetCells": [
+        {
+          "Cell": {
+            "X": 7
+          },
+          "IsHead": true,
+          "DirectionTiledId": 385
+        },
+        {
+          "Cell": {
+            "X": 8
+          },
+          "IsHead": true,
+          "DirectionTiledId": 385
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 1
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 1
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 2
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 2
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 3
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 3
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 4
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 4
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 7,
+            "Y": 5
+          },
+          "DirectionTiledId": 198
+        },
+        {
+          "Cell": {
+            "X": 8,
+            "Y": 5
+          },
+          "DirectionTiledId": 198
+        }
+      ]
+    }
+  ],
+  "ColorMixers": [
+    {
+      "Id": 1,
+      "Target": 10,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 7,
+      "MinY": 6
+    }
+  ]
+}

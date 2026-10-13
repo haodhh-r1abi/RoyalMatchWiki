@@ -1,0 +1,284 @@
+{
+  "feature": "League",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "LeagueManager.UnlockLevel",
+      "type": "int",
+      "value": "1000",
+      "meaning": "Level mở khóa Royal League (client default)",
+      "where": "LeagueManager"
+    },
+    {
+      "source": "server info",
+      "key": "RequiredLeagueLevel",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Level tối thiểu do server đặt, ghi đè UnlockLevel",
+      "where": "LeagueManager.UpdateRequiredLevel (AppKeyValue)"
+    },
+    {
+      "source": "code enum",
+      "key": "LeagueCrownType",
+      "type": "enum",
+      "value": "None = -1, Gold = 0, Emerald = 1, Diamond = 2",
+      "meaning": "Ba bậc danh hiệu theo tổng crown",
+      "where": "Royal.Player.Context.Units.LeagueCrownType"
+    },
+    {
+      "source": "server info",
+      "key": "LeagueRoadConfig.emeraldThreshold",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Số crown cần để lên bậc Emerald",
+      "where": "Royal.Player.Context.Units.LeagueRoadConfig"
+    },
+    {
+      "source": "server info",
+      "key": "LeagueRoadConfig.diamondThreshold",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Số crown cần để lên bậc Diamond",
+      "where": "Royal.Player.Context.Units.LeagueRoadConfig"
+    },
+    {
+      "source": "code field",
+      "key": "LeagueRoadConfig",
+      "type": "class",
+      "value": "eventRewardOverrider, leagueManager, helper, rewardList (LeagueRoadReward[]), emeraldThreshold, diamondThreshold, sentExceptionForError",
+      "meaning": "Cấu hình đường thưởng League Road",
+      "where": "Royal.Player.Context.Units.LeagueRoadConfig"
+    },
+    {
+      "source": "code field",
+      "key": "LeagueRoadReward",
+      "type": "class",
+      "value": "t (int - ngưỡng crown), r (RewardItem)",
+      "meaning": "Một mốc thưởng trên League Road",
+      "where": "Royal.Player.Context.Units.LeagueRoadReward"
+    },
+    {
+      "source": "code field",
+      "key": "LeagueLevel",
+      "type": "struct",
+      "value": "level (int), moves (int)",
+      "meaning": "Một level League: dùng dữ liệu level gốc với số nước riêng",
+      "where": "LeagueManager.ParseLevelAndMoves"
+    },
+    {
+      "source": "server info",
+      "key": "LeagueLevels",
+      "type": "string",
+      "value": "server override - chuỗi các cặp level-moves cách nhau bằng ','",
+      "meaning": "Danh sách level của mùa giải; lấy theo (levelIndex - 1) mod số phần tử",
+      "where": "LeagueManager.GetLeagueLevel / ParseLevelAndMoves (AppKeyValue)"
+    },
+    {
+      "source": "server info",
+      "key": "LeagueRewards",
+      "type": "json",
+      "value": "server override",
+      "meaning": "LeagueRankRewards {id, amounts[]} - thưởng theo hạng",
+      "where": "LeagueManager.UpdateRewards; LeagueRankRewards.DefaultRewards"
+    },
+    {
+      "source": "code const",
+      "key": "Quy tac thuong theo hang",
+      "type": "formula",
+      "value": "rank 1-3 -> coin = amounts[rank - 1]; rank >= 4 -> Hammer = amounts[rank - 1] của bảng thứ hai",
+      "meaning": "Top 3 nhận coin, các hạng sau nhận Hammer",
+      "where": "LeagueManager.GetCoinReward / GetHammerReward / ClaimLeague"
+    },
+    {
+      "source": "code field",
+      "key": "LeagueMemberListRowData",
+      "type": "struct",
+      "value": "order, leader (Leader), isMyUser",
+      "meaning": "Một dòng trong bảng xếp hạng",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.League.LeagueMemberListRowData"
+    },
+    {
+      "source": "code const",
+      "key": "Ky tu ngan cach trang thai league",
+      "type": "string",
+      "value": "§ (mẫu 'League = {0}§{1}§{2}', giá trị mặc định '0§0')",
+      "meaning": "Cách đóng gói rank / endDate / leagueId thành một chuỗi",
+      "where": "LeagueManager.UpdateRankAndDate / FillFromLocal / ClearUserCaches"
+    },
+    {
+      "source": "code const",
+      "key": "ExtractLeagueIdFromGroupId",
+      "type": "formula",
+      "value": "bit 32-63 của groupId",
+      "meaning": "leagueId nằm ở nửa cao của groupId",
+      "where": "LeagueManager.ExtractLeagueIdFromGroupId"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle League moi",
+      "type": "string",
+      "value": "new_royal_league, new_league_leaderboard, league_gold_room, league_emerald_room, league_diamond_room",
+      "meaning": "Bundle giao diện và phòng theo bậc",
+      "where": "LeagueManager.IsAllNewLeagueBundlesDownloaded; LeagueBundleHelper"
+    },
+    {
+      "source": "asset",
+      "key": "Phong League theo bac",
+      "type": "string",
+      "value": "area_00_gold, area_00_emerald, area_00_diamond",
+      "meaning": "AreaView của area 0 (phòng Royal League) theo danh hiệu",
+      "where": "LeagueBundleHelper.GetAreaForCrownType"
+    },
+    {
+      "source": "asset",
+      "key": "Prefab co ho so",
+      "type": "string",
+      "value": "NewLeagueProfileFlagGoldBundledPrefab, NewLeagueProfileFlagEmeraldBundledPrefab, NewLeagueProfileFlagDiamondBundledPrefab",
+      "meaning": "Cờ danh hiệu trên hồ sơ người chơi",
+      "where": "LeagueBundleHelper.GetProfileFlag"
+    },
+    {
+      "source": "asset",
+      "key": "Asset giao dien",
+      "type": "string",
+      "value": "NewLeagueLeaderboardAssets, LeagueUiAssets, MultiplierTagCrownIcon",
+      "meaning": "Sprite nền dòng, nút, crown, icon hệ số",
+      "where": "LeagueBundleHelper; LeagueManager.get_LeagueUiAssets; LeagueManager.GetMultiplierTagConfig"
+    },
+    {
+      "source": "storage key",
+      "key": "ActiveLeague",
+      "type": "string",
+      "value": "client + server",
+      "meaning": "Mùa giải đang hoạt động (leagueId + version, ngăn bằng '§')",
+      "where": "LeagueManager.UpdateActiveLeague"
+    },
+    {
+      "source": "storage key",
+      "key": "LeagueGroup",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Nhóm thi đấu của người chơi",
+      "where": "LeagueManager.UpdateGroupId"
+    },
+    {
+      "source": "storage key",
+      "key": "LeagueRank",
+      "type": "string",
+      "value": "client + server",
+      "meaning": "Hạng hiện tại và thời hạn (mẫu 'League = {0}§{1}§{2}')",
+      "where": "LeagueManager.UpdateRankAndDate"
+    },
+    {
+      "source": "storage key",
+      "key": "LeagueRewards",
+      "type": "json",
+      "value": "client + server",
+      "meaning": "Cấu hình thưởng theo hạng",
+      "where": "LeagueManager.UpdateRewards"
+    },
+    {
+      "source": "storage key",
+      "key": "LeagueLevels",
+      "type": "string",
+      "value": "client + server",
+      "meaning": "Danh sách level và số nước của mùa giải",
+      "where": "LeagueManager.UpdateConfig"
+    },
+    {
+      "source": "storage key",
+      "key": "LeagueLevel",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Chỉ số level League hiện tại của người chơi",
+      "where": "BasicUserData.UpdateLeagueLevel"
+    },
+    {
+      "source": "storage key",
+      "key": "LeagueShowed",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đã hiện dialog kết mùa (auto dialog state)",
+      "where": "LeagueManager.HasFinishedEventData / IsAutoDialogStateFinished"
+    },
+    {
+      "source": "storage key",
+      "key": "RLCNF",
+      "type": "long",
+      "value": "client",
+      "meaning": "Royal League Claim Not Finished - groupId đã bấm claim nhưng chưa nhận phản hồi",
+      "where": "LeagueManager.ClaimLeague / ClaimNotFinished / ClaimLeagueResponseReceived"
+    },
+    {
+      "source": "storage key",
+      "key": "RLRU",
+      "type": "bit field",
+      "value": "client + server",
+      "meaning": "Royal League Reward Unclaimed - bit đánh dấu mốc thưởng League Road đã nhận",
+      "where": "LeagueRoadHelper.CacheRewards / IsClaimed / GetUnclaimedRewardCount"
+    },
+    {
+      "source": "storage key",
+      "key": "NRL-{0}",
+      "type": "string",
+      "value": "client",
+      "meaning": "Khóa dữ liệu New Royal League theo id mùa giải",
+      "where": "LeagueRoadHelper.ConsumeSteps"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa CurrentStep của League Road và các cờ liên quan",
+      "where": "LeagueRoadHelper.set_CurrentStep / ResetLeagueData; LeagueManager.ClearLeague"
+    },
+    {
+      "source": "server info",
+      "key": "GameplayGenericBackendSyncHandler.GetHasTransitionedToEmerald / GetHasTransitionedToDiamond",
+      "type": "bool",
+      "value": "client + server",
+      "meaning": "Đã chơi animation chuyển bậc hay chưa (chặn hiện lại)",
+      "where": "LeagueManager.GetUserCrownType"
+    },
+    {
+      "source": "AB test",
+      "key": "LeagueManager.IsRowChangeAbEnabled / rowChangeAbEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Biến thể giao diện dòng bảng xếp hạng",
+      "where": "LeagueManager.IsRowChangeAbEnabled"
+    },
+    {
+      "source": "AB test",
+      "key": "new_league",
+      "type": "string",
+      "value": "server override",
+      "meaning": "AB chuyển từ giao diện League cũ sang mới",
+      "where": "LeagueManager.ShouldShowNewLeagueUi (bundle new_royal_league)"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "RequiredLeagueLevel — giá trị THẬT (runtime)",
+      "type": "int",
+      "value": "14501",
+      "meaning": "Level tối thiểu vào Royal League do server đặt (PingResponse RequiredLevelForLeague / App DB RequiredLeagueLevel=14501) — ghi đè UnlockLevel client 1000; MaxPublishedLevel=14500 nên gần như chỉ mở ở đỉnh nội dung",
+      "where": "decoded_new/004_1_PingResponse.json (INDEX.md) / App DB"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "GetLeagueInfoResponse (runtime)",
+      "type": "flatbuffer",
+      "value": "Members=[] (account lvl8 chưa vào league), RemainingTime=407412240 ms (~4.71 ngày)",
+      "meaning": "Phản hồi GetLeagueInfoRequest THẬT: mùa league hiện tại còn ~4.71 ngày; danh sách thành viên rỗng vì account chưa đủ level tham gia",
+      "where": "server_fetched/GetLeagueInfoRequest.json"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.LeagueManager",
+    "Royal.Player.Context.Units.LeagueRoadHelper",
+    "Royal.Player.Context.Units.LeagueBundleHelper",
+    "Royal.Player.Context.Units.LeagueRoadConfig"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

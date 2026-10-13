@@ -1,0 +1,827 @@
+{
+  "feature": "LadderOffer",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "LadderOfferManager.LadderOfferUnlockLevel",
+      "type": "int",
+      "value": "35",
+      "meaning": "Level mở Ladder Offer",
+      "where": "LadderOfferManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "LadderOfferManager.OfferCountToShowInShop",
+      "type": "int",
+      "value": "3",
+      "meaning": "Số bậc hiện cùng lúc trên thẻ Shop",
+      "where": "LadderOfferManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "ShouldUseSegmentedConfig",
+      "type": "formula",
+      "value": "userOfferSegment > 5",
+      "meaning": "Điều kiện dùng bản cấu hình theo segment thay vì config server",
+      "where": "LadderOfferManager.ShouldUseSegmentedConfig"
+    },
+    {
+      "source": "code const",
+      "key": "GetSegmentedLadderOfferConfigPath",
+      "type": "formula",
+      "value": "'segmentedladder_offer_{0}_{1}' với {0} = 3 hoặc 6 (độ dài thang theo chủ đề), {1} = '20' khi (offerSegment & ~1) == 6 (segment 6 hoặc 7), ngược lại '50'",
+      "meaning": "Quy tắc chọn file cấu hình mặc định",
+      "where": "LadderOfferManager.GetSegmentedLadderOfferConfigPath"
+    },
+    {
+      "source": "code const",
+      "key": "GetLadderOfferSegment",
+      "type": "formula",
+      "value": "bit 17-20 của khóa 'Dialogs'",
+      "meaning": "Segment của Ladder Offer (4 bit, 16 giá trị)",
+      "where": "LadderOfferManager.GetLadderOfferSegment; UserInventory.SegmentedLadderOfferUserSegmentStartIndex/EndIndex"
+    },
+    {
+      "source": "code const",
+      "key": "IsShopStepInLastOffers",
+      "type": "formula",
+      "value": "GetLastStep() - step < 3",
+      "meaning": "Ba bậc cuối được đánh dấu đặc biệt trong Shop",
+      "where": "LadderOfferManager.IsShopStepInLastOffers"
+    },
+    {
+      "source": "code const",
+      "key": "IsStepInLastOffers",
+      "type": "formula",
+      "value": "GetLastStep() - step < N, N mặc định 3 và đọc từ bảng static theo chủ đề (theme index 2-12)",
+      "meaning": "Số bậc cuối được đánh dấu trong dialog, thay đổi theo chủ đề",
+      "where": "LadderOfferManager.IsStepInLastOffers"
+    },
+    {
+      "source": "code enum",
+      "key": "LadderOfferTheme",
+      "type": "enum",
+      "value": "None = 0, Default = 1, Jungle = 2, Halloween = 3, BlackFriday = 4, Coin = 5, PayFirst = 6, NewYear3 = 7, NewYear6 = 8, Spring3 = 9, Easter6 = 10, RoyalCup3 = 11, RoyalCup6 = 12",
+      "meaning": "13 chủ đề giao diện; chuỗi tương ứng: default, jungle, halloween2022, blackfriday, coin, payfirst, newyear3, newyear6, spring3, easter6, royalcup3, royalcup6",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.LadderOffer.LadderOfferTheme; LadderOfferManager.GetLadderOfferTheme"
+    },
+    {
+      "source": "code enum",
+      "key": "LadderOfferPopupType",
+      "type": "enum",
+      "value": "Type1 = 0, Type2 = 1",
+      "meaning": "Hai kiểu dialog; Type2 dùng pool đối tượng riêng",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.LadderOffer.LadderOfferPopupType"
+    },
+    {
+      "source": "code enum",
+      "key": "LadderOfferPackageBackgroundIndex",
+      "type": "enum",
+      "value": "Row1 = 0, Row2 = 1, Row3 = 2",
+      "meaning": "Màu nền ba dòng bậc trong dialog (LadderOfferStep.backgroundColorIndex)",
+      "where": "LadderOfferPackageBackgroundIndex"
+    },
+    {
+      "source": "code enum",
+      "key": "LadderOfferPoolTypeId",
+      "type": "enum",
+      "value": "LadderOfferTypeTwoPackage = 0",
+      "meaning": "Loại đối tượng trong pool của popup Type2",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.LadderOfferTypeTwo.LadderOfferPoolTypeId"
+    },
+    {
+      "source": "code enum",
+      "key": "LadderOfferShopButtonNotificationReason",
+      "type": "enum",
+      "value": "NewEvent = 0",
+      "meaning": "Lý do hiện chấm đỏ trên thẻ shop",
+      "where": "LadderOfferShopButtonNotificationReason"
+    },
+    {
+      "source": "code field",
+      "key": "LadderOfferConfig",
+      "type": "class",
+      "value": "version, offerPriorityHomescene, offerPriorityShop, offerPriorityFavor, steps (LadderOfferStep[]), theme",
+      "meaning": "Cấu hình một đợt Ladder Offer",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.LadderOffer.LadderOfferConfig"
+    },
+    {
+      "source": "code field",
+      "key": "LadderOfferStep",
+      "type": "class",
+      "value": "s (số bậc), p (mã giá, 0 = miễn phí), a (số lần mua), n (tên bậc), r (thưởng chính), c (thưởng kèm), rt (SingleRewardTransformData[] - vị trí và tỷ lệ từng phần thưởng), backgroundColorIndex",
+      "meaning": "Một bậc của thang",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.LadderOffer.LadderOfferStep"
+    },
+    {
+      "source": "code field",
+      "key": "SingleRewardTransformData (truong 'rt')",
+      "type": "object",
+      "value": "p = [x, y] tọa độ, s = tỷ lệ, tp = [x, y] tọa độ chữ, ts = tỷ lệ chữ",
+      "meaning": "Bố cục thủ công của từng phần thưởng trên ảnh nền",
+      "where": "LadderOfferStepTransformData; Resources/segmentedladder_offer_6_*.json"
+    },
+    {
+      "source": "code const",
+      "key": "LadderOfferProgress.EventIdLimit",
+      "type": "int",
+      "value": "512",
+      "meaning": "eventId quay vòng trong 9 bit",
+      "where": "Royal.Player.Context.Data.Persistent.LadderOfferProgress"
+    },
+    {
+      "source": "code field",
+      "key": "LadderOfferProgress",
+      "type": "class",
+      "value": "step, eventId, availability",
+      "meaning": "Tiến độ thang của người chơi (lưu trong EventInventory)",
+      "where": "LadderOfferProgress; UserInventory.GetLadderOffer / UpdateLadderOffer"
+    },
+    {
+      "source": "code const",
+      "key": "Deeplink action",
+      "type": "string",
+      "value": "ladderoffer",
+      "meaning": "Mã deeplink mở dialog Ladder Offer",
+      "where": "LadderOfferManager.GetDeeplinkAction"
+    },
+    {
+      "source": "code const",
+      "key": "Nhom product IAP",
+      "type": "string",
+      "value": "ladder (ladder.3/4/5/6/8/10/15/19/20/25/30/38/50/60/100) và laddercoin (laddercoin.3/5/8/15/20/30/50/100); ladder.0 là sản phẩm miễn phí",
+      "meaning": "Product id của từng bậc; giá USD xem feature Shop",
+      "where": "PurchaseHelper; LadderOfferManager.GetTemporaryShopPackageConfigToSort"
+    },
+    {
+      "source": "code const",
+      "key": "Tieu de dialog theo chu de",
+      "type": "string",
+      "value": "LadderOfferTitle, LadderOfferJungleTitle1, SpecialOfferHalloweenTitle, LadderOfferBlackFridayTitle, LadderOfferNewYearTitle, LadderOfferSpringTitle, LadderOfferEasterTitle, RoyalCupLadderKickoffTreasureTitle, RoyalCupLadderHalftimeTreasureTitle",
+      "meaning": "Khóa localization tiêu đề",
+      "where": "LadderOfferManager.GetPopupTitleText"
+    },
+    {
+      "source": "code const",
+      "key": "Thong bao day",
+      "type": "string",
+      "value": "Tiêu đề: LadderOffer1DayTitle, LadderOfferJungle1DayTitle, LadderOfferHalloween1DayTitle2, LadderOfferBlackFriday1DayTitle, LadderOfferNewYearNotificationTitle, LadderOfferSpring1DayTitle, LadderOfferEaster1DayTitle, RoyalCupLadderKickoffTreasureNotificationTitle, RoyalCupLadderHalftimeTreasureNotificationTitle; Nội dung: LadderOffer1DayText",
+      "meaning": "Thông báo nhắc trước 1 ngày",
+      "where": "LadderOfferManager.GetNotificationTitle / GetNotificationBody"
+    },
+    {
+      "source": "storage key",
+      "key": "LadderOffer",
+      "type": "string",
+      "value": "server override",
+      "meaning": "Thông tin đợt Ladder Offer, ngăn bằng '§'",
+      "where": "LadderOfferManager.UpdateInfo / FillFromLocal"
+    },
+    {
+      "source": "storage key",
+      "key": "LadderOfferConfig",
+      "type": "json",
+      "value": "server override",
+      "meaning": "Cấu hình các bậc",
+      "where": "LadderOfferManager.UpdateConfig"
+    },
+    {
+      "source": "storage key",
+      "key": "LadderOfferAutoDialogState",
+      "type": "int",
+      "value": "client",
+      "meaning": "Trạng thái tự động mở dialog / chấm đỏ thẻ shop",
+      "where": "LadderOfferManager.TryAddStartDialog / ConsumeShopCardNotification"
+    },
+    {
+      "source": "storage key",
+      "key": "LadderOfferAutoDialogLastSeenDate",
+      "type": "int",
+      "value": "client",
+      "meaning": "Ngày cuối tự động mở dialog",
+      "where": "LadderOfferManager.TryAddStartDialog / ConsumeShopCardNotification"
+    },
+    {
+      "source": "storage key",
+      "key": "SegmentedLadderOfferConfig",
+      "type": "json",
+      "value": "client (đọc từ Resources)",
+      "meaning": "Bản cấu hình mặc định theo segment đã nạp",
+      "where": "LadderOfferManager.UpdateConfig"
+    },
+    {
+      "source": "storage key",
+      "key": "Dialogs (bit 17-20)",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Segment của Ladder Offer",
+      "where": "UserInventory.SegmentedLadderOfferUserSegmentStartIndex/EndIndex"
+    },
+    {
+      "source": "storage key",
+      "key": "LiveOpsCommonUse1",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa bit tutorial của Ladder Offer",
+      "where": "LadderOfferManager.MigrateTutorial / ResetTutorial"
+    },
+    {
+      "source": "server info",
+      "key": "LadderOfferInfo",
+      "type": "protocol",
+      "value": "server",
+      "meaning": "Gói tin mang eventId, configVersion, config và hạn",
+      "where": "Royal.Infrastructure.Services.Backend.Protocol.LadderOfferInfo"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=1]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x1]",
+      "meaning": "Bước 1: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=2]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x100]",
+      "meaning": "Bước 2: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=3]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Small x1], c=[C x100 + PL x1]",
+      "meaning": "Bước 3: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=4]",
+      "type": "LadderOfferStep",
+      "value": "p=20 (mã giá), a=1, r=[A x3 + C x5000 + UT x60], n='Super'",
+      "meaning": "Bước 4: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=5]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Ca x3 + C x5000 + UR x60]",
+      "meaning": "Bước 5: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=6]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[ULV x60 + C x5000 + ULB x60]",
+      "meaning": "Bước 6: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=7]",
+      "type": "LadderOfferStep",
+      "value": "p=30 (mã giá), a=1, r=[H x5 + C x8000 + J x5], n='Mega'",
+      "meaning": "Bước 7: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=8]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[A x5 + C x8000 + Ca x5]",
+      "meaning": "Bước 8: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=9]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[R x5 + C x8000 + T x5]",
+      "meaning": "Bước 9: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=10]",
+      "type": "LadderOfferStep",
+      "value": "p=50 (mã giá), a=1, r=[Ca x10 + C x15000 + L x10], n='Ultra'",
+      "meaning": "Bước 10: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=11]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x10 + C x15000 + T x10]",
+      "meaning": "Bước 11: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=12]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[A x10 + C x15000 + R x10]",
+      "meaning": "Bước 12: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=13]",
+      "type": "LadderOfferStep",
+      "value": "p=100 (mã giá), a=1, r=[ULV x720 + C x35000 + UT x1440], n='Grand'",
+      "meaning": "Bước 13: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=14]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x12 + C x35000 + UR x1440]",
+      "meaning": "Bước 14: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_20.json -> steps[s=15]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Purple x1 + C x35000 + ULB x1440], c=[C x2000 + IG x12]",
+      "meaning": "Bước 15: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=1]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x1]",
+      "meaning": "Bước 1: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=2]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x100]",
+      "meaning": "Bước 2: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=3]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Small x1], c=[C x100 + PL x1]",
+      "meaning": "Bước 3: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=4]",
+      "type": "LadderOfferStep",
+      "value": "p=50 (mã giá), a=1, r=[Ca x10 + C x15000 + L x10], n='Ultra'",
+      "meaning": "Bước 4: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=5]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x10 + C x15000 + T x10]",
+      "meaning": "Bước 5: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=6]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[A x10 + C x15000 + R x10]",
+      "meaning": "Bước 6: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=7]",
+      "type": "LadderOfferStep",
+      "value": "p=100 (mã giá), a=1, r=[ULV x720 + C x35000 + UT x1440], n='Grand'",
+      "meaning": "Bước 7: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=8]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x12 + C x35000 + UR x1440]",
+      "meaning": "Bước 8: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_3_50.json -> steps[s=9]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Purple x1 + C x35000 + ULB x1440], c=[C x2000 + IG x12]",
+      "meaning": "Bước 9: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_3_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> theme",
+      "type": "string",
+      "value": "jungle",
+      "meaning": "Chủ đề giao diện của bản cấu hình này",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=1]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x1]",
+      "meaning": "Bước 1: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=2]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x100]",
+      "meaning": "Bước 2: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=3]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Small x1], c=[C x100 + PL x1]",
+      "meaning": "Bước 3: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=4]",
+      "type": "LadderOfferStep",
+      "value": "p=20 (mã giá), a=1, r=[A x3 + C x5000 + UT x60], n='Super'",
+      "meaning": "Bước 4: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=5]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x4000]",
+      "meaning": "Bước 5: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=6]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[ULB x60]",
+      "meaning": "Bước 6: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=7]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x4000]",
+      "meaning": "Bước 7: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=8]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[ULV x60]",
+      "meaning": "Bước 8: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=9]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[UR x60 + C x2000 + Ca x3]",
+      "meaning": "Bước 9: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=10]",
+      "type": "LadderOfferStep",
+      "value": "p=30 (mã giá), a=1, r=[J x5 + C x8000 + H x5], n='Mega'",
+      "meaning": "Bước 10: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=11]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x7500]",
+      "meaning": "Bước 11: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=12]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[T x5]",
+      "meaning": "Bước 12: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=13]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x6000]",
+      "meaning": "Bước 13: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=14]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[A x5 + C x2500 + Ca x5]",
+      "meaning": "Bước 14: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=15]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[R x5]",
+      "meaning": "Bước 15: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=16]",
+      "type": "LadderOfferStep",
+      "value": "p=50 (mã giá), a=1, r=[Ca x10 + C x15000 + L x10], n='Ultra'",
+      "meaning": "Bước 16: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=17]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x12500]",
+      "meaning": "Bước 17: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=18]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[A x10]",
+      "meaning": "Bước 18: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=19]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x10000]",
+      "meaning": "Bước 19: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=20]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[R x10]",
+      "meaning": "Bước 20: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=21]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x10 + C x7500 + T x10]",
+      "meaning": "Bước 21: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=22]",
+      "type": "LadderOfferStep",
+      "value": "p=100 (mã giá), a=1, r=[ULV x720 + C x35000 + UT x1440], n='Grand'",
+      "meaning": "Bước 22: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=23]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x30000]",
+      "meaning": "Bước 23: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=24]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[ULB x1440]",
+      "meaning": "Bước 24: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=25]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x25000]",
+      "meaning": "Bước 25: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=26]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[UR x1440 + C x15000 + H x12]",
+      "meaning": "Bước 26: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_20.json -> steps[s=27]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Purple x1], c=[C x2000 + IG x12]",
+      "meaning": "Bước 27: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_20.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> theme",
+      "type": "string",
+      "value": "jungle",
+      "meaning": "Chủ đề giao diện của bản cấu hình này",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=1]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x1]",
+      "meaning": "Bước 1: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=2]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x100]",
+      "meaning": "Bước 2: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=3]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Small x1], c=[C x100 + PL x1]",
+      "meaning": "Bước 3: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=4]",
+      "type": "LadderOfferStep",
+      "value": "p=50 (mã giá), a=1, r=[Ca x10 + C x15000 + L x10], n='Ultra'",
+      "meaning": "Bước 4: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=5]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x12500]",
+      "meaning": "Bước 5: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=6]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[A x10]",
+      "meaning": "Bước 6: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=7]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x10000]",
+      "meaning": "Bước 7: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=8]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[R x10]",
+      "meaning": "Bước 8: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=9]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[H x10 + C x7500 + T x10]",
+      "meaning": "Bước 9: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=10]",
+      "type": "LadderOfferStep",
+      "value": "p=100 (mã giá), a=1, r=[ULV x720 + C x35000 + UT x1440], n='Grand'",
+      "meaning": "Bước 10: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=11]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x30000]",
+      "meaning": "Bước 11: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=12]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[ULB x1440]",
+      "meaning": "Bước 12: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=13]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[C x25000]",
+      "meaning": "Bước 13: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=14]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[UR x1440 + C x15000 + H x12]",
+      "meaning": "Bước 14: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "json default",
+      "key": "segmentedladder_offer_6_50.json -> steps[s=15]",
+      "type": "LadderOfferStep",
+      "value": "p=0 (mã giá), a=1, r=[Purple x1], c=[C x2000 + IG x12]",
+      "meaning": "Bước 15: p = mã giá (0 = miễn phí), a = số lần mua, r = thưởng chính, c = thưởng kèm, n = tên bậc",
+      "where": "Resources/segmentedladder_offer_6_50.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "LadderOfferConfig (runtime, event Id444)",
+      "type": "class",
+      "value": "version=327, theme=jungle, offerPriorityHomescene=30, offerPriorityShop=30, offerPriorityFavor=0, steps=51",
+      "meaning": "Cấu hình Ladder Offer THẬT đang chạy (server override) — thang 51 bậc chủ đề jungle, khác 4 bản default trong Resources",
+      "where": "User_LadderOfferConfig.json (v327)"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "steps trả phí (runtime, 8 mốc)",
+      "type": "array",
+      "value": "s4 p=3 'Mini'; s10 p=5 'Small'; s16 p=8 'Medium'; s22 p=15 'Big'; s28 p=20 'Super'; s34 p=30 'Mega'; s40 p=50 'Ultra'; s46 p=100 'Grand' (các bậc còn lại p=0 miễn phí)",
+      "meaning": "8 mốc trả phí thật (p = mã giá USD) và tên bậc thật trong thang server",
+      "where": "User_LadderOfferConfig.json (v327)"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "3 bậc đầu miễn phí (runtime)",
+      "type": "array",
+      "value": "s1=1H; s2=100C; s3=1Small + (c) 100C+1PL",
+      "meaning": "3 bậc đầu p=0 (miễn phí) — giống cấu trúc default để kéo người chơi vào thang",
+      "where": "User_LadderOfferConfig.json (v327)"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "bậc cao nhất & bậc kết (runtime)",
+      "type": "array",
+      "value": "s46 'Grand' p=100 = 720ULV+35000C+1440UT; s51 (bậc cuối) = 1Purple + (c) 2000C+12IG",
+      "meaning": "Bậc trả phí đắt nhất và bậc kết của thang",
+      "where": "User_LadderOfferConfig.json (v327)"
+    },
+    {
+      "source": "runtime LDPlayer 06/10/2026",
+      "key": "LadderOfferConfig v335 (Ladder Id 449)",
+      "type": "json",
+      "value": "51 bậc, theme jungle, ưu tiên 30/30/0",
+      "meaning": "Bản mới so với v327",
+      "where": "facts/runtime/server_configs_2026-10-06/LadderOfferInfo_v335.json"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.LadderOfferManager",
+    "Royal.Scenes.Home.Ui.Dialogs.LadderOffer.LadderOfferConfig",
+    "Royal.Player.Context.Data.Persistent.LadderOfferProgress"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

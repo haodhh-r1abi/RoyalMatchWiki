@@ -1,0 +1,511 @@
+{
+  "Name": "08141v02_L",
+  "Move": 23,
+  "Goals": [
+    {
+      "Goal": 51,
+      "Count": 8
+    },
+    {
+      "Goal": 19,
+      "Count": 16
+    },
+    {
+      "Goal": 34,
+      "Count": 18
+    },
+    {
+      "Goal": 66,
+      "Count": 54
+    }
+  ],
+  "Grid": {
+    "Items": [
+      223,
+      175,
+      176,
+      223,
+      75,
+      76,
+      98,
+      98,
+      98,
+      223,
+      165,
+      166,
+      223,
+      65,
+      66,
+      98,
+      98,
+      223,
+      223,
+      175,
+      176,
+      223,
+      223,
+      223,
+      98,
+      223,
+      223,
+      223,
+      165,
+      166,
+      223,
+      77,
+      78,
+      223,
+      223,
+      223,
+      211,
+      223,
+      223,
+      223,
+      67,
+      68,
+      223,
+      223,
+      223,
+      211,
+      212,
+      223,
+      223,
+      223,
+      223,
+      98,
+      223,
+      223,
+      14,
+      212,
+      14,
+      223,
+      73,
+      74,
+      98,
+      98,
+      223,
+      211,
+      14,
+      212,
+      14,
+      63,
+      64,
+      98,
+      98,
+      98,
+      14,
+      14,
+      14,
+      14,
+      223,
+      223,
+      98,
+      98,
+      98,
+      14,
+      14,
+      14,
+      14,
+      71,
+      72,
+      98,
+      98,
+      11,
+      14,
+      14,
+      14,
+      14,
+      61,
+      62,
+      98,
+      11,
+      0
+    ],
+    "Cells": [
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 4,
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 4,
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 4,
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 4,
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 3,
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 3,
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 3,
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 3,
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 2
+      },
+      {
+        "Curtain": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "MushroomSoil": 221
+      },
+      {
+        "MushroomSoil": 221
+      },
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Curtain": 1
+      },
+      {
+        "Curtain": 1
+      },
+      {},
+      {
+        "FillType": 1
+      },
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1,
+        "Curtain": 1
+      },
+      {
+        "FillType": 1,
+        "Curtain": 1
+      },
+      {
+        "FillType": 1
+      },
+      {},
+      {}
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 63,
+      "Count": 32
+    },
+    {
+      "Type": 47,
+      "Count": 2
+    },
+    {
+      "Type": 12,
+      "Count": 4
+    },
+    {
+      "Type": 27,
+      "Count": 18
+    },
+    {
+      "Type": -10,
+      "Count": 54
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [
+    {
+      "Id": 1,
+      "ColorId": 111,
+      "Target": 40,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 4,
+      "MinY": 9
+    },
+    {
+      "Id": 2,
+      "ColorId": 112,
+      "Target": 40,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 4,
+      "MinY": 6
+    },
+    {
+      "Id": 3,
+      "ColorId": 114,
+      "Target": 40,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 4,
+      "MinY": 3
+    },
+    {
+      "Id": 4,
+      "ColorId": 113,
+      "Target": 40,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 4
+    }
+  ],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

@@ -1,0 +1,612 @@
+{
+  "Name": "01460v03_L",
+  "Move": 33,
+  "Goals": [
+    {
+      "Goal": 38,
+      "Count": 8
+    },
+    {
+      "Goal": 14,
+      "Count": 25
+    },
+    {
+      "Goal": 29,
+      "Count": 32,
+      "IsFromSettings": true
+    },
+    {
+      "Goal": 30
+    }
+  ],
+  "Grid": {
+    "Items": [
+      4,
+      4,
+      3,
+      4,
+      2,
+      14,
+      2,
+      2,
+      14,
+      14,
+      3,
+      3,
+      4,
+      4,
+      14,
+      4,
+      14,
+      14,
+      11,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      11,
+      0,
+      11,
+      14,
+      14,
+      14,
+      14,
+      14,
+      11,
+      0,
+      141,
+      0,
+      11,
+      14,
+      14,
+      14,
+      11,
+      0,
+      141,
+      144,
+      141,
+      0,
+      11,
+      14,
+      11,
+      0,
+      141,
+      144,
+      144,
+      144,
+      141,
+      0,
+      11,
+      0,
+      141,
+      144,
+      144,
+      144,
+      144,
+      144,
+      141,
+      0,
+      141,
+      144,
+      144,
+      144,
+      0,
+      144,
+      144,
+      144,
+      0,
+      144,
+      144,
+      144,
+      0,
+      0,
+      0,
+      144,
+      144,
+      0,
+      144,
+      144,
+      0,
+      0,
+      0,
+      0,
+      0,
+      144,
+      0,
+      144,
+      0,
+      0,
+      0
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {},
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {
+        "Honey": 33
+      },
+      {
+        "FillType": 1,
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Honey": 33
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [
+    {
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 2,
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 2,
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 2,
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 2,
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 6,
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 6,
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 6,
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 6,
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 7,
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 7,
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 7,
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 7,
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 8,
+      "Y": 12,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 8,
+      "Y": 13,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 8,
+      "Y": 14,
+      "Ids": [
+        88
+      ]
+    },
+    {
+      "X": 8,
+      "Y": 15,
+      "Ids": [
+        88
+      ]
+    }
+  ],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 2
+        },
+        {
+          "Id": 4
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    2,
+    4
+  ],
+  "Counts": [
+    {
+      "Type": 32,
+      "Count": 8
+    },
+    {
+      "Type": -4,
+      "Count": 25
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

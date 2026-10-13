@@ -1,0 +1,417 @@
+{
+  "Name": "14378v02_L",
+  "Move": 20,
+  "Goals": [
+    {
+      "Goal": 50,
+      "Count": 23
+    },
+    {
+      "Goal": 68,
+      "Count": 2
+    },
+    {
+      "Goal": 36,
+      "Count": 6
+    },
+    {
+      "Goal": 46,
+      "Count": 40
+    }
+  ],
+  "Grid": {
+    "Items": [
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      157,
+      246,
+      247,
+      157,
+      157,
+      157,
+      246,
+      247,
+      157,
+      14,
+      236,
+      237,
+      14,
+      14,
+      14,
+      236,
+      237,
+      14,
+      14,
+      14,
+      14,
+      126,
+      139,
+      140,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      128,
+      129,
+      130,
+      14,
+      14,
+      14,
+      0,
+      0,
+      1,
+      118,
+      119,
+      120,
+      3,
+      0,
+      0,
+      0,
+      0,
+      14,
+      1,
+      4,
+      14,
+      3,
+      0,
+      0,
+      0,
+      14,
+      1,
+      14,
+      4,
+      14,
+      14,
+      3,
+      0,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      4,
+      14,
+      14,
+      14,
+      14
+    ],
+    "Cells": [
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {},
+      {},
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {},
+      {},
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {},
+      {},
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {},
+      {},
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {},
+      {},
+      {},
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {},
+      {},
+      {},
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {
+        "Roof": 153
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 46,
+      "Count": 23
+    },
+    {
+      "Type": 65,
+      "Count": 2
+    },
+    {
+      "Type": 30,
+      "Count": 1
+    },
+    {
+      "Type": -7,
+      "Count": 40
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

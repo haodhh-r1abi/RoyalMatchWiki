@@ -1,0 +1,186 @@
+{
+  "feature": "WelcomeBackGift",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftManager.MinimumLevel",
+      "type": "int",
+      "value": "20",
+      "meaning": "Level tối thiểu để được nhận quà Welcome Back",
+      "where": "WelcomeBackGiftManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftManager.MinimumDayDifference",
+      "type": "int",
+      "value": "15",
+      "meaning": "Số ngày nghỉ tối thiểu để được xếp bậc 1",
+      "where": "WelcomeBackGiftManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "Nguong bac qua",
+      "type": "formula",
+      "value": "dayDiff >= 90 -> tier 3; 30 <= dayDiff < 90 -> tier 2; 15 <= dayDiff <= 29 -> tier 1; <= 14 -> tier 0",
+      "meaning": "Cách xếp bậc theo số ngày nghỉ",
+      "where": "WelcomeBackGiftManager.CalculateAndSetGiftTier"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftManager.ExtraMovesLevelCount",
+      "type": "int",
+      "value": "25",
+      "meaning": "Số level được cộng nước miễn phí sau khi nhận quà",
+      "where": "WelcomeBackGiftManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftManager.ExtraMovesForHardLevels",
+      "type": "int",
+      "value": "10",
+      "meaning": "Trần nước thưởng ở level Hard (difficulty 1)",
+      "where": "WelcomeBackGiftManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftManager.ExtraMovesForSuperHardLevels",
+      "type": "int",
+      "value": "15",
+      "meaning": "Trần nước thưởng ở level Super Hard (difficulty 2)",
+      "where": "WelcomeBackGiftManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftManager.ExtraMovesForExtremelyHardLevels",
+      "type": "int",
+      "value": "20",
+      "meaning": "Trần nước thưởng ở level Extremely Hard",
+      "where": "WelcomeBackGiftManager (client default)"
+    },
+    {
+      "source": "static array",
+      "key": "extraMovesTier1",
+      "type": "int[25]",
+      "value": "[5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]",
+      "meaning": "Nước thưởng cho 25 level sau khi nhận quà bậc 1 (giảm dần theo nhóm 5 level)",
+      "where": "WelcomeBackGiftManager..ctor (blob DB59009EE5BE, appendix/static-arrays.md)"
+    },
+    {
+      "source": "static array",
+      "key": "extraMovesTier2",
+      "type": "int[25]",
+      "value": "[10, 10, 10, 10, 10, 8, 8, 8, 8, 8, 6, 6, 6, 6, 6, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2]",
+      "meaning": "Nước thưởng cho 25 level sau khi nhận quà bậc 2",
+      "where": "WelcomeBackGiftManager..ctor (blob CA7E76EF277D)"
+    },
+    {
+      "source": "static array",
+      "key": "extraMovesTier3",
+      "type": "int[25]",
+      "value": "[15, 15, 15, 15, 15, 12, 12, 12, 12, 12, 9, 9, 9, 9, 9, 6, 6, 6, 6, 6, 3, 3, 3, 3, 3]",
+      "meaning": "Nước thưởng cho 25 level sau khi nhận quà bậc 3",
+      "where": "WelcomeBackGiftManager..ctor (blob 6A32DC2C8739)"
+    },
+    {
+      "source": "code const",
+      "key": "Qua bac 1 (15-29 ngay)",
+      "type": "reward",
+      "value": "1.000 Coins (RewardType 1), 1 Hammer (6), 1 Arrow (7), 1 Cannon (8), 1 Jester (9), 180 phút UnlimitedLives (2), 180 phút UnlimitedRocket (3), 180 phút UnlimitedTnt (4), 180 phút UnlimitedLightball (5)",
+      "meaning": "Gói quà bậc thấp nhất",
+      "where": "WelcomeBackGiftManager.GetRewards"
+    },
+    {
+      "source": "code const",
+      "key": "Qua bac 2 (30-89 ngay)",
+      "type": "reward",
+      "value": "2.000 Coins, 2 mỗi loại booster (Hammer / Arrow / Cannon / Jester), 720 phút mỗi loại unlimited",
+      "meaning": "Gói quà bậc trung",
+      "where": "WelcomeBackGiftManager.GetRewards"
+    },
+    {
+      "source": "code const",
+      "key": "Qua bac 3 (tu 90 ngay)",
+      "type": "reward",
+      "value": "3.000 Coins, 3 mỗi loại booster, 1.440 phút (24 giờ) mỗi loại unlimited",
+      "meaning": "Gói quà bậc cao nhất",
+      "where": "WelcomeBackGiftManager.GetRewards"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftProgress.LastActiveDateStart / LastActiveDateEnd",
+      "type": "int",
+      "value": "0 / 15",
+      "meaning": "16 bit lưu ngày hoạt động cuối",
+      "where": "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftProgress.OfflineGiftDeservedDateStart / End",
+      "type": "int",
+      "value": "16 / 31",
+      "meaning": "16 bit lưu ngày đáng lẽ được nhận quà khi offline",
+      "where": "WelcomeBackGiftProgress"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftProgress.TierStart / TierEnd",
+      "type": "int",
+      "value": "32 / 34",
+      "meaning": "3 bit lưu bậc quà",
+      "where": "WelcomeBackGiftProgress"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftProgress.LevelStart / LevelEnd",
+      "type": "int",
+      "value": "35 / 50",
+      "meaning": "16 bit lưu level lúc nhận quà (để đếm 25 level thưởng nước)",
+      "where": "WelcomeBackGiftProgress"
+    },
+    {
+      "source": "code const",
+      "key": "WelcomeBackGiftProgress.ShouldGiveRewardIndex",
+      "type": "int",
+      "value": "51",
+      "meaning": "Bit 'con no mot mon qua chua trao'",
+      "where": "WelcomeBackGiftProgress"
+    },
+    {
+      "source": "code field",
+      "key": "WelcomeBackGiftProgress",
+      "type": "class",
+      "value": "value (long), lastActiveDate, offlineGiftDeservedDate, tier, startLevel, shouldGiveReward",
+      "meaning": "Toàn bộ trạng thái nén trong một số long",
+      "where": "WelcomeBackGiftProgress"
+    },
+    {
+      "source": "storage key",
+      "key": "WelcomeBackGiftProgress",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Trạng thái quà Welcome Back",
+      "where": "WelcomeBackGiftManager.Bind / SetStartLevel / SetGiftTier"
+    },
+    {
+      "source": "storage key",
+      "key": "WelcomeBackLastChurnPeriod",
+      "type": "int",
+      "value": "client",
+      "meaning": "Số ngày nghỉ của lần quay lại gần nhất (dùng cho analytics churned_period)",
+      "where": "WelcomeBackGiftManager.SetChurnPeriod / ResetGiftData"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse1 bit 45-46",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Progress của Reactivation Levels - được bật khi nhận quà Welcome Back",
+      "where": "ReactivationLevelsManager.WelcomeBackGiftReceived"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.WelcomeBackGiftManager",
+    "Royal.Player.Context.Data.Persistent.WelcomeBackGiftProgress"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

@@ -1,0 +1,260 @@
+{
+  "feature": "Profile",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "UserProfileProgress.MinDynamicAvatarBitLength",
+      "type": "int",
+      "value": "64",
+      "meaning": "Độ dài tối thiểu BitArray kho avatar động",
+      "where": "UserProfileProgress"
+    },
+    {
+      "source": "config class",
+      "key": "UserProfileProgress",
+      "type": "class",
+      "value": "int UnlockableIdStartValue, int DynamicIdStartValue, int WorldCupProfileSkinIdStartValue, long frameInventoryValue, long dynamicFrameInventoryValue, long dynamicStyledNameInventoryValue, long dynamicBadgeInventoryValue, BitArray dynamicAvatarInventoryValue, string dynamicAvatarInventoryStringValue, WorldCupProfileProgress worldCupProfileProgress",
+      "meaning": "Kho cosmetic: 4 bitmask long + 1 BitArray + tiến độ World Cup",
+      "where": "Player.Context.Data.Persistent.UserProfileProgress"
+    },
+    {
+      "source": "config class",
+      "key": "UserProfileSetting",
+      "type": "struct",
+      "value": "long facebookId, int selectedFrame, int selectedStyledName, int selectedAvatar, int selectedTheme, int selectedBadge",
+      "meaning": "Lựa chọn cosmetic hiện tại",
+      "where": "Royal.Player.Context.Units.UserProfileSetting"
+    },
+    {
+      "source": "config class",
+      "key": "UserProfileInfo",
+      "type": "struct",
+      "value": "long userId, string userName, string teamName, long teamId, int teamLogo, int level, int crown, long joinDate, int selectedAvatar, int selectedFrame, int selectedTheme, int selectedBadge, int selectedStyledName, long fbId, bool hasSpecialNameStyle, sbyte leagueTier, UserStatsRuntimeData stats",
+      "meaning": "Hồ sơ đầy đủ (dùng khi xem người khác)",
+      "where": "Sections.Home.UserProfile.UserProfileInfo"
+    },
+    {
+      "source": "config class",
+      "key": "ProfileSkinBundleConfig",
+      "type": "ScriptableObject",
+      "value": "List<ProfileSkinBundleInfo> avatarBundles, List<ProfileSkinFrameBundleInfo> frameBundles, List<ProfileSkinBundleInfo> themeBundles",
+      "meaning": "Cosmetic cố định trong APK (asset 'ProfileSkinBundles')",
+      "where": "ProfileSkins.BundleScripts.ProfileSkinBundleConfig"
+    },
+    {
+      "source": "config class",
+      "key": "ProfileSkinBundleInfo",
+      "type": "class",
+      "value": "int id, uint androidCrc, uint iosCrc",
+      "meaning": "Một bundle cosmetic với CRC theo nền tảng",
+      "where": "ProfileSkins.BundleScripts.ProfileSkinBundleInfo"
+    },
+    {
+      "source": "config class",
+      "key": "DynamicProfileSkinBundlesConfig",
+      "type": "class",
+      "value": "ProfileSkinAvatarBundleInfo[] avatarBundles, ProfileSkinFrameBundleInfo[] frameBundles, ProfileSkinStyledNameBundleInfo[] styledNameBundles, ProfileSkinBadgeBundleInfo[] badgeBundles, ProfileSkinBadge3DBundleInfo[] badge3DBundles, ProfileSkinFrameBundleInfo[] worldCupFrameBundles, ProfileSkinStyledNameBundleInfo[] worldCupStyledNameBundles, ProfileSkinBadgeBundleInfo[] worldCupBadgeBundles, ProfileSkinBadge3DBundleInfo[] worldCupBadge3DBundles",
+      "meaning": "9 mảng cosmetic động tải từ CDN",
+      "where": "ProfileSkins.BundleScripts.DynamicProfileSkinBundlesConfig"
+    },
+    {
+      "source": "code const",
+      "key": "ProfileSkinBundleManager.ConfigPath",
+      "type": "string",
+      "value": "https://contents.prod.rylmtch.com/dynamic-content-config/dynamic-content-config.json",
+      "meaning": "URL cấu hình cosmetic động",
+      "where": "ProfileSkinBundleManager"
+    },
+    {
+      "source": "code const",
+      "key": "ProfileSkinBundleManager.MaxDownloadTry / MaxDownloadRetryCount",
+      "type": "int",
+      "value": "3 / 10",
+      "meaning": "Số lần thử tải bundle / thử gọi lại config",
+      "where": "ProfileSkinBundleManager"
+    },
+    {
+      "source": "code const",
+      "key": "ProfileSkinBundleManager - bo dem",
+      "type": "int",
+      "value": "AvatarCount, DynamicAvatarCount, DefaultFrameCount, UnlockableFrameCount, DynamicFrameCount, DynamicStyledNameCount, ThemeCount, BadgeCount, Badge3DCount",
+      "meaning": "9 bộ đếm số lượng từng loại cosmetic (giá trị do config quyết định)",
+      "where": "ProfileSkinBundleManager"
+    },
+    {
+      "source": "code const",
+      "key": "initialAvatarsIndexes / initialFrameIndexes / initialThemeIndexes",
+      "type": "int[]",
+      "value": "-",
+      "meaning": "Cosmetic có sẵn từ đầu (không cần mở khóa)",
+      "where": "ProfileSkinBundleManager"
+    },
+    {
+      "source": "storage key",
+      "key": "UserProfileFrameInventory",
+      "type": "long (bitmask)",
+      "value": "-",
+      "meaning": "Kho khung cố định (Progress1)",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "UserProfileDynamicFrameInventory",
+      "type": "long (bitmask)",
+      "value": "-",
+      "meaning": "Kho khung động (Progress2)",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "StyledNameInventory",
+      "type": "long (bitmask)",
+      "value": "-",
+      "meaning": "Kho tên kiểu (Progress3)",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "UserProfileDynamicBadgeInventory",
+      "type": "long (bitmask)",
+      "value": "-",
+      "meaning": "Kho huy hiệu động (Progress4)",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "dynamicAvatarInventoryStringValue",
+      "type": "string (BitArray)",
+      "value": "-",
+      "meaning": "Kho avatar động (Progress5, >= 64 bit)",
+      "where": "UserProfileProgress"
+    },
+    {
+      "source": "storage key",
+      "key": "ProfileSettings",
+      "type": "string",
+      "value": "-",
+      "meaning": "Lựa chọn cosmetic hiện tại (UserProfileSetting)",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "ProfileSettingsSyncRequired",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Cờ báo cần đồng bộ cài đặt lên server",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "UnseenFrames / UnseenStyledNames / UnseenBadges",
+      "type": "List<int>",
+      "value": "-",
+      "meaning": "Cosmetic mới chưa xem (chấm đỏ)",
+      "where": "KeyValue"
+    },
+    {
+      "source": "storage key",
+      "key": "DynamicFrameBundle / DynamicFrameBundleETag",
+      "type": "string",
+      "value": "-",
+      "meaning": "Cache cấu hình cosmetic động + ETag",
+      "where": "KeyValue"
+    },
+    {
+      "source": "server info",
+      "key": "ProfileSetting",
+      "type": "FlatBuffers Table",
+      "value": "server",
+      "meaning": "Cài đặt hồ sơ từ server (UpdateProfileSettingsFromBackend)",
+      "where": "Protocol"
+    },
+    {
+      "source": "server info",
+      "key": "SpecialChatProfile",
+      "type": "FlatBuffers Offset",
+      "value": "-",
+      "meaning": "Gói tin hồ sơ đặc biệt gửi kèm tin nhắn chat (chỉ khi có Royal Pass)",
+      "where": "UserProfileManager.CreateSpecialChatProfile"
+    },
+    {
+      "source": "asset",
+      "key": "FeatureBundleType",
+      "type": "enum",
+      "value": "UserProfileScene=103, UserProfileEdit=104, BadgeInspect=170, TeamLogoHiResBundle=172",
+      "meaning": "Bundle của màn hồ sơ",
+      "where": "FeatureBundleType"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle profile skin",
+      "type": "string",
+      "value": "AssetBundles/ProfileSkin/: avatar_<id>, frame_<id>, styled_name_<id>, profiletheme_<id>_v<n>",
+      "meaning": "Đường dẫn bundle cosmetic (xem FeatureBundleManager.DeleteCurrentDevProfileSkinBundles)",
+      "where": "FeatureBundleManager"
+    },
+    {
+      "source": "code const",
+      "key": "GetVisualConfig format",
+      "type": "string",
+      "value": "{0},{1}, {2}, {3}",
+      "meaning": "Chuỗi 4 id cosmetic gửi kèm gói tin xã hội (frame, avatar, styledName, badge)",
+      "where": "UserProfileManager.GetVisualConfig"
+    },
+    {
+      "key": "IAP StoredProducts (VND) thật",
+      "type": "array",
+      "value": "157 sản phẩm, currency=VND, giá 25.000 → 2.999.000 đ (region Hanoi/VN). Gồm single.*, bundle.*, egooffer.* (4: egooffer.1=29.000, .2=49.000, .7=199.000, .9=214.000), weeklypass.* (2: .5=149.000, .8=249.000), extremelyhardleveloffer.* (2: .1=29.000, .3=99.000)",
+      "meaning": "Bảng giá IAP THẬT theo VND",
+      "where": "server_configs/App_StoredProducts_VND.json",
+      "source": "server info (runtime LDPlayer 2026-09-09)"
+    },
+    {
+      "key": "Cosmetic động (dynamic-content-config.json) — số lượng THẬT",
+      "type": "object",
+      "value": "frameBundles=36, badgeBundles=30, badge3DBundles=30, styledNameBundles=21, avatarBundles=1; worldCupFrameBundles=1, worldCupBadgeBundles=1, worldCupBadge3DBundles=1, worldCupStyledNameBundles=1 (mỗi bundle có androidCrc/iosCrc)",
+      "meaning": "Số bundle từng loại cosmetic động trên CDN — lấp gap dynamic-content-config",
+      "where": "cdn_configs/dynamic-content-config.json (== App_DynamicFrameBundle.json)",
+      "source": "server info (runtime LDPlayer 2026-09-09)"
+    },
+    {
+      "key": "Season bundles thật (mùa SCC hiện tại)",
+      "type": "object",
+      "value": "Season 15: 16 set bundle (season15set1..16), season15seticon, season15chat, season15localization, season15dialogs, season15section",
+      "meaning": "Bundle nội dung/cosmetic của mùa thẻ 15 (badge mùa gắn vào hồ sơ)",
+      "where": "server_configs/Mem_SeasonInfo_bundles.json",
+      "source": "server info (runtime LDPlayer 2026-09-09)"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "CDN profile-skin bundles (đã tải & bóc)",
+      "type": "object",
+      "value": "avatar_4000 (1); frame_4000..4035 (36); badge_4000..4029 (2D, 30); badge3d_4000..4029 (3D, 30); styled_name_4000..4020 (21); World Cup: frame_100000 + badge_100000 + badge3d_100000 (1 mỗi loại). Tổng 121 bundle profile-skin (~93 MB). Path: https://contents.prod.rylmtch.com/asset-bundles/profile-skin/android/<prefix>_<id>. worldCupStyledName có trong config nhưng KHÔNG có trên CDN (0 bundle tải)",
+      "meaning": "Kiểm kê THẬT cosmetic động trên CDN — khớp số lượng trong dynamic-content-config.json (frame36/badge30/badge3D30/styledName21/avatar1 + World Cup)",
+      "where": "cdn_bundles/_manifest.json (category profile-skin); facts/runtime/cdn-bundles-inventory.md"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "Tiền tố bundle CDN & phân vùng id cosmetic (thật)",
+      "type": "object",
+      "value": "Prefix CDN thật: avatar_, frame_, badge_ (2D), badge3d_ (3D), styled_name_. Id cosmetic ĐỘNG bắt đầu ở 4000 → DynamicIdStartValue ≈ 4000; id World Cup = 100000 → WorldCupProfileSkinIdStartValue = 100000. Khớp reward config 'avatar 4000 SAS', 'khung 100000 SFS'",
+      "meaning": "Lấp gap mốc phân vùng id (trước chỉ biết là field runtime): dynamic ≈ 4000, World Cup = 100000. UnlockableIdStartValue (mốc tĩnh↔unlockable) vẫn chưa đọc được",
+      "where": "cdn_bundles/_manifest.json (url .../profile-skin/android/frame_4000 ... frame_100000)"
+    },
+    {
+      "source": "runtime LDPlayer 2026-09-10 (server/enter/cdn/play-capture)",
+      "key": "Nội dung bundle cosmetic (đã bóc)",
+      "type": "object",
+      "value": "Spine SkeletonData/Atlas + ParticleSystem (cosmetic động), KHÔNG có config số. avatar_4000 = Spine 'Invite_SkeletonData'/'Invite_Atlas', MonoBehaviour có field avatarId + spineMeshRenderers → chính là avatar thưởng Invite Friends (id 4000). badge3d_* có badgeInspectInteractionComponent + perspectiveCamera + rotationVector(0.5,0,0) → huy hiệu 3D xoay để inspect",
+      "meaning": "Xác nhận bundle cosmetic chỉ chứa ART/animation, không phải config gameplay; nối được avatar 4000 ↔ phần thưởng Invite Friends",
+      "where": "cdn_bundles/_extracted/_index.json; _extracted/avatarBundles/avatarBundles_4000/*; _extracted/badge3DBundles/*/MB_0.json"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.UserProfileManager",
+    "Royal.Scenes.Home.Ui.Sections.Home.UserProfile.ProfileSkins.BundleScripts.ProfileSkinBundleManager",
+    "Royal.Player.Context.Data.Persistent.UserProfileProgress",
+    "Royal.Player.Context.Units.UserProfileSetting"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

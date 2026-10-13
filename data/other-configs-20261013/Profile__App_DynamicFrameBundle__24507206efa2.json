@@ -1,0 +1,752 @@
+{
+  "badge3DBundles": [
+    {
+      "id": 4000,
+      "androidCrc": 3252310068,
+      "iosCrc": 928638011,
+      "badgeType": 1
+    },
+    {
+      "id": 4001,
+      "androidCrc": 125302782,
+      "iosCrc": 1533430791,
+      "badgeType": 1
+    },
+    {
+      "id": 4002,
+      "androidCrc": 1624897548,
+      "iosCrc": 1398437020,
+      "badgeType": 1
+    },
+    {
+      "id": 4003,
+      "androidCrc": 3754605314,
+      "iosCrc": 1543815032,
+      "badgeType": 1
+    },
+    {
+      "id": 4004,
+      "androidCrc": 312780755,
+      "iosCrc": 3689113488,
+      "badgeType": 1
+    },
+    {
+      "id": 4005,
+      "androidCrc": 3939176367,
+      "iosCrc": 2282967948,
+      "badgeType": 1
+    },
+    {
+      "id": 4006,
+      "androidCrc": 558357942,
+      "iosCrc": 3630321853,
+      "badgeType": 1
+    },
+    {
+      "id": 4007,
+      "androidCrc": 2549291336,
+      "iosCrc": 1311053087,
+      "badgeType": 1
+    },
+    {
+      "id": 4008,
+      "androidCrc": 2638726350,
+      "iosCrc": 2293572509,
+      "badgeType": 1
+    },
+    {
+      "id": 4009,
+      "androidCrc": 3384690412,
+      "iosCrc": 2731093908,
+      "badgeType": 1
+    },
+    {
+      "id": 4010,
+      "androidCrc": 2332568862,
+      "iosCrc": 1163727739,
+      "badgeType": 1
+    },
+    {
+      "id": 4011,
+      "androidCrc": 703190809,
+      "iosCrc": 2574154755,
+      "badgeType": 1
+    },
+    {
+      "id": 4012,
+      "androidCrc": 3620318207,
+      "iosCrc": 199765190,
+      "badgeType": 1
+    },
+    {
+      "id": 4013,
+      "androidCrc": 3466025481,
+      "iosCrc": 450430254,
+      "badgeType": 1
+    },
+    {
+      "id": 4014,
+      "androidCrc": 2887172275,
+      "iosCrc": 1501814326,
+      "badgeType": 1
+    },
+    {
+      "id": 4015,
+      "androidCrc": 556866580,
+      "iosCrc": 2660586737,
+      "badgeType": 1
+    },
+    {
+      "id": 4016,
+      "androidCrc": 3395103697,
+      "iosCrc": 2820557400,
+      "badgeType": 1
+    },
+    {
+      "id": 4017,
+      "androidCrc": 3927489708,
+      "iosCrc": 2760888891,
+      "badgeType": 1
+    },
+    {
+      "id": 4018,
+      "androidCrc": 150931112,
+      "iosCrc": 2097118379,
+      "badgeType": 1
+    },
+    {
+      "id": 4019,
+      "androidCrc": 631288911,
+      "iosCrc": 862376093,
+      "badgeType": 1
+    },
+    {
+      "id": 4020,
+      "androidCrc": 465808286,
+      "iosCrc": 2713620659,
+      "badgeType": 1
+    },
+    {
+      "id": 4021,
+      "androidCrc": 1813983323,
+      "iosCrc": 3623625059,
+      "badgeType": 1
+    },
+    {
+      "id": 4022,
+      "androidCrc": 185337056,
+      "iosCrc": 592829094,
+      "badgeType": 1
+    },
+    {
+      "id": 4023,
+      "androidCrc": 1657266132,
+      "iosCrc": 4038687464,
+      "badgeType": 1
+    },
+    {
+      "id": 4024,
+      "androidCrc": 773392515,
+      "iosCrc": 4192922350,
+      "badgeType": 1
+    },
+    {
+      "id": 4025,
+      "androidCrc": 1420733067,
+      "iosCrc": 2919345742,
+      "badgeType": 1
+    },
+    {
+      "id": 4026,
+      "androidCrc": 2456367559,
+      "iosCrc": 8033519,
+      "badgeType": 1
+    },
+    {
+      "id": 4027,
+      "androidCrc": 4010331453,
+      "iosCrc": 1210211859,
+      "badgeType": 1
+    },
+    {
+      "id": 4028,
+      "androidCrc": 2588177157,
+      "iosCrc": 3502970751,
+      "badgeType": 1
+    },
+    {
+      "id": 4029,
+      "androidCrc": 1453054109,
+      "iosCrc": 943038368,
+      "badgeType": 1
+    }
+  ],
+  "badgeBundles": [
+    {
+      "id": 4000,
+      "androidCrc": 2113986559,
+      "iosCrc": 2793338142,
+      "badgeType": 1
+    },
+    {
+      "id": 4001,
+      "androidCrc": 2574814698,
+      "iosCrc": 897176711,
+      "badgeType": 1
+    },
+    {
+      "id": 4002,
+      "androidCrc": 3949675267,
+      "iosCrc": 3758130194,
+      "badgeType": 1
+    },
+    {
+      "id": 4003,
+      "androidCrc": 4207965706,
+      "iosCrc": 1972092612,
+      "badgeType": 1
+    },
+    {
+      "id": 4004,
+      "androidCrc": 660092658,
+      "iosCrc": 3079780978,
+      "badgeType": 1
+    },
+    {
+      "id": 4005,
+      "androidCrc": 1486197857,
+      "iosCrc": 3606513661,
+      "badgeType": 1
+    },
+    {
+      "id": 4006,
+      "androidCrc": 4212239555,
+      "iosCrc": 2566745718,
+      "badgeType": 1
+    },
+    {
+      "id": 4007,
+      "androidCrc": 3593610241,
+      "iosCrc": 311050907,
+      "badgeType": 1
+    },
+    {
+      "id": 4008,
+      "androidCrc": 1531626112,
+      "iosCrc": 1583706673,
+      "badgeType": 1
+    },
+    {
+      "id": 4009,
+      "androidCrc": 2153015803,
+      "iosCrc": 3073537317,
+      "badgeType": 1
+    },
+    {
+      "id": 4010,
+      "androidCrc": 507673540,
+      "iosCrc": 369769407,
+      "badgeType": 1
+    },
+    {
+      "id": 4011,
+      "androidCrc": 1509567320,
+      "iosCrc": 2277885233,
+      "badgeType": 1
+    },
+    {
+      "id": 4012,
+      "androidCrc": 195581461,
+      "iosCrc": 2508367429,
+      "badgeType": 1
+    },
+    {
+      "id": 4013,
+      "androidCrc": 3122465410,
+      "iosCrc": 891400456,
+      "badgeType": 1
+    },
+    {
+      "id": 4014,
+      "androidCrc": 121148558,
+      "iosCrc": 545331009,
+      "badgeType": 1
+    },
+    {
+      "id": 4015,
+      "androidCrc": 1180915761,
+      "iosCrc": 2369167293,
+      "badgeType": 1
+    },
+    {
+      "id": 4016,
+      "androidCrc": 1967713309,
+      "iosCrc": 2501907108,
+      "badgeType": 1
+    },
+    {
+      "id": 4017,
+      "androidCrc": 38481606,
+      "iosCrc": 1228464619,
+      "badgeType": 1
+    },
+    {
+      "id": 4018,
+      "androidCrc": 3434056111,
+      "iosCrc": 782026862,
+      "badgeType": 1
+    },
+    {
+      "id": 4019,
+      "androidCrc": 1894714159,
+      "iosCrc": 3731218284,
+      "badgeType": 1
+    },
+    {
+      "id": 4020,
+      "androidCrc": 3701609355,
+      "iosCrc": 517421891,
+      "badgeType": 1
+    },
+    {
+      "id": 4021,
+      "androidCrc": 3825373317,
+      "iosCrc": 3557998382,
+      "badgeType": 1
+    },
+    {
+      "id": 4022,
+      "androidCrc": 2007723909,
+      "iosCrc": 1449603428,
+      "badgeType": 1
+    },
+    {
+      "id": 4023,
+      "androidCrc": 4246643678,
+      "iosCrc": 1546921654,
+      "badgeType": 1
+    },
+    {
+      "id": 4024,
+      "androidCrc": 3535028453,
+      "iosCrc": 1937659953,
+      "badgeType": 1
+    },
+    {
+      "id": 4025,
+      "androidCrc": 1870727263,
+      "iosCrc": 95504965,
+      "badgeType": 1
+    },
+    {
+      "id": 4026,
+      "androidCrc": 1211348212,
+      "iosCrc": 1893157726,
+      "badgeType": 1
+    },
+    {
+      "id": 4027,
+      "androidCrc": 525729410,
+      "iosCrc": 2079614483,
+      "badgeType": 1
+    },
+    {
+      "id": 4028,
+      "androidCrc": 335827258,
+      "iosCrc": 3604459906,
+      "badgeType": 1
+    },
+    {
+      "id": 4029,
+      "androidCrc": 3550212283,
+      "iosCrc": 1434615916,
+      "badgeType": 1
+    }
+  ],
+  "frameBundles": [
+    {
+      "id": 4000,
+      "androidCrc": 4008827974,
+      "iosCrc": 1836361796,
+      "frameType": 2
+    },
+    {
+      "id": 4001,
+      "androidCrc": 286474071,
+      "iosCrc": 1350595147,
+      "frameType": 2
+    },
+    {
+      "id": 4002,
+      "androidCrc": 1445463805,
+      "iosCrc": 3403459403,
+      "frameType": 1
+    },
+    {
+      "id": 4003,
+      "androidCrc": 3610926042,
+      "iosCrc": 3189963163,
+      "frameType": 2
+    },
+    {
+      "id": 4004,
+      "androidCrc": 1220893264,
+      "iosCrc": 4256745135,
+      "frameType": 1
+    },
+    {
+      "id": 4005,
+      "androidCrc": 744409293,
+      "iosCrc": 1369708349,
+      "frameType": 2
+    },
+    {
+      "id": 4006,
+      "androidCrc": 1882073292,
+      "iosCrc": 2679269442,
+      "frameType": 2
+    },
+    {
+      "id": 4007,
+      "androidCrc": 280332026,
+      "iosCrc": 2217654823,
+      "frameType": 2
+    },
+    {
+      "id": 4008,
+      "androidCrc": 334043955,
+      "iosCrc": 2420101489,
+      "frameType": 2
+    },
+    {
+      "id": 4009,
+      "androidCrc": 3773909591,
+      "iosCrc": 2185334520,
+      "frameType": 2
+    },
+    {
+      "id": 4010,
+      "androidCrc": 1379554890,
+      "iosCrc": 2039673502,
+      "frameType": 2
+    },
+    {
+      "id": 4011,
+      "androidCrc": 3094970638,
+      "iosCrc": 3288313112,
+      "frameType": 2
+    },
+    {
+      "id": 4012,
+      "androidCrc": 325104246,
+      "iosCrc": 3132727715,
+      "frameType": 2
+    },
+    {
+      "id": 4013,
+      "androidCrc": 3689568048,
+      "iosCrc": 2983246721,
+      "frameType": 2
+    },
+    {
+      "id": 4014,
+      "androidCrc": 3025771729,
+      "iosCrc": 2006721581,
+      "frameType": 2
+    },
+    {
+      "id": 4015,
+      "androidCrc": 1446087981,
+      "iosCrc": 1607231014,
+      "frameType": 2
+    },
+    {
+      "id": 4016,
+      "androidCrc": 2796054037,
+      "iosCrc": 1747077513,
+      "frameType": 2
+    },
+    {
+      "id": 4017,
+      "androidCrc": 3915385887,
+      "iosCrc": 4184828832,
+      "frameType": 2
+    },
+    {
+      "id": 4018,
+      "androidCrc": 1824961496,
+      "iosCrc": 55969838,
+      "frameType": 2
+    },
+    {
+      "id": 4019,
+      "androidCrc": 2175717021,
+      "iosCrc": 1486231872,
+      "frameType": 2
+    },
+    {
+      "id": 4020,
+      "androidCrc": 2762927948,
+      "iosCrc": 720218681,
+      "frameType": 2
+    },
+    {
+      "id": 4021,
+      "androidCrc": 2090511711,
+      "iosCrc": 1384815853,
+      "frameType": 2
+    },
+    {
+      "id": 4022,
+      "androidCrc": 3367266045,
+      "iosCrc": 1075621748,
+      "frameType": 2
+    },
+    {
+      "id": 4023,
+      "androidCrc": 4231723951,
+      "iosCrc": 2249171503,
+      "frameType": 2
+    },
+    {
+      "id": 4024,
+      "androidCrc": 3089716620,
+      "iosCrc": 464456842,
+      "frameType": 2
+    },
+    {
+      "id": 4025,
+      "androidCrc": 487645997,
+      "iosCrc": 444896640,
+      "frameType": 2
+    },
+    {
+      "id": 4026,
+      "androidCrc": 282170326,
+      "iosCrc": 819407872,
+      "frameType": 2
+    },
+    {
+      "id": 4027,
+      "androidCrc": 1492017767,
+      "iosCrc": 3577124844,
+      "frameType": 2
+    },
+    {
+      "id": 4028,
+      "androidCrc": 1791710826,
+      "iosCrc": 4280824318,
+      "frameType": 2
+    },
+    {
+      "id": 4029,
+      "androidCrc": 1166435661,
+      "iosCrc": 242521621,
+      "frameType": 2
+    },
+    {
+      "id": 4030,
+      "androidCrc": 2206927947,
+      "iosCrc": 1641237775,
+      "frameType": 2
+    },
+    {
+      "id": 4031,
+      "androidCrc": 2085895473,
+      "iosCrc": 3715147960,
+      "frameType": 2
+    },
+    {
+      "id": 4032,
+      "androidCrc": 592712098,
+      "iosCrc": 2852687460,
+      "frameType": 2
+    },
+    {
+      "id": 4033,
+      "androidCrc": 1556419991,
+      "iosCrc": 458514201,
+      "frameType": 2
+    },
+    {
+      "id": 4034,
+      "androidCrc": 2600618518,
+      "iosCrc": 4122543560,
+      "frameType": 2
+    },
+    {
+      "id": 4035,
+      "androidCrc": 1253630827,
+      "iosCrc": 2591959385,
+      "frameType": 2
+    }
+  ],
+  "styledNameBundles": [
+    {
+      "id": 4000,
+      "androidCrc": 4081106351,
+      "iosCrc": 1511038322,
+      "styledNameType": 2
+    },
+    {
+      "id": 4001,
+      "androidCrc": 2881686287,
+      "iosCrc": 1625075042,
+      "styledNameType": 2
+    },
+    {
+      "id": 4002,
+      "androidCrc": 2231833176,
+      "iosCrc": 4196776973,
+      "styledNameType": 2
+    },
+    {
+      "id": 4003,
+      "androidCrc": 2917209547,
+      "iosCrc": 42232108,
+      "styledNameType": 2
+    },
+    {
+      "id": 4004,
+      "androidCrc": 987236883,
+      "iosCrc": 1178092223,
+      "styledNameType": 2
+    },
+    {
+      "id": 4005,
+      "androidCrc": 1312166398,
+      "iosCrc": 129511791,
+      "styledNameType": 2
+    },
+    {
+      "id": 4006,
+      "androidCrc": 3764903788,
+      "iosCrc": 2990834046,
+      "styledNameType": 2
+    },
+    {
+      "id": 4007,
+      "androidCrc": 592024635,
+      "iosCrc": 3446876580,
+      "styledNameType": 2
+    },
+    {
+      "id": 4008,
+      "androidCrc": 1243909924,
+      "iosCrc": 4170982505,
+      "styledNameType": 2
+    },
+    {
+      "id": 4009,
+      "androidCrc": 1095887172,
+      "iosCrc": 2877327799,
+      "styledNameType": 2
+    },
+    {
+      "id": 4010,
+      "androidCrc": 3622613458,
+      "iosCrc": 1549509640,
+      "styledNameType": 2
+    },
+    {
+      "id": 4011,
+      "androidCrc": 802652429,
+      "iosCrc": 3890612119,
+      "styledNameType": 2
+    },
+    {
+      "id": 4012,
+      "androidCrc": 1027189711,
+      "iosCrc": 1738093588,
+      "styledNameType": 2
+    },
+    {
+      "id": 4013,
+      "androidCrc": 1182647680,
+      "iosCrc": 3391029416,
+      "styledNameType": 2
+    },
+    {
+      "id": 4014,
+      "androidCrc": 3145003363,
+      "iosCrc": 916548938,
+      "styledNameType": 2
+    },
+    {
+      "id": 4015,
+      "androidCrc": 604503970,
+      "iosCrc": 3185576555,
+      "styledNameType": 2
+    },
+    {
+      "id": 4016,
+      "androidCrc": 1690900571,
+      "iosCrc": 3456910894,
+      "styledNameType": 2
+    },
+    {
+      "id": 4017,
+      "androidCrc": 2387183540,
+      "iosCrc": 1211640105,
+      "styledNameType": 2
+    },
+    {
+      "id": 4018,
+      "androidCrc": 1545526759,
+      "iosCrc": 1491447635,
+      "styledNameType": 2
+    },
+    {
+      "id": 4019,
+      "androidCrc": 1700298209,
+      "iosCrc": 1751612459,
+      "styledNameType": 2
+    },
+    {
+      "id": 4020,
+      "androidCrc": 1465438625,
+      "iosCrc": 2057940121,
+      "styledNameType": 2
+    }
+  ],
+  "worldCupFrameBundles": [
+    {
+      "id": 100000,
+      "androidCrc": 743524874,
+      "iosCrc": 3121921706,
+      "worldCupFrameType": 5
+    }
+  ],
+  "worldCupBadgeBundles": [
+    {
+      "id": 100000,
+      "androidCrc": 1860600269,
+      "iosCrc": 2134195995,
+      "worldCupBadgeType": 2
+    }
+  ],
+  "worldCupBadge3DBundles": [
+    {
+      "id": 100000,
+      "androidCrc": 179668401,
+      "iosCrc": 4154181518,
+      "worldCupBadgeType": 2
+    }
+  ],
+  "worldCupStyledNameBundles": [
+    {
+      "id": 100000,
+      "androidCrc": 617324743,
+      "iosCrc": 2671268096,
+      "worldCupNameStyleType": 3
+    }
+  ],
+  "avatarBundles": [
+    {
+      "id": 4000,
+      "androidCrc": 235124888,
+      "iosCrc": 2767094220,
+      "avatarType": 1
+    }
+  ]
+}

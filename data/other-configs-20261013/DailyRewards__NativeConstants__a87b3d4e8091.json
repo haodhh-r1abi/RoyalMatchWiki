@@ -1,0 +1,250 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.DailyRewardsManager",
+      "field": "EventInitial",
+      "type": "string",
+      "value_expression": "\"DR\"",
+      "dump_line": 402410
+    },
+    {
+      "manager": "Royal.Player.Context.Units.DailyRewardsManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "21",
+      "dump_line": 402411
+    },
+    {
+      "manager": "Royal.Player.Context.Units.DailyRewardsManager",
+      "field": "DayInMs",
+      "type": "long",
+      "value_expression": "86400000",
+      "dump_line": 402412
+    },
+    {
+      "manager": "Royal.Player.Context.Units.DailyRewardsManager",
+      "field": "DailyBoundaryOffsetInMs",
+      "type": "long",
+      "value_expression": "28800000",
+      "dump_line": 402413
+    },
+    {
+      "manager": "Royal.Player.Context.Units.DailyRewardsManager",
+      "field": "TimeManipulationBufferInMs",
+      "type": "long",
+      "value_expression": "900000",
+      "dump_line": 402414
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsConfigHelper",
+      "field": "WeeklyOverrideStepGroupMultiplier",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 205960
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsConfigHelper",
+      "field": "MonthlyOverrideStepBase",
+      "type": "int",
+      "value_expression": "1000",
+      "dump_line": 205961
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "ServerEventIdKey",
+      "type": "string",
+      "value_expression": "\"ServerEventId\"",
+      "dump_line": 206472
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "ServerEventConfigKey",
+      "type": "string",
+      "value_expression": "\"ServerEventConfig\"",
+      "dump_line": 206473
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "ServerEventConfigVersionKey",
+      "type": "string",
+      "value_expression": "\"ServerEventConfigVersion\"",
+      "dump_line": 206474
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "UserEventConfigKey",
+      "type": "string",
+      "value_expression": "\"UserEventConfig\"",
+      "dump_line": 206475
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "UserEventConfigVersionKey",
+      "type": "string",
+      "value_expression": "\"UserEventConfigVersion\"",
+      "dump_line": 206476
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "WeeklyReminderPendingFireTimeKey",
+      "type": "string",
+      "value_expression": "\"WeeklyReminderPendingFireTime\"",
+      "dump_line": 206477
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "WeeklyReminderLastShownTimeKey",
+      "type": "string",
+      "value_expression": "\"WeeklyReminderLastShownTime\"",
+      "dump_line": 206478
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "StreakReminderPendingFireTimeKey",
+      "type": "string",
+      "value_expression": "\"StreakReminderPendingFireTime\"",
+      "dump_line": 206479
+    },
+    {
+      "manager": "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+      "field": "StreakReminderShownAtStreakKey",
+      "type": "string",
+      "value_expression": "\"StreakReminderShownAtStreak\"",
+      "dump_line": 206480
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "MaxWeeklyStreak",
+      "type": "int",
+      "value_expression": "7",
+      "dump_line": 429370
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "MaxMonthlyStreak",
+      "type": "int",
+      "value_expression": "30",
+      "dump_line": 429371
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "LastClaimServerDayMaxValue",
+      "type": "int",
+      "value_expression": "32767",
+      "dump_line": 429372
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "BitArrayLength",
+      "type": "int",
+      "value_expression": "55",
+      "dump_line": 429373
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "EventIdStart",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 429374
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "EventIdEnd",
+      "type": "int",
+      "value_expression": "11",
+      "dump_line": 429375
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "UserConfigVersionStart",
+      "type": "int",
+      "value_expression": "12",
+      "dump_line": 429376
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "UserConfigVersionEnd",
+      "type": "int",
+      "value_expression": "24",
+      "dump_line": 429377
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "WeeklyStreakStart",
+      "type": "int",
+      "value_expression": "25",
+      "dump_line": 429378
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "WeeklyStreakEnd",
+      "type": "int",
+      "value_expression": "27",
+      "dump_line": 429379
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "MonthlyStreakStart",
+      "type": "int",
+      "value_expression": "28",
+      "dump_line": 429380
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "MonthlyStreakEnd",
+      "type": "int",
+      "value_expression": "32",
+      "dump_line": 429381
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "LastClaimServerDayStart",
+      "type": "int",
+      "value_expression": "33",
+      "dump_line": 429382
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "LastClaimServerDayEnd",
+      "type": "int",
+      "value_expression": "47",
+      "dump_line": 429383
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "WeeklyRewardSetIndexStart",
+      "type": "int",
+      "value_expression": "48",
+      "dump_line": 429384
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "WeeklyRewardSetIndexEnd",
+      "type": "int",
+      "value_expression": "49",
+      "dump_line": 429385
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "IsTutorialSeenIndex",
+      "type": "int",
+      "value_expression": "50",
+      "dump_line": 429386
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "AbGroupStart",
+      "type": "int",
+      "value_expression": "51",
+      "dump_line": 429387
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.DailyRewardsProgress",
+      "field": "AbGroupEnd",
+      "type": "int",
+      "value_expression": "54",
+      "dump_line": 429388
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

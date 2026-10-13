@@ -1,0 +1,147 @@
+{
+  "feature": "ReactivationLevels",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "ReactivationLevelsManager.LevelPrefix",
+      "type": "string",
+      "value": "reactivation",
+      "meaning": "Tiền tố tên file dữ liệu level ('reactivation-' + N)",
+      "where": "ReactivationLevelsManager"
+    },
+    {
+      "source": "code const",
+      "key": "ReactivationLevelsManager.MinReactivationLevel",
+      "type": "int",
+      "value": "231",
+      "meaning": "Level tối thiểu để tính năng hoạt động (kiểm tra thực tế dùng 232 / 0xe8)",
+      "where": "ReactivationLevelsManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "ReactivationLevelsManager.ItemTutorialLevelCount",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số level ngay sau mốc bonus được phép thay bằng bản reactivation (kiểm tra index < 6)",
+      "where": "ReactivationLevelsManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "ReactivationLevelsUserData.SyncedDataCount",
+      "type": "int",
+      "value": "9",
+      "meaning": "Số số long (9 x 64 = 576 bit) đồng bộ trạng thái đã chơi",
+      "where": "ReactivationLevelsUserData"
+    },
+    {
+      "source": "json default",
+      "key": "Resources/reactivation_levels_config.json -> levelList",
+      "type": "int[90]",
+      "value": "[231, 232, 233, 234, 235, 261, 262, 263, 264, 265, 301, 302, 303, 351, 352, 353, 355, 401, 402, 405, 451, 501, 551, 601, 655, 751, 801, 851, 901, 1005, 1201, 1401, 1501, 1605, 1801, 2001, 2201, 2401, 2601, 2805, 3001, 3201, 3401, 3601, 3805, 4001, 4201, 4401, 4601, 4805, 5001, 5201, 5401, 5601, 5805, 6001, 6201, 6401, 6601, 6805, 7001, 7201, 7401, 7601, 7805, 8001, 8201, 8401, 8601, 8805, 9001, 9201, 9401, 9601, 9805, 10001, 10201, 10401, 10601, 10805, 11001, 11201, 11401, 11601, 11805, 12001, 12201, 12401, 12601, 12805]",
+      "meaning": "Danh sách 90 bản level reactivation có sẵn (file reactivation-N.bytes)",
+      "where": "Resources/reactivation_levels_config.json (client default, server có thể ghi đè)"
+    },
+    {
+      "source": "json default",
+      "key": "levelList - nhom level kho (tan cung 2/5/9)",
+      "type": "int[]",
+      "value": "232, 235, 265, 302, 352, 355, 402, 405, 655, 1005, 1605, 2805, 3805, 4805, 5805, 6805, 7805, 8805, 9805, 10805, 11805, 12805",
+      "meaning": "Các bản dành cho level Hard / Super Hard / Extremely Hard (IsHardLevel = true)",
+      "where": "suy từ ReactivationLevelsManager.IsHardLevel áp lên levelList"
+    },
+    {
+      "source": "json default",
+      "key": "levelList - phan bo theo doan",
+      "type": "mo ta",
+      "value": "231-235 và 261-265 (mỗi đoạn 5 bản liên tiếp), 301-303, 351-355, 401-405, rồi mỗi 50 level đến 901, sau đó mỗi 200 level từ 1201 đến 12805",
+      "meaning": "Mật độ bản reactivation dày ở giai đoạn đầu rồi thưa dần",
+      "where": "Resources/reactivation_levels_config.json"
+    },
+    {
+      "source": "code const",
+      "key": "IsHardLevel",
+      "type": "formula",
+      "value": "levelNo % 10 == 2 hoặc 5 hoặc 9",
+      "meaning": "Quy tắc nhận diện level khó - dùng chung với ExtremeLevelsManager",
+      "where": "ReactivationLevelsManager.IsHardLevel / IsReactivationHardLevel"
+    },
+    {
+      "source": "code const",
+      "key": "IsBonusLevel",
+      "type": "formula",
+      "value": "levelNo == 230 hoặc 260; từ 300 trở đi: chia hết cho 50 (đến 1000) hoặc 100 (trên 1000)",
+      "meaning": "Mốc bonus level - reactivation chỉ áp dụng trong 5-6 level ngay sau mốc này",
+      "where": "ReactivationLevelsManager.IsBonusLevel"
+    },
+    {
+      "source": "code const",
+      "key": "IsItemTutorialLevel",
+      "type": "formula",
+      "value": "level < 260: index = level - 230; 260-299: index = level - 260; từ 300: level mod (50 nếu <= 1000, 100 nếu 1001-2000, 200 nếu > 2000); trả true khi index < 6",
+      "meaning": "Vùng level được phép thay bằng bản reactivation",
+      "where": "ReactivationLevelsManager.IsItemTutorialLevel"
+    },
+    {
+      "source": "code field",
+      "key": "ReactivationLevelsConfig",
+      "type": "class",
+      "value": "levelList (int[])",
+      "meaning": "Cấu trúc file config",
+      "where": "Royal.Player.Context.Units.ReactivationLevelsConfig"
+    },
+    {
+      "source": "code field",
+      "key": "ReactivationLevelsUserData",
+      "type": "class",
+      "value": "PlayedReactivationLevelData (long[9]), ReactivationLevelCount (int)",
+      "meaning": "Trạng thái đã chơi của từng bản reactivation",
+      "where": "Royal.Player.Context.Units.ReactivationLevelsUserData"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse1 bit 45-46",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Progress của chế độ reactivation (0 = tắt, >= 1 = đang bật)",
+      "where": "ReactivationLevelsManager.get_Progress / set_Progress"
+    },
+    {
+      "source": "storage key",
+      "key": "ReactivationLevelsUserData",
+      "type": "string/long[]",
+      "value": "client + server",
+      "meaning": "Bit đánh dấu từng bản đã dùng",
+      "where": "ReactivationLevelsUserData.SaveLocalData / InitReactivationData"
+    },
+    {
+      "source": "server info",
+      "key": "GameplayGenericBackendSyncHandler.GetReactivationLevelProgress / SetReactivationReferenceLevelIndex",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Tiến độ và điểm mốc của đợt reactivation",
+      "where": "ReactivationLevelsManager.ShouldUseReactivationLevel / StartReactivationProgress"
+    },
+    {
+      "source": "asset",
+      "key": "File du lieu",
+      "type": "string",
+      "value": "'reactivation-' + N (TextAsset trong Resources) hoặc bản tương ứng từ RemoteLevels",
+      "meaning": "Dữ liệu FlatBuffers của bản level dễ hơn",
+      "where": "ReactivationLevelsManager.SelectReactivationLevel"
+    },
+    {
+      "source": "asset",
+      "key": "Ten file config",
+      "type": "string",
+      "value": "reactivation_levels_config",
+      "meaning": "Tên TextAsset chứa danh sách level",
+      "where": "ReactivationLevelsManager.Bind"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.ReactivationLevelsManager",
+    "Royal.Player.Context.Units.ReactivationLevelsUserData",
+    "Royal.Player.Context.Units.ReactivationLevelsConfig"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

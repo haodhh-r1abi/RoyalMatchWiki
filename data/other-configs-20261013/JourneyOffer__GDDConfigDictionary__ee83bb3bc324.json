@@ -1,0 +1,268 @@
+{
+  "feature": "JourneyOffer",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "JourneyOfferManager.UnlockLevel",
+      "type": "int",
+      "value": "100",
+      "meaning": "Level mở Journey Offer",
+      "where": "JourneyOfferManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferManager.PurchaseJourneyOfferIconPriority",
+      "type": "int",
+      "value": "35",
+      "meaning": "Mức ưu tiên của icon trên Home",
+      "where": "JourneyOfferManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferManager.NewEventDialogSeenLimit",
+      "type": "int",
+      "value": "3",
+      "meaning": "Số lần tối đa hiện dialog giới thiệu event mới",
+      "where": "JourneyOfferManager (client default)"
+    },
+    {
+      "source": "code field",
+      "key": "JourneyOfferConfig",
+      "type": "class",
+      "value": "v (version), dp (discount percentage), segment, offerPriorityHomescene, offerPriorityShop, offerPriorityFavor, steps (JourneyOfferStep[])",
+      "meaning": "Cấu hình một đợt Journey Offer",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.JourneyOffer.Scripts.JourneyOfferConfig"
+    },
+    {
+      "source": "code field",
+      "key": "JourneyOfferStep",
+      "type": "class",
+      "value": "s (số bước), t (ngưỡng điểm cần đạt), r (JourneyOfferReward)",
+      "meaning": "Một mốc thưởng trên thang tiến độ",
+      "where": "JourneyOfferStep"
+    },
+    {
+      "source": "code field",
+      "key": "JourneyOfferReward",
+      "type": "class",
+      "value": "t (mã phần thưởng dạng chuỗi), a (số lượng)",
+      "meaning": "Phần thưởng của một mốc - dùng chung bảng 42 mã reward",
+      "where": "JourneyOfferReward"
+    },
+    {
+      "source": "code field",
+      "key": "JourneyOfferRowRewardConfig",
+      "type": "struct",
+      "value": "position (Vector3), scale (Vector3), rewardType (RewardType)",
+      "meaning": "Vị trí và tỷ lệ của phần thưởng trên một dòng",
+      "where": "JourneyOfferRowRewardConfig"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.EventIdStartIndex / EventIdEndIndex",
+      "type": "int",
+      "value": "0 / 14",
+      "meaning": "15 bit lưu eventId",
+      "where": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.SegmentStartIndex / SegmentEndIndex",
+      "type": "int",
+      "value": "15 / 17",
+      "meaning": "3 bit lưu segment (8 nhóm)",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.LevelScoreStartIndex / LevelScoreEndIndex",
+      "type": "int",
+      "value": "18 / 26",
+      "meaning": "9 bit lưu điểm tiến độ (tối đa MaxLevelScore = 511)",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.IsTutorialSeenIndex",
+      "type": "int",
+      "value": "27",
+      "meaning": "Bit đã xem tutorial",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.IsBoughtIndex",
+      "type": "int",
+      "value": "28",
+      "meaning": "Bit đã mua gói Journey Offer",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.IsEventValidIndex",
+      "type": "int",
+      "value": "29",
+      "meaning": "Bit event còn hợp lệ",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.ShouldShowDialogLastTimeIndex",
+      "type": "int",
+      "value": "30",
+      "meaning": "Bit còn nợ người chơi một lần xem kết quả cuối",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.DialogSeenAtLeastOnceIndex",
+      "type": "int",
+      "value": "31",
+      "meaning": "Bit đã từng mở dialog",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.AbGroupStartIndex / AbGroupEndIndex",
+      "type": "int",
+      "value": "32 / 34",
+      "meaning": "3 bit nhóm AB phiên bản 1",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.NewEventDialogSeenCountStartIndex / EndIndex",
+      "type": "int",
+      "value": "35 / 36",
+      "meaning": "2 bit đếm số lần đã hiện dialog giới thiệu (MaxNewEventDialogSeenCount)",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.AbV2GroupStartIndex / AbV2GroupEndIndex",
+      "type": "int",
+      "value": "37 / 39",
+      "meaning": "3 bit nhóm AB phiên bản 2",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferProgress.ClaimStatusStartIndex / ClaimStatusEndIndex",
+      "type": "int",
+      "value": "53 / 62",
+      "meaning": "10 bit trạng thái đã nhận của từng mốc - tối đa 10 mốc / đợt",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code field",
+      "key": "JourneyOfferProgress.MaxLevelScore / MaxNewEventDialogSeenCount",
+      "type": "int",
+      "value": "giới hạn của hai dải bit trên (511 và 3)",
+      "meaning": "Trần của điểm và bộ đếm dialog",
+      "where": "JourneyOfferProgress"
+    },
+    {
+      "source": "code const",
+      "key": "JourneyOfferData khoa luu",
+      "type": "string",
+      "value": "ServerEventId, ServerEventEndDate, ServerEventConfig, ServerEventConfigVersion, UserEventConfig, UserEventConfigVersion, LastScoreKey",
+      "meaning": "Bảy khóa lưu cấu hình server và cấu hình riêng người chơi",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.JourneyOffer.Scripts.JourneyOfferData"
+    },
+    {
+      "source": "code const",
+      "key": "Nhom product IAP",
+      "type": "string",
+      "value": "progressoffer.1 (0.99), progressoffer.5 (4.99), progressoffer.15 (14.99), progressoffer.25 (24.99), progressoffer.50 (49.99), progressoffer.100 (99.99 USD)",
+      "meaning": "6 mức giá của Journey Offer",
+      "where": "PurchaseHelper.get_JourneyOffer1ProductId .. get_JourneyOffer100ProductId; appendix/iap-products.md"
+    },
+    {
+      "source": "code field",
+      "key": "APricingStrategy.journeyOffer1/5/15/25/50/100Config",
+      "type": "ShopPackageConfig",
+      "value": "config theo chiến lược giá (title localization 'JourneyOffer')",
+      "meaning": "Nội dung 6 gói",
+      "where": "APricingStrategy; DefaultPricingStrategy.get_JourneyOffer1 .. get_JourneyOffer100"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle Journey Offer",
+      "type": "string",
+      "value": "GroupName 'journey_offer'; bundle con: journey_offer_dialog_v2 (JourneyOfferDialog), journey_offer_icon (JourneyOfferIconBundledPrefab), journey_offer_shop (JourneyOfferShopMenuPackage), journey_offer_favor_v3 (JourneyOfferFavorView); sfx jo_bar_complete_sfx",
+      "meaning": "Asset của tính năng",
+      "where": "JourneyOfferBundleGroupInfo"
+    },
+    {
+      "source": "code const",
+      "key": "GetRewardViewPrefabName - bac coin",
+      "type": "string",
+      "value": "'BarReward' + RewardType; riêng Coins: < 1000 -> '100', 1000-4999 -> '1000', 5000-9999 -> '5000', >= 10000 -> '10000'",
+      "meaning": "Chọn icon coin theo số lượng",
+      "where": "JourneyOfferManager.GetRewardViewPrefabName"
+    },
+    {
+      "source": "code const",
+      "key": "MinMilliSecondsToJoinEvent",
+      "type": "long",
+      "value": "(hằng số trong client, không đọc được giá trị)",
+      "meaning": "Thời gian còn lại tối thiểu để được tham gia event",
+      "where": "JourneyOfferManager.get_MinMilliSecondsToJoinEvent"
+    },
+    {
+      "source": "storage key",
+      "key": "JourneyOfferProgress",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Toàn bộ trạng thái nén trong 63 bit",
+      "where": "JourneyOfferManager.IncrementScore / UpdateProgress"
+    },
+    {
+      "source": "storage key",
+      "key": "ServerEventId / ServerEventEndDate / ServerEventConfig / ServerEventConfigVersion",
+      "type": "int/long/string",
+      "value": "server override",
+      "meaning": "Cấu hình chung của đợt event",
+      "where": "JourneyOfferData"
+    },
+    {
+      "source": "storage key",
+      "key": "UserEventConfig / UserEventConfigVersion",
+      "type": "string/int",
+      "value": "server override",
+      "meaning": "Cấu hình riêng theo segment của người chơi",
+      "where": "JourneyOfferData; JourneyOfferManager.UpdateUserEventInfo"
+    },
+    {
+      "source": "storage key",
+      "key": "LastScoreKey",
+      "type": "int",
+      "value": "client",
+      "meaning": "Điểm lần cuối người chơi nhìn thấy (để chạy animation tăng điểm)",
+      "where": "JourneyOfferData; JourneyOfferManager.CacheLastSeenScoreData"
+    },
+    {
+      "source": "server info",
+      "key": "JourneyOfferInfo / JourneyOfferUserConfigInfo / GetJourneyOfferInfoResponse",
+      "type": "protocol",
+      "value": "server",
+      "meaning": "Gói tin mang cấu hình chung và cấu hình riêng",
+      "where": "Royal.Infrastructure.Services.Backend.Protocol"
+    },
+    {
+      "source": "server info",
+      "key": "IsDisabledByBackend",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Backend tắt tính năng",
+      "where": "JourneyOfferManager.get_IsDisabledByBackend"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.JourneyOfferManager",
+    "Royal.Scenes.Home.Ui.Dialogs.JourneyOffer.Scripts.JourneyOfferConfig",
+    "Royal.Scenes.Home.Ui.Dialogs.JourneyOffer.Scripts.JourneyOfferConfigHelper",
+    "Royal.Player.Context.Data.Persistent.JourneyOfferProgress"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

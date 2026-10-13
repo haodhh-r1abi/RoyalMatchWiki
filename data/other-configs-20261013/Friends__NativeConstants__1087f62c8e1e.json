@@ -1,0 +1,54 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.FriendsManager",
+      "field": "SuggestionTutorialLevel",
+      "type": "int",
+      "value_expression": "44",
+      "dump_line": 404853
+    },
+    {
+      "manager": "Royal.Player.Context.Units.FriendsManager",
+      "field": "SuggestedFriendViewLimit",
+      "type": "int",
+      "value_expression": "10",
+      "dump_line": 404854
+    },
+    {
+      "manager": "Royal.Player.Context.Units.FriendsManager",
+      "field": "FetchFriendTimeThresholdInMs",
+      "type": "int",
+      "value_expression": "300000",
+      "dump_line": 404855
+    },
+    {
+      "manager": "Royal.Player.Context.Units.FriendsManager",
+      "field": "FetchPendingRequestsTimeThresholdInMs",
+      "type": "int",
+      "value_expression": "180000",
+      "dump_line": 404856
+    },
+    {
+      "manager": "Royal.Player.Context.Units.FriendsManager",
+      "field": "FetchFriendSuggestionTimeThresholdInMs",
+      "type": "int",
+      "value_expression": "86400000",
+      "dump_line": 404857
+    },
+    {
+      "manager": "Royal.Player.Context.Units.FriendsManager",
+      "field": "MaxFriendsLimit",
+      "type": "int",
+      "value_expression": "300",
+      "dump_line": 404858
+    },
+    {
+      "manager": "Royal.Player.Context.Units.FriendsManager",
+      "field": "ServerDiffTimeOffsetMs",
+      "type": "long",
+      "value_expression": "60000",
+      "dump_line": 404880
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

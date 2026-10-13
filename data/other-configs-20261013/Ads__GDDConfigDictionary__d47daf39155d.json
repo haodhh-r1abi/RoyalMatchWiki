@@ -1,0 +1,301 @@
+{
+  "feature": "Ads",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "ReminderMaxCount",
+      "type": "int",
+      "value": "10",
+      "meaning": "Số lần tối đa nhắc mua gói No-Ads",
+      "where": "AdManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "ReminderCooldown",
+      "type": "long",
+      "value": "86400000 (24 giờ)",
+      "meaning": "Khoảng cách giữa 2 lần nhắc",
+      "where": "AdManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "RewardedAdForCoinMultiplier",
+      "type": "int",
+      "value": "5",
+      "meaning": "Hệ số nhân coin khi xem quảng cáo (phần cộng thêm = ×4)",
+      "where": "AdManager (const); AdManager.TryShowForCoin"
+    },
+    {
+      "source": "code const",
+      "key": "OptimizedAdRenderFrameInterval",
+      "type": "int",
+      "value": "8",
+      "meaning": "Giãn khung hình render khi quảng cáo hiển thị (tiết kiệm CPU)",
+      "where": "AdManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "AdUnitType",
+      "type": "enum",
+      "value": "Interstitial = 1, Rewarded = 2",
+      "meaning": "Hai loại đơn vị quảng cáo",
+      "where": "AdUnitType"
+    },
+    {
+      "source": "code const",
+      "key": "AdOrigin",
+      "type": "enum",
+      "value": "LevelWin = 1, LevelFail = 2, LevelQuit = 3, CoinReward = 4, LifeReward = 5, EgoReward = 6",
+      "meaning": "6 vị trí đặt quảng cáo (placement)",
+      "where": "AdOrigin"
+    },
+    {
+      "source": "code const",
+      "key": "AdRewardType",
+      "type": "enum",
+      "value": "None = 0, Life = 1, Coin = 2, Ego = 3",
+      "meaning": "3 loại thưởng của quảng cáo có thưởng",
+      "where": "AdRewardType"
+    },
+    {
+      "source": "code const",
+      "key": "AdStartState",
+      "type": "enum",
+      "value": "Success = 1, NotReady = 2, LessThan1Min = 3, SDKnotInitialized = 4",
+      "meaning": "Trạng thái khi cố hiển thị quảng cáo",
+      "where": "AdStartState"
+    },
+    {
+      "source": "code const",
+      "key": "AdEndState",
+      "type": "enum",
+      "value": "Completed = 1, Closed = 2, NotDisplayed = 3",
+      "meaning": "Trạng thái khi quảng cáo kết thúc",
+      "where": "AdEndState"
+    },
+    {
+      "source": "code const",
+      "key": "InterstitialAdUnitIds / RewardedAdUnitIds",
+      "type": "string[] (static)",
+      "value": "'6ecb9ee9aa6ae48c', 'b0e54bf460af3125' (2 id AppLovin MAX khai báo trong .cctor)",
+      "meaning": "Id đơn vị quảng cáo AppLovin",
+      "where": "AdManager (.cctor)"
+    },
+    {
+      "source": "config class",
+      "key": "InGameAdsAbRules.InterstitialAdStartLevel",
+      "type": "int",
+      "value": "server (theo nhóm AB)",
+      "meaning": "Level bắt đầu hiện quảng cáo xen kẽ",
+      "where": "InGameAdsAbRules / InGameAdsAbRulesProvider"
+    },
+    {
+      "source": "config class",
+      "key": "InGameAdsAbRules.LifeRewardAdStartLevel / CoinRewardAdStartLevel / EgoRewardAdStartLevel",
+      "type": "int",
+      "value": "server (theo nhóm AB)",
+      "meaning": "Level bắt đầu cho từng loại quảng cáo có thưởng",
+      "where": "InGameAdsAbRules"
+    },
+    {
+      "source": "config class",
+      "key": "InGameAdsAbRules.InterstitialCooldownInMs",
+      "type": "long",
+      "value": "server (theo nhóm AB)",
+      "meaning": "Cooldown giữa 2 quảng cáo xen kẽ",
+      "where": "InGameAdsAbRules; AdManager.get_NextInterstitialAvailableTime"
+    },
+    {
+      "source": "code const",
+      "key": "InGameAdsProgress bitfield",
+      "type": "int",
+      "value": "IsOfferPurchased 0, ReminderShownCount 1-5, ShouldShowReminder 6, ReminderAvailableDate 7-38, LastShownAdId 39-60, LastShownCmpId 61-70; BitArrayLength = 71",
+      "meaning": "Bố cục bit tiến độ quảng cáo",
+      "where": "InGameAdsProgress (const)"
+    },
+    {
+      "source": "code field",
+      "key": "InGameAdsProgress.MaxAdId / MaxCmpId",
+      "type": "int (static readonly)",
+      "value": "suy từ dải bit: 4.194.303 (22 bit) / 1023 (10 bit)",
+      "meaning": "Trần id quảng cáo và id CMP (suy luận)",
+      "where": "InGameAdsProgress"
+    },
+    {
+      "source": "storage key",
+      "key": "AdsDisabledByBackend",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Tắt toàn bộ quảng cáo (bit 0x2E = 46 của bitmask backend)",
+      "where": "UserKeyValue; AdManager.DisabledByBackend"
+    },
+    {
+      "source": "storage key",
+      "key": "AdConsentDialogDisabledByBackend",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Tắt dialog đồng ý quảng cáo (bit 0x2F = 47)",
+      "where": "UserKeyValue; AdManager.DisabledByBackend"
+    },
+    {
+      "source": "storage key",
+      "key": "SplashPrivacySettingsDisabledByBackend",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Tắt nút cài đặt quyền riêng tư ở splash (bit 0x31 = 49)",
+      "where": "UserKeyValue; AdManager.DisabledByBackend"
+    },
+    {
+      "source": "code field",
+      "key": "IsInGameAdsRateUsBlockDisabled",
+      "type": "bool",
+      "value": "bit 0x30 = 48 của bitmask backend",
+      "meaning": "Tắt việc chặn hộp thoại đánh giá khi có quảng cáo",
+      "where": "AdManager.DisabledByBackend"
+    },
+    {
+      "source": "storage key",
+      "key": "StorefrontCountry",
+      "type": "string",
+      "value": "-",
+      "meaning": "Mã quốc gia cửa hàng; 'RU' / 'RUS' bị loại trừ khỏi dialog no-connection",
+      "where": "UserKeyValue; AdManager.get_ShouldShowNoConnectionDialog"
+    },
+    {
+      "source": "storage key",
+      "key": "LimitedInGameAdsNotAvailableSendOnce",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Chống gửi analytics LimitedInGameAdsNotAvailable nhiều lần",
+      "where": "AdManager.SendAbDecidedButLimitedInGameAdsNotAvailableEvt"
+    },
+    {
+      "source": "asset",
+      "key": "InGameAds/ad_review_creative_id.txt",
+      "type": "file",
+      "value": "-",
+      "meaning": "File lưu InGameAdLocalData (adId, adOrigin, adType, adUnitId, networkName, creativeId, dspName, isOfferPurchased, startTimeMs, adReviewCreativeId) để phát hiện ad kill",
+      "where": "InGameAdLocalData (const DirectoryName / FileName)"
+    },
+    {
+      "source": "asset",
+      "key": "Resources/AppLovinSettings.asset",
+      "type": "ScriptableObject",
+      "value": "trong bản export chỉ còn phần header YAML (m_Script guid 098b77ea240a897fa1a6e9e554075599), các trường cấu hình đã bị lược bỏ",
+      "meaning": "Cấu hình AppLovin (SDK key, ad unit ids theo nền tảng)",
+      "where": "UnityExport/ExportedProject/Assets/Resources/AppLovinSettings.asset"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle group 'ads'",
+      "type": "bundle",
+      "value": "-",
+      "meaning": "Nhóm bundle tài nguyên quảng cáo (IsAllBundlesDownloaded)",
+      "where": "AdManager.IsAllBundlesDownloaded"
+    },
+    {
+      "source": "asset",
+      "key": "Text key",
+      "type": "string",
+      "value": "AdNotAvailableTemporaryText, CheckConnectionTextAd, AdsNoConnectionDialog, SplashView",
+      "meaning": "Chuỗi/UI dùng khi quảng cáo không sẵn sàng hoặc mất mạng",
+      "where": "AdManager.TryShow / TryShowNoConnectionDialog / ShowLoadingViewForAd"
+    },
+    {
+      "source": "config class",
+      "key": "AdLoadResult",
+      "type": "struct",
+      "value": "adUnitId, isLoaded, waterfallLatencyMs, networkLatencyMs, errorCode, mediatedNetworkErrorCode, adBlocker, errorMessage, mediatedNetworkErrorMessage",
+      "meaning": "Kết quả nạp quảng cáo, gửi vào analytics AdLoaded",
+      "where": "AdLoadResult"
+    },
+    {
+      "source": "code const",
+      "key": "RevenuePrecision",
+      "type": "enum",
+      "value": "(giá trị không có trong dossier)",
+      "meaning": "Độ chính xác của giá trị doanh thu do mạng quảng cáo trả về",
+      "where": "RevenuePrecision"
+    },
+    {
+      "source": "code const",
+      "key": "AdManager.AdCustomData",
+      "type": "struct",
+      "value": "-",
+      "meaning": "Dữ liệu tuỳ chỉnh gắn vào lần hiển thị quảng cáo (BuildCustomData(adId))",
+      "where": "AdManager.AdCustomData"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "AB tests runtime (so luong nhom that account lvl8)",
+      "type": "int",
+      "value": "52 test",
+      "meaning": "Toan bo 52 nhom AB THUC TE server gan cho account lvl8 (id->group)",
+      "where": "facts/runtime/server_configs/ab_tests_runtime.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "AB data_consent_new_user (id 175)",
+      "type": "int",
+      "value": "group 2",
+      "meaning": "Nhom AB THUC TE lien quan luong dong y du lieu quang cao (SetConsentFlags/RestrictMetaDataUse)",
+      "where": "facts/runtime/server_configs/ab_tests_runtime.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "AB age_consent_v5_new_user (id 209)",
+      "type": "int",
+      "value": "group 4",
+      "meaning": "Nhom AB THUC TE - dong y do tuoi (anh huong consent quang cao)",
+      "where": "facts/runtime/server_configs/ab_tests_runtime.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "AB privacy_settings_redesign_old_user (id 127)",
+      "type": "int",
+      "value": "group 2",
+      "meaning": "Nhom AB THUC TE - thiet ke lai cai dat quyen rieng tu (Splash privacy settings quang cao)",
+      "where": "facts/runtime/server_configs/ab_tests_runtime.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "AB reward_reduction_old_user (id 129)",
+      "type": "int",
+      "value": "group 4",
+      "meaning": "Nhom AB THUC TE - giam thuong (lien quan kinh te/monetization)",
+      "where": "facts/runtime/server_configs/ab_tests_runtime.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "AB (mot so nhom that khac)",
+      "type": "string",
+      "value": "supercharge_ab_old_user(194)=6, weekday_offer_old_user(200)=4, ladder_offer_shop_card_old_user(208)=1, x2_multiplier_token_v2_old_user(161)=2, red_action_notification_new_user(177)=2, next_event_collectible_new_user(224)=1, daily_rewards_new_user(228)=3",
+      "meaning": "Cac nhom AB monetization/liveops khac cua account lvl8",
+      "where": "facts/runtime/server_configs/ab_tests_runtime.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "ClientSettings (gia tri that server gui)",
+      "type": "object",
+      "value": "AppCheckEnabled=true, CloudflareEnabled=true, HttpDisabled=true, RequestResponseLoggingEnabled=true, MaxLevelForBundle=14301",
+      "meaning": "Co cau hinh client server bat cho account (lien quan mang/verify)",
+      "where": "facts/runtime/server_configs/PingResponse_ClientSettings.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "notificationTagRequiredKeys (runtime)",
+      "type": "int[]",
+      "value": "[158,159,179,180,187,188,211,212]",
+      "meaning": "Cac AB key can gan notification tag",
+      "where": "facts/runtime/server_configs/ab_tests_runtime.json"
+    }
+  ],
+  "managers": [
+    "Royal.Scenes.Start.Context.Units.Ads.AdManager",
+    "Royal.Scenes.Start.Context.Units.Ads.AdUnit",
+    "Royal.Scenes.Start.Context.Units.Ads.InterstitialAdUnit",
+    "Royal.Scenes.Start.Context.Units.Ads.RewardedAdUnit",
+    "Royal.Scenes.Start.Context.Units.Ads.InGameAdsProgress"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

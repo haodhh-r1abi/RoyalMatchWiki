@@ -1,0 +1,243 @@
+{
+  "feature": "MultiplierToken",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "MultiplierTokenManager.UnlockLevel",
+      "type": "int",
+      "value": "33",
+      "meaning": "Level mở khóa (kiểm tra bằng level > 32)",
+      "where": "MultiplierTokenManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierTokenManager.InitialFreeTokenAmount",
+      "type": "int",
+      "value": "10",
+      "meaning": "Số token tặng miễn phí khi mở khóa",
+      "where": "MultiplierTokenManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierTokenManager.DefaultTokenPurchaseAmount",
+      "type": "int",
+      "value": "100",
+      "meaning": "Số token trong một gói mua mặc định",
+      "where": "MultiplierTokenManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierTokenManager.ReducedTokenPurchaseAmount",
+      "type": "int",
+      "value": "50",
+      "meaning": "Số token trong gói mua khi multiplierV2AbType = 2",
+      "where": "MultiplierTokenManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierTokenManager.TokenPriceInCoins",
+      "type": "int",
+      "value": "9900",
+      "meaning": "Giá coin của một gói token",
+      "where": "MultiplierTokenManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "So token toi da",
+      "type": "int",
+      "value": "255",
+      "meaning": "SetMultiplierTokenCount kẹp giá trị > 254 thành 255 (8 bit)",
+      "where": "MultiplierTokenManager.SetMultiplierTokenCount"
+    },
+    {
+      "source": "AB test",
+      "key": "multiplierAbType (GetMultiplierTokenAb)",
+      "type": "int",
+      "value": "2 = mua bằng tiền thật, 3 = mua bằng coin, 4 = chỉ thay thế thưởng Madness; nhóm khác = không có tính năng",
+      "meaning": "Nhóm AB chính của tính năng",
+      "where": "MultiplierTokenManager.IsGroupInAb / IsMoneyPurchaseGroup / IsCoinPurchaseGroup / IsOnlyMadnessGroup"
+    },
+    {
+      "source": "AB test",
+      "key": "multiplierV2AbType (GetMultiplierTokenV2Ab)",
+      "type": "int",
+      "value": "2 hoặc 3 = có tính năng (mua bằng coin); riêng 2 = gói giảm còn 50 token",
+      "meaning": "Nhóm AB phiên bản 2",
+      "where": "MultiplierTokenManager.IsGroupInV2Ab / IsV2CoinPurchaseGroup / GetTokenPurchaseAmount"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierTokenPurchaseFlowHelper.ReminderDialogLevelThreshold",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số level thắng cần qua trước khi nhắc lại dialog bán token",
+      "where": "MultiplierTokenPurchaseFlowHelper (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierTokenPurchaseFlowHelper.TimeoutDurationMs",
+      "type": "long",
+      "value": "604800000 (7 ngày)",
+      "meaning": "Thời gian im lặng khi người chơi không đủ coin",
+      "where": "MultiplierTokenPurchaseFlowHelper (client default)"
+    },
+    {
+      "source": "code enum",
+      "key": "MultiplierTokenFlowState",
+      "type": "enum",
+      "value": "None = 0, PendingFinishDialog = 1, InReminderFlow = 2, InTimeout = 3",
+      "meaning": "Máy trạng thái quyết định khi nào tự động mở dialog bán token",
+      "where": "MultiplierTokenPurchaseFlowHelper.MultiplierTokenFlowState (dump.cs TypeDefIndex 3096)"
+    },
+    {
+      "source": "code const",
+      "key": "MultiplierTokenBundleGroupInfo.GroupName",
+      "type": "string",
+      "value": "multiplier_token",
+      "meaning": "Nhóm bundle bắt buộc",
+      "where": "MultiplierTokenBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "MultiplierTokenBundle",
+      "type": "string",
+      "value": "multiplier_token_v3",
+      "meaning": "Bundle chứa toàn bộ asset của tính năng",
+      "where": "MultiplierTokenBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Prefab / asset trong bundle",
+      "type": "string",
+      "value": "MultiplierTokenPrefab, MultiplierTokenCollectPrefab, MultiplierTokenShine, BuyMultiplierTokenDialog, MultiplierTokenInfoDialog, tokenClip, tokenTag",
+      "meaning": "Prefab icon, animation nhận, dialog mua và dialog giới thiệu",
+      "where": "MultiplierTokenBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "Tieu de theo ngon ngu",
+      "type": "string",
+      "value": "english / arabic / french / german / italian / japanese / korean / portuguese / russian / spanish / turkish _royal_boost_title",
+      "meaning": "Tên hiển thị của tính năng là 'Royal Boost', có 11 bản dịch được đóng gói riêng",
+      "where": "MultiplierTokenBundleGroupInfo"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2 bit 18-25",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Số token đang có (8 bit, tối đa 255)",
+      "where": "MultiplierTokenManager.GetMultiplierTokenCount / SetMultiplierTokenCount"
+    },
+    {
+      "source": "storage key",
+      "key": "GameplayCommonUse2 (bit tutorial)",
+      "type": "bit",
+      "value": "client + server",
+      "meaning": "HasShowedPrelevelTutorial và HasShowedPurchaseTutorial",
+      "where": "MultiplierTokenManager.SetPrelevelTutorialValue / SetPurchaseTutorialValue"
+    },
+    {
+      "source": "storage key",
+      "key": "ShouldPlayMultiplierTokenAppearAnimation",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Lần mở dialog tới phải chạy animation token xuất hiện",
+      "where": "MultiplierTokenManager.SpendToken / OnPurchaseSuccess; MultiplierTokenView.Init"
+    },
+    {
+      "source": "storage key",
+      "key": "ShouldPlayMultiplierTokenEndAnimation",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Lần mở dialog tới phải chạy animation hết token",
+      "where": "MultiplierTokenManager.SpendToken; MultiplierTokenView.HideNotificationIcon"
+    },
+    {
+      "source": "storage key",
+      "key": "IsOldMultiplierReadyForToken",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Người chơi đã rời khỏi cơ chế multiplier cũ và sẵn sàng dùng token",
+      "where": "MultiplierTokenManager.InitMultiplierToken / IsTokenReady"
+    },
+    {
+      "source": "storage key",
+      "key": "MultiplierTokenPurchaseFlowState",
+      "type": "int",
+      "value": "client",
+      "meaning": "Trạng thái máy bán token (0-3)",
+      "where": "MultiplierTokenPurchaseFlowHelper.UpdateState"
+    },
+    {
+      "source": "storage key",
+      "key": "MultiplierTokenPurchaseFlowLevelCounter",
+      "type": "int",
+      "value": "client",
+      "meaning": "Số level đã thắng từ lần hiện dialog trước",
+      "where": "MultiplierTokenPurchaseFlowHelper.OnLevelWin / HandleReminderDialog"
+    },
+    {
+      "source": "storage key",
+      "key": "MultiplierTokenPurchaseFlowTimeoutEnd",
+      "type": "long",
+      "value": "client",
+      "meaning": "Mốc hết thời gian im lặng (now + 7 ngày)",
+      "where": "MultiplierTokenPurchaseFlowHelper.HandleReminderDialog / HandleTimeout"
+    },
+    {
+      "source": "storage key",
+      "key": "MultiplierTokenPurchaseFlowTryShowForEnoughCoins",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đang chờ người chơi đủ 9900 coin để mở lại dialog",
+      "where": "MultiplierTokenPurchaseFlowHelper.HandleReminderDialog / HandleTimeout"
+    },
+    {
+      "source": "storage key",
+      "key": "LevelTryCount",
+      "type": "int",
+      "value": "client",
+      "meaning": "Được dùng để tránh mở dialog khi người chơi đang thua level hiện tại",
+      "where": "MultiplierTokenPurchaseFlowHelper.get_DidFailCurrentLevelBefore"
+    },
+    {
+      "source": "server info",
+      "key": "GameplayGenericBackendSyncHandler.GetMultiplierTokenAmount / SetMultiplierTokenAmount / GetMultiplierTokenLastAb / GetMultiplierTokenV2LastAb",
+      "type": "mixed",
+      "value": "client + server",
+      "meaning": "Đồng bộ số token và nhóm AB đã gán",
+      "where": "Royal.Player.Context.Units.GameplayGenericBackendSyncHandler"
+    },
+    {
+      "source": "code const",
+      "key": "Spending name",
+      "type": "string",
+      "value": "MultiplierToken.{0} ({0} = số token trong gói)",
+      "meaning": "spending_type gửi kèm analytics khi mua bằng coin",
+      "where": "MultiplierTokenManager.TryToBuyTokensWithCoins"
+    },
+    {
+      "source": "code const",
+      "key": "Fallback reward code",
+      "type": "string",
+      "value": "H (Hammer)",
+      "meaning": "Phần thưởng thay thế khi bước Madness có token nhưng người chơi không dùng được",
+      "where": "MultiplierTokenManager.TryReplaceWithFallback"
+    },
+    {
+      "source": "code const",
+      "key": "Nhom IAP",
+      "type": "string",
+      "value": "multipliertoken",
+      "meaning": "Nhóm product id cho gói mua token bằng tiền thật",
+      "where": "ProductPackageNames (xem appendix/iap-products.md)"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.MultiplierTokenManager",
+    "Royal.Scenes.Home.Ui.Dialogs.MultiplierToken.MultiplierTokenPurchaseFlowHelper",
+    "Royal.Scenes.Home.Ui.Dialogs.MultiplierToken.MultiplierTokenView"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

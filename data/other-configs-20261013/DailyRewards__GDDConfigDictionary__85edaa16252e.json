@@ -1,0 +1,261 @@
+{
+  "feature": "DailyRewards",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "UnlockLevel",
+      "type": "int",
+      "value": "21",
+      "meaning": "Level mở khoá",
+      "where": "DailyRewardsManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "EventInitial",
+      "type": "string",
+      "value": "\"DR\"",
+      "meaning": "Tiền tố analytics",
+      "where": "DailyRewardsManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DayInMs",
+      "type": "long",
+      "value": "86400000",
+      "meaning": "Độ dài một ngày",
+      "where": "DailyRewardsManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DailyBoundaryOffsetInMs",
+      "type": "long",
+      "value": "28800000 (8 giờ)",
+      "meaning": "Mốc reset ngày lệch 8 giờ so với mốc chuẩn",
+      "where": "DailyRewardsManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "TimeManipulationBufferInMs",
+      "type": "long",
+      "value": "900000 (15 phút)",
+      "meaning": "Đệm tránh báo nhầm chỉnh giờ",
+      "where": "DailyRewardsManager (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsProgress.MaxWeeklyStreak",
+      "type": "int",
+      "value": "7",
+      "meaning": "Chuỗi tuần tối đa (7 ngày)",
+      "where": "DailyRewardsProgress (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsProgress.MaxMonthlyStreak",
+      "type": "int",
+      "value": "30",
+      "meaning": "Chuỗi tháng tối đa (30 ngày)",
+      "where": "DailyRewardsProgress (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsProgress.LastClaimServerDayMaxValue",
+      "type": "int",
+      "value": "32767",
+      "meaning": "Trần chỉ số ngày server (15 bit)",
+      "where": "DailyRewardsProgress (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsProgress.BitArrayLength",
+      "type": "int",
+      "value": "55",
+      "meaning": "Độ dài BitArray tiến độ",
+      "where": "DailyRewardsProgress (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsProgress bitfield",
+      "type": "int",
+      "value": "EventId 0-11, UserConfigVersion 12-24, WeeklyStreak 25-27, MonthlyStreak 28-32, LastClaimServerDay 33-47, WeeklyRewardSetIndex 48-49, IsTutorialSeen 50, AbGroup 51-54",
+      "meaning": "Bố cục bit tiến độ",
+      "where": "DailyRewardsProgress (const)"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsClaimType",
+      "type": "enum",
+      "value": "Weekly = 1, Monthly = 2",
+      "meaning": "Loại quà khi gửi analytics",
+      "where": "DailyRewardsClaimType"
+    },
+    {
+      "source": "code const",
+      "key": "DailyRewardsTutorialStep",
+      "type": "enum",
+      "value": "None = 0, ShowInfoButton = 1",
+      "meaning": "Bước hướng dẫn",
+      "where": "DailyRewardsTutorialStep"
+    },
+    {
+      "source": "config class",
+      "key": "DailyRewardsConfig.v",
+      "type": "int",
+      "value": "server",
+      "meaning": "Config version",
+      "where": "DailyRewardsConfig"
+    },
+    {
+      "source": "config class",
+      "key": "DailyRewardsConfig.wrs",
+      "type": "DailyRewardsWeeklyRewardSet[]",
+      "value": "server",
+      "meaning": "Các bộ quà tuần; mỗi bộ có sr (quà ngày thường, RewardItem[]) và lr (quà ngày 7, RewardItem[])",
+      "where": "DailyRewardsConfig / DailyRewardsWeeklyRewardSet"
+    },
+    {
+      "source": "config class",
+      "key": "DailyRewardsConfig.mr",
+      "type": "DailyRewardsMonthlyReward[]",
+      "value": "server",
+      "meaning": "Mốc quà tháng; mỗi mốc có p (vị trí ngày trong chuỗi tháng) và r (RewardItem[])",
+      "where": "DailyRewardsConfig / DailyRewardsMonthlyReward"
+    },
+    {
+      "source": "server info",
+      "key": "DailyRewardsInfo",
+      "type": "flatbuffer",
+      "value": "server",
+      "meaning": "EventId, config, config version",
+      "where": "Protocol/DailyRewardsInfo"
+    },
+    {
+      "source": "server info",
+      "key": "GetDailyRewardsInfoResponse",
+      "type": "flatbuffer",
+      "value": "server",
+      "meaning": "User config theo version yêu cầu",
+      "where": "Protocol; Command/DailyRewards"
+    },
+    {
+      "source": "storage key",
+      "key": "ServerEventId / ServerEventConfig / ServerEventConfigVersion",
+      "type": "int / string / int",
+      "value": "-",
+      "meaning": "Config chung từ server",
+      "where": "DailyRewardsData"
+    },
+    {
+      "source": "storage key",
+      "key": "UserEventConfig / UserEventConfigVersion",
+      "type": "string / int",
+      "value": "-",
+      "meaning": "Config riêng người chơi",
+      "where": "DailyRewardsData"
+    },
+    {
+      "source": "storage key",
+      "key": "WeeklyReminderPendingFireTime / WeeklyReminderLastShownTime",
+      "type": "long",
+      "value": "-",
+      "meaning": "Lịch và lần cuối nhắc theo tuần",
+      "where": "DailyRewardsData"
+    },
+    {
+      "source": "storage key",
+      "key": "StreakReminderPendingFireTime / StreakReminderShownAtStreak",
+      "type": "long / int",
+      "value": "-",
+      "meaning": "Lịch nhắc giữ chuỗi và mức chuỗi đã nhắc",
+      "where": "DailyRewardsData"
+    },
+    {
+      "source": "storage key",
+      "key": "DailyRewardsTimeHackControlDisabledByBackend",
+      "type": "bool",
+      "value": "-",
+      "meaning": "Tắt kiểm tra chỉnh giờ từ server",
+      "where": "DailyRewardsManager.Bind / TimeHackControlDisabledByBackend"
+    },
+    {
+      "source": "storage key",
+      "key": "ST",
+      "type": "-",
+      "value": "-",
+      "meaning": "Key liên quan giờ server dùng khi sửa tiến độ bị chỉnh giờ",
+      "where": "DailyRewardsManager.TryFixTimeManipulatedProgress"
+    },
+    {
+      "source": "asset",
+      "key": "daily_rewards (bundle group)",
+      "type": "bundle",
+      "value": "daily_rewards_dialog",
+      "meaning": "Nhóm bundle của tính năng",
+      "where": "DailyRewardsBundleGroupInfo (const)"
+    },
+    {
+      "source": "asset",
+      "key": "Prefab / hiệu ứng",
+      "type": "string",
+      "value": "DailyRewardsDialog, DailyRewardsInfoScene, DailyRewardsChestKnockParticles, daily_rewards_claim_particle, daily_rewards_claim_tick, daily_rewards_day_box_break, daily_rewards_day7_box_open, daily_rewards_dialog_open_swoosh",
+      "meaning": "Tài nguyên UI và âm thanh",
+      "where": "DailyRewardsBundleGroupInfo (const)"
+    },
+    {
+      "source": "asset",
+      "key": "Text key popup chỉnh giờ",
+      "type": "string",
+      "value": "DailyRewardsTimeManipulationDetectedPopup, DailyRewardUnusualActivity1, 'Attention', 'Continue'",
+      "meaning": "Nội dung popup cảnh báo chỉnh giờ",
+      "where": "DailyRewardsManager.TryShowTimeManipulationDetectedDialog"
+    },
+    {
+      "source": "code const",
+      "key": "EventType.DailyRewards",
+      "type": "enum",
+      "value": "44",
+      "meaning": "Mã event",
+      "where": "EventType (appendix/events-overview.md)"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "ServerEventId / ConfigVersion (runtime)",
+      "type": "int",
+      "value": "EventId=1, v=1",
+      "meaning": "Event Daily Rewards active cho account lvl8 (Id 1, config version 1)",
+      "where": "DailyRewardsTableItem_ServerEventConfig.json / PingResponse (INDEX.md)"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "mr (runtime, mốc quà tháng)",
+      "type": "array",
+      "value": "p=8 → 200C+1T; p=15 → 300C+1L; p=22 → 400C+1H; p=30 → 500C+1J (4 mốc)",
+      "meaning": "Mốc quà tháng THẬT (server) — chỉ 4 mốc tại ngày 8/15/22/30",
+      "where": "DailyRewardsTableItem_ServerEventConfig.json"
+    },
+    {
+      "source": "server info (runtime LDPlayer 2026-09-09)",
+      "key": "wrs (runtime, 4 bộ quà tuần)",
+      "type": "array",
+      "value": "Bộ1: sr=[1L,15ULV,1R,100C,30ULV,1J] lr(ngày7)=[1R,1T,300C]; Bộ2: sr=[1R,15ULV,1T,100C,30ULV,1Ca] lr=[1T,1L,300C]; Bộ3: sr=[1T,15ULV,1R,100C,30ULV,1H] lr=[1R,1L,300C]; Bộ4: sr=[1R,15ULV,1T,1L,100C,1A] lr=[1R,1T,300C]",
+      "meaning": "4 bộ quà tuần THẬT (sr = 6 quà ngày thường, lr = quà ngày 7) — xác nhận WeeklyRewardSetIndex 2 bit = đúng 4 bộ",
+      "where": "DailyRewardsTableItem_ServerEventConfig.json"
+    },
+    {
+      "source": "runtime LDPlayer 06/10/2026",
+      "key": "DailyRewards ServerEventConfig v3",
+      "type": "json",
+      "value": "4 bộ wrs (sr/lr) + 4 mốc mr",
+      "meaning": "Bản mới so với v1 ngày 09/09",
+      "where": "facts/runtime/server_configs_2026-10-06/DailyRewardsInfo_v3.json"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.DailyRewardsManager",
+    "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsConfig",
+    "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsConfigHelper",
+    "Royal.Scenes.Home.Ui.Dialogs.DailyRewards.Scripts.DailyRewardsData",
+    "Royal.Player.Context.Data.Persistent.DailyRewardsProgress"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

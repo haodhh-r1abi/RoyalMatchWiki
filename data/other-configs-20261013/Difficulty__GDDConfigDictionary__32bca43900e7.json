@@ -1,0 +1,670 @@
+{
+  "feature": "Difficulty",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "ExtremeLevelsManager.UnlockLevel",
+      "type": "int",
+      "value": "110",
+      "meaning": "Level bắt đầu hệ thống level khó (kiểm tra bằng levelNo < 111 -> false)",
+      "where": "ExtremeLevelsManager (client default)"
+    },
+    {
+      "source": "code enum",
+      "key": "ExtremeLevelsType",
+      "type": "enum",
+      "value": "None = 0, Hard = 1, SuperHard = 2, ExtremelyHard = 3",
+      "meaning": "Ba mức độ khó tĩnh",
+      "where": "Royal.Player.Context.Units.ExtremeLevelsManager.ExtremeLevelsType"
+    },
+    {
+      "source": "code const",
+      "key": "Quy tac chon level kho",
+      "type": "formula",
+      "value": "levelNo % 10 == 2 -> Hard; == 5 -> SuperHard; == 9 -> ExtremelyHard",
+      "meaning": "Mỗi 10 level có 3 level khó",
+      "where": "ExtremeLevelsManager.GetExtremeLevelType"
+    },
+    {
+      "source": "code const",
+      "key": "Level bi loai khoi he thong extreme",
+      "type": "formula",
+      "value": "levelNo < 111; LeagueLevel != 0; 111-202: (levelNo - 122) % 20 == 0; 203-301: levelNo = 232 hoặc 262; 302-1002: (levelNo - 302) % 50 == 0; từ 1102: (levelNo - 1102) % 100 == 0",
+      "meaning": "Tránh đặt level cực khó ngay sau level dạy item mới",
+      "where": "ExtremeLevelsManager.IsLevelAvailableForExtreme"
+    },
+    {
+      "source": "code const",
+      "key": "Level day item moi (item tutorial)",
+      "type": "formula",
+      "value": "121, 141, 161, 181, 201; 231; 261; 301 + 50k (đến 1001); 1101 + 100k",
+      "meaning": "Các level giới thiệu cơ chế mới",
+      "where": "ExtremeLevelsManager.IsItemTutorialOrSpecialLevel"
+    },
+    {
+      "source": "code const",
+      "key": "HardLevelBundle.FirstHardLevel",
+      "type": "int",
+      "value": "39",
+      "meaning": "Level khó đầu tiên (dùng giao diện hard trước khi hệ thống extreme mở ở 111)",
+      "where": "Royal.Scenes.Start.Context.Units.FeatureBundle.HardLevelBundle"
+    },
+    {
+      "source": "code const",
+      "key": "SemiDynamicDifficulty.MaxLevelForUpdateSkill",
+      "type": "short",
+      "value": "100",
+      "meaning": "Chỉ cập nhật TryCount / skill khi level > 100",
+      "where": "SemiDynamicDifficulty (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "MoveManager.MinMoveAmount",
+      "type": "int",
+      "value": "20",
+      "meaning": "Sàn số nước sau khi độ khó động trừ bớt",
+      "where": "MoveManager"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.TryCountStartIndex / TryCountEndIndex",
+      "type": "short",
+      "value": "54 / 60 (bit trong PreLevelInventory)",
+      "meaning": "Số lần thua cộng dồn, tối đa MaxTryCount = 127",
+      "where": "SemiDynamicDifficulty.IncrementTryCount / GetTryCount"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.SkillStartIndex / SkillEndIndex",
+      "type": "short",
+      "value": "51 / 53",
+      "meaning": "3 bit lưu UserSkill",
+      "where": "UserInventory.GetSkill"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory DynamicDifficultyInventory layout",
+      "type": "short",
+      "value": "TryCount2 bit 1-12, DeltaMove bit 13-17, UpdateSection bit 18-34, CurrentLevel bit 35-49",
+      "meaning": "Trạng thái độ khó động lưu trong khóa 'DynaDiff'",
+      "where": "UserInventory.SetTryCount2 / SetDeltaMove / SetLastUpdatedSection / SetCurrentLevel"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.ConfigPath",
+      "type": "string",
+      "value": "https://contents.prod.rylmtch.com/superlightball-ab/",
+      "meaning": "URL gốc của bảng chỉnh số nước theo nhóm AB",
+      "where": "SlbMoveConfigHelper"
+    },
+    {
+      "source": "code field",
+      "key": "SlbMoveConfigHelper.AssetName / FileExtension",
+      "type": "string",
+      "value": "superlightball-ab-config / .txt",
+      "meaning": "Tên file config tải từ CDN",
+      "where": "SlbMoveConfigHelper..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.GroupCStartLevel",
+      "type": "int",
+      "value": "160",
+      "meaning": "Level bắt đầu áp dụng chỉnh nước cho nhóm AB 3 (C)",
+      "where": "SlbMoveConfigHelper"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.GroupDStartLevel",
+      "type": "int",
+      "value": "75",
+      "meaning": "Level bắt đầu cho nhóm AB 4 (D)",
+      "where": "SlbMoveConfigHelper"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.GroupFStartLevel",
+      "type": "int",
+      "value": "111",
+      "meaning": "Level bắt đầu cho nhóm AB 6 (F)",
+      "where": "SlbMoveConfigHelper"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.GroupGStartLevel",
+      "type": "int",
+      "value": "111",
+      "meaning": "Level bắt đầu cho nhóm AB 7 (G)",
+      "where": "SlbMoveConfigHelper"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.GroupHStartLevel",
+      "type": "int",
+      "value": "211",
+      "meaning": "Level bắt đầu cho nhóm AB 8 (H)",
+      "where": "SlbMoveConfigHelper"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.MoveUpdateFinishLevel",
+      "type": "int",
+      "value": "230",
+      "meaning": "Level cuối cùng còn áp dụng chỉnh nước (mọi nhóm đều dừng ở đây)",
+      "where": "SlbMoveConfigHelper"
+    },
+    {
+      "source": "code const",
+      "key": "SlbMoveConfigHelper.DefaultInRangeVersion",
+      "type": "int",
+      "value": "1",
+      "meaning": "Phiên bản bản level mặc định khi không tìm thấy entry",
+      "where": "SlbMoveConfigHelper.GetVersionOrDefault"
+    },
+    {
+      "source": "code const",
+      "key": "Hau to ten file level theo nhom AB",
+      "type": "string",
+      "value": "O, P, R, S, T (tương ứng nhóm 3, 4, 6, 7, 8 - thứ tự suy luận từ switch)",
+      "meaning": "Đổi sang một bản level khác cho từng nhóm AB",
+      "where": "SlbMoveConfigHelper.TryGetLevelNameOverride"
+    },
+    {
+      "source": "code field",
+      "key": "SlbLevelEntry",
+      "type": "struct",
+      "value": "Version (int), MoveAdjustment (int)",
+      "meaning": "Một dòng cấu hình: phiên bản bản level + số nước cộng/trừ",
+      "where": "Royal.Player.Context.Units.SlbLevelEntry"
+    },
+    {
+      "source": "code const",
+      "key": "Dinh dang token config SLB",
+      "type": "string",
+      "value": "'<levelNo>v<version>' + giá trị số nước, xếp thành cặp trong mảng",
+      "meaning": "Cấu trúc file superlightball-ab-config.txt",
+      "where": "SlbMoveConfigHelper.TryParseLevelVersionToken / BuildGroupDictionary"
+    },
+    {
+      "source": "code const",
+      "key": "ExtremelyHardLevelOfferHelper.ExtremelyHardLevelOfferUnlockLevel",
+      "type": "int",
+      "value": "149",
+      "meaning": "Level mở offer dành cho level cực khó",
+      "where": "ExtremelyHardLevelOfferHelper (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "Resources/propellerlogicimprovement_level_numbers.json",
+      "type": "int",
+      "value": "950",
+      "meaning": "Từ level 950 propeller dùng logic chọn mục tiêu cải tiến",
+      "where": "Resources (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty - cau truc",
+      "type": "object[]",
+      "value": "difficultyData[43] mỗi phần tử {level, section, levelStart, levelEnd, minTryCountEasy, maxTryCountEasy, minTryCountHard, maxTryCountHard}",
+      "meaning": "Bảng ngưỡng số lần thua theo đoạn level; hai file Easy và Hard có cùng số đoạn, khác ngưỡng",
+      "where": "Resources/DynamicDifficultyEasy.json, Resources/DynamicDifficultyHard.json"
+    },
+    {
+      "source": "storage key",
+      "key": "SLBMoveConfig",
+      "type": "string",
+      "value": "server override (tải từ CDN)",
+      "meaning": "Nội dung bảng chỉnh số nước đã tải",
+      "where": "SlbMoveConfigHelper.SaveConfig / EnsureCacheLoaded"
+    },
+    {
+      "source": "storage key",
+      "key": "SlbMoveConfigETag",
+      "type": "string",
+      "value": "client",
+      "meaning": "ETag của config SLB đã tải",
+      "where": "SlbMoveConfigHelper.SaveConfig"
+    },
+    {
+      "source": "storage key",
+      "key": "HardLevelBackgroundIndex",
+      "type": "int",
+      "value": "client",
+      "meaning": "Chỉ số nền level khó đang dùng (đổi khi lên level / đổi league level)",
+      "where": "BasicUserData.UpdateLevel / UpdateLeagueLevel"
+    },
+    {
+      "source": "storage key",
+      "key": "DynaDiff",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit-packed trạng thái độ khó động",
+      "where": "UserInventory.UpdateDynamicDifficultyInventory"
+    },
+    {
+      "source": "storage key",
+      "key": "PreLevelInventory",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Chứa TryCount ở bit 54-60",
+      "where": "SemiDynamicDifficulty.IncrementTryCount"
+    },
+    {
+      "source": "storage key",
+      "key": "ExtremelyHardLevelOfferDisabledByBackend",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Backend tắt offer level cực khó",
+      "where": "ExtremelyHardLevelOfferHelper.DisabledByBackend"
+    },
+    {
+      "source": "storage key",
+      "key": "ExtremelyHardLevelOfferShownForLevel / ShownAtFailForLevel / PurchasedForLevel / BiLevelSkippedForLevel / SkipNext",
+      "type": "int/bool",
+      "value": "client",
+      "meaning": "Chống hiện offer trùng lặp và bỏ qua một level xen kẽ",
+      "where": "ExtremelyHardLevelOfferHelper"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle level kho",
+      "type": "string",
+      "value": "extreme_level_v2 (assets: ExtremeLevelAssets, extreme_item_win_logo_animation, Extreme_weekly_claim_button_outline_normal); HardLevelAtlas, SuperHardLevelAtlas, HardLandscapeAtlas, SuperHardLandscapeAtlas, HardLevelAssets, SuperHardLevelAssets, HardLandscapeAssets, SuperHardLandscapeAssets; extremely_hard_level_offer",
+      "meaning": "Asset giao diện của từng mức độ khó",
+      "where": "ExtremeLevelsManager.TryInitExtremeLevelBundle; HardLevelBundle; ExtremelyHardLevelOfferBundleGroupInfo"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsLevelEndRewardReductionAbEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Giam coin thưởng cuối ván ở level khó từ 100/150/200 xuống 30/50/100",
+      "where": "RemainingMovesManager.GetInitialCoinAmount"
+    },
+    {
+      "source": "AB test",
+      "key": "SuperBoosterManager.slbAbType",
+      "type": "int",
+      "value": "server override (3, 4, 6, 7, 8 có chỉnh nước)",
+      "meaning": "Nhóm AB quyết định bảng chỉnh số nước và bản level thay thế",
+      "where": "SlbMoveConfigHelper.TryGetEntry / TryGetLevelNameOverride"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 1 (level 1-5)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=-1, maxTryCountEasy=5, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=-1, maxTryCountEasy=5, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 2 (level 6-10)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=-1, maxTryCountEasy=5, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=-1, maxTryCountEasy=5, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 3 (level 11-15)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=-1, maxTryCountEasy=7, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=-1, maxTryCountEasy=7, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 4 (level 16-20)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=7, maxTryCountEasy=9, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=7, maxTryCountEasy=9, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 5 (level 21-25)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=7, maxTryCountEasy=10, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=7, maxTryCountEasy=10, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 6 (level 26-30)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=8, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=8, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 7 (level 31-35)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=6, maxTryCountEasy=10, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=6, maxTryCountEasy=10, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 8 (level 36-40)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=8, maxTryCountEasy=14, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=8, maxTryCountEasy=14, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 9 (level 41-45)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=7, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=7, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 10 (level 46-50)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=9, maxTryCountEasy=15, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=9, maxTryCountEasy=15, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 11 (level 51-55)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=7, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=7, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 12 (level 56-60)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=7, maxTryCountEasy=14, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=7, maxTryCountEasy=14, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 13 (level 61-65)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=6, maxTryCountEasy=10, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=6, maxTryCountEasy=10, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 14 (level 66-70)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=7, maxTryCountEasy=13, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=7, maxTryCountEasy=13, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 15 (level 71-75)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=8, maxTryCountEasy=13, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=8, maxTryCountEasy=13, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 16 (level 76-80)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=8, maxTryCountEasy=16, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=8, maxTryCountEasy=16, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 17 (level 81-85)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=7, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=7, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 18 (level 86-90)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=9, maxTryCountEasy=17, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=9, maxTryCountEasy=17, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 19 (level 91-95)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=6, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=6, maxTryCountEasy=12, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 20 (level 96-100)",
+      "type": "object",
+      "value": "level=5; Easy: minTryCountEasy=8, maxTryCountEasy=15, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=8, maxTryCountEasy=15, minTryCountHard=-1, maxTryCountHard=-1",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 21 (level 101-120)",
+      "type": "object",
+      "value": "level=20; Easy: minTryCountEasy=34, maxTryCountEasy=60, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=34, maxTryCountEasy=60, minTryCountHard=21, maxTryCountHard=26",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 22 (level 121-140)",
+      "type": "object",
+      "value": "level=20; Easy: minTryCountEasy=36, maxTryCountEasy=66, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=36, maxTryCountEasy=66, minTryCountHard=21, maxTryCountHard=26",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 23 (level 141-160)",
+      "type": "object",
+      "value": "level=20; Easy: minTryCountEasy=42, maxTryCountEasy=81, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=42, maxTryCountEasy=81, minTryCountHard=22, maxTryCountHard=30",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 24 (level 161-180)",
+      "type": "object",
+      "value": "level=20; Easy: minTryCountEasy=49, maxTryCountEasy=97, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=49, maxTryCountEasy=97, minTryCountHard=25, maxTryCountHard=35",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 25 (level 181-200)",
+      "type": "object",
+      "value": "level=20; Easy: minTryCountEasy=63, maxTryCountEasy=120, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=63, maxTryCountEasy=120, minTryCountHard=30, maxTryCountHard=45",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 26 (level 201-230)",
+      "type": "object",
+      "value": "level=30; Easy: minTryCountEasy=107, maxTryCountEasy=199, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=107, maxTryCountEasy=199, minTryCountHard=52, maxTryCountHard=78",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 27 (level 231-260)",
+      "type": "object",
+      "value": "level=30; Easy: minTryCountEasy=113, maxTryCountEasy=201, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=113, maxTryCountEasy=201, minTryCountHard=55, maxTryCountHard=84",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 28 (level 261-300)",
+      "type": "object",
+      "value": "level=40; Easy: minTryCountEasy=151, maxTryCountEasy=256, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=151, maxTryCountEasy=256, minTryCountHard=80, maxTryCountHard=116",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 29 (level 301-350)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=205, maxTryCountEasy=343, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=205, maxTryCountEasy=343, minTryCountHard=110, maxTryCountHard=158",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 30 (level 351-400)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=204, maxTryCountEasy=329, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=204, maxTryCountEasy=329, minTryCountHard=115, maxTryCountHard=161",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 31 (level 401-450)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=209, maxTryCountEasy=331, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=209, maxTryCountEasy=331, minTryCountHard=120, maxTryCountHard=166",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 32 (level 451-500)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=220, maxTryCountEasy=347, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=220, maxTryCountEasy=347, minTryCountHard=128, maxTryCountHard=176",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 33 (level 501-550)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=208, maxTryCountEasy=327, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=208, maxTryCountEasy=327, minTryCountHard=120, maxTryCountHard=165",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 34 (level 551-600)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=212, maxTryCountEasy=333, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=212, maxTryCountEasy=333, minTryCountHard=124, maxTryCountHard=170",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 35 (level 601-650)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=223, maxTryCountEasy=344, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=223, maxTryCountEasy=344, minTryCountHard=131, maxTryCountHard=179",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 36 (level 651-700)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=220, maxTryCountEasy=338, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=220, maxTryCountEasy=338, minTryCountHard=131, maxTryCountHard=177",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 37 (level 701-750)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=210, maxTryCountEasy=322, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=210, maxTryCountEasy=322, minTryCountHard=124, maxTryCountHard=169",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 38 (level 751-800)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=210, maxTryCountEasy=322, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=210, maxTryCountEasy=322, minTryCountHard=124, maxTryCountHard=169",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 39 (level 801-850)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=220, maxTryCountEasy=332, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=220, maxTryCountEasy=332, minTryCountHard=130, maxTryCountHard=177",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 40 (level 851-900)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=213, maxTryCountEasy=329, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=213, maxTryCountEasy=329, minTryCountHard=124, maxTryCountHard=171",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 41 (level 901-950)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=225, maxTryCountEasy=342, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=225, maxTryCountEasy=342, minTryCountHard=131, maxTryCountHard=180",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 42 (level 951-1000)",
+      "type": "object",
+      "value": "level=50; Easy: minTryCountEasy=217, maxTryCountEasy=327, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=217, maxTryCountEasy=327, minTryCountHard=128, maxTryCountHard=175",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "source": "json default",
+      "key": "DynamicDifficulty section 43 (level 1001-1100)",
+      "type": "object",
+      "value": "level=100; Easy: minTryCountEasy=450, maxTryCountEasy=650, minTryCountHard=-1, maxTryCountHard=-1; Hard: minTryCountEasy=450, maxTryCountEasy=650, minTryCountHard=270, maxTryCountHard=370",
+      "meaning": "Ngưỡng số lần thua cộng dồn trong đoạn level này để hạ (Easy) hoặc tăng (Hard) độ khó; -1 = không áp dụng",
+      "where": "Resources/DynamicDifficultyEasy.json và DynamicDifficultyHard.json (client default)"
+    },
+    {
+      "key": "SLBMoveConfig thật (5 nhóm C/D/F/G/H) — App key 'SLBMoveConfig'",
+      "type": "server",
+      "value": "số cặp (level→Δnước): C=46 (162v02..229v02), D=111 (75v02..229v02), F=84 (111v02..229v02), G=53 (150v02..229v02), H=12 (212v02..229v02). Token key dạng '<level>v<version>', theo sau là số nước cộng/trừ",
+      "meaning": "Bảng chỉnh số nước theo nhóm AB Super Lightball THẬT (tải từ CDN superlightball-ab/, đã lưu trên máy)",
+      "where": "server_configs/App_SLBMoveConfig.json (== cdn_configs/superlightball-ab-config.txt)",
+      "source": "server info (runtime LDPlayer 2026-09-09)"
+    },
+    {
+      "key": "SLBMoveConfig nhóm C (mẫu)",
+      "type": "pairs",
+      "value": "162v02→+2, 164v03→+4, 165v03→+4, 166v02→+2, 168v02→+4, 169v03→+6, 170v02→+1, ... , 229v02→+3",
+      "meaning": "Ví dụ Δnước nhóm C (số dương = thêm nước, dễ hơn)",
+      "where": "server_configs/App_SLBMoveConfig.json",
+      "source": "server info (runtime LDPlayer 2026-09-09)"
+    },
+    {
+      "key": "SLBMoveConfig nhóm D (mẫu, rộng nhất, từ level 75)",
+      "type": "pairs",
+      "value": "75v02→+3, 76v02→+2, 77v02→+1, 78v03→+5, 88v03→+7, 114v03→+8, 132v03→+9 (Δnước lớn nhất tới +9)",
+      "meaning": "Nhóm D bắt đầu sớm nhất và chỉnh nhiều nhất",
+      "where": "server_configs/App_SLBMoveConfig.json",
+      "source": "server info (runtime LDPlayer 2026-09-09)"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.ExtremeLevelsManager",
+    "Royal.Player.Context.Units.SemiDynamicDifficulty",
+    "Royal.Player.Context.Units.LevelEpisodeHelper",
+    "Royal.Player.Context.Units.SlbMoveConfigHelper",
+    "Royal.Scenes.Start.Context.Units.FeatureBundle.HardLevelBundle",
+    "Royal.Scenes.Home.Ui.Dialogs.ExtremelyHardLevelOffer.Scripts.ExtremelyHardLevelOfferHelper"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

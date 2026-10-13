@@ -1,0 +1,820 @@
+{
+  "Name": "14424v02_L",
+  "Move": 20,
+  "Goals": [
+    {
+      "Goal": 38,
+      "Count": 2
+    },
+    {
+      "Goal": 44,
+      "Count": 5
+    },
+    {
+      "Goal": 77,
+      "Count": 2
+    },
+    {
+      "Goal": 13,
+      "Count": 89
+    }
+  ],
+  "Grid": {
+    "Items": [
+      282,
+      141,
+      141,
+      14,
+      0,
+      281,
+      32761,
+      281,
+      32761,
+      282,
+      144,
+      144,
+      14,
+      0,
+      32759,
+      32760,
+      32759,
+      32760,
+      282,
+      144,
+      144,
+      14,
+      152,
+      211,
+      14,
+      14,
+      14,
+      282,
+      144,
+      144,
+      14,
+      211,
+      14,
+      14,
+      14,
+      14,
+      282,
+      144,
+      144,
+      14,
+      152,
+      211,
+      14,
+      14,
+      14,
+      282,
+      144,
+      144,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      282,
+      144,
+      144,
+      14,
+      152,
+      14,
+      14,
+      14,
+      14,
+      282,
+      144,
+      144,
+      14,
+      14,
+      212,
+      14,
+      14,
+      14,
+      282,
+      144,
+      144,
+      14,
+      152,
+      212,
+      14,
+      14,
+      14,
+      11,
+      11,
+      11,
+      11,
+      14,
+      14,
+      14,
+      14,
+      14,
+      0,
+      0,
+      0,
+      0,
+      152,
+      212,
+      14,
+      14,
+      14
+    ],
+    "Cells": [
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "Grass": 32,
+        "Blinds": 245
+      },
+      {
+        "FillType": 1,
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "FillType": 1,
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "FillType": 1,
+        "Grass": 32,
+        "Blinds": 200
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {
+        "Grass": 32
+      },
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "Grass": 32
+      },
+      {
+        "FillType": 1,
+        "Grass": 32
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 76,
+      "Count": 9
+    },
+    {
+      "Type": 32,
+      "Count": 2
+    },
+    {
+      "Type": 38,
+      "Count": 5
+    },
+    {
+      "Type": 75,
+      "Count": 2
+    },
+    {
+      "Type": -2,
+      "Count": 89
+    },
+    {
+      "Type": -11,
+      "Count": 36
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [
+    {
+      "Width": 9,
+      "MagnetCells": [
+        {
+          "Cell": {},
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 1
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 2
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 3
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 4
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 5
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 6
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 7
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "Y": 8
+          },
+          "IsHead": true,
+          "DirectionTiledId": 245
+        },
+        {
+          "Cell": {
+            "X": 1
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 1
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 2
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 3
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 4
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 5
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 6
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 7
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 1,
+            "Y": 8
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 1
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 2
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 3
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 4
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 5
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 6
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 7
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 2,
+            "Y": 8
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 1
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 2
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 3
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 4
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 5
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 6
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 7
+          },
+          "DirectionTiledId": 200
+        },
+        {
+          "Cell": {
+            "X": 3,
+            "Y": 8
+          },
+          "DirectionTiledId": 200
+        }
+      ]
+    }
+  ],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [
+    {
+      "Id": 1,
+      "Target": 15,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 7
+    },
+    {
+      "Id": 2,
+      "Target": 15,
+      "CellCount": 4,
+      "Width": 2,
+      "Height": 2,
+      "MinX": 5
+    }
+  ],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

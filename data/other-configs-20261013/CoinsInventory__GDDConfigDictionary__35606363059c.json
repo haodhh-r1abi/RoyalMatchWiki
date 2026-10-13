@@ -1,0 +1,431 @@
+{
+  "feature": "CoinsInventory",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "SyncManager.InitialCoins",
+      "type": "int",
+      "value": "2000",
+      "meaning": "Coin ban đầu của người chơi mới",
+      "where": "Royal.Player.Context.Data.SyncManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.MaxBoosterDigit",
+      "type": "short",
+      "value": "16",
+      "meaning": "Số bit dành cho số lượng mỗi loại booster (tối đa 65535)",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.MaxCloche",
+      "type": "byte",
+      "value": "3",
+      "meaning": "Số cloche tối đa giữ được",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.ClocheStartIndex / ClocheEndIndex",
+      "type": "short",
+      "value": "48 / 49",
+      "meaning": "Dải bit lưu cloche trong Feature1",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.SideProgressionLevelStartIndex / EndIndex",
+      "type": "short",
+      "value": "50 / 50",
+      "meaning": "Bit đánh dấu đã chơi side progression level",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.SkillStartIndex / SkillEndIndex",
+      "type": "short",
+      "value": "51 / 53",
+      "meaning": "3 bit lưu UserSkill (độ khó động)",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.TryCountStartIndex / TryCountEndIndex",
+      "type": "short",
+      "value": "54 / 60",
+      "meaning": "7 bit lưu số lần thua level hiện tại",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.MaxTryCount",
+      "type": "short",
+      "value": "127",
+      "meaning": "Trần của try count (7 bit)",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.UnlimitedRocketPausedTime 0-15 / Tnt 16-31 / Lightball 32-47",
+      "type": "short",
+      "value": "0-15 / 16-31 / 32-47",
+      "meaning": "Dải bit lưu thời gian unlimited prelevel booster bị tạm dừng (phút)",
+      "where": "UserInventory.RemainingBoosterTimes"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.EventMultiplierEndTimeStartIndex / EndIndex",
+      "type": "short",
+      "value": "31 / 61",
+      "meaning": "Dải bit lưu mốc hết hạn multiplier sự kiện",
+      "where": "UserInventory.MultiplierEndTimes"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.UnlimitedHammerTime 0-31 / Arrow 32-63 / Cannon 64-95 / Jester 96-127",
+      "type": "short",
+      "value": "0-31 / 32-63 / 64-95 / 96-127",
+      "meaning": "32 bit mỗi loại: mốc hết hạn unlimited in-game booster",
+      "where": "UserInventory BitArray unlimitedInGameBoosterInventoryValue"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.UnlimitedHammerPausedTime 128-143 / Arrow 144-159 / Cannon 160-175 / Jester 176-191",
+      "type": "short",
+      "value": "128-143 / 144-159 / 160-175 / 176-191",
+      "meaning": "16 bit mỗi loại: thời gian bị tạm dừng (phút)",
+      "where": "UserInventory BitArray"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.UnlimitedInGameBoosterBitArrayLength",
+      "type": "int",
+      "value": "192",
+      "meaning": "Tổng số bit của BitArray unlimited in-game booster",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.TryCount2StartIndex / EndIndex",
+      "type": "short",
+      "value": "1 / 12",
+      "meaning": "Dải bit try count phiên bản 2 trong DynamicDifficultyInventory",
+      "where": "UserInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.DeltaMoveStartIndex / EndIndex",
+      "type": "short",
+      "value": "13 / 17",
+      "meaning": "Số nước cộng/trừ của độ khó động",
+      "where": "UserInventory.DynamicDifficultyInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.UpdateSectionStartIndex / EndIndex",
+      "type": "short",
+      "value": "18 / 34",
+      "meaning": "Section độ khó đã cập nhật lần cuối",
+      "where": "UserInventory.DynamicDifficultyInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.CurrentLevelStartIndex / EndIndex",
+      "type": "short",
+      "value": "35 / 49",
+      "meaning": "Level đang tính độ khó",
+      "where": "UserInventory.DynamicDifficultyInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory.SegmentedLadderOfferUserSegmentStartIndex / EndIndex",
+      "type": "short",
+      "value": "17 / 20",
+      "meaning": "4 bit lưu segment của Ladder Offer",
+      "where": "UserInventory.Dialogs"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory EventInventory bit flags",
+      "type": "short",
+      "value": "SkyRaceTutorial=50, FacebookInfoDialog=51, InstagramInfoDialog=52, FacebookLikeReward=53, InstagramFollowReward=54, HapticTutorialShown=55, TeamTreasureTutorial=56, LightningRushTutorial=57, NextLevelTutorial=58, MadnessFirstClaimTouchLock=60",
+      "meaning": "Các cờ đã xem tutorial / đã nhận thưởng social",
+      "where": "UserInventory.EventInventory"
+    },
+    {
+      "source": "code const",
+      "key": "UserInventory Dialogs bit flags",
+      "type": "short",
+      "value": "AutomaticSocialPopups=0, CardCollectionTutorial=1, WildCardTutorial=2, CardTokenTutorial=3, CardCollectionIntro=4, SlotMachineItemTutorial=5, KCTooltip=6-7, PPTooltip=8-9, LRTooltip=10-11, TTTooltip=12-13, SRTooltip=14-15, SpaceMissionFirstFail=16, SMIsInGame=21, Cloche=22-24, SM1Tooltip=25-26, SM2Tooltip=27-28, SM3Tooltip=29-30, BRIsInGame=31, QuitInGame=50, UserProfileTutorial=51, LeaderboardFriendsSuggestionTutorial=52, PRTooltip=55-56, RRTooltip=57-58, CCTooltip=59-60",
+      "meaning": "Các cờ dialog/tooltip đã hiện",
+      "where": "UserInventory.Dialogs"
+    },
+    {
+      "source": "code enum",
+      "key": "RewardType",
+      "type": "enum",
+      "value": "None=0, Coins=1, UnlimitedLives=2, UnlimitedRocket=3, UnlimitedTnt=4, UnlimitedLightball=5, Hammer=6, Arrow=7, Cannon=8, Jester=9, AllInGameBoosters=10, Tnt=11, Lightball=12, Rocket=13, Prelevel=14, UnlimitedPrelevel=15, PinkGiftbox=16, RedGiftbox=17, PurpleGiftbox=18, SmallChest=19, MediumChest=20, BigChest=21, EventMultiplier=22, Token=23, WildCard=24, Card=25, NicknameStyle=26, FrameStyle=27, Pickaxe=28, Elixir=29, MagicBall=30, FortuneToken=31, SeasonalCardPack2=32, SeasonalCardPack3=33, SeasonalCardPack4=34, SeasonalCardPack6=35, SeasonalCardPackGuaranteed=36, ProfileBadge=37, Ticket=38, StyledName=39, EgoToken=40, Ship=41, PuzzlePiece=42, MultiplierToken=43, Anvil=44, UnlimitedHammer=45, UnlimitedArrow=46, UnlimitedCannon=47, UnlimitedJester=48, UnlimitedInGameBooster=49, Life=50, GoldenBall=51, EnergyCrystal=52, AvatarStyle=53",
+      "meaning": "54 loại phần thưởng trong game",
+      "where": "Royal.Player.Configs.RewardType (dump.cs TypeDefIndex 10643)"
+    },
+    {
+      "source": "code const",
+      "key": "Reward code map (RewardItem.t)",
+      "type": "string->RewardType",
+      "value": "C=Coins, ULV=UnlimitedLives, UR=UnlimitedRocket, UT=UnlimitedTnt, ULB=UnlimitedLightball, H=Hammer, A=Arrow, Ca=Cannon, J=Jester, IG=AllInGameBoosters, T=Tnt, L=Lightball, R=Rocket, PL=Prelevel, ULP=UnlimitedPrelevel, 2xE=EventMultiplier, Tk=Ticket, SNS=NicknameStyle, SFS=FrameStyle, Px=Pickaxe, Ex=Elixir, Mb=MagicBall, Dft=FortuneToken, CP2/CP3/CP4/CP6=SeasonalCardPack2/3/4/6, CPG=SeasonalCardPackGuaranteed, PB=ProfileBadge, SSN=StyledName, OOs=Ship, Pzl=PuzzlePiece, 2xT=MultiplierToken, Msa=Anvil, UH=UnlimitedHammer, UA=UnlimitedArrow, UCa=UnlimitedCannon, UJ=UnlimitedJester, UIG=UnlimitedInGameBooster, GB=GoldenBall, EEc=EnergyCrystal, SAS=AvatarStyle",
+      "meaning": "42 mã chữ được dùng trong JSON config, trường 'a' là số lượng hoặc số phút",
+      "where": "Royal.Player.Configs.RewardItem.GetRewardType (strings-by-type.tsv)"
+    },
+    {
+      "source": "code enum",
+      "key": "RewardName",
+      "type": "enum",
+      "value": "Single=0, SmallGiftBox=1, MediumGiftBox=2, BigGiftBox=3, SmallChest=4, MediumChest=5, BigChest=6, WoodChest=7, BoneChest=8, GreenChest=9, FleurChest=10, SpecialChest=11, Safe=12, GoldChest=13, SilverChest=14, BronzeChest=15, SeasonalGiftBoxBlue=16, SeasonalGiftBoxGreen=17, SeasonalGiftBoxOrange=18, SeasonalGiftBoxTurquoise=19",
+      "meaning": "Tên hộp quà / rương dùng trong JSON qua trường 'gn' / 'fn'",
+      "where": "Royal.Player.Configs.RewardName"
+    },
+    {
+      "source": "code enum",
+      "key": "SpecialRewardTypes",
+      "type": "enum",
+      "value": "None=0, NicknameStyle=1, FrameStyle=2",
+      "meaning": "Phần thưởng đặc biệt được ghi riêng trong analytics (special_rewards)",
+      "where": "Royal.Player.Configs.SpecialRewardTypes"
+    },
+    {
+      "source": "code enum",
+      "key": "BoosterType",
+      "type": "enum",
+      "value": "None=0, Rocket=1, Tnt=2, LightBall=3, Hammer=4, Arrow=5, Cannon=6, JesterHat=7, Propeller=8",
+      "meaning": "9 loại booster",
+      "where": "Royal.Scenes.Game.Mechanics.Boosters.BoosterType"
+    },
+    {
+      "source": "code enum",
+      "key": "MultiplierType",
+      "type": "enum",
+      "value": "Events=0, Token=1",
+      "meaning": "Hai loại hệ số nhân thưởng",
+      "where": "Royal.Scenes.Home.Ui.Dialogs.Madness.Multiplier.MultiplierType"
+    },
+    {
+      "source": "code field",
+      "key": "InventoryPackage",
+      "type": "class",
+      "value": "id, coins, bonusCoins, lives, unlimitedLifetimeMin, tokens, wildcards, cards, boosters<BoosterType,int>, unlimitedBoosters<BoosterType,int>, multipliers<MultiplierType,int>, eventItems<RewardType,int>, seasonalCardCollectionItems<RewardType,int>, frames[], styledNames[], badges[], avatars[]",
+      "meaning": "Cấu trúc gói phần thưởng dùng chung cho mọi nguồn",
+      "where": "Royal.Player.Context.Data.InventoryPackage"
+    },
+    {
+      "source": "code field",
+      "key": "SpendingData",
+      "type": "struct",
+      "value": "SpendingName (string), CoinAmount (int)",
+      "meaning": "Mô tả một lần tiêu coin, đi kèm analytics Spending",
+      "where": "Royal.Player.Context.Data.SpendingData"
+    },
+    {
+      "source": "code const",
+      "key": "BoosterTypeExtension.PrelevelBoosterUnlockLevel",
+      "type": "int",
+      "value": "7",
+      "meaning": "Level mở booster prelevel (Rocket/Tnt/LightBall)",
+      "where": "BoosterTypeExtension"
+    },
+    {
+      "source": "code const",
+      "key": "BoosterTypeExtension.HighestLevelForBoosterUnlock",
+      "type": "int",
+      "value": "19",
+      "meaning": "Level mở booster cuối cùng (JesterHat)",
+      "where": "BoosterTypeExtension"
+    },
+    {
+      "source": "static array",
+      "key": "BoosterTypeExtension.GetUnlockLevel table",
+      "type": "int[4]",
+      "value": "[8, 14, 17, 19] cho Hammer, Arrow, Cannon, JesterHat",
+      "meaning": "Level mở từng in-game booster; còn lại trả 7",
+      "where": "libil2cpp.so offset 0x45B7434, đọc từ RVA 0x2DDD7E0 (BoosterTypeExtension.GetUnlockLevel)"
+    },
+    {
+      "source": "code const",
+      "key": "BoosterTypeExtension.Amount",
+      "type": "int",
+      "value": "3",
+      "meaning": "Số lượng booster mua mỗi lần (mua 1 lần được 3 cái)",
+      "where": "BoosterTypeExtension.Amount"
+    },
+    {
+      "source": "code const",
+      "key": "BoosterTypeExtension.Price (thuong / high refill)",
+      "type": "int",
+      "value": "Rocket 900 / 1900; Tnt 1500 / 2500; LightBall 1900 / 2900; Hammer 1900 / 2900; JesterHat 1900 / 2900; Arrow 3900 / 4900; Cannon 3900 / 4900",
+      "meaning": "Giá coin mua booster; bản 'high' áp dụng khi MultiplierSelectionManager.IsHighRefillPricingActive",
+      "where": "BoosterTypeExtension.Price (đọc bằng gd_condense)"
+    },
+    {
+      "source": "code const",
+      "key": "RemainingCollectablesConversionBundleGroupInfo.GroupName",
+      "type": "string",
+      "value": "remaining_collectables_conversion",
+      "meaning": "Tên nhóm bundle cho tính năng chuyển collectable",
+      "where": "RemainingCollectablesConversionBundleGroupInfo"
+    },
+    {
+      "source": "asset",
+      "key": "RCC bundle assets",
+      "type": "string",
+      "value": "remaining_collectables_conversion_dialog, rcc_single, rcc_final, rcc_collectable_balloon_rise(_christmas/_easter/_halloween), rcc_collectable_hidden_temple, rcc_collectable_magic_cauldron, rcc_collectable_merge_smith, rcc_collectable_ocean_odyssey, rcc_collectable_pinata_party(_christmas/_easter/_halloween), rcc_collectable_puzzle_break",
+      "meaning": "Asset icon cho từng sự kiện khi chuyển collectable",
+      "where": "RemainingCollectablesConversionBundleGroupInfo"
+    },
+    {
+      "source": "storage key",
+      "key": "Coins",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Số coin",
+      "where": "UserInventory.UpdateCoins (UserKeyValue.SetLong)"
+    },
+    {
+      "source": "storage key",
+      "key": "Stars",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Số sao dùng xây Area",
+      "where": "UserInventory.UpdateStars"
+    },
+    {
+      "source": "storage key",
+      "key": "Inbox",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Số item trong inbox",
+      "where": "UserInventory.UpdateInbox"
+    },
+    {
+      "source": "storage key",
+      "key": "Chest",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Bit-packed: thời gian unlimited lives tạm dừng",
+      "where": "UserInventory.UpdateChest"
+    },
+    {
+      "source": "storage key",
+      "key": "PreLevelInventory",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Số lượng Rocket (bit 0-15), Tnt (16-31), LightBall (32-47)",
+      "where": "UserInventory.UpdatePreLevelInventory"
+    },
+    {
+      "source": "storage key",
+      "key": "InGameInventory",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Số lượng Hammer (0-15), Arrow (16-31), Cannon (32-47), JesterHat (48-63)",
+      "where": "UserInventory.UpdateInGameInventory"
+    },
+    {
+      "source": "storage key",
+      "key": "RemainingBoosterTimes",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Thời gian unlimited prelevel booster còn lại / bị tạm dừng",
+      "where": "UserInventory.UpdateRemainingBoosterTimes"
+    },
+    {
+      "source": "storage key",
+      "key": "RET / TET / LET",
+      "type": "int",
+      "value": "client + server",
+      "meaning": "Rocket / Tnt / Lightball unlimited end time",
+      "where": "UserInventory.UpdateRocketEndTime / UpdateTntEndTime / UpdateLightballEndTime"
+    },
+    {
+      "source": "storage key",
+      "key": "EventInventory",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit cờ tutorial / thưởng social / madness",
+      "where": "UserInventory.UpdateEventInventory"
+    },
+    {
+      "source": "storage key",
+      "key": "Feature1 / Feature2",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit-packed: cloche, skill, try count, offer progress, pinata progress, paused multiplier",
+      "where": "UserInventory.UpdateFeature1 / UpdateFeature2"
+    },
+    {
+      "source": "storage key",
+      "key": "MultiplierEndTimes",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Mốc hết hạn của từng MultiplierType",
+      "where": "UserInventory.UpdateMultiplierEndTimes"
+    },
+    {
+      "source": "storage key",
+      "key": "Dialogs",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit cờ dialog/tooltip đã hiện + segment ladder offer",
+      "where": "UserInventory.UpdateDialogs"
+    },
+    {
+      "source": "storage key",
+      "key": "DynaDiff",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Bit-packed độ khó động (TryCount2, DeltaMove, UpdateSection, CurrentLevel)",
+      "where": "UserInventory.UpdateDynamicDifficultyInventory"
+    },
+    {
+      "source": "storage key",
+      "key": "RoyalPassProgress / RoyalPassFree / RoyalPassGold",
+      "type": "long/bool",
+      "value": "client + server",
+      "meaning": "Tiến độ Royal Pass",
+      "where": "UserInventory.UpdateRoyalPass"
+    },
+    {
+      "source": "storage key",
+      "key": "TeamOffer",
+      "type": "long",
+      "value": "client + server",
+      "meaning": "Tiến độ Team Offer",
+      "where": "UserInventory.UpdateLocalTeamOfferProgress"
+    },
+    {
+      "source": "storage key",
+      "key": "UserKeyValueDataRecoveryVersion",
+      "type": "int",
+      "value": "server override",
+      "meaning": "Phiên bản khôi phục dữ liệu; quyết định có gửi full key value lên server không",
+      "where": "SyncManager.ConfigureDataRecoveryVersion"
+    },
+    {
+      "source": "storage key",
+      "key": "IsSendDataToBackendOptimizationEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Bật gom batch khi gửi dữ liệu lên server",
+      "where": "UserManager.ProcessClientSettings"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Data.Persistent.UserInventory",
+    "Royal.Player.Context.Data.InventoryPackage",
+    "Royal.Player.Context.Data.Persistent.BasicUserData",
+    "Royal.Player.Configs.RewardItem",
+    "Royal.Player.Context.Units.RemainingCollectablesConversionManager",
+    "Royal.Player.Context.Data.SyncManager",
+    "Royal.Player.Context.Units.UserManager"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

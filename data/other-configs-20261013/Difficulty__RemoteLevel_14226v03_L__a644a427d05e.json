@@ -1,0 +1,392 @@
+{
+  "Name": "14226v03_L",
+  "Move": 15,
+  "Goals": [
+    {
+      "Goal": 95,
+      "Count": 8
+    },
+    {
+      "Goal": 98,
+      "Count": 4
+    },
+    {
+      "Goal": 86,
+      "Count": 1
+    },
+    {
+      "Goal": 105,
+      "Count": 16,
+      "IsFromSettings": true
+    }
+  ],
+  "Grid": {
+    "Items": [
+      373,
+      14,
+      373,
+      14,
+      315,
+      14,
+      373,
+      14,
+      373,
+      363,
+      14,
+      363,
+      14,
+      319,
+      14,
+      363,
+      4,
+      363,
+      0,
+      14,
+      14,
+      14,
+      319,
+      14,
+      14,
+      4,
+      0,
+      373,
+      14,
+      373,
+      14,
+      319,
+      2,
+      373,
+      14,
+      373,
+      363,
+      14,
+      363,
+      14,
+      319,
+      2,
+      363,
+      4,
+      363,
+      0,
+      14,
+      14,
+      14,
+      2,
+      14,
+      14,
+      14,
+      0,
+      350,
+      14,
+      396,
+      14,
+      14,
+      14,
+      395,
+      14,
+      350,
+      32737,
+      14,
+      396,
+      1,
+      14,
+      14,
+      395,
+      14,
+      32737,
+      0,
+      14,
+      3,
+      14,
+      14,
+      14,
+      14,
+      14,
+      0,
+      350,
+      3,
+      395,
+      1,
+      14,
+      14,
+      396,
+      14,
+      350,
+      32737,
+      3,
+      395,
+      1,
+      14,
+      14,
+      396,
+      14,
+      32737
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      },
+      {
+        "FillType": 1
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 102,
+      "Count": 8
+    },
+    {
+      "Type": 105,
+      "Count": 4
+    },
+    {
+      "Type": 114,
+      "Count": 8
+    },
+    {
+      "Type": 86,
+      "Count": 1
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [
+    {
+      "Cells": [
+        {
+          "Point": {
+            "X": 4
+          },
+          "Direction": -1
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 1
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 2
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 3
+          },
+          "Direction": 198
+        },
+        {
+          "Point": {
+            "X": 4,
+            "Y": 4
+          },
+          "Direction": 198
+        }
+      ]
+    }
+  ],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [
+    {
+      "Y": 9
+    },
+    {
+      "X": 8,
+      "Y": 9
+    },
+    {
+      "Y": 6
+    },
+    {
+      "X": 8,
+      "Y": 6
+    }
+  ],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

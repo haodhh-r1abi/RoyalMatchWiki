@@ -1,0 +1,12 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.LeagueManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "1000",
+      "dump_line": 408494
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

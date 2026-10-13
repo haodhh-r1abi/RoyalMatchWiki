@@ -1,0 +1,322 @@
+{
+  "feature": "Analytics",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "EventWriter.DefaultUrl",
+      "type": "string",
+      "value": "prod-analytics.royal.drmgms.com/topics/event",
+      "meaning": "Endpoint Kafka REST proxy chính",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.ForbiddenUrl",
+      "type": "string",
+      "value": "prod.sparkle.royalmatch-events.drmgms.com/topics/event",
+      "meaning": "Endpoint dự phòng khi URL chính bị chặn (403)",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.EventsFileName / skippedEventsFileName",
+      "type": "string",
+      "value": "royal.events / skipped.royal.events",
+      "meaning": "File đệm sự kiện và file sự kiện bị bỏ",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.Prefix / Concat / Suffix",
+      "type": "string",
+      "value": "{\"records\":[ / , / ]}",
+      "meaning": "Bao lô theo định dạng Kafka REST",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.DateFormat",
+      "type": "string",
+      "value": ".yyMMddHHmmssFFF",
+      "meaning": "Hậu tố tên file khi đóng lô",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.ResponseSuccess",
+      "type": "string",
+      "value": "RMSuccess",
+      "meaning": "Chuỗi báo gửi thành công",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.WriterThreadName",
+      "type": "string",
+      "value": "EventWriterThread",
+      "meaning": "Tên thread nền ghi/gửi sự kiện",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.DirectoryPath",
+      "type": "string",
+      "value": "Events",
+      "meaning": "Thư mục chứa file sự kiện",
+      "where": "EventWriter..cctor"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter Content-Type",
+      "type": "string",
+      "value": "application/vnd.kafka.json.v2+json (gửi); Accept: application/json, application/vnd.kafka+json, application/vnd.kafka.v2+json",
+      "meaning": "Header HTTP cho Kafka REST proxy",
+      "where": "EventWriter.CreateHttpClient / UploadFile"
+    },
+    {
+      "source": "code const",
+      "key": "EventWriter.MaxFileSize",
+      "type": "int",
+      "value": "(static readonly, giá trị chưa đọc được)",
+      "meaning": "Ngưỡng đóng lô và gửi",
+      "where": "EventWriter (static field)"
+    },
+    {
+      "source": "code const",
+      "key": "EventData.BasicInfoKey / DeviceInfoKey",
+      "type": "string",
+      "value": "basicInfo / deviceInfo",
+      "meaning": "2 đối tượng lồng gắn vào mỗi sự kiện",
+      "where": "EventData..cctor"
+    },
+    {
+      "source": "static array",
+      "key": "BasicInfo",
+      "type": "class",
+      "value": "event_time (long), user_id (long), is_payer (int)",
+      "meaning": "3 trường chung của mỗi sự kiện",
+      "where": "Analytics.BasicInfo"
+    },
+    {
+      "source": "static array",
+      "key": "DeviceInfo",
+      "type": "class",
+      "value": "city, state, country, language, platform, os_version, model_name, app_version",
+      "meaning": "8 trường thiết bị gắn vào mỗi sự kiện",
+      "where": "Analytics.DeviceInfo"
+    },
+    {
+      "source": "static array",
+      "key": "Inventory1 (tham so inventory1)",
+      "type": "class",
+      "value": "rck, tnt, lb, rh, ar, ca, jh, u_rck, u_tnt, u_lb, u_rh, u_ar, u_ca, u_jh",
+      "meaning": "Tồn kho booster (7 loại + 7 bản không giới hạn)",
+      "where": "Analytics.Inventory1"
+    },
+    {
+      "source": "static array",
+      "key": "Inventory2 (tham so inventory2)",
+      "type": "class",
+      "value": "lf (life), ulf (unlimited life, long), st (star), il (?), cl (?), u_mlt_evt (multiplier event token)",
+      "meaning": "Tồn kho mạng/sao/token",
+      "where": "Analytics.Inventory2"
+    },
+    {
+      "source": "static array",
+      "key": "RewardInventory (tham so reward_inventory)",
+      "type": "class",
+      "value": "r_rck, r_tnt, r_lb, r_rh, r_ar, r_ca, r_jh, ur_rck, ur_tnt, ur_lb, ur_rh, ur_ar, ur_ca, ur_jh, ur_mlt_evt, cards, token, wild_c, mb, rt, ec",
+      "meaning": "21 trường thưởng nhận được",
+      "where": "Analytics.RewardInventory"
+    },
+    {
+      "source": "static array",
+      "key": "EventInventory",
+      "type": "class",
+      "value": "pickaxe, elixir",
+      "meaning": "Vật phẩm sự kiện Hidden Temple / Magic Cauldron",
+      "where": "Analytics.EventInventory"
+    },
+    {
+      "source": "static array",
+      "key": "SpecialRewardJson (tham so special_rewards)",
+      "type": "class",
+      "value": "type, amount, inventory",
+      "meaning": "Thưởng đặc biệt kèm gói mua",
+      "where": "Analytics.SpecialRewardJson"
+    },
+    {
+      "source": "code const",
+      "key": "AnalyticsManager.AnalyticsFacebookId / AnalyticsInstagramId",
+      "type": "int",
+      "value": "1 / 2",
+      "meaning": "Mã nền tảng trong SocialPageLike",
+      "where": "AnalyticsManager"
+    },
+    {
+      "source": "code const",
+      "key": "AnalyticsManager.AnalyticsTriggerHomeScene / AnalyticsTriggerSettings",
+      "type": "int",
+      "value": "1 / 2",
+      "meaning": "Mã nguồn kích hoạt",
+      "where": "AnalyticsManager"
+    },
+    {
+      "source": "code const",
+      "key": "AnalyticsManager.AnalyticsStart / AnalyticsEnd",
+      "type": "string",
+      "value": "start / end",
+      "meaning": "Giá trị tham số type cho sự kiện có cặp đầu/cuối",
+      "where": "AnalyticsManager"
+    },
+    {
+      "source": "code const",
+      "key": "Chu ky SessionEvent",
+      "type": "int",
+      "value": "30 giây (0x1e)",
+      "meaning": "Tần suất gửi SessionEvent trong ManualUpdate",
+      "where": "AnalyticsManager.ManualUpdate"
+    },
+    {
+      "source": "code const",
+      "key": "BatteryUsageAnalyticsHelper.RequiredMinutesToSendBatteryEvt / RequiredMinutesToCheckBattery",
+      "type": "int",
+      "value": "30 / 1",
+      "meaning": "Chu kỳ gửi BatteryUsage và chu kỳ đọc mức pin",
+      "where": "BatteryUsageAnalyticsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "DeviceSoundInfoAnalyticsHelper.MuteCheckSceneChangeLimit",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số lần đổi scene trước khi đọc lại trạng thái tắt tiếng (cờ ClientSettings.MuteDetectionEnabled)",
+      "where": "DeviceSoundInfoAnalyticsHelper"
+    },
+    {
+      "source": "code const",
+      "key": "MarketingHelper.OneDayInMs",
+      "type": "int",
+      "value": "86400000",
+      "meaning": "Mốc ngày đầu cho sự kiện day_1_spending_3600",
+      "where": "MarketingHelper"
+    },
+    {
+      "source": "code const",
+      "key": "AppsFlyer AppID",
+      "type": "string",
+      "value": "1482155847 (App Store ID công khai); GameObject 'AppsFlyerObject'; dev key có trong code nhưng không ghi lại theo quy tắc bảo mật",
+      "meaning": "Cấu hình AppsFlyer",
+      "where": "MarketingHelper..ctor"
+    },
+    {
+      "source": "static array",
+      "key": "MaxEventHelper (11 su kien chuan AppLovin)",
+      "type": "string",
+      "value": "rewarded_ad_opportunity, ad_view, ad_clicked, level_start, level_complete, level_fail, energy_depleted, virtual_resource_transaction, account_linked, gift_transaction, app_open; param 'value', 'resource_type'; resource type 'COINS' / 'HEARTS'",
+      "meaning": "Sự kiện chuẩn gửi lên AppLovin MAX",
+      "where": "MaxEventHelper (const)"
+    },
+    {
+      "source": "static array",
+      "key": "AppsFlyer events",
+      "type": "string",
+      "value": "af_purchase (af_revenue, af_currency, af_content_id, af_content_type, af_quantity), af_level_achieved (af_level), level_<n>, second_session, shop_open, bundle_purchase, day_1_spending_3600, in_app_purchase_2_to_7, in_app_purchase_10_to_20, in_app_purchase_30_to_55, in_app_purchase_80_to_100, in_app_purchase_d1, in_app_purchase_pass",
+      "meaning": "13 sự kiện marketing gửi lên AppsFlyer",
+      "where": "MarketingHelper"
+    },
+    {
+      "source": "static array",
+      "key": "Firebase events",
+      "type": "string",
+      "value": "in_app_purchase_troas (USD), LogEvent(name, Parameter[]) chung, Crashlytics LogException, user property 'is_payer', 'is_appcheck_enabled'",
+      "meaning": "Kênh Firebase",
+      "where": "FirebaseHelper"
+    },
+    {
+      "source": "static array",
+      "key": "offer_type (26 gia tri)",
+      "type": "string",
+      "value": "single, bundle, offer, pass, stagedpass1, stagedpass2, ladder, laddercoin, dynamic, multiplier, noads, noadsbundle, teamoffer, anvilpass, weeklypass, energypass, energyoffer, energysingle, energysingle3, egooffer, egoofferv2, progressoffer, conversionoffer, extremelyhardleveloffer, worldcupcosmetic, worldcupcosmetic2",
+      "meaning": "Phân loại gói bán trong sự kiện mua hàng",
+      "where": "AnalyticsManager.GetOfferType"
+    },
+    {
+      "source": "static array",
+      "key": "payment_store (7 gia tri)",
+      "type": "string",
+      "value": "GooglePlayStore, AppleAppStore, AmazonAppStore, SamsungGalaxyStore, HuaweiAppGallery, Xsolla, UnityEditor",
+      "meaning": "Cổng thanh toán",
+      "where": "AnalyticsManager.GetPaymentStoreName"
+    },
+    {
+      "source": "static array",
+      "key": "use_type (LifeUse)",
+      "type": "string",
+      "value": "homescreen, gameplay",
+      "meaning": "Nơi tiêu mạng",
+      "where": "AnalyticsManager.LifeUse"
+    },
+    {
+      "source": "static array",
+      "key": "trigger_scene / trigger (su kien)",
+      "type": "string",
+      "value": "homescene, prelevel",
+      "meaning": "Nguồn vào sự kiện",
+      "where": "AnalyticsManager.LrEnter / PrEnter / SmEnter / SrEnter / LavaQuestEnter"
+    },
+    {
+      "source": "static array",
+      "key": "SocialConnect trigger",
+      "type": "string",
+      "value": "settings, leaderboard, invite_friends_dialog, reminder_popup, facebook_refresh; type connect / disconnect",
+      "meaning": "Nguồn liên kết tài khoản xã hội",
+      "where": "AnalyticsManager.SocialConnection"
+    },
+    {
+      "source": "server info",
+      "key": "ClientSettings.AnalyticsBlockDisabled",
+      "type": "bool",
+      "value": "server",
+      "meaning": "Bỏ chặn analytics khi người chơi không đồng ý",
+      "where": "ClientSettings / ApplicationPrivacyManager"
+    },
+    {
+      "source": "server info",
+      "key": "ClientSettings.LogUploadInThreadEnabled / RequestResponseLoggingEnabled / DeprecatedNetworkMetricsEnabled / NetworkMetricsEnabledFlag / ConcurrentDlrUpdateScoreLogEnabled",
+      "type": "bool / sbyte",
+      "value": "server",
+      "meaning": "5 cờ server điều khiển mức độ log và đo mạng",
+      "where": "ClientSettings"
+    },
+    {
+      "source": "storage key",
+      "key": "InstallId / TempLevelKill / DidSendTechnicalSpecifications / TotalSpending / FDSE",
+      "type": "string / int",
+      "value": "-",
+      "meaning": "Khóa lưu cục bộ của analytics",
+      "where": "AnalyticsManager / MarketingHelper"
+    },
+    {
+      "source": "code const",
+      "key": "So luong su kien",
+      "type": "int",
+      "value": "246 method / 206 tên sự kiện / 565 tham số",
+      "meaning": "Quy mô hệ thống đo lường",
+      "where": "facts/types-index.tsv (AnalyticsManager 246 method) + strings-by-type.tsv"
+    }
+  ],
+  "managers": [
+    "Royal.Infrastructure.Services.Analytics.AnalyticsManager",
+    "Royal.Infrastructure.Services.Analytics.Event.EventSender",
+    "Royal.Infrastructure.Services.Analytics.Event.EventWriter",
+    "Royal.Infrastructure.Services.Analytics.Event.EventData",
+    "Royal.Infrastructure.Services.Analytics.Event.EventParameter",
+    "Royal.Infrastructure.Services.Analytics.BatteryUsageAnalyticsHelper",
+    "Royal.Infrastructure.Services.Analytics.DeviceSoundInfoAnalyticsHelper",
+    "Royal.Infrastructure.Services.Analytics.MaxEventHelper",
+    "Royal.Infrastructure.Services.Analytics.Marketing.MarketingHelper",
+    "Royal.Infrastructure.Services.Remote.FirebaseHelper"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

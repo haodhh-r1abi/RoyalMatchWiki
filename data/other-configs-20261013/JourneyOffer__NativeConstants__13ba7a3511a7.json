@@ -1,0 +1,159 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.JourneyOfferManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 406491
+    },
+    {
+      "manager": "Royal.Player.Context.Units.JourneyOfferManager",
+      "field": "PurchaseJourneyOfferIconPriority",
+      "type": "int",
+      "value_expression": "35",
+      "dump_line": 406492
+    },
+    {
+      "manager": "Royal.Player.Context.Units.JourneyOfferManager",
+      "field": "NewEventDialogSeenLimit",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 406493
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "EventIdStartIndex",
+      "type": "int",
+      "value_expression": "0",
+      "dump_line": 430504
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "EventIdEndIndex",
+      "type": "int",
+      "value_expression": "14",
+      "dump_line": 430505
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "SegmentStartIndex",
+      "type": "int",
+      "value_expression": "15",
+      "dump_line": 430506
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "SegmentEndIndex",
+      "type": "int",
+      "value_expression": "17",
+      "dump_line": 430507
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "LevelScoreStartIndex",
+      "type": "int",
+      "value_expression": "18",
+      "dump_line": 430508
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "LevelScoreEndIndex",
+      "type": "int",
+      "value_expression": "26",
+      "dump_line": 430509
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "IsTutorialSeenIndex",
+      "type": "int",
+      "value_expression": "27",
+      "dump_line": 430510
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "IsBoughtIndex",
+      "type": "int",
+      "value_expression": "28",
+      "dump_line": 430511
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "IsEventValidIndex",
+      "type": "int",
+      "value_expression": "29",
+      "dump_line": 430512
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "ShouldShowDialogLastTimeIndex",
+      "type": "int",
+      "value_expression": "30",
+      "dump_line": 430513
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "DialogSeenAtLeastOnceIndex",
+      "type": "int",
+      "value_expression": "31",
+      "dump_line": 430514
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "AbGroupStartIndex",
+      "type": "int",
+      "value_expression": "32",
+      "dump_line": 430515
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "AbGroupEndIndex",
+      "type": "int",
+      "value_expression": "34",
+      "dump_line": 430516
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "NewEventDialogSeenCountStartIndex",
+      "type": "int",
+      "value_expression": "35",
+      "dump_line": 430517
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "NewEventDialogSeenCountEndIndex",
+      "type": "int",
+      "value_expression": "36",
+      "dump_line": 430518
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "AbV2GroupStartIndex",
+      "type": "int",
+      "value_expression": "37",
+      "dump_line": 430519
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "AbV2GroupEndIndex",
+      "type": "int",
+      "value_expression": "39",
+      "dump_line": 430520
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "ClaimStatusStartIndex",
+      "type": "int",
+      "value_expression": "53",
+      "dump_line": 430521
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.JourneyOfferProgress",
+      "field": "ClaimStatusEndIndex",
+      "type": "int",
+      "value_expression": "62",
+      "dump_line": 430522
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

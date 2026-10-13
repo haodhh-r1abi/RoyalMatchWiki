@@ -1,0 +1,1195 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Infrastructure.Services.Remote.RemoteConfigManager",
+      "field": "LevelDownloadPath",
+      "type": "string",
+      "value_expression": "\"https://remote-levels.prod.rylmtch.com/flatbuffer/\"",
+      "dump_line": 453763
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Remote.RemoteConfigManager",
+      "field": "ConfigPath",
+      "type": "string",
+      "value_expression": "\"https://remote-levels.prod.rylmtch.com/versions/\"",
+      "dump_line": 453764
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "EgoPriceChangeAbNewUser",
+      "type": "int",
+      "value_expression": "51",
+      "dump_line": 427778
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "EgoPriceChangeAbOldUser",
+      "type": "int",
+      "value_expression": "52",
+      "dump_line": 427779
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AndroidProgressTransferNewUser",
+      "type": "int",
+      "value_expression": "59",
+      "dump_line": 427780
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AndroidProgressTransferOldUser",
+      "type": "int",
+      "value_expression": "60",
+      "dump_line": 427781
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ArcheryArenaNewUserAbId",
+      "type": "int",
+      "value_expression": "61",
+      "dump_line": 427782
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ArcheryArenaOldUserAbId",
+      "type": "int",
+      "value_expression": "62",
+      "dump_line": 427783
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "DmaConsentRequestNewUserAbId",
+      "type": "int",
+      "value_expression": "67",
+      "dump_line": 427784
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "DmaConsentRequestOldUserAbId",
+      "type": "int",
+      "value_expression": "68",
+      "dump_line": 427785
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ButlersGiftMultiplierRewardV2NewUser",
+      "type": "int",
+      "value_expression": "79",
+      "dump_line": 427786
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ButlersGiftMultiplierRewardV2OldUser",
+      "type": "int",
+      "value_expression": "80",
+      "dump_line": 427787
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "HomeSectionTouchLockNewUserAbId",
+      "type": "int",
+      "value_expression": "85",
+      "dump_line": 427788
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "HomeSectionTouchLockOldUserAbId",
+      "type": "int",
+      "value_expression": "86",
+      "dump_line": 427789
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "OffersHomeSceneIconHideNewUserAbId",
+      "type": "int",
+      "value_expression": "91",
+      "dump_line": 427790
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "OffersHomeSceneIconHideOldUserAbId",
+      "type": "int",
+      "value_expression": "92",
+      "dump_line": 427791
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "CardCollectionRewardsFixNewUserAbId",
+      "type": "int",
+      "value_expression": "99",
+      "dump_line": 427792
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "CardCollectionRewardsFixOldUserAbId",
+      "type": "int",
+      "value_expression": "100",
+      "dump_line": 427793
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgePopupNewUserAbId",
+      "type": "int",
+      "value_expression": "101",
+      "dump_line": 427794
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgePopupOldUserAbId",
+      "type": "int",
+      "value_expression": "102",
+      "dump_line": 427795
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NoOfferNewUserAbId",
+      "type": "int",
+      "value_expression": "105",
+      "dump_line": 427796
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NoOfferOldUserAbId",
+      "type": "int",
+      "value_expression": "106",
+      "dump_line": 427797
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV2NewUserAbId",
+      "type": "int",
+      "value_expression": "116",
+      "dump_line": 427798
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV2OldUserAbId",
+      "type": "int",
+      "value_expression": "117",
+      "dump_line": 427799
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "PrivacySettingsRedesignNewUser",
+      "type": "int",
+      "value_expression": "126",
+      "dump_line": 427800
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "PrivacySettingsRedesignOldUser",
+      "type": "int",
+      "value_expression": "127",
+      "dump_line": 427801
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RewardReductionNewUserAbId",
+      "type": "int",
+      "value_expression": "128",
+      "dump_line": 427802
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RewardReductionOldUserAbId",
+      "type": "int",
+      "value_expression": "129",
+      "dump_line": 427803
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RoyalPassNextStageNewUserAbId",
+      "type": "int",
+      "value_expression": "134",
+      "dump_line": 427804
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RoyalPassNextStageOldUserAbId",
+      "type": "int",
+      "value_expression": "135",
+      "dump_line": 427805
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "PropellerRush3StepNewUserAbId",
+      "type": "int",
+      "value_expression": "136",
+      "dump_line": 427806
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "PropellerRush3StepOldUserAbId",
+      "type": "int",
+      "value_expression": "137",
+      "dump_line": 427807
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NewLeagueNewUserAbId",
+      "type": "int",
+      "value_expression": "138",
+      "dump_line": 427808
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NewLeagueOldUserAbId",
+      "type": "int",
+      "value_expression": "139",
+      "dump_line": 427809
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NewLeagueV2NewUserAbId",
+      "type": "int",
+      "value_expression": "140",
+      "dump_line": 427810
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NewLeagueV2OldUserAbId",
+      "type": "int",
+      "value_expression": "141",
+      "dump_line": 427811
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "KingsCupMatchmakingNewUserAbId",
+      "type": "int",
+      "value_expression": "142",
+      "dump_line": 427812
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "KingsCupMatchmakingOldUserAbId",
+      "type": "int",
+      "value_expression": "143",
+      "dump_line": 427813
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "TeamBattleMatchmakingNewUserAbId",
+      "type": "int",
+      "value_expression": "144",
+      "dump_line": 427814
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "TeamBattleMatchmakingOldUserAbId",
+      "type": "int",
+      "value_expression": "145",
+      "dump_line": 427815
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AncientAdventureNewUserAbId",
+      "type": "int",
+      "value_expression": "146",
+      "dump_line": 427816
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AncientAdventureOldUserAbId",
+      "type": "int",
+      "value_expression": "147",
+      "dump_line": 427817
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SeasonalCardCollectionImprovementNewUserAbId",
+      "type": "int",
+      "value_expression": "148",
+      "dump_line": 427818
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SeasonalCardCollectionImprovementOldUserAbId",
+      "type": "int",
+      "value_expression": "149",
+      "dump_line": 427819
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplierTokentNewUserAbId",
+      "type": "int",
+      "value_expression": "150",
+      "dump_line": 427820
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplierTokentOldUserAbId",
+      "type": "int",
+      "value_expression": "151",
+      "dump_line": 427821
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AncientAdventureV2NewUserAbId",
+      "type": "int",
+      "value_expression": "152",
+      "dump_line": 427822
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AncientAdventureV2OldUserAbId",
+      "type": "int",
+      "value_expression": "153",
+      "dump_line": 427823
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RobotRivalsNewUserAbId",
+      "type": "int",
+      "value_expression": "158",
+      "dump_line": 427824
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RobotRivalsOldUserAbId",
+      "type": "int",
+      "value_expression": "159",
+      "dump_line": 427825
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplierTokenV2NewUserAbId",
+      "type": "int",
+      "value_expression": "160",
+      "dump_line": 427826
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplierTokenV2OldUserAbId",
+      "type": "int",
+      "value_expression": "161",
+      "dump_line": 427827
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "DailySkyRaceSpaceMissionNewUserAbId",
+      "type": "int",
+      "value_expression": "164",
+      "dump_line": 427828
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "DailySkyRaceSpaceMissionOldUserAbId",
+      "type": "int",
+      "value_expression": "165",
+      "dump_line": 427829
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ShopRedesignNewUserAbId",
+      "type": "int",
+      "value_expression": "166",
+      "dump_line": 427830
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ShopRedesignOldUserAbId",
+      "type": "int",
+      "value_expression": "167",
+      "dump_line": 427831
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "PrivacySettingsKoreaNewUserAbId",
+      "type": "int",
+      "value_expression": "175",
+      "dump_line": 427832
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "PrivacySettingsKoreaOldUserAbId",
+      "type": "int",
+      "value_expression": "176",
+      "dump_line": 427833
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NotificationReductionNewUserAbId",
+      "type": "int",
+      "value_expression": "177",
+      "dump_line": 427834
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NotificationReductionOldUserAbId",
+      "type": "int",
+      "value_expression": "178",
+      "dump_line": 427835
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ClashOfChampionsNewUserAbId",
+      "type": "int",
+      "value_expression": "179",
+      "dump_line": 427836
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ClashOfChampionsOldUserAbId",
+      "type": "int",
+      "value_expression": "180",
+      "dump_line": 427837
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ExternalPaymentNewUserAbId",
+      "type": "int",
+      "value_expression": "181",
+      "dump_line": 427838
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ExternalPaymentOldUserAbId",
+      "type": "int",
+      "value_expression": "182",
+      "dump_line": 427839
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "BoosterRewardReductionNewUserAbId",
+      "type": "int",
+      "value_expression": "183",
+      "dump_line": 427840
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "BoosterRewardReductionOldUserAbId",
+      "type": "int",
+      "value_expression": "184",
+      "dump_line": 427841
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV3NewUserAbId",
+      "type": "int",
+      "value_expression": "185",
+      "dump_line": 427842
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV3OldUserAbId",
+      "type": "int",
+      "value_expression": "186",
+      "dump_line": 427843
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "WeeklyPassNewUserAbId",
+      "type": "int",
+      "value_expression": "187",
+      "dump_line": 427844
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "WeeklyPassOldUserAbId",
+      "type": "int",
+      "value_expression": "188",
+      "dump_line": 427845
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MergeSmithNewUserAbId",
+      "type": "int",
+      "value_expression": "189",
+      "dump_line": 427846
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MergeSmithOldUserAbId",
+      "type": "int",
+      "value_expression": "190",
+      "dump_line": 427847
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RushEventsReplayableNewUserAbId",
+      "type": "int",
+      "value_expression": "191",
+      "dump_line": 427848
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "RushEventsReplayableOldUserAbId",
+      "type": "int",
+      "value_expression": "192",
+      "dump_line": 427849
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SuperchargeOfferNewUserAbId",
+      "type": "int",
+      "value_expression": "193",
+      "dump_line": 427850
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SuperchargeOfferOldUserAbId",
+      "type": "int",
+      "value_expression": "194",
+      "dump_line": 427851
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ExtremelyHardLevelOfferNewUserAbId",
+      "type": "int",
+      "value_expression": "195",
+      "dump_line": 427852
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ExtremelyHardLevelOfferOldUserAbId",
+      "type": "int",
+      "value_expression": "196",
+      "dump_line": 427853
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV4NewUserAbId",
+      "type": "int",
+      "value_expression": "197",
+      "dump_line": 427854
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV4OldUserAbId",
+      "type": "int",
+      "value_expression": "198",
+      "dump_line": 427855
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplePurchaseDynamicOfferNewUserAbId",
+      "type": "int",
+      "value_expression": "199",
+      "dump_line": 427856
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplePurchaseDynamicOfferOldUserAbId",
+      "type": "int",
+      "value_expression": "200",
+      "dump_line": 427857
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NewUserEventFlowChangeAbId",
+      "type": "int",
+      "value_expression": "201",
+      "dump_line": 427858
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SuperLightballLevelChangeNewUserAbId",
+      "type": "int",
+      "value_expression": "203",
+      "dump_line": 427859
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SuperLightballLevelChangeOldUserAbId",
+      "type": "int",
+      "value_expression": "204",
+      "dump_line": 427860
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "LimitedInGameAdsNewUserAbId",
+      "type": "int",
+      "value_expression": "205",
+      "dump_line": 427861
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "LimitedInGameAdsOldUserAbId",
+      "type": "int",
+      "value_expression": "206",
+      "dump_line": 427862
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "LadderOfferShopCardNewUserAbId",
+      "type": "int",
+      "value_expression": "207",
+      "dump_line": 427863
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "LadderOfferShopCardOldUserAbId",
+      "type": "int",
+      "value_expression": "208",
+      "dump_line": 427864
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV5NewUserAbId",
+      "type": "int",
+      "value_expression": "209",
+      "dump_line": 427865
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "AgeConsentV5OldUserAbId",
+      "type": "int",
+      "value_expression": "210",
+      "dump_line": 427866
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplierLevelTypeNewUserAbId",
+      "type": "int",
+      "value_expression": "213",
+      "dump_line": 427867
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "MultiplierLevelTypeOldUserAbId",
+      "type": "int",
+      "value_expression": "214",
+      "dump_line": 427868
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "EarlyKingsNightmareNewUserAbId",
+      "type": "int",
+      "value_expression": "215",
+      "dump_line": 427869
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "TeamBattleContributionLimitNewUserAbId",
+      "type": "int",
+      "value_expression": "216",
+      "dump_line": 427870
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "TeamBattleContributionLimitOldUserAbId",
+      "type": "int",
+      "value_expression": "217",
+      "dump_line": 427871
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ShortExpeditionEventNewUserAbId",
+      "type": "int",
+      "value_expression": "218",
+      "dump_line": 427872
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ShortExpeditionEventOldUserAbId",
+      "type": "int",
+      "value_expression": "219",
+      "dump_line": 427873
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "EgoRewardedFirstStepOnlyNewUserAbId",
+      "type": "int",
+      "value_expression": "220",
+      "dump_line": 427874
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "EgoRewardedFirstStepOnlyOldUserAbId",
+      "type": "int",
+      "value_expression": "221",
+      "dump_line": 427875
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ExternalPaymentV2NewUserAbId",
+      "type": "int",
+      "value_expression": "222",
+      "dump_line": 427876
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "ExternalPaymentV2OldUserAbId",
+      "type": "int",
+      "value_expression": "223",
+      "dump_line": 427877
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NextEventCollectibleNewUserAbId",
+      "type": "int",
+      "value_expression": "224",
+      "dump_line": 427878
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "NextEventCollectibleOldUserAbId",
+      "type": "int",
+      "value_expression": "225",
+      "dump_line": 427879
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SuperLightballLevelChangeV2NewUserAbId",
+      "type": "int",
+      "value_expression": "226",
+      "dump_line": 427880
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "SuperLightballLevelChangeV2OldUserAbId",
+      "type": "int",
+      "value_expression": "227",
+      "dump_line": 427881
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "DailyRewardsNewUserAbId",
+      "type": "int",
+      "value_expression": "228",
+      "dump_line": 427882
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "DailyRewardsOldUserAbId",
+      "type": "int",
+      "value_expression": "229",
+      "dump_line": 427883
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.AbTestHelper",
+      "field": "TableGameAbId",
+      "type": "int",
+      "value_expression": "230",
+      "dump_line": 427884
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "PropellerMadnessDeeplink",
+      "type": "string",
+      "value_expression": "\"propellermadness\"",
+      "dump_line": 459334
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "BookOfTreasureDeeplink",
+      "type": "string",
+      "value_expression": "\"bookoftreasure\"",
+      "dump_line": 459335
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "LightningRushDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"lightningrush\"",
+      "dump_line": 459336
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "DailyLightningRushDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"dailylightningrush\"",
+      "dump_line": 459337
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "TeamBattleDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"teambattle\"",
+      "dump_line": 459338
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "TeamTreasureDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"teamtreasure\"",
+      "dump_line": 459339
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "PinataPartyDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"pinataparty\"",
+      "dump_line": 459340
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "SkyRaceDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"skyrace\"",
+      "dump_line": 459341
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "SpaceMissionDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"spacemission\"",
+      "dump_line": 459342
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "BalloonRiseDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"balloonrise\"",
+      "dump_line": 459343
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "WeeklyLeaderboardDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"weeklycontest\"",
+      "dump_line": 459344
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "RoyalPassDeepLinkAction",
+      "type": "string",
+      "value_expression": "\"royalpass\"",
+      "dump_line": 459345
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "WeeklyPassDeepLinkAction",
+      "type": "string",
+      "value_expression": "\"weeklypass\"",
+      "dump_line": 459346
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "RoyalWorldCupDeepLinkAction",
+      "type": "string",
+      "value_expression": "\"royalcup\"",
+      "dump_line": 459347
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "KingsCupDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"kingscup\"",
+      "dump_line": 459348
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "LavaQuestDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"lavaquest\"",
+      "dump_line": 459349
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "HiddenTempleDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"hiddentemple\"",
+      "dump_line": 459350
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "MagicCauldronDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"magiccauldron\"",
+      "dump_line": 459351
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "DragonNestDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"dragonnest\"",
+      "dump_line": 459352
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "ArcheryArenaDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"archeryarena\"",
+      "dump_line": 459353
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "TeamTournamentDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"teamtournament\"",
+      "dump_line": 459354
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "DukesFortuneDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"dukesfortune\"",
+      "dump_line": 459355
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "MissionPursuitDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"missionpursuit\"",
+      "dump_line": 459356
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "MissionControlDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"missioncontrol\"",
+      "dump_line": 459357
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "TrainJourneyDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"trainjourney\"",
+      "dump_line": 459358
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "OceanOdysseyDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"oceanodyssey\"",
+      "dump_line": 459359
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "PuzzleBreakDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"puzzlebreak\"",
+      "dump_line": 459360
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "PropellerRushDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"propellerrush\"",
+      "dump_line": 459361
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "AncientAdventureDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"ancientadventure\"",
+      "dump_line": 459362
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "RobotRivalsDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"robotrivals\"",
+      "dump_line": 459363
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "MergeSmithDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"mergesmith\"",
+      "dump_line": 459364
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "ClashOfChampionsDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"championsclash\"",
+      "dump_line": 459365
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "ShortExpeditionEventDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"kingstales\"",
+      "dump_line": 459366
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "DailyRewardsDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"dailyrewards\"",
+      "dump_line": 459367
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "LadderOfferDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"ladderoffer\"",
+      "dump_line": 459368
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "SpecialOfferDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"specialoffer\"",
+      "dump_line": 459369
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "TeamGiftOfferDeepLinkAction",
+      "type": "string",
+      "value_expression": "\"teamgiftoffer\"",
+      "dump_line": 459370
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "DynamicOfferDeepLinkAction",
+      "type": "string",
+      "value_expression": "\"dynamicoffer\"",
+      "dump_line": 459371
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "AddFriendDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"addfriend\"",
+      "dump_line": 459372
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "AgeConsent",
+      "type": "string",
+      "value_expression": "\"ageconsent\"",
+      "dump_line": 459373
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "ShowFaqAction",
+      "type": "string",
+      "value_expression": "\"faq\"",
+      "dump_line": 459374
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "ShowFaqSectionAction",
+      "type": "string",
+      "value_expression": "\"section\"",
+      "dump_line": 459375
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "SuperLightballDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"superlightball\"",
+      "dump_line": 459376
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "RemoteRewardsDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"remoterewards\"",
+      "dump_line": 459377
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "InviteDeeplinkAction",
+      "type": "string",
+      "value_expression": "\"invite\"",
+      "dump_line": 459378
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "TableGameDeepLinkValue",
+      "type": "string",
+      "value_expression": "\"tablegame_onelink\"",
+      "dump_line": 459379
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "Start",
+      "type": "string",
+      "value_expression": "\"start\"",
+      "dump_line": 459380
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "IgnoreDeeplinkActionKey",
+      "type": "string",
+      "value_expression": "\"notdeeplink\"",
+      "dump_line": 459381
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Deeplink.DeepLinkHelper",
+      "field": "NotificationTypeSplitter",
+      "type": "string",
+      "value_expression": "\"_\"",
+      "dump_line": 459382
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SystemMessageManager",
+      "field": "UpdateMessageImageName",
+      "type": "string",
+      "value_expression": "\"UpdateMessage{0}Image\"",
+      "dump_line": 420286
+    },
+    {
+      "manager": "Royal.Player.Context.Units.SystemMessageManager",
+      "field": "UpdatePopupImageDownloadUrl",
+      "type": "string",
+      "value_expression": "\"https://contents.prod.rylmtch.com/\"",
+      "dump_line": 420297
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ParentalControlManager",
+      "field": "ConsecutiveFailedOtpCount",
+      "type": "int",
+      "value_expression": "5",
+      "dump_line": 413301
+    },
+    {
+      "manager": "Royal.Player.Context.Units.ParentalControlManager",
+      "field": "MessageBlockTimeSpanInMs",
+      "type": "long",
+      "value_expression": "900000",
+      "dump_line": 413302
+    },
+    {
+      "manager": "Royal.Infrastructure.Contexts.Units.App.ApplicationPrivacyManager",
+      "field": "MaxWaitTimeForFirstPing",
+      "type": "float",
+      "value_expression": "2",
+      "dump_line": 507037
+    },
+    {
+      "manager": "Royal.Infrastructure.Contexts.Units.App.ApplicationPrivacyManager",
+      "field": "LastDateBeforeExplicitConsentRequired",
+      "type": "long",
+      "value_expression": "1735516800000",
+      "dump_line": 507038
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Helpshift.HelpshiftManager",
+      "field": "GameObjectName",
+      "type": "string",
+      "value_expression": "\"HelpshiftProxy\"",
+      "dump_line": 458807
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Helpshift.HelpshiftManager",
+      "field": "DomainName",
+      "type": "string",
+      "value_expression": "\"dreamgames.helpshift.com\"",
+      "dump_line": 458808
+    },
+    {
+      "manager": "Royal.Infrastructure.Services.Helpshift.HelpshiftManager",
+      "field": "DeleteAccountSectionId",
+      "type": "string",
+      "value_expression": "\"121\"",
+      "dump_line": 458809
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.RoyalBundle.RemoteRoyalBundleManager",
+      "field": "MediumBundleSize",
+      "type": "float",
+      "value_expression": "3",
+      "dump_line": 5879
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.RoyalBundle.RemoteRoyalBundleManager",
+      "field": "MaxDownloadTry",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 5880
+    },
+    {
+      "manager": "Royal.Scenes.Start.Context.Units.RoyalBundle.RemoteRoyalBundleManager",
+      "field": "ConfigPath",
+      "type": "string",
+      "value_expression": "\"https://contents.prod.rylmtch.com/dynamic-content-config/dynamic-bundle-config.json\"",
+      "dump_line": 5882
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

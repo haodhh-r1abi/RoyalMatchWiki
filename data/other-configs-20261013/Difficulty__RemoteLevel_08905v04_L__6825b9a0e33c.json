@@ -1,0 +1,769 @@
+{
+  "Name": "08905v04_L",
+  "Move": 28,
+  "Goals": [
+    {
+      "Goal": 53,
+      "Count": 3
+    },
+    {
+      "Goal": 27,
+      "Count": 15
+    },
+    {
+      "Goal": 30
+    },
+    {
+      "Goal": 29,
+      "Count": 31
+    }
+  ],
+  "Grid": {
+    "Items": [
+      167,
+      167,
+      88,
+      159,
+      159,
+      159,
+      88,
+      167,
+      167,
+      167,
+      88,
+      88,
+      159,
+      159,
+      159,
+      88,
+      88,
+      167,
+      167,
+      167,
+      88,
+      159,
+      88,
+      159,
+      88,
+      167,
+      167,
+      0,
+      0,
+      159,
+      88,
+      88,
+      88,
+      159,
+      0,
+      0,
+      159,
+      159,
+      159,
+      211,
+      213,
+      211,
+      159,
+      167,
+      167,
+      159,
+      159,
+      159,
+      212,
+      211,
+      212,
+      159,
+      88,
+      167,
+      159,
+      159,
+      159,
+      14,
+      212,
+      14,
+      159,
+      167,
+      167,
+      0,
+      0,
+      159,
+      14,
+      14,
+      14,
+      159,
+      0,
+      0,
+      88,
+      88,
+      88,
+      14,
+      14,
+      14,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      14,
+      14,
+      14,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      14,
+      14,
+      14,
+      88,
+      88,
+      88
+    ],
+    "Cells": [
+      {
+        "Treasuremap": 3
+      },
+      {
+        "Treasuremap": 3
+      },
+      {
+        "Treasuremap": 3
+      },
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "Treasuremap": 3
+      },
+      {
+        "Treasuremap": 3
+      },
+      {
+        "Treasuremap": 3
+      },
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "Treasuremap": 3
+      },
+      {
+        "Treasuremap": 3
+      },
+      {
+        "Treasuremap": 3
+      },
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 2
+      },
+      {
+        "Treasuremap": 2
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "Treasuremap": 1
+      },
+      {
+        "Treasuremap": 1
+      },
+      {
+        "Treasuremap": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "Treasuremap": 1
+      },
+      {
+        "Treasuremap": 1
+      },
+      {
+        "Treasuremap": 1
+      },
+      {},
+      {},
+      {},
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "ForceField": 287
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Treasuremap": 1
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Treasuremap": 1
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "Treasuremap": 1
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "ForceField": 287
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "ForceField": 287
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true,
+        "ForceField": 287
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [
+    {
+      "X": 3,
+      "Y": 12,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 13,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 14,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 15,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 3,
+      "Y": 16,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 4,
+      "Y": 12,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 4,
+      "Y": 13,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 4,
+      "Y": 14,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 4,
+      "Y": 15,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 4,
+      "Y": 16,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 12,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 13,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 14,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 15,
+      "Ids": [
+        15
+      ]
+    },
+    {
+      "X": 5,
+      "Y": 16,
+      "Ids": [
+        15
+      ]
+    }
+  ],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    },
+    {
+      "Name": "Set2",
+      "Elements": [
+        {
+          "Id": 4
+        },
+        {
+          "Id": 3
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 50,
+      "Count": 15
+    },
+    {
+      "Type": 48,
+      "Count": 24
+    },
+    {
+      "Type": 23,
+      "Count": 31
+    },
+    {
+      "Type": -15,
+      "Count": 24
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [
+    {
+      "Limit": 52,
+      "Count": 24
+    }
+  ],
+  "Treasuremaps": [
+    {
+      "Cells": [
+        {
+          "Y": 10
+        },
+        {
+          "Y": 9
+        },
+        {
+          "Y": 8
+        },
+        {
+          "X": 1,
+          "Y": 8
+        },
+        {
+          "X": 1,
+          "Y": 9
+        },
+        {
+          "X": 1,
+          "Y": 10
+        },
+        {
+          "X": 2,
+          "Y": 10
+        },
+        {
+          "X": 2,
+          "Y": 9
+        },
+        {
+          "X": 2,
+          "Y": 8
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "X": 7,
+          "Y": 4
+        },
+        {
+          "X": 7,
+          "Y": 5
+        },
+        {
+          "X": 7,
+          "Y": 6
+        },
+        {
+          "X": 8,
+          "Y": 6
+        },
+        {
+          "X": 8,
+          "Y": 5
+        },
+        {
+          "X": 8,
+          "Y": 4
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "Y": 2
+        },
+        {
+          "Y": 1
+        },
+        {},
+        {
+          "X": 1
+        },
+        {
+          "X": 2
+        },
+        {
+          "X": 2,
+          "Y": 2
+        },
+        {
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "X": 1,
+          "Y": 2
+        }
+      ]
+    }
+  ],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [
+    {
+      "Cells": [
+        {
+          "Y": 4
+        },
+        {
+          "Y": 5
+        },
+        {
+          "Y": 6
+        },
+        {
+          "X": 1,
+          "Y": 6
+        },
+        {
+          "X": 1,
+          "Y": 5
+        },
+        {
+          "X": 1,
+          "Y": 4
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "X": 6
+        },
+        {
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "X": 6,
+          "Y": 2
+        },
+        {
+          "X": 7,
+          "Y": 2
+        },
+        {
+          "X": 8,
+          "Y": 2
+        },
+        {
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "X": 8
+        },
+        {
+          "X": 7
+        },
+        {
+          "X": 7,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "Cells": [
+        {
+          "X": 6,
+          "Y": 8
+        },
+        {
+          "X": 6,
+          "Y": 9
+        },
+        {
+          "X": 6,
+          "Y": 10
+        },
+        {
+          "X": 7,
+          "Y": 10
+        },
+        {
+          "X": 8,
+          "Y": 10
+        },
+        {
+          "X": 8,
+          "Y": 9
+        },
+        {
+          "X": 8,
+          "Y": 8
+        },
+        {
+          "X": 7,
+          "Y": 8
+        },
+        {
+          "X": 7,
+          "Y": 9
+        }
+      ]
+    }
+  ],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

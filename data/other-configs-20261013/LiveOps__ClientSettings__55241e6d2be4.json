@@ -1,0 +1,21 @@
+{
+  "DeprecatedNetworkMetricsEnabled": true,
+  "CommandsWebclientEnabled": true,
+  "MaintenanceWebclientEnabled": true,
+  "SplashRemoteLevelWebclientEnabled": true,
+  "UnityWebRequestEnabled": true,
+  "LogUploadInThreadEnabled": true,
+  "MuteDetectionEnabled": true,
+  "IosUnityWebRequestEnabled": true,
+  "LevelStartEndImprovementsEnabled": true,
+  "RefreshRateFixEnabled": true,
+  "AppCheckEnabled": true,
+  "SendFullKeyValueVersion": 1,
+  "NetworkMetricsEnabledFlag": 31,
+  "RequestResponseLoggingEnabled": true,
+  "KingRobertAnimationEnabled": true,
+  "SendDataOptimizationEnabled": true,
+  "CloudflareEnabled": true,
+  "HttpDisabled": true,
+  "MaxLevelForBundle": 14701
+}

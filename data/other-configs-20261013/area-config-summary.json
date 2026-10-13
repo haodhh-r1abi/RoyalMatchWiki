@@ -1,0 +1,3120 @@
+[
+  {
+    "area_id": 0,
+    "area_name": "Royal League",
+    "tasks": 0,
+    "total_task_price": 0,
+    "task_prices": [],
+    "file": "Areas__Area00AreaConfig__1e133fdbf4af.json"
+  },
+  {
+    "area_id": 1,
+    "area_name": "Castle",
+    "tasks": 6,
+    "total_task_price": 10,
+    "task_prices": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "file": "Areas__Area01AreaConfig__a3c339fcf4f0.json"
+  },
+  {
+    "area_id": 2,
+    "area_name": "ThroneRoom",
+    "tasks": 7,
+    "total_task_price": 10,
+    "task_prices": [
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "file": "Areas__Area02AreaConfig__ff3e084ccfdd.json"
+  },
+  {
+    "area_id": 3,
+    "area_name": "DiningRoom",
+    "tasks": 9,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "file": "Areas__Area03AreaConfig__d53fa9c87f78.json"
+  },
+  {
+    "area_id": 4,
+    "area_name": "Garden",
+    "tasks": 8,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4
+    ],
+    "file": "Areas__Area04AreaConfig__bf640acb5e76.json"
+  },
+  {
+    "area_id": 5,
+    "area_name": "Library",
+    "tasks": 9,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3
+    ],
+    "file": "Areas__Area05AreaConfig__b02ff327cbae.json"
+  },
+  {
+    "area_id": 6,
+    "area_name": "Pool",
+    "tasks": 8,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      4,
+      2,
+      2,
+      2,
+      4,
+      3,
+      2
+    ],
+    "file": "Areas__Area06AreaConfig__c615aba89d04.json"
+  },
+  {
+    "area_id": 7,
+    "area_name": "Bedroom",
+    "tasks": 8,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      2,
+      3,
+      3,
+      4,
+      2,
+      3,
+      2
+    ],
+    "file": "Areas__Area07AreaConfig__c002d31a2ac3.json"
+  },
+  {
+    "area_id": 8,
+    "area_name": "MusicRoom",
+    "tasks": 8,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      2,
+      3,
+      2,
+      4,
+      3,
+      3,
+      2
+    ],
+    "file": "Areas__Area08AreaConfig__f73d8f56cc17.json"
+  },
+  {
+    "area_id": 9,
+    "area_name": "Dock",
+    "tasks": 9,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      4,
+      4,
+      3,
+      2
+    ],
+    "file": "Areas__Area09AreaConfig__9a5cedb1e883.json"
+  },
+  {
+    "area_id": 100,
+    "area_name": "Courtyard",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      7,
+      11,
+      12,
+      10,
+      8,
+      10,
+      13,
+      11
+    ],
+    "file": "Areas__Area100AreaConfig__34ef9b599bbc.json"
+  },
+  {
+    "area_id": 101,
+    "area_name": "Stable",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      11,
+      9,
+      9,
+      12,
+      9,
+      9,
+      13,
+      10
+    ],
+    "file": "Areas__Area101AreaConfig__9fe26ead3879.json"
+  },
+  {
+    "area_id": 102,
+    "area_name": "Temple",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      10,
+      8,
+      10,
+      13,
+      9,
+      10,
+      11,
+      12
+    ],
+    "file": "Areas__Area102AreaConfig__96a330d016e2.json"
+  },
+  {
+    "area_id": 103,
+    "area_name": "Ruins",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      11,
+      10,
+      11,
+      8,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area103AreaConfig__fea638078a6b.json"
+  },
+  {
+    "area_id": 104,
+    "area_name": "Lightroom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      12,
+      9,
+      10,
+      11,
+      8,
+      9,
+      10,
+      13
+    ],
+    "file": "Areas__Area104AreaConfig__fb0d0fa67abb.json"
+  },
+  {
+    "area_id": 105,
+    "area_name": "WaterPark",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      9,
+      8,
+      12,
+      11,
+      10,
+      11,
+      9,
+      13
+    ],
+    "file": "Areas__Area105AreaConfig__fc91000cc5ae.json"
+  },
+  {
+    "area_id": 106,
+    "area_name": "AirFestival",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      9,
+      11,
+      8,
+      11,
+      12,
+      9,
+      10,
+      13
+    ],
+    "file": "Areas__Area106AreaConfig__dd51e5a64ed5.json"
+  },
+  {
+    "area_id": 107,
+    "area_name": "HiddenGrotto",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      8,
+      10,
+      8,
+      12,
+      10,
+      13,
+      9,
+      11,
+      12
+    ],
+    "file": "Areas__Area107AreaConfig__d77de3a17e6c.json"
+  },
+  {
+    "area_id": 108,
+    "area_name": "AquaResearch",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      8,
+      9,
+      12,
+      9,
+      13,
+      10,
+      8,
+      11,
+      10
+    ],
+    "file": "Areas__Area108AreaConfig__1a360928b30c.json"
+  },
+  {
+    "area_id": 109,
+    "area_name": "WizardTower",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      11,
+      8,
+      10,
+      13,
+      12,
+      9,
+      11,
+      10
+    ],
+    "file": "Areas__Area109AreaConfig__ba565ec560ed.json"
+  },
+  {
+    "area_id": 10,
+    "area_name": "Kitchen",
+    "tasks": 8,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      3,
+      3,
+      3,
+      4,
+      2,
+      2,
+      2
+    ],
+    "file": "Areas__Area10AreaConfig__3045e27f4a00.json"
+  },
+  {
+    "area_id": 110,
+    "area_name": "SkatePark",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      12,
+      8,
+      11,
+      10,
+      9,
+      10,
+      13,
+      11
+    ],
+    "file": "Areas__Area110AreaConfig__007c0dabc3d6.json"
+  },
+  {
+    "area_id": 111,
+    "area_name": "JoustingArena",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      11,
+      8,
+      10,
+      12,
+      9,
+      11,
+      13,
+      10
+    ],
+    "file": "Areas__Area111AreaConfig__435643faf826.json"
+  },
+  {
+    "area_id": 112,
+    "area_name": "FloatingMarket",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      11,
+      12,
+      10,
+      8,
+      9,
+      11,
+      10,
+      9,
+      13
+    ],
+    "file": "Areas__Area112AreaConfig__728e93546870.json"
+  },
+  {
+    "area_id": 113,
+    "area_name": "GrapeFestival",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      9,
+      11,
+      6,
+      11,
+      9,
+      14,
+      13,
+      12,
+      10
+    ],
+    "file": "Areas__Area113AreaConfig__875421ed21f1.json"
+  },
+  {
+    "area_id": 114,
+    "area_name": "HalloweenFair",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      9,
+      12,
+      10,
+      10,
+      8,
+      11,
+      10,
+      11,
+      9,
+      10
+    ],
+    "file": "Areas__Area114AreaConfig__8cd91174f079.json"
+  },
+  {
+    "area_id": 115,
+    "area_name": "ChocolateFactory",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      8,
+      10,
+      11,
+      8,
+      12,
+      13,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area115AreaConfig__5c7a18b29d17.json"
+  },
+  {
+    "area_id": 116,
+    "area_name": "Streetball",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      9,
+      10,
+      10,
+      11,
+      9,
+      10,
+      11,
+      12,
+      9,
+      9
+    ],
+    "file": "Areas__Area116AreaConfig__b700d95bce02.json"
+  },
+  {
+    "area_id": 117,
+    "area_name": "RoyalMint",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      9,
+      10,
+      10,
+      11,
+      9,
+      10,
+      11,
+      12,
+      9,
+      9
+    ],
+    "file": "Areas__Area117AreaConfig__6672905080ea.json"
+  },
+  {
+    "area_id": 118,
+    "area_name": "DesertNight",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      12,
+      8,
+      9,
+      11,
+      13,
+      8,
+      10,
+      13
+    ],
+    "file": "Areas__Area118AreaConfig__2e0a38b2c44c.json"
+  },
+  {
+    "area_id": 119,
+    "area_name": "Santa'sHouse",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      9,
+      10,
+      13,
+      11,
+      9,
+      9,
+      8,
+      12,
+      13
+    ],
+    "file": "Areas__Area119AreaConfig__eba4dbeb7ae6.json"
+  },
+  {
+    "area_id": 11,
+    "area_name": "Bathroom",
+    "tasks": 8,
+    "total_task_price": 20,
+    "task_prices": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      2,
+      4,
+      2
+    ],
+    "file": "Areas__Area11AreaConfig__73471f3e4b16.json"
+  },
+  {
+    "area_id": 120,
+    "area_name": "ToyStore",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      11,
+      8,
+      10,
+      11,
+      12,
+      8,
+      10,
+      13
+    ],
+    "file": "Areas__Area120AreaConfig__5bf547c6c234.json"
+  },
+  {
+    "area_id": 121,
+    "area_name": "ArcticResearch",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      11,
+      10,
+      9,
+      12,
+      11,
+      10,
+      8,
+      12
+    ],
+    "file": "Areas__Area121AreaConfig__0bf1ad7942c4.json"
+  },
+  {
+    "area_id": 122,
+    "area_name": "MusicFestival",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      11,
+      8,
+      10,
+      11,
+      13,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area122AreaConfig__075cff474f44.json"
+  },
+  {
+    "area_id": 123,
+    "area_name": "ZeppelinPort",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      11,
+      8,
+      10,
+      11,
+      13,
+      8,
+      12,
+      11
+    ],
+    "file": "Areas__Area123AreaConfig__0a1f401dc57b.json"
+  },
+  {
+    "area_id": 124,
+    "area_name": "Bakery",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      11,
+      8,
+      10,
+      11,
+      13,
+      8,
+      10,
+      13
+    ],
+    "file": "Areas__Area124AreaConfig__3b5c9f4db37f.json"
+  },
+  {
+    "area_id": 125,
+    "area_name": "AstronomyMuseum",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      11,
+      8,
+      10,
+      11,
+      13,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area125AreaConfig__79bd0e5323f8.json"
+  },
+  {
+    "area_id": 126,
+    "area_name": "RoboticsWorkshop",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      10,
+      8,
+      11,
+      10,
+      8,
+      13,
+      13,
+      11
+    ],
+    "file": "Areas__Area126AreaConfig__a7d5527cf168.json"
+  },
+  {
+    "area_id": 127,
+    "area_name": "Submarine",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      11,
+      12,
+      8,
+      9,
+      13,
+      9,
+      11,
+      10
+    ],
+    "file": "Areas__Area127AreaConfig__aaf609b0f457.json"
+  },
+  {
+    "area_id": 128,
+    "area_name": "VolcanicResearch",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      12,
+      8,
+      10,
+      14,
+      12,
+      10,
+      6,
+      9,
+      11
+    ],
+    "file": "Areas__Area128AreaConfig__a062febe77e4.json"
+  },
+  {
+    "area_id": 129,
+    "area_name": "GolfClub",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      13,
+      10,
+      9,
+      11,
+      8,
+      9,
+      10,
+      12,
+      11
+    ],
+    "file": "Areas__Area129AreaConfig__68080ddc472c.json"
+  },
+  {
+    "area_id": 12,
+    "area_name": "Living Room",
+    "tasks": 9,
+    "total_task_price": 30,
+    "task_prices": [
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      3,
+      3,
+      3
+    ],
+    "file": "Areas__Area12AreaConfig__cea8a83a2fde.json"
+  },
+  {
+    "area_id": 130,
+    "area_name": "Shipboard",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      10,
+      8,
+      11,
+      10,
+      13,
+      8,
+      11,
+      13
+    ],
+    "file": "Areas__Area130AreaConfig__50f7b8d36544.json"
+  },
+  {
+    "area_id": 131,
+    "area_name": "FoodAlley",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      10,
+      9,
+      10,
+      11,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area131AreaConfig__0558cbdcd84f.json"
+  },
+  {
+    "area_id": 132,
+    "area_name": "JewelryWorkshop",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      10,
+      8,
+      11,
+      10,
+      13,
+      8,
+      11,
+      13
+    ],
+    "file": "Areas__Area132AreaConfig__99cb897821b7.json"
+  },
+  {
+    "area_id": 133,
+    "area_name": "ScienceFair",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      8,
+      9,
+      13,
+      9,
+      12,
+      8,
+      11,
+      13
+    ],
+    "file": "Areas__Area133AreaConfig__cc96f22ef408.json"
+  },
+  {
+    "area_id": 134,
+    "area_name": "ArchiveRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      11,
+      9,
+      8,
+      10,
+      13,
+      8,
+      11,
+      13
+    ],
+    "file": "Areas__Area134AreaConfig__6c552cdf9bb8.json"
+  },
+  {
+    "area_id": 135,
+    "area_name": "OasisCamp",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      13,
+      10,
+      9,
+      8,
+      13,
+      12,
+      9,
+      10
+    ],
+    "file": "Areas__Area135AreaConfig__83ebc72a6c95.json"
+  },
+  {
+    "area_id": 136,
+    "area_name": "Perfumery",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      8,
+      9,
+      9,
+      10,
+      11,
+      13,
+      9,
+      11,
+      13
+    ],
+    "file": "Areas__Area136AreaConfig__d1895a44a5d5.json"
+  },
+  {
+    "area_id": 137,
+    "area_name": "RoyalDairy",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      12,
+      8,
+      9,
+      10,
+      13,
+      8,
+      10,
+      13
+    ],
+    "file": "Areas__Area137AreaConfig__859529c65b96.json"
+  },
+  {
+    "area_id": 138,
+    "area_name": "WeatherStation",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      11,
+      8,
+      9,
+      11,
+      13,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area138AreaConfig__4f76ad448efe.json"
+  },
+  {
+    "area_id": 139,
+    "area_name": "PotteryHouse",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      11,
+      8,
+      9,
+      11,
+      12,
+      9,
+      10,
+      13
+    ],
+    "file": "Areas__Area139AreaConfig__9ef0e98b4255.json"
+  },
+  {
+    "area_id": 13,
+    "area_name": "Japanese Garden",
+    "tasks": 10,
+    "total_task_price": 30,
+    "task_prices": [
+      2,
+      3,
+      6,
+      2,
+      1,
+      4,
+      2,
+      5,
+      3,
+      2
+    ],
+    "file": "Areas__Area13AreaConfig__da90d12ae60a.json"
+  },
+  {
+    "area_id": 140,
+    "area_name": "RoyalApiary",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      11,
+      8,
+      9,
+      11,
+      12,
+      9,
+      10,
+      13
+    ],
+    "file": "Areas__Area140AreaConfig__4ad60326b77b.json"
+  },
+  {
+    "area_id": 141,
+    "area_name": "HalloweenShop",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area141AreaConfig__5c7d93a745a5.json"
+  },
+  {
+    "area_id": 142,
+    "area_name": "PuzzleRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area142AreaConfig__e4d8312b5565.json"
+  },
+  {
+    "area_id": 143,
+    "area_name": "TapestryAtelier",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area143AreaConfig__250658742fb5.json"
+  },
+  {
+    "area_id": 144,
+    "area_name": "RoyalWardrobe",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      12,
+      8,
+      11,
+      10,
+      8,
+      10,
+      9,
+      12,
+      13
+    ],
+    "file": "Areas__Area144AreaConfig__7fa5efa0a09f.json"
+  },
+  {
+    "area_id": 145,
+    "area_name": "WinterMarket",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area145AreaConfig__ea3e10711998.json"
+  },
+  {
+    "area_id": 146,
+    "area_name": "FirePit",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      11,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area146AreaConfig__be2df9c2202b.json"
+  },
+  {
+    "area_id": 147,
+    "area_name": "IceCourtyard",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area147AreaConfig__c11481249f9a.json"
+  },
+  {
+    "area_id": 148,
+    "area_name": "ClockmakerRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area148AreaConfig__b075608ea9c8.json"
+  },
+  {
+    "area_id": 149,
+    "area_name": "SecretPassage",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area149AreaConfig__e170eaaebab3.json"
+  },
+  {
+    "area_id": 14,
+    "area_name": "Clock Tower",
+    "tasks": 10,
+    "total_task_price": 40,
+    "task_prices": [
+      2,
+      4,
+      3,
+      6,
+      2,
+      3,
+      4,
+      4,
+      5,
+      7
+    ],
+    "file": "Areas__Area14AreaConfig__65711bf774c9.json"
+  },
+  {
+    "area_id": 150,
+    "area_name": "RoyalPlane",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area150AreaConfig__6bca340092c4.json"
+  },
+  {
+    "area_id": 151,
+    "area_name": "BalloonSight",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area151AreaConfig__a435f06f246f.json"
+  },
+  {
+    "area_id": 152,
+    "area_name": "ForestPath",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      10,
+      9,
+      10,
+      11,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area152AreaConfig__3b714d2942b6.json"
+  },
+  {
+    "area_id": 153,
+    "area_name": "SwanPavilion",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      12,
+      10,
+      13,
+      8,
+      10,
+      11,
+      9,
+      8,
+      12
+    ],
+    "file": "Areas__Area153AreaConfig__d351be46ae71.json"
+  },
+  {
+    "area_id": 154,
+    "area_name": "OliveGarden",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      9,
+      9,
+      10,
+      12,
+      9,
+      12,
+      11,
+      10
+    ],
+    "file": "Areas__Area154AreaConfig__7a33489f5fea.json"
+  },
+  {
+    "area_id": 155,
+    "area_name": "ParadeAtelier",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area155AreaConfig__eadde82a273e.json"
+  },
+  {
+    "area_id": 156,
+    "area_name": "LumberYard",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      11,
+      12,
+      11,
+      8,
+      9,
+      12,
+      9,
+      12
+    ],
+    "file": "Areas__Area156AreaConfig__03d7a48d46d3.json"
+  },
+  {
+    "area_id": 157,
+    "area_name": "CandleStudio",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area157AreaConfig__30cdc11ee273.json"
+  },
+  {
+    "area_id": 158,
+    "area_name": "Windmill",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      11,
+      14,
+      12,
+      8,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "file": "Areas__Area158AreaConfig__2cf9575703a1.json"
+  },
+  {
+    "area_id": 159,
+    "area_name": "TeaHouse",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      11,
+      12,
+      8,
+      11,
+      12,
+      9,
+      10,
+      11,
+      9
+    ],
+    "file": "Areas__Area159AreaConfig__af0ee9194e07.json"
+  },
+  {
+    "area_id": 15,
+    "area_name": "Museum",
+    "tasks": 9,
+    "total_task_price": 50,
+    "task_prices": [
+      4,
+      6,
+      7,
+      4,
+      7,
+      6,
+      8,
+      4,
+      4
+    ],
+    "file": "Areas__Area15AreaConfig__86742dd1ea98.json"
+  },
+  {
+    "area_id": 160,
+    "area_name": "RowingClub",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      10,
+      9,
+      12,
+      7,
+      10,
+      11,
+      10,
+      13,
+      12
+    ],
+    "file": "Areas__Area160AreaConfig__0762f9bbb924.json"
+  },
+  {
+    "area_id": 161,
+    "area_name": "NightBalcony",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      9,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area161AreaConfig__2927ec074e36.json"
+  },
+  {
+    "area_id": 162,
+    "area_name": "Canyon",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      12,
+      9,
+      9,
+      11,
+      9,
+      10,
+      11,
+      12
+    ],
+    "file": "Areas__Area162AreaConfig__0242b5fd58ce.json"
+  },
+  {
+    "area_id": 163,
+    "area_name": "MotocrossTrack",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      11,
+      9,
+      10,
+      9,
+      8,
+      13,
+      14,
+      10,
+      7,
+      9
+    ],
+    "file": "Areas__Area163AreaConfig__a1c2d06c18d5.json"
+  },
+  {
+    "area_id": 164,
+    "area_name": "RailStop",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      9,
+      9,
+      10,
+      8,
+      10,
+      11,
+      10,
+      12,
+      11,
+      10
+    ],
+    "file": "Areas__Area164AreaConfig__852550ae9224.json"
+  },
+  {
+    "area_id": 16,
+    "area_name": "Observatory",
+    "tasks": 10,
+    "total_task_price": 50,
+    "task_prices": [
+      4,
+      6,
+      5,
+      3,
+      4,
+      4,
+      6,
+      4,
+      6,
+      8
+    ],
+    "file": "Areas__Area16AreaConfig__91e0c94028ee.json"
+  },
+  {
+    "area_id": 17,
+    "area_name": "Garage",
+    "tasks": 9,
+    "total_task_price": 50,
+    "task_prices": [
+      4,
+      3,
+      6,
+      8,
+      6,
+      6,
+      8,
+      5,
+      4
+    ],
+    "file": "Areas__Area17AreaConfig__bc2844575ee6.json"
+  },
+  {
+    "area_id": 18,
+    "area_name": "Chess Garden",
+    "tasks": 8,
+    "total_task_price": 50,
+    "task_prices": [
+      4,
+      6,
+      6,
+      5,
+      5,
+      6,
+      9,
+      9
+    ],
+    "file": "Areas__Area18AreaConfig__aa83ba9f099b.json"
+  },
+  {
+    "area_id": 19,
+    "area_name": "Tea Room",
+    "tasks": 9,
+    "total_task_price": 50,
+    "task_prices": [
+      4,
+      3,
+      5,
+      8,
+      8,
+      7,
+      6,
+      5,
+      4
+    ],
+    "file": "Areas__Area19AreaConfig__06167da37fa6.json"
+  },
+  {
+    "area_id": 20,
+    "area_name": "AquaRoom",
+    "tasks": 10,
+    "total_task_price": 50,
+    "task_prices": [
+      3,
+      4,
+      4,
+      6,
+      6,
+      5,
+      6,
+      4,
+      8,
+      4
+    ],
+    "file": "Areas__Area20AreaConfig__0fcb9dc91fb4.json"
+  },
+  {
+    "area_id": 21,
+    "area_name": "TailorRoom",
+    "tasks": 10,
+    "total_task_price": 50,
+    "task_prices": [
+      6,
+      5,
+      4,
+      6,
+      4,
+      3,
+      8,
+      3,
+      6,
+      5
+    ],
+    "file": "Areas__Area21AreaConfig__291fabdc2761.json"
+  },
+  {
+    "area_id": 22,
+    "area_name": "MonumentGarden",
+    "tasks": 10,
+    "total_task_price": 50,
+    "task_prices": [
+      5,
+      4,
+      3,
+      4,
+      5,
+      5,
+      5,
+      7,
+      6,
+      6
+    ],
+    "file": "Areas__Area22AreaConfig__7ccd9e2e5128.json"
+  },
+  {
+    "area_id": 23,
+    "area_name": "BarberShop",
+    "tasks": 11,
+    "total_task_price": 50,
+    "task_prices": [
+      4,
+      4,
+      5,
+      3,
+      5,
+      4,
+      8,
+      3,
+      4,
+      7,
+      3
+    ],
+    "file": "Areas__Area23AreaConfig__80d43448b5bf.json"
+  },
+  {
+    "area_id": 24,
+    "area_name": "Spa",
+    "tasks": 9,
+    "total_task_price": 50,
+    "task_prices": [
+      5,
+      3,
+      8,
+      6,
+      4,
+      6,
+      5,
+      8,
+      5
+    ],
+    "file": "Areas__Area24AreaConfig__7ce60dcfbafa.json"
+  },
+  {
+    "area_id": 25,
+    "area_name": "Gym",
+    "tasks": 10,
+    "total_task_price": 50,
+    "task_prices": [
+      3,
+      5,
+      6,
+      5,
+      3,
+      6,
+      5,
+      6,
+      3,
+      8
+    ],
+    "file": "Areas__Area25AreaConfig__c50854324874.json"
+  },
+  {
+    "area_id": 26,
+    "area_name": "SkatingPark",
+    "tasks": 10,
+    "total_task_price": 50,
+    "task_prices": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      6,
+      4,
+      8,
+      6,
+      5
+    ],
+    "file": "Areas__Area26AreaConfig__8e439567a76d.json"
+  },
+  {
+    "area_id": 27,
+    "area_name": "Cafe",
+    "tasks": 9,
+    "total_task_price": 50,
+    "task_prices": [
+      6,
+      4,
+      8,
+      4,
+      4,
+      6,
+      5,
+      8,
+      5
+    ],
+    "file": "Areas__Area27AreaConfig__99b32f68e564.json"
+  },
+  {
+    "area_id": 28,
+    "area_name": "Beach",
+    "tasks": 10,
+    "total_task_price": 50,
+    "task_prices": [
+      3,
+      5,
+      4,
+      4,
+      6,
+      5,
+      5,
+      7,
+      5,
+      6
+    ],
+    "file": "Areas__Area28AreaConfig__936250ceda2e.json"
+  },
+  {
+    "area_id": 29,
+    "area_name": "TrainStation",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      7,
+      10,
+      8,
+      12,
+      9,
+      12,
+      10,
+      11,
+      15
+    ],
+    "file": "Areas__Area29AreaConfig__a109a556c437.json"
+  },
+  {
+    "area_id": 30,
+    "area_name": "DogPark",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      6,
+      7,
+      12,
+      9,
+      15,
+      12,
+      12,
+      11,
+      8
+    ],
+    "file": "Areas__Area30AreaConfig__c2f1e59108e4.json"
+  },
+  {
+    "area_id": 31,
+    "area_name": "Amphitheatre",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      8,
+      7,
+      10,
+      9,
+      10,
+      14,
+      12,
+      9,
+      15
+    ],
+    "file": "Areas__Area31AreaConfig__6ebed3a0a4f1.json"
+  },
+  {
+    "area_id": 32,
+    "area_name": "Sunroom",
+    "tasks": 12,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      9,
+      5,
+      8,
+      7,
+      12,
+      9,
+      15,
+      6,
+      4,
+      12,
+      8
+    ],
+    "file": "Areas__Area32AreaConfig__181921e3a6c2.json"
+  },
+  {
+    "area_id": 33,
+    "area_name": "BowlingAlley",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      6,
+      6,
+      5,
+      8,
+      10,
+      12,
+      9,
+      12,
+      15,
+      9
+    ],
+    "file": "Areas__Area33AreaConfig__1582fd2bbec1.json"
+  },
+  {
+    "area_id": 34,
+    "area_name": "Camping",
+    "tasks": 9,
+    "total_task_price": 100,
+    "task_prices": [
+      12,
+      9,
+      9,
+      15,
+      12,
+      10,
+      8,
+      10,
+      15
+    ],
+    "file": "Areas__Area34AreaConfig__042db4a82127.json"
+  },
+  {
+    "area_id": 35,
+    "area_name": "StudyRoom",
+    "tasks": 9,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      9,
+      15,
+      9,
+      15,
+      15,
+      10,
+      12,
+      10
+    ],
+    "file": "Areas__Area35AreaConfig__895fde7193e1.json"
+  },
+  {
+    "area_id": 36,
+    "area_name": "Cellar",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      7,
+      8,
+      6,
+      8,
+      7,
+      8,
+      11,
+      14,
+      14,
+      12
+    ],
+    "file": "Areas__Area36AreaConfig__6972bfd4b9b5.json"
+  },
+  {
+    "area_id": 37,
+    "area_name": "MovieSet",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      8,
+      8,
+      7,
+      11,
+      10,
+      12,
+      8,
+      12,
+      9,
+      10
+    ],
+    "file": "Areas__Area37AreaConfig__1fb6d76ec36d.json"
+  },
+  {
+    "area_id": 38,
+    "area_name": "Terrace",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      3,
+      6,
+      9,
+      11,
+      7,
+      6,
+      11,
+      12,
+      10,
+      10,
+      15
+    ],
+    "file": "Areas__Area38AreaConfig__92a6a74a9d15.json"
+  },
+  {
+    "area_id": 39,
+    "area_name": "ArtStudio",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      10,
+      15,
+      12,
+      4,
+      8,
+      14,
+      4,
+      12,
+      15
+    ],
+    "file": "Areas__Area39AreaConfig__28a45998fa18.json"
+  },
+  {
+    "area_id": 40,
+    "area_name": "CandyShop",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      9,
+      15,
+      10,
+      7,
+      13,
+      11,
+      6,
+      13,
+      10
+    ],
+    "file": "Areas__Area40AreaConfig__5971037cb442.json"
+  },
+  {
+    "area_id": 41,
+    "area_name": "MagicRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      12,
+      10,
+      14,
+      10,
+      8,
+      14,
+      8,
+      10,
+      6
+    ],
+    "file": "Areas__Area41AreaConfig__2abf60b131b8.json"
+  },
+  {
+    "area_id": 42,
+    "area_name": "Funfair",
+    "tasks": 9,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      9,
+      9,
+      10,
+      12,
+      14,
+      10,
+      15,
+      11
+    ],
+    "file": "Areas__Area42AreaConfig__fb5c585fc3a4.json"
+  },
+  {
+    "area_id": 43,
+    "area_name": "ExcavationSite",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      10,
+      10,
+      8,
+      9,
+      15,
+      6,
+      11,
+      14,
+      11
+    ],
+    "file": "Areas__Area43AreaConfig__e933a7379633.json"
+  },
+  {
+    "area_id": 44,
+    "area_name": "MiniGolf",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      10,
+      6,
+      12,
+      7,
+      8,
+      10,
+      15,
+      11,
+      7,
+      8
+    ],
+    "file": "Areas__Area44AreaConfig__272a9b84121f.json"
+  },
+  {
+    "area_id": 45,
+    "area_name": "ServiceRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "file": "Areas__Area45AreaConfig__b1029977a891.json"
+  },
+  {
+    "area_id": 46,
+    "area_name": "SkiResort",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      9,
+      10,
+      14,
+      12,
+      10,
+      8,
+      12,
+      9,
+      11
+    ],
+    "file": "Areas__Area46AreaConfig__1923c62c07cb.json"
+  },
+  {
+    "area_id": 47,
+    "area_name": "Workshop",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      8,
+      12,
+      15,
+      9,
+      6,
+      15,
+      9,
+      10
+    ],
+    "file": "Areas__Area47AreaConfig__757e569f3023.json"
+  },
+  {
+    "area_id": 48,
+    "area_name": "OutdoorCinema",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      14,
+      10,
+      10,
+      12,
+      8,
+      9,
+      10,
+      9
+    ],
+    "file": "Areas__Area48AreaConfig__1efb097f9f95.json"
+  },
+  {
+    "area_id": 49,
+    "area_name": "AirMuseum",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      12,
+      10,
+      9,
+      11,
+      9,
+      13,
+      8,
+      11,
+      10
+    ],
+    "file": "Areas__Area49AreaConfig__65001837a2da.json"
+  },
+  {
+    "area_id": 50,
+    "area_name": "GameRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      11,
+      10,
+      12,
+      7,
+      9,
+      11,
+      9,
+      9,
+      12,
+      10
+    ],
+    "file": "Areas__Area50AreaConfig__1da043f38543.json"
+  },
+  {
+    "area_id": 51,
+    "area_name": "TreeHouse",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      13,
+      12,
+      9,
+      11,
+      12,
+      10,
+      9,
+      8
+    ],
+    "file": "Areas__Area51AreaConfig__7f596a1d3823.json"
+  },
+  {
+    "area_id": 52,
+    "area_name": "Pizzeria",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      6,
+      8,
+      7,
+      8,
+      12,
+      10,
+      8,
+      14,
+      7,
+      10
+    ],
+    "file": "Areas__Area52AreaConfig__a8df1923bad2.json"
+  },
+  {
+    "area_id": 53,
+    "area_name": "Yacht",
+    "tasks": 12,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      5,
+      6,
+      8,
+      7,
+      12,
+      5,
+      9,
+      8,
+      12,
+      8,
+      14
+    ],
+    "file": "Areas__Area53AreaConfig__cf8dee5b032a.json"
+  },
+  {
+    "area_id": 54,
+    "area_name": "AntiqueRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      9,
+      10,
+      14,
+      6,
+      9,
+      14,
+      12,
+      9,
+      7
+    ],
+    "file": "Areas__Area54AreaConfig__1091e2edba90.json"
+  },
+  {
+    "area_id": 55,
+    "area_name": "Safari",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      12,
+      8,
+      10,
+      8,
+      10,
+      12,
+      8,
+      10,
+      12
+    ],
+    "file": "Areas__Area55AreaConfig__fe0e7225dd97.json"
+  },
+  {
+    "area_id": 56,
+    "area_name": "FootballField",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      9,
+      11,
+      10,
+      8,
+      9,
+      13,
+      10,
+      11,
+      9
+    ],
+    "file": "Areas__Area56AreaConfig__06e7fd8c6dce.json"
+  },
+  {
+    "area_id": 57,
+    "area_name": "GemMine",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      12,
+      10,
+      8,
+      11,
+      13,
+      11,
+      12,
+      8,
+      10
+    ],
+    "file": "Areas__Area57AreaConfig__b5b2625f1b00.json"
+  },
+  {
+    "area_id": 58,
+    "area_name": "Butler'sRoom",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      8,
+      11,
+      9,
+      8,
+      12,
+      10,
+      10,
+      11,
+      9,
+      6
+    ],
+    "file": "Areas__Area58AreaConfig__27152765d3a2.json"
+  },
+  {
+    "area_id": 59,
+    "area_name": "FireStation",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      11,
+      12,
+      10,
+      8,
+      10,
+      8,
+      7,
+      7,
+      12,
+      10
+    ],
+    "file": "Areas__Area59AreaConfig__947576fc08d4.json"
+  },
+  {
+    "area_id": 60,
+    "area_name": "Laboratory",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      10,
+      12,
+      8,
+      12,
+      8,
+      11,
+      9,
+      12,
+      13
+    ],
+    "file": "Areas__Area60AreaConfig__eb64f8105c1f.json"
+  },
+  {
+    "area_id": 61,
+    "area_name": "LittleVenice",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      8,
+      6,
+      4,
+      9,
+      13,
+      10,
+      9,
+      10,
+      14
+    ],
+    "file": "Areas__Area61AreaConfig__f295d0a840ad.json"
+  },
+  {
+    "area_id": 62,
+    "area_name": "HauntedHouse",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      8,
+      11,
+      5,
+      8,
+      10,
+      12,
+      6,
+      11,
+      12
+    ],
+    "file": "Areas__Area62AreaConfig__360195ed9003.json"
+  },
+  {
+    "area_id": 63,
+    "area_name": "Lighthouse",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      7,
+      11,
+      7,
+      9,
+      11,
+      8,
+      16,
+      15,
+      11
+    ],
+    "file": "Areas__Area63AreaConfig__3d3a298e0cff.json"
+  },
+  {
+    "area_id": 64,
+    "area_name": "ClockRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      10,
+      13,
+      10,
+      8,
+      10,
+      12,
+      9,
+      10,
+      12
+    ],
+    "file": "Areas__Area64AreaConfig__1f79f83b7cb0.json"
+  },
+  {
+    "area_id": 65,
+    "area_name": "RaceTrack",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      4,
+      7,
+      8,
+      7,
+      11,
+      11,
+      12,
+      12,
+      9,
+      9,
+      10
+    ],
+    "file": "Areas__Area65AreaConfig__ce50f19bb2c8.json"
+  },
+  {
+    "area_id": 66,
+    "area_name": "Circus",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      11,
+      8,
+      11,
+      9,
+      11,
+      9,
+      10,
+      13
+    ],
+    "file": "Areas__Area66AreaConfig__6ca5f9ef66a9.json"
+  },
+  {
+    "area_id": 67,
+    "area_name": "WinterCamp",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      12,
+      11,
+      7,
+      10,
+      9,
+      12,
+      8,
+      9,
+      12,
+      10
+    ],
+    "file": "Areas__Area67AreaConfig__1e3005da2886.json"
+  },
+  {
+    "area_id": 68,
+    "area_name": "TrainWagon",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      13,
+      9,
+      10,
+      11,
+      13,
+      10,
+      7,
+      10
+    ],
+    "file": "Areas__Area68AreaConfig__4424bdccad94.json"
+  },
+  {
+    "area_id": 69,
+    "area_name": "MountainCabin",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      7,
+      9,
+      9,
+      10,
+      9,
+      9,
+      10,
+      9,
+      10
+    ],
+    "file": "Areas__Area69AreaConfig__71aae55a8c20.json"
+  },
+  {
+    "area_id": 70,
+    "area_name": "Factory",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      10,
+      12,
+      9,
+      8,
+      11,
+      7,
+      6,
+      8,
+      10,
+      12
+    ],
+    "file": "Areas__Area70AreaConfig__7b757346e7ef.json"
+  },
+  {
+    "area_id": 71,
+    "area_name": "OrientalCourtyard",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      11,
+      10,
+      9,
+      10,
+      10,
+      11,
+      11,
+      9,
+      9,
+      10
+    ],
+    "file": "Areas__Area71AreaConfig__1e6f331404b5.json"
+  },
+  {
+    "area_id": 72,
+    "area_name": "ArcadeRoom",
+    "tasks": 12,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      8,
+      7,
+      7,
+      6,
+      9,
+      8,
+      10,
+      5,
+      10,
+      11,
+      12
+    ],
+    "file": "Areas__Area72AreaConfig__beffc5929d5b.json"
+  },
+  {
+    "area_id": 73,
+    "area_name": "Waterfall",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      12,
+      10,
+      8,
+      12,
+      8,
+      9,
+      10,
+      9,
+      12,
+      10
+    ],
+    "file": "Areas__Area73AreaConfig__090f2686e9ce.json"
+  },
+  {
+    "area_id": 74,
+    "area_name": "TreasureRoom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      12,
+      11,
+      8,
+      9,
+      11,
+      8,
+      11,
+      12,
+      10
+    ],
+    "file": "Areas__Area74AreaConfig__2c17aaa2b844.json"
+  },
+  {
+    "area_id": 75,
+    "area_name": "Classroom",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      9,
+      11,
+      8,
+      11,
+      9,
+      9,
+      12,
+      10,
+      11
+    ],
+    "file": "Areas__Area75AreaConfig__f144b09e9a58.json"
+  },
+  {
+    "area_id": 76,
+    "area_name": "FossilMuseum",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      10,
+      11,
+      9,
+      11,
+      7,
+      8,
+      13,
+      15,
+      10
+    ],
+    "file": "Areas__Area76AreaConfig__50b840f6b07d.json"
+  },
+  {
+    "area_id": 77,
+    "area_name": "Lodge",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      10,
+      9,
+      6,
+      8,
+      9,
+      12,
+      10,
+      8,
+      7,
+      9,
+      12
+    ],
+    "file": "Areas__Area77AreaConfig__ef88e0179830.json"
+  },
+  {
+    "area_id": 78,
+    "area_name": "Atlantis",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      6,
+      15,
+      12,
+      9,
+      9,
+      8,
+      12,
+      11,
+      10
+    ],
+    "file": "Areas__Area78AreaConfig__79e35fc7cc49.json"
+  },
+  {
+    "area_id": 79,
+    "area_name": "Dojo",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      8,
+      12,
+      6,
+      10,
+      9,
+      13,
+      14,
+      10
+    ],
+    "file": "Areas__Area79AreaConfig__a6c8df995c7d.json"
+  },
+  {
+    "area_id": 80,
+    "area_name": "TennisCourt",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      13,
+      8,
+      12,
+      11,
+      9,
+      10,
+      9,
+      10
+    ],
+    "file": "Areas__Area80AreaConfig__fb4c2de00675.json"
+  },
+  {
+    "area_id": 81,
+    "area_name": "BeachHouse",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      10,
+      8,
+      13,
+      12,
+      11,
+      9,
+      10,
+      9,
+      10
+    ],
+    "file": "Areas__Area81AreaConfig__75a37d3e9b5c.json"
+  },
+  {
+    "area_id": 82,
+    "area_name": "Backstage",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      6,
+      6,
+      12,
+      8,
+      10,
+      13,
+      15,
+      12,
+      11
+    ],
+    "file": "Areas__Area82AreaConfig__c64fc7968970.json"
+  },
+  {
+    "area_id": 83,
+    "area_name": "Blacksmith",
+    "tasks": 13,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      6,
+      10,
+      9,
+      6,
+      6,
+      8,
+      9,
+      7,
+      9,
+      8,
+      6,
+      10
+    ],
+    "file": "Areas__Area83AreaConfig__ad3716bd5d6e.json"
+  },
+  {
+    "area_id": 84,
+    "area_name": "TrainingGround",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      12,
+      12,
+      8,
+      8,
+      12,
+      9,
+      12,
+      10,
+      9
+    ],
+    "file": "Areas__Area84AreaConfig__af9c9a5bdc72.json"
+  },
+  {
+    "area_id": 85,
+    "area_name": "RoyalMountain",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      4,
+      9,
+      9,
+      14,
+      13,
+      10,
+      9,
+      15,
+      12
+    ],
+    "file": "Areas__Area85AreaConfig__72d5ae86ccc2.json"
+  },
+  {
+    "area_id": 86,
+    "area_name": "Shipyard",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      5,
+      11,
+      7,
+      7,
+      10,
+      9,
+      11,
+      10,
+      6,
+      15,
+      9
+    ],
+    "file": "Areas__Area86AreaConfig__0d243c9733e9.json"
+  },
+  {
+    "area_id": 87,
+    "area_name": "GrandLibrary",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      7,
+      10,
+      10,
+      12,
+      8,
+      9,
+      9,
+      13,
+      14
+    ],
+    "file": "Areas__Area87AreaConfig__95e584d00018.json"
+  },
+  {
+    "area_id": 88,
+    "area_name": "ThemePark",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      12,
+      10,
+      11,
+      12,
+      10,
+      8,
+      7,
+      8,
+      10,
+      12
+    ],
+    "file": "Areas__Area88AreaConfig__a868031bde79.json"
+  },
+  {
+    "area_id": 89,
+    "area_name": "Apothecary",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      9,
+      8,
+      7,
+      11,
+      13,
+      12,
+      15,
+      9,
+      10
+    ],
+    "file": "Areas__Area89AreaConfig__9b0cbe4f93d2.json"
+  },
+  {
+    "area_id": 90,
+    "area_name": "RemembranceFestival",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      10,
+      8,
+      14,
+      10,
+      9,
+      9,
+      11,
+      13
+    ],
+    "file": "Areas__Area90AreaConfig__05bdb9bfe7ed.json"
+  },
+  {
+    "area_id": 91,
+    "area_name": "Hangar",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      11,
+      9,
+      8,
+      10,
+      9,
+      15,
+      10,
+      7,
+      14
+    ],
+    "file": "Areas__Area91AreaConfig__7d085d0640cd.json"
+  },
+  {
+    "area_id": 92,
+    "area_name": "Studio",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      9,
+      9,
+      8,
+      9,
+      7,
+      10,
+      14,
+      7,
+      11
+    ],
+    "file": "Areas__Area92AreaConfig__533aa24480ce.json"
+  },
+  {
+    "area_id": 93,
+    "area_name": "SeaMuseum",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      6,
+      9,
+      10,
+      12,
+      7,
+      10,
+      13,
+      9,
+      11,
+      13
+    ],
+    "file": "Areas__Area93AreaConfig__30f2787ca3ba.json"
+  },
+  {
+    "area_id": 94,
+    "area_name": "LaunchSite",
+    "tasks": 11,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      10,
+      11,
+      7,
+      8,
+      10,
+      5,
+      9,
+      9,
+      14
+    ],
+    "file": "Areas__Area94AreaConfig__a5dccc147a6d.json"
+  },
+  {
+    "area_id": 95,
+    "area_name": "SpaceColony",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      11,
+      9,
+      10,
+      12,
+      9,
+      9,
+      12,
+      10,
+      10
+    ],
+    "file": "Areas__Area95AreaConfig__e4b626e5c519.json"
+  },
+  {
+    "area_id": 96,
+    "area_name": "BaseballField",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      9,
+      9,
+      12,
+      11,
+      9,
+      11,
+      11,
+      8,
+      12
+    ],
+    "file": "Areas__Area96AreaConfig__89644285f6c4.json"
+  },
+  {
+    "area_id": 97,
+    "area_name": "Theater",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      8,
+      12,
+      10,
+      9,
+      11,
+      9,
+      10,
+      11,
+      8,
+      12
+    ],
+    "file": "Areas__Area97AreaConfig__69b044e46751.json"
+  },
+  {
+    "area_id": 98,
+    "area_name": "Airport",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      9,
+      10,
+      12,
+      9,
+      13,
+      10,
+      8,
+      13,
+      9
+    ],
+    "file": "Areas__Area98AreaConfig__59b5bebe0512.json"
+  },
+  {
+    "area_id": 99,
+    "area_name": "Picnic",
+    "tasks": 10,
+    "total_task_price": 100,
+    "task_prices": [
+      7,
+      13,
+      8,
+      9,
+      10,
+      13,
+      8,
+      11,
+      12,
+      9
+    ],
+    "file": "Areas__Area99AreaConfig__9585f5bdad4e.json"
+  }
+]

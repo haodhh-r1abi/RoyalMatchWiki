@@ -1,0 +1,223 @@
+[
+  {
+    "tag": "ping-all-non-event-config-versions-zero",
+    "requested_at": "2026-10-13T13:33:43.479682+00:00",
+    "logical_request": "PingRequest",
+    "http_method": "POST",
+    "arguments": {
+      "BadWordsVersion": 0,
+      "LeagueConfigVersion": 0,
+      "MadnessEventVersion": 0,
+      "LadderOfferVersion": 0,
+      "RoyalPassVersion": 0,
+      "SpecialOfferVersion": 0,
+      "PinataPartyVersion": 0,
+      "TeamTreasureConfigVersion": 0,
+      "DeprecatedSegmentOfferConfigVersion": 0,
+      "SpaceMissionConfigVersion": 0,
+      "BalloonRiseVersion": 0,
+      "HiddenTempleConfigVersion": 0,
+      "RevenueSegmentVersion": 0,
+      "TeamGiftOfferConfigVersion": 0,
+      "MagicCauldronConfigVersion": 0,
+      "DragonNestConfigVersion": 0,
+      "ArcheryArenaConfigVersion": 0,
+      "DukesFortuneConfigVersion": 0,
+      "EventDependencyConfigVersion": 0,
+      "LavaQuestConfigVersion": 0,
+      "SeasonalCardCollectionConfigVersion": 0,
+      "TeamTournamentConfigVersion": 0,
+      "MissionPursuitConfigVersion": 0,
+      "SeasonalCardPackOfferConfigVersion": 0,
+      "MissionControlConfigVersion": 0,
+      "TermsAndConditionsVersion": 0,
+      "TrainJourneyConfigVersion": 0,
+      "OceanOdysseyConfigVersion": 0,
+      "SkyRaceConfigVersion": 0,
+      "GoldenOffersConfigVersion": 0,
+      "DailyLightningRushConfigVersion": 0,
+      "PuzzleBreakConfigVersion": 0,
+      "WeeklyPassVersion": 0,
+      "PropellerRushConfigVersion": 0,
+      "AncientAdventureConfigVersion": 0,
+      "JourneyOfferConfigVersion": 0,
+      "RobotRivalsConfigVersion": 0,
+      "MergeSmithConfigVersion": 0,
+      "SpecialOfferSegmentVersion": 0,
+      "MissionEventsOverrideConfigVersion": 0,
+      "ClashOfChampionsConfigVersion": 0,
+      "RoyalWorldCupConfigVersion": 0,
+      "ExpeditionEventConfigVersion": 0,
+      "ExpeditionEventOfferConfigVersion": 0,
+      "ExpeditionEventOfferSegmentVersion": 0,
+      "TeamBattleConfigVersion": 0,
+      "DailyRewardsConfigVersion": 0,
+      "InviteFriendConfigVersion": 0,
+      "ExternalPaymentCountriesVersion": 0,
+      "Language": "vi",
+      "DynamicOfferConfigVersions": {
+        "DynamicOfferConfigVersion": 0,
+        "DynamicOfferUserSegmentVersion": 0,
+        "DynamicOfferConfigVersionList": []
+      }
+    },
+    "http_status": 200,
+    "response_bytes": 408,
+    "raw_sha256": "e3780cd972849e590e3e69678e0bd7a2d04311f260fabed34158e980beca7e4c",
+    "response_types": [
+      "PingResponse(1)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  },
+  {
+    "tag": "dynamic-offer-config-zero-own-level",
+    "requested_at": "2026-10-13T13:33:44.920658+00:00",
+    "logical_request": "GetEventInfoRequest",
+    "http_method": "POST",
+    "arguments": {
+      "Country": "",
+      "Level": 9999,
+      "ConfigVersions": {
+        "DynamicOfferConfigVersion": 0,
+        "DynamicOfferUserSegmentVersion": 0,
+        "LavaQuestConfigVersion": 0,
+        "DynamicOfferConfigVersionList": []
+      }
+    },
+    "http_status": 200,
+    "response_bytes": 72,
+    "raw_sha256": "5c978990d4343553b953a2f5f35c9e9f0f754d2105afa72321035c12cf222deb",
+    "response_types": [
+      "GetEventInfoResponse(50)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  },
+  {
+    "tag": "golden-offers-read",
+    "requested_at": "2026-10-13T13:33:46.312236+00:00",
+    "logical_request": "GetGoldenOffersInfoRequest",
+    "http_method": "POST",
+    "arguments": {},
+    "http_status": 200,
+    "response_bytes": 72,
+    "raw_sha256": "11759ed1266115785b8690ee0828cbdfa2c9a9c4c4bbc98df5ab5dff13e2bf85",
+    "response_types": [
+      "GetGoldenOffersInfoResponse(98)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  },
+  {
+    "tag": "special-offer-baseline-event-zero",
+    "requested_at": "2026-10-13T13:33:47.703103+00:00",
+    "logical_request": "GetSpecialOfferInfoRequest",
+    "http_method": "POST",
+    "arguments": {
+      "EventId": 0
+    },
+    "http_status": 200,
+    "response_bytes": 72,
+    "raw_sha256": "a966af3187e76af5a0b012f2334dcd957eced3b1f69ee0bb732f11f14f71044c",
+    "response_types": [
+      "GetSpecialOfferInfoResponse(120)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  },
+  {
+    "tag": "league-own-group-version-zero",
+    "requested_at": "2026-10-13T13:33:49.085591+00:00",
+    "logical_request": "GetLeagueInfoRequest",
+    "http_method": "POST",
+    "arguments": {
+      "ConfigVersion": 0
+    },
+    "http_status": 200,
+    "response_bytes": 86,
+    "raw_sha256": "88114e642afab98b5b2953952125e93063d8d876304dee63f9b747da9d744343",
+    "response_types": [
+      "GetLeagueInfoResponse(18)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  },
+  {
+    "tag": "invite-friend-config-0",
+    "requested_at": "2026-10-13T13:33:50.491863+00:00",
+    "logical_request": "GetInviteFriendInviteesInfoRequest",
+    "http_method": "POST",
+    "arguments": {
+      "ConfigVersion": 0
+    },
+    "http_status": 200,
+    "response_bytes": 80,
+    "raw_sha256": "d324242026d8fbeaa467f16d1c7a71ec1b62fe517892bb77ee7b10ce0e66535b",
+    "response_types": [
+      "GetInviteFriendInviteesInfoResponse(130)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  },
+  {
+    "tag": "invite-friend-config-5",
+    "requested_at": "2026-10-13T13:33:53.384705+00:00",
+    "logical_request": "GetInviteFriendInviteesInfoRequest",
+    "http_method": "POST",
+    "arguments": {
+      "ConfigVersion": 5
+    },
+    "http_status": 200,
+    "response_bytes": 80,
+    "raw_sha256": "a6b95b2c0b6f6d1a879174253105c89681c8ce61832c4e6c75db2a4f145ff396",
+    "response_types": [
+      "GetInviteFriendInviteesInfoResponse(130)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  },
+  {
+    "tag": "system-popup-policy-read",
+    "requested_at": "2026-10-13T13:33:54.764673+00:00",
+    "logical_request": "GetSystemMessagesRequest",
+    "http_method": "POST",
+    "arguments": {
+      "Language": "vi",
+      "LastSeenMessageId": 0
+    },
+    "http_status": 200,
+    "response_bytes": 90,
+    "raw_sha256": "fe2f5cde0716ef2a50ea56986274256be2fd563c2e79a7246a4e4f3af8043cb1",
+    "response_types": [
+      "GetSystemMessagesResponse(37)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null,
+    "system_message_count_private_only": 0
+  },
+  {
+    "tag": "upcoming-calendar-read",
+    "requested_at": "2026-10-13T13:33:56.773084+00:00",
+    "logical_request": "GetUpcomingEventInfoRequest",
+    "http_method": "POST",
+    "arguments": {},
+    "http_status": 200,
+    "response_bytes": 81,
+    "raw_sha256": "cfeeb56257e0cac72bf8a6599601860c5b978479814a1940efc9986af5307b33",
+    "response_types": [
+      "GetUpcomingEventInfoResponse(95)"
+    ],
+    "status_fields": [],
+    "config_files": [],
+    "error": null
+  }
+]

@@ -1,0 +1,1204 @@
+{
+  "bundles": [
+    {
+      "bundleName": "puzzle_11-15-8",
+      "androidCrc": 2252803230,
+      "iosCrc": 3955989433
+    },
+    {
+      "bundleName": "puzzle_11-15-7",
+      "androidCrc": 3205195250,
+      "iosCrc": 3277068624
+    },
+    {
+      "bundleName": "puzzle_5-9-9",
+      "androidCrc": 1145829828,
+      "iosCrc": 273204305
+    },
+    {
+      "bundleName": "puzzle_11-15-9",
+      "androidCrc": 3191083702,
+      "iosCrc": 2169298829
+    },
+    {
+      "bundleName": "puzzle_9-8-9",
+      "androidCrc": 380474934,
+      "iosCrc": 4084133643
+    },
+    {
+      "bundleName": "puzzle_6-7-9",
+      "androidCrc": 2389447293,
+      "iosCrc": 2678928125
+    },
+    {
+      "bundleName": "puzzle_7-14-8",
+      "androidCrc": 3274027266,
+      "iosCrc": 1755425037
+    },
+    {
+      "bundleName": "puzzle_7-14-7",
+      "androidCrc": 3128615777,
+      "iosCrc": 4050022521
+    },
+    {
+      "bundleName": "puzzle_4-11-9",
+      "androidCrc": 1205794720,
+      "iosCrc": 1458230267
+    },
+    {
+      "bundleName": "puzzle_4-11-8",
+      "androidCrc": 48769538,
+      "iosCrc": 3685030101
+    },
+    {
+      "bundleName": "puzzle_7-14-9",
+      "androidCrc": 2922499749,
+      "iosCrc": 2309058194
+    },
+    {
+      "bundleName": "puzzle_11-7-9",
+      "androidCrc": 1820990551,
+      "iosCrc": 1932472135
+    },
+    {
+      "bundleName": "puzzle_10-11-8",
+      "androidCrc": 2184133061,
+      "iosCrc": 923063424
+    },
+    {
+      "bundleName": "puzzle_10-11-9",
+      "androidCrc": 3971545349,
+      "iosCrc": 185113303
+    },
+    {
+      "bundleName": "puzzle_5-15-8",
+      "androidCrc": 4277088614,
+      "iosCrc": 1519420264
+    },
+    {
+      "bundleName": "puzzle_2-11-9",
+      "androidCrc": 1239760496,
+      "iosCrc": 3701273790
+    },
+    {
+      "bundleName": "puzzle_5-15-9",
+      "androidCrc": 1031198585,
+      "iosCrc": 1730261991
+    },
+    {
+      "bundleName": "puzzle_2-8-9",
+      "androidCrc": 2342407119,
+      "iosCrc": 4096198547
+    },
+    {
+      "bundleName": "puzzle_2-11-8",
+      "androidCrc": 3077215297,
+      "iosCrc": 3158959619
+    },
+    {
+      "bundleName": "puzzle_5-15-7",
+      "androidCrc": 918591720,
+      "iosCrc": 726307292
+    },
+    {
+      "bundleName": "puzzle_9-14-8",
+      "androidCrc": 1314642523,
+      "iosCrc": 202012947
+    },
+    {
+      "bundleName": "puzzle_9-14-7",
+      "androidCrc": 3936940154,
+      "iosCrc": 515124637
+    },
+    {
+      "bundleName": "puzzle_6-10-8",
+      "androidCrc": 1926118845,
+      "iosCrc": 664331648
+    },
+    {
+      "bundleName": "puzzle_6-10-9",
+      "androidCrc": 1536508169,
+      "iosCrc": 2537461180
+    },
+    {
+      "bundleName": "puzzle_9-14-9",
+      "androidCrc": 2304602557,
+      "iosCrc": 3681133079
+    },
+    {
+      "bundleName": "puzzle_11-16-7",
+      "androidCrc": 3444018993,
+      "iosCrc": 1050418804
+    },
+    {
+      "bundleName": "puzzle_11-16-6",
+      "androidCrc": 1958086907,
+      "iosCrc": 3100763560
+    },
+    {
+      "bundleName": "puzzle_11-16-5",
+      "androidCrc": 3829079073,
+      "iosCrc": 2306252150
+    },
+    {
+      "bundleName": "puzzle_11-16-4",
+      "androidCrc": 2262832002,
+      "iosCrc": 3414707060
+    },
+    {
+      "bundleName": "puzzle_11-16-9",
+      "androidCrc": 4261743535,
+      "iosCrc": 3959012991
+    },
+    {
+      "bundleName": "puzzle_11-16-8",
+      "androidCrc": 2037270370,
+      "iosCrc": 2548435937
+    },
+    {
+      "bundleName": "puzzle_9-7-9",
+      "androidCrc": 3353598962,
+      "iosCrc": 629106360
+    },
+    {
+      "bundleName": "puzzle_11-16-3",
+      "androidCrc": 4094290247,
+      "iosCrc": 913243645
+    },
+    {
+      "bundleName": "puzzle_11-16-2",
+      "androidCrc": 523864689,
+      "iosCrc": 47906207
+    },
+    {
+      "bundleName": "puzzle_11-16-1",
+      "androidCrc": 2497898183,
+      "iosCrc": 655157378
+    },
+    {
+      "bundleName": "puzzle_10-10-8",
+      "androidCrc": 70410740,
+      "iosCrc": 3524968662
+    },
+    {
+      "bundleName": "puzzle_7-13-7",
+      "androidCrc": 4111551052,
+      "iosCrc": 2589928672
+    },
+    {
+      "bundleName": "puzzle_7-13-9",
+      "androidCrc": 470560299,
+      "iosCrc": 2009305223
+    },
+    {
+      "bundleName": "puzzle_4-12-9",
+      "androidCrc": 4096331864,
+      "iosCrc": 4221057942
+    },
+    {
+      "bundleName": "puzzle_6-8-9",
+      "androidCrc": 3176122450,
+      "iosCrc": 119604772
+    },
+    {
+      "bundleName": "puzzle_7-13-8",
+      "androidCrc": 13700674,
+      "iosCrc": 4212416295
+    },
+    {
+      "bundleName": "puzzle_4-12-8",
+      "androidCrc": 2307355021,
+      "iosCrc": 1865078983
+    },
+    {
+      "bundleName": "puzzle_1-9-9",
+      "androidCrc": 3493611718,
+      "iosCrc": 913517512
+    },
+    {
+      "bundleName": "puzzle_10-10-9",
+      "androidCrc": 2114387990,
+      "iosCrc": 1225979714
+    },
+    {
+      "bundleName": "puzzle_5-14-9",
+      "androidCrc": 1369253845,
+      "iosCrc": 1388041272
+    },
+    {
+      "bundleName": "puzzle_2-7-9",
+      "androidCrc": 3999103846,
+      "iosCrc": 1472221609
+    },
+    {
+      "bundleName": "puzzle_8-10-8",
+      "androidCrc": 500295275,
+      "iosCrc": 2554569729
+    },
+    {
+      "bundleName": "puzzle_8-10-9",
+      "androidCrc": 3720043984,
+      "iosCrc": 2074673862
+    },
+    {
+      "bundleName": "puzzle_2-10-9",
+      "androidCrc": 2353271614,
+      "iosCrc": 2593499930
+    },
+    {
+      "bundleName": "puzzle_5-14-7",
+      "androidCrc": 3016539442,
+      "iosCrc": 2120116293
+    },
+    {
+      "bundleName": "puzzle_2-10-8",
+      "androidCrc": 1288558607,
+      "iosCrc": 3870028857
+    },
+    {
+      "bundleName": "puzzle_5-14-8",
+      "androidCrc": 2440245285,
+      "iosCrc": 1437934363
+    },
+    {
+      "bundleName": "puzzle_3-15-8",
+      "androidCrc": 2302927028,
+      "iosCrc": 514379686
+    },
+    {
+      "bundleName": "puzzle_3-15-9",
+      "androidCrc": 2899506261,
+      "iosCrc": 2909406719
+    },
+    {
+      "bundleName": "puzzle_3-15-7",
+      "androidCrc": 2449996819,
+      "iosCrc": 2159377927
+    },
+    {
+      "bundleName": "puzzle_6-11-9",
+      "androidCrc": 2909978091,
+      "iosCrc": 889671298
+    },
+    {
+      "bundleName": "puzzle_9-15-7",
+      "androidCrc": 3203988196,
+      "iosCrc": 422612271
+    },
+    {
+      "bundleName": "puzzle_9-15-9",
+      "androidCrc": 3427660977,
+      "iosCrc": 3336703048
+    },
+    {
+      "bundleName": "puzzle_6-11-8",
+      "androidCrc": 3189270411,
+      "iosCrc": 1598037726
+    },
+    {
+      "bundleName": "puzzle_9-15-8",
+      "androidCrc": 58598510,
+      "iosCrc": 1604620157
+    },
+    {
+      "bundleName": "puzzle_11-13-9",
+      "androidCrc": 2699043119,
+      "iosCrc": 802301643
+    },
+    {
+      "bundleName": "puzzle_11-13-8",
+      "androidCrc": 4185370060,
+      "iosCrc": 4137606550
+    },
+    {
+      "bundleName": "puzzle_11-13-7",
+      "androidCrc": 1963781308,
+      "iosCrc": 202736798
+    },
+    {
+      "bundleName": "puzzle_7-12-8",
+      "androidCrc": 1965462870,
+      "iosCrc": 1484694356
+    },
+    {
+      "bundleName": "puzzle_1-10-8",
+      "androidCrc": 3007993422,
+      "iosCrc": 3808408474
+    },
+    {
+      "bundleName": "puzzle_6-9-9",
+      "androidCrc": 3620089124,
+      "iosCrc": 364626293
+    },
+    {
+      "bundleName": "puzzle_4-13-8",
+      "androidCrc": 978187758,
+      "iosCrc": 744077946
+    },
+    {
+      "bundleName": "puzzle_7-12-9",
+      "androidCrc": 1667005873,
+      "iosCrc": 1569301756
+    },
+    {
+      "bundleName": "puzzle_4-13-7",
+      "androidCrc": 2823393265,
+      "iosCrc": 3500569270
+    },
+    {
+      "bundleName": "puzzle_4-13-9",
+      "androidCrc": 1312479555,
+      "iosCrc": 3168092765
+    },
+    {
+      "bundleName": "puzzle_1-10-9",
+      "androidCrc": 1554217563,
+      "iosCrc": 2649760742
+    },
+    {
+      "bundleName": "puzzle_10-13-8",
+      "androidCrc": 2021191812,
+      "iosCrc": 3618748670
+    },
+    {
+      "bundleName": "puzzle_10-13-9",
+      "androidCrc": 2309970173,
+      "iosCrc": 852779729
+    },
+    {
+      "bundleName": "puzzle_10-13-7",
+      "androidCrc": 3220479110,
+      "iosCrc": 1036274375
+    },
+    {
+      "bundleName": "puzzle_2-13-8",
+      "androidCrc": 598885235,
+      "iosCrc": 1407884267
+    },
+    {
+      "bundleName": "puzzle_3-8-9",
+      "androidCrc": 1258743220,
+      "iosCrc": 2969876005
+    },
+    {
+      "bundleName": "puzzle_8-11-8",
+      "androidCrc": 3385488187,
+      "iosCrc": 925428143
+    },
+    {
+      "bundleName": "puzzle_7-7-9",
+      "androidCrc": 2191709284,
+      "iosCrc": 2626624234
+    },
+    {
+      "bundleName": "puzzle_3-14-9",
+      "androidCrc": 3889460820,
+      "iosCrc": 211877148
+    },
+    {
+      "bundleName": "puzzle_3-14-7",
+      "androidCrc": 3661409566,
+      "iosCrc": 774510407
+    },
+    {
+      "bundleName": "puzzle_3-14-8",
+      "androidCrc": 3637833268,
+      "iosCrc": 730477372
+    },
+    {
+      "bundleName": "puzzle_9-12-9",
+      "androidCrc": 1749424529,
+      "iosCrc": 4181740418
+    },
+    {
+      "bundleName": "puzzle_9-12-8",
+      "androidCrc": 1985597131,
+      "iosCrc": 2623727799
+    },
+    {
+      "bundleName": "puzzle_11-14-9",
+      "androidCrc": 2270828210,
+      "iosCrc": 2576710418
+    },
+    {
+      "bundleName": "puzzle_11-14-8",
+      "androidCrc": 2469568212,
+      "iosCrc": 3058358031
+    },
+    {
+      "bundleName": "puzzle_11-14-7",
+      "androidCrc": 2860565449,
+      "iosCrc": 787593849
+    },
+    {
+      "bundleName": "puzzle_7-11-9",
+      "androidCrc": 157921989,
+      "iosCrc": 1249914021
+    },
+    {
+      "bundleName": "puzzle_7-11-8",
+      "androidCrc": 3334596977,
+      "iosCrc": 3285540297
+    },
+    {
+      "bundleName": "puzzle_4-14-7",
+      "androidCrc": 2618144671,
+      "iosCrc": 324345665
+    },
+    {
+      "bundleName": "puzzle_4-14-9",
+      "androidCrc": 3295558228,
+      "iosCrc": 591711258
+    },
+    {
+      "bundleName": "puzzle_4-14-8",
+      "androidCrc": 3294344375,
+      "iosCrc": 661337365
+    },
+    {
+      "bundleName": "puzzle_1-11-8",
+      "androidCrc": 1450361597,
+      "iosCrc": 3454545757
+    },
+    {
+      "bundleName": "puzzle_10-12-9",
+      "androidCrc": 3692105018,
+      "iosCrc": 1607351351
+    },
+    {
+      "bundleName": "puzzle_1-11-9",
+      "androidCrc": 2187202103,
+      "iosCrc": 2930308573
+    },
+    {
+      "bundleName": "puzzle_10-12-8",
+      "androidCrc": 2401336446,
+      "iosCrc": 3951633775
+    },
+    {
+      "bundleName": "puzzle_2-12-9",
+      "androidCrc": 3199450348,
+      "iosCrc": 1248682442
+    },
+    {
+      "bundleName": "puzzle_2-12-8",
+      "androidCrc": 2333216671,
+      "iosCrc": 3167039721
+    },
+    {
+      "bundleName": "puzzle_8-12-8",
+      "androidCrc": 2173465234,
+      "iosCrc": 1718271707
+    },
+    {
+      "bundleName": "puzzle_8-12-9",
+      "androidCrc": 1693253973,
+      "iosCrc": 3679647832
+    },
+    {
+      "bundleName": "puzzle_3-7-9",
+      "androidCrc": 3548905657,
+      "iosCrc": 1559162719
+    },
+    {
+      "bundleName": "puzzle_2-9-9",
+      "androidCrc": 2187941403,
+      "iosCrc": 369753653
+    },
+    {
+      "bundleName": "puzzle_7-8-9",
+      "androidCrc": 717490429,
+      "iosCrc": 3188599291
+    },
+    {
+      "bundleName": "puzzle_3-13-8",
+      "androidCrc": 2242703155,
+      "iosCrc": 45817341
+    },
+    {
+      "bundleName": "puzzle_3-13-9",
+      "androidCrc": 3055716828,
+      "iosCrc": 1025674324
+    },
+    {
+      "bundleName": "puzzle_9-13-9",
+      "androidCrc": 1678310212,
+      "iosCrc": 869637134
+    },
+    {
+      "bundleName": "puzzle_3-13-7",
+      "androidCrc": 4158909861,
+      "iosCrc": 3679173829
+    },
+    {
+      "bundleName": "puzzle_9-13-8",
+      "androidCrc": 326672872,
+      "iosCrc": 640161643
+    },
+    {
+      "bundleName": "puzzle_9-13-7",
+      "androidCrc": 2777365615,
+      "iosCrc": 3070488168
+    },
+    {
+      "bundleName": "puzzle_11-11-9",
+      "androidCrc": 361101681,
+      "iosCrc": 1232658766
+    },
+    {
+      "bundleName": "puzzle_11-11-8",
+      "androidCrc": 2713037188,
+      "iosCrc": 219455592
+    },
+    {
+      "bundleName": "puzzle_7-10-8",
+      "androidCrc": 2995416054,
+      "iosCrc": 3338718659
+    },
+    {
+      "bundleName": "puzzle_7-10-9",
+      "androidCrc": 2469625287,
+      "iosCrc": 4046974434
+    },
+    {
+      "bundleName": "puzzle_4-15-9",
+      "androidCrc": 1574674901,
+      "iosCrc": 1515999574
+    },
+    {
+      "bundleName": "puzzle_4-15-8",
+      "androidCrc": 1504355907,
+      "iosCrc": 1971908662
+    },
+    {
+      "bundleName": "puzzle_10-15-8",
+      "androidCrc": 136752047,
+      "iosCrc": 1112803438
+    },
+    {
+      "bundleName": "puzzle_4-15-7",
+      "androidCrc": 3021629782,
+      "iosCrc": 2814726991
+    },
+    {
+      "bundleName": "puzzle_10-15-9",
+      "androidCrc": 1414796533,
+      "iosCrc": 2178018939
+    },
+    {
+      "bundleName": "puzzle_1-12-8",
+      "androidCrc": 4034725542,
+      "iosCrc": 1725875311
+    },
+    {
+      "bundleName": "puzzle_10-15-7",
+      "androidCrc": 2273204137,
+      "iosCrc": 609639272
+    },
+    {
+      "bundleName": "puzzle_1-12-9",
+      "androidCrc": 3088011766,
+      "iosCrc": 2987204460
+    },
+    {
+      "bundleName": "puzzle_2-15-8",
+      "androidCrc": 1685625125,
+      "iosCrc": 3109074085
+    },
+    {
+      "bundleName": "puzzle_8-13-9",
+      "androidCrc": 3166824825,
+      "iosCrc": 1016516322
+    },
+    {
+      "bundleName": "puzzle_2-15-7",
+      "androidCrc": 4281946790,
+      "iosCrc": 2999990630
+    },
+    {
+      "bundleName": "puzzle_8-13-7",
+      "androidCrc": 1434358072,
+      "iosCrc": 1751774580
+    },
+    {
+      "bundleName": "puzzle_2-15-9",
+      "androidCrc": 2292341537,
+      "iosCrc": 2989073572
+    },
+    {
+      "bundleName": "puzzle_8-13-8",
+      "androidCrc": 66864381,
+      "iosCrc": 1818094019
+    },
+    {
+      "bundleName": "puzzle_7-9-9",
+      "androidCrc": 1842453038,
+      "iosCrc": 1528451310
+    },
+    {
+      "bundleName": "puzzle_5-11-8",
+      "androidCrc": 2437471115,
+      "iosCrc": 82898082
+    },
+    {
+      "bundleName": "puzzle_5-11-9",
+      "androidCrc": 3384015375,
+      "iosCrc": 1141871332
+    },
+    {
+      "bundleName": "puzzle_3-12-9",
+      "androidCrc": 3188462668,
+      "iosCrc": 358794872
+    },
+    {
+      "bundleName": "puzzle_4-8-9",
+      "androidCrc": 1086182288,
+      "iosCrc": 1146226881
+    },
+    {
+      "bundleName": "puzzle_8-7-9",
+      "androidCrc": 762301112,
+      "iosCrc": 2719853921
+    },
+    {
+      "bundleName": "puzzle_6-14-7",
+      "androidCrc": 3113733131,
+      "iosCrc": 2292910926
+    },
+    {
+      "bundleName": "puzzle_3-12-8",
+      "androidCrc": 2807108794,
+      "iosCrc": 3932793700
+    },
+    {
+      "bundleName": "puzzle_6-14-8",
+      "androidCrc": 3274290697,
+      "iosCrc": 935551130
+    },
+    {
+      "bundleName": "puzzle_6-14-9",
+      "androidCrc": 4225564981,
+      "iosCrc": 3663299683
+    },
+    {
+      "bundleName": "puzzle_9-10-9",
+      "androidCrc": 1874371448,
+      "iosCrc": 2019503291
+    },
+    {
+      "bundleName": "puzzle_11-12-9",
+      "androidCrc": 1911845994,
+      "iosCrc": 3090654028
+    },
+    {
+      "bundleName": "puzzle_11-12-8",
+      "androidCrc": 798410299,
+      "iosCrc": 85064849
+    },
+    {
+      "bundleName": "puzzle_9-10-8",
+      "androidCrc": 3816801087,
+      "iosCrc": 1469379319
+    },
+    {
+      "bundleName": "puzzle_10-14-7",
+      "androidCrc": 4206301795,
+      "iosCrc": 2570465769
+    },
+    {
+      "bundleName": "puzzle_1-13-7",
+      "androidCrc": 4048597586,
+      "iosCrc": 1241752853
+    },
+    {
+      "bundleName": "puzzle_10-14-8",
+      "androidCrc": 380781674,
+      "iosCrc": 1779858554
+    },
+    {
+      "bundleName": "puzzle_1-13-8",
+      "androidCrc": 814479952,
+      "iosCrc": 3719686971
+    },
+    {
+      "bundleName": "puzzle_1-13-9",
+      "androidCrc": 605220876,
+      "iosCrc": 3997290286
+    },
+    {
+      "bundleName": "puzzle_2-14-7",
+      "androidCrc": 3780467978,
+      "iosCrc": 4242704520
+    },
+    {
+      "bundleName": "puzzle_8-14-8",
+      "androidCrc": 678820549,
+      "iosCrc": 553260021
+    },
+    {
+      "bundleName": "puzzle_8-14-9",
+      "androidCrc": 4092927537,
+      "iosCrc": 1747987992
+    },
+    {
+      "bundleName": "puzzle_2-14-8",
+      "androidCrc": 3552348403,
+      "iosCrc": 3459857289
+    },
+    {
+      "bundleName": "puzzle_3-9-9",
+      "androidCrc": 926821221,
+      "iosCrc": 712167312
+    },
+    {
+      "bundleName": "puzzle_8-14-7",
+      "androidCrc": 783367844,
+      "iosCrc": 2553004073
+    },
+    {
+      "bundleName": "puzzle_5-10-8",
+      "androidCrc": 148497009,
+      "iosCrc": 1508348466
+    },
+    {
+      "bundleName": "puzzle_10-7-9",
+      "androidCrc": 3626325441,
+      "iosCrc": 2896587975
+    },
+    {
+      "bundleName": "puzzle_5-10-9",
+      "androidCrc": 2096826684,
+      "iosCrc": 2555344104
+    },
+    {
+      "bundleName": "puzzle_6-15-9",
+      "androidCrc": 778563107,
+      "iosCrc": 4011225939
+    },
+    {
+      "bundleName": "puzzle_4-7-9",
+      "androidCrc": 1410543046,
+      "iosCrc": 2514403467
+    },
+    {
+      "bundleName": "puzzle_3-11-8",
+      "androidCrc": 2535365126,
+      "iosCrc": 4042861315
+    },
+    {
+      "bundleName": "puzzle_3-11-9",
+      "androidCrc": 106260130,
+      "iosCrc": 1374841218
+    },
+    {
+      "bundleName": "puzzle_6-15-7",
+      "androidCrc": 2464299167,
+      "iosCrc": 2158391503
+    },
+    {
+      "bundleName": "puzzle_9-11-9",
+      "androidCrc": 2835277102,
+      "iosCrc": 1230488892
+    },
+    {
+      "bundleName": "puzzle_6-15-8",
+      "androidCrc": 2388833474,
+      "iosCrc": 2135581865
+    },
+    {
+      "bundleName": "puzzle_8-8-9",
+      "androidCrc": 2425019981,
+      "iosCrc": 332720637
+    },
+    {
+      "bundleName": "puzzle_9-11-8",
+      "androidCrc": 55014163,
+      "iosCrc": 1006219722
+    },
+    {
+      "bundleName": "puzzle_5-7-9",
+      "androidCrc": 1931596574,
+      "iosCrc": 740159604
+    },
+    {
+      "bundleName": "puzzle_11-9-9",
+      "androidCrc": 164990183,
+      "iosCrc": 1160954541
+    },
+    {
+      "bundleName": "puzzle_1-8-9",
+      "androidCrc": 176266074,
+      "iosCrc": 1967311299
+    },
+    {
+      "bundleName": "puzzle_1-14-9",
+      "androidCrc": 309497107,
+      "iosCrc": 2345437987
+    },
+    {
+      "bundleName": "puzzle_1-14-7",
+      "androidCrc": 3997930645,
+      "iosCrc": 3762016306
+    },
+    {
+      "bundleName": "puzzle_1-14-8",
+      "androidCrc": 3643167491,
+      "iosCrc": 1680322120
+    },
+    {
+      "bundleName": "puzzle_8-15-9",
+      "androidCrc": 529617087,
+      "iosCrc": 1883404572
+    },
+    {
+      "bundleName": "puzzle_8-15-7",
+      "androidCrc": 3936831965,
+      "iosCrc": 2067292980
+    },
+    {
+      "bundleName": "puzzle_8-15-8",
+      "androidCrc": 728353205,
+      "iosCrc": 106491313
+    },
+    {
+      "bundleName": "puzzle_10-8-9",
+      "androidCrc": 2335771964,
+      "iosCrc": 1999032694
+    },
+    {
+      "bundleName": "puzzle_5-13-7",
+      "androidCrc": 3500211944,
+      "iosCrc": 3204332811
+    },
+    {
+      "bundleName": "puzzle_5-13-8",
+      "androidCrc": 3216336618,
+      "iosCrc": 1227367661
+    },
+    {
+      "bundleName": "puzzle_6-12-8",
+      "androidCrc": 661832717,
+      "iosCrc": 4170470661
+    },
+    {
+      "bundleName": "puzzle_3-10-9",
+      "androidCrc": 1364041400,
+      "iosCrc": 1194000044
+    },
+    {
+      "bundleName": "puzzle_9-16-6",
+      "androidCrc": 668205472,
+      "iosCrc": 399029994
+    },
+    {
+      "bundleName": "puzzle_6-12-9",
+      "androidCrc": 2595825445,
+      "iosCrc": 3379936747
+    },
+    {
+      "bundleName": "puzzle_9-16-5",
+      "androidCrc": 1806898759,
+      "iosCrc": 1661447669
+    },
+    {
+      "bundleName": "puzzle_9-16-4",
+      "androidCrc": 1009564367,
+      "iosCrc": 911512668
+    },
+    {
+      "bundleName": "puzzle_3-10-8",
+      "androidCrc": 703672830,
+      "iosCrc": 59636509
+    },
+    {
+      "bundleName": "puzzle_9-16-3",
+      "androidCrc": 3481625573,
+      "iosCrc": 133997223
+    },
+    {
+      "bundleName": "puzzle_9-16-9",
+      "androidCrc": 233844136,
+      "iosCrc": 3448279806
+    },
+    {
+      "bundleName": "puzzle_9-16-8",
+      "androidCrc": 1649638508,
+      "iosCrc": 132910142
+    },
+    {
+      "bundleName": "puzzle_9-16-7",
+      "androidCrc": 2213057002,
+      "iosCrc": 1095694802
+    },
+    {
+      "bundleName": "puzzle_9-16-2",
+      "androidCrc": 3626520000,
+      "iosCrc": 1642626235
+    },
+    {
+      "bundleName": "puzzle_9-16-1",
+      "androidCrc": 1782941597,
+      "iosCrc": 1920354071
+    },
+    {
+      "bundleName": "puzzle_11-10-9",
+      "androidCrc": 445834809,
+      "iosCrc": 2953953571
+    },
+    {
+      "bundleName": "puzzle_11-10-8",
+      "androidCrc": 4181419186,
+      "iosCrc": 2860222295
+    },
+    {
+      "bundleName": "puzzle_10-16-1",
+      "androidCrc": 4144415773,
+      "iosCrc": 2870049029
+    },
+    {
+      "bundleName": "puzzle_10-16-2",
+      "androidCrc": 587486314,
+      "iosCrc": 3710819669
+    },
+    {
+      "bundleName": "puzzle_11-8-9",
+      "androidCrc": 1626781356,
+      "iosCrc": 2614527623
+    },
+    {
+      "bundleName": "puzzle_7-15-7",
+      "androidCrc": 3917530901,
+      "iosCrc": 281569372
+    },
+    {
+      "bundleName": "puzzle_9-9-9",
+      "androidCrc": 2283264154,
+      "iosCrc": 813525113
+    },
+    {
+      "bundleName": "puzzle_1-7-9",
+      "androidCrc": 3881442366,
+      "iosCrc": 2653924511
+    },
+    {
+      "bundleName": "puzzle_7-15-9",
+      "androidCrc": 132629702,
+      "iosCrc": 1901025191
+    },
+    {
+      "bundleName": "puzzle_4-10-9",
+      "androidCrc": 455696641,
+      "iosCrc": 1604059500
+    },
+    {
+      "bundleName": "puzzle_4-10-8",
+      "androidCrc": 2868080581,
+      "iosCrc": 1362879384
+    },
+    {
+      "bundleName": "puzzle_7-15-8",
+      "androidCrc": 2712187053,
+      "iosCrc": 3159054489
+    },
+    {
+      "bundleName": "puzzle_1-15-8",
+      "androidCrc": 3167346473,
+      "iosCrc": 240703313
+    },
+    {
+      "bundleName": "puzzle_10-16-9",
+      "androidCrc": 156291888,
+      "iosCrc": 1050550785
+    },
+    {
+      "bundleName": "puzzle_1-15-9",
+      "androidCrc": 2395665545,
+      "iosCrc": 2175377576
+    },
+    {
+      "bundleName": "puzzle_10-16-7",
+      "androidCrc": 1261539325,
+      "iosCrc": 4044305161
+    },
+    {
+      "bundleName": "puzzle_10-16-5",
+      "androidCrc": 1339896409,
+      "iosCrc": 1145815564
+    },
+    {
+      "bundleName": "puzzle_10-16-6",
+      "androidCrc": 3457869359,
+      "iosCrc": 31944400
+    },
+    {
+      "bundleName": "puzzle_10-16-3",
+      "androidCrc": 2692036829,
+      "iosCrc": 2410868379
+    },
+    {
+      "bundleName": "puzzle_1-15-7",
+      "androidCrc": 2279389775,
+      "iosCrc": 931109184
+    },
+    {
+      "bundleName": "puzzle_10-16-4",
+      "androidCrc": 3574599510,
+      "iosCrc": 3487787892
+    },
+    {
+      "bundleName": "puzzle_10-9-9",
+      "androidCrc": 3876784648,
+      "iosCrc": 548243355
+    },
+    {
+      "bundleName": "puzzle_5-12-8",
+      "androidCrc": 2655800213,
+      "iosCrc": 847158595
+    },
+    {
+      "bundleName": "puzzle_5-12-9",
+      "androidCrc": 1342205015,
+      "iosCrc": 315664144
+    },
+    {
+      "bundleName": "puzzle_4-9-9",
+      "androidCrc": 182018549,
+      "iosCrc": 1751373524
+    },
+    {
+      "bundleName": "puzzle_6-13-7",
+      "androidCrc": 3573460814,
+      "iosCrc": 2639458011
+    },
+    {
+      "bundleName": "puzzle_6-13-8",
+      "androidCrc": 925963583,
+      "iosCrc": 2605902541
+    },
+    {
+      "bundleName": "puzzle_6-13-9",
+      "androidCrc": 4143363887,
+      "iosCrc": 1519356797
+    },
+    {
+      "bundleName": "puzzle_12-10-8",
+      "androidCrc": 4249652159,
+      "iosCrc": 1461385750
+    },
+    {
+      "bundleName": "puzzle_12-10-9",
+      "androidCrc": 3362947121,
+      "iosCrc": 1620757102
+    },
+    {
+      "bundleName": "puzzle_12-11-8",
+      "androidCrc": 3930559297,
+      "iosCrc": 74565449
+    },
+    {
+      "bundleName": "puzzle_12-11-9",
+      "androidCrc": 3851686467,
+      "iosCrc": 1598423223
+    },
+    {
+      "bundleName": "puzzle_12-12-8",
+      "androidCrc": 3877898129,
+      "iosCrc": 426763821
+    },
+    {
+      "bundleName": "puzzle_12-12-9",
+      "androidCrc": 3295512343,
+      "iosCrc": 3931499118
+    },
+    {
+      "bundleName": "puzzle_12-13-9",
+      "androidCrc": 4130444903,
+      "iosCrc": 3024079210
+    },
+    {
+      "bundleName": "puzzle_12-14-7",
+      "androidCrc": 2629784582,
+      "iosCrc": 2396746474
+    },
+    {
+      "bundleName": "puzzle_12-14-8",
+      "androidCrc": 74275689,
+      "iosCrc": 1165246365
+    },
+    {
+      "bundleName": "puzzle_12-14-9",
+      "androidCrc": 3145731,
+      "iosCrc": 1611353217
+    },
+    {
+      "bundleName": "puzzle_12-15-8",
+      "androidCrc": 1815908286,
+      "iosCrc": 4129210625
+    },
+    {
+      "bundleName": "puzzle_12-15-9",
+      "androidCrc": 1503273008,
+      "iosCrc": 161874030
+    },
+    {
+      "bundleName": "puzzle_12-16-1",
+      "androidCrc": 3513927365,
+      "iosCrc": 4133077470
+    },
+    {
+      "bundleName": "puzzle_12-16-2",
+      "androidCrc": 3264163801,
+      "iosCrc": 3191989646
+    },
+    {
+      "bundleName": "puzzle_12-16-3",
+      "androidCrc": 3666213211,
+      "iosCrc": 3462533574
+    },
+    {
+      "bundleName": "puzzle_12-16-4",
+      "androidCrc": 3942582403,
+      "iosCrc": 3574948110
+    },
+    {
+      "bundleName": "puzzle_12-16-5",
+      "androidCrc": 3451728610,
+      "iosCrc": 3752785386
+    },
+    {
+      "bundleName": "puzzle_12-16-6",
+      "androidCrc": 4270113585,
+      "iosCrc": 2755016635
+    },
+    {
+      "bundleName": "puzzle_12-16-7",
+      "androidCrc": 1063474702,
+      "iosCrc": 2420632127
+    },
+    {
+      "bundleName": "puzzle_12-16-8",
+      "androidCrc": 1084398423,
+      "iosCrc": 1053071122
+    },
+    {
+      "bundleName": "puzzle_12-16-9",
+      "androidCrc": 257576756,
+      "iosCrc": 341250691
+    },
+    {
+      "bundleName": "puzzle_12-7-9",
+      "androidCrc": 3722193290,
+      "iosCrc": 646653719
+    },
+    {
+      "bundleName": "puzzle_12-8-9",
+      "androidCrc": 675524555,
+      "iosCrc": 3510785614
+    },
+    {
+      "bundleName": "puzzle_12-9-9",
+      "androidCrc": 564019867,
+      "iosCrc": 747470643
+    }
+  ]
+}

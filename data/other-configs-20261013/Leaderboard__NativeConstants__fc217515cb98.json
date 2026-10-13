@@ -1,0 +1,40 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Units.WeeklyLeaderboardManager",
+      "field": "UnlockLevel",
+      "type": "int",
+      "value_expression": "47",
+      "dump_line": 423333
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WeeklyLeaderboardManager",
+      "field": "MaxRewardedRank",
+      "type": "int",
+      "value_expression": "3",
+      "dump_line": 423334
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WeeklyLeaderboardManager",
+      "field": "TenSeconds",
+      "type": "int",
+      "value_expression": "10000",
+      "dump_line": 423335
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WeeklyLeaderboardManager",
+      "field": "FiveSeconds",
+      "type": "int",
+      "value_expression": "5000",
+      "dump_line": 423336
+    },
+    {
+      "manager": "Royal.Player.Context.Units.WeeklyLeaderboardManager",
+      "field": "OneDayInMs",
+      "type": "int",
+      "value_expression": "86400000",
+      "dump_line": 423337
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

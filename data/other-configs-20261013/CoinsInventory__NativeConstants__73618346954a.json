@@ -1,0 +1,761 @@
+{
+  "constants": [
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "MaxCloche",
+      "type": "byte",
+      "value_expression": "3",
+      "dump_line": 435357
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "MaxBoosterDigit",
+      "type": "short",
+      "value_expression": "16",
+      "dump_line": 435358
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "ClocheStartIndex",
+      "type": "short",
+      "value_expression": "48",
+      "dump_line": 435359
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "ClocheEndIndex",
+      "type": "short",
+      "value_expression": "49",
+      "dump_line": 435360
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "SideProgressionLevelStartIndex",
+      "type": "short",
+      "value_expression": "50",
+      "dump_line": 435361
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "SideProgressionLevelEndIndex",
+      "type": "short",
+      "value_expression": "50",
+      "dump_line": 435362
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "SkillStartIndex",
+      "type": "short",
+      "value_expression": "51",
+      "dump_line": 435363
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "SkillEndIndex",
+      "type": "short",
+      "value_expression": "53",
+      "dump_line": 435364
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "TryCountStartIndex",
+      "type": "short",
+      "value_expression": "54",
+      "dump_line": 435365
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "TryCountEndIndex",
+      "type": "short",
+      "value_expression": "60",
+      "dump_line": 435366
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "MaxTryCount",
+      "type": "short",
+      "value_expression": "127",
+      "dump_line": 435367
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedRocketPausedTimeStartIndex",
+      "type": "short",
+      "value_expression": "0",
+      "dump_line": 435368
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedRocketPausedTimeEndIndex",
+      "type": "short",
+      "value_expression": "15",
+      "dump_line": 435369
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedTntPausedTimeStartIndex",
+      "type": "short",
+      "value_expression": "16",
+      "dump_line": 435370
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedTntPausedTimeEndIndex",
+      "type": "short",
+      "value_expression": "31",
+      "dump_line": 435371
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedLightballPausedTimeStartIndex",
+      "type": "short",
+      "value_expression": "32",
+      "dump_line": 435372
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedLightballPausedTimeEndIndex",
+      "type": "short",
+      "value_expression": "47",
+      "dump_line": 435373
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventMultiplierEndTimeStartIndex",
+      "type": "short",
+      "value_expression": "31",
+      "dump_line": 435374
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventMultiplierEndTimeEndIndex",
+      "type": "short",
+      "value_expression": "61",
+      "dump_line": 435375
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventorySkyRaceTutorialIndex",
+      "type": "short",
+      "value_expression": "50",
+      "dump_line": 435376
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryFacebookInfoDialogIndex",
+      "type": "short",
+      "value_expression": "51",
+      "dump_line": 435377
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryInstagramInfoDialogIndex",
+      "type": "short",
+      "value_expression": "52",
+      "dump_line": 435378
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryFacebookLikeRewardIndex",
+      "type": "short",
+      "value_expression": "53",
+      "dump_line": 435379
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryInstagramFollowRewardIndex",
+      "type": "short",
+      "value_expression": "54",
+      "dump_line": 435380
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryHapticTutorialShownIndex",
+      "type": "short",
+      "value_expression": "55",
+      "dump_line": 435381
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryTeamTreasureTutorialIndex",
+      "type": "short",
+      "value_expression": "56",
+      "dump_line": 435382
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryLightningRushTutorialIndex",
+      "type": "short",
+      "value_expression": "57",
+      "dump_line": 435383
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryNextLevelTutorialIndex",
+      "type": "short",
+      "value_expression": "58",
+      "dump_line": 435384
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "EventInventoryMadnessFirstClaimTouchLockIndex",
+      "type": "short",
+      "value_expression": "60",
+      "dump_line": 435385
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "TryCount2StartIndex",
+      "type": "short",
+      "value_expression": "1",
+      "dump_line": 435386
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "TryCount2EndIndex",
+      "type": "short",
+      "value_expression": "12",
+      "dump_line": 435387
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DeltaMoveStartIndex",
+      "type": "short",
+      "value_expression": "13",
+      "dump_line": 435388
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DeltaMoveEndIndex",
+      "type": "short",
+      "value_expression": "17",
+      "dump_line": 435389
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UpdateSectionStartIndex",
+      "type": "short",
+      "value_expression": "18",
+      "dump_line": 435390
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UpdateSectionEndIndex",
+      "type": "short",
+      "value_expression": "34",
+      "dump_line": 435391
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "CurrentLevelStartIndex",
+      "type": "short",
+      "value_expression": "35",
+      "dump_line": 435392
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "CurrentLevelEndIndex",
+      "type": "short",
+      "value_expression": "49",
+      "dump_line": 435393
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "AutomaticSocialPopupsIndex",
+      "type": "short",
+      "value_expression": "0",
+      "dump_line": 435394
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyCardCollectionTutorialIndex",
+      "type": "short",
+      "value_expression": "1",
+      "dump_line": 435395
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyWildCardTutorialIndex",
+      "type": "short",
+      "value_expression": "2",
+      "dump_line": 435396
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyCardTokenTutorialIndex",
+      "type": "short",
+      "value_expression": "3",
+      "dump_line": 435397
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyCardCollectionIntroIndex",
+      "type": "short",
+      "value_expression": "4",
+      "dump_line": 435398
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySlotMachineItemTutorialIndex",
+      "type": "short",
+      "value_expression": "5",
+      "dump_line": 435399
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyKCTooltipStartIndex",
+      "type": "short",
+      "value_expression": "6",
+      "dump_line": 435400
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyKCTooltipEndIndex",
+      "type": "short",
+      "value_expression": "7",
+      "dump_line": 435401
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyPPTooltipStartIndex",
+      "type": "short",
+      "value_expression": "8",
+      "dump_line": 435402
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyPPTooltipEndIndex",
+      "type": "short",
+      "value_expression": "9",
+      "dump_line": 435403
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyLRTooltipStartIndex",
+      "type": "short",
+      "value_expression": "10",
+      "dump_line": 435404
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyLRTooltipEndIndex",
+      "type": "short",
+      "value_expression": "11",
+      "dump_line": 435405
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyTTTooltipStartIndex",
+      "type": "short",
+      "value_expression": "12",
+      "dump_line": 435406
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyTTTooltipEndIndex",
+      "type": "short",
+      "value_expression": "13",
+      "dump_line": 435407
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySRTooltipStartIndex",
+      "type": "short",
+      "value_expression": "14",
+      "dump_line": 435408
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySRTooltipEndIndex",
+      "type": "short",
+      "value_expression": "15",
+      "dump_line": 435409
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "SpaceMissionFirstFailIndex",
+      "type": "short",
+      "value_expression": "16",
+      "dump_line": 435410
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "SegmentedLadderOfferUserSegmentStartIndex",
+      "type": "short",
+      "value_expression": "17",
+      "dump_line": 435411
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "SegmentedLadderOfferUserSegmentEndIndex",
+      "type": "short",
+      "value_expression": "20",
+      "dump_line": 435412
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySMIsInGameIndex",
+      "type": "short",
+      "value_expression": "21",
+      "dump_line": 435413
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyClocheStartIndex",
+      "type": "short",
+      "value_expression": "22",
+      "dump_line": 435414
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyClocheEndIndex",
+      "type": "short",
+      "value_expression": "24",
+      "dump_line": 435415
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySM1TooltipStartIndex",
+      "type": "short",
+      "value_expression": "25",
+      "dump_line": 435416
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySM1TooltipEndIndex",
+      "type": "short",
+      "value_expression": "26",
+      "dump_line": 435417
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySM2TooltipStartIndex",
+      "type": "short",
+      "value_expression": "27",
+      "dump_line": 435418
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySM2TooltipEndIndex",
+      "type": "short",
+      "value_expression": "28",
+      "dump_line": 435419
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySM3TooltipStartIndex",
+      "type": "short",
+      "value_expression": "29",
+      "dump_line": 435420
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeySM3TooltipEndIndex",
+      "type": "short",
+      "value_expression": "30",
+      "dump_line": 435421
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyBRIsInGameIndex",
+      "type": "short",
+      "value_expression": "31",
+      "dump_line": 435422
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyQuitInGameIdx",
+      "type": "short",
+      "value_expression": "50",
+      "dump_line": 435423
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyUserProfileTutorialIdx",
+      "type": "short",
+      "value_expression": "51",
+      "dump_line": 435424
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogLeaderboardFriendsSuggestionTutorialIndex",
+      "type": "short",
+      "value_expression": "52",
+      "dump_line": 435425
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyPRTooltipStartIndex",
+      "type": "short",
+      "value_expression": "55",
+      "dump_line": 435426
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyPRTooltipEndIndex",
+      "type": "short",
+      "value_expression": "56",
+      "dump_line": 435427
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyRRTooltipStartIndex",
+      "type": "short",
+      "value_expression": "57",
+      "dump_line": 435428
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyRRTooltipEndIndex",
+      "type": "short",
+      "value_expression": "58",
+      "dump_line": 435429
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyCCTooltipStartIndex",
+      "type": "short",
+      "value_expression": "59",
+      "dump_line": 435430
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "DialogKeyCCTooltipEndIndex",
+      "type": "short",
+      "value_expression": "60",
+      "dump_line": 435431
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedHammerTimeStartIndex",
+      "type": "short",
+      "value_expression": "0",
+      "dump_line": 435474
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedHammerTimeEndIndex",
+      "type": "short",
+      "value_expression": "31",
+      "dump_line": 435475
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedArrowTimeStartIndex",
+      "type": "short",
+      "value_expression": "32",
+      "dump_line": 435476
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedArrowTimeEndIndex",
+      "type": "short",
+      "value_expression": "63",
+      "dump_line": 435477
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedCannonTimeStartIndex",
+      "type": "short",
+      "value_expression": "64",
+      "dump_line": 435478
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedCannonTimeEndIndex",
+      "type": "short",
+      "value_expression": "95",
+      "dump_line": 435479
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedJesterTimeStartIndex",
+      "type": "short",
+      "value_expression": "96",
+      "dump_line": 435480
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedJesterTimeEndIndex",
+      "type": "short",
+      "value_expression": "127",
+      "dump_line": 435481
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedHammerPausedTimeStartIndex",
+      "type": "short",
+      "value_expression": "128",
+      "dump_line": 435482
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedHammerPausedTimeEndIndex",
+      "type": "short",
+      "value_expression": "143",
+      "dump_line": 435483
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedArrowPausedTimeStartIndex",
+      "type": "short",
+      "value_expression": "144",
+      "dump_line": 435484
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedArrowPausedTimeEndIndex",
+      "type": "short",
+      "value_expression": "159",
+      "dump_line": 435485
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedCannonPausedTimeStartIndex",
+      "type": "short",
+      "value_expression": "160",
+      "dump_line": 435486
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedCannonPausedTimeEndIndex",
+      "type": "short",
+      "value_expression": "175",
+      "dump_line": 435487
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedJesterPausedTimeStartIndex",
+      "type": "short",
+      "value_expression": "176",
+      "dump_line": 435488
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedJesterPausedTimeEndIndex",
+      "type": "short",
+      "value_expression": "191",
+      "dump_line": 435489
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.UserInventory",
+      "field": "UnlimitedInGameBoosterBitArrayLength",
+      "type": "int",
+      "value_expression": "192",
+      "dump_line": 435493
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "PaidUserIndex",
+      "type": "byte",
+      "value_expression": "0",
+      "dump_line": 428801
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "MovesChestOpenedIndex",
+      "type": "byte",
+      "value_expression": "1",
+      "dump_line": 428802
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "MinHighestBoughtBundleIndex",
+      "type": "byte",
+      "value_expression": "2",
+      "dump_line": 428803
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "MaxHighestBoughtBundleIndex",
+      "type": "byte",
+      "value_expression": "9",
+      "dump_line": 428804
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "EnterNameOnceIndex",
+      "type": "byte",
+      "value_expression": "10",
+      "dump_line": 428805
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "ChangeNameOnceIndex",
+      "type": "byte",
+      "value_expression": "11",
+      "dump_line": 428806
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "UserHasTeamIndex",
+      "type": "byte",
+      "value_expression": "12",
+      "dump_line": 428807
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "ChatBanIndex",
+      "type": "byte",
+      "value_expression": "13",
+      "dump_line": 428808
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "MinHighestBoughtSinglePackageIndex",
+      "type": "byte",
+      "value_expression": "14",
+      "dump_line": 428809
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "MaxHighestBoughtSinglePackageIndex",
+      "type": "byte",
+      "value_expression": "21",
+      "dump_line": 428810
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "SocialBanIndex",
+      "type": "byte",
+      "value_expression": "22",
+      "dump_line": 428811
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "SupportBanIndex",
+      "type": "byte",
+      "value_expression": "23",
+      "dump_line": 428812
+    },
+    {
+      "manager": "Royal.Player.Context.Data.Persistent.BasicUserData",
+      "field": "DeletedIndex",
+      "type": "byte",
+      "value_expression": "24",
+      "dump_line": 428813
+    },
+    {
+      "manager": "Royal.Player.Context.Data.SyncManager",
+      "field": "InitialCoins",
+      "type": "int",
+      "value_expression": "2000",
+      "dump_line": 424963
+    },
+    {
+      "manager": "Royal.Player.Context.Units.UserManager",
+      "field": "TempUserId",
+      "type": "long",
+      "value_expression": "0",
+      "dump_line": 422705
+    },
+    {
+      "manager": "Royal.Player.Context.Units.UserManager",
+      "field": "TempTeamId",
+      "type": "long",
+      "value_expression": "1",
+      "dump_line": 422706
+    }
+  ],
+  "note": "Literal expressions from dump.cs. These are build38174 constants; runtime A/B/config may change actual behavior. Readonly/.cctor values and calculations are not inferred."
+}

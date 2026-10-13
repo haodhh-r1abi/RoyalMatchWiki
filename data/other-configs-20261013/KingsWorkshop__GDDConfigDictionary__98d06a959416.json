@@ -1,0 +1,191 @@
+{
+  "feature": "KingsWorkshop",
+  "configs": [
+    {
+      "source": "code const",
+      "key": "KingWorkshopManager.TableGameLevelCount",
+      "type": "int",
+      "value": "11",
+      "meaning": "Số màn table game được thiết kế",
+      "where": "KingWorkshopManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "KingWorkshopManager.DefaultLevelId",
+      "type": "string",
+      "value": "kw_level_1",
+      "meaning": "Màn mặc định khi fallback",
+      "where": "KingWorkshopManager"
+    },
+    {
+      "source": "code const",
+      "key": "KingWorkshopManager.TutorialLevelId",
+      "type": "string",
+      "value": "kw_level_tutorial",
+      "meaning": "Màn tutorial",
+      "where": "KingWorkshopManager"
+    },
+    {
+      "source": "code const",
+      "key": "KingWorkshopManager.MaxCampaignAbTryCount",
+      "type": "int",
+      "value": "5",
+      "meaning": "Số lần tối đa thử gửi gán campaign AB lên server",
+      "where": "KingWorkshopManager (client default)"
+    },
+    {
+      "source": "code const",
+      "key": "Ten man theo mau",
+      "type": "string",
+      "value": "kw_level_{0}",
+      "meaning": "Quy tắc đặt tên màn (kw_level_1 .. kw_level_11)",
+      "where": "KingWorkshopManager.PrepareLevelSession"
+    },
+    {
+      "source": "static array",
+      "key": "TryGetLevelNumberForUserLevel - bang moc",
+      "type": "map",
+      "value": "level 5 -> màn 1; 9 -> 2; 16 -> 3; 30 -> 4; 50 -> 5; 71 -> 6; 91 -> 7; 111 -> 8; 131 -> 9; 151 -> 10; 171 -> 11; 191 -> 12; 216 -> 13; 246 -> 14; 281 -> 15; 326 -> 16; còn lại -> không có (fallback)",
+      "meaning": "Level chính nào sẽ chèn màn table game nào",
+      "where": "KingWorkshopManager.TryGetLevelNumberForUserLevel (đọc bằng gd_condense)"
+    },
+    {
+      "source": "code const",
+      "key": "Deep link campaign",
+      "type": "string",
+      "value": "tablegame_onelink",
+      "meaning": "Giá trị deferred deep link kích hoạt campaign AB",
+      "where": "KingWorkshopManager.TryAssignTableGameCampaign"
+    },
+    {
+      "source": "code const",
+      "key": "TableGameLevelPrefs.TutorialEnteredKey",
+      "type": "string",
+      "value": "TableGame.TutorialEntered",
+      "meaning": "Khóa đánh dấu đã vào tutorial",
+      "where": "TableGameLevelPrefs"
+    },
+    {
+      "source": "code const",
+      "key": "TableGameOrderDefinition.MaxUniqueTiers",
+      "type": "int",
+      "value": "2",
+      "meaning": "Một đơn hàng chỉ yêu cầu tối đa 2 loại bậc bình khác nhau",
+      "where": "Royal.Scenes.TableGame.Config.TableGameOrderDefinition"
+    },
+    {
+      "source": "code const",
+      "key": "TableGameLauncher.GhostScaleInDuration",
+      "type": "float",
+      "value": "0.2",
+      "meaning": "Thời gian bình xem trước phóng to ra",
+      "where": "TableGameLauncher"
+    },
+    {
+      "source": "code const",
+      "key": "TableGameLauncher.GhostSnapThreshold",
+      "type": "float",
+      "value": "0.0005",
+      "meaning": "Ngưỡng làm mượt vị trí ngắm",
+      "where": "TableGameLauncher"
+    },
+    {
+      "source": "code field",
+      "key": "TableGameLevelConfig",
+      "type": "class",
+      "value": "maxSpawnTier, tableWidth, vaseSequence (int[]), orders (TableGameOrderDefinition[]), placedVases (TableGamePlacedVase[])",
+      "meaning": "Cấu hình một màn: bậc cao nhất sinh ra, bề rộng bàn, thứ tự bình, danh sách đơn hàng, bình đặt sẵn",
+      "where": "Royal.Scenes.TableGame.Config.TableGameLevelConfig"
+    },
+    {
+      "source": "code field",
+      "key": "TableGameSettings - dieu khien",
+      "type": "ScriptableObject",
+      "value": "throwSpeed, maxThrowAngle, dragSensitivity, dragSmoothing, throwCooldown, ghostClampMargin, handTutorialIdleSeconds, enableMerge, autoThrower",
+      "meaning": "Tham số cảm giác điều khiển",
+      "where": "Royal.Scenes.TableGame.Config.TableGameSettings"
+    },
+    {
+      "source": "code field",
+      "key": "TableGameSettings - vat ly binh",
+      "type": "ScriptableObject",
+      "value": "vaseMaxSpeed, vaseLinearDrag, vaseAngularDrag, vaseGravityScale, vaseFriction, vaseBounciness, wallFriction, wallBounciness, differentTypeDamping, postCollisionDrag, lateralImpulseMin, lateralImpulseMax, lateralImpulseMinNormalY",
+      "meaning": "Tham số vật lý 2D của bình gốm và tường",
+      "where": "TableGameSettings"
+    },
+    {
+      "source": "code field",
+      "key": "TableGameSettings - merge",
+      "type": "ScriptableObject",
+      "value": "mergeMoveDuration, mergeScaleDownDuration, mergeScaleDelay, mergeSpawnDelay, mergeScaleUpDuration, mergeScaleUpOvershoot, mergeSpawnScaleRatio, mergeCooldownAfterSpawn, mergeOrderSortingOrder, mergeFakePushDelay, mergeBounceSpeedMaxScale, mergeBounceSpeedMinScale, mergeBounceMinVelocity, mergeBounceMaxVelocity, mergeClinkDuration, clinkThrowDuration",
+      "meaning": "Tham số animation và âm thanh khi hợp nhất",
+      "where": "TableGameSettings"
+    },
+    {
+      "source": "code field",
+      "key": "TableGameSettings - pool va sinh binh",
+      "type": "ScriptableObject",
+      "value": "basePoolSize, spawnFalloffExponent, sortOrderMultiplier, sortOrderBase",
+      "meaning": "Kích thước pool, độ hiếm của bậc cao, thứ tự vẽ",
+      "where": "TableGameSettings"
+    },
+    {
+      "source": "asset",
+      "key": "Bundle table_game",
+      "type": "string",
+      "value": "GroupName = TableGameBundle = 'table_game'; asset: TableGameSettings, TableGameVaseDatabase, level_01, level_02, level_tutorial, level_map, LoadingTableGameView, TableGame, TableGameAudioAssets, TableGameUiAssets",
+      "meaning": "Toàn bộ asset của mini game",
+      "where": "TableGameBundleGroupInfo"
+    },
+    {
+      "source": "storage key",
+      "key": "PendingAssignCampaignAb",
+      "type": "string",
+      "value": "client",
+      "meaning": "Campaign AB đang chờ gửi lên server",
+      "where": "KingWorkshopManager.SetPendingCampaignAb / GetPendingCampaignAb"
+    },
+    {
+      "source": "storage key",
+      "key": "PendingAssignCampaignAbTryCount",
+      "type": "int",
+      "value": "client",
+      "meaning": "Số lần đã thử gửi (tối đa 5)",
+      "where": "KingWorkshopManager.TryConsumeCampaignAbTry"
+    },
+    {
+      "source": "storage key",
+      "key": "TableGame.TutorialEntered",
+      "type": "bool",
+      "value": "client",
+      "meaning": "Đã vào tutorial mini game",
+      "where": "TableGameLevelPrefs"
+    },
+    {
+      "source": "AB test",
+      "key": "AbTestHelper.IsTableGameAbEnabled",
+      "type": "bool",
+      "value": "server override",
+      "meaning": "Bật/tắt King's Workshop",
+      "where": "KingWorkshopManager.RefreshTableGameEnabled"
+    },
+    {
+      "source": "code enum",
+      "key": "TableGameColliderType / TableGameScreenAnchor.AnchorPoint / TableGameTutorialRoot.TutorialStage",
+      "type": "enum",
+      "value": "(enum phụ trợ của mini game)",
+      "meaning": "Loại collider của bình, điểm neo UI, giai đoạn tutorial",
+      "where": "Royal.Scenes.TableGame.Config / .Systems"
+    }
+  ],
+  "managers": [
+    "Royal.Player.Context.Units.KingWorkshopManager",
+    "Royal.Scenes.TableGame.Systems.TableGameOrderSystem",
+    "Royal.Scenes.TableGame.Systems.TableGameVaseSpawner",
+    "Royal.Scenes.TableGame.Systems.TableGameLauncher",
+    "Royal.Scenes.TableGame.Systems.TableGameMergeController",
+    "Royal.Scenes.Game.Levels.Units.WinFail.TableGameWinFailManager",
+    "Royal.Scenes.TableGame.Config.TableGameLevelPrefs"
+  ],
+  "note": "Dictionary đã viết trong GDD. Source code const/enum là giá trị trong client; source server chưa đọc không trở thành dữ liệu đã GET. Không dùng các giá trị chưa xác minh để lấp config thiếu."
+}

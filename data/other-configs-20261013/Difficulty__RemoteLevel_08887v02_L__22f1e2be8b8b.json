@@ -1,0 +1,466 @@
+{
+  "Name": "08887v02_L",
+  "Move": 28,
+  "Goals": [
+    {
+      "Goal": 15,
+      "Count": 40
+    },
+    {
+      "Goal": 11,
+      "Count": 35
+    },
+    {
+      "Goal": 23,
+      "Count": 16,
+      "IsFromSettings": true
+    },
+    {
+      "Goal": 83,
+      "Count": 15,
+      "IsFromSettings": true
+    }
+  ],
+  "Grid": {
+    "Items": [
+      51,
+      52,
+      22,
+      22,
+      0,
+      0,
+      22,
+      22,
+      22,
+      41,
+      42,
+      22,
+      22,
+      22,
+      0,
+      22,
+      22,
+      22,
+      51,
+      52,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      41,
+      42,
+      22,
+      35,
+      22,
+      22,
+      211,
+      211,
+      212,
+      51,
+      52,
+      22,
+      308,
+      35,
+      22,
+      14,
+      212,
+      211,
+      41,
+      42,
+      22,
+      35,
+      308,
+      35,
+      212,
+      14,
+      14,
+      51,
+      52,
+      22,
+      22,
+      35,
+      308,
+      14,
+      14,
+      14,
+      41,
+      42,
+      22,
+      22,
+      22,
+      35,
+      213,
+      14,
+      14,
+      308,
+      308,
+      0,
+      22,
+      22,
+      22,
+      14,
+      14,
+      14,
+      35,
+      35,
+      0,
+      0,
+      22,
+      22,
+      213,
+      14,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      22,
+      213,
+      14,
+      14
+    ],
+    "Cells": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      },
+      {
+        "FillType": 1,
+        "IsPredefined": true
+      }
+    ],
+    "Width": 9,
+    "Height": 11
+  },
+  "Predefined": [
+    {
+      "Y": 12,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "Y": 13,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "Y": 14,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "Y": 15,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "Y": 16,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "Y": 17,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "Y": 18,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "Y": 19,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "Y": 20,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 12,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 13,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 14,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 15,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 16,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 17,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 18,
+      "Ids": [
+        308
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 19,
+      "Ids": [
+        35
+      ]
+    },
+    {
+      "X": 1,
+      "Y": 20,
+      "Ids": [
+        308
+      ]
+    }
+  ],
+  "Sets": [
+    {
+      "Name": "Set1",
+      "Elements": [
+        {
+          "Id": 3
+        },
+        {
+          "Id": 1
+        },
+        {
+          "Id": 4
+        },
+        {
+          "Id": 2
+        }
+      ],
+      "CanFall": true,
+      "CreateRatio": 1,
+      "TargetColumns": [],
+      "BirdMax": -1,
+      "FrogMax": -1,
+      "TargetFills": [],
+      "TargetFillRatios": [],
+      "MaxItemCounts": []
+    }
+  ],
+  "Colors": [
+    3,
+    1,
+    4,
+    2
+  ],
+  "Counts": [
+    {
+      "Type": 8,
+      "Count": 4
+    },
+    {
+      "Type": 84,
+      "Count": 5
+    },
+    {
+      "Type": 16,
+      "Count": 8
+    },
+    {
+      "Type": 6,
+      "Count": 35
+    }
+  ],
+  "PotionColors": [],
+  "LowMatch": [],
+  "Curtains": [],
+  "CupShelves": [],
+  "SoilGroups": [],
+  "Drills": [],
+  "LightBulbColorOrder": [],
+  "PouchConfig": {},
+  "Limits": [],
+  "Treasuremaps": [],
+  "Slots": [],
+  "MagnetGroups": [],
+  "ConveyorBelts": [],
+  "Coils": [],
+  "CandyCaneGroups": [],
+  "TabletItemGroups": [],
+  "IvyItemGroups": [],
+  "BlindsGroups": [],
+  "WaterData": {},
+  "ShifterGrids": [],
+  "PorcelainGroups": [],
+  "MagicGem": [],
+  "MagicGemColorOrder": [],
+  "AncientVaults": [],
+  "ForceFieldGroups": [],
+  "Logs": [],
+  "PinGroups": [],
+  "Cryptexes": [],
+  "PowerCubeGroups": [],
+  "PotionTubeGroups": [],
+  "CuckooGroups": [],
+  "Sapphires": [],
+  "RoyalCapsules": [],
+  "CapsuleConfig": {},
+  "BowlingRacks": [],
+  "MagicLantern": [],
+  "Pairs": [],
+  "MetalPlateGroups": [],
+  "ColorMixers": []
+}

@@ -1,0 +1,787 @@
+[
+  {
+    "productId": "com.dreamgames.royal.single.1",
+    "price": 25000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.2",
+    "price": 59000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.2",
+    "price": 59000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.3",
+    "price": 79000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.5",
+    "price": 129000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.3",
+    "price": 79000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.5",
+    "price": 129000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.6",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.7",
+    "price": 179000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.7",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.8",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.8",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.10",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.13",
+    "price": 329000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.15",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.16",
+    "price": 399000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.16",
+    "price": 399000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.20",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.25",
+    "price": 649000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.30",
+    "price": 999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.32",
+    "price": 829000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.40",
+    "price": 1199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.40",
+    "price": 1029000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.50",
+    "price": 1298999.9,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.55",
+    "price": 1799000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.55",
+    "price": 1399000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.75",
+    "price": 1899000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.80",
+    "price": 1999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.80",
+    "price": 2499000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.single.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.bundle.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.3",
+    "price": 99000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.4",
+    "price": 99000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.5",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.6",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.8",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.10",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.15",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.19",
+    "price": 458000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.25",
+    "price": 649000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.30",
+    "price": 999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.38",
+    "price": 917000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.50",
+    "price": 1499000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.60",
+    "price": 1499000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.ladder.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.3",
+    "price": 79000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.5",
+    "price": 129000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.8",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.15",
+    "price": 379000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.20",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.30",
+    "price": 779000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.50",
+    "price": 1298999.9,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.laddercoin.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.pass.5",
+    "price": 129000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.pass.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.stagedpass1.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.stagedpass2.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.stagedpass2.15",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.weeklypass.5",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.weeklypass.8",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.1",
+    "price": 29000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.2",
+    "price": 49000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.3",
+    "price": 99000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.4",
+    "price": 99000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.7",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.8",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.9",
+    "price": 214000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.10",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.25",
+    "price": 649000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.45",
+    "price": 1298999.9,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.50",
+    "price": 1298999.9,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.60",
+    "price": 1499000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.75",
+    "price": 1899000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.80",
+    "price": 2499000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.90",
+    "price": 2150000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.offer.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.teamoffer.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.teamoffer.13",
+    "price": 329000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.teamoffer.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.teamoffer.25",
+    "price": 649000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.teamoffer.40",
+    "price": 1199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.teamoffer.50",
+    "price": 1298999.9,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.egooffer.7",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.egooffer.9",
+    "price": 214000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.egooffer.1",
+    "price": 29000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.egooffer.2",
+    "price": 49000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.seasonaloffer.1",
+    "price": 25000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.seasonaloffer.10",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.seasonaloffer.20",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.conversionoffer.1",
+    "price": 25000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.conversionoffer.5",
+    "price": 129000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.multiplier.8",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.multipliertoken.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.progressoffer.1",
+    "price": 29000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.progressoffer.5",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.progressoffer.15",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.progressoffer.25",
+    "price": 799000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.progressoffer.50",
+    "price": 1499000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.progressoffer.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.anvilpass.5",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.anvilpass.8",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.extremelyhardleveloffer.3",
+    "price": 99000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.extremelyhardleveloffer.1",
+    "price": 29000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.noads.8",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.noadsbundle.12",
+    "price": 399000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.worldcupcosmetic.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.worldcupcosmetic2.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.worldcupcosmetic.30",
+    "price": 999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.1",
+    "price": 29000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.2",
+    "price": 59000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.4",
+    "price": 119000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.6",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.9",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.5",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.8",
+    "price": 249000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energyoffer.15",
+    "price": 498999.97,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energypass.5",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energypass.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle3.3",
+    "price": 99000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.6",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.25",
+    "price": 799000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.30",
+    "price": 999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.40",
+    "price": 1199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.50",
+    "price": 1499000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.energysingle.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.1",
+    "price": 29000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.2",
+    "price": 49000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.3",
+    "price": 79000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.4",
+    "price": 99000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.5",
+    "price": 129000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.6",
+    "price": 149000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.7",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.8",
+    "price": 199000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.10",
+    "price": 299000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.13",
+    "price": 329000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.15",
+    "price": 379000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.16",
+    "price": 399000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.20",
+    "price": 599000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.25",
+    "price": 649000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.30",
+    "price": 779000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.32",
+    "price": 829000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.40",
+    "price": 1029000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.45",
+    "price": 1179000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.50",
+    "price": 1298999.9,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.55",
+    "price": 1399000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.60",
+    "price": 1999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.75",
+    "price": 1899000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.80",
+    "price": 1999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.dynamic.100",
+    "price": 2999000.0,
+    "currency": "VND"
+  },
+  {
+    "productId": "com.dreamgames.royal.hiddentempleoffer.10",
+    "price": 249000.0,
+    "currency": "VND"
+  }
+]
