@@ -1,0 +1,166 @@
+{
+  "scope": "ConfigVersion 1..10, bounded read-only request set",
+  "logical_request": "GetDailyRewardsInfoRequest",
+  "transport": "HTTP POST application/octet-stream FlatBuffers",
+  "transport_notes": [
+    "Initial version 9 request timed out after the 25-second timeout; versions 1..8 were already recorded. Version 9 was retried once in the resumed batch."
+  ],
+  "attempts": [
+    {
+      "requested_version": 1,
+      "requested_at": "2026-10-13T08:44:37.559020+00:00",
+      "http_status": 200,
+      "bytes": 259,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": true,
+      "report_file": "GetDailyRewardsInfo_1-report.json",
+      "config_file": "DailyRewardsConfig_v1.json",
+      "canonical_sha256": "2de211f1889edc96967672ed89589e3d2ae6271aabfc57279e143d2ae33b8dfb",
+      "weekly_sets": 4,
+      "monthly_days": [
+        8,
+        15,
+        22,
+        30
+      ]
+    },
+    {
+      "requested_version": 2,
+      "requested_at": "2026-10-13T08:44:40.707639+00:00",
+      "http_status": 200,
+      "bytes": 260,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": true,
+      "report_file": "GetDailyRewardsInfo_2-report.json",
+      "config_file": "DailyRewardsConfig_v2.json",
+      "canonical_sha256": "183d1ac100bd41eeb73ebd5d4bc46ed475b830e70981f8524c5a01fc00bbc06a",
+      "weekly_sets": 4,
+      "monthly_days": [
+        8,
+        15,
+        22,
+        30
+      ]
+    },
+    {
+      "requested_version": 3,
+      "requested_at": "2026-10-13T08:44:42.373651+00:00",
+      "http_status": 200,
+      "bytes": 258,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": true,
+      "report_file": "GetDailyRewardsInfo_3-report.json",
+      "config_file": "DailyRewardsConfig_v3.json",
+      "canonical_sha256": "fd890e4a15379b30f58dcb796e9ca1f656a9f06a9639f3ffb26ad2caea69b989",
+      "weekly_sets": 4,
+      "monthly_days": [
+        8,
+        15,
+        22,
+        30
+      ]
+    },
+    {
+      "requested_version": 4,
+      "requested_at": "2026-10-13T08:44:45.549041+00:00",
+      "http_status": 200,
+      "bytes": 263,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": true,
+      "report_file": "GetDailyRewardsInfo_4-report.json",
+      "config_file": "DailyRewardsConfig_v4.json",
+      "canonical_sha256": "8038e3f59f935baa300817d5aaca10512e9a81dd69a828bbb5055d2f1afa9851",
+      "weekly_sets": 4,
+      "monthly_days": [
+        8,
+        15,
+        22,
+        30
+      ]
+    },
+    {
+      "requested_version": 5,
+      "requested_at": "2026-10-13T08:44:48.967131+00:00",
+      "http_status": 200,
+      "bytes": 72,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": false,
+      "report_file": "GetDailyRewardsInfo_5-report.json"
+    },
+    {
+      "requested_version": 6,
+      "requested_at": "2026-10-13T08:44:51.237259+00:00",
+      "http_status": 200,
+      "bytes": 72,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": false,
+      "report_file": "GetDailyRewardsInfo_6-report.json"
+    },
+    {
+      "requested_version": 7,
+      "requested_at": "2026-10-13T08:44:53.367904+00:00",
+      "http_status": 200,
+      "bytes": 72,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": false,
+      "report_file": "GetDailyRewardsInfo_7-report.json"
+    },
+    {
+      "requested_version": 8,
+      "requested_at": "2026-10-13T08:44:56.071152+00:00",
+      "http_status": 200,
+      "bytes": 72,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": false,
+      "report_file": "GetDailyRewardsInfo_8-report.json"
+    },
+    {
+      "requested_version": 9,
+      "requested_at": "2026-10-13T08:46:26.108198+00:00",
+      "http_status": 200,
+      "bytes": 72,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": false,
+      "report_file": "GetDailyRewardsInfo_9-report.json"
+    },
+    {
+      "requested_version": 10,
+      "requested_at": "2026-10-13T08:46:29.363356+00:00",
+      "http_status": 200,
+      "bytes": 72,
+      "response_types": [
+        "GetDailyRewardsInfoResponse(128)"
+      ],
+      "error": null,
+      "config_returned": false,
+      "report_file": "GetDailyRewardsInfo_10-report.json"
+    }
+  ]
+}

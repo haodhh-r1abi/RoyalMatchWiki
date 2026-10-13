@@ -1,0 +1,25 @@
+{
+  "requested_at": "2026-10-13T08:44:42.373651+00:00",
+  "endpoint": "https://game-server.prod.royalmatch.drmgms.com/api",
+  "http_method": "POST",
+  "logical_request": "GetDailyRewardsInfoRequest",
+  "arguments": {
+    "ConfigVersion": 3
+  },
+  "http_status": 200,
+  "content_type": "application/octet-stream",
+  "bytes": 258,
+  "sha256": "de2deed00b2525a9b76bb1516740e97972d9e6b914abab13554ffb0c61eee142",
+  "application_status": null,
+  "response_types": [
+    "GetDailyRewardsInfoResponse(128)"
+  ],
+  "dailyreward_responses": [
+    {
+      "_type": "GetDailyRewardsInfoResponse",
+      "DailyRewardsUserConfig": "{\"mr\": [{\"p\": 8, \"r\": [{\"a\": 100, \"t\": \"C\"}, {\"a\": 1, \"t\": \"T\"}]}, {\"p\": 15, \"r\": [{\"a\": 200, \"t\": \"C\"}, {\"a\": 1, \"t\": \"L\"}]}, {\"p\": 22, \"r\": [{\"a\": 250, \"t\": \"C\"}, {\"a\": 1, \"t\": \"H\"}]}, {\"p\": 30, \"r\": [{\"a\": 300, \"t\": \"C\"}, {\"a\": 1, \"t\": \"J\"}]}], \"wrs\": [{\"lr\": [{\"a\": 1, \"t\": \"R\"}, {\"a\": 1, \"t\": \"T\"}, {\"a\": 300, \"t\": \"C\"}], \"sr\": [{\"a\": 1, \"t\": \"L\"}, {\"a\": 15, \"t\": \"ULV\"}, {\"a\": 1, \"t\": \"R\"}, {\"a\": 100, \"t\": \"C\"}, {\"a\": 30, \"t\": \"ULV\"}, {\"a\": 1, \"t\": \"J\"}]}, {\"lr\": [{\"a\": 300, \"t\": \"C\"}, {\"a\": 1, \"t\": \"T\"}, {\"a\": 1, \"t\": \"L\"}], \"sr\": [{\"a\": 1, \"t\": \"R\"}, {\"a\": 15, \"t\": \"ULV\"}, {\"a\": 1, \"t\": \"T\"}, {\"a\": 100, \"t\": \"C\"}, {\"a\": 30, \"t\": \"ULV\"}, {\"a\": 1, \"t\": \"Ca\"}]}, {\"lr\": [{\"a\": 300, \"t\": \"C\"}, {\"a\": 1, \"t\": \"R\"}, {\"a\": 1, \"t\": \"L\"}], \"sr\": [{\"a\": 1, \"t\": \"T\"}, {\"a\": 15, \"t\": \"ULV\"}, {\"a\": 1, \"t\": \"R\"}, {\"a\": 100, \"t\": \"C\"}, {\"a\": 30, \"t\": \"ULV\"}, {\"a\": 1, \"t\": \"H\"}]}, {\"lr\": [{\"a\": 300, \"t\": \"C\"}, {\"a\": 1, \"t\": \"R\"}, {\"a\": 1, \"t\": \"T\"}], \"sr\": [{\"a\": 1, \"t\": \"R\"}, {\"a\": 15, \"t\": \"ULV\"}, {\"a\": 1, \"t\": \"T\"}, {\"a\": 1, \"t\": \"L\"}, {\"a\": 100, \"t\": \"C\"}, {\"a\": 1, \"t\": \"A\"}]}]}"
+    }
+  ],
+  "error": null,
+  "no_claim_or_progress_request": true
+}
