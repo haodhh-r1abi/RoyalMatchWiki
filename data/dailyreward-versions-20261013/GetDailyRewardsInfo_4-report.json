@@ -1,0 +1,25 @@
+{
+  "requested_at": "2026-10-13T08:44:45.549041+00:00",
+  "endpoint": "https://game-server.prod.royalmatch.drmgms.com/api",
+  "http_method": "POST",
+  "logical_request": "GetDailyRewardsInfoRequest",
+  "arguments": {
+    "ConfigVersion": 4
+  },
+  "http_status": 200,
+  "content_type": "application/octet-stream",
+  "bytes": 263,
+  "sha256": "db8413e5b79d4e4cf2504d796728e87f5f0ae45bbdd93a8d7bf8c3298d314bbe",
+  "application_status": null,
+  "response_types": [
+    "GetDailyRewardsInfoResponse(128)"
+  ],
+  "dailyreward_responses": [
+    {
+      "_type": "GetDailyRewardsInfoResponse",
+      "DailyRewardsUserConfig": "{\"mr\":[{\"p\":8,\"r\":[{\"a\":100,\"t\":\"C\"},{\"a\":1,\"t\":\"T\"}]},{\"p\":15,\"r\":[{\"a\":200,\"t\":\"C\"},{\"a\":1,\"t\":\"L\"}]},{\"p\":22,\"r\":[{\"a\":250,\"t\":\"C\"},{\"a\":1,\"t\":\"H\"}]},{\"p\":30,\"r\":[{\"a\":300,\"t\":\"C\"},{\"a\":1,\"t\":\"J\"}]}],\"wrs\":[{\"lr\":[{\"a\":10,\"t\":\"UT\"},{\"a\":1,\"t\":\"J\"},{\"a\":300,\"t\":\"C\"}],\"sr\":[{\"a\":15,\"t\":\"ULV\"},{\"a\":10,\"t\":\"UR\"},{\"a\":10,\"t\":\"ULB\"},{\"a\":15,\"t\":\"UR\"},{\"a\":30,\"t\":\"ULV\"},{\"a\":10,\"t\":\"UT\"}]},{\"lr\":[{\"a\":10,\"t\":\"ULB\"},{\"a\":1,\"t\":\"H\"},{\"a\":300,\"t\":\"C\"}],\"sr\":[{\"a\":15,\"t\":\"ULV\"},{\"a\":10,\"t\":\"UT\"},{\"a\":10,\"t\":\"ULB\"},{\"a\":15,\"t\":\"UT\"},{\"a\":30,\"t\":\"ULV\"},{\"a\":10,\"t\":\"UR\"}]},{\"lr\":[{\"a\":10,\"t\":\"UT\"},{\"a\":1,\"t\":\"A\"},{\"a\":300,\"t\":\"C\"}],\"sr\":[{\"a\":15,\"t\":\"ULV\"},{\"a\":10,\"t\":\"UR\"},{\"a\":10,\"t\":\"UT\"},{\"a\":15,\"t\":\"UR\"},{\"a\":30,\"t\":\"ULV\"},{\"a\":10,\"t\":\"ULB\"}]},{\"lr\":[{\"a\":10,\"t\":\"UR\"},{\"a\":1,\"t\":\"Ca\"},{\"a\":300,\"t\":\"C\"}],\"sr\":[{\"a\":15,\"t\":\"ULV\"},{\"a\":10,\"t\":\"UT\"},{\"a\":10,\"t\":\"UR\"},{\"a\":15,\"t\":\"UT\"},{\"a\":30,\"t\":\"ULV\"},{\"a\":10,\"t\":\"ULB\"}]}]}"
+    }
+  ],
+  "error": null,
+  "no_claim_or_progress_request": true
+}

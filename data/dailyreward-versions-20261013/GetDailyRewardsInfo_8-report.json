@@ -1,0 +1,24 @@
+{
+  "requested_at": "2026-10-13T08:44:56.071152+00:00",
+  "endpoint": "https://game-server.prod.royalmatch.drmgms.com/api",
+  "http_method": "POST",
+  "logical_request": "GetDailyRewardsInfoRequest",
+  "arguments": {
+    "ConfigVersion": 8
+  },
+  "http_status": 200,
+  "content_type": "application/octet-stream",
+  "bytes": 72,
+  "sha256": "9288aadddf314b3e323e3e5be98a5b099893ed2e400d723723be85dbd06541c8",
+  "application_status": null,
+  "response_types": [
+    "GetDailyRewardsInfoResponse(128)"
+  ],
+  "dailyreward_responses": [
+    {
+      "_type": "GetDailyRewardsInfoResponse"
+    }
+  ],
+  "error": null,
+  "no_claim_or_progress_request": true
+}
