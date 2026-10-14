@@ -824,5 +824,12 @@
     "c": "Phân tích",
     "g": "Config đầy đủ cho 30 tính năng ngoài sự kiện",
     "k": "GetInfo Shop Economy Progression Social LiveOps config price reward AreaConfig level Ads Analytics Areas Boosters Cloche CoinsInventory DailyRewards Difficulty DynamicOffer Ego Friends InviteFriends JourneyOffer KingsWorkshop LadderOffer Leaderboard League LiveOps MultiplierSelection MultiplierToken Notifications Offers Profile ReactivationLevels Shop StoryLevels SuperBooster Team TeamOffer WelcomeBackGift"
+  },
+  {
+    "u": "analysis/sale-segmentation-version-lab.html",
+    "t": "Phân nhóm user & chọn sale: thử version đã ghi nhận và đọc sâu luật client",
+    "c": "Phân tích",
+    "g": "Version đã ghi nhận, full Ladder333/335,20 luật,50 case tĩnh",
+    "k": "segment sale offer payer whale Ladder Dynamic Journey SKU version 327 333 335 AB 199 200 79 80"
   }
 ]

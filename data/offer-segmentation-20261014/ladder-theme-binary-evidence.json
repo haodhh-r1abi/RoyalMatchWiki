@@ -1,0 +1,343 @@
+{
+  "method_rva": "0x1a0ba00",
+  "ldr_literal_instruction": "0x1a0ba74",
+  "literal_file_offset": "0x1a0baf0",
+  "literal_signed_value": 46199240,
+  "add_pc_base": "0x1a0ba84",
+  "table_file_offset": "0x461ac4c",
+  "pseudo_c_address": "UNK_0462ac4c",
+  "table_sha256": "bb05413fc208a1bba55c28b7545e7016867855335ce4c34c390a174b2f1afb7c",
+  "table_raw_hex": "0600000003000000060000000300000003000000030000000600000003000000060000000300000006000000",
+  "theme_mapping": {
+    "None": {
+      "enum": 0,
+      "resource_prefix": 3
+    },
+    "Default": {
+      "enum": 1,
+      "resource_prefix": 3
+    },
+    "Jungle": {
+      "enum": 2,
+      "resource_prefix": 6
+    },
+    "Halloween": {
+      "enum": 3,
+      "resource_prefix": 3
+    },
+    "BlackFriday": {
+      "enum": 4,
+      "resource_prefix": 6
+    },
+    "Coin": {
+      "enum": 5,
+      "resource_prefix": 3
+    },
+    "PayFirst": {
+      "enum": 6,
+      "resource_prefix": 3
+    },
+    "NewYear3": {
+      "enum": 7,
+      "resource_prefix": 3
+    },
+    "NewYear6": {
+      "enum": 8,
+      "resource_prefix": 6
+    },
+    "Spring3": {
+      "enum": 9,
+      "resource_prefix": 3
+    },
+    "Easter6": {
+      "enum": 10,
+      "resource_prefix": 6
+    },
+    "RoyalCup3": {
+      "enum": 11,
+      "resource_prefix": 3
+    },
+    "RoyalCup6": {
+      "enum": 12,
+      "resource_prefix": 6
+    }
+  },
+  "instructions": [
+    {
+      "address": "0x1a0ba00",
+      "mnemonic": "push",
+      "operands": "{r4, r5, r6, lr}"
+    },
+    {
+      "address": "0x1a0ba04",
+      "mnemonic": "sub",
+      "operands": "sp, sp, #8"
+    },
+    {
+      "address": "0x1a0ba08",
+      "mnemonic": "ldr",
+      "operands": "r6, [pc, #0xcc]"
+    },
+    {
+      "address": "0x1a0ba0c",
+      "mnemonic": "mov",
+      "operands": "r4, r2"
+    },
+    {
+      "address": "0x1a0ba10",
+      "mnemonic": "mov",
+      "operands": "r5, r1"
+    },
+    {
+      "address": "0x1a0ba14",
+      "mnemonic": "add",
+      "operands": "r6, pc, r6"
+    },
+    {
+      "address": "0x1a0ba18",
+      "mnemonic": "ldrb",
+      "operands": "r0, [r6]"
+    },
+    {
+      "address": "0x1a0ba1c",
+      "mnemonic": "cmp",
+      "operands": "r0, #0"
+    },
+    {
+      "address": "0x1a0ba20",
+      "mnemonic": "bne",
+      "operands": "#0x1a0ba5c"
+    },
+    {
+      "address": "0x1a0ba24",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, #0xb4]"
+    },
+    {
+      "address": "0x1a0ba28",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, r0]"
+    },
+    {
+      "address": "0x1a0ba2c",
+      "mnemonic": "bl",
+      "operands": "#0x898808"
+    },
+    {
+      "address": "0x1a0ba30",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, #0xac]"
+    },
+    {
+      "address": "0x1a0ba34",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, r0]"
+    },
+    {
+      "address": "0x1a0ba38",
+      "mnemonic": "bl",
+      "operands": "#0x898808"
+    },
+    {
+      "address": "0x1a0ba3c",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, #0xa4]"
+    },
+    {
+      "address": "0x1a0ba40",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, r0]"
+    },
+    {
+      "address": "0x1a0ba44",
+      "mnemonic": "bl",
+      "operands": "#0x898808"
+    },
+    {
+      "address": "0x1a0ba48",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, #0x9c]"
+    },
+    {
+      "address": "0x1a0ba4c",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, r0]"
+    },
+    {
+      "address": "0x1a0ba50",
+      "mnemonic": "bl",
+      "operands": "#0x898808"
+    },
+    {
+      "address": "0x1a0ba54",
+      "mnemonic": "mov",
+      "operands": "r0, #1"
+    },
+    {
+      "address": "0x1a0ba58",
+      "mnemonic": "strb",
+      "operands": "r0, [r6]"
+    },
+    {
+      "address": "0x1a0ba5c",
+      "mnemonic": "mov",
+      "operands": "r0, r5"
+    },
+    {
+      "address": "0x1a0ba60",
+      "mnemonic": "mov",
+      "operands": "r1, #0"
+    },
+    {
+      "address": "0x1a0ba64",
+      "mnemonic": "bl",
+      "operands": "#0x38e73b8"
+    },
+    {
+      "address": "0x1a0ba68",
+      "mnemonic": "sub",
+      "operands": "r0, r0, #2"
+    },
+    {
+      "address": "0x1a0ba6c",
+      "mnemonic": "mov",
+      "operands": "r1, #3"
+    },
+    {
+      "address": "0x1a0ba70",
+      "mnemonic": "cmp",
+      "operands": "r0, #0xa"
+    },
+    {
+      "address": "0x1a0ba74",
+      "mnemonic": "ldrls",
+      "operands": "r1, [pc, #0x74]"
+    },
+    {
+      "address": "0x1a0ba78",
+      "mnemonic": "ldr",
+      "operands": "r2, [pc, #0x74]"
+    },
+    {
+      "address": "0x1a0ba7c",
+      "mnemonic": "addls",
+      "operands": "r1, pc, r1"
+    },
+    {
+      "address": "0x1a0ba80",
+      "mnemonic": "ldr",
+      "operands": "r2, [pc, r2]"
+    },
+    {
+      "address": "0x1a0ba84",
+      "mnemonic": "ldr",
+      "operands": "r3, [pc, #0x6c]"
+    },
+    {
+      "address": "0x1a0ba88",
+      "mnemonic": "ldrls",
+      "operands": "r1, [r1, r0, lsl #2]"
+    },
+    {
+      "address": "0x1a0ba8c",
+      "mnemonic": "bic",
+      "operands": "r0, r4, #1"
+    },
+    {
+      "address": "0x1a0ba90",
+      "mnemonic": "cmp",
+      "operands": "r0, #6"
+    },
+    {
+      "address": "0x1a0ba94",
+      "mnemonic": "ldr",
+      "operands": "r3, [pc, r3]"
+    },
+    {
+      "address": "0x1a0ba98",
+      "mnemonic": "moveq",
+      "operands": "r3, r2"
+    },
+    {
+      "address": "0x1a0ba9c",
+      "mnemonic": "ldr",
+      "operands": "r4, [r3]"
+    },
+    {
+      "address": "0x1a0baa0",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, #0x54]"
+    },
+    {
+      "address": "0x1a0baa4",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, r0]"
+    },
+    {
+      "address": "0x1a0baa8",
+      "mnemonic": "str",
+      "operands": "r1, [sp, #4]"
+    },
+    {
+      "address": "0x1a0baac",
+      "mnemonic": "add",
+      "operands": "r1, sp, #4"
+    },
+    {
+      "address": "0x1a0bab0",
+      "mnemonic": "ldr",
+      "operands": "r0, [r0]"
+    },
+    {
+      "address": "0x1a0bab4",
+      "mnemonic": "bl",
+      "operands": "#0x891248"
+    },
+    {
+      "address": "0x1a0bab8",
+      "mnemonic": "mov",
+      "operands": "r1, r0"
+    },
+    {
+      "address": "0x1a0babc",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, #0x3c]"
+    },
+    {
+      "address": "0x1a0bac0",
+      "mnemonic": "mov",
+      "operands": "r2, r4"
+    },
+    {
+      "address": "0x1a0bac4",
+      "mnemonic": "mov",
+      "operands": "r3, #0"
+    },
+    {
+      "address": "0x1a0bac8",
+      "mnemonic": "ldr",
+      "operands": "r0, [pc, r0]"
+    },
+    {
+      "address": "0x1a0bacc",
+      "mnemonic": "ldr",
+      "operands": "r0, [r0]"
+    },
+    {
+      "address": "0x1a0bad0",
+      "mnemonic": "bl",
+      "operands": "#0x191a9c0"
+    },
+    {
+      "address": "0x1a0bad4",
+      "mnemonic": "add",
+      "operands": "sp, sp, #8"
+    },
+    {
+      "address": "0x1a0bad8",
+      "mnemonic": "pop",
+      "operands": "{r4, r5, r6, pc}"
+    }
+  ],
+  "note": "Calculated from ARM LDRLS + ADDLS PC-relative instructions. Do not read pseudo-C UNK address as raw file offset; it differs by0x10000 here."
+}

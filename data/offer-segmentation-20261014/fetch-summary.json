@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-14",
+  "app_version": 38174,
+  "requests": 24,
+  "new_config_occurrences": 0,
+  "unique_config_files": 0,
+  "observed_versions_tried": {
+    "LadderOfferInfo.ConfigVersion": [
+      327,
+      333,
+      335
+    ],
+    "UserDynamicSegmentInfo.SegmentVersion": [
+      1333,
+      1334,
+      1353,
+      1361
+    ],
+    "Ping.RevenueSegmentVersion": [
+      1133,
+      1134,
+      1153,
+      1161
+    ]
+  },
+  "no_enter_claim_purchase_progress_update": true,
+  "no_assignment_or_ab_group_changes": true,
+  "journey_skipped": "No complete EventId/Segment/AbGroup in actual JourneyOffer response or current keys; old probe arguments are not assignment evidence."
+}

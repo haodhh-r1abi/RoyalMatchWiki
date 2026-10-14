@@ -1,0 +1,1424 @@
+{
+  "date": "2026-10-14",
+  "observed_versions": {
+    "LadderOfferInfo.ConfigVersion": [
+      327,
+      333,
+      335
+    ],
+    "UserDynamicSegmentInfo.SegmentVersion": [
+      1333,
+      1334,
+      1353,
+      1361
+    ],
+    "Ping.RevenueSegmentVersion": [
+      1133,
+      1134,
+      1153,
+      1161
+    ]
+  },
+  "observed_info": [
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/004_4_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:13:09.372"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/004_4_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:13:09.372"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/006_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:13:11.858"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/006_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:13:11.858"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/009_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:13:14.127"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/009_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:13:14.127"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/013_9_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:13:50.022"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/013_9_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:13:50.022"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/018_12_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:13:53.468"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/018_12_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:13:53.468"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/020_13_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:14:00.554"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/020_13_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:14:00.554"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/021_14_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:14:10.267"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/021_14_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:14:10.267"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/022_15_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:14:38.102"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/022_15_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:14:38.102"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/028_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:14:46.844"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/028_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:14:46.844"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/029_19_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:14:56.714"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/029_19_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:14:56.714"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/030_20_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:15:18.596"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/030_20_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:15:18.596"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/033_22_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:15:25.829"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/033_22_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:15:25.829"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/038_25_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:16:14.067"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/038_25_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:16:14.067"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/044_28_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:16:21.375"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/044_28_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:16:21.375"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/045_29_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:16:30.758"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/045_29_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:16:30.758"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/046_30_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:17:28.821"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/046_30_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:17:28.821"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/051_33_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:17:45.103"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/051_33_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:17:45.103"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/052_34_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:18:41.999"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/052_34_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:18:41.999"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/058_37_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:19:22.863"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/058_37_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:19:22.863"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/059_38_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:19:34.279"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/059_38_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:19:34.279"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/060_39_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:20:39.108"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/060_39_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:20:39.108"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/069_2_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:38:01.239"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/069_2_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:38:01.239"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_old/070_3_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:38:01.291"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_old/070_3_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:38:01.291"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_new/000_4_GetAllTimePurchaseResponse.json",
+      "path": ".Responses[2].LadderOfferInfo",
+      "captured_time_raw": "26/09/08 09:38:02.669"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1333,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/decoded_new/000_4_GetAllTimePurchaseResponse.json",
+      "path": ".Responses[2].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/08 09:38:02.669"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/decoded_new/004_1_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 13:46:50.826"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334
+      },
+      "source": "facts/runtime/decoded_new/004_1_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 13:46:50.826"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 000_3_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:18:09.777"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 000_3_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:18:09.777"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 003_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:22:03.080"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 003_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:22:03.080"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 008_1_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:27:10.448"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 008_1_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:27:10.448"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 012_4_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:28:01.655"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 012_4_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:28:01.655"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 017_7_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:28:16.694"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 017_7_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:28:16.694"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 018_8_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:29:05.027"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 018_8_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:29:05.027"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 021_10_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:29:12.407"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 021_10_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:29:12.407"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 026_13_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:29:17.103"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 026_13_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:29:17.103"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 027_14_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:29:20.267"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 027_14_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:29:20.267"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 033_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:29:36.127"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 033_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:29:36.127"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 034_19_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:30:35.002"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 034_19_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:30:35.002"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 039_22_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:30:42.599"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 039_22_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:30:42.599"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 444,
+        "ConfigVersion": 327
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 042_24_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/09 23:32:08.613"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1334,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 042_24_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/09 23:32:08.613"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 447,
+        "ConfigVersion": 333
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 047_1_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/09/28 08:45:41.851"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1353
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 047_1_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/28 08:45:41.851"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 447,
+        "ConfigVersion": 333
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 048_2_GetUpcomingEventInfoResponse.json",
+      "path": ".Responses[1].LadderOfferInfo",
+      "captured_time_raw": "26/09/28 08:45:43.638"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1353,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 048_2_GetUpcomingEventInfoResponse.json",
+      "path": ".Responses[1].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/09/28 08:45:43.638"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 054_1_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:37:23.954"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 054_1_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:37:23.954"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 055_2_GetUpcomingEventInfoResponse.json",
+      "path": ".Responses[1].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:37:27.731"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 055_2_GetUpcomingEventInfoResponse.json",
+      "path": ".Responses[1].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:37:27.731"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 001_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:49:10.462"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 001_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:49:10.462"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 002_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:56:37.781"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 002_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:56:37.781"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 004_7_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:57:04.219"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 004_7_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:57:04.219"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 005_8_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:00:27.029"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 005_8_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:00:27.029"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 011_11_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:01:32.815"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 011_11_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:01:32.815"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 012_12_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:02:59.769"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 012_12_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:02:59.769"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 013_13_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:07:00.528"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 013_13_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:07:00.528"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 021_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 10:12:42.853"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal.log :: 021_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 10:12:42.853"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 001_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:49:10.462"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 001_5_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:49:10.462"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 002_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:56:37.781"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 002_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:56:37.781"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 004_7_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 08:57:04.219"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 004_7_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 08:57:04.219"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 005_8_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:00:27.029"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 005_8_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:00:27.029"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 011_11_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:01:32.815"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 011_11_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:01:32.815"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 012_12_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:02:59.769"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 012_12_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:02:59.769"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 013_13_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 09:07:00.528"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 013_13_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 09:07:00.528"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 021_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 10:12:42.853"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 021_18_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 10:12:42.853"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 022_1_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 10:21:57.228"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 022_1_PingResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 10:21:57.228"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 024_3_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 10:31:00.742"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 024_3_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 10:31:00.742"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 026_4_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 10:31:03.436"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 026_4_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 10:31:03.436"
+    },
+    {
+      "info": "LadderOfferInfo",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 029_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].LadderOfferInfo",
+      "captured_time_raw": "26/10/06 10:33:57.693"
+    },
+    {
+      "info": "UserDynamicSegmentInfo",
+      "metadata": {
+        "SegmentVersion": 1361,
+        "UserSegment": -1
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 029_6_UpdateUserProgressResponse.json",
+      "path": ".Responses[0].DynamicOfferAllInfo.UserDynamicSegmentInfo",
+      "captured_time_raw": "26/10/06 10:33:57.693"
+    }
+  ],
+  "revenue_assignments": [
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1133
+      },
+      "source": "facts/runtime/decoded_old/069_2_PingResponse.json",
+      "captured_time_raw": "26/09/08 09:38:01.239"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1133
+      },
+      "source": "facts/runtime/decoded_old/070_3_PingResponse.json",
+      "captured_time_raw": "26/09/08 09:38:01.291"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1134
+      },
+      "source": "facts/runtime/decoded_new/004_1_PingResponse.json",
+      "captured_time_raw": "26/09/09 13:46:50.826"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1134
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 008_1_PingResponse.json",
+      "captured_time_raw": "26/09/09 23:27:10.448"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1134
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 021_10_PingResponse.json",
+      "captured_time_raw": "26/09/09 23:29:12.407"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1134
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 026_13_PingResponse.json",
+      "captured_time_raw": "26/09/09 23:29:17.103"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1134
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 027_14_PingResponse.json",
+      "captured_time_raw": "26/09/09 23:29:20.267"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1153
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 047_1_PingResponse.json",
+      "captured_time_raw": "26/09/28 08:45:41.851"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1161
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 054_1_PingResponse.json",
+      "captured_time_raw": "26/10/06 08:37:23.954"
+    },
+    {
+      "fields": {
+        "RevenueSegmentVersion": 1161
+      },
+      "source": "facts/runtime/_live_1006/v3_royal_b.log :: 022_1_PingResponse.json",
+      "captured_time_raw": "26/10/06 10:21:57.228"
+    }
+  ],
+  "historical_configs": [
+    {
+      "feature": "LadderOfferInfo",
+      "field": "Config",
+      "file": "LadderOfferInfo__historical__817a838acf22.json",
+      "sha256": "817a838acf223943f6d4c2cda6199259d44475700787e4861fa535abaef890e8",
+      "json_bytes": 2417,
+      "source_kind": "historical_response",
+      "metadata": {
+        "Id": 447,
+        "ConfigVersion": 333
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 047_1_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo.Config",
+      "captured_time_raw": "26/09/28 08:45:41.851",
+      "occurrences": [
+        {
+          "metadata": {
+            "Id": 447,
+            "ConfigVersion": 333
+          },
+          "source": "facts/runtime/_live_1006/v3_old_royal.log :: 047_1_PingResponse.json",
+          "captured_time_raw": "26/09/28 08:45:41.851"
+        }
+      ]
+    },
+    {
+      "feature": "LadderOfferInfo",
+      "field": "Config",
+      "file": "LadderOfferInfo__historical__0b68d350d438.json",
+      "sha256": "0b68d350d4380b735c049a72d27eacb806f23d009df2427074efdf48447e031e",
+      "json_bytes": 6633,
+      "source_kind": "historical_response",
+      "metadata": {
+        "Id": 449,
+        "ConfigVersion": 335
+      },
+      "source": "facts/runtime/_live_1006/v3_old_royal.log :: 054_1_PingResponse.json",
+      "path": ".Responses[0].LadderOfferInfo.Config",
+      "captured_time_raw": "26/10/06 08:37:23.954",
+      "occurrences": [
+        {
+          "metadata": {
+            "Id": 449,
+            "ConfigVersion": 335
+          },
+          "source": "facts/runtime/_live_1006/v3_old_royal.log :: 054_1_PingResponse.json",
+          "captured_time_raw": "26/10/06 08:37:23.954"
+        }
+      ]
+    }
+  ],
+  "historical_probes": [
+    {
+      "request": "GetEventInfoRequest",
+      "arguments": {},
+      "source": "facts/runtime/server_fetched/GetEventInfo_lvl14000_1006.json",
+      "classification": "historical_probe_not_assignment"
+    },
+    {
+      "request": "GetGoldenOffersInfoRequest",
+      "arguments": {},
+      "source": "facts/runtime/server_fetched/GetGoldenOffersInfoRequest.json",
+      "classification": "historical_probe_not_assignment"
+    },
+    {
+      "request": "GetGoldenOffersInfoRequest",
+      "arguments": {},
+      "source": "facts/runtime/server_fetched/GetGoldenOffersInfo_1006.json",
+      "classification": "historical_probe_not_assignment"
+    },
+    {
+      "request": "GetJourneyOfferInfoRequest",
+      "arguments": {
+        "EventId": 0,
+        "Segment": 0,
+        "AbGroup": 0
+      },
+      "source": "facts/runtime/server_fetched/GetJourneyOfferInfoRequest.json",
+      "classification": "historical_probe_not_assignment"
+    },
+    {
+      "request": "GetSpecialOfferInfoRequest",
+      "arguments": {
+        "EventId": 0
+      },
+      "source": "facts/runtime/server_fetched/GetSpecialOfferInfoRequest.json",
+      "classification": "historical_probe_not_assignment"
+    }
+  ],
+  "interpretation": "Only actual response values identify recorded versions. Ping version fields are cache validators, not config-version download selectors. Probe parameters are not user assignment evidence."
+}

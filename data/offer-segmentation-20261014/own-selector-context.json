@@ -1,0 +1,54 @@
+{
+  "captured_at": "2026-10-14T02:03:39.893900+00:00",
+  "app_version": 38174,
+  "snapshot_mode": "cached_own_account_last_validated_20261013_no_ADB_device",
+  "level_argument": 9999,
+  "fields": {
+    "UserData": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "UserOfferSegment": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "UserSegmentVersion": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "UserSpecialOfferSegment": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "UserSpecialOfferSegmentVersion": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "DynamicOfferSegment": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "DynamicOfferSegmentVersion": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "JourneyOfferSegment": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "JourneyOfferAbGroup": {
+      "available_in_selected_context": false,
+      "value": null
+    },
+    "JourneyOfferEventId": {
+      "available_in_selected_context": false,
+      "value": null
+    }
+  },
+  "team_argument_zero": true,
+  "current_team_membership_unverified": true,
+  "no_desktop_or_game_state_changes": true,
+  "country_argument": "VN",
+  "country_source": "Historic own-account log contains country=VN; not independently refreshed geographic country.",
+  "recorded_log_account_match": true
+}

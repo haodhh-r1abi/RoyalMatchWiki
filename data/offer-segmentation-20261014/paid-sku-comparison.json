@@ -1,0 +1,146 @@
+[
+  {
+    "p": 3,
+    "before_step": 4,
+    "after_step": 4,
+    "before_reward_by_code": {
+      "H": 1,
+      "C": 3000,
+      "T": 1
+    },
+    "after_reward_by_code": {
+      "T": 1,
+      "C": 3000,
+      "H": 1
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": true
+  },
+  {
+    "p": 5,
+    "before_step": 7,
+    "after_step": 10,
+    "before_reward_by_code": {
+      "Pink": 1,
+      "C": 4000,
+      "T": 2
+    },
+    "after_reward_by_code": {
+      "T": 2,
+      "C": 4000,
+      "Pink": 1
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": true
+  },
+  {
+    "p": 8,
+    "before_step": 10,
+    "after_step": 16,
+    "before_reward_by_code": {
+      "H": 2,
+      "C": 5000,
+      "T": 2
+    },
+    "after_reward_by_code": {
+      "H": 2,
+      "C": 5000,
+      "T": 2
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": false
+  },
+  {
+    "p": 15,
+    "before_step": 13,
+    "after_step": 22,
+    "before_reward_by_code": {
+      "A": 3,
+      "C": 5000,
+      "Ca": 3
+    },
+    "after_reward_by_code": {
+      "A": 3,
+      "C": 5000,
+      "Ca": 3
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": false
+  },
+  {
+    "p": 20,
+    "before_step": 16,
+    "after_step": 28,
+    "before_reward_by_code": {
+      "A": 3,
+      "C": 5000,
+      "UT": 60
+    },
+    "after_reward_by_code": {
+      "A": 3,
+      "C": 5000,
+      "UT": 60
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": false
+  },
+  {
+    "p": 30,
+    "before_step": 19,
+    "after_step": 34,
+    "before_reward_by_code": {
+      "H": 5,
+      "C": 8000,
+      "J": 5
+    },
+    "after_reward_by_code": {
+      "J": 5,
+      "C": 8000,
+      "H": 5
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": true
+  },
+  {
+    "p": 50,
+    "before_step": 22,
+    "after_step": 40,
+    "before_reward_by_code": {
+      "Ca": 10,
+      "C": 15000,
+      "L": 10
+    },
+    "after_reward_by_code": {
+      "Ca": 10,
+      "C": 15000,
+      "L": 10
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": false
+  },
+  {
+    "p": 100,
+    "before_step": 25,
+    "after_step": 46,
+    "before_reward_by_code": {
+      "ULV": 720,
+      "C": 35000,
+      "UT": 1440
+    },
+    "after_reward_by_code": {
+      "ULV": 720,
+      "C": 35000,
+      "UT": 1440
+    },
+    "delta_by_code": {},
+    "same_quantities": true,
+    "raw_order_or_representation_changed": false
+  }
+]

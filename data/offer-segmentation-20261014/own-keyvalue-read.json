@@ -1,0 +1,12 @@
+{
+  "keys_requested": [
+    "UserOfferSegment",
+    "UserSegmentVersion",
+    "UserSpecialOfferSegment",
+    "UserSpecialOfferSegmentVersion",
+    "DynamicOfferSegment",
+    "DynamicOfferSegmentVersion"
+  ],
+  "returned_rows": [],
+  "scope": "Anonymized own-account labels only; not a global classifier configuration."
+}

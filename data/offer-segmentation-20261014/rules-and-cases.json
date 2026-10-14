@@ -1,0 +1,1241 @@
+{
+  "rules": [
+    {
+      "id": "RM-R01",
+      "title": "Payer là cờ lịch sử, không phải thang Whale",
+      "layer": "Tín hiệu client",
+      "input": "BasicUserData.UserData (bitfield)",
+      "predicate": "(UserData & 1) != 0",
+      "output": "IsPaidUser = true/false.",
+      "significance": "Cho phép nhánh chưa trả tiền/đã trả tiền; không chứa mức tổng chi hoặc ngưỡng Whale.",
+      "confidence": "native_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Data/Persistent/BasicUserData.c",
+          "line_start": 214,
+          "line_end": 225,
+          "notes": "Getter trả trực tiếp bit0."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Data/Persistent/BasicUserData.c",
+          "line_start": 330,
+          "line_end": 402,
+          "notes": "UpdateUserData(PurchaseProduct) đặt bit0 true."
+        }
+      ],
+      "limits": "Chưa theo dõi giao dịch mới. Không suy luận client là nguồn sự thật duy nhất của thanh toán hoặc backend."
+    },
+    {
+      "id": "RM-R02",
+      "title": "Ghi gói bundle/coin lớn nhất đã mua",
+      "layer": "Tín hiệu client",
+      "input": "PurchaseProduct.numberId, IsBundle, IsPass và UserData hiện có",
+      "predicate": "Đặt payer bit; với bundle, chỉ cập nhật highest bundle khi numberId mới lớn hơn giá trị cũ; với nhánh không phải bundle, IsPass chặn cập nhật highest single; các sản phẩm còn lại chỉ cập nhật khi numberId lớn hơn giá trị cũ.",
+      "output": "GetHighestBoughtBundle đọc bits2..9; GetHighestBoughtSinglePackage đọc bits14..21.",
+      "significance": "Lưu bậc/mã gói lớn nhất, không cộng tổng tiền. Mua nhiều gói nhỏ không tự đồng nghĩa đạt highest ID của gói to.",
+      "confidence": "native_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Data/Persistent/BasicUserData.c",
+          "line_start": 284,
+          "line_end": 313,
+          "notes": "Hai getter ExtractByte."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Data/Persistent/BasicUserData.c",
+          "line_start": 330,
+          "line_end": 402,
+          "notes": "SetBit, so sánh product ID với giá trị cũ, bỏ nhánh highest single cho pass."
+        }
+      ],
+      "limits": "numberId là trường sản phẩm; không gọi nó là tiền USD hay tổng coin đang sở hữu. Pseudo-C prototype PurchaseProduct có dấu hiệu layout/calling convention chưa hoàn hảo."
+    },
+    {
+      "id": "RM-R03",
+      "title": "Cập nhật Offer/Special Offer theo version khác, không phải bắt buộc lớn hơn",
+      "layer": "Đồng bộ kết quả phân nhóm",
+      "input": "newSegment; userSegmentVersion từ response; local UserSegmentVersion hoặc UserSpecialOfferSegmentVersion",
+      "predicate": "Nếu version mới ==0 hoặc bằng version local thì return; còn lại ghi newSegment và version mới.",
+      "output": "UserOfferSegment hoặc UserSpecialOfferSegment được thay bằng giá trị backend cung cấp.",
+      "significance": "Đây là cơ chế áp dụng kết quả phân nhóm, không có phép tính spending→segment trong hàm.",
+      "confidence": "native_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Data/Persistent/BasicUserData.c",
+          "line_start": 1078,
+          "line_end": 1144,
+          "notes": "UpdateOfferSegment; guard ở1104..1108."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Data/Persistent/BasicUserData.c",
+          "line_start": 1148,
+          "line_end": 1218,
+          "notes": "UpdateSpecialOfferSegment có guard tương tự."
+        }
+      ],
+      "limits": "Không nên viết chỉ cập nhật khi serverVersion>localVersion. Hàm này chấp nhận version khác và khác0; điều kiện upstream có thể bổ sung nhưng chưa được suy diễn."
+    },
+    {
+      "id": "RM-R04",
+      "title": "Dynamic Offer lưu segment từ payload riêng",
+      "layer": "Đồng bộ kết quả phân nhóm",
+      "input": "Nullable<UserDynamicSegmentInfo>, UserSegment, SegmentVersion",
+      "predicate": "Có payload; UserSegment không âm; version payload khác version local (so sánh16bit trong pseudo-C) thì lưu segment và version.",
+      "output": "UserKeyValue DynamicOfferSegment / DynamicOfferSegmentVersion.",
+      "significance": "Tách segment offer động khỏi offer chung; version1334 trong một Ping không cho biết tiêu chí phân loại.",
+      "confidence": "native_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/DynamicOfferManager.c",
+          "line_start": 2336,
+          "line_end": 2452,
+          "notes": "UpdateSegment nhận protocol object và ghi hai key; không có ngưỡng chi tiêu."
+        }
+      ],
+      "limits": "Trong Ping đã đọc chỉ có SegmentVersion1334 ở object này, không có UserSegment được serialize. Không tự gán người test vào segment1 từ việc thiếu field."
+    },
+    {
+      "id": "RM-R05",
+      "title": "Ladder chọn config server hay config phân tệp",
+      "layer": "Ánh xạ segment→config",
+      "input": "offerSegment đã có; config/event server; theme",
+      "predicate": "ShouldUseSegmentedConfig = offerSegment >5. Tại luồng load: nếu >5 tải resource theo GetSegmentedLadderOfferConfigPath; nếu <=5 giữ eventConfig nhận được.",
+      "output": "segment<=5: nội dung config server. segment 6 hoặc 7: hậu tố_20. segment>=8: hậu tố_50 trong miền segment dương bình thường.",
+      "significance": "Đây là mapping rõ nhất về cùng loại sale nhưng khác thang sản phẩm.",
+      "confidence": "native_verified_and_asset_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/LadderOfferManager.c",
+          "line_start": 1969,
+          "line_end": 1984,
+          "notes": "Chỗ gọi thay eventConfig khi local_28>5."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/LadderOfferManager.c",
+          "line_start": 2135,
+          "line_end": 2192,
+          "notes": "Mẫu segmentedladder_offer_{0}_{1}; bitmask(offerSegment &0xfffffffe)==6 chọn20; mặc định50; predicate>5."
+        }
+      ],
+      "limits": "Số6/7/8 là kết quả phân nhóm, không phải chi6/7/8 USD. Chưa biết vì sao backend gán segment 8. Theme mapping có bảng nhảy trong native; không khẳng định mọi theme trỏ cùng prefix."
+    },
+    {
+      "id": "RM-R06",
+      "title": "Ý nghĩa tài nguyên Ladder _3/_6 và _20/_50",
+      "layer": "Nội dung config",
+      "input": "segmentedladder_offer_{themeVariant}_{priceTier}.json",
+      "predicate": "Lựa chọn file bởi RM-R05; file chứa danh sách steps.",
+      "output": "_3_20:15 step, trả ở4/7/10/13 với p20/30/50/100. _3_50:9 step, trả ở4/7 với p50/100. _6_20:27 step, trả ở4/10/16/22. _6_50:15 step, trả ở4/10.",
+      "significance": "Prefix3/6 gắn biến thể theme và khoảng cách bậc trả trong các resource đọc được; suffix20/50 tương ứng bậc p trả đầu. Không phải số phân nhóm người dùng hay phần trăm giảm giá.",
+      "confidence": "asset_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/UnityExport/ExportedProject/Assets/Resources/segmentedladder_offer_3_20.json",
+          "jsonpath": "$.steps",
+          "line_start": 1,
+          "line_end": 1
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/UnityExport/ExportedProject/Assets/Resources/segmentedladder_offer_3_50.json",
+          "jsonpath": "$.steps",
+          "line_start": 1,
+          "line_end": 1
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/UnityExport/ExportedProject/Assets/Resources/segmentedladder_offer_6_20.json",
+          "jsonpath": "$.steps",
+          "line_start": 1,
+          "line_end": 1
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/UnityExport/ExportedProject/Assets/Resources/segmentedladder_offer_6_50.json",
+          "jsonpath": "$.steps",
+          "line_start": 1,
+          "line_end": 1
+        }
+      ],
+      "limits": "Giá thực tế bằng tiền phải tra product/store snapshot; không lấy20/50 làm số USD hiển thị. Ví dụ snapshot ladder.20=599000₫, ladder.50=1499000₫."
+    },
+    {
+      "id": "RM-R07",
+      "title": "No-Ads chuyển sang Bundle tại ngưỡng5000 coin",
+      "layer": "Ánh xạ lịch sử mua→sản phẩm",
+      "input": "maxBoughtCoins truyền vào APricingStrategy.TryOverrideNoAdsPackageWithItsBundle; danh sách Shop hiện có",
+      "predicate": "maxBoughtCoins >=5000; duyệt tìm ô isNoAdsPackage",
+      "output": "Thay config ô No-Ads bằng noAdsBundleConfig.",
+      "significance": "Ngưỡng nằm ở client; 4999 chưa qua,5000 đã qua. Đơn vị là coin của gói mua lớn nhất theo tham số, không phải5000₫ hoặc5000 coin trong ví hiện tại.",
+      "confidence": "native_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Sections/Shop/Package/APricingStrategy.c",
+          "line_start": 4395,
+          "line_end": 4445,
+          "notes": "Signature nêu maxBoughtCoins; constant comparison5000.0; copy noAdsBundleConfig."
+        }
+      ],
+      "limits": "Pseudo-C bị lệch tên/cast tham số ở expression và vòng lặp; ngưỡng/hành động rõ nhưng không coi đoạn C này là source có thể compile nguyên xi. Nếu danh sách không có No-Ads thì không tự tạo ô."
+    },
+    {
+      "id": "RM-R08",
+      "title": "Shop strategy hiện tại luôn Default ở hàm quyết định",
+      "layer": "Lựa chọn bảng giá",
+      "input": "Gọi PurchaseHelper.DecidePricingStrategy() trong snapshot này",
+      "predicate": "Không có branch theo segment ở thân hàm phục hồi; tạo DefaultPricingStrategy rồi gán PricingStrategyInstance.",
+      "output": "DefaultPricingStrategy.",
+      "significance": "Sự tồn tại class IncreasedPrice/LessContent không chứng minh chúng đang được dùng cho một tệp người chơi trong build này.",
+      "confidence": "native_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Infrastructure/Services/Native/Purchase/PurchaseHelper.c",
+          "line_start": 20147,
+          "line_end": 20182,
+          "notes": "Cấp phát/constructor Default và assignment instance."
+        }
+      ],
+      "limits": "Chỉ kết luận đường quyết định đã đọc của snapshotv38174; không áp đặt cho mọi phiên bản hoặc cho giá mọi offer. DefaultShop vẫn có thể chọn nội dung khác theo lịch sử mua và offer-specific config."
+    },
+    {
+      "id": "RM-R09",
+      "title": "DynamicOfferMeta chọn bảng rồi match segment",
+      "layer": "Ánh xạ segment→nội dung",
+      "input": "segment, OfferCurrency, shouldUseAlternativeSegments",
+      "predicate": "currency==0→coinSegments; nếu tiền tệ khác và yêu cầu alternative, dùng alternativeSegments khi không rỗng, rỗng thì fallbacksegments; mặc định segments. Predicate tìm: segmentConfig.segment==segment.",
+      "output": "Config của segment phù hợp trong bảng đã chọn.",
+      "significance": "Backend/asset cung cấp bảng nội dung; client lookup theo nhãn nhóm. Không tính segment từ hành vi trong hàm này.",
+      "confidence": "native_verified_with_recovery_limit",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Dialogs/Offer/DynamicOffers/DynamicOfferMeta.c",
+          "line_start": 101,
+          "line_end": 117,
+          "notes": "Chọn ba bảng."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/DynamicOfferMeta.c",
+          "line_start": 32,
+          "line_end": 47,
+          "notes": "Lambda match segment bằng nhau."
+        }
+      ],
+      "limits": "Hàm chính có cảnh báo bad instruction data sau phần lookup. Chỉ xác nhận phần chọn bảng và predicate, không mở rộng kết luận về toàn bộ fallback/error handling."
+    },
+    {
+      "id": "RM-R10",
+      "title": "Legacy Special Offer chọn bậc dựa trên highest product ID",
+      "layer": "Ánh xạ lịch sử mua→bậc legacy",
+      "input": "config.steps, max(GetHighestBoughtBundle, GetHighestBoughtSinglePackage); tiến độ chưa có step",
+      "predicate": "Caller chỉ gọi CalculateFirstStepForOldVersions khi step==0. Hàm scan từ cuối mảng, bỏ qua khi maxBoughtID<step.p, gặp phần tử thỏa step.p<=maxBoughtID thì trả step.s; nếu không tìm thấy trả1; confignull trả0.",
+      "output": "Mã step của bậc tìm được theo thứ tự mảng.",
+      "significance": "Không phải phép so sánh tổng chi. Đoạn native hiện đọc không hỗ trợ câu khẳng định luôn chọn bậc có giá lớn hơn gói lớn nhất.",
+      "confidence": "native_verified",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/OfferManager.c",
+          "line_start": 3499,
+          "line_end": 3505,
+          "notes": "Guard step==0 trước gọi legacy."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/OfferManager.c",
+          "line_start": 3555,
+          "line_end": 3670,
+          "notes": "Scan ngược, Math.Max, predicate và return step.s."
+        }
+      ],
+      "limits": "Không tự áp dụng cho path mới/server-specified step. Trình tự mảng config có ý nghĩa; không gọi kết quả là bậc gần nhất phía trên khi chưa kiểm tra contract."
+    },
+    {
+      "id": "RM-R11",
+      "title": "Eligibility của Dynamic Offer độc lập với classifier",
+      "layer": "Điều kiện đủ để hiện offer",
+      "input": "DynamicOfferConfig fields minLevel,minPlayerDays,maxPurchaseCount và các priority",
+      "predicate": "Trong lớp config phục hồi có các field gating; chưa tái xác minh tất cả dấu so sánh runtime trong lượt này.",
+      "output": "Cho phép mỗi offer lọc thời điểm/đối tượng đủ điều kiện và ưu tiên ở Home/Favor/Shop.",
+      "significance": "Một người có cùng segment vẫn có thể không thấy offer do level/thời gian mua/asset/eligibility. Không dùng việc popup không hiện để kết luận nhóm user khác.",
+      "confidence": "schema_verified_only",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredCodeExperimental/Source/Assembly-CSharp/Royal.Scenes.Home.Ui.Dialogs.Offer.DynamicOffers/DynamicOfferConfig.cs",
+          "line_start": 1,
+          "line_end": 53,
+          "notes": "Chỉ dùng field schema; không dùng C# stub làm implementation."
+        }
+      ],
+      "limits": "Không công bố boundary minLevel hay minPlayerDays bằng số nếu chưa có config/branch xác nhận."
+    },
+    {
+      "id": "RM-R12",
+      "title": "Theme Ladder đã đọc từ ARM: Jungle dùng prefix6",
+      "predicate": "Theme enum2..12 dùng bảng PC-relative [6,3,6,3,3,3,6,3,6,3,6]; None/Default và enum ngoài bảng đi nhánh prefix3. Sau đó segment6/7→suffix20, segment>5 còn lại→suffix50. Segment<=5 không thay config server.",
+      "limits": "Không suy tên segment từ theme. Mapping là của build38174; prefix không phải ngưỡng LTV. Vòng đời/tiến độ còn quyết định segment được cung cấp.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/LadderOfferManager.c",
+          "line_start": 2135,
+          "line_end": 2192,
+          "notes": "Resource path và guard; raw table/instructions trong ladder-theme-binary-evidence.json."
+        }
+      ],
+      "confidence": "native_and_binary_verified"
+    },
+    {
+      "id": "RM-R13",
+      "title": "Ladder giữ segment theo tiến độ của cùng event",
+      "predicate": "LoadConfig kiểm GetDialogsValue(17,20). Khi0 hoặc progress khác event thì lấy BasicData.UserOfferSegment và đánh dấu tạo progress; khi cùng event giữ lựa chọn ở progress. Config đã chọn được khôi phục theme server.",
+      "limits": "Các tên field/register trong đoạn decompile có chỗ lệch; không tự diễn giải bitfield là tổng tiền. Không sửa global segment để giả định offer đang chạy lập tức đổi.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/LadderOfferManager.c",
+          "line_start": 1900,
+          "line_end": 2035,
+          "notes": "Nhánh fallbackglobal, IsSameEvent và ghi progress."
+        }
+      ],
+      "confidence": "native_verified"
+    },
+    {
+      "id": "RM-R14",
+      "title": "Dynamic lưu segment vào progress; cùng EventId thường giữ nó",
+      "predicate": "UpdateInfo dùng manager.Segment cho offer thường, MagicCauldronOffer dùng1. Nếu EventId bằng progress EventId, offer thường return trước SetDataForNewEvent; MagicCauldronOffer chỉ tiếp tục nếu segment khác. GetSegmentConfig đọc progress.Segment, không đọc trực tiếp global ở lúc lookup.",
+      "limits": "Không suy snapshot segment current; chưa chạy transition hai account. Các lớp multiple-purchase có override riêng chưa bao phủ đầy đủ.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Dialogs/Offer/DynamicOffers/DynamicOffer.c",
+          "line_start": 2730,
+          "line_end": 2828,
+          "notes": "SetDataForNewEvent + guardsameID."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Dialogs/Offer/DynamicOffers/DynamicOffer.c",
+          "line_start": 1849,
+          "line_end": 1915,
+          "notes": "Đầu vào lookup lấy progress.Segment."
+        }
+      ],
+      "confidence": "native_verified"
+    },
+    {
+      "id": "RM-R15",
+      "title": "Alternative reward/content do A/B199 hoặc200 nhóm3",
+      "predicate": "IsLowDiscountEnabledAsAlternative = group199==3 OR group200==3. GetSegmentConfig truyền flag này cho Meta. Khi currency!=0 và flag true: dùng alternativeSegments nếu không rỗng, còn không thì fallbacksegments; currency0 dùng coinSegments.",
+      "limits": "Không suy phần trăm discount hay SKU từ tên A/B. Current default GetCurrency trong helper trả1; schema coinSegments không tự chứng minh nhánhcoin đang chạy.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Data/Persistent/AbTestHelper.c",
+          "line_start": 14559,
+          "line_end": 14604,
+          "notes": "Hai ABIDs 199/200."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Dialogs/Offer/DynamicOffers/DynamicOffer.c",
+          "line_start": 1849,
+          "line_end": 1915,
+          "notes": "Truyền AB flag vào Meta."
+        }
+      ],
+      "confidence": "native_verified"
+    },
+    {
+      "id": "RM-R16",
+      "title": "RoyalBoostOffer cần A/B79 hoặc80 nhóm3",
+      "predicate": "GetCanSeeOfferABStatus(\"RoyalBoostOffer\") = group79==3 OR group80==3; các meta khác trảtrue ở hàm này. IsPreconditionPassed của RoyalBoost lặp lại gate này. MagicCauldronOffer còn cần event icon active, currentStage>1 và flag nội bộ bằng0.",
+      "limits": "Field0x7 chưa đặt tên chắc chắn; không đổi tên thành IsBought/IsFinished. Qua A/B gate không chứng minh popup đủ toàn bộ điều kiện.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Dialogs/Offer/DynamicOffers/DynamicOfferEventHelper.c",
+          "line_start": 129,
+          "line_end": 304,
+          "notes": "GateAB và MagicCauldronprecondition."
+        }
+      ],
+      "confidence": "native_verified"
+    },
+    {
+      "id": "RM-R17",
+      "title": "Icon Dynamic Offer kiểm nhiều gate sau segment",
+      "predicate": "ShouldShowIcon kiểm backend disable, thời gian/loại offer, EventId>0, chưa mua, đồng hồ không rollback, config có mặt, bundle đủ, tuổi account so minPlayerDays, IconPriority>0 và precondition. MagicCauldronOffer còn yêu cầu MatchedEventId khớp event hiện tại.",
+      "limits": "Phép64bit time đã phục hồi thành nhiều register; không tự gán số ngày/cooldown khi không có config thực. Hàm này không chứng minh riêng minLevel hoặc maxPurchaseCount đã được kiểm tại đây.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Dialogs/Offer/DynamicOffers/DynamicOffer.c",
+          "line_start": 435,
+          "line_end": 578,
+          "notes": "Full ShouldShowIcon."
+        }
+      ],
+      "confidence": "native_verified"
+    },
+    {
+      "id": "RM-R18",
+      "title": "Priority được tách cho Home/icon, Shop và Favor",
+      "predicate": "AddPriorityToLocalPriorityTable lưu ba field riêng. Chỉ khi cả ba bằng0 mới fallbackGetDefaultPriority; fallback thông thường60, FourthOfJuly61, GameNight62, Easter63, StPatricks64, Halloween65, Thanksgiving66. Nếu chỉ1 field0, không tự lấp cả ba bằng default.",
+      "limits": "Không suy winner toàn Home/Shop từ một field. Comparator, tie, eligibility và consumer cần trace riêng; không gán price tier theo priority.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Scenes/Home/Ui/Dialogs/Offer/DynamicOffers/DynamicOffer.c",
+          "line_start": 2905,
+          "line_end": 3031,
+          "notes": "Fallbackwhenallzero và các default."
+        }
+      ],
+      "confidence": "native_verified"
+    },
+    {
+      "id": "RM-R19",
+      "title": "Journey ValidateUserConfig dùng AbGroup0 ở nhánh phục hồi",
+      "predicate": "Chỉ gửi GetJourneyOfferInfo khi progress.EventId>0, progress.IsEventValid và configHelper.UserConfigVersion==0. Request lấy EventId/Segment từ progress, AbGroup hard-code0. Journey HasEnoughLevel yêu cầu level>=100.",
+      "limits": "Đính chính: không phải mọi lượt đọcJourney đều cần một AbGroup backend đã quan sát. Vẫn thiếu EventId/Segment hợp lệ; level100 không tự tạo event/config. Không gửi Enter.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/JourneyOfferManager.c",
+          "line_start": 1568,
+          "line_end": 1653,
+          "notes": "Request construction AbGroup0."
+        },
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Player/Context/Units/JourneyOfferManager.c",
+          "line_start": 88,
+          "line_end": 120,
+          "notes": "Comparator99<level."
+        }
+      ],
+      "confidence": "native_verified"
+    },
+    {
+      "id": "RM-R20",
+      "title": "Field thiếu trong decoded JSON khác accessor mặc định",
+      "predicate": "UserDynamicSegmentInfo.get_UserSegment trả0 nếu offset field không có; get_SegmentVersion mặc định0. Object nullable vắng khác object có version nhưng field scalar bị bỏ. Nếu object cóvalue, UserSegment thiếuoffset được client đọc0, không phải1.",
+      "limits": "Không suy0 là non-payer hoặc tiêu chí backend. JSON decoder giữ encodedfields; bản ghi value vắng không thể tự gọi account thiếusegment hoặc bị gán group1.",
+      "sources": [
+        {
+          "path": "E:/APKExport/RoyalMatch_HExport/com.dreamgames.royalmatch_Unity_20260908_164005_76eddf2f/RecoveredNative/PseudoC/Assembly-CSharp/Royal/Infrastructure/Services/Backend/Protocol/UserDynamicSegmentInfo.c",
+          "line_start": 145,
+          "line_end": 219,
+          "notes": "Default accessor0."
+        }
+      ],
+      "confidence": "native_verified"
+    }
+  ],
+  "existing_boundary_cases": [
+    {
+      "id": "RM-C01",
+      "title": "Payer bit thay đổi khi có giao dịch nhưng không tự suy ra spend tier",
+      "type": "STATIC_EXPECTED",
+      "setup": "Giữ mọi bit khác; so sánh UserData bit0=0 và bit0=1. Mô phỏng gọi UpdateUserData với một PurchaseProduct hợp lệ.",
+      "steps": [
+        "Đọc IsPaidUser trước cập nhật.",
+        "Áp dụng SetBit(UserData,0,true).",
+        "Đọc lại IsPaidUser."
+      ],
+      "expected": "0→false;1→true. Cờ này không chứa khái niệm Whale và không thay thế segment backend.",
+      "observed_runtime": "Chưa chạy case trên emulator; không thực hiện giao dịch.",
+      "evidence_ids": [
+        "RM-R01"
+      ],
+      "limits": "Không gọi bit mutation là xác minh receipt hoặc mua thành công trên server."
+    },
+    {
+      "id": "RM-C02",
+      "title": "Version bằng/0/khác — kể cả khác nhưng nhỏ hơn",
+      "type": "STATIC_EXPECTED",
+      "setup": "Local UserSegmentVersion=10, segment=3; response muốn newSegment=8.",
+      "cases": [
+        {
+          "response_version": 0,
+          "expected": "Không cập nhật"
+        },
+        {
+          "response_version": 10,
+          "expected": "Không cập nhật"
+        },
+        {
+          "response_version": 11,
+          "expected": "Cập nhật segment 8/version 11"
+        },
+        {
+          "response_version": 9,
+          "expected": "Cập nhật segment 8/version 9 tại hàm này"
+        }
+      ],
+      "observed_runtime": "Chưa gửi payload hoặc sửa dữ liệu tài khoản; kết quả là đọc trực tiếp guard.",
+      "evidence_ids": [
+        "RM-R03"
+      ],
+      "limits": "Có thể có kiểm tra upstream khác; case 9 chỉ nói thân hàm không có phép lớn hơn."
+    },
+    {
+      "id": "RM-C03",
+      "title": "Ranh giới Ladder 5/6/7/8",
+      "type": "STATIC_EXPECTED_WITH_RESOURCE_CONTENT",
+      "setup": "Giữ cùng theme biến thể 3, cùng eventConfig server và cùng trạng thái event; chỉ đổi offerSegment.",
+      "cases": [
+        {
+          "segment": 5,
+          "expected": "Giữ eventConfig server, không thể suy ra bậc trả đầu nếu chưa biết payload."
+        },
+        {
+          "segment": 6,
+          "expected": "Tải segmentedladder_offer_3_20; step 4 Super p20, snapshot giá 599.000₫."
+        },
+        {
+          "segment": 7,
+          "expected": "Cùng file_3_20 như segment 6; không tăng tiếp một tier."
+        },
+        {
+          "segment": 8,
+          "expected": "Tải_3_50; step 4 Ultra p50, snapshot giá 1.499.000₫."
+        }
+      ],
+      "observed_runtime": "Không có cặp ảnh runtime5→6→7→8 mới; dùng native + hai resource thật và giá snapshot.",
+      "evidence_ids": [
+        "RM-R05",
+        "RM-R06"
+      ],
+      "limits": "Themevariant 3 là điều kiện setup minh hoạ. Nhãn_20/_50 không phải ngưỡng LTV20/50 USD."
+    },
+    {
+      "id": "RM-C04",
+      "title": "No-Ads ở 4999/5000/5001",
+      "type": "STATIC_EXPECTED",
+      "setup": "Danh sách Shop có một ô isNoAdsPackage; cung cấp maxBoughtCoins lần lượt 4999, 5000, 5001.",
+      "cases": [
+        {
+          "maxBoughtCoins": 4999,
+          "expected": "Không chạy override; giữ config No-Ads."
+        },
+        {
+          "maxBoughtCoins": 5000,
+          "expected": "Thay thành noAdsBundleConfig."
+        },
+        {
+          "maxBoughtCoins": 5001,
+          "expected": "Thay thành noAdsBundleConfig."
+        }
+      ],
+      "observed_runtime": "Chưa tạo lịch sử mua tương ứng, chưa so ảnh trước/sau.",
+      "evidence_ids": [
+        "RM-R07"
+      ],
+      "limits": "Nếu chỉ tăng coin trong ví lên 5000 thì case này chưa được kích hoạt vì input khác."
+    },
+    {
+      "id": "RM-C05",
+      "title": "Mua gói nhỏ nhiều lần khác mua gói lớn",
+      "type": "STATIC_EXPECTED",
+      "setup": "Highest bundle ID hiện 20; so sánh một bundle ID 10, bundle ID 50 và một pass.",
+      "cases": [
+        {
+          "product": "bundle.numberId10",
+          "expected": "Highest bundle vẫn 20; payer true."
+        },
+        {
+          "product": "bundle.numberId50",
+          "expected": "Highest bundle thành 50; payer true."
+        },
+        {
+          "product": "pass",
+          "expected": "Payer true nhưng không đưa pass vào highest single qua nhánh đang đọc."
+        }
+      ],
+      "observed_runtime": "Mô phỏng biến đầu vào; không có giao dịch thật.",
+      "evidence_ids": [
+        "RM-R02"
+      ],
+      "limits": "Số ID dùng làm fixture; không tương đương số tiền hay cứ mua hai lần 10 là thành 20."
+    },
+    {
+      "id": "RM-C06",
+      "title": "Thay segment không tự đổi Shop thành IncreasedPrice",
+      "type": "STATIC_EXPECTED",
+      "setup": "Gọi DecidePricingStrategy trong snapshot đã phân tích với bất kỳ trạng thái segment giả định 1/6/8.",
+      "expected": "Đường hàm này vẫn cấp phát DefaultPricingStrategy. Segment khác vẫn có thể đổi Ladder/DynamicOffer qua các hàm riêng.",
+      "observed_runtime": "Không đổi user segment trên máy; kiểm tra thân hàm.",
+      "evidence_ids": [
+        "RM-R08"
+      ],
+      "limits": "Không suy ra mọi gói sale luôn cùng giá hoặc server không cá nhân hoá."
+    },
+    {
+      "id": "RM-C07",
+      "title": "DynamicOffer alternative trống và phân biệt currency",
+      "type": "STATIC_EXPECTED_WITH_SYNTHETIC_TABLE",
+      "setup": "Fixture bảng: segments cósegment 2 → Gói A; alternativeSegments rỗng; coinSegments cósegment 2 → Gói C. Đây là nhãn minh hoạ, không phải payload campaign thật.",
+      "cases": [
+        {
+          "currency": 1,
+          "alternative": true,
+          "segment": 2,
+          "expected": "Fallback sang segments, tìm Gói A."
+        },
+        {
+          "currency": 0,
+          "alternative": true,
+          "segment": 2,
+          "expected": "Chọn coinSegments trước; tìm Gói C."
+        },
+        {
+          "currency": 1,
+          "alternative": false,
+          "segment": 2,
+          "expected": "Chọn segments; tìm Gói A."
+        }
+      ],
+      "observed_runtime": "Chưa tải campaign hoặc chụp popup cho fixture này.",
+      "evidence_ids": [
+        "RM-R09"
+      ],
+      "limits": "Không mô phỏng hành vi missing-match vì phần native recovery có cảnh báo."
+    },
+    {
+      "id": "RM-C08",
+      "title": "Legacy Special Offer equality là một ranh giới cần sửa",
+      "type": "STATIC_EXPECTED_WITH_SYNTHETIC_STEPS",
+      "setup": "Fixture mảng đã sắp theo thứ tự [{s:1,p:1},{s:2,p:10},{s:3,p:20},{s:4,p:50}], caller step 0.",
+      "cases": [
+        {
+          "highestID": 19,
+          "expected": "Scan từ cuối → step 2, p10."
+        },
+        {
+          "highestID": 20,
+          "expected": "Trả step 3, p20, không phải step 4, p50."
+        },
+        {
+          "highestID": 0,
+          "expected": "Không có p<=0 → fallback step 1."
+        }
+      ],
+      "observed_runtime": "Chưa ép legacy path trên emulator. Fixture chỉ minh họa predicate native.",
+      "evidence_ids": [
+        "RM-R10"
+      ],
+      "limits": "Không lấy đây làm bảng config thật. Sửa nhận định cũ 'luôn bậc lớn hơn' thành quy tắc native cụ thể."
+    }
+  ],
+  "static_models": [
+    {
+      "id": "LAD-Default-0",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Default",
+        "segment": 0
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Jungle-0",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Jungle",
+        "segment": 0
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Halloween-0",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Halloween",
+        "segment": 0
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-BlackFriday-0",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "BlackFriday",
+        "segment": 0
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Default-5",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Default",
+        "segment": 5
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Jungle-5",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Jungle",
+        "segment": 5
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Halloween-5",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Halloween",
+        "segment": 5
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-BlackFriday-5",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "BlackFriday",
+        "segment": 5
+      },
+      "result": "server_config",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Default-6",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Default",
+        "segment": 6
+      },
+      "result": "segmentedladder_offer_3_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Jungle-6",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Jungle",
+        "segment": 6
+      },
+      "result": "segmentedladder_offer_6_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Halloween-6",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Halloween",
+        "segment": 6
+      },
+      "result": "segmentedladder_offer_3_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-BlackFriday-6",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "BlackFriday",
+        "segment": 6
+      },
+      "result": "segmentedladder_offer_6_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Default-7",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Default",
+        "segment": 7
+      },
+      "result": "segmentedladder_offer_3_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Jungle-7",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Jungle",
+        "segment": 7
+      },
+      "result": "segmentedladder_offer_6_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Halloween-7",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Halloween",
+        "segment": 7
+      },
+      "result": "segmentedladder_offer_3_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-BlackFriday-7",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "BlackFriday",
+        "segment": 7
+      },
+      "result": "segmentedladder_offer_6_20.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Default-8",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Default",
+        "segment": 8
+      },
+      "result": "segmentedladder_offer_3_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Jungle-8",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Jungle",
+        "segment": 8
+      },
+      "result": "segmentedladder_offer_6_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Halloween-8",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Halloween",
+        "segment": 8
+      },
+      "result": "segmentedladder_offer_3_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-BlackFriday-8",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "BlackFriday",
+        "segment": 8
+      },
+      "result": "segmentedladder_offer_6_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Default-15",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Default",
+        "segment": 15
+      },
+      "result": "segmentedladder_offer_3_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Jungle-15",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Jungle",
+        "segment": 15
+      },
+      "result": "segmentedladder_offer_6_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-Halloween-15",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "Halloween",
+        "segment": 15
+      },
+      "result": "segmentedladder_offer_3_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "LAD-BlackFriday-15",
+      "rule": "RM-R05/RM-R12",
+      "inputs": {
+        "theme": "BlackFriday",
+        "segment": 15
+      },
+      "result": "segmentedladder_offer_6_50.json",
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "VERSION-0",
+      "rule": "RM-R03",
+      "inputs": {
+        "local_version": 10,
+        "response_version": 0,
+        "new_segment": 8
+      },
+      "result": {
+        "updates": false
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "VERSION-9",
+      "rule": "RM-R03",
+      "inputs": {
+        "local_version": 10,
+        "response_version": 9,
+        "new_segment": 8
+      },
+      "result": {
+        "updates": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "VERSION-10",
+      "rule": "RM-R03",
+      "inputs": {
+        "local_version": 10,
+        "response_version": 10,
+        "new_segment": 8
+      },
+      "result": {
+        "updates": false
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "VERSION-11",
+      "rule": "RM-R03",
+      "inputs": {
+        "local_version": 10,
+        "response_version": 11,
+        "new_segment": 8
+      },
+      "result": {
+        "updates": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "ALT-0-0",
+      "rule": "RM-R15",
+      "inputs": {
+        "ab199": 0,
+        "ab200": 0
+      },
+      "result": {
+        "use_alternative": false
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "BOOST-0-0",
+      "rule": "RM-R16",
+      "inputs": {
+        "ab79": 0,
+        "ab80": 0
+      },
+      "result": {
+        "passes_ab_gate": false
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "ALT-3-0",
+      "rule": "RM-R15",
+      "inputs": {
+        "ab199": 3,
+        "ab200": 0
+      },
+      "result": {
+        "use_alternative": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "BOOST-3-0",
+      "rule": "RM-R16",
+      "inputs": {
+        "ab79": 3,
+        "ab80": 0
+      },
+      "result": {
+        "passes_ab_gate": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "ALT-0-3",
+      "rule": "RM-R15",
+      "inputs": {
+        "ab199": 0,
+        "ab200": 3
+      },
+      "result": {
+        "use_alternative": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "BOOST-0-3",
+      "rule": "RM-R16",
+      "inputs": {
+        "ab79": 0,
+        "ab80": 3
+      },
+      "result": {
+        "passes_ab_gate": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "ALT-2-4",
+      "rule": "RM-R15",
+      "inputs": {
+        "ab199": 2,
+        "ab200": 4
+      },
+      "result": {
+        "use_alternative": false
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "BOOST-2-4",
+      "rule": "RM-R16",
+      "inputs": {
+        "ab79": 2,
+        "ab80": 4
+      },
+      "result": {
+        "passes_ab_gate": false
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "ALT-3-3",
+      "rule": "RM-R15",
+      "inputs": {
+        "ab199": 3,
+        "ab200": 3
+      },
+      "result": {
+        "use_alternative": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "BOOST-3-3",
+      "rule": "RM-R16",
+      "inputs": {
+        "ab79": 3,
+        "ab80": 3
+      },
+      "result": {
+        "passes_ab_gate": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "NOADS-4999",
+      "rule": "RM-R07",
+      "inputs": {
+        "max_bought_coin_package_amount": 4999,
+        "no_ads_slot_present": true
+      },
+      "result": {
+        "overrides_no_ads_with_bundle": false
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "NOADS-5000",
+      "rule": "RM-R07",
+      "inputs": {
+        "max_bought_coin_package_amount": 5000,
+        "no_ads_slot_present": true
+      },
+      "result": {
+        "overrides_no_ads_with_bundle": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "NOADS-5001",
+      "rule": "RM-R07",
+      "inputs": {
+        "max_bought_coin_package_amount": 5001,
+        "no_ads_slot_present": true
+      },
+      "result": {
+        "overrides_no_ads_with_bundle": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "JOURNEY-99",
+      "rule": "RM-R19",
+      "inputs": {
+        "level": 99
+      },
+      "result": {
+        "passes_level_gate": false,
+        "event_config_still_required": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "JOURNEY-100",
+      "rule": "RM-R19",
+      "inputs": {
+        "level": 100
+      },
+      "result": {
+        "passes_level_gate": true,
+        "event_config_still_required": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "JOURNEY-101",
+      "rule": "RM-R19",
+      "inputs": {
+        "level": 101
+      },
+      "result": {
+        "passes_level_gate": true,
+        "event_config_still_required": true
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "PROGRESS-NormalOffer-False",
+      "rule": "RM-R14",
+      "inputs": {
+        "meta": "NormalOffer",
+        "same_event_id": false,
+        "manager_segment": 8,
+        "progress_segment": 4
+      },
+      "result": {
+        "segment_for_lookup_after_update": 8
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "PROGRESS-NormalOffer-True",
+      "rule": "RM-R14",
+      "inputs": {
+        "meta": "NormalOffer",
+        "same_event_id": true,
+        "manager_segment": 8,
+        "progress_segment": 4
+      },
+      "result": {
+        "segment_for_lookup_after_update": 4
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "PROGRESS-MagicCauldronOffer-False",
+      "rule": "RM-R14",
+      "inputs": {
+        "meta": "MagicCauldronOffer",
+        "same_event_id": false,
+        "manager_segment": 8,
+        "progress_segment": 4
+      },
+      "result": {
+        "segment_for_lookup_after_update": 1
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "PROGRESS-MagicCauldronOffer-True",
+      "rule": "RM-R14",
+      "inputs": {
+        "meta": "MagicCauldronOffer",
+        "same_event_id": true,
+        "manager_segment": 8,
+        "progress_segment": 4
+      },
+      "result": {
+        "segment_for_lookup_after_update": 1
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "PRIORITY-ALL-ZERO",
+      "rule": "RM-R18",
+      "inputs": {
+        "home": 0,
+        "shop": 0,
+        "favor": 0,
+        "meta": "HalloweenOffer"
+      },
+      "result": {
+        "home": 65,
+        "shop": 65,
+        "favor": 65
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    },
+    {
+      "id": "PRIORITY-PARTIAL-ZERO",
+      "rule": "RM-R18",
+      "inputs": {
+        "home": 0,
+        "shop": 20,
+        "favor": 0
+      },
+      "result": {
+        "home": 0,
+        "shop": 20,
+        "favor": 0
+      },
+      "verification": "STATIC_MODEL_COMPUTED",
+      "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+    }
+  ],
+  "new_runtime_cases": [],
+  "current_limit": "ADB unavailable14/10. Read-only API retries used cached own identity and selectors; no emulator playtests or purchases performed."
+}

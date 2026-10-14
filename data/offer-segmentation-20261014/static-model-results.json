@@ -1,0 +1,623 @@
+[
+  {
+    "id": "LAD-Default-0",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Default",
+      "segment": 0
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Jungle-0",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Jungle",
+      "segment": 0
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Halloween-0",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Halloween",
+      "segment": 0
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-BlackFriday-0",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "BlackFriday",
+      "segment": 0
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Default-5",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Default",
+      "segment": 5
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Jungle-5",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Jungle",
+      "segment": 5
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Halloween-5",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Halloween",
+      "segment": 5
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-BlackFriday-5",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "BlackFriday",
+      "segment": 5
+    },
+    "result": "server_config",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Default-6",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Default",
+      "segment": 6
+    },
+    "result": "segmentedladder_offer_3_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Jungle-6",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Jungle",
+      "segment": 6
+    },
+    "result": "segmentedladder_offer_6_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Halloween-6",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Halloween",
+      "segment": 6
+    },
+    "result": "segmentedladder_offer_3_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-BlackFriday-6",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "BlackFriday",
+      "segment": 6
+    },
+    "result": "segmentedladder_offer_6_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Default-7",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Default",
+      "segment": 7
+    },
+    "result": "segmentedladder_offer_3_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Jungle-7",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Jungle",
+      "segment": 7
+    },
+    "result": "segmentedladder_offer_6_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Halloween-7",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Halloween",
+      "segment": 7
+    },
+    "result": "segmentedladder_offer_3_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-BlackFriday-7",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "BlackFriday",
+      "segment": 7
+    },
+    "result": "segmentedladder_offer_6_20.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Default-8",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Default",
+      "segment": 8
+    },
+    "result": "segmentedladder_offer_3_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Jungle-8",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Jungle",
+      "segment": 8
+    },
+    "result": "segmentedladder_offer_6_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Halloween-8",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Halloween",
+      "segment": 8
+    },
+    "result": "segmentedladder_offer_3_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-BlackFriday-8",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "BlackFriday",
+      "segment": 8
+    },
+    "result": "segmentedladder_offer_6_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Default-15",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Default",
+      "segment": 15
+    },
+    "result": "segmentedladder_offer_3_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Jungle-15",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Jungle",
+      "segment": 15
+    },
+    "result": "segmentedladder_offer_6_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-Halloween-15",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "Halloween",
+      "segment": 15
+    },
+    "result": "segmentedladder_offer_3_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "LAD-BlackFriday-15",
+    "rule": "RM-R05/RM-R12",
+    "inputs": {
+      "theme": "BlackFriday",
+      "segment": 15
+    },
+    "result": "segmentedladder_offer_6_50.json",
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "VERSION-0",
+    "rule": "RM-R03",
+    "inputs": {
+      "local_version": 10,
+      "response_version": 0,
+      "new_segment": 8
+    },
+    "result": {
+      "updates": false
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "VERSION-9",
+    "rule": "RM-R03",
+    "inputs": {
+      "local_version": 10,
+      "response_version": 9,
+      "new_segment": 8
+    },
+    "result": {
+      "updates": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "VERSION-10",
+    "rule": "RM-R03",
+    "inputs": {
+      "local_version": 10,
+      "response_version": 10,
+      "new_segment": 8
+    },
+    "result": {
+      "updates": false
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "VERSION-11",
+    "rule": "RM-R03",
+    "inputs": {
+      "local_version": 10,
+      "response_version": 11,
+      "new_segment": 8
+    },
+    "result": {
+      "updates": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "ALT-0-0",
+    "rule": "RM-R15",
+    "inputs": {
+      "ab199": 0,
+      "ab200": 0
+    },
+    "result": {
+      "use_alternative": false
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "BOOST-0-0",
+    "rule": "RM-R16",
+    "inputs": {
+      "ab79": 0,
+      "ab80": 0
+    },
+    "result": {
+      "passes_ab_gate": false
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "ALT-3-0",
+    "rule": "RM-R15",
+    "inputs": {
+      "ab199": 3,
+      "ab200": 0
+    },
+    "result": {
+      "use_alternative": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "BOOST-3-0",
+    "rule": "RM-R16",
+    "inputs": {
+      "ab79": 3,
+      "ab80": 0
+    },
+    "result": {
+      "passes_ab_gate": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "ALT-0-3",
+    "rule": "RM-R15",
+    "inputs": {
+      "ab199": 0,
+      "ab200": 3
+    },
+    "result": {
+      "use_alternative": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "BOOST-0-3",
+    "rule": "RM-R16",
+    "inputs": {
+      "ab79": 0,
+      "ab80": 3
+    },
+    "result": {
+      "passes_ab_gate": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "ALT-2-4",
+    "rule": "RM-R15",
+    "inputs": {
+      "ab199": 2,
+      "ab200": 4
+    },
+    "result": {
+      "use_alternative": false
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "BOOST-2-4",
+    "rule": "RM-R16",
+    "inputs": {
+      "ab79": 2,
+      "ab80": 4
+    },
+    "result": {
+      "passes_ab_gate": false
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "ALT-3-3",
+    "rule": "RM-R15",
+    "inputs": {
+      "ab199": 3,
+      "ab200": 3
+    },
+    "result": {
+      "use_alternative": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "BOOST-3-3",
+    "rule": "RM-R16",
+    "inputs": {
+      "ab79": 3,
+      "ab80": 3
+    },
+    "result": {
+      "passes_ab_gate": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "NOADS-4999",
+    "rule": "RM-R07",
+    "inputs": {
+      "max_bought_coin_package_amount": 4999,
+      "no_ads_slot_present": true
+    },
+    "result": {
+      "overrides_no_ads_with_bundle": false
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "NOADS-5000",
+    "rule": "RM-R07",
+    "inputs": {
+      "max_bought_coin_package_amount": 5000,
+      "no_ads_slot_present": true
+    },
+    "result": {
+      "overrides_no_ads_with_bundle": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "NOADS-5001",
+    "rule": "RM-R07",
+    "inputs": {
+      "max_bought_coin_package_amount": 5001,
+      "no_ads_slot_present": true
+    },
+    "result": {
+      "overrides_no_ads_with_bundle": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "JOURNEY-99",
+    "rule": "RM-R19",
+    "inputs": {
+      "level": 99
+    },
+    "result": {
+      "passes_level_gate": false,
+      "event_config_still_required": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "JOURNEY-100",
+    "rule": "RM-R19",
+    "inputs": {
+      "level": 100
+    },
+    "result": {
+      "passes_level_gate": true,
+      "event_config_still_required": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "JOURNEY-101",
+    "rule": "RM-R19",
+    "inputs": {
+      "level": 101
+    },
+    "result": {
+      "passes_level_gate": true,
+      "event_config_still_required": true
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "PROGRESS-NormalOffer-False",
+    "rule": "RM-R14",
+    "inputs": {
+      "meta": "NormalOffer",
+      "same_event_id": false,
+      "manager_segment": 8,
+      "progress_segment": 4
+    },
+    "result": {
+      "segment_for_lookup_after_update": 8
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "PROGRESS-NormalOffer-True",
+    "rule": "RM-R14",
+    "inputs": {
+      "meta": "NormalOffer",
+      "same_event_id": true,
+      "manager_segment": 8,
+      "progress_segment": 4
+    },
+    "result": {
+      "segment_for_lookup_after_update": 4
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "PROGRESS-MagicCauldronOffer-False",
+    "rule": "RM-R14",
+    "inputs": {
+      "meta": "MagicCauldronOffer",
+      "same_event_id": false,
+      "manager_segment": 8,
+      "progress_segment": 4
+    },
+    "result": {
+      "segment_for_lookup_after_update": 1
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "PROGRESS-MagicCauldronOffer-True",
+    "rule": "RM-R14",
+    "inputs": {
+      "meta": "MagicCauldronOffer",
+      "same_event_id": true,
+      "manager_segment": 8,
+      "progress_segment": 4
+    },
+    "result": {
+      "segment_for_lookup_after_update": 1
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "PRIORITY-ALL-ZERO",
+    "rule": "RM-R18",
+    "inputs": {
+      "home": 0,
+      "shop": 0,
+      "favor": 0,
+      "meta": "HalloweenOffer"
+    },
+    "result": {
+      "home": 65,
+      "shop": 65,
+      "favor": 65
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  },
+  {
+    "id": "PRIORITY-PARTIAL-ZERO",
+    "rule": "RM-R18",
+    "inputs": {
+      "home": 0,
+      "shop": 20,
+      "favor": 0
+    },
+    "result": {
+      "home": 0,
+      "shop": 20,
+      "favor": 0
+    },
+    "verification": "STATIC_MODEL_COMPUTED",
+    "limits": "Static model computed from reviewed branch; not an emulator or purchase test."
+  }
+]
