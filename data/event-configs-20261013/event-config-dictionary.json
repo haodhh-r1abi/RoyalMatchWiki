@@ -4109,7 +4109,7 @@
         "key": "IsLowDailyOfferPurchasedIndex / IsHighDailyOfferPurchasedIndex / IsDailyOfferSeenIndex / IsSegmentDecreasePendingIndex",
         "type": "int",
         "value": "343 / 344 / 348 / 349",
-        "meaning": "Trạng thái gói hàng ngày",
+        "meaning": "Mua low/high, đã xem và pending hạ nhóm của đợt cũ; pending mới=false khi có mua, ngược lại seen XOR pending cũ (tính trước khi EnterDailyOffer reset).",
         "where": "ShortExpeditionEventProgress"
       },
       {
@@ -4117,7 +4117,7 @@
         "key": "SegmentStart / SegmentEnd",
         "type": "int",
         "value": "345 / 347",
-        "meaning": "3 bit phân khúc gói hàng ngày",
+        "meaning": "3 bit lưu segment; dung lượng vật lý 0..7 không chứng minh 8 tầng. Luồng đã đọc có 1..5, 0 là chưa khởi tạo; conversion=1, trần thăng=5, hạ không xuống dưới 2.",
         "where": "ShortExpeditionEventProgress"
       },
       {

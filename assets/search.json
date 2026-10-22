@@ -108,8 +108,8 @@
     "u": "features/Shop.html",
     "t": "Cửa hàng và mua hàng (Shop)",
     "c": "Kinh tế & Shop",
-    "g": "Hệ thống bán hàng ba lớp: 157 sản phẩm IAP, chiến lược giá theo segment và Coin Shop đổi coin lấy vật phẩm.",
-    "k": "Shop Royal.Infrastructure.Services.Native.Purchase.PurchaseManager Royal.Infrastructure.Services.Native.Purchase.PurchaseHelper Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy Royal.Scenes.Home.Ui.Sections.Shop.Package.DefaultPricingStrategy Royal.Scenes.Home.Ui.Sections.Shop.Package.ShopPackageConfig Royal.Player.Context.Units.CoinShopManager Royal.Player.Context.Units.ExternalPaymentFirstPurchaseBonusHelper Truy vấn giá sản phẩm từ store Chọn chiến lược giá theo segment Hiện danh sách gói trong shop Bắt đầu một giao dịch IAP Xác thực giao dịch và cộng gói Giao dịch thất bại, hủy hoặc timeout Khôi phục giao dịch đang dở (retry) Thanh toán ngoài qua Xsolla Thông báo thưởng lần đầu thanh toán ngoài Coin Shop - đổi coin lấy vật phẩm Coin Shop đổi hàng theo sự kiện (Golden Offers) Ego offer trong Coin Shop Thưởng coin bonus khi mua gói Ánh xạ product id sang nội dung gói Tắt mua hàng / kiểm soát phụ huynh Giao diện Shop redesign và nguồn mở Tutorial và thông báo Coin Shop APricingStrategy.Single2CoinAmount APricingStrategy.Single8CoinAmount APricingStrategy.Single15CoinAmount APricingStrategy.Single30CoinAmount APricingStrategy.Single55CoinAmount APricingStrategy.Single100CoinAmount APricingStrategy.ShopBundlePriority APricingStrategy.ShopCoinPackagePriority APricingStrategy.RoyalBoostBundleOfferUnlockLevel APricingStrategy.NoAdsBundleOverrideMaxCoinBoughtThreshold PricingStrategies Ten bundle"
+    "g": "Danh sách shop đầy đủ, danh sách rút gọn và Starter được tách theo lịch sử mua; segment sale là cơ chế riêng.",
+    "k": "Shop Royal.Infrastructure.Services.Native.Purchase.PurchaseManager Royal.Infrastructure.Services.Native.Purchase.PurchaseHelper Royal.Infrastructure.Services.Native.Purchase.Xsolla.XsollaPurchaseManager Royal.Scenes.Home.Ui.Sections.Shop.Package.APricingStrategy Royal.Scenes.Home.Ui.Sections.Shop.Package.DefaultPricingStrategy Royal.Scenes.Home.Ui.Sections.Shop.Package.ShopPackageConfig Royal.Player.Context.Units.CoinShopManager Royal.Player.Context.Units.ExternalPaymentFirstPurchaseBonusHelper Truy vấn giá sản phẩm từ store Chọn strategy trong build đã xác minh Hiện danh sách gói trong shop Bắt đầu một giao dịch IAP Xác thực giao dịch và cộng gói Giao dịch thất bại, hủy hoặc timeout Khôi phục giao dịch đang dở (retry) Thanh toán ngoài qua Xsolla Thông báo thưởng lần đầu thanh toán ngoài Coin Shop - đổi coin lấy vật phẩm Coin Shop đổi hàng theo sự kiện (Golden Offers) Ego offer trong Coin Shop Thưởng coin bonus khi mua gói Ánh xạ product id sang nội dung gói Tắt mua hàng / kiểm soát phụ huynh Giao diện Shop redesign và nguồn mở Tutorial và thông báo Coin Shop Starter / Special Offer: điều kiện hiện và giá Phân biệt segment sale, payer và lịch sử mua Runtime 2026-10-15: bản rút gọn và More Offers ở H=0 APricingStrategy.Single2CoinAmount APricingStrategy.Single8CoinAmount APricingStrategy.Single15CoinAmount APricingStrategy.Single30CoinAmount APricingStrategy.Single55CoinAmount APricingStrategy.Single100CoinAmount APricingStrategy.ShopBundlePriority APricingStrategy.ShopCoinPac"
   },
   {
     "u": "features/DynamicOffer.html",
@@ -319,7 +319,7 @@
     "t": "Kings Tales (Expedition)",
     "c": "Sự kiện",
     "g": "Sự kiện solo trên bản đồ bị mây che: thắng level lấy tinh thể năng lượng để dọn chướng ngại và mở đường cho Vua.",
-    "k": "ExpeditionEvent Royal.Player.Context.Units.ShortExpeditionEventManager Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventConfigHelper Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventGameModel Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventPassModel Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventDailyOfferModel Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventEndOfferModel Royal.Player.Context.Data.Persistent.ShortExpeditionEventProgress Nạp config và tiến độ khi khởi động Server bật sự kiện Vào sự kiện Thắng level nhận energy crystal Dùng năng lượng dọn chướng ngại trên bản đồ Mở túi thưởng (pouch) trên bản đồ Hội thoại giữa Vua và Quản gia Pass (Gold / Diamond) 10 bước thưởng Daily Offer theo phân khúc Energy Shop và End Offer Nhận thưởng mốc và kết thúc sự kiện Server đổi config giữa chừng Nhận năng lượng từ các sự kiện khác + auto tooltip Nhiệm vụ fallback cho Mission events Icon, khóa và EventDependency Tạm dừng app / server tắt tính năng UnlockLevel EventInitial MaxCollectableCount CollectedCountForIconNotification ShortExpeditionEventTask.SemiRevealedAlpha ShortExpeditionEventConfig ShortExpeditionEventPassConfig ShortExpeditionEventDailyOfferConfig ShortExpeditionEventDailyOfferSegment ShortExpeditionEventOverrideConfig ShortExpeditionEventLocalTaskConfig ShortExpeditionEventTask ShortExpeditionEventTaskDataConfig / TaskData ShortExpeditionEventCl"
+    "k": "ExpeditionEvent Royal.Player.Context.Units.ShortExpeditionEventManager Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventConfigHelper Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventGameModel Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventPassModel Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventDailyOfferModel Royal.Scenes.Home.Ui.Dialogs.ExpeditionEvent.Scripts.ShortExpeditionEventEndOfferModel Royal.Player.Context.Data.Persistent.ShortExpeditionEventProgress Nạp config và tiến độ khi khởi động Server bật sự kiện Vào sự kiện Thắng level nhận energy crystal Dùng năng lượng dọn chướng ngại trên bản đồ Mở túi thưởng (pouch) trên bản đồ Hội thoại giữa Vua và Quản gia Pass (Gold / Diamond) 10 bước thưởng Daily Offer theo phân khúc Thăng/hạ segment Daily Offer khi đổi đợt — native 38174 Energy Shop và End Offer Nhận thưởng mốc và kết thúc sự kiện Server đổi config giữa chừng Nhận năng lượng từ các sự kiện khác + auto tooltip Nhiệm vụ fallback cho Mission events Icon, khóa và EventDependency Tạm dừng app / server tắt tính năng UnlockLevel EventInitial MaxCollectableCount CollectedCountForIconNotification ShortExpeditionEventTask.SemiRevealedAlpha ShortExpeditionEventConfig ShortExpeditionEventPassConfig ShortExpeditionEventDailyOfferConfig ShortExpeditionEventDailyOfferSegment ShortExpeditionEventOverrideConfig ShortExpeditionEventLocalTaskConfig ShortExpeditionEventTask ShortExpedit"
   },
   {
     "u": "features/LavaQuest.html",
@@ -647,15 +647,22 @@
     "u": "analysis/ov-iap-packages.html",
     "t": "Phân tích chi tiết từng gói IAP — Royal Match",
     "c": "Phân tích",
-    "g": "28 nhóm / 157 gói IAP: luồng mua, điều kiện tồn tại, phân khúc",
+    "g": "28 nhóm / 157 mã IAP: tách segment sale, lịch sử mua, full/short shop và Starter",
     "k": "ov-iap-packages Sale"
+  },
+  {
+    "u": "analysis/sale-shop-playtest-20261015.html",
+    "t": "Play test Shop và Starter trên LDPlayer · 15/10/2026",
+    "c": "Phân tích",
+    "g": "Ảnh mới, danh sách rút gọn/đầy đủ, giá Starter và giới hạn kiểm thử trên tài khoản hiện tại.",
+    "k": "sale-shop-playtest-20261015 Sale ShopScrollView APricingStrategy BasicUserData PurchaseProduct LDPlayer build 38174"
   },
   {
     "u": "analysis/sale-shop-iap-pricing.html",
     "t": "Shop và bảng giá IAP",
     "c": "Phân tích",
-    "g": "Shop bán gì, mỗi đồng được bao nhiêu coin, giá VNĐ thật lệch giá USD ra sao, và gói nào là mỏ neo giá.",
-    "k": "sale-shop-iap-pricing Sale PurchaseManager PurchaseHelper APricingStrategy DefaultPricingStrategy ShopPackageConfig PaymentCoinBonusConfig XsollaPurchaseManager CoinShopManager Hỏi giá store khi mở game Chọn bảng giá chung Người chơi mở Shop Xếp thứ tự Ẩn gói nhỏ hơn gói đã mua Bấm giá: kiểm tra chặn mua Chọn store hay web Store thanh toán Server xác minh Cộng gói, đánh dấu đã trả tiền Đóng giao dịch"
+    "g": "Catalog, luật full/short shop, Starter và giá VND trong snapshot lịch sử; tách kết luận native với phần chưa biết.",
+    "k": "sale-shop-iap-pricing Sale PurchaseManager PurchaseHelper APricingStrategy DefaultPricingStrategy ShopPackageConfig PaymentCoinBonusConfig XsollaPurchaseManager CoinShopManager Hỏi giá store khi mở game Chọn bảng giá chung Người chơi mở Shop Xếp thứ tự Áp lịch sử mua theo đúng loại danh sách Bấm giá: kiểm tra chặn mua Chọn store hay web Store thanh toán Server xác minh Cộng gói, đánh dấu đã trả tiền Đóng giao dịch"
   },
   {
     "u": "analysis/sale-offer-framework.html",
@@ -675,8 +682,8 @@
     "u": "analysis/sale-personalized-offers.html",
     "t": "Cá nhân hoá offer theo người chơi",
     "c": "Phân tích",
-    "g": "Game đọc tín hiệu nào về người chơi (nhóm server, đã trả tiền chưa, gói đã mua, nhóm A/B) và đổi giá, nội dung, bậc khởi điểm offer ra sao.",
-    "k": "sale-personalized-offers Sale BasicUserData DynamicOfferManager DynamicOfferMeta OfferManager JourneyOfferManager LadderOfferManager APricingStrategy ExtremelyHardLevelOfferHelper CoinShopManager SuperBoosterManager MultiplierSelectionManager Nhận nhóm và nhóm A/B Ghi lịch sử chi tiêu Shop tự thu hẹp Special Offer chọn bậc đầu Ladder chọn thang Offer động: lọc người nhận Offer động: chọn giá theo nhóm Journey chọn mức giá Trong màn: gói cứu ván theo cờ trả tiền Level cực khó theo cờ trả tiền Giá coin theo nhóm A/B Thống kê quay về server"
+    "g": "Tách segment riêng từng offer, cờ đã trả tiền và lịch sử ID gói lớn nhất; luật chọn gói đã xác minh và luật backend còn chưa biết.",
+    "k": "sale-personalized-offers Sale BasicUserData DynamicOfferManager DynamicOfferMeta OfferManager JourneyOfferManager LadderOfferManager APricingStrategy ExtremelyHardLevelOfferHelper CoinShopManager SuperBoosterManager MultiplierSelectionManager Nhận nhóm và nhóm A/B Ghi cờ payer và ID mua lớn nhất Shop chọn danh sách theo H và F OfferManager: chọn bậc đầu ở nhánh phiên bản cũ Ladder chọn thang Offer động: lọc người nhận Offer động: chọn giá theo nhóm Journey chọn mức giá Trong màn: gói cứu ván theo cờ trả tiền Level cực khó theo cờ trả tiền Giá coin theo nhóm A/B Thống kê quay về server"
   },
   {
     "u": "analysis/sale-retention-offers.html",
@@ -759,7 +766,7 @@
     "u": "analysis/ov-user-segmentation.html",
     "t": "Phân tích phân tệp người chơi (User Segmentation) — Royal Match",
     "c": "Phân tích",
-    "g": "Phân tệp: segment server, A/B, difficulty, đối xử từng tệp",
+    "g": "Segment sale, lịch sử mua và shop: native đã xác minh, playtest H=0 ngày 15/10 và phần chưa biết",
     "k": "ov-user-segmentation LiveOps"
   },
   {
@@ -768,6 +775,13 @@
     "c": "Phân tích",
     "g": "Server gửi config qua đường nào, máy lưu ở đâu, khi nào tải lại, và chuyện gì xảy ra khi mất mạng hay file hỏng.",
     "k": "liveops-config-delivery LiveOps PingHttpCommand, RegisterHttpCommand, UpdateUserProgressHttpCommand TimeHelper.SendPing, BackendHttpService *Manager.UpdateInfo + *ConfigHelper (ServerEventConfig / UserEventConfig) EventDependencyManager, MissionEventsHelper RemoteConfigManager (level vá), SlbMoveConfigHelper, RemoteRoyalBundleManager, ProfileSkinBundleManager SQLite app_pFiles/App và app_pFiles/U_<userid> Mở app, đọc cache Đăng ký nếu chưa có tài khoản Gửi Ping Gộp nhiều lệnh vào một gói Đọc tham số chung Đọc nhóm AB, yêu cầu của server, tiến độ Mỗi event nhận phần của mình Ghi vào SQLite Config riêng từng người Config hệ thống ngoài event Sau mỗi ván CDN: level vá CDN: bảng số CDN: bundle Tính năng dùng bản mới"
+  },
+  {
+    "u": "analysis/liveops-daily-rewards-versions.html",
+    "t": "Daily Rewards: so sánh bảng quà version 1–4 từ API thật",
+    "c": "Phân tích",
+    "g": "Thử version 1–10; đối chiếu đủ quà tuần, mốc tháng, 25 ô thay đổi và giới hạn xác minh.",
+    "k": "liveops-daily-rewards-versions DailyRewards DailyReward ConfigVersion reward weekly monthly API version 1 2 3 4 5 6 7 8 9 10"
   },
   {
     "u": "analysis/liveops-client-settings.html",
@@ -803,13 +817,6 @@
     "c": "Phân tích",
     "g": "Dữ liệu hành vi đi đâu, server soi được gì trên máy, tiến độ máy và server hợp nhất ra sao, gian lận bị chặn ở lớp nào.",
     "k": "liveops-telemetry-sync LiveOps AnalyticsManager, EventWriter (gửi lô Kafka REST) FirebaseHelper, MarketingHelper (AppsFlyer), MaxEventHelper (AppLovin MAX) NetworkMetricsManager, BackendHelper, LogUploader SyncManager, UserManager.TryUpdateDataFromBackend, BackendHttpService BackupManager, LoginService TimeHelper, MonetizationCommonKeyValueHandler, BasicUserData BackendHttpService.IsInMaintenance, PurchaseInMaintenanceModeHttpCommand, AppManager Ghi sự kiện Gửi lô Nhịp phiên và sự cố Đo mạng Ghi log backend Server gọi log về Bấm Play Thắng / thua Giữ thứ tự Hợp nhất khi nhận tiến độ server Nhiều máy, đổi tài khoản Bắt chỉnh giờ Cảnh báo và cấm Bảo trì và bắt buộc cập nhật"
-  },
-  {
-    "u": "analysis/liveops-daily-rewards-versions.html",
-    "t": "Daily Rewards: so sánh bảng quà version 1–4 từ API thật",
-    "c": "Phân tích",
-    "g": "Thử version 1–10; đối chiếu đủ quà tuần, mốc tháng, 25 ô thay đổi và giới hạn xác minh.",
-    "k": "liveops-daily-rewards-versions DailyRewards DailyReward ConfigVersion reward weekly monthly API version 1 2 3 4 5 6 7 8 9 10"
   },
   {
     "u": "analysis/liveops-event-config-atlas.html",
