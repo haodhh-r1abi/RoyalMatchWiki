@@ -1,0 +1,5040 @@
+{
+  "at": "2026-11-20",
+  "identity": {
+    "role": "Android application launcher identity",
+    "build": 39933,
+    "source_apk": "GameDesign\\facts\\runtime\\playtest_20261117\\build_39933\\base.apk",
+    "source_apk_sha256": "80772ea4fbf1faa134182d7e0093315ddb395f53f95c0f164f7da45b23867c0b",
+    "member": "res/mipmap-xxxhdpi-v4/app_icon.png",
+    "output": "GameDesign\\site\\assets\\verified-icons-20261120\\royalmatch-app-39933.png",
+    "output_sha256": "93c89d36ad3e0e08c79b6d219dd19e87bc5ac8d8a828de3ecda3112cee863ad8",
+    "operation": "exact archive-member extraction; no synthesis/crop/recolor",
+    "verification": "Android app launcher resource selected by manifest/resource qualifier; visually review output separately"
+  },
+  "events": {
+    "scope": "Original event and feature identity assets from build 39933 (plus prior-build Expedition reference); explicit static previews, not runtime screenshots",
+    "mapping": {
+      "AncientAdventure": "assets/verified-icons-20261120/AncientAdventure.png",
+      "ArcheryArena": "assets/verified-icons-20261120/ArcheryArena.png",
+      "BalloonRise": "assets/verified-icons-20261120/BalloonRise.png",
+      "ClashOfChampions": "assets/verified-icons-20261120/ClashOfChampions.png",
+      "DailyLightningRush": "assets/verified-icons-20261120/DailyLightningRush.png",
+      "DiamondPass": "assets/verified-icons-20261120/DiamondPass.png",
+      "ElementHunt": "assets/verified-icons-20261120/ElementHunt.png",
+      "HiddenTemple": "assets/verified-icons-20261120/HiddenTemple.png",
+      "JourneyOffer": "assets/verified-icons-20261120/JourneyOffer.png",
+      "KingsCup": "assets/verified-icons-20261120/KingsCup.png",
+      "LavaQuest": "assets/verified-icons-20261120/LavaQuest.png",
+      "MagicCauldron": "assets/verified-icons-20261120/MagicCauldron.png",
+      "MergeSmith": "assets/verified-icons-20261120/MergeSmith.png",
+      "MissionControl": "assets/verified-icons-20261120/MissionControl.png",
+      "MissionPursuit": "assets/verified-icons-20261120/MissionPursuit.png",
+      "OceanOdyssey": "assets/verified-icons-20261120/OceanOdyssey.png",
+      "PinataParty": "assets/verified-icons-20261120/PinataParty.png",
+      "PropellerRush": "assets/verified-icons-20261120/PropellerRush.png",
+      "PuzzleBreak": "assets/verified-icons-20261120/PuzzleBreak.png",
+      "RobotRivals": "assets/verified-icons-20261120/RobotRivals.png",
+      "RoyalWorldCup": "assets/verified-icons-20261120/RoyalWorldCup.png",
+      "SpaceMission": "assets/verified-icons-20261120/SpaceMission.png",
+      "TeamTournament": "assets/verified-icons-20261120/TeamTournament.png",
+      "TeamTreasure": "assets/verified-icons-20261120/TeamTreasure.png",
+      "TrainJourney": "assets/verified-icons-20261120/TrainJourney.png",
+      "WeeklyMission": "assets/verified-icons-20261120/WeeklyMission.png",
+      "WeeklyPass": "assets/verified-icons-20261120/WeeklyPass.png",
+      "BookOfTreasure": "assets/verified-icons-20261120/BookOfTreasure.png",
+      "PropellerMadness": "assets/verified-icons-20261120/PropellerMadness.png",
+      "KingsWorkshop": "assets/verified-icons-20261120/KingsWorkshop.png",
+      "SkyRace": "assets/verified-icons-20261120/SkyRace.png",
+      "DukesTreats": "assets/verified-icons-20261120/DukesTreats.png",
+      "RoyalPass": "assets/verified-icons-20261120/RoyalPass.png",
+      "SeasonalCardCollection": "assets/verified-icons-20261120/SeasonalCardCollection.png",
+      "DukesFortune": "assets/verified-icons-20261120/DukesFortune.png",
+      "WeeklyLeaderboard": "assets/verified-icons-20261120/WeeklyLeaderboard.png",
+      "Cloche": "assets/verified-icons-20261120/Cloche.png",
+      "SuperBooster": "assets/verified-icons-20261120/SuperBooster.png",
+      "LadderOffer": "assets/verified-icons-20261120/LadderOffer.png",
+      "TeamOffer": "assets/verified-icons-20261120/TeamOffer.png",
+      "StarfallOffer": "assets/verified-icons-20261120/StarfallOffer.png",
+      "DailyRewards": "assets/verified-icons-20261120/DailyRewards.png",
+      "InviteFriends": "assets/verified-icons-20261120/InviteFriends.png",
+      "Ads": "assets/verified-icons-20261120/Ads.png",
+      "League": "assets/verified-icons-20261120/League.png",
+      "SuperDuke": "assets/verified-icons-20261120/SuperDuke.png",
+      "StoryLevels": "assets/verified-icons-20261120/StoryLevels.png",
+      "ReactivationLevels": "assets/verified-icons-20261120/ReactivationLevels.png",
+      "Profile": "assets/verified-icons-20261120/Profile.png",
+      "Account": "assets/verified-icons-20261120/Account.png",
+      "Friends": "assets/verified-icons-20261120/Friends.png",
+      "ExpeditionEvent": "assets/verified-icons-20261120/ExpeditionEvent.png",
+      "DragonNest": "assets/verified-icons-20261120/DragonNest.png",
+      "TeamBattle": "assets/verified-icons-20261120/TeamBattle.png",
+      "Areas": "assets/verified-icons-20261120/Areas.png",
+      "HomeUI": "assets/verified-icons-20261120/HomeUI.png",
+      "Leaderboard": "assets/verified-icons-20261120/Leaderboard.png",
+      "Shop": "assets/verified-icons-20261120/Shop.png",
+      "Team": "assets/verified-icons-20261120/Team.png",
+      "LevelFlow": "assets/verified-icons-20261120/LevelFlow.png"
+    },
+    "entries": [
+      {
+        "feature": "AncientAdventure",
+        "site_asset": "assets/verified-icons-20261120/AncientAdventure.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "ancient_adventure_icon_v3",
+        "source_bundle_sha256": "86f0fd80c33520a70835fdf43a89d6f9e97ced5be30019d97370beb017915ea1",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/ancient_adventure_icon_v3.png",
+        "source_file_sha256": "425c6af37b98a96412e9088ed926e189a29f67ee11d93eee349df764077b7c52",
+        "output_sha256": "425c6af37b98a96412e9088ed926e189a29f67ee11d93eee349df764077b7c52",
+        "layers": [
+          {
+            "renderer_path_id": -9193015143962370004,
+            "path": "AncientAdventureIconBundledPrefab/Base/RightShadow",
+            "sprite": "aad_icon_ribbon_shadow",
+            "sprite_path_id": 2338231406995752613,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.00028572763715473126
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.0437142780848912
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -8083860614266315224,
+            "path": "AncientAdventureIconBundledPrefab/Context/Crown",
+            "sprite": "aad_icon_crown",
+            "sprite_path_id": 3415857081903220979,
+            "sorting_order": 70,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.5589999996125699
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.8522857257298061
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -6319894367207871181,
+            "path": "AncientAdventureIconBundledPrefab/Context/Leafs_L/IconShadowL",
+            "sprite": "aad_icon_shadow_left",
+            "sprite_path_id": -3285919290484363085,
+            "sorting_order": 60,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.9392856904438563
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.551000002026558
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -2826138308164782087,
+            "path": "AncientAdventureIconBundledPrefab/Base/LeftShadow",
+            "sprite": "aad_icon_ribbon_shadow",
+            "sprite_path_id": 2338231406995752613,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.00028572763715473126
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.0437142780848912
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -1917878701573356314,
+            "path": "AncientAdventureIconBundledPrefab/Context/Leafs_R",
+            "sprite": "aad_icon_leafs_r",
+            "sprite_path_id": 6155991399694849894,
+            "sorting_order": 63,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                0.253000009059906
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.6245714308960097
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 186083225834679387,
+            "path": "AncientAdventureIconBundledPrefab/Context/Leafs_R/IconShadowR",
+            "sprite": "aad_icon_shadow_right",
+            "sprite_path_id": -8347075270998550399,
+            "sorting_order": 60,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                0.5875714319092886
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.5371428598250662
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 564057795927318937,
+            "path": "AncientAdventureIconBundledPrefab/Context/CrownContactShadow",
+            "sprite": "aad_crown_shadow",
+            "sprite_path_id": 6238404646710819504,
+            "sorting_order": 69,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.5625714281839984
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.3528571333203997
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1198381551790992599,
+            "path": "AncientAdventureIconBundledPrefab/Context/Leafs_R/LeafPatchR",
+            "sprite": "aad_icon_leaf_patch",
+            "sprite_path_id": -3422701557621183618,
+            "sorting_order": 90,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.9054285509245736
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.19600000530481337
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1518925749853001823,
+            "path": "AncientAdventureIconBundledPrefab/Context/Platform",
+            "sprite": "aad_icon_platform",
+            "sprite_path_id": 582742145056384582,
+            "sorting_order": 65,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.6268571424697127
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.3980000004172325
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3331119509488435189,
+            "path": "AncientAdventureIconBundledPrefab/Context/Leafs_L/LeafPatchL",
+            "sprite": "aad_icon_leaf_patch",
+            "sprite_path_id": -3422701557621183618,
+            "sorting_order": 90,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.9214285833495004
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.18600001484155654
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7933886387499257557,
+            "path": "AncientAdventureIconBundledPrefab/Context/Leafs_L",
+            "sprite": "aad_icon_leafs_l",
+            "sprite_path_id": -6598558935477710604,
+            "sorting_order": 63,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.9326142958232335
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.6245714308960097
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "ArcheryArena",
+        "site_asset": "assets/verified-icons-20261120/ArcheryArena.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "archeryarenaicon_v4",
+        "source_bundle_sha256": "79d0abd15e4ad6d06ccf7537bb02c0d6602cfe9ea8cbc9b15da0bcaa1bbb978c",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/archeryarenaicon_v4.png",
+        "source_file_sha256": "3848a6f33be345bb091c4913d940eb5e5af13b81065e17a643983000d46dd734",
+        "output_sha256": "3848a6f33be345bb091c4913d940eb5e5af13b81065e17a643983000d46dd734",
+        "layers": [
+          {
+            "renderer_path_id": -8906337180020270945,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Board_Shadow",
+            "sprite": "aa_icon_board_shadow",
+            "sprite_path_id": 8035101402336113250,
+            "sorting_order": 800,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8071428571428572
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                1.0191428576196944
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -6832437206790001753,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Board",
+            "sprite": "aa_icon_board",
+            "sprite_path_id": -2666603469768940633,
+            "sorting_order": 805,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7464285714285714
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.9584285719054085
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4890712773239464231,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Arrow",
+            "sprite": "aa_icon_arrow",
+            "sprite_path_id": -6996324149501381179,
+            "sorting_order": 825,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                0.038428579057965984
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.5638571526323046
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1383869869764390675,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Arrow_Contact_Shadow_Patch",
+            "sprite": "aa_icon_contact_shadow_patch",
+            "sprite_path_id": 3190099894590605073,
+            "sorting_order": 840,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                0.03314286811011179
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.32685714917523523
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1856962671505475445,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Arrow/arrow_root/Arrow_Top_Shadow",
+            "sprite": "aa_icon_arrow_top_shadow",
+            "sprite_path_id": -4337640444548825842,
+            "sorting_order": 830,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                5.699153942299587e-20,
+                0.052571413634934935
+              ],
+              [
+                -5.699153942299587e-20,
+                -0.007142857142857143,
+                0.3299999965474941
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1947866821797117015,
+            "path": "ArcheryArenaIconBundledPrefab/Base/Shadow/Right",
+            "sprite": "aa_icon_shadow_normal_state",
+            "sprite_path_id": -1980155803298028668,
+            "sorting_order": 710,
+            "world_pixel_matrix": [
+              [
+                -0.00721428564616612,
+                0.0,
+                0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8842857463019235
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2143763289344510782,
+            "path": "ArcheryArenaIconBundledPrefab/Base/Shadow/Left",
+            "sprite": "aa_icon_shadow_normal_state",
+            "sprite_path_id": -1980155803298028668,
+            "sorting_order": 710,
+            "world_pixel_matrix": [
+              [
+                0.00721428564616612,
+                0.0,
+                -0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8842857463019235
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4416962653707063247,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Arrow/arrow_root/Arrow_Back_Shadow",
+            "sprite": "aa_icon_arrow_back_shadow",
+            "sprite_path_id": 7841910268488929445,
+            "sorting_order": 820,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                5.699153942299587e-20,
+                0.05657143550945065
+              ],
+              [
+                -5.699153942299587e-20,
+                -0.007142857142857143,
+                0.33428572766230535
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4698025234085424757,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Arrow_Contact_Shadow",
+            "sprite": "aa_icon_arrow_contact_shadow",
+            "sprite_path_id": -5036504446421282620,
+            "sorting_order": 815,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                0.0415714266044753
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.2944285703556878
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4814271149371202664,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Board_Patch",
+            "sprite": "aa_icon_board_patch",
+            "sprite_path_id": 8199438627416527929,
+            "sorting_order": 835,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.018999999761581426
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.3357142886945179
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8993667912879039809,
+            "path": "ArcheryArenaIconBundledPrefab/Context/Arrow/arrow_root/Arrow_Back_Shadow_2",
+            "sprite": "aa_icon_arrow_back_shadow_2",
+            "sprite_path_id": 6378294668591047576,
+            "sorting_order": 820,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                5.699153942299587e-20,
+                0.5485714523273174
+              ],
+              [
+                -5.699153942299587e-20,
+                -0.007142857142857143,
+                0.6229999991318598
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "BalloonRise",
+        "site_asset": "assets/verified-icons-20261120/BalloonRise.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "balloonriseicon",
+        "source_bundle_sha256": "ed0b2ffae79d2e1f70551d59ba9480a93638957ccfe3457eccbfe192188f1290",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/balloonriseicon.png",
+        "source_file_sha256": "942f7caa2989ff445c4529b3ad79baf1f688ba6525cbf1c32644ba42163178cd",
+        "output_sha256": "942f7caa2989ff445c4529b3ad79baf1f688ba6525cbf1c32644ba42163178cd",
+        "layers": [
+          {
+            "renderer_path_id": -6243555808747841436,
+            "path": "BalloonRiseIconBundledPrefab/BalloonsHolder/RedBalloon/RedBalloon/balloon",
+            "sprite": "br-red_balloon",
+            "sprite_path_id": 6455362259554809055,
+            "sorting_order": 40,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.6737142792769841
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.5163357513291496
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4265494771477977379,
+            "path": "BalloonRiseIconBundledPrefab/BalloonsHolder/BlueBalloon/BlueBalloon/balloon",
+            "sprite": "br-blue_balloon",
+            "sprite_path_id": 3457850085597722746,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.22957142165728978
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.4776214684758867
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8618579256574853815,
+            "path": "BalloonRiseIconBundledPrefab/BalloonsHolder/YellowBalloon/YellowBalloon/balloon",
+            "sprite": "br-yellow_balloon",
+            "sprite_path_id": -4016175630575481910,
+            "sorting_order": 30,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.41700000017881395
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.9657643228769303
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "ClashOfChampions",
+        "site_asset": "assets/verified-icons-20261120/ClashOfChampions.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "clash_of_champions_icon_v2",
+        "source_bundle_sha256": "4dacb2ec83fd870173b8a60ff4e29ffadb96fa05f9754685b19e0c2d22e54c91",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/clash_of_champions_icon_v2.png",
+        "source_file_sha256": "4def33f4574f0b7deb8d6af0fc34da50b56ee88ae11a42a16f44a312d6d3a760",
+        "output_sha256": "4def33f4574f0b7deb8d6af0fc34da50b56ee88ae11a42a16f44a312d6d3a760",
+        "layers": [
+          {
+            "renderer_path_id": -6843169536576484304,
+            "path": "ClashOfChampionsIconBundledPrefab/ClashOfChampionsIconCup/IconCup_Master/Cup_Top/Right/Right_Outer",
+            "sprite": "cup_left_a",
+            "sprite_path_id": -5576204691453129283,
+            "sorting_order": 0,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.6295713143689292
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                1.0758571471486773
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4714414953109071033,
+            "path": "ClashOfChampionsIconBundledPrefab/ClashOfChampionsIconCup/IconCup_Master/Cup_Top/Left/Left_Outer",
+            "sprite": "cup_left_a",
+            "sprite_path_id": -5576204691453129283,
+            "sorting_order": 0,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.6295713143689292
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                1.0758571471486773
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 127202107316355146,
+            "path": "ClashOfChampionsIconBundledPrefab/Base/Shadow/Right",
+            "sprite": "CoC_icon_ribbon_shadow",
+            "sprite_path_id": 8244361833845267100,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.00028572763715473126
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.08071427856172836
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7331960848275647930,
+            "path": "ClashOfChampionsIconBundledPrefab/Base/Shadow/Left",
+            "sprite": "CoC_icon_ribbon_shadow",
+            "sprite_path_id": 8244361833845267100,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.00028572763715473126
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.08071427856172836
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "DailyLightningRush",
+        "site_asset": "assets/verified-icons-20261120/DailyLightningRush.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "daily_lightning_rush_icon_v3",
+        "source_bundle_sha256": "624b393b00293b67852841f987f0cd5a4dd4bf121c37f5a43028d94801a04868",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/daily_lightning_rush_icon_v3.png",
+        "source_file_sha256": "f536650f85c68e52d2db311f9351e5a86a564f91f367fcb778e2d2c96660dba3",
+        "output_sha256": "f536650f85c68e52d2db311f9351e5a86a564f91f367fcb778e2d2c96660dba3",
+        "layers": [
+          {
+            "renderer_path_id": -7852478237067318719,
+            "path": "DailyLightningRushIconBundledPrefab/LightningHolder/LightningBolt/Shadow",
+            "sprite": "dlr_icon_lightning_shadow",
+            "sprite_path_id": 8185994966416656419,
+            "sorting_order": 35,
+            "world_pixel_matrix": [
+              [
+                0.0110714282308306,
+                0.0,
+                -0.3764285598482404
+              ],
+              [
+                0.0,
+                -0.0110714282308306,
+                0.0830357117312295
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -2884548217881249939,
+            "path": "DailyLightningRushIconBundledPrefab/LightningHolder/LightningBolt/Bolt/Step1/Bolt1",
+            "sprite": "dlr_icon_lightning_ball",
+            "sprite_path_id": 3942532487103848042,
+            "sorting_order": 40,
+            "world_pixel_matrix": [
+              [
+                0.0071339229117906725,
+                0.00035714430121925396,
+                -0.6328166073487291
+              ],
+              [
+                0.00035714430121925396,
+                -0.0071339229117906725,
+                1.0700708182627863
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -2741560871820652011,
+            "path": "DailyLightningRushIconBundledPrefab/Base/Shadow/Left",
+            "sprite": "dlr_icon_shadow_normal_state",
+            "sprite_path_id": 1406350989715579787,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                0.00721428564616612,
+                0.0,
+                -0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8982857038932187
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2615169421254322810,
+            "path": "DailyLightningRushIconBundledPrefab/Base/Shadow/Right",
+            "sprite": "dlr_icon_shadow_normal_state",
+            "sprite_path_id": 1406350989715579787,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                -0.00721428564616612,
+                0.0,
+                0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8982857038932187
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 5562349946552182803,
+            "path": "DailyLightningRushIconBundledPrefab/LightningHolder/LightningBolt/Platform",
+            "sprite": "dlr_icon_platform",
+            "sprite_path_id": -9012476170431122401,
+            "sorting_order": 30,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.6464285714285715
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.14585714893681662
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 9205410290961524488,
+            "path": "DailyLightningRushIconBundledPrefab/LightningHolder/LightningBolt/Bolt/Step1/Lightning1",
+            "sprite": "dlr_icon_lightning_bolt",
+            "sprite_path_id": -4672880797476234072,
+            "sorting_order": 43,
+            "world_pixel_matrix": [
+              [
+                0.007133922969000628,
+                0.00035714315845409536,
+                -0.2891819439175305
+              ],
+              [
+                0.00035714315845409536,
+                -0.007133922969000628,
+                0.8488330777334978
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "DiamondPass",
+        "site_asset": "assets/verified-icons-20261120/DiamondPass.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "diamond_pass_icon",
+        "source_bundle_sha256": "e727594b093bb28d20af6a2d960789dd1e33f8d263548af45ec2c65186f8e464",
+        "sprite": "diamond_pass_icon_key",
+        "sprite_path_id": 8765027612616637012,
+        "source_file": "extracted39933/diamond_pass_icon/Sprite__diamond_pass_icon_key__8765027612616637012.png",
+        "source_file_sha256": "b1bb445770347b2d156041382e65b83984194741e3228d5cba828f287569e432",
+        "output_sha256": "b1bb445770347b2d156041382e65b83984194741e3228d5cba828f287569e432",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "ElementHunt",
+        "site_asset": "assets/verified-icons-20261120/ElementHunt.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "element_hunt_icon",
+        "source_bundle_sha256": "eaa878fda398147fb315bf4ab43d956a366002a86ffeb4032023eba08162e59b",
+        "sprite": "eh_icon_element_air",
+        "sprite_path_id": -948844514997475,
+        "source_file": "extracted39933/element_hunt_icon/Sprite__eh_icon_element_air__-948844514997475.png",
+        "source_file_sha256": "5ee87d8ceda06d0e5365595376b4abe20b06d6a185820bb66e2c0fbc9568700a",
+        "output_sha256": "5ee87d8ceda06d0e5365595376b4abe20b06d6a185820bb66e2c0fbc9568700a",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "HiddenTemple",
+        "site_asset": "assets/verified-icons-20261120/HiddenTemple.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "hiddentempleicon_v2",
+        "source_bundle_sha256": "baef7ce1d3140edf7002f4cad9d7166f7f6ed9aebd8c231b74b9bb4cd431ff7f",
+        "sprite": "ht_icon_gate1",
+        "sprite_path_id": -3779436203623089915,
+        "source_file": "extracted39933/hiddentempleicon_v2/Sprite__ht_icon_gate1__-3779436203623089915.png",
+        "source_file_sha256": "745298b0253f67966563a60c47f1c3573c8d54d7dc210b74c4fa85e2cb4173fc",
+        "output_sha256": "745298b0253f67966563a60c47f1c3573c8d54d7dc210b74c4fa85e2cb4173fc",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "JourneyOffer",
+        "site_asset": "assets/verified-icons-20261120/JourneyOffer.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "journey_offer_icon",
+        "source_bundle_sha256": "4867684e277bbe7f947ac044e70e3f397909cb133bfd877e60e4711b55a4bff7",
+        "sprite": "jo_icon_image",
+        "sprite_path_id": 219717188378880468,
+        "source_file": "extracted39933/journey_offer_icon/Sprite__jo_icon_image__219717188378880468.png",
+        "source_file_sha256": "ca196b3468350921985bdbff33554e414c90573fca9d8029c158ee349bafc19f",
+        "output_sha256": "ca196b3468350921985bdbff33554e414c90573fca9d8029c158ee349bafc19f",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "KingsCup",
+        "site_asset": "assets/verified-icons-20261120/KingsCup.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "kingscupicon_v2",
+        "source_bundle_sha256": "3cc0be23c7bdf8718f527e833ef751d24736b26bac8844790e047e632e6d1054",
+        "sprite": "ui_cup",
+        "sprite_path_id": 7274403286860548879,
+        "source_file": "extracted39933/kingscupicon_v2/Sprite__ui_cup__7274403286860548879.png",
+        "source_file_sha256": "0bdb8ad1e5da95a76299b016cd3f47100dae1c5da95342a72018fab9c8f4267e",
+        "output_sha256": "0bdb8ad1e5da95a76299b016cd3f47100dae1c5da95342a72018fab9c8f4267e",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "LavaQuest",
+        "site_asset": "assets/verified-icons-20261120/LavaQuest.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "lavaquesticon_v3",
+        "source_bundle_sha256": "5dc94472b30091c1034420b5c0847fc3c27552fe24f98206986360f75f6510af",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/lavaquesticon_v3.png",
+        "source_file_sha256": "9740ae844b5517d2616ba166b66e60581a7e217653ae7b95cd2242fa00d85d3d",
+        "output_sha256": "9740ae844b5517d2616ba166b66e60581a7e217653ae7b95cd2242fa00d85d3d",
+        "layers": [
+          {
+            "renderer_path_id": -7466368630590485340,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_8",
+            "sprite": "lq_icon_lava_piece_3",
+            "sprite_path_id": -801623256587273168,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.6349999964237213
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                -0.17235712919916427
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -6091621494676835209,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_6_b",
+            "sprite": "lq_icon_lava_piece_5",
+            "sprite_path_id": 7792010311727980105,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.03685714304447174
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7150357323033469
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -5503528441725907749,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_4",
+            "sprite": "lq_icon_lava_piece_4",
+            "sprite_path_id": 948387852809803080,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.3549999952316284
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                -0.14274999499320984
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -5457733682074580602,
+            "path": "LavaQuestIconBundledPrefab/Base/Shadow/Right",
+            "sprite": "lq_icon_shadow_normal_state",
+            "sprite_path_id": 4053605909103349543,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                -0.00721428564616612,
+                0.0,
+                0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8842857463019235
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -5118355918052187211,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_5_yellow",
+            "sprite": "lq_icon_lava_piece_5_yellow",
+            "sprite_path_id": 3583155154816564760,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642858045441764,
+                0.0,
+                -0.03685716752495083
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7150357323033469
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3689665532217068198,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_specular",
+            "sprite": "lq_icon_lava_specular",
+            "sprite_path_id": 3875034458353922133,
+            "sorting_order": 28,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.7028928562998772
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7569286908422198
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3474467843386841170,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_5",
+            "sprite": "lq_icon_lava_piece_5",
+            "sprite_path_id": 7792010311727980105,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.03685714304447174
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7150357323033469
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3057481255377144338,
+            "path": "LavaQuestIconBundledPrefab/Base/Shadow/Left",
+            "sprite": "lq_icon_shadow_normal_state",
+            "sprite_path_id": 4053605909103349543,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                0.00721428564616612,
+                0.0,
+                -0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8842857463019235
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -2969468312286302361,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_2_a_yellow",
+            "sprite": "lq_icon_lava_piece_1_yellow",
+            "sprite_path_id": 9150952955855264081,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.2633214250206947
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.601500004529953
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -1929119148628088021,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_diffuse_b",
+            "sprite": "lq_icon_lava_diffuse_b",
+            "sprite_path_id": 7692898824440614362,
+            "sorting_order": 27,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.044500014185905434
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7594643054263933
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -1518891494757032199,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_6_yellow ",
+            "sprite": "lq_icon_lava_piece_5_yellow",
+            "sprite_path_id": 3583155154816564760,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642858045441764,
+                0.0,
+                -0.03685716752495083
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7150357323033469
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -693485514227736562,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_7_yellow",
+            "sprite": "lq_icon_lava_piece_3_yellow",
+            "sprite_path_id": 8854285353747671020,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.0011541395155813417,
+                -0.0008418783987278083,
+                -0.4181622762784951
+              ],
+              [
+                -0.0011731491341885434,
+                -0.000828236665714446,
+                0.04616058495934775
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -420545071001359715,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_3_yellow",
+            "sprite": "lq_icon_lava_piece_c_yellow",
+            "sprite_path_id": -8534024268147980014,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.3549999952316284
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                -0.14274999499320984
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -260402402044565330,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_diffuse_c",
+            "sprite": "lq_icon_lava_diffuse_c",
+            "sprite_path_id": -8384829158226620351,
+            "sorting_order": 26,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.7043928667902946
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7295357356114046
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 380292125663830008,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_3",
+            "sprite": "lq_icon_lava_piece_4",
+            "sprite_path_id": 948387852809803080,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.3549999952316284
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                -0.14274999499320984
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2235337113978244509,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_2",
+            "sprite": "lq_icon_lava_piece_1",
+            "sprite_path_id": -3532913079593096217,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.2633214250206947
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.601500004529953
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2306676808509378899,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_1_yellow",
+            "sprite": "lq_icon_lava_piece_1_yellow",
+            "sprite_path_id": 9150952955855264081,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.2633214250206947
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.601500004529953
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2573029094563505341,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_diffuse_a",
+            "sprite": "lq_icon_lava_diffuse_a",
+            "sprite_path_id": 3914218002574186518,
+            "sorting_order": 25,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.21692857295274734
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7594285692487445
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2773853801409520569,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_7",
+            "sprite": "lq_icon_lava_piece_3",
+            "sprite_path_id": -801623256587273168,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.0011541395155813417,
+                -0.0008418783987278083,
+                -0.4181622762784951
+              ],
+              [
+                -0.0011731491341885434,
+                -0.000828236665714446,
+                0.04616058495934775
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2809961746558063098,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_4_yellow",
+            "sprite": "lq_icon_lava_piece_c_yellow",
+            "sprite_path_id": -8534024268147980014,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.3549999952316284
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                -0.14274999499320984
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3349581545213792616,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_mountain",
+            "sprite": "lq_icon_mountain",
+            "sprite_path_id": 8822330861330762860,
+            "sorting_order": 24,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.813821430504322
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.8266429475375584
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4110316780560758404,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_6_b_yellow",
+            "sprite": "lq_icon_lava_piece_5_yellow",
+            "sprite_path_id": 3583155154816564760,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642858045441764,
+                0.0,
+                -0.03685716752495083
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7150357323033469
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4472751487869686069,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_2_yellow",
+            "sprite": "lq_icon_lava_piece_1_yellow",
+            "sprite_path_id": 9150952955855264081,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.2633214250206947
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.601500004529953
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4917793124218783765,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_1",
+            "sprite": "lq_icon_lava_piece_1",
+            "sprite_path_id": -3532913079593096217,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.2633214250206947
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.601500004529953
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 6642448248504101196,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_6",
+            "sprite": "lq_icon_lava_piece_5",
+            "sprite_path_id": 7792010311727980105,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.03685714304447174
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7150357323033469
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7383003230312446663,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_2_a",
+            "sprite": "lq_icon_lava_piece_1",
+            "sprite_path_id": -3532913079593096217,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.2633214250206947
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.601500004529953
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8364357995076830749,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_diffuse",
+            "sprite": "lq_icon_lava_diffuse",
+            "sprite_path_id": -13831036582457257,
+            "sorting_order": 25,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.7164285331964493
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                0.7637500379766736
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8766245513628999554,
+            "path": "LavaQuestIconBundledPrefab/Context/Icon/lq_icon_lava_piece_8_yellow",
+            "sprite": "lq_icon_lava_piece_3_yellow",
+            "sprite_path_id": 8854285353747671020,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.006642857193946838,
+                0.0,
+                -0.6349999964237213
+              ],
+              [
+                0.0,
+                -0.0069285716329302105,
+                -0.17235712919916427
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "MagicCauldron",
+        "site_asset": "assets/verified-icons-20261120/MagicCauldron.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "magiccauldronicon",
+        "source_bundle_sha256": "7e2b1b794ea092b1eb7ece66c5e5481b03c733d870820ac486ee6b6c0ecc25be",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/magiccauldronicon.png",
+        "source_file_sha256": "6879978870552bc79af32423c0987e9a6c50ff534c0f6822fce0495d44321abe",
+        "output_sha256": "6879978870552bc79af32423c0987e9a6c50ff534c0f6822fce0495d44321abe",
+        "layers": [
+          {
+            "renderer_path_id": -8478448190599327059,
+            "path": "MagicCauldronIconBundledPrefab/Context/Cauldron/CauldronPatch",
+            "sprite": "mc_icon_cauldron_1_patch",
+            "sprite_path_id": 1965954695087978573,
+            "sorting_order": 30,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.5964285714285714
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.5327142859676055
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -5009530979431099681,
+            "path": "MagicCauldronIconBundledPrefab/Base/Shadow/Right",
+            "sprite": "mc_icon_shadow",
+            "sprite_path_id": 8218068167878506991,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                -0.00721428564616612,
+                0.0,
+                0.9257142680031912
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8842857015984399
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3303226369748509133,
+            "path": "MagicCauldronIconBundledPrefab/Context/Cauldron/Cauldron",
+            "sprite": "mc_icon_cauldron_1",
+            "sprite_path_id": 7553253754830596216,
+            "sorting_order": 20,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7857142857142857
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.631428571205054
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -2006210459767998326,
+            "path": "MagicCauldronIconBundledPrefab/Context/Cauldron/Liquid",
+            "sprite": "mc_icon_liquid",
+            "sprite_path_id": -8587913134286475226,
+            "sorting_order": 21,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.5357142857142857
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.5785714319241898
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -766822853929455059,
+            "path": "MagicCauldronIconBundledPrefab/Base/Shadow/Left",
+            "sprite": "mc_icon_shadow",
+            "sprite_path_id": 8218068167878506991,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                0.007285714149475098,
+                0.0,
+                -0.9302856922149658
+              ],
+              [
+                0.0,
+                -0.007285714149475098,
+                0.8937142640352249
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1794243361240699396,
+            "path": "MagicCauldronIconBundledPrefab/Context/Cauldron/HandleRightFront",
+            "sprite": "mc_icon_handle_l_front",
+            "sprite_path_id": 7219701351607857016,
+            "sorting_order": 23,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                0.566714256150382
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.36857143550046856
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2753239983767074474,
+            "path": "MagicCauldronIconBundledPrefab/Context/Cauldron/HandleLeftFront/HandleLeftBack",
+            "sprite": "mc_icon_handle_r_back",
+            "sprite_path_id": 5226015722183595062,
+            "sorting_order": 19,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8548428688730513
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.3499857080302068
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2865992257092216264,
+            "path": "MagicCauldronIconBundledPrefab/Context/Cauldron/HandleRightFront/HandlRightBack",
+            "sprite": "mc_icon_handle_l_back",
+            "sprite_path_id": 3599592561210867144,
+            "sorting_order": 19,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                0.6996999859809876
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.33624285837369305
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 5221503692632274465,
+            "path": "MagicCauldronIconBundledPrefab/Context/Cauldron/HandleLeftFront",
+            "sprite": "mc_icon_handle_r_front",
+            "sprite_path_id": 5909240361673529616,
+            "sorting_order": 23,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8548571552549089
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.3655714294207948
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "MergeSmith",
+        "site_asset": "assets/verified-icons-20261120/MergeSmith.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "merge_smith_icon",
+        "source_bundle_sha256": "bda750cb04902be1968129513bb947b616167f2ea119ac9c3d890d280fc421f3",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/merge_smith_icon.png",
+        "source_file_sha256": "2c9d606b664fb481aa43857543d1c5e09604e985ae0109563927a61d692e7a11",
+        "output_sha256": "2c9d606b664fb481aa43857543d1c5e09604e985ae0109563927a61d692e7a11",
+        "layers": [
+          {
+            "renderer_path_id": -8650631495859528206,
+            "path": "MergeSmithIconBundledPrefab/Context/Base",
+            "sprite": "ms_icon_base",
+            "sprite_path_id": -2965421996807114387,
+            "sorting_order": 66,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8367142857617832
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.23671428327049526
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -6352507617302227580,
+            "path": "MergeSmithIconBundledPrefab/NormalState/Shadow/Right",
+            "sprite": "ms_icon_shadow",
+            "sprite_path_id": -5995076091893291911,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                -0.007285714149475098,
+                0.0,
+                0.9325714111328125
+              ],
+              [
+                0.0,
+                -0.007285714149475098,
+                0.8987143114209175
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 5118365040152052051,
+            "path": "MergeSmithIconBundledPrefab/NormalState/Shadow/Left",
+            "sprite": "ms_icon_shadow",
+            "sprite_path_id": -5995076091893291911,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                0.007285714149475098,
+                0.0,
+                -0.9325714111328125
+              ],
+              [
+                0.0,
+                -0.007285714149475098,
+                0.8987143114209175
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 6532707937106588129,
+            "path": "MergeSmithIconBundledPrefab/Context/Anvil",
+            "sprite": "ms_icon_anvil",
+            "sprite_path_id": -8544815339104449698,
+            "sorting_order": 66,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8802857109478541
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.9360000118613243
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "MissionControl",
+        "site_asset": "assets/verified-icons-20261120/MissionControl.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "mission_control_icon_v2",
+        "source_bundle_sha256": "178e169d5f2c3c08c4c2bcc8c445a9baca340edee09e777d131ec2aaf01a1945",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/mission_control_icon_v2.png",
+        "source_file_sha256": "241394cadb8532375bf3e0886b9395f744f6108722e4f8b263dccb84f3cc84ea",
+        "output_sha256": "241394cadb8532375bf3e0886b9395f744f6108722e4f8b263dccb84f3cc84ea",
+        "layers": [
+          {
+            "renderer_path_id": -9010150490610583913,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Shadow/Left",
+            "sprite": "mco_icon_shadow",
+            "sprite_path_id": -6488908164610474717,
+            "sorting_order": 710,
+            "world_pixel_matrix": [
+              [
+                0.00721428564616612,
+                0.0,
+                -0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8842857463019235
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4322402025896035849,
+            "path": "MissionControlIconBundledPrefab/Root/IconImage/Capsule/CapsuleCapLeft",
+            "sprite": "mco_icon_cap",
+            "sprite_path_id": 8052439204777522577,
+            "sorting_order": 790,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7254285795348031
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.6060000032186508
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -1799303279307683340,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Pillow/PillowShadowLeft",
+            "sprite": "mco_icon_pillow_shadow",
+            "sprite_path_id": -8231781994914212408,
+            "sorting_order": 755,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7357142857142858
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.09285714881760734
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -868305451663753839,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Pillow/PillowRear",
+            "sprite": "mco_icon_rear_pillow",
+            "sprite_path_id": -3431989518377097365,
+            "sorting_order": 750,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7642857142857142
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.0327142915555409
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1887892158458658879,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Pillow/PillowShadowLeft/PillowShadowRight",
+            "sprite": "mco_icon_pillow_shadow",
+            "sprite_path_id": -8231781994914212408,
+            "sorting_order": 755,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.7357142857142858
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.09285714881760734
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2855177612784302535,
+            "path": "MissionControlIconBundledPrefab/Root/IconImage/Capsule/CapsuleLiquid",
+            "sprite": "mco_icon_liquid_blue",
+            "sprite_path_id": -3483629981632688948,
+            "sorting_order": 760,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.2785714285714286
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.563142860361508
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3031924488975827830,
+            "path": "MissionControlIconBundledPrefab/Root/IconImage/Capsule/CapsuleLight",
+            "sprite": "mco_icon_capsule_light_blue",
+            "sprite_path_id": -4796530677800527882,
+            "sorting_order": 800,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.275
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.563142860361508
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3525011979807997820,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Pillow/PillowRear/PillowRight",
+            "sprite": "mco_icon_rear_pillow",
+            "sprite_path_id": -3431989518377097365,
+            "sorting_order": 750,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.7642857142857142
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.0327142915555409
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4653658443756893342,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Pillow/PillowLeft",
+            "sprite": "mco_icon_pillow",
+            "sprite_path_id": -6191481327914775257,
+            "sorting_order": 800,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7642857142857142
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.021857133081981117
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 6281701614670389719,
+            "path": "MissionControlIconBundledPrefab/Root/IconImage/Capsule/CapsuleCapRight",
+            "sprite": "mco_icon_cap",
+            "sprite_path_id": 8052439204777522577,
+            "sorting_order": 790,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.7220285815852029
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.6060000032186508
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 6942997692744250169,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/CapsuleShadow",
+            "sprite": "mco_icon_capsule_shadow",
+            "sprite_path_id": -7810400685733759680,
+            "sorting_order": 750,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7607142857142857
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.5552857139280865
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7807693219139246060,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Shadow/Right",
+            "sprite": "mco_icon_shadow",
+            "sprite_path_id": -6488908164610474717,
+            "sorting_order": 710,
+            "world_pixel_matrix": [
+              [
+                -0.00721428564616612,
+                0.0,
+                0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8842857463019235
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8652622153783648809,
+            "path": "MissionControlIconBundledPrefab/Root/NormalState/Pillow/PillowLeft/PillowRight",
+            "sprite": "mco_icon_pillow",
+            "sprite_path_id": -6191481327914775257,
+            "sorting_order": 800,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.7642857142857142
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.021857133081981117
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "MissionPursuit",
+        "site_asset": "assets/verified-icons-20261120/MissionPursuit.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "mission_pursuit_icon",
+        "source_bundle_sha256": "a3db93c1cd309ffdfaf11e0b1f942821268b2511ae1383840b49b82f50a44ef9",
+        "sprite": "mp_icon_full",
+        "sprite_path_id": 2873609740070837579,
+        "source_file": "extracted39933/mission_pursuit_icon/Sprite__mp_icon_full__2873609740070837579.png",
+        "source_file_sha256": "6fe3b8cfa7cbeb0d6e2864dc1b4ca136cf1753dcf6649e6d79c27baf5d0ed67f",
+        "output_sha256": "6fe3b8cfa7cbeb0d6e2864dc1b4ca136cf1753dcf6649e6d79c27baf5d0ed67f",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "OceanOdyssey",
+        "site_asset": "assets/verified-icons-20261120/OceanOdyssey.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "ocean_odyssey_icon",
+        "source_bundle_sha256": "685c5c59889d01a5603799428c5bc0119db329d7419f5854cb1eeab111bbeaa5",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/ocean_odyssey_icon.png",
+        "source_file_sha256": "e44a85ccbc9edaa8db26ab3f1d7ee43ef195400fdbcc0b23fc119215852c06bf",
+        "output_sha256": "e44a85ccbc9edaa8db26ab3f1d7ee43ef195400fdbcc0b23fc119215852c06bf",
+        "layers": [
+          {
+            "renderer_path_id": -8148811258716896025,
+            "path": "OceanOdysseyIconBundledPrefab/Context/Body/Flag/Wood/Wood_1/Flag_a",
+            "sprite": "flag",
+            "sprite_path_id": -2838813764827315588,
+            "sorting_order": 76,
+            "world_pixel_matrix": [
+              [
+                0.007142857142626464,
+                -5.740548271757419e-08,
+                -0.6329678847018431
+              ],
+              [
+                -5.740548271756816e-08,
+                -0.007142857142626465,
+                0.8948206014806569
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -6321942673048897091,
+            "path": "OceanOdysseyIconBundledPrefab/Context/Body/Flag/Wood",
+            "sprite": "wood",
+            "sprite_path_id": -9026327880288505490,
+            "sorting_order": 74,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7016898844923292
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.9638161448495729
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4178306700880398865,
+            "path": "OceanOdysseyIconBundledPrefab/Context/Body/Flag/Wood (2)",
+            "sprite": "wood_shadow",
+            "sprite_path_id": 5291271385342241430,
+            "sorting_order": 74,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.6278327473572323
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.9602447162781443
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4364016054835189593,
+            "path": "OceanOdysseyIconBundledPrefab/Context/Body/Back",
+            "sprite": "oo_icon_ship_back",
+            "sprite_path_id": -3659150632488883076,
+            "sorting_order": 72,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.6737672929252897
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.26495901665517263
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 5967824687311184325,
+            "path": "OceanOdysseyIconBundledPrefab/Context/Body/Front",
+            "sprite": "oo_icon_ship_front",
+            "sprite_path_id": 1113711203386055875,
+            "sorting_order": 78,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.23419584802218846
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.35167329545531956
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "PinataParty",
+        "site_asset": "assets/verified-icons-20261120/PinataParty.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "pinatapartyicon",
+        "source_bundle_sha256": "a4ff0ecbbeddab942e670cb37cf86d8e729cf688db7f4900ea6ea4cca17ae553",
+        "sprite": "pinata_icon_3",
+        "sprite_path_id": -543644002176317925,
+        "source_file": "extracted39933/pinatapartyicon/Sprite__pinata_icon_3__-543644002176317925.png",
+        "source_file_sha256": "d4551d45d634bcdbf2ae1644d8cc55dadda9554ba5659e9b9cae8b482a02ca96",
+        "output_sha256": "d4551d45d634bcdbf2ae1644d8cc55dadda9554ba5659e9b9cae8b482a02ca96",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "PropellerRush",
+        "site_asset": "assets/verified-icons-20261120/PropellerRush.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "propeller_rush_icon_v4",
+        "source_bundle_sha256": "9493567a84f8697c892c1266b337234fdd16cd5fb9314a9a0af79e14b0187f4f",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/propeller_rush_icon_v4.png",
+        "source_file_sha256": "99a2324999c73f72bc081fb86fbfc9f1919aa2896f077a0f48a331858356b95c",
+        "output_sha256": "99a2324999c73f72bc081fb86fbfc9f1919aa2896f077a0f48a331858356b95c",
+        "layers": [
+          {
+            "renderer_path_id": -6272581437637283610,
+            "path": "PropellerRushIconBundledPrefab/Base/pr_pillow",
+            "sprite": "pr_pillow_2",
+            "sprite_path_id": -8419864574864635776,
+            "sorting_order": 25,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8107142857142857
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.09385712998253959
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3185072353920968007,
+            "path": "PropellerRushIconBundledPrefab/Base/Shadow/Left",
+            "sprite": "pr_icon_shadow_normal_state",
+            "sprite_path_id": 994434221304046031,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                0.00721428564616612,
+                0.0,
+                -0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8982856852667672
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3346535775878794291,
+            "path": "PropellerRushIconBundledPrefab/Base/Context/Step1/pr_medal_01",
+            "sprite": "pr_medal_01",
+            "sprite_path_id": -7829403352725887931,
+            "sorting_order": 30,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8142857142857143
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                1.2661635267149125
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7804935238316915356,
+            "path": "PropellerRushIconBundledPrefab/Base/Shadow/Right",
+            "sprite": "pr_icon_shadow_normal_state",
+            "sprite_path_id": 994434221304046031,
+            "sorting_order": 10,
+            "world_pixel_matrix": [
+              [
+                -0.00721428564616612,
+                0.0,
+                0.9234285627092633
+              ],
+              [
+                0.0,
+                -0.00721428564616612,
+                0.8982856852667672
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "PuzzleBreak",
+        "site_asset": "assets/verified-icons-20261120/PuzzleBreak.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "puzzle_break_icon_v2",
+        "source_bundle_sha256": "4b92e3712f97f890e2b84882cf8731c48908566ff5d2c745c17fc64c431c915b",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/puzzle_break_icon_v2.png",
+        "source_file_sha256": "80fb0af9b888e9e09ee356883b769d7101ea7bd3ff21b9556973292fd0ae2273",
+        "output_sha256": "80fb0af9b888e9e09ee356883b769d7101ea7bd3ff21b9556973292fd0ae2273",
+        "layers": [
+          {
+            "renderer_path_id": -4874343501960314728,
+            "path": "PuzzleBreakIconBundledPrefab/Context/pe_icon_purple_piece_shadow",
+            "sprite": "pb_icon_big_piece_shadow",
+            "sprite_path_id": 8307101323421375670,
+            "sorting_order": 66,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8300654341067587
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.8824690135461943
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4771299191130686747,
+            "path": "PuzzleBreakIconBundledPrefab/Context/pe_icon_yellow_piece_shadow",
+            "sprite": "pb_icon_small_piece_shadow",
+            "sprite_path_id": 8067305344020769255,
+            "sorting_order": 70,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.5726368716784886
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.5040404443229948
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -2164928450639951327,
+            "path": "PuzzleBreakIconBundledPrefab/Context/pe_icon_pillow_front",
+            "sprite": "pb_icon_pillow_front",
+            "sprite_path_id": 1428776822328648517,
+            "sorting_order": 80,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.8950654361929212
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.17524526906864984
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -830842189164460482,
+            "path": "PuzzleBreakIconBundledPrefab/Context/pe_icon_pillow",
+            "sprite": "pb_icon_pillow",
+            "sprite_path_id": -8955053986127121352,
+            "sorting_order": 65,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7750654314245496
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.04095955001456397
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2594130914753764798,
+            "path": "PuzzleBreakIconBundledPrefab/Context/pe_icon_yellow_piece",
+            "sprite": "pb_icon_small_piece",
+            "sprite_path_id": -8174305030245459383,
+            "sorting_order": 73,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.45363687191690716
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.4608975902199745
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3975968873059053851,
+            "path": "PuzzleBreakIconBundledPrefab/Context/pe_icon_purple_piece",
+            "sprite": "pb_icon_big_piece",
+            "sprite_path_id": 7671403485723992927,
+            "sorting_order": 67,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.7557797196720327
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                0.8403261719005448
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "RobotRivals",
+        "site_asset": "assets/verified-icons-20261120/RobotRivals.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "robot_rivals_icon_v2",
+        "source_bundle_sha256": "21d570354fd00e2bd8cbdeffecf257b26bbb875e2976935f0b47d23c0c47b7f0",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/robot_rivals_icon_v2.png",
+        "source_file_sha256": "8c4b8e13649cbf910288976c0fb68ce840553e6f31c07b8555e79a9521798dd1",
+        "output_sha256": "8c4b8e13649cbf910288976c0fb68ce840553e6f31c07b8555e79a9521798dd1",
+        "layers": [
+          {
+            "renderer_path_id": -7439936149195403273,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/glass_lines",
+            "sprite": "rr_icon_glass_lines",
+            "sprite_path_id": -5767180004279876259,
+            "sorting_order": 9580,
+            "world_pixel_matrix": [
+              [
+                0.0072881978668921195,
+                0.0,
+                -0.5594352445613282
+              ],
+              [
+                0.0,
+                -0.007761785112789709,
+                0.43521067780792
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -6147658072350628852,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/Crown",
+            "sprite": "crown",
+            "sprite_path_id": 2647374569368176290,
+            "sorting_order": 105,
+            "world_pixel_matrix": [
+              [
+                0.007761785112789709,
+                0.0,
+                -0.4544504476611136
+              ],
+              [
+                0.0,
+                -0.007761785112789709,
+                1.0556877547233479
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -5007579298647841928,
+            "path": "RobotRivalsIconBundledPrefab/Base/RightShadow",
+            "sprite": "rr_icon_ribbon_shadow",
+            "sprite_path_id": -7108458084075027806,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                0.007142857142857143,
+                0.0,
+                -0.00028572763715473126
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.07371430907930648
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4707063207040297386,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/EarLeft",
+            "sprite": "ear",
+            "sprite_path_id": -8360185878757497642,
+            "sorting_order": 99,
+            "world_pixel_matrix": [
+              [
+                -0.007761785112789709,
+                0.0,
+                -0.7076399442346226
+              ],
+              [
+                0.0,
+                -0.007761785112789709,
+                0.45733175469242265
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 364559485058341107,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/bone_1/mouth_Top/mouth_1",
+            "sprite": "mouth_1",
+            "sprite_path_id": -4210618927335047905,
+            "sorting_order": 490,
+            "world_pixel_matrix": [
+              [
+                -0.007155250845019894,
+                -2.3169256516465615e-25,
+                0.22699952858900688
+              ],
+              [
+                2.237774065268257e-25,
+                -0.011090638971704292,
+                0.0019158648261595468
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 1983430900703330740,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head",
+            "sprite": "head",
+            "sprite_path_id": 8462041066063928984,
+            "sorting_order": 100,
+            "world_pixel_matrix": [
+              [
+                0.007761785112789709,
+                0.0,
+                -0.9435981494848228
+              ],
+              [
+                0.0,
+                -0.007761785112789709,
+                0.8150724421346197
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3642766398414746220,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/bone_1/Eyes/Right/Right_Scale/eye_left",
+            "sprite": "rr_icon_eye_left",
+            "sprite_path_id": 5589926582183086122,
+            "sorting_order": 480,
+            "world_pixel_matrix": [
+              [
+                0.006644577917585011,
+                0.00128132747082541,
+                -0.4972222163119674
+              ],
+              [
+                0.001421532792774673,
+                -0.007371640442477142,
+                0.27115089229022815
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4733056871868215966,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/bone_1/Eyes/Left/Left_Scale/eye_right",
+            "sprite": "rr_icon_eye_left",
+            "sprite_path_id": 5589926582183086122,
+            "sorting_order": 490,
+            "world_pixel_matrix": [
+              [
+                -0.006635483220098612,
+                -0.001327623561644242,
+                0.4845342472442447
+              ],
+              [
+                0.001472894691098643,
+                -0.00736155058565939,
+                0.26621489559113254
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7355042929356304649,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/Crown_GG",
+            "sprite": "CrownGG",
+            "sprite_path_id": -2420935705534107028,
+            "sorting_order": 103,
+            "world_pixel_matrix": [
+              [
+                0.006759405363331168,
+                0.0,
+                -0.4272309362022377
+              ],
+              [
+                0.0,
+                -0.006759405363331168,
+                1.0029918646377805
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8140672797059935610,
+            "path": "RobotRivalsIconBundledPrefab/Base/LeftShadow",
+            "sprite": "rr_icon_ribbon_shadow",
+            "sprite_path_id": -7108458084075027806,
+            "sorting_order": 50,
+            "world_pixel_matrix": [
+              [
+                -0.007142857142857143,
+                0.0,
+                0.00028572763715473126
+              ],
+              [
+                0.0,
+                -0.007142857142857143,
+                -0.07371430907930648
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8712660746681820569,
+            "path": "RobotRivalsIconBundledPrefab/Context/Robot/Robot_Parent/Head/EarRight",
+            "sprite": "ear",
+            "sprite_path_id": -8360185878757497642,
+            "sorting_order": 99,
+            "world_pixel_matrix": [
+              [
+                0.007761785112789709,
+                0.0,
+                0.7130772820881298
+              ],
+              [
+                0.0,
+                -0.007761785112789709,
+                0.4524418424261248
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "RoyalWorldCup",
+        "site_asset": "assets/verified-icons-20261120/RoyalWorldCup.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "royal_world_cup_icon_v2",
+        "source_bundle_sha256": "70b447e05620073c9609300f5c4fed42c1a6e2aacb70fad5d8a67fc98c8e9008",
+        "sprite": "RWC_new_badge",
+        "sprite_path_id": -4891677207519069185,
+        "source_file": "extracted39933/royal_world_cup_icon_v2/Sprite__RWC_new_badge__-4891677207519069185.png",
+        "source_file_sha256": "c14dd2b5045640a5ea0ec5af400b052a1fc1448ece06a10c7537f331f1af425e",
+        "output_sha256": "c14dd2b5045640a5ea0ec5af400b052a1fc1448ece06a10c7537f331f1af425e",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "SpaceMission",
+        "site_asset": "assets/verified-icons-20261120/SpaceMission.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "spacemissionicon_v2",
+        "source_bundle_sha256": "f736317848dcb78e666fe7062275fe07065a0e48b861a0b3cea7803d45431a3c",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/spacemissionicon_v2.png",
+        "source_file_sha256": "0d532b1187ab67313a73dcf866cd1f804a9e49d11f338b9e98f0f298745a7cb7",
+        "output_sha256": "0d532b1187ab67313a73dcf866cd1f804a9e49d11f338b9e98f0f298745a7cb7",
+        "layers": [
+          {
+            "renderer_path_id": -5115615198849165295,
+            "path": "SpaceMissionIconBundledPrefab/MoonRocketHolder/Rocket/Shadow",
+            "sprite": "icon_moon_rocket_shadow",
+            "sprite_path_id": -8426658979564860720,
+            "sorting_order": 35,
+            "world_pixel_matrix": [
+              [
+                0.0071652293205261225,
+                0.0,
+                -0.5285574276000261
+              ],
+              [
+                0.0,
+                -0.010721875940050397,
+                0.048857822056327535
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3594891539973951905,
+            "path": "SpaceMissionIconBundledPrefab/MoonRocketHolder/Rocket/Rocket/Shadow",
+            "sprite": "icon_moon_rocket_shadow_02",
+            "sprite_path_id": -9103724086078047440,
+            "sorting_order": 25,
+            "world_pixel_matrix": [
+              [
+                0.007007091383199691,
+                0.0,
+                -0.476482214057579
+              ],
+              [
+                0.0,
+                -0.007007091383199691,
+                0.9259637786206378
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3421664113991917067,
+            "path": "SpaceMissionIconBundledPrefab/MoonRocketHolder/Rocket/Platform",
+            "sprite": "sm_icon_platform",
+            "sprite_path_id": 9197081165246505980,
+            "sorting_order": 30,
+            "world_pixel_matrix": [
+              [
+                0.007000000136239188,
+                0.0,
+                -0.6335000123296466
+              ],
+              [
+                0.0,
+                -0.004999999914850508,
+                0.028000001396451646
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4321075922623483114,
+            "path": "SpaceMissionIconBundledPrefab/MoonRocketHolder/Rocket/Rocket",
+            "sprite": "icon_moon_rocket_blue 1",
+            "sprite_path_id": -7427229300636367017,
+            "sorting_order": 40,
+            "world_pixel_matrix": [
+              [
+                0.006785714200564793,
+                0.0,
+                -0.3867857094321932
+              ],
+              [
+                0.0,
+                -0.006785714200564793,
+                0.8589642931308066
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7276432726903878237,
+            "path": "SpaceMissionIconBundledPrefab/MoonRocketHolder/Rocket/PlatformS",
+            "sprite": "sm_icon_platform_S",
+            "sprite_path_id": 5758886405865551944,
+            "sorting_order": 32,
+            "world_pixel_matrix": [
+              [
+                0.007000000136239188,
+                0.0,
+                -0.6335000123296466
+              ],
+              [
+                0.0,
+                -0.004999999914850508,
+                0.028000001396451646
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "TeamTournament",
+        "site_asset": "assets/verified-icons-20261120/TeamTournament.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "team_tournament_icon_v4",
+        "source_bundle_sha256": "d4df784215ba31ddd383aedad49e8eb844bc66aa243eacaeffec2bc6c06aefc2",
+        "sprite": "tt_icon_Royal_Lance_001",
+        "sprite_path_id": -2447456347104113339,
+        "source_file": "extracted39933/team_tournament_icon_v4/Sprite__tt_icon_Royal_Lance_001__-2447456347104113339.png",
+        "source_file_sha256": "b2bd7d72a68ed5700a0683027ee222c4103c60db8c5b5c5771edc9e296553239",
+        "output_sha256": "b2bd7d72a68ed5700a0683027ee222c4103c60db8c5b5c5771edc9e296553239",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "TeamTreasure",
+        "site_asset": "assets/verified-icons-20261120/TeamTreasure.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "teamtreasureicon",
+        "source_bundle_sha256": "9698d2179ae3046e8344b9036b1e49e825ebc08de402aed26897dc1a75949b9b",
+        "sprite": "icon_static",
+        "sprite_path_id": -141021848103694710,
+        "source_file": "extracted39933/teamtreasureicon/Sprite__icon_static__-141021848103694710.png",
+        "source_file_sha256": "757c148cde515f1eb55d09eacdc761f1be421873c4a345c282dfafb830002bf0",
+        "output_sha256": "757c148cde515f1eb55d09eacdc761f1be421873c4a345c282dfafb830002bf0",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "TrainJourney",
+        "site_asset": "assets/verified-icons-20261120/TrainJourney.png",
+        "kind": "source-prefab-2d-preview",
+        "role": "Static default icon art, UI chrome omitted",
+        "build": 39933,
+        "source_bundle": "train_journey_icon",
+        "source_bundle_sha256": "77c864a564b55c9748264e9a8142b7929c70dbcaea21b15406b51affbc125bc3",
+        "sprite": null,
+        "sprite_path_id": null,
+        "source_file": "prefab-previews39933/train_journey_icon.png",
+        "source_file_sha256": "71f3d03ee7d181c01a3ae1f68d5f8dc78527a6df66bcd6e289a91ef1a803470d",
+        "output_sha256": "71f3d03ee7d181c01a3ae1f68d5f8dc78527a6df66bcd6e289a91ef1a803470d",
+        "layers": [
+          {
+            "renderer_path_id": -9078154697419103407,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Stick_G_GRP/Stick_G_Master/Stick_a_G",
+            "sprite": "tj_icon_train_Stick_a_G",
+            "sprite_path_id": -733810854390310349,
+            "sorting_order": 797,
+            "world_pixel_matrix": [
+              [
+                0.0053281663739922,
+                0.0035569447915118667,
+                -0.616294300293742
+              ],
+              [
+                0.0030596179313340144,
+                -0.0061942353776234475,
+                -0.05455681922538974
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -8489988929502852028,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_a/Stick_d_Patch",
+            "sprite": "tj_icon_train_Stick_d_Patch",
+            "sprite_path_id": -4595238236862197047,
+            "sorting_order": 950,
+            "world_pixel_matrix": [
+              [
+                0.004759492198606304,
+                -0.0053261282536821285,
+                -0.30885011355648917
+              ],
+              [
+                -0.0053261282536821285,
+                -0.004759492198606304,
+                -0.30259944089844376
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -7769385680211002023,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a_Patch_3",
+            "sprite": "tj_icon_wheel_a_specular_1",
+            "sprite_path_id": -4002101328317818487,
+            "sorting_order": 983,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.5817282525053163
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.09497393227872661
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -7708206066626126985,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a",
+            "sprite": "tj_icon_wheel_a",
+            "sprite_path_id": -2205148512568738622,
+            "sorting_order": 810,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.765424913297374
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.10169620544039332
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -7294866346381501656,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a_G",
+            "sprite": "tj_icon_train_Wheel_a_G",
+            "sprite_path_id": -6786408443424114108,
+            "sorting_order": 800,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.7356015542331151
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.0707113905622408
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -7145628557585868900,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_a/Stick_c/Stick_c",
+            "sprite": "tj_icon_train_Stick_c",
+            "sprite_path_id": -5535683920897077206,
+            "sorting_order": 870,
+            "world_pixel_matrix": [
+              [
+                0.004759492198606304,
+                -0.0053261282536821285,
+                -0.4928842159237216
+              ],
+              [
+                -0.0053261282536821285,
+                -0.004759492198606304,
+                -0.2467313410066138
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -7082453538017046677,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a_Patch",
+            "sprite": "tj_icon_Wheel_a_patch",
+            "sprite_path_id": -7234279328318289785,
+            "sorting_order": 981,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.756622508388539
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.06001243006355256
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -5712256015735330004,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_d/Wheel_d_Spec",
+            "sprite": "tj_icon_wheel_c_specular",
+            "sprite_path_id": -4860851479683884,
+            "sorting_order": 985,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.47503093620454984
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                -0.1366922816805627
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -5521406134820096509,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_a/Stick_a_Patch",
+            "sprite": "tj_icon_train_Stick_a_Patch",
+            "sprite_path_id": 2541890000700081350,
+            "sorting_order": 980,
+            "world_pixel_matrix": [
+              [
+                0.004759492198606304,
+                -0.0053261282536821285,
+                -0.2792725180972141
+              ],
+              [
+                -0.0053261282536821285,
+                -0.004759492198606304,
+                -0.046266074298616525
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4833363684952101716,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Wheel_c_GRP/Wheel_c_Master/Wheel_c/Wheel_c",
+            "sprite": "tj_icon_wheel_b",
+            "sprite_path_id": -7688995469637548013,
+            "sorting_order": 910,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.06870210095545717
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                -0.11170581419409017
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -4396828077225720972,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Iron_GRP/Iron_Master/Iron/Iron",
+            "sprite": "tj_icon_train_Iron",
+            "sprite_path_id": -3750221785600614669,
+            "sorting_order": 987,
+            "world_pixel_matrix": [
+              [
+                0.00713511384056756,
+                0.0003325036020955691,
+                -0.5543942483150393
+              ],
+              [
+                0.00033250360209556904,
+                -0.00713511384056756,
+                -0.18463211818240982
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3885418220403333647,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Train_G",
+            "sprite": "tj_icon_Train_G",
+            "sprite_path_id": 5127717170593102976,
+            "sorting_order": 750,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.8989620023969432
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.7647803545428189
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3657996506557558386,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Wheel_c_GRP/Wheel_c_Master/Wheel_c/Wheel_c_Spec_3_Master/Wheel_c_Spec_3",
+            "sprite": "tj_icon_wheel_b_specular_1",
+            "sprite_path_id": -1189999862186330281,
+            "sorting_order": 910,
+            "world_pixel_matrix": [
+              [
+                0.00692226219786685,
+                -0.0017614466291230363,
+                0.15809821272943692
+              ],
+              [
+                -0.0017614466291230363,
+                -0.006922262197866849,
+                -0.1454701315525757
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3342319676415316342,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_b/Wheel_b",
+            "sprite": "tj_icon_train_Wheel_b",
+            "sprite_path_id": 3918864869590925935,
+            "sorting_order": 790,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.6471227915528628
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.002737276437702524
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -3173845601904225887,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_b/Stick_a_Patch",
+            "sprite": "tj_icon_train_Stick_a_Patch",
+            "sprite_path_id": 2541890000700081350,
+            "sorting_order": 980,
+            "world_pixel_matrix": [
+              [
+                0.00513990021410917,
+                0.004960023583841696,
+                -0.6533326608097493
+              ],
+              [
+                0.004960023583841696,
+                -0.005139900214109169,
+                -0.12863646767622344
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -1651589443868234559,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_b/Stick_c/Stick_c",
+            "sprite": "tj_icon_train_Stick_c",
+            "sprite_path_id": -5535683920897077206,
+            "sorting_order": 870,
+            "world_pixel_matrix": [
+              [
+                0.00513990021410917,
+                0.004960023583841696,
+                -0.4448318379353071
+              ],
+              [
+                0.004960023583841696,
+                -0.005139900214109169,
+                -0.3344122861421262
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -1353324401667186983,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Stick_G_GRP/Stick_G_Master/Stick_c_G",
+            "sprite": "tj_icon_train_Stick_c_G",
+            "sprite_path_id": -1048958861047564723,
+            "sorting_order": 797,
+            "world_pixel_matrix": [
+              [
+                -0.0022106000626570727,
+                0.006563115139666814,
+                -0.40141843333324057
+              ],
+              [
+                0.005146925633949342,
+                0.0028188522179677248,
+                -0.3276937008943912
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -962486809440230636,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_b/Stick_d_Patch",
+            "sprite": "tj_icon_train_Stick_d_Patch",
+            "sprite_path_id": -4595238236862197047,
+            "sorting_order": 950,
+            "world_pixel_matrix": [
+              [
+                0.00513990021410917,
+                0.004960023583841696,
+                -0.39605442185012457
+              ],
+              [
+                0.004960023583841696,
+                -0.005139900214109169,
+                -0.14837315289406613
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": -138755648787726219,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_b/Stick_b/Stick_b",
+            "sprite": "tj_icon_train_Stick_b",
+            "sprite_path_id": 6264876405347490316,
+            "sorting_order": 850,
+            "world_pixel_matrix": [
+              [
+                0.00513990021410917,
+                0.004960023583841696,
+                -0.6673898753188062
+              ],
+              [
+                0.004960023583841696,
+                -0.005139900214109169,
+                -0.35065486543582775
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 755301380253247631,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Iron_GRP/Iron_Master/Iron/Iron_G",
+            "sprite": "tj_icon_Iron_G",
+            "sprite_path_id": 3921713854989011499,
+            "sorting_order": 986,
+            "world_pixel_matrix": [
+              [
+                0.00713511384056756,
+                0.0003325036020955691,
+                -0.5693294757219529
+              ],
+              [
+                0.00033250360209556904,
+                -0.00713511384056756,
+                -0.17102691184808713
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2215278529990750718,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Train",
+            "sprite": "tj_icon_Train",
+            "sprite_path_id": -4406773810616322492,
+            "sorting_order": 760,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.8027795615633219
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.682814955097612
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2534960320738407685,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_b/Wheel_b_G",
+            "sprite": "tj_icon_train_Wheel_b_G",
+            "sprite_path_id": 3157358618605831580,
+            "sorting_order": 780,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.7587124837647734
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.11268526517441335
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2556837307508093884,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Stick_G_GRP/Stick_G_Master/Stick_g_G",
+            "sprite": "tj_icon_train_Stick_c_G",
+            "sprite_path_id": -1048958861047564723,
+            "sorting_order": 797,
+            "world_pixel_matrix": [
+              [
+                0.005862062306865452,
+                0.0036566437362190824,
+                -0.4963595272489659
+              ],
+              [
+                0.0034934477589820033,
+                -0.006135907817889301,
+                -0.3018043472798953
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 2661609699023857552,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/BackWheel_GRP/BackWheel_Master_a/Stick_b/Stick_b",
+            "sprite": "tj_icon_train_Stick_b",
+            "sprite_path_id": 6264876405347490316,
+            "sorting_order": 850,
+            "world_pixel_matrix": [
+              [
+                0.004759492198606304,
+                -0.0053261282536821285,
+                -0.5005894826779187
+              ],
+              [
+                -0.0053261282536821285,
+                -0.004759492198606304,
+                -0.023714457676329112
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 3091493837977057913,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Wheel_c_GRP/Wheel_c_Master/Wheel_c/Wheel_c_Spec_4",
+            "sprite": "tj_icon_wheel_b_specular_1",
+            "sprite_path_id": -1189999862186330281,
+            "sorting_order": 910,
+            "world_pixel_matrix": [
+              [
+                0.006814290152203508,
+                0.0021414616234823347,
+                0.0319369233457604
+              ],
+              [
+                0.0021414616234823347,
+                -0.006814290152203508,
+                -0.17311413582912913
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 4952547697730512212,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_d/Wheel_d",
+            "sprite": "tj_icon_wheel_c",
+            "sprite_path_id": -5281671535809550096,
+            "sorting_order": 930,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.5456725621183094
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                -0.12190996005645752
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 6189241201696504977,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a_Patch_1_Master/Wheel_a_Patch_1",
+            "sprite": "tj_icon_wheel_a_specular_1",
+            "sprite_path_id": -4002101328317818487,
+            "sorting_order": 983,
+            "world_pixel_matrix": [
+              [
+                0.007135019297438297,
+                -0.00033452621488967726,
+                -0.5487944944314046
+              ],
+              [
+                -0.0003345262148896773,
+                -0.007135019297438297,
+                0.09938352670710526
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 6231193031392163536,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a_Patch (3)",
+            "sprite": "tj_icon_wheel_a_specular_3",
+            "sprite_path_id": 4695563410203702444,
+            "sorting_order": 860,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.7629700233825709
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                0.08306461306494611
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7308069061936360484,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Wheel_c_GRP/Wheel_c_Master/Wheel_c/Wheel_c_Spec_2_Master/Wheel_c_Spec_2",
+            "sprite": "tj_icon_wheel_b_specular_1",
+            "sprite_path_id": -1189999862186330281,
+            "sorting_order": 910,
+            "world_pixel_matrix": [
+              [
+                0.005764961108137517,
+                -0.004217301457677311,
+                0.2470934126711414
+              ],
+              [
+                -0.004217301457677311,
+                -0.005764961108137516,
+                -0.17409775023295823
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7481909501026606848,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Stick_G_GRP/Stick_G_Master/Stick_f_G",
+            "sprite": "tj_icon_train_Stick_b_G",
+            "sprite_path_id": 4092064133783865833,
+            "sorting_order": 797,
+            "world_pixel_matrix": [
+              [
+                0.006038750437765715,
+                0.003814957576913495,
+                -0.6725685178837146
+              ],
+              [
+                0.003814957576913495,
+                -0.006038750437765715,
+                -0.3027329258398386
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7557948966178132381,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Wheel_c_GRP/Wheel_c_Master/Wheel_c/Wheel_c_Spec_1",
+            "sprite": "tj_icon_wheel_b_specular_2",
+            "sprite_path_id": -4436503208772093799,
+            "sorting_order": 910,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.04968452632836426
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                -0.1874399385892911
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 7910198204909022777,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a_Patch_2_Master/Wheel_a_Patch_2",
+            "sprite": "tj_icon_wheel_a_specular_1",
+            "sprite_path_id": -4002101328317818487,
+            "sorting_order": 983,
+            "world_pixel_matrix": [
+              [
+                0.007069641883798857,
+                -0.001020084211279762,
+                -0.5167350476790635
+              ],
+              [
+                -0.0010200842112797618,
+                -0.007069641883798857,
+                0.10797987346804086
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8291838459480373640,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/Wheel_c_GRP/Wheel_c_Master/Wheel_c/Wheel_c_G",
+            "sprite": "tj_icon_train_Wheel_c_G",
+            "sprite_path_id": 8029743482405399984,
+            "sorting_order": 900,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.08532056900059087
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                -0.10364406489294575
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "renderer_path_id": 8863641645114118223,
+            "path": "TrainJourneyIconBundledPrefab/Base/Context/Train/TrainWheel_GRP/TrainWheel_Master/Wheel_a/Wheel_a_Patch (2)",
+            "sprite": "tj_icon_wheel_a_specular_2",
+            "sprite_path_id": 7052317156607953262,
+            "sorting_order": 982,
+            "world_pixel_matrix": [
+              [
+                0.00713724108717865,
+                0.00028319220814533873,
+                -0.6773924350633584
+              ],
+              [
+                0.00028319220814533873,
+                -0.00713724108717865,
+                -0.2180649863725332
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "limitations": [
+          "Default static source Transform/SpriteRenderer 2D preview; not captured game UI",
+          "No runtime animation, shader/material effects, masks, 3D renderers or text",
+          "UI chrome intentionally omitted for an illustrative event identity image"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "WeeklyMission",
+        "site_asset": "assets/verified-icons-20261120/WeeklyMission.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "weekly_mission_icon",
+        "source_bundle_sha256": "e02905f2fc5f9000919ba8086024fe74116d2f931a3da0354cc30ec30347f498",
+        "sprite": "wm_icon_scroll_all",
+        "sprite_path_id": 848989959382966590,
+        "source_file": "extracted39933/weekly_mission_icon/Sprite__wm_icon_scroll_all__848989959382966590.png",
+        "source_file_sha256": "049161cebed2119c1d73ffca6d95c85e196d7295d9c130ca76fe8bde37bbb81a",
+        "output_sha256": "049161cebed2119c1d73ffca6d95c85e196d7295d9c130ca76fe8bde37bbb81a",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "WeeklyPass",
+        "site_asset": "assets/verified-icons-20261120/WeeklyPass.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "weekly_pass_icon",
+        "source_bundle_sha256": "1364d1724e6b04d3b8269982195fd83d37985c4d5cfa41803f6975ff905fb40c",
+        "sprite": "new_royal_pass_icon_key",
+        "sprite_path_id": 3280312870435122186,
+        "source_file": "extracted39933/weekly_pass_icon/Sprite__new_royal_pass_icon_key__3280312870435122186.png",
+        "source_file_sha256": "b03bc691fb135bfb13f70b744165ab74d6ab4c8c65b9498f269e77cec880d41e",
+        "output_sha256": "b03bc691fb135bfb13f70b744165ab74d6ab4c8c65b9498f269e77cec880d41e",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "BookOfTreasure",
+        "site_asset": "assets/verified-icons-20261120/BookOfTreasure.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "bookoftreasure.ab",
+        "source_bundle_sha256": "2bdffc6b1f9167bdcf884539f185e06f27ab310c0086b275c4cf9228ee64ed81",
+        "sprite": "01100_Kitap",
+        "sprite_path_id": 1441487296959220074,
+        "source_file": "extracted39933/bookoftreasure.ab/Sprite__01100_Kitap__1441487296959220074.png",
+        "source_file_sha256": "515eafc010571a2827b57d30100bab98823d338c7e932f948616f9a3ba343b5f",
+        "output_sha256": "515eafc010571a2827b57d30100bab98823d338c7e932f948616f9a3ba343b5f",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "PropellerMadness",
+        "site_asset": "assets/verified-icons-20261120/PropellerMadness.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "propellermadness.ab",
+        "source_bundle_sha256": "f8a87824caa03c836d2d3161feaf68d36ba039f240df058f7e78afd9ccf6c239",
+        "sprite": "heli_kral",
+        "sprite_path_id": 7112531897782336097,
+        "source_file": "extracted39933/propellermadness.ab/Sprite__heli_kral__7112531897782336097.png",
+        "source_file_sha256": "522ceee2cafa750e1100aa581e7c610157a6ce66eb81db60dc4b3180f643ba71",
+        "output_sha256": "522ceee2cafa750e1100aa581e7c610157a6ce66eb81db60dc4b3180f643ba71",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "KingsWorkshop",
+        "site_asset": "assets/verified-icons-20261120/KingsWorkshop.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "table_game_v2",
+        "source_bundle_sha256": "ca32aa76bdc23ebd7fc9980c5009a74daadacd19df20d228b4ae281efe8b20e4",
+        "sprite": "kw_vase_6",
+        "sprite_path_id": -1385773703171419155,
+        "source_file": "extracted39933/table_game_v2/Sprite__kw_vase_6__-1385773703171419155.png",
+        "source_file_sha256": "eb74a315e9e0badf94a7241b3675e1cb29d8c000a35c19ef583d1e16ae6aab14",
+        "output_sha256": "eb74a315e9e0badf94a7241b3675e1cb29d8c000a35c19ef583d1e16ae6aab14",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "SkyRace",
+        "site_asset": "assets/verified-icons-20261120/SkyRace.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "skyracestartend",
+        "source_bundle_sha256": "6fa9100739e01bbe0513abcbfcaefc57670437c71d44b17c3e830eaa51ff7fd8",
+        "sprite": "plane",
+        "sprite_path_id": 553410429885429478,
+        "source_file": "extracted39933/skyracestartend/Sprite__plane__553410429885429478.png",
+        "source_file_sha256": "5a9a228a201a1a41d6d1184c742a1e4a2b4e3e42cc997c6c720b4ad16ba8d3a1",
+        "output_sha256": "5a9a228a201a1a41d6d1184c742a1e4a2b4e3e42cc997c6c720b4ad16ba8d3a1",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "DukesTreats",
+        "site_asset": "assets/verified-icons-20261120/DukesTreats.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "dukes_treats_frame_v2",
+        "source_bundle_sha256": "404c0af504f0eac2093d065dfe9db75fde843fb7c1873abe870f6ea9a7a3faa9",
+        "sprite": "bone",
+        "sprite_path_id": -4075043933412866394,
+        "source_file": "extracted39933/dukes_treats_frame_v2/Sprite__bone__-4075043933412866394.png",
+        "source_file_sha256": "68cf60d39b95c0edece1a25525a66dee551248f35477da8edbef81cfc283c2ce",
+        "output_sha256": "68cf60d39b95c0edece1a25525a66dee551248f35477da8edbef81cfc283c2ce",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "RoyalPass",
+        "site_asset": "assets/verified-icons-20261120/RoyalPass.png",
+        "kind": "decoded-native-sprite",
+        "role": "Royal Pass Halloween key asset, explicitly seasonal variant",
+        "build": 39933,
+        "source_bundle": "royalpassicon_halloween",
+        "source_bundle_sha256": "38fe59c2cfc3e394e7f46f33845e7a9eaed3b7aaf32b0a9d90dc5c38c0cf89b7",
+        "sprite": "hl_key",
+        "sprite_path_id": 4688339380903123171,
+        "source_file": "extracted39933/royalpassicon_halloween/Sprite__hl_key__4688339380903123171.png",
+        "source_file_sha256": "acd68ac6b5feec6e3cf5c98301d7e378e18b33d4aac42df6e97981a6b2a208bd",
+        "output_sha256": "acd68ac6b5feec6e3cf5c98301d7e378e18b33d4aac42df6e97981a6b2a208bd",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon",
+          "Halloween key variant from cached39933 icon bundle; current theme assignment is not verified."
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "SeasonalCardCollection",
+        "site_asset": "assets/verified-icons-20261120/SeasonalCardCollection.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "seasonalcardcollectioncommonsectionnew_v6",
+        "source_bundle_sha256": "469f487b3f45bf9d038e311bf83e1ef5597188a5bb81447e19d8aac7ea9b27f4",
+        "sprite": "scc-section_regular_card_with_shadow",
+        "sprite_path_id": 6314373513387022384,
+        "source_file": "extracted39933/seasonalcardcollectioncommonsectionnew_v6/Sprite__scc-section_regular_card_with_shadow__6314373513387022384.png",
+        "source_file_sha256": "d779060d37c6ae31c8672f1e687d491ad7c1291feb0fe43fdb85d7082756dc14",
+        "output_sha256": "d779060d37c6ae31c8672f1e687d491ad7c1291feb0fe43fdb85d7082756dc14",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "DukesFortune",
+        "site_asset": "assets/verified-icons-20261120/DukesFortune.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "dukesfortuneicon_v3",
+        "source_bundle_sha256": "c9c84126bd9117dd9bf7b6f5ea1ddd15555ca596dcabe3015e6fba2bbd7347aa",
+        "sprite": "df_icon_token",
+        "sprite_path_id": 4118093149219702495,
+        "source_file": "extracted39933/dukesfortuneicon_v3/Sprite__df_icon_token__4118093149219702495.png",
+        "source_file_sha256": "97e28e0e6ae2b06e1ea849db7e965d7822700944fa5af821927cc8615cf08d9e",
+        "output_sha256": "97e28e0e6ae2b06e1ea849db7e965d7822700944fa5af821927cc8615cf08d9e",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "WeeklyLeaderboard",
+        "site_asset": "assets/verified-icons-20261120/WeeklyLeaderboard.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "weeklyleaderboardinfo",
+        "source_bundle_sha256": "764f7f8b48753bdf69dd53f4b37bce91a13950198db186d9dd9b0645ff38e802",
+        "sprite": "wl_cup_icon",
+        "sprite_path_id": 15015394339479409,
+        "source_file": "extracted39933/weeklyleaderboardinfo/Sprite__wl_cup_icon__15015394339479409.png",
+        "source_file_sha256": "13d72d91e11ee10d3e7d938e1410dddb8af76c8b297454989740b948559e352d",
+        "output_sha256": "13d72d91e11ee10d3e7d938e1410dddb8af76c8b297454989740b948559e352d",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "Cloche",
+        "site_asset": "assets/verified-icons-20261120/Cloche.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "clochecommon_v2",
+        "source_bundle_sha256": "fba4bf416d23cf8ebdd7f431c722157e4493784918ee4680bf82d044cd0a82cb",
+        "sprite": "cloche_3",
+        "sprite_path_id": 5410976230852860948,
+        "source_file": "extracted39933/clochecommon_v2/Sprite__cloche_3__5410976230852860948.png",
+        "source_file_sha256": "43392339f9bbca10b6180261894ce77d482d680d812e175cffa6439dac637208",
+        "output_sha256": "43392339f9bbca10b6180261894ce77d482d680d812e175cffa6439dac637208",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "SuperBooster",
+        "site_asset": "assets/verified-icons-20261120/SuperBooster.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "superlightball_v7",
+        "source_bundle_sha256": "27829c974aff4a9cd506c372f7af2985f7bbb6fc7039f6611dc49ba9dd9c67af",
+        "sprite": "super_lightball_cloche",
+        "sprite_path_id": -7009415298957031935,
+        "source_file": "extracted39933/superlightball_v7/Sprite__super_lightball_cloche__-7009415298957031935.png",
+        "source_file_sha256": "650cec21bf3a9fd69086cc4d5f2961cbb438e9d9fbefd2d89cc03c4c6adbd7c8",
+        "output_sha256": "650cec21bf3a9fd69086cc4d5f2961cbb438e9d9fbefd2d89cc03c4c6adbd7c8",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "LadderOffer",
+        "site_asset": "assets/verified-icons-20261120/LadderOffer.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "ladderoffericon_v2",
+        "source_bundle_sha256": "42f9850c83221b8763477e7c0668b664e49859977c702bda8357ab6438e1201c",
+        "sprite": "icon-crown_full",
+        "sprite_path_id": 1600635254528238797,
+        "source_file": "extracted39933/ladderoffericon_v2/Sprite__icon-crown_full__1600635254528238797.png",
+        "source_file_sha256": "8949f7bdfa73d903a30c03331e6e3b0b2c1c7a1ec9a4d8cd7964df1a465ed97f",
+        "output_sha256": "8949f7bdfa73d903a30c03331e6e3b0b2c1c7a1ec9a4d8cd7964df1a465ed97f",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "TeamOffer",
+        "site_asset": "assets/verified-icons-20261120/TeamOffer.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "teamoffericon_v2",
+        "source_bundle_sha256": "b17d61b09c8655b18748a38f1f5dfa592bb74e9572a433a91f321750d00d11c2",
+        "sprite": "pouch_icon",
+        "sprite_path_id": -7706823798809742638,
+        "source_file": "extracted39933/teamoffericon_v2/Sprite__pouch_icon__-7706823798809742638.png",
+        "source_file_sha256": "474f8118babade8ec016b4a4bf82d3c843f1e9439f8b0eaaef497e1f154626f9",
+        "output_sha256": "474f8118babade8ec016b4a4bf82d3c843f1e9439f8b0eaaef497e1f154626f9",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "StarfallOffer",
+        "site_asset": "assets/verified-icons-20261120/StarfallOffer.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "starfall_offer_icon",
+        "source_bundle_sha256": "daabd6b8997cb65071d6dac32e7aa142af77406627df8d8a60879036c4e06e90",
+        "sprite": "so_icon_image",
+        "sprite_path_id": 9011042817269827165,
+        "source_file": "extracted39933/starfall_offer_icon/Sprite__so_icon_image__9011042817269827165.png",
+        "source_file_sha256": "86cd38d7074724b38f98022cf999e26c0ecd65be42b0ca822bcd5b12207547ab",
+        "output_sha256": "86cd38d7074724b38f98022cf999e26c0ecd65be42b0ca822bcd5b12207547ab",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "DailyRewards",
+        "site_asset": "assets/verified-icons-20261120/DailyRewards.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "daily_rewards_dialog",
+        "source_bundle_sha256": "be4ad10558598bad5c3b15ab71171f01750aa26e60bc53dc110d403385073516",
+        "sprite": "dr_top_title_box",
+        "sprite_path_id": -2543616979659559334,
+        "source_file": "extracted39933/daily_rewards_dialog/Sprite__dr_top_title_box__-2543616979659559334.png",
+        "source_file_sha256": "1021e70e202321c0f98c9fce0d637d60f53baa5f96a9e1f5ae9a647b2a9d1ac1",
+        "output_sha256": "1021e70e202321c0f98c9fce0d637d60f53baa5f96a9e1f5ae9a647b2a9d1ac1",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "InviteFriends",
+        "site_asset": "assets/verified-icons-20261120/InviteFriends.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "friends_v7",
+        "source_bundle_sha256": "e524289f4dc892eded300e2827e6ad0c16d0b916078b7a7b647bd7ce440ce0d4",
+        "sprite": "invite_friends_gift_box_aranjman",
+        "sprite_path_id": -4708720875545520358,
+        "source_file": "extracted39933/friends_v7/Sprite__invite_friends_gift_box_aranjman__-4708720875545520358.png",
+        "source_file_sha256": "b0d9f3f11635bbc95b918696ad750fdb626be3b40f79e390103ce615c79659ba",
+        "output_sha256": "b0d9f3f11635bbc95b918696ad750fdb626be3b40f79e390103ce615c79659ba",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "Ads",
+        "site_asset": "assets/verified-icons-20261120/Ads.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "no_ads_icon",
+        "source_bundle_sha256": "39f9eeb517053d25210a9b3d4b0cc6ecff8bda2f12b2f48a7146b1060513d175",
+        "sprite": "noads_icon_logo",
+        "sprite_path_id": -8104449230793385288,
+        "source_file": "extracted39933/no_ads_icon/Sprite__noads_icon_logo__-8104449230793385288.png",
+        "source_file_sha256": "974ad1403fbb9fb755957b4d5cce90084146b27992d8c55b4b7e49fbe1f33cc2",
+        "output_sha256": "974ad1403fbb9fb755957b4d5cce90084146b27992d8c55b4b7e49fbe1f33cc2",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "League",
+        "site_asset": "assets/verified-icons-20261120/League.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "new_league_leaderboard",
+        "source_bundle_sha256": "7c984e61d7315447fd9de2ef8d2fb16248dc6c392863e60026e93ee46ed6687c",
+        "sprite": "diamond_icon",
+        "sprite_path_id": 6885127627537641119,
+        "source_file": "extracted39933/new_league_leaderboard/Sprite__diamond_icon__6885127627537641119.png",
+        "source_file_sha256": "c6cc09432a8f3337202249843ddc2af1203cdcf1d293ad32c6e02753038ca41f",
+        "output_sha256": "c6cc09432a8f3337202249843ddc2af1203cdcf1d293ad32c6e02753038ca41f",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "SuperDuke",
+        "site_asset": "assets/verified-icons-20261120/SuperDuke.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "magic_duke",
+        "source_bundle_sha256": "1efe3d33d84e77af29d08fbcd9d53f126615cad51d026727d3e477270ff917f7",
+        "sprite": "duke_ego",
+        "sprite_path_id": -4896298651827558327,
+        "source_file": "extracted39933/magic_duke/Sprite__duke_ego__-4896298651827558327.png",
+        "source_file_sha256": "851fe6cbc460be29d38b643cddd5fe1c832fda17d81079b43b02283e7968ec0a",
+        "output_sha256": "851fe6cbc460be29d38b643cddd5fe1c832fda17d81079b43b02283e7968ec0a",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "StoryLevels",
+        "site_asset": "assets/verified-icons-20261120/StoryLevels.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "kingnightmareicon",
+        "source_bundle_sha256": "c9bbe7475c9b1ac2ccc5c67e74b92b62e16d42623bbdde54efaddefb81ab5429",
+        "sprite": "sapka_butun",
+        "sprite_path_id": 7537675048116945872,
+        "source_file": "extracted39933/kingnightmareicon/Sprite__sapka_butun__7537675048116945872.png",
+        "source_file_sha256": "99da851db585d393cca932b3130e7b908e12fbb1199b69f769f7f8e8ae27001f",
+        "output_sha256": "99da851db585d393cca932b3130e7b908e12fbb1199b69f769f7f8e8ae27001f",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "ReactivationLevels",
+        "site_asset": "assets/verified-icons-20261120/ReactivationLevels.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "friends_v7",
+        "source_bundle_sha256": "e524289f4dc892eded300e2827e6ad0c16d0b916078b7a7b647bd7ce440ce0d4",
+        "sprite": "friendsTab_crown",
+        "sprite_path_id": -5133635587876405282,
+        "source_file": "extracted39933/friends_v7/Sprite__friendsTab_crown__-5133635587876405282.png",
+        "source_file_sha256": "53ed4e4fb3b86ba402c0605361fbf054e9bfa13bb3454917f9bd58e29a1a53af",
+        "output_sha256": "53ed4e4fb3b86ba402c0605361fbf054e9bfa13bb3454917f9bd58e29a1a53af",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "Profile",
+        "site_asset": "assets/verified-icons-20261120/Profile.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "avatar_1_v2",
+        "source_bundle_sha256": "cf4103e0dbcae311c30151898c9ba68fa8936375aa8d0510b4c7ae2018de999a",
+        "sprite": "avatar_1",
+        "sprite_path_id": 4016562289555037028,
+        "source_file": "extracted39933/avatar_1_v2/Sprite__avatar_1__4016562289555037028.png",
+        "source_file_sha256": "2714af6f7768d3410df04e9bc872b730415299f1c1c2cd61521448707b68d4b2",
+        "output_sha256": "2714af6f7768d3410df04e9bc872b730415299f1c1c2cd61521448707b68d4b2",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "Account",
+        "site_asset": "assets/verified-icons-20261120/Account.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "avatar_2_v2",
+        "source_bundle_sha256": "caac94b1045740b312d14c4fad9a907655cfc0b6e8e21cd04ac36307b161137c",
+        "sprite": "avatar_2",
+        "sprite_path_id": 89377827078346716,
+        "source_file": "extracted39933/avatar_2_v2/Sprite__avatar_2__89377827078346716.png",
+        "source_file_sha256": "a445c2239b0be2bc15719c07b9078f705dad5c1dc28578dc091b8c7c03fd9b62",
+        "output_sha256": "a445c2239b0be2bc15719c07b9078f705dad5c1dc28578dc091b8c7c03fd9b62",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "Friends",
+        "site_asset": "assets/verified-icons-20261120/Friends.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original event identity sprite from its own feature bundle",
+        "build": 39933,
+        "source_bundle": "friends_v7",
+        "source_bundle_sha256": "e524289f4dc892eded300e2827e6ad0c16d0b916078b7a7b647bd7ce440ce0d4",
+        "sprite": "friendsTab_User_Profile_Play_With_Friends_Illustration",
+        "sprite_path_id": 2444347673431696911,
+        "source_file": "extracted39933/friends_v7/Sprite__friendsTab_User_Profile_Play_With_Friends_Illustration__2444347673431696911.png",
+        "source_file_sha256": "0b3158de0344ad7717f8bb245bb90c45fe1c19e2e4d2503b1965e2121d1c0094",
+        "output_sha256": "0b3158de0344ad7717f8bb245bb90c45fe1c19e2e4d2503b1965e2121d1c0094",
+        "layers": [],
+        "limitations": [
+          "Representative original event identity sprite; not a live game screenshot or complete animated icon"
+        ],
+        "visual_review": "Reviewed decoded contact sheet and static source composition by icon_asset_fix; whole game screen not implied"
+      },
+      {
+        "feature": "ExpeditionEvent",
+        "site_asset": "assets/verified-icons-20261120/ExpeditionEvent.png",
+        "kind": "prior-decoded-native-sprite",
+        "role": "Original Royal Tales / expedition book illustration",
+        "build": null,
+        "source_acquired": "2026-10-08; prior art manifest, no current39933 effective-bundle claim",
+        "source_bundle": "short_expedition_event_dialog",
+        "source_bundle_sha256": "904a8c07a5d64c8b7d65da2663c3e6e27478d9a5abbc5ccfd2eba00b5f6da8b4",
+        "sprite": "book",
+        "sprite_path_id": -5796062028266867434,
+        "source_file": "facts/runtime/wiki_coverage_20261008/art/sprites/ExpeditionEvent/short_expedition_event_dialog__book__-5796062028266867434.png",
+        "source_file_sha256": "25d2d0b3c0a44358342d67260f200f626dcf4f694643a1228dd1e526d7b01531",
+        "output_sha256": "25d2d0b3c0a44358342d67260f200f626dcf4f694643a1228dd1e526d7b01531",
+        "limitations": [
+          "Prior bundle art reference only; not verified current39933 icon/theme/runtime or screenshot."
+        ],
+        "visual_review": "Original book sprite selected from expedition-specific cached bundle; not generic energy reward."
+      },
+      {
+        "feature": "DragonNest",
+        "site_asset": "assets/verified-icons-20261120/DragonNest.png",
+        "kind": "source-spine-3.8-webgl-preview",
+        "role": "Original Dragon Nest fire dragon rendered from native Spine 3.8 skeleton/atlas",
+        "build": 39933,
+        "source_bundle": "dragonnesticondragonsfire_v2",
+        "source_bundle_sha256": "071ae96278c45d49e365addce3b78ebb67654d1c5abe4ba0b12f0d7ff24f24cb",
+        "sprite": "fire_2_dragon (idle @ 0.3s)",
+        "sprite_path_id": null,
+        "source_file": "dragon-spine-preview39933.png",
+        "source_file_sha256": "0e5529742434f29fc891f423deb4026f8612f1cd9cfe79eac343888c0b2f8264",
+        "output_sha256": "0e5529742434f29fc891f423deb4026f8612f1cd9cfe79eac343888c0b2f8264",
+        "sources": [
+          {
+            "file": "extracted39933\\dragonnesticondragonsfire_v2\\TextAsset__fire_2_dragon.skel",
+            "sha256": "2030d011777ca417c58711971f0c0fd872cf3a0a77abdd04d4c9d495e4fda52a"
+          },
+          {
+            "file": "extracted39933\\dragonnesticondragonsfire_v2\\TextAsset__fire_2_dragon.atlas",
+            "sha256": "aae1d34d38d85b65c462bf5beb27718240f31cb2faee183646b56734f0950ec0"
+          },
+          {
+            "file": "extracted39933\\dragonnesticondragonsfire_v2\\Texture2D__fire_2_dragon__-5037300431541945743.png",
+            "sha256": "3c52962efbb499ff3b0148ce00dc5768983d2972f36c33c0dd24b315a9df7381"
+          }
+        ],
+        "layers": [],
+        "limitations": [
+          "Static headless Spine 3.8 WebGL render from original dragonnesticondragonsfire_v2 skeleton/atlas; not a live UI screenshot or complete animated widget."
+        ],
+        "visual_review": "Reviewed WebGL premultiplied-alpha Spine 3.8 output; zero mesh seam or halo artifacts."
+      },
+      {
+        "feature": "TeamBattle",
+        "site_asset": "assets/verified-icons-20261120/TeamBattle.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original Team Battle shield emblem from build 39933 APK",
+        "build": 39933,
+        "source_bundle": "build39933 base APK",
+        "source_bundle_sha256": null,
+        "sprite": "TeamBattle-ui_shield",
+        "sprite_path_id": 19724,
+        "source_file": "extracted39933_apk/TeamBattle-ui_shield__19724.png",
+        "source_file_sha256": "249215acb34040a24d0f1ba829c9799654537eaa404a4b2c16ce4b1e3967e9fc",
+        "output_sha256": "249215acb34040a24d0f1ba829c9799654537eaa404a4b2c16ce4b1e3967e9fc",
+        "layers": [],
+        "limitations": [
+          "Decoded native UI sprite from build 39933 APK; not a full live gameplay screenshot."
+        ],
+        "visual_review": "Visually reviewed clean single sprite without atlas bleed."
+      },
+      {
+        "feature": "Areas",
+        "site_asset": "assets/verified-icons-20261120/Areas.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original Areas tab book/star icon from build 39933 APK",
+        "build": 39933,
+        "source_bundle": "build39933 base APK",
+        "source_bundle_sha256": null,
+        "sprite": "Sections-area_icon",
+        "sprite_path_id": 19602,
+        "source_file": "extracted39933_apk/Sections-area_icon__19602.png",
+        "source_file_sha256": "a7305b61bad2af1f6476cb87dfe4da0be49227d8fd1f296798bc7d5aa907fd96",
+        "output_sha256": "a7305b61bad2af1f6476cb87dfe4da0be49227d8fd1f296798bc7d5aa907fd96",
+        "layers": [],
+        "limitations": [
+          "Decoded native UI sprite from build 39933 APK; not a full live gameplay screenshot."
+        ],
+        "visual_review": "Visually reviewed clean single sprite without atlas bleed."
+      },
+      {
+        "feature": "HomeUI",
+        "site_asset": "assets/verified-icons-20261120/HomeUI.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original Home tab castle icon from build 39933 APK",
+        "build": 39933,
+        "source_bundle": "build39933 base APK",
+        "source_bundle_sha256": null,
+        "sprite": "Sections-home_icon",
+        "sprite_path_id": 19200,
+        "source_file": "extracted39933_apk/Sections-home_icon__19200.png",
+        "source_file_sha256": "4756a9b002cd18bad890b3ec691f3c8cf7019de7738066e3e1afe6beeac712e5",
+        "output_sha256": "4756a9b002cd18bad890b3ec691f3c8cf7019de7738066e3e1afe6beeac712e5",
+        "layers": [],
+        "limitations": [
+          "Decoded native UI sprite from build 39933 APK; not a full live gameplay screenshot."
+        ],
+        "visual_review": "Visually reviewed clean single sprite without atlas bleed."
+      },
+      {
+        "feature": "Leaderboard",
+        "site_asset": "assets/verified-icons-20261120/Leaderboard.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original Leaderboard tab trophy icon from build 39933 APK",
+        "build": 39933,
+        "source_bundle": "build39933 base APK",
+        "source_bundle_sha256": null,
+        "sprite": "Sections-leaderboard_icon",
+        "sprite_path_id": 25530,
+        "source_file": "extracted39933_apk/Sections-leaderboard_icon__25530.png",
+        "source_file_sha256": "644216f96b198b878f2bec9619f7e535d8bb1237313361f20c202091318d4b40",
+        "output_sha256": "644216f96b198b878f2bec9619f7e535d8bb1237313361f20c202091318d4b40",
+        "layers": [],
+        "limitations": [
+          "Decoded native UI sprite from build 39933 APK; not a full live gameplay screenshot."
+        ],
+        "visual_review": "Visually reviewed clean single sprite without atlas bleed."
+      },
+      {
+        "feature": "Shop",
+        "site_asset": "assets/verified-icons-20261120/Shop.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original Shop tab treasure chest icon from build 39933 APK",
+        "build": 39933,
+        "source_bundle": "build39933 base APK",
+        "source_bundle_sha256": null,
+        "sprite": "Sections-shop_icon",
+        "sprite_path_id": 24856,
+        "source_file": "extracted39933_apk/Sections-shop_icon__24856.png",
+        "source_file_sha256": "183bbd1c79ccfec74c2314e446a36919bbbb18d908174e7f6a50f869a849719e",
+        "output_sha256": "183bbd1c79ccfec74c2314e446a36919bbbb18d908174e7f6a50f869a849719e",
+        "layers": [],
+        "limitations": [
+          "Decoded native UI sprite from build 39933 APK; not a full live gameplay screenshot."
+        ],
+        "visual_review": "Visually reviewed clean single sprite without atlas bleed."
+      },
+      {
+        "feature": "Team",
+        "site_asset": "assets/verified-icons-20261120/Team.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original Team tab shield emblem from build 39933 APK",
+        "build": 39933,
+        "source_bundle": "build39933 base APK",
+        "source_bundle_sha256": null,
+        "sprite": "Sections-team_logo",
+        "sprite_path_id": 19781,
+        "source_file": "extracted39933_apk/Sections-team_logo__19781.png",
+        "source_file_sha256": "2e8025713e37f4b62689224e6a4e2339ef60b30d67465b302df4594eabf53c2d",
+        "output_sha256": "2e8025713e37f4b62689224e6a4e2339ef60b30d67465b302df4594eabf53c2d",
+        "layers": [],
+        "limitations": [
+          "Decoded native UI sprite from build 39933 APK; not a full live gameplay screenshot."
+        ],
+        "visual_review": "Visually reviewed clean single sprite without atlas bleed."
+      },
+      {
+        "feature": "LevelFlow",
+        "site_asset": "assets/verified-icons-20261120/LevelFlow.png",
+        "kind": "decoded-native-sprite",
+        "role": "Original level-win coin icon from build 39933 APK",
+        "build": 39933,
+        "source_bundle": "build39933 base APK",
+        "source_bundle_sha256": null,
+        "sprite": "level_win_coin",
+        "sprite_path_id": 24413,
+        "source_file": "extracted39933_apk/level_win_coin__24413.png",
+        "source_file_sha256": "975e2ef7813dfafea5ab04de5b8d46a758df51b7145d8bad469ae4ada2263937",
+        "output_sha256": "975e2ef7813dfafea5ab04de5b8d46a758df51b7145d8bad469ae4ada2263937",
+        "layers": [],
+        "limitations": [
+          "Decoded native UI sprite from build 39933 APK; not a full live gameplay screenshot."
+        ],
+        "visual_review": "Visually reviewed clean single sprite without atlas bleed."
+      }
+    ],
+    "missing_or_not_selected": [
+      "EventsFramework"
+    ],
+    "rejected": [
+      {
+        "feature": "EventsFramework",
+        "reason": "Framework abstraction has no single native event identity icon."
+      }
+    ],
+    "limits": "Missing/unreviewed features must not silently fall back to a generic chest/crown or raw texture atlas."
+  },
+  "event_page_scope": [
+    "AncientAdventure",
+    "ArcheryArena",
+    "BalloonRise",
+    "BookOfTreasure",
+    "ClashOfChampions",
+    "DailyLightningRush",
+    "DragonNest",
+    "DukesFortune",
+    "EventsFramework",
+    "ExpeditionEvent",
+    "HiddenTemple",
+    "KingsCup",
+    "LavaQuest",
+    "MagicCauldron",
+    "MergeSmith",
+    "MissionControl",
+    "MissionPursuit",
+    "OceanOdyssey",
+    "PinataParty",
+    "PropellerMadness",
+    "PropellerRush",
+    "PuzzleBreak",
+    "RobotRivals",
+    "RoyalPass",
+    "RoyalWorldCup",
+    "SeasonalCardCollection",
+    "SkyRace",
+    "SpaceMission",
+    "TeamBattle",
+    "TeamTournament",
+    "TeamTreasure",
+    "TrainJourney",
+    "WeeklyLeaderboard",
+    "WeeklyPass"
+  ],
+  "missing_event_art": [
+    "EventsFramework"
+  ],
+  "area_config_build": 39933,
+  "area_summary": {
+    "area_count": 169,
+    "task_count": 1674,
+    "total_stars": 15000,
+    "task_icons_available": 1674,
+    "task_icons_missing": 0,
+    "prefab_task_bindings": 1674,
+    "scene_after_task_available": 0,
+    "cdn_extra_bundles_available": 165,
+    "cdn_extra_bundles_attempted": 168,
+    "cdn_area_bundles_available": 165
+  },
+  "scope": "Original source art and explicitly labelled prefab previews. No assertion that every event/area is enabled for the current account."
+}

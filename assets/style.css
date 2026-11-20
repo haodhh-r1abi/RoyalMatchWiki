@@ -101,3 +101,5 @@ table.walk td:first-child{white-space:nowrap;font-weight:600}
 
 /* reward icons (tools/rw_icons.py) */
 img.rwi{height:1.35em;width:auto;max-width:2.2em;vertical-align:-.32em;margin:0 3px 0 1px;object-fit:contain}
+/* visual-audit-20261120 */
+.visual-source-note{font-size:11px;line-height:1.5;padding:8px 12px;margin:0;border-top:1px solid #ddd;color:#626979}.visual-audit-panel{margin:22px 0;padding:18px 22px;border:1px solid #d5cfeb;border-left:4px solid #d6aa35;border-radius:8px;background:#f5f2ff}.visual-audit-panel h2{margin-top:0}.hero-img{border-radius:18px;object-fit:contain}
